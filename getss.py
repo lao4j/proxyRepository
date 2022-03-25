@@ -27,7 +27,7 @@ for index in range(filenum):
         srcfile = '{}/{}'.format(dayDir, file)
         copyfile(srcfile, r"/usr/local/git_repository/proxyRepository/clash/clash.yaml")
         isclash = True
-    if file.endswith('txt') and not isss and filesize < 60000:
+    if file.endswith('txt') and not isss and filesize < 70000:
         srcfile = '{}/{}'.format(dayDir, file)
         copyfile(srcfile, r"/usr/local/git_repository/proxyRepository/ss/ss.txt")
         isss = True
