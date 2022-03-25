@@ -16,7 +16,7 @@ month = time.strftime('%m', now)
 day = time.strftime('%d', now)
 dayDir = '/usr/local/git_repository/pub/data/{}_{}_{}'.format(year, month, day)
 listdir = os.listdir(dayDir)
-listdir.sort(key=lambda x:os.path.getsize(dayDir +'/'+x))
+listdir.sort(key=lambda x:os.path.getctime(dayDir +'/'+x))
 isss = False
 isclash = False
 filenum = len(listdir)
@@ -27,7 +27,7 @@ for index in range(filenum):
         srcfile = '{}/{}'.format(dayDir, file)
         copyfile(srcfile, r"/usr/local/git_repository/proxyRepository/clash/clash.yaml")
         isclash = True
-    if file.endswith('txt') and not isss and filesize < 70000:
+    if file.endswith('txt') and not isss and filesize < 90000:
         srcfile = '{}/{}'.format(dayDir, file)
         copyfile(srcfile, r"/usr/local/git_repository/proxyRepository/ss/ss.txt")
         isss = True
