@@ -31,5 +31,5 @@ for index in range(filenum):
         srcfile = '{}/{}'.format(dayDir, file)
         copyfile(srcfile, r"/usr/local/git_repository/proxyRepository/ss/ss.txt")
         isss = True
-system("sh forcepush.sh")
+system("sh /usr/local/git_repository/proxyRepository/forcepush.sh")
 
