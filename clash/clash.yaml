@@ -4,110 +4,376 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
-proxies:
-  - {"name":"美国(欢迎订阅Youtube破解资源君)_1","server":"169.197.142.99","port":443,"type":"ss","country":"美国(欢迎订阅Youtube破解资源君)_1","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
-  - {"name":"🇭🇰香港(TG/油管at阿伟科技）_2","server":"34.92.135.18","port":49838,"type":"vmess","uuid":"4b0ba381-9191-4dd0-a564-2658b07a2902","alterId":0,"cipher":"auto","country":"🇭🇰香港(TG/油管at阿伟科技）_2","skip-cert-verify":true,"tls":false,"network":"tcp","ws-opts":{"path":"/chaug","headers":{"host":"34.92.135.18"}}}
-  - {"name":"🇨🇳中国(TG/油管at阿伟科技）_3","server":"52.131.222.178","port":31313,"type":"vmess","uuid":"bfd2cb06-5cd7-3203-b414-17a809396898","alterId":0,"cipher":"auto","country":"🇨🇳中国(TG/油管at阿伟科技）_3","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/v2ray","headers":{"host":"52.131.222.178"}}}
-  - {"name":"🇨🇳中国(TG/油管at阿伟科技）_4","server":"52.131.222.178","port":31417,"type":"vmess","uuid":"bfd2cb06-5cd7-3203-b414-17a809396898","alterId":0,"cipher":"auto","country":"🇨🇳中国(TG/油管at阿伟科技）_4","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/v2ray","headers":{"host":"52.131.222.178"}}}
-  - {"name":"🇨🇳中国(TG/油管at阿伟科技）_5","server":"52.131.222.178","port":31416,"type":"vmess","uuid":"bfd2cb06-5cd7-3203-b414-17a809396898","alterId":0,"cipher":"auto","country":"🇨🇳中国(TG/油管at阿伟科技）_5","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/v2ray","headers":{"host":"52.131.222.178"}}}
-  - {"name":"🇨🇳中国(TG/油管at阿伟科技）_6","server":"52.131.222.178","port":31416,"type":"vmess","uuid":"bfd2cb06-5cd7-3203-b414-17a809396898","alterId":0,"cipher":"auto","country":"🇨🇳中国(TG/油管at阿伟科技）_6","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/v2ray"}}
-  - {"name":"🇨🇳中国(TG/油管at阿伟科技）_7","server":"52.131.222.178","port":31126,"type":"vmess","uuid":"bfd2cb06-5cd7-3203-b414-17a809396898","alterId":0,"cipher":"auto","country":"🇨🇳中国(TG/油管at阿伟科技）_7","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/v2ray"}}
-  - {"name":"🇨🇳中国(TG/油管at阿伟科技）_8","server":"52.131.222.178","port":31126,"type":"vmess","uuid":"bfd2cb06-5cd7-3203-b414-17a809396898","alterId":0,"cipher":"auto","country":"🇨🇳中国(TG/油管at阿伟科技）_8","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/v2ray","headers":{"host":"52.131.222.178"}}}
-  - {"name":"🇨🇳中国(TG/油管at阿伟科技）_9","server":"183.232.56.161","port":1303,"type":"vmess","uuid":"bfd2cb06-5cd7-3203-b414-17a809396898","alterId":0,"cipher":"auto","country":"🇨🇳中国(TG/油管at阿伟科技）_9","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/v2ray","headers":{"host":"183.232.56.161"}}}
-  - {"name":"🇨🇳中国(TG/油管at阿伟科技）_10","server":"52.131.222.178","port":31313,"type":"vmess","uuid":"bfd2cb06-5cd7-3203-b414-17a809396898","alterId":0,"cipher":"auto","country":"🇨🇳中国(TG/油管at阿伟科技）_10","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/v2ray"}}
+proxies: 
+  - {name: 'JP_635', server: '139.162.122.205', port: 3845, type: vmess, uuid: '76d5c6e3-c74c-3406-b9e8-9859d0a71c56', alterId: 0, cipher: auto, country: "JP_635", "skip-cert-verify": true, tls: false, network: 'tcp', ws-opts: { path: '/', headers: {host: '139.162.122.205'}} }
+  - {name: 'Relay_🇨🇳CN-🇷🇺RU_360', server: '183.240.132.27', port: 21209, type: vmess, uuid: '1b693eb3-3241-362a-9001-5b503789cfbe', alterId: 2, cipher: auto, country: "Relay_🇨🇳CN-🇷🇺RU_360", "skip-cert-verify": true, tls: false, network: 'tcp', ws-opts: { path: '/'} }
+  - {name: '🏁ZZ_3843', server: '134.195.198.211', port: 443, type: ss, country: '🏁ZZ_3843', cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
+  - {name: 'Relay_🇯🇵JP-🇯🇵JP_1052', server: 'lin1.free80ml.tk', port: 80, type: vmess, uuid: '4e1d0b12-25f0-363f-8659-9c6a3ca1fcda', alterId: 0, cipher: auto, country: "Relay_🇯🇵JP-🇯🇵JP_1052", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/'} }
+  - {name: 'US_1133', server: '38.114.114.69', port: 3389, type: ss, country: 'US_1133', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: '🇺🇸US_2588', server: '38.114.114.69', port: 6679, type: ss, country: '🇺🇸US_2588', cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
+  - {name: 'ZZ_2703', server: '134.195.196.51', port: 8119, type: ss, country: 'ZZ_2703', cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
+  - {name: 'US_1112', server: '38.114.114.69', port: 3306, type: ss, country: 'US_1112', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: 'ZZ_2594', server: '134.195.196.3', port: 5600, type: ss, country: 'ZZ_2594', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: 'ZZ_2722', server: '169.197.142.99', port: 9102, type: ss, country: 'ZZ_2722', cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
+  - {name: '🇨🇳CN_411', server: '183.232.56.161', port: 1101, type: vmess, uuid: '3a226645-c640-39a2-8177-000381e29f20', alterId: 0, cipher: auto, country: "🇨🇳CN_411", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'microsoft.com'}} }
+  - {name: 'ZZ_2512', server: '134.195.196.3', port: 8881, type: ss, country: 'ZZ_2512', cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
+  - {name: 'ZZ_2738', server: '134.195.196.51', port: 443, type: ss, country: 'ZZ_2738', cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
+  - { name: 'US_161', server: 'tj-us02.yiyodns.xyz', port: 443, type: trojan, country: 'US_161', 'skip-cert-verify': true, udp: true, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc }
+  - {name: 'ZZ_2556', server: '169.197.142.99', port: 9101, type: ss, country: 'ZZ_2556', cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
+  - {name: '🇨🇳CN_410', server: '183.232.56.161', port: 1612, type: vmess, uuid: '3a226645-c640-39a2-8177-000381e29f20', alterId: 0, cipher: auto, country: "🇨🇳CN_410", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'microsoft.com'}} }
+  - {name: 'ZZ_2617', server: '134.195.196.3', port: 8000, type: ss, country: 'ZZ_2617', cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
+  - {name: 'ZZ_2605', server: '134.195.196.3', port: 8882, type: ss, country: 'ZZ_2605', cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
+  - {name: '🇺🇸US_2913', server: '38.114.114.69', port: 8118, type: ss, country: '🇺🇸US_2913', cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
+  - {name: 'Pool__215', server: '202.61.141.130', port: 443, type: vmess, uuid: 'aba50dd4-5484-3b05-b14a-4661caf862d5', alterId: 4, cipher: auto, country: "Pool__215", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/ws', headers: {host: '202.61.141.130'}} }
+  - {name: 'Relay_🇺🇸US-🇺🇸US_3101', server: 'bpjzx2.cainiao.tk', port: 443, type: vmess, uuid: '24b4b1e1-7a89-45f6-858c-242cf53b5bdb', alterId: 0, cipher: auto, country: "Relay_🇺🇸US-🇺🇸US_3101", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/24b4b1e1-7a89-45f6-858c-242cf53b5bdb-vmess', headers: {host: 'orange-mode-ac6a.xjp0mx2cp.workers.dev'}} }
+  - {name: 'ZZ_2741', server: '134.195.196.81', port: 8118, type: ss, country: 'ZZ_2741', cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
+  - {name: 'ZZ_2560', server: '134.195.196.81', port: 8882, type: ss, country: 'ZZ_2560', cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
+  - {name: 'ZZ_2557', server: '134.195.196.187', port: 7001, type: ss, country: 'ZZ_2557', cipher: 'aes-256-gcm', password: 'RexnBgU7EV5ADxG'}
+  - {name: 'ZZ_2423', server: '134.195.196.68', port: 6697, type: ss, country: 'ZZ_2423', cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
+  - {name: 'ZZ_2689', server: '134.195.196.51', port: 7306, type: ss, country: 'ZZ_2689', cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
+  - {name: 'ZZ_2661', server: '169.197.142.99', port: 5001, type: ss, country: 'ZZ_2661', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: 'ZZ_2744', server: '134.195.196.51', port: 6679, type: ss, country: 'ZZ_2744', cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
+  - {name: 'ZZ_254', server: '134.195.196.81', port: 9101, type: ss, country: 'ZZ_254', cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
+  - {name: 'ZZ_243', server: '134.195.196.81', port: 443, type: ss, country: 'ZZ_243', cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
+  - {name: '🏁ZZ_2662', server: '134.195.196.187', port: 8009, type: ss, country: '🏁ZZ_2662', cipher: 'aes-256-gcm', password: 'XKFKl2rULjIp74'}
+  - {name: 'FR_41', server: '147.135.164.113', port: 44423, type: vmess, uuid: 'e6ee3fe5-7602-47b0-8d8f-52853321107f', alterId: 0, cipher: auto, country: "FR_41", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/', headers: {host: '147.135.164.113'}} }
+  - {name: 'ZZ_2601', server: '134.195.196.3', port: 3306, type: ss, country: 'ZZ_2601', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: 'ZZ_2478', server: '134.195.196.68', port: 8118, type: ss, country: 'ZZ_2478', cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
+  - {name: 'ZZ_2468', server: '134.195.196.68', port: 443, type: ss, country: 'ZZ_2468', cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
+  - {name: 'ZZ_2419', server: '134.195.196.187', port: 443, type: ss, country: 'ZZ_2419', cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
+  - {name: 'ZZ_2629', server: '134.195.196.3', port: 6697, type: ss, country: 'ZZ_2629', cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
+  - {name: '', server: '183.240.132.27', port: 21101, type: vmess, uuid: '1b693eb3-3241-362a-9001-5b503789cfbe', alterId: 2, cipher: auto, country: "", "skip-cert-verify": true, tls: false, network: 'tcp', ws-opts: { path: '/'} }
+  - {name: 'ZZ_2647', server: '134.195.196.81', port: 7306, type: ss, country: 'ZZ_2647', cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
+  - {name: 'ZZ_2554', server: '134.195.196.187', port: 5001, type: ss, country: 'ZZ_2554', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: 'ZZ_2588', server: '134.195.196.81', port: 7002, type: ss, country: 'ZZ_2588', cipher: 'aes-256-gcm', password: 'RexnBgU7EV5ADxG'}
+  - {name: 'ZZ_2548', server: '134.195.196.51', port: 8080, type: ss, country: 'ZZ_2548', cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
+  - {name: 'ZZ_2475', server: '134.195.196.68', port: 5601, type: ss, country: 'ZZ_2475', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - { name: 'Relay_🇫🇷FR-🇱🇺LU_497', server: 's4.upyun.online', port: 12340, type: trojan, country: 'Relay_🇫🇷FR-🇱🇺LU_497', 'skip-cert-verify': true, udp: true, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219 }
+  - {name: 'ZZ_2567', server: '134.195.196.187', port: 9102, type: ss, country: 'ZZ_2567', cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
+  - {name: 'ZZ_2585', server: '134.195.196.3', port: 7306, type: ss, country: 'ZZ_2585', cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
+  - {name: 'ZZ_2559', server: '134.195.196.187', port: 5601, type: ss, country: 'ZZ_2559', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - { name: 'Relay_🇨🇳CN-🇺🇸US_378', server: 's3.upyun.online', port: 12340, type: trojan, country: 'Relay_🇨🇳CN-🇺🇸US_378', 'skip-cert-verify': true, udp: true, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219 }
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 美国(欢迎订阅Youtube破解资源君)_1
-      - 🇭🇰香港(TG/油管at阿伟科技）_2
-      - 🇨🇳中国(TG/油管at阿伟科技）_3
-      - 🇨🇳中国(TG/油管at阿伟科技）_4
-      - 🇨🇳中国(TG/油管at阿伟科技）_5
-      - 🇨🇳中国(TG/油管at阿伟科技）_6
-      - 🇨🇳中国(TG/油管at阿伟科技）_7
-      - 🇨🇳中国(TG/油管at阿伟科技）_8
-      - 🇨🇳中国(TG/油管at阿伟科技）_9
-      - 🇨🇳中国(TG/油管at阿伟科技）_10
+      - JP_635
+      - Relay_🇨🇳CN-🇷🇺RU_360
+      - 🏁ZZ_3843
+      - Relay_🇯🇵JP-🇯🇵JP_1052
+      - US_1133
+      - 🇺🇸US_2588
+      - ZZ_2703
+      - US_1112
+      - ZZ_2594
+      - ZZ_2722
+      - 🇨🇳CN_411
+      - ZZ_2512
+      - ZZ_2738
+      - US_161
+      - ZZ_2556
+      - 🇨🇳CN_410
+      - ZZ_2617
+      - ZZ_2605
+      - 🇺🇸US_2913
+      - Pool__215
+      - Relay_🇺🇸US-🇺🇸US_3101
+      - ZZ_2741
+      - ZZ_2560
+      - ZZ_2557
+      - ZZ_2423
+      - ZZ_2689
+      - ZZ_2661
+      - ZZ_2744
+      - ZZ_254
+      - ZZ_243
+      - 🏁ZZ_2662
+      - FR_41
+      - ZZ_2601
+      - ZZ_2478
+      - ZZ_2468
+      - ZZ_2419
+      - ZZ_2629
+      - 
+      - ZZ_2647
+      - ZZ_2554
+      - ZZ_2588
+      - ZZ_2548
+      - ZZ_2475
+      - Relay_🇫🇷FR-🇱🇺LU_497
+      - ZZ_2567
+      - ZZ_2585
+      - ZZ_2559
+      - Relay_🇨🇳CN-🇺🇸US_378
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 美国(欢迎订阅Youtube破解资源君)_1
-      - 🇭🇰香港(TG/油管at阿伟科技）_2
-      - 🇨🇳中国(TG/油管at阿伟科技）_3
-      - 🇨🇳中国(TG/油管at阿伟科技）_4
-      - 🇨🇳中国(TG/油管at阿伟科技）_5
-      - 🇨🇳中国(TG/油管at阿伟科技）_6
-      - 🇨🇳中国(TG/油管at阿伟科技）_7
-      - 🇨🇳中国(TG/油管at阿伟科技）_8
-      - 🇨🇳中国(TG/油管at阿伟科技）_9
-      - 🇨🇳中国(TG/油管at阿伟科技）_10
+      - JP_635
+      - Relay_🇨🇳CN-🇷🇺RU_360
+      - 🏁ZZ_3843
+      - Relay_🇯🇵JP-🇯🇵JP_1052
+      - US_1133
+      - 🇺🇸US_2588
+      - ZZ_2703
+      - US_1112
+      - ZZ_2594
+      - ZZ_2722
+      - 🇨🇳CN_411
+      - ZZ_2512
+      - ZZ_2738
+      - US_161
+      - ZZ_2556
+      - 🇨🇳CN_410
+      - ZZ_2617
+      - ZZ_2605
+      - 🇺🇸US_2913
+      - Pool__215
+      - Relay_🇺🇸US-🇺🇸US_3101
+      - ZZ_2741
+      - ZZ_2560
+      - ZZ_2557
+      - ZZ_2423
+      - ZZ_2689
+      - ZZ_2661
+      - ZZ_2744
+      - ZZ_254
+      - ZZ_243
+      - 🏁ZZ_2662
+      - FR_41
+      - ZZ_2601
+      - ZZ_2478
+      - ZZ_2468
+      - ZZ_2419
+      - ZZ_2629
+      - 
+      - ZZ_2647
+      - ZZ_2554
+      - ZZ_2588
+      - ZZ_2548
+      - ZZ_2475
+      - Relay_🇫🇷FR-🇱🇺LU_497
+      - ZZ_2567
+      - ZZ_2585
+      - ZZ_2559
+      - Relay_🇨🇳CN-🇺🇸US_378
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国(欢迎订阅Youtube破解资源君)_1
-      - 🇭🇰香港(TG/油管at阿伟科技）_2
-      - 🇨🇳中国(TG/油管at阿伟科技）_3
-      - 🇨🇳中国(TG/油管at阿伟科技）_4
-      - 🇨🇳中国(TG/油管at阿伟科技）_5
-      - 🇨🇳中国(TG/油管at阿伟科技）_6
-      - 🇨🇳中国(TG/油管at阿伟科技）_7
-      - 🇨🇳中国(TG/油管at阿伟科技）_8
-      - 🇨🇳中国(TG/油管at阿伟科技）_9
-      - 🇨🇳中国(TG/油管at阿伟科技）_10
+      - JP_635
+      - Relay_🇨🇳CN-🇷🇺RU_360
+      - 🏁ZZ_3843
+      - Relay_🇯🇵JP-🇯🇵JP_1052
+      - US_1133
+      - 🇺🇸US_2588
+      - ZZ_2703
+      - US_1112
+      - ZZ_2594
+      - ZZ_2722
+      - 🇨🇳CN_411
+      - ZZ_2512
+      - ZZ_2738
+      - US_161
+      - ZZ_2556
+      - 🇨🇳CN_410
+      - ZZ_2617
+      - ZZ_2605
+      - 🇺🇸US_2913
+      - Pool__215
+      - Relay_🇺🇸US-🇺🇸US_3101
+      - ZZ_2741
+      - ZZ_2560
+      - ZZ_2557
+      - ZZ_2423
+      - ZZ_2689
+      - ZZ_2661
+      - ZZ_2744
+      - ZZ_254
+      - ZZ_243
+      - 🏁ZZ_2662
+      - FR_41
+      - ZZ_2601
+      - ZZ_2478
+      - ZZ_2468
+      - ZZ_2419
+      - ZZ_2629
+      - 
+      - ZZ_2647
+      - ZZ_2554
+      - ZZ_2588
+      - ZZ_2548
+      - ZZ_2475
+      - Relay_🇫🇷FR-🇱🇺LU_497
+      - ZZ_2567
+      - ZZ_2585
+      - ZZ_2559
+      - Relay_🇨🇳CN-🇺🇸US_378
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 美国(欢迎订阅Youtube破解资源君)_1
-      - 🇭🇰香港(TG/油管at阿伟科技）_2
-      - 🇨🇳中国(TG/油管at阿伟科技）_3
-      - 🇨🇳中国(TG/油管at阿伟科技）_4
-      - 🇨🇳中国(TG/油管at阿伟科技）_5
-      - 🇨🇳中国(TG/油管at阿伟科技）_6
-      - 🇨🇳中国(TG/油管at阿伟科技）_7
-      - 🇨🇳中国(TG/油管at阿伟科技）_8
-      - 🇨🇳中国(TG/油管at阿伟科技）_9
-      - 🇨🇳中国(TG/油管at阿伟科技）_10
+      - JP_635
+      - Relay_🇨🇳CN-🇷🇺RU_360
+      - 🏁ZZ_3843
+      - Relay_🇯🇵JP-🇯🇵JP_1052
+      - US_1133
+      - 🇺🇸US_2588
+      - ZZ_2703
+      - US_1112
+      - ZZ_2594
+      - ZZ_2722
+      - 🇨🇳CN_411
+      - ZZ_2512
+      - ZZ_2738
+      - US_161
+      - ZZ_2556
+      - 🇨🇳CN_410
+      - ZZ_2617
+      - ZZ_2605
+      - 🇺🇸US_2913
+      - Pool__215
+      - Relay_🇺🇸US-🇺🇸US_3101
+      - ZZ_2741
+      - ZZ_2560
+      - ZZ_2557
+      - ZZ_2423
+      - ZZ_2689
+      - ZZ_2661
+      - ZZ_2744
+      - ZZ_254
+      - ZZ_243
+      - 🏁ZZ_2662
+      - FR_41
+      - ZZ_2601
+      - ZZ_2478
+      - ZZ_2468
+      - ZZ_2419
+      - ZZ_2629
+      - 
+      - ZZ_2647
+      - ZZ_2554
+      - ZZ_2588
+      - ZZ_2548
+      - ZZ_2475
+      - Relay_🇫🇷FR-🇱🇺LU_497
+      - ZZ_2567
+      - ZZ_2585
+      - ZZ_2559
+      - Relay_🇨🇳CN-🇺🇸US_378
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 美国(欢迎订阅Youtube破解资源君)_1
-      - 🇭🇰香港(TG/油管at阿伟科技）_2
-      - 🇨🇳中国(TG/油管at阿伟科技）_3
-      - 🇨🇳中国(TG/油管at阿伟科技）_4
-      - 🇨🇳中国(TG/油管at阿伟科技）_5
-      - 🇨🇳中国(TG/油管at阿伟科技）_6
-      - 🇨🇳中国(TG/油管at阿伟科技）_7
-      - 🇨🇳中国(TG/油管at阿伟科技）_8
-      - 🇨🇳中国(TG/油管at阿伟科技）_9
-      - 🇨🇳中国(TG/油管at阿伟科技）_10
+      - JP_635
+      - Relay_🇨🇳CN-🇷🇺RU_360
+      - 🏁ZZ_3843
+      - Relay_🇯🇵JP-🇯🇵JP_1052
+      - US_1133
+      - 🇺🇸US_2588
+      - ZZ_2703
+      - US_1112
+      - ZZ_2594
+      - ZZ_2722
+      - 🇨🇳CN_411
+      - ZZ_2512
+      - ZZ_2738
+      - US_161
+      - ZZ_2556
+      - 🇨🇳CN_410
+      - ZZ_2617
+      - ZZ_2605
+      - 🇺🇸US_2913
+      - Pool__215
+      - Relay_🇺🇸US-🇺🇸US_3101
+      - ZZ_2741
+      - ZZ_2560
+      - ZZ_2557
+      - ZZ_2423
+      - ZZ_2689
+      - ZZ_2661
+      - ZZ_2744
+      - ZZ_254
+      - ZZ_243
+      - 🏁ZZ_2662
+      - FR_41
+      - ZZ_2601
+      - ZZ_2478
+      - ZZ_2468
+      - ZZ_2419
+      - ZZ_2629
+      - 
+      - ZZ_2647
+      - ZZ_2554
+      - ZZ_2588
+      - ZZ_2548
+      - ZZ_2475
+      - Relay_🇫🇷FR-🇱🇺LU_497
+      - ZZ_2567
+      - ZZ_2585
+      - ZZ_2559
+      - Relay_🇨🇳CN-🇺🇸US_378
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 美国(欢迎订阅Youtube破解资源君)_1
-      - 🇭🇰香港(TG/油管at阿伟科技）_2
-      - 🇨🇳中国(TG/油管at阿伟科技）_3
-      - 🇨🇳中国(TG/油管at阿伟科技）_4
-      - 🇨🇳中国(TG/油管at阿伟科技）_5
-      - 🇨🇳中国(TG/油管at阿伟科技）_6
-      - 🇨🇳中国(TG/油管at阿伟科技）_7
-      - 🇨🇳中国(TG/油管at阿伟科技）_8
-      - 🇨🇳中国(TG/油管at阿伟科技）_9
-      - 🇨🇳中国(TG/油管at阿伟科技）_10
+      - JP_635
+      - Relay_🇨🇳CN-🇷🇺RU_360
+      - 🏁ZZ_3843
+      - Relay_🇯🇵JP-🇯🇵JP_1052
+      - US_1133
+      - 🇺🇸US_2588
+      - ZZ_2703
+      - US_1112
+      - ZZ_2594
+      - ZZ_2722
+      - 🇨🇳CN_411
+      - ZZ_2512
+      - ZZ_2738
+      - US_161
+      - ZZ_2556
+      - 🇨🇳CN_410
+      - ZZ_2617
+      - ZZ_2605
+      - 🇺🇸US_2913
+      - Pool__215
+      - Relay_🇺🇸US-🇺🇸US_3101
+      - ZZ_2741
+      - ZZ_2560
+      - ZZ_2557
+      - ZZ_2423
+      - ZZ_2689
+      - ZZ_2661
+      - ZZ_2744
+      - ZZ_254
+      - ZZ_243
+      - 🏁ZZ_2662
+      - FR_41
+      - ZZ_2601
+      - ZZ_2478
+      - ZZ_2468
+      - ZZ_2419
+      - ZZ_2629
+      - 
+      - ZZ_2647
+      - ZZ_2554
+      - ZZ_2588
+      - ZZ_2548
+      - ZZ_2475
+      - Relay_🇫🇷FR-🇱🇺LU_497
+      - ZZ_2567
+      - ZZ_2585
+      - ZZ_2559
+      - Relay_🇨🇳CN-🇺🇸US_378
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -130,16 +396,54 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国(欢迎订阅Youtube破解资源君)_1
-      - 🇭🇰香港(TG/油管at阿伟科技）_2
-      - 🇨🇳中国(TG/油管at阿伟科技）_3
-      - 🇨🇳中国(TG/油管at阿伟科技）_4
-      - 🇨🇳中国(TG/油管at阿伟科技）_5
-      - 🇨🇳中国(TG/油管at阿伟科技）_6
-      - 🇨🇳中国(TG/油管at阿伟科技）_7
-      - 🇨🇳中国(TG/油管at阿伟科技）_8
-      - 🇨🇳中国(TG/油管at阿伟科技）_9
-      - 🇨🇳中国(TG/油管at阿伟科技）_10
+      - JP_635
+      - Relay_🇨🇳CN-🇷🇺RU_360
+      - 🏁ZZ_3843
+      - Relay_🇯🇵JP-🇯🇵JP_1052
+      - US_1133
+      - 🇺🇸US_2588
+      - ZZ_2703
+      - US_1112
+      - ZZ_2594
+      - ZZ_2722
+      - 🇨🇳CN_411
+      - ZZ_2512
+      - ZZ_2738
+      - US_161
+      - ZZ_2556
+      - 🇨🇳CN_410
+      - ZZ_2617
+      - ZZ_2605
+      - 🇺🇸US_2913
+      - Pool__215
+      - Relay_🇺🇸US-🇺🇸US_3101
+      - ZZ_2741
+      - ZZ_2560
+      - ZZ_2557
+      - ZZ_2423
+      - ZZ_2689
+      - ZZ_2661
+      - ZZ_2744
+      - ZZ_254
+      - ZZ_243
+      - 🏁ZZ_2662
+      - FR_41
+      - ZZ_2601
+      - ZZ_2478
+      - ZZ_2468
+      - ZZ_2419
+      - ZZ_2629
+      - 
+      - ZZ_2647
+      - ZZ_2554
+      - ZZ_2588
+      - ZZ_2548
+      - ZZ_2475
+      - Relay_🇫🇷FR-🇱🇺LU_497
+      - ZZ_2567
+      - ZZ_2585
+      - ZZ_2559
+      - Relay_🇨🇳CN-🇺🇸US_378
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
