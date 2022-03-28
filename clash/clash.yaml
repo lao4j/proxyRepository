@@ -4,47 +4,348 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
-proxies:
-  - {"name":"clash_1","server":"chinamobile.ga","port":37344,"type":"vmess","uuid":"667bea8e-250e-4763-cb52-1e437356109e","alterId":0,"cipher":"auto","country":"clash_1","skip-cert-verify":true,"tls":true,"network":"tcp"}
+proxies: 
+  - {name: 'Relay_🇯🇵JP-🇯🇵JP_1122', server: 'lin1.free80ml.tk', port: 80, type: vmess, uuid: '4e1d0b12-25f0-363f-8659-9c6a3ca1fcda', alterId: 0, cipher: auto, country: "Relay_🇯🇵JP-🇯🇵JP_1122", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/', headers: {host: 'lin1.free80ml.tk'}} }
+  - {name: 'ChinaShenzhen048_2', server: '183.232.56.161', port: 1202, type: vmess, uuid: '3a226645-c640-39a2-8177-000381e29f20', alterId: 0, cipher: auto, country: "ChinaShenzhen048_2", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'microsoft.com'}} }
+  - {name: 'Relay_🇨🇳CN-🇲🇾MY_25_5_87Mb_3', server: '183.232.56.161', port: 5019, type: vmess, uuid: '3a226645-c640-39a2-8177-000381e29f20', alterId: 0, cipher: auto, country: "Relay_🇨🇳CN-🇲🇾MY_25_5_87Mb_3", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray'} }
+  - { name: 'Relay_🇺🇸US-🇺🇸US_2270+_15_12Mb_4', server: 'ccnxray.aimdd.com', port: 443, type: trojan, country: 'Relay_🇺🇸US-🇺🇸US_2270+_15_12Mb_4', 'skip-cert-verify': true, udp: true, password: cc..1234 }
+  - {name: 'free80_ml_5', server: 'lin1.free80ml.tk', port: 80, type: vmess, uuid: '4e1d0b12-25f0-363f-8659-9c6a3ca1fcda', alterId: 0, cipher: auto, country: "free80_ml_5", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/', headers: {host: '%7B%22Host%22:%22lin1.free80ml.tk%22%7D'}} }
+  - {name: 'Relay_🇯🇵JP-🇯🇵JP_42_16_29Mb_6', server: 'lin1.free80ml.tk', port: 80, type: vmess, uuid: '4e1d0b12-25f0-363f-8659-9c6a3ca1fcda', alterId: 0, cipher: auto, country: "Relay_🇯🇵JP-🇯🇵JP_42_16_29Mb_6", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/'} }
+  - { name: 'Relay_🇯🇵JP-🇯🇵JP_652+_34_57Mb_7', server: 'dbnxray.aimdd.com', port: 443, type: trojan, country: 'Relay_🇯🇵JP-🇯🇵JP_652+_34_57Mb_7', 'skip-cert-verify': true, udp: true, password: cc..1234 }
+  - {name: 'Relay_🇨🇳CN-🇲🇾MY_22_7_52Mb_8', server: '183.232.56.161', port: 5018, type: vmess, uuid: '3a226645-c640-39a2-8177-000381e29f20', alterId: 0, cipher: auto, country: "Relay_🇨🇳CN-🇲🇾MY_22_7_52Mb_8", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray'} }
+  - {name: 'Relay_🇨🇳CN-🏁ZZ_21_2_20Mb_9', server: '183.232.56.161', port: 1602, type: vmess, uuid: '3a226645-c640-39a2-8177-000381e29f20', alterId: 0, cipher: auto, country: "Relay_🇨🇳CN-🏁ZZ_21_2_20Mb_9", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray'} }
+  - {name: 'Relay_🇨🇳CN-🏁ZZ_27', server: 'sg62-v2-zz.ddns.177588.xyz', port: 662, type: vmess, uuid: '1d193dfa-9a49-340c-90e8-af2f56579281', alterId: 0, cipher: auto, country: "Relay_🇨🇳CN-🏁ZZ_27", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/wmsxwd'} }
+  - {name: 'Relay_🇨🇳CN-🇮🇳IN_30_5_94Mb_11', server: '183.232.56.161', port: 8004, type: vmess, uuid: '3a226645-c640-39a2-8177-000381e29f20', alterId: 0, cipher: auto, country: "Relay_🇨🇳CN-🇮🇳IN_30_5_94Mb_11", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray'} }
+  - { name: 'Relay_🇺🇸US-🇺🇸US_2269+_+3_51Mb_12', server: 'usxray.salir.cl', port: 443, type: trojan, country: 'Relay_🇺🇸US-🇺🇸US_2269+_+3_51Mb_12', 'skip-cert-verify': true, udp: true, password: cc..1234 }
+  - {name: 'Relay_🇨🇳CN-🇩🇪DE_24_1_79Mb_13', server: '183.232.56.161', port: 1211, type: vmess, uuid: '3a226645-c640-39a2-8177-000381e29f20', alterId: 0, cipher: auto, country: "Relay_🇨🇳CN-🇩🇪DE_24_1_79Mb_13", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray'} }
+  - {name: 'Relay_🏁ZZ-🏁ZZ_152_3_16Mb_14', server: '0320hk567.fans8.xyz', port: 443, type: vmess, uuid: '5c70da5d-e641-3bf8-b7dc-5babd843ff3c', alterId: 2, cipher: auto, country: "Relay_🏁ZZ-🏁ZZ_152_3_16Mb_14", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/ray'} }
+  - {name: 'Relay_🇨🇳CN-🇬🇧GB_31_2_22Mb_15', server: '183.232.56.161', port: 1801, type: vmess, uuid: '3a226645-c640-39a2-8177-000381e29f20', alterId: 0, cipher: auto, country: "Relay_🇨🇳CN-🇬🇧GB_31_2_22Mb_15", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray'} }
+  - {name: 'Relay_🇨🇦CA-🇨🇦CA_03_10_11Mb_16', server: '0320hk857.fans8.xyz', port: 443, type: vmess, uuid: '5c70da5d-e641-3bf8-b7dc-5babd843ff3c', alterId: 2, cipher: auto, country: "Relay_🇨🇦CA-🇨🇦CA_03_10_11Mb_16", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/ray'} }
+  - {name: '1091_17', server: '134.195.198.211', port: 443, type: ss, country: '1091_17', cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
+  - {name: 'CN_', server: 'sg62-v2-zz.ddns.177588.xyz', port: 662, type: vmess, uuid: '1d193dfa-9a49-340c-90e8-af2f56579281', alterId: 0, cipher: auto, country: "CN_", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/wmsxwd', headers: {host: 'sg62-v2-zz.ddns.177588.xyz'}} }
+  - {name: 'United+States+Los+Angeles+002_19', server: '88.218.92.162', port: 12345, type: ss, country: 'United+States+Los+Angeles+002_19', cipher: 'aes-256-gcm', password: 'dongtaiwang.com'}
+  - {name: 'US_+10', server: '167.88.63.108', port: 7001, type: ss, country: 'US_+10', cipher: 'aes-256-gcm', password: 'RexnBgU7EV5ADxG'}
+  - {name: 'US_+32', server: '167.88.63.108', port: 7307, type: ss, country: 'US_+32', cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
+  - {name: 'Relay_🇨🇳CN-🇺🇸US_35_2_53Mb_22', server: '183.232.56.161', port: 1703, type: vmess, uuid: '3a226645-c640-39a2-8177-000381e29f20', alterId: 0, cipher: auto, country: "Relay_🇨🇳CN-🇺🇸US_35_2_53Mb_22", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray'} }
+  - {name: 'CA_+31', server: '134.195.196.51', port: 8881, type: ss, country: 'CA_+31', cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
+  - {name: 'US_+22', server: '167.88.63.108', port: 8080, type: ss, country: 'US_+22', cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
+  - {name: 'Relay_🇨🇳CN-🇮🇷IR_36_2_12Mb_25', server: '183.232.56.161', port: 9111, type: vmess, uuid: '3a226645-c640-39a2-8177-000381e29f20', alterId: 0, cipher: auto, country: "Relay_🇨🇳CN-🇮🇷IR_36_2_12Mb_25", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray'} }
+  - {name: '', server: '149.248.34.24', port: 35803, type: vmess, uuid: '0631fd14-e268-4bb0-f447-f319f5ba0833', alterId: 0, cipher: auto, country: "", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/wis', headers: {host: '149.248.34.24'}} }
+  - {name: 'CA_+17', server: '134.195.196.51', port: 443, type: ss, country: 'CA_+17', cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
+  - { name: 'US_+40', server: 'tj-us02.yiyodns.xyz', port: 443, type: trojan, country: 'US_+40', 'skip-cert-verify': true, udp: true, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: 'tj-us02.yiyodns.xyz' }
+  - {name: '🇨🇳CN_44_7_99Mb_29', server: '183.232.56.161', port: 1612, type: vmess, uuid: '3a226645-c640-39a2-8177-000381e29f20', alterId: 0, cipher: auto, country: "🇨🇳CN_44_7_99Mb_29", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray'} }
+  - {name: 'Relay__5_65Mb_30', server: '0319tw123.fans8.xyz', port: 443, type: vmess, uuid: '5c70da5d-e641-3bf8-b7dc-5babd843ff3c', alterId: 2, cipher: auto, country: "Relay__5_65Mb_30", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/nmsl'} }
+  - {name: 'Relay_🇨🇦CA-🇨🇦CA_400', server: '0322tw.fans8.xyz', port: 443, type: vmess, uuid: '5c70da5d-e641-3bf8-b7dc-5babd843ff3c', alterId: 2, cipher: auto, country: "Relay_🇨🇦CA-🇨🇦CA_400", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/nl'} }
+  - {name: '🇰🇷KR_718', server: 'vws.liubiaosite.com', port: 443, type: vmess, uuid: 'e05867fa-1d60-40be-8456-80c6e7e038c8', alterId: 0, cipher: auto, country: "🇰🇷KR_718", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/'} }
+  - {name: 'Relay_🇨🇦CA-🇨🇦CA_02', server: '0314tw02.fans8.xyz', port: 443, type: vmess, uuid: '5c70da5d-e641-3bf8-b7dc-5babd843ff3c', alterId: 3, cipher: auto, country: "Relay_🇨🇦CA-🇨🇦CA_02", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/ray'} }
+  - {name: 'US_+34', server: '167.88.63.108', port: 9102, type: ss, country: 'US_+34', cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
+  - {name: 'CA_+27', server: '134.195.196.3', port: 8000, type: ss, country: 'CA_+27', cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
+  - {name: 'CN_9', server: '183.240.132.27', port: 21209, type: vmess, uuid: '1b693eb3-3241-362a-9001-5b503789cfbe', alterId: 2, cipher: auto, country: "CN_9", "skip-cert-verify": true, tls: false, network: 'tcp' }
+  - {name: 'US_+21', server: '167.88.63.108', port: 8888, type: ss, country: 'US_+21', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: 'US_+15', server: '167.88.63.108', port: 8000, type: ss, country: 'US_+15', cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
+  - {name: 'CA_+32', server: '134.195.196.51', port: 5500, type: ss, country: 'CA_+32', cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
+  - {name: 'Relay_🇨🇳CN-🇷🇺RU_342_11_51Mb_40', server: '183.240.132.27', port: 21209, type: vmess, uuid: '1b693eb3-3241-362a-9001-5b503789cfbe', alterId: 2, cipher: auto, country: "Relay_🇨🇳CN-🇷🇺RU_342_11_51Mb_40", "skip-cert-verify": true, tls: false, network: 'tcp', ws-opts: { path: '/'} }
+  - { name: 'Relay_🇺🇸+US-🇺🇸US_1516', server: 'tj-us01.yiyodns.xyz', port: 443, type: trojan, country: 'Relay_🇺🇸+US-🇺🇸US_1516', 'skip-cert-verify': true, udp: true, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc }
+  - {name: 'Relay__5_36Mb_42', server: '0319hzm01.fans8.xyz', port: 443, type: vmess, uuid: '5c70da5d-e641-3bf8-b7dc-5babd843ff3c', alterId: 2, cipher: auto, country: "Relay__5_36Mb_42", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/nmsl'} }
+  - {name: '🇯🇵JP_675', server: '139.162.122.205', port: 3845, type: vmess, uuid: '76d5c6e3-c74c-3406-b9e8-9859d0a71c56', alterId: 0, cipher: auto, country: "🇯🇵JP_675", "skip-cert-verify": true, tls: false, network: 'tcp', ws-opts: { path: '/'} }
+  - {name: 'Relay_🇨🇦CA-🇨🇦CA_399', server: '0320jp.fans8.xyz', port: 443, type: vmess, uuid: '5c70da5d-e641-3bf8-b7dc-5babd843ff3c', alterId: 2, cipher: auto, country: "Relay_🇨🇦CA-🇨🇦CA_399", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/ray'} }
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - clash_1
+      - Relay_🇯🇵JP-🇯🇵JP_1122
+      - ChinaShenzhen048_2
+      - Relay_🇨🇳CN-🇲🇾MY_25_5_87Mb_3
+      - Relay_🇺🇸US-🇺🇸US_2270+_15_12Mb_4
+      - free80_ml_5
+      - Relay_🇯🇵JP-🇯🇵JP_42_16_29Mb_6
+      - Relay_🇯🇵JP-🇯🇵JP_652+_34_57Mb_7
+      - Relay_🇨🇳CN-🇲🇾MY_22_7_52Mb_8
+      - Relay_🇨🇳CN-🏁ZZ_21_2_20Mb_9
+      - Relay_🇨🇳CN-🏁ZZ_27
+      - Relay_🇨🇳CN-🇮🇳IN_30_5_94Mb_11
+      - Relay_🇺🇸US-🇺🇸US_2269+_+3_51Mb_12
+      - Relay_🇨🇳CN-🇩🇪DE_24_1_79Mb_13
+      - Relay_🏁ZZ-🏁ZZ_152_3_16Mb_14
+      - Relay_🇨🇳CN-🇬🇧GB_31_2_22Mb_15
+      - Relay_🇨🇦CA-🇨🇦CA_03_10_11Mb_16
+      - 1091_17
+      - CN_
+      - United+States+Los+Angeles+002_19
+      - US_+10
+      - US_+32
+      - Relay_🇨🇳CN-🇺🇸US_35_2_53Mb_22
+      - CA_+31
+      - US_+22
+      - Relay_🇨🇳CN-🇮🇷IR_36_2_12Mb_25
+      - 
+      - CA_+17
+      - US_+40
+      - 🇨🇳CN_44_7_99Mb_29
+      - Relay__5_65Mb_30
+      - Relay_🇨🇦CA-🇨🇦CA_400
+      - 🇰🇷KR_718
+      - Relay_🇨🇦CA-🇨🇦CA_02
+      - US_+34
+      - CA_+27
+      - CN_9
+      - US_+21
+      - US_+15
+      - CA_+32
+      - Relay_🇨🇳CN-🇷🇺RU_342_11_51Mb_40
+      - Relay_🇺🇸+US-🇺🇸US_1516
+      - Relay__5_36Mb_42
+      - 🇯🇵JP_675
+      - Relay_🇨🇦CA-🇨🇦CA_399
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - clash_1
+      - Relay_🇯🇵JP-🇯🇵JP_1122
+      - ChinaShenzhen048_2
+      - Relay_🇨🇳CN-🇲🇾MY_25_5_87Mb_3
+      - Relay_🇺🇸US-🇺🇸US_2270+_15_12Mb_4
+      - free80_ml_5
+      - Relay_🇯🇵JP-🇯🇵JP_42_16_29Mb_6
+      - Relay_🇯🇵JP-🇯🇵JP_652+_34_57Mb_7
+      - Relay_🇨🇳CN-🇲🇾MY_22_7_52Mb_8
+      - Relay_🇨🇳CN-🏁ZZ_21_2_20Mb_9
+      - Relay_🇨🇳CN-🏁ZZ_27
+      - Relay_🇨🇳CN-🇮🇳IN_30_5_94Mb_11
+      - Relay_🇺🇸US-🇺🇸US_2269+_+3_51Mb_12
+      - Relay_🇨🇳CN-🇩🇪DE_24_1_79Mb_13
+      - Relay_🏁ZZ-🏁ZZ_152_3_16Mb_14
+      - Relay_🇨🇳CN-🇬🇧GB_31_2_22Mb_15
+      - Relay_🇨🇦CA-🇨🇦CA_03_10_11Mb_16
+      - 1091_17
+      - CN_
+      - United+States+Los+Angeles+002_19
+      - US_+10
+      - US_+32
+      - Relay_🇨🇳CN-🇺🇸US_35_2_53Mb_22
+      - CA_+31
+      - US_+22
+      - Relay_🇨🇳CN-🇮🇷IR_36_2_12Mb_25
+      - 
+      - CA_+17
+      - US_+40
+      - 🇨🇳CN_44_7_99Mb_29
+      - Relay__5_65Mb_30
+      - Relay_🇨🇦CA-🇨🇦CA_400
+      - 🇰🇷KR_718
+      - Relay_🇨🇦CA-🇨🇦CA_02
+      - US_+34
+      - CA_+27
+      - CN_9
+      - US_+21
+      - US_+15
+      - CA_+32
+      - Relay_🇨🇳CN-🇷🇺RU_342_11_51Mb_40
+      - Relay_🇺🇸+US-🇺🇸US_1516
+      - Relay__5_36Mb_42
+      - 🇯🇵JP_675
+      - Relay_🇨🇦CA-🇨🇦CA_399
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - clash_1
+      - Relay_🇯🇵JP-🇯🇵JP_1122
+      - ChinaShenzhen048_2
+      - Relay_🇨🇳CN-🇲🇾MY_25_5_87Mb_3
+      - Relay_🇺🇸US-🇺🇸US_2270+_15_12Mb_4
+      - free80_ml_5
+      - Relay_🇯🇵JP-🇯🇵JP_42_16_29Mb_6
+      - Relay_🇯🇵JP-🇯🇵JP_652+_34_57Mb_7
+      - Relay_🇨🇳CN-🇲🇾MY_22_7_52Mb_8
+      - Relay_🇨🇳CN-🏁ZZ_21_2_20Mb_9
+      - Relay_🇨🇳CN-🏁ZZ_27
+      - Relay_🇨🇳CN-🇮🇳IN_30_5_94Mb_11
+      - Relay_🇺🇸US-🇺🇸US_2269+_+3_51Mb_12
+      - Relay_🇨🇳CN-🇩🇪DE_24_1_79Mb_13
+      - Relay_🏁ZZ-🏁ZZ_152_3_16Mb_14
+      - Relay_🇨🇳CN-🇬🇧GB_31_2_22Mb_15
+      - Relay_🇨🇦CA-🇨🇦CA_03_10_11Mb_16
+      - 1091_17
+      - CN_
+      - United+States+Los+Angeles+002_19
+      - US_+10
+      - US_+32
+      - Relay_🇨🇳CN-🇺🇸US_35_2_53Mb_22
+      - CA_+31
+      - US_+22
+      - Relay_🇨🇳CN-🇮🇷IR_36_2_12Mb_25
+      - 
+      - CA_+17
+      - US_+40
+      - 🇨🇳CN_44_7_99Mb_29
+      - Relay__5_65Mb_30
+      - Relay_🇨🇦CA-🇨🇦CA_400
+      - 🇰🇷KR_718
+      - Relay_🇨🇦CA-🇨🇦CA_02
+      - US_+34
+      - CA_+27
+      - CN_9
+      - US_+21
+      - US_+15
+      - CA_+32
+      - Relay_🇨🇳CN-🇷🇺RU_342_11_51Mb_40
+      - Relay_🇺🇸+US-🇺🇸US_1516
+      - Relay__5_36Mb_42
+      - 🇯🇵JP_675
+      - Relay_🇨🇦CA-🇨🇦CA_399
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - clash_1
+      - Relay_🇯🇵JP-🇯🇵JP_1122
+      - ChinaShenzhen048_2
+      - Relay_🇨🇳CN-🇲🇾MY_25_5_87Mb_3
+      - Relay_🇺🇸US-🇺🇸US_2270+_15_12Mb_4
+      - free80_ml_5
+      - Relay_🇯🇵JP-🇯🇵JP_42_16_29Mb_6
+      - Relay_🇯🇵JP-🇯🇵JP_652+_34_57Mb_7
+      - Relay_🇨🇳CN-🇲🇾MY_22_7_52Mb_8
+      - Relay_🇨🇳CN-🏁ZZ_21_2_20Mb_9
+      - Relay_🇨🇳CN-🏁ZZ_27
+      - Relay_🇨🇳CN-🇮🇳IN_30_5_94Mb_11
+      - Relay_🇺🇸US-🇺🇸US_2269+_+3_51Mb_12
+      - Relay_🇨🇳CN-🇩🇪DE_24_1_79Mb_13
+      - Relay_🏁ZZ-🏁ZZ_152_3_16Mb_14
+      - Relay_🇨🇳CN-🇬🇧GB_31_2_22Mb_15
+      - Relay_🇨🇦CA-🇨🇦CA_03_10_11Mb_16
+      - 1091_17
+      - CN_
+      - United+States+Los+Angeles+002_19
+      - US_+10
+      - US_+32
+      - Relay_🇨🇳CN-🇺🇸US_35_2_53Mb_22
+      - CA_+31
+      - US_+22
+      - Relay_🇨🇳CN-🇮🇷IR_36_2_12Mb_25
+      - 
+      - CA_+17
+      - US_+40
+      - 🇨🇳CN_44_7_99Mb_29
+      - Relay__5_65Mb_30
+      - Relay_🇨🇦CA-🇨🇦CA_400
+      - 🇰🇷KR_718
+      - Relay_🇨🇦CA-🇨🇦CA_02
+      - US_+34
+      - CA_+27
+      - CN_9
+      - US_+21
+      - US_+15
+      - CA_+32
+      - Relay_🇨🇳CN-🇷🇺RU_342_11_51Mb_40
+      - Relay_🇺🇸+US-🇺🇸US_1516
+      - Relay__5_36Mb_42
+      - 🇯🇵JP_675
+      - Relay_🇨🇦CA-🇨🇦CA_399
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - clash_1
+      - Relay_🇯🇵JP-🇯🇵JP_1122
+      - ChinaShenzhen048_2
+      - Relay_🇨🇳CN-🇲🇾MY_25_5_87Mb_3
+      - Relay_🇺🇸US-🇺🇸US_2270+_15_12Mb_4
+      - free80_ml_5
+      - Relay_🇯🇵JP-🇯🇵JP_42_16_29Mb_6
+      - Relay_🇯🇵JP-🇯🇵JP_652+_34_57Mb_7
+      - Relay_🇨🇳CN-🇲🇾MY_22_7_52Mb_8
+      - Relay_🇨🇳CN-🏁ZZ_21_2_20Mb_9
+      - Relay_🇨🇳CN-🏁ZZ_27
+      - Relay_🇨🇳CN-🇮🇳IN_30_5_94Mb_11
+      - Relay_🇺🇸US-🇺🇸US_2269+_+3_51Mb_12
+      - Relay_🇨🇳CN-🇩🇪DE_24_1_79Mb_13
+      - Relay_🏁ZZ-🏁ZZ_152_3_16Mb_14
+      - Relay_🇨🇳CN-🇬🇧GB_31_2_22Mb_15
+      - Relay_🇨🇦CA-🇨🇦CA_03_10_11Mb_16
+      - 1091_17
+      - CN_
+      - United+States+Los+Angeles+002_19
+      - US_+10
+      - US_+32
+      - Relay_🇨🇳CN-🇺🇸US_35_2_53Mb_22
+      - CA_+31
+      - US_+22
+      - Relay_🇨🇳CN-🇮🇷IR_36_2_12Mb_25
+      - 
+      - CA_+17
+      - US_+40
+      - 🇨🇳CN_44_7_99Mb_29
+      - Relay__5_65Mb_30
+      - Relay_🇨🇦CA-🇨🇦CA_400
+      - 🇰🇷KR_718
+      - Relay_🇨🇦CA-🇨🇦CA_02
+      - US_+34
+      - CA_+27
+      - CN_9
+      - US_+21
+      - US_+15
+      - CA_+32
+      - Relay_🇨🇳CN-🇷🇺RU_342_11_51Mb_40
+      - Relay_🇺🇸+US-🇺🇸US_1516
+      - Relay__5_36Mb_42
+      - 🇯🇵JP_675
+      - Relay_🇨🇦CA-🇨🇦CA_399
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - clash_1
+      - Relay_🇯🇵JP-🇯🇵JP_1122
+      - ChinaShenzhen048_2
+      - Relay_🇨🇳CN-🇲🇾MY_25_5_87Mb_3
+      - Relay_🇺🇸US-🇺🇸US_2270+_15_12Mb_4
+      - free80_ml_5
+      - Relay_🇯🇵JP-🇯🇵JP_42_16_29Mb_6
+      - Relay_🇯🇵JP-🇯🇵JP_652+_34_57Mb_7
+      - Relay_🇨🇳CN-🇲🇾MY_22_7_52Mb_8
+      - Relay_🇨🇳CN-🏁ZZ_21_2_20Mb_9
+      - Relay_🇨🇳CN-🏁ZZ_27
+      - Relay_🇨🇳CN-🇮🇳IN_30_5_94Mb_11
+      - Relay_🇺🇸US-🇺🇸US_2269+_+3_51Mb_12
+      - Relay_🇨🇳CN-🇩🇪DE_24_1_79Mb_13
+      - Relay_🏁ZZ-🏁ZZ_152_3_16Mb_14
+      - Relay_🇨🇳CN-🇬🇧GB_31_2_22Mb_15
+      - Relay_🇨🇦CA-🇨🇦CA_03_10_11Mb_16
+      - 1091_17
+      - CN_
+      - United+States+Los+Angeles+002_19
+      - US_+10
+      - US_+32
+      - Relay_🇨🇳CN-🇺🇸US_35_2_53Mb_22
+      - CA_+31
+      - US_+22
+      - Relay_🇨🇳CN-🇮🇷IR_36_2_12Mb_25
+      - 
+      - CA_+17
+      - US_+40
+      - 🇨🇳CN_44_7_99Mb_29
+      - Relay__5_65Mb_30
+      - Relay_🇨🇦CA-🇨🇦CA_400
+      - 🇰🇷KR_718
+      - Relay_🇨🇦CA-🇨🇦CA_02
+      - US_+34
+      - CA_+27
+      - CN_9
+      - US_+21
+      - US_+15
+      - CA_+32
+      - Relay_🇨🇳CN-🇷🇺RU_342_11_51Mb_40
+      - Relay_🇺🇸+US-🇺🇸US_1516
+      - Relay__5_36Mb_42
+      - 🇯🇵JP_675
+      - Relay_🇨🇦CA-🇨🇦CA_399
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -67,7 +368,50 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - clash_1
+      - Relay_🇯🇵JP-🇯🇵JP_1122
+      - ChinaShenzhen048_2
+      - Relay_🇨🇳CN-🇲🇾MY_25_5_87Mb_3
+      - Relay_🇺🇸US-🇺🇸US_2270+_15_12Mb_4
+      - free80_ml_5
+      - Relay_🇯🇵JP-🇯🇵JP_42_16_29Mb_6
+      - Relay_🇯🇵JP-🇯🇵JP_652+_34_57Mb_7
+      - Relay_🇨🇳CN-🇲🇾MY_22_7_52Mb_8
+      - Relay_🇨🇳CN-🏁ZZ_21_2_20Mb_9
+      - Relay_🇨🇳CN-🏁ZZ_27
+      - Relay_🇨🇳CN-🇮🇳IN_30_5_94Mb_11
+      - Relay_🇺🇸US-🇺🇸US_2269+_+3_51Mb_12
+      - Relay_🇨🇳CN-🇩🇪DE_24_1_79Mb_13
+      - Relay_🏁ZZ-🏁ZZ_152_3_16Mb_14
+      - Relay_🇨🇳CN-🇬🇧GB_31_2_22Mb_15
+      - Relay_🇨🇦CA-🇨🇦CA_03_10_11Mb_16
+      - 1091_17
+      - CN_
+      - United+States+Los+Angeles+002_19
+      - US_+10
+      - US_+32
+      - Relay_🇨🇳CN-🇺🇸US_35_2_53Mb_22
+      - CA_+31
+      - US_+22
+      - Relay_🇨🇳CN-🇮🇷IR_36_2_12Mb_25
+      - 
+      - CA_+17
+      - US_+40
+      - 🇨🇳CN_44_7_99Mb_29
+      - Relay__5_65Mb_30
+      - Relay_🇨🇦CA-🇨🇦CA_400
+      - 🇰🇷KR_718
+      - Relay_🇨🇦CA-🇨🇦CA_02
+      - US_+34
+      - CA_+27
+      - CN_9
+      - US_+21
+      - US_+15
+      - CA_+32
+      - Relay_🇨🇳CN-🇷🇺RU_342_11_51Mb_40
+      - Relay_🇺🇸+US-🇺🇸US_1516
+      - Relay__5_36Mb_42
+      - 🇯🇵JP_675
+      - Relay_🇨🇦CA-🇨🇦CA_399
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
