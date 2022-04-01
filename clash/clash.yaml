@@ -5,53 +5,431 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"name":"🇨🇦_CA_加拿大_1","server":"134.195.196.51","port":7306,"type":"ss","country":"🇨🇦_CA_加拿大_1","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
-  - {"name":"🇨🇦_CA_加拿大_2","server":"134.195.196.51","port":9101,"type":"ss","country":"🇨🇦_CA_加拿大_2","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇭🇰_香港_69","server":"awv094.xiaohouzi.club","port":10082,"type":"vmess","uuid":"dbf20899-f0d8-33bd-bed0-ddc16105dfe3","alterId":0,"cipher":"auto","country":"(Youtube/TG：俊佳科技)_🇭🇰_香港_69","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/v2ray","headers":{"host":"awv094.xiaohouzi.club"}}}
+  - {"name":"日本阿伟科技atTG/油管4_2","server":"superjapan.dnsfree.top","port":12355,"type":"vmess","uuid":"003dda74-b441-4e70-a215-bf1137b5c243","alterId":0,"cipher":"auto","country":"日本阿伟科技atTG/油管4_2","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tiebapic.baidu.com"}}}
+  - {"name":"韩国阿伟科技atTG/油管6_3","server":"aead.tls.sksuper.dnsfree.top","port":12323,"type":"vmess","uuid":"003dda74-b441-4e70-a215-bf1137b5c243","alterId":0,"cipher":"auto","country":"韩国阿伟科技atTG/油管6_3","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tiebapic.baidu.com"}}}
+  - {"name":"香港阿伟科技atTG/油管+8_4","server":"lt.qsbg.xyz","port":11311,"type":"ss","country":"香港阿伟科技atTG/油管+8_4","cipher":"chacha20-ietf-poly1305","password":"95645f6e-fea2-4eb2-b9f7-01364206d857"}
+  - {"name":"新加坡阿伟科技atTG/油管+5_5","server":"sg1.qingyun123.xyz","port":443,"type":"trojan","country":"新加坡阿伟科技atTG/油管+5_5","skip-cert-verify":true,"udp":true,"password":"32cbd76d-3b0a-4f44-b7ef-98d41db730f6"}
+  - {"name":"美国阿伟科技atTG/油管+13_6","server":"lt.qsbg.xyz","port":11317,"type":"ss","country":"美国阿伟科技atTG/油管+13_6","cipher":"chacha20-ietf-poly1305","password":"95645f6e-fea2-4eb2-b9f7-01364206d857"}
+  - {"name":"越南阿伟科技atTG/油管_7","server":"lt.qsbg.xyz","port":11320,"type":"ss","country":"越南阿伟科技atTG/油管_7","cipher":"chacha20-ietf-poly1305","password":"95645f6e-fea2-4eb2-b9f7-01364206d857"}
+  - {"name":"新加坡阿伟科技atTG/油管+8_8","server":"nfsg.qingyun123.xyz","port":10050,"type":"trojan","country":"新加坡阿伟科技atTG/油管+8_8","skip-cert-verify":true,"udp":true,"password":"69f6d882-799e-4f08-a47a-2bfcbfb3271a"}
+  - {"name":"us2_tcpbbr_net:443_9","server":"us2.tcpbbr.net","port":443,"type":"trojan","country":"us2_tcpbbr_net:443_9","skip-cert-verify":true,"udp":true,"password":"2e5f2a78-14d8-11eb-ad8c-f23c9164ca5d"}
+  - {"name":"YouTubeat阿阳AYANG_105","server":"in02.holiganfan.com","port":10088,"type":"trojan","country":"YouTubeat阿阳AYANG_105","skip-cert-verify":true,"udp":true,"password":"61729199-896f-4c15-bae3-e8780b22c70c"}
+  - {"name":"_HK_香港_订阅小梦科技+41_11","server":"ssl.tcpbbr.net","port":443,"type":"trojan","country":"_HK_香港_订阅小梦科技+41_11","skip-cert-verify":true,"udp":true,"password":"08d178d4-ec8b-11eb-a8bf-f23c91cfbbc9"}
+  - {"name":"YouTubeat阿阳AYANG_84","server":"134.195.196.51","port":8888,"type":"ss","country":"YouTubeat阿阳AYANG_84","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"CN_油管TG8度科技_18","server":"relaypro.procncon.xyz","port":561,"type":"ssr","country":"CN_油管TG8度科技_18","password":"mblank1port","cipher":"chacha20-ietf","protocol":"auth_aes128_md5","obfs":"plain","protocol-param":"50252:123321Ddd"}
+  - {"name":"YouTubeat阿阳AYANG_83","server":"134.195.196.51","port":5000,"type":"ss","country":"YouTubeat阿阳AYANG_83","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"US_2175","server":"yin1.qingyun123.xyz","port":10000,"type":"trojan","country":"US_2175","skip-cert-verify":true,"udp":true,"password":"69f6d882-799e-4f08-a47a-2bfcbfb3271a"}
+  - {"name":"HK_31009+atWangCai_1","server":"14.29.124.168","port":31009,"type":"ss","country":"HK_31009+atWangCai_1","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_15","server":"14.29.124.168","port":31028,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_15","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_56","server":"14.29.124.168","port":25279,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_56","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"HK_31032+atWangCai_1","server":"14.29.124.168","port":31032,"type":"ss","country":"HK_31032+atWangCai_1","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_21","server":"14.29.124.168","port":25241,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_21","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_48","server":"14.29.124.168","port":25222,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_48","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_54","server":"14.29.124.168","port":25233,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_54","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_55","server":"14.29.124.168","port":25289,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_55","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_61","server":"14.29.124.168","port":25210,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_61","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_85","server":"14.29.124.168","port":25238,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_85","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"HK_31042+atWangCai_1","server":"14.29.124.168","port":31042,"type":"ss","country":"HK_31042+atWangCai_1","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_22","server":"14.29.124.168","port":25270,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_22","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_28","server":"14.29.124.168","port":25217,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_28","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_47","server":"14.29.124.168","port":25252,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_47","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_57","server":"14.29.124.168","port":25267,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_57","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_60","server":"14.29.124.168","port":25294,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_60","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_40","server":"14.29.124.168","port":25268,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_40","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_66","server":"14.29.124.168","port":25293,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_66","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"HK_31046+atWangCai_1","server":"14.29.124.168","port":31046,"type":"ss","country":"HK_31046+atWangCai_1","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_31","server":"14.29.124.168","port":25296,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_31","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"HK_31045+atWangCai_1","server":"14.29.124.168","port":31045,"type":"ss","country":"HK_31045+atWangCai_1","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_45","server":"14.29.124.168","port":31000,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_45","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_62","server":"14.29.124.168","port":25271,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_62","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"134_195_196_51:8119_21","server":"134.195.196.51","port":8119,"type":"ss","country":"134_195_196_51:8119_21","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_65","server":"14.29.124.168","port":31035,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_65","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_79","server":"14.29.124.168","port":31003,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_79","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_34","server":"14.29.124.168","port":25283,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_34","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"HK_31013+atWangCai_1","server":"14.29.124.168","port":31013,"type":"ss","country":"HK_31013+atWangCai_1","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_33","server":"14.29.124.168","port":25286,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_33","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_52","server":"14.29.124.168","port":25259,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_52","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"YouTubeat阿阳AYANG_89","server":"134.195.196.51","port":9102,"type":"ss","country":"YouTubeat阿阳AYANG_89","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"HK_31026+atWangCai_1","server":"14.29.124.168","port":31026,"type":"ss","country":"HK_31026+atWangCai_1","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_51","server":"14.29.124.168","port":25297,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_51","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_59","server":"14.29.124.168","port":31027,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_59","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"YouTubeat阿阳AYANG_88","server":"134.195.196.51","port":3389,"type":"ss","country":"YouTubeat阿阳AYANG_88","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_82","server":"14.29.124.168","port":25245,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_82","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_36","server":"14.29.124.168","port":25235,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_36","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇨🇳_中国_44","server":"14.29.124.168","port":25219,"type":"ss","country":"(Youtube/TG：俊佳科技)_🇨🇳_中国_44","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"name":"YouTubeat阿阳AYANG_87","server":"134.195.196.51","port":8881,"type":"ss","country":"YouTubeat阿阳AYANG_87","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"name":"YouTubeat阿阳AYANG_86","server":"134.195.196.51","port":8080,"type":"ss","country":"YouTubeat阿阳AYANG_86","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"name":"(Youtube/TG：俊佳科技)_🇷🇺_俄罗斯联邦_2","server":"v2-r02.xiaohouzi.club","port":10082,"type":"vmess","uuid":"dbf20899-f0d8-33bd-bed0-ddc16105dfe3","alterId":0,"cipher":"auto","country":"(Youtube/TG：俊佳科技)_🇷🇺_俄罗斯联邦_2","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/v2ray","headers":{"host":"v2-r02.xiaohouzi.club"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇦_CA_加拿大_1
-      - 🇨🇦_CA_加拿大_2
+      - (Youtube/TG：俊佳科技)_🇭🇰_香港_69
+      - 日本阿伟科技atTG/油管4_2
+      - 韩国阿伟科技atTG/油管6_3
+      - 香港阿伟科技atTG/油管+8_4
+      - 新加坡阿伟科技atTG/油管+5_5
+      - 美国阿伟科技atTG/油管+13_6
+      - 越南阿伟科技atTG/油管_7
+      - 新加坡阿伟科技atTG/油管+8_8
+      - us2_tcpbbr_net:443_9
+      - YouTubeat阿阳AYANG_105
+      - _HK_香港_订阅小梦科技+41_11
+      - YouTubeat阿阳AYANG_84
+      - CN_油管TG8度科技_18
+      - YouTubeat阿阳AYANG_83
+      - US_2175
+      - HK_31009+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_15
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_56
+      - HK_31032+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_21
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_48
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_54
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_55
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_61
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_85
+      - HK_31042+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_22
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_28
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_47
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_57
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_60
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_40
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_66
+      - HK_31046+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_31
+      - HK_31045+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_45
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_62
+      - '134_195_196_51:8119_21'
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_65
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_79
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_34
+      - HK_31013+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_33
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_52
+      - YouTubeat阿阳AYANG_89
+      - HK_31026+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_51
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_59
+      - YouTubeat阿阳AYANG_88
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_82
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_36
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_44
+      - YouTubeat阿阳AYANG_87
+      - YouTubeat阿阳AYANG_86
+      - (Youtube/TG：俊佳科技)_🇷🇺_俄罗斯联邦_2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇦_CA_加拿大_1
-      - 🇨🇦_CA_加拿大_2
+      - (Youtube/TG：俊佳科技)_🇭🇰_香港_69
+      - 日本阿伟科技atTG/油管4_2
+      - 韩国阿伟科技atTG/油管6_3
+      - 香港阿伟科技atTG/油管+8_4
+      - 新加坡阿伟科技atTG/油管+5_5
+      - 美国阿伟科技atTG/油管+13_6
+      - 越南阿伟科技atTG/油管_7
+      - 新加坡阿伟科技atTG/油管+8_8
+      - us2_tcpbbr_net:443_9
+      - YouTubeat阿阳AYANG_105
+      - _HK_香港_订阅小梦科技+41_11
+      - YouTubeat阿阳AYANG_84
+      - CN_油管TG8度科技_18
+      - YouTubeat阿阳AYANG_83
+      - US_2175
+      - HK_31009+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_15
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_56
+      - HK_31032+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_21
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_48
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_54
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_55
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_61
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_85
+      - HK_31042+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_22
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_28
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_47
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_57
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_60
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_40
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_66
+      - HK_31046+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_31
+      - HK_31045+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_45
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_62
+      - '134_195_196_51:8119_21'
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_65
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_79
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_34
+      - HK_31013+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_33
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_52
+      - YouTubeat阿阳AYANG_89
+      - HK_31026+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_51
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_59
+      - YouTubeat阿阳AYANG_88
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_82
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_36
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_44
+      - YouTubeat阿阳AYANG_87
+      - YouTubeat阿阳AYANG_86
+      - (Youtube/TG：俊佳科技)_🇷🇺_俄罗斯联邦_2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇦_CA_加拿大_1
-      - 🇨🇦_CA_加拿大_2
+      - (Youtube/TG：俊佳科技)_🇭🇰_香港_69
+      - 日本阿伟科技atTG/油管4_2
+      - 韩国阿伟科技atTG/油管6_3
+      - 香港阿伟科技atTG/油管+8_4
+      - 新加坡阿伟科技atTG/油管+5_5
+      - 美国阿伟科技atTG/油管+13_6
+      - 越南阿伟科技atTG/油管_7
+      - 新加坡阿伟科技atTG/油管+8_8
+      - us2_tcpbbr_net:443_9
+      - YouTubeat阿阳AYANG_105
+      - _HK_香港_订阅小梦科技+41_11
+      - YouTubeat阿阳AYANG_84
+      - CN_油管TG8度科技_18
+      - YouTubeat阿阳AYANG_83
+      - US_2175
+      - HK_31009+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_15
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_56
+      - HK_31032+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_21
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_48
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_54
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_55
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_61
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_85
+      - HK_31042+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_22
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_28
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_47
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_57
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_60
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_40
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_66
+      - HK_31046+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_31
+      - HK_31045+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_45
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_62
+      - '134_195_196_51:8119_21'
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_65
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_79
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_34
+      - HK_31013+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_33
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_52
+      - YouTubeat阿阳AYANG_89
+      - HK_31026+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_51
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_59
+      - YouTubeat阿阳AYANG_88
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_82
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_36
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_44
+      - YouTubeat阿阳AYANG_87
+      - YouTubeat阿阳AYANG_86
+      - (Youtube/TG：俊佳科技)_🇷🇺_俄罗斯联邦_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇦_CA_加拿大_1
-      - 🇨🇦_CA_加拿大_2
+      - (Youtube/TG：俊佳科技)_🇭🇰_香港_69
+      - 日本阿伟科技atTG/油管4_2
+      - 韩国阿伟科技atTG/油管6_3
+      - 香港阿伟科技atTG/油管+8_4
+      - 新加坡阿伟科技atTG/油管+5_5
+      - 美国阿伟科技atTG/油管+13_6
+      - 越南阿伟科技atTG/油管_7
+      - 新加坡阿伟科技atTG/油管+8_8
+      - us2_tcpbbr_net:443_9
+      - YouTubeat阿阳AYANG_105
+      - _HK_香港_订阅小梦科技+41_11
+      - YouTubeat阿阳AYANG_84
+      - CN_油管TG8度科技_18
+      - YouTubeat阿阳AYANG_83
+      - US_2175
+      - HK_31009+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_15
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_56
+      - HK_31032+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_21
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_48
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_54
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_55
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_61
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_85
+      - HK_31042+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_22
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_28
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_47
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_57
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_60
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_40
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_66
+      - HK_31046+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_31
+      - HK_31045+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_45
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_62
+      - '134_195_196_51:8119_21'
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_65
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_79
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_34
+      - HK_31013+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_33
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_52
+      - YouTubeat阿阳AYANG_89
+      - HK_31026+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_51
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_59
+      - YouTubeat阿阳AYANG_88
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_82
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_36
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_44
+      - YouTubeat阿阳AYANG_87
+      - YouTubeat阿阳AYANG_86
+      - (Youtube/TG：俊佳科技)_🇷🇺_俄罗斯联邦_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇦_CA_加拿大_1
-      - 🇨🇦_CA_加拿大_2
+      - (Youtube/TG：俊佳科技)_🇭🇰_香港_69
+      - 日本阿伟科技atTG/油管4_2
+      - 韩国阿伟科技atTG/油管6_3
+      - 香港阿伟科技atTG/油管+8_4
+      - 新加坡阿伟科技atTG/油管+5_5
+      - 美国阿伟科技atTG/油管+13_6
+      - 越南阿伟科技atTG/油管_7
+      - 新加坡阿伟科技atTG/油管+8_8
+      - us2_tcpbbr_net:443_9
+      - YouTubeat阿阳AYANG_105
+      - _HK_香港_订阅小梦科技+41_11
+      - YouTubeat阿阳AYANG_84
+      - CN_油管TG8度科技_18
+      - YouTubeat阿阳AYANG_83
+      - US_2175
+      - HK_31009+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_15
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_56
+      - HK_31032+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_21
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_48
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_54
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_55
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_61
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_85
+      - HK_31042+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_22
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_28
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_47
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_57
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_60
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_40
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_66
+      - HK_31046+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_31
+      - HK_31045+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_45
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_62
+      - '134_195_196_51:8119_21'
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_65
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_79
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_34
+      - HK_31013+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_33
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_52
+      - YouTubeat阿阳AYANG_89
+      - HK_31026+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_51
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_59
+      - YouTubeat阿阳AYANG_88
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_82
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_36
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_44
+      - YouTubeat阿阳AYANG_87
+      - YouTubeat阿阳AYANG_86
+      - (Youtube/TG：俊佳科技)_🇷🇺_俄罗斯联邦_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇦_CA_加拿大_1
-      - 🇨🇦_CA_加拿大_2
+      - (Youtube/TG：俊佳科技)_🇭🇰_香港_69
+      - 日本阿伟科技atTG/油管4_2
+      - 韩国阿伟科技atTG/油管6_3
+      - 香港阿伟科技atTG/油管+8_4
+      - 新加坡阿伟科技atTG/油管+5_5
+      - 美国阿伟科技atTG/油管+13_6
+      - 越南阿伟科技atTG/油管_7
+      - 新加坡阿伟科技atTG/油管+8_8
+      - us2_tcpbbr_net:443_9
+      - YouTubeat阿阳AYANG_105
+      - _HK_香港_订阅小梦科技+41_11
+      - YouTubeat阿阳AYANG_84
+      - CN_油管TG8度科技_18
+      - YouTubeat阿阳AYANG_83
+      - US_2175
+      - HK_31009+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_15
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_56
+      - HK_31032+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_21
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_48
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_54
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_55
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_61
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_85
+      - HK_31042+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_22
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_28
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_47
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_57
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_60
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_40
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_66
+      - HK_31046+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_31
+      - HK_31045+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_45
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_62
+      - '134_195_196_51:8119_21'
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_65
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_79
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_34
+      - HK_31013+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_33
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_52
+      - YouTubeat阿阳AYANG_89
+      - HK_31026+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_51
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_59
+      - YouTubeat阿阳AYANG_88
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_82
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_36
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_44
+      - YouTubeat阿阳AYANG_87
+      - YouTubeat阿阳AYANG_86
+      - (Youtube/TG：俊佳科技)_🇷🇺_俄罗斯联邦_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -74,8 +452,62 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇦_CA_加拿大_1
-      - 🇨🇦_CA_加拿大_2
+      - (Youtube/TG：俊佳科技)_🇭🇰_香港_69
+      - 日本阿伟科技atTG/油管4_2
+      - 韩国阿伟科技atTG/油管6_3
+      - 香港阿伟科技atTG/油管+8_4
+      - 新加坡阿伟科技atTG/油管+5_5
+      - 美国阿伟科技atTG/油管+13_6
+      - 越南阿伟科技atTG/油管_7
+      - 新加坡阿伟科技atTG/油管+8_8
+      - us2_tcpbbr_net:443_9
+      - YouTubeat阿阳AYANG_105
+      - _HK_香港_订阅小梦科技+41_11
+      - YouTubeat阿阳AYANG_84
+      - CN_油管TG8度科技_18
+      - YouTubeat阿阳AYANG_83
+      - US_2175
+      - HK_31009+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_15
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_56
+      - HK_31032+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_21
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_48
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_54
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_55
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_61
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_85
+      - HK_31042+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_22
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_28
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_47
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_57
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_60
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_40
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_66
+      - HK_31046+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_31
+      - HK_31045+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_45
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_62
+      - '134_195_196_51:8119_21'
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_65
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_79
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_34
+      - HK_31013+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_33
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_52
+      - YouTubeat阿阳AYANG_89
+      - HK_31026+atWangCai_1
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_51
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_59
+      - YouTubeat阿阳AYANG_88
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_82
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_36
+      - (Youtube/TG：俊佳科技)_🇨🇳_中国_44
+      - YouTubeat阿阳AYANG_87
+      - YouTubeat阿阳AYANG_86
+      - (Youtube/TG：俊佳科技)_🇷🇺_俄罗斯联邦_2
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
