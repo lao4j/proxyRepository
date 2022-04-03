@@ -4,110 +4,572 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
-proxies:
-  - {"name":"🇨🇳_CN_中国->🇭🇰_HK_香港_1","server":"cm2.newhua99.xyz","port":22825,"type":"ss","country":"🇨🇳_CN_中国->🇭🇰_HK_香港_1","cipher":"aes-128-gcm","password":"d2143b25-6a10-440f-a513-6b720be505f4"}
-  - {"name":"🇨🇳_CN_中国->🇭🇰_HK_香港_2","server":"cm2.newhua99.xyz","port":22825,"type":"ss","country":"🇨🇳_CN_中国->🇭🇰_HK_香港_2","cipher":"aes-128-gcm","password":"d2143b25-6a10-440f-a513-6b720be505f4"}
-  - {"name":"🇨🇳_CN_中国->🇰🇷_KR_韩国_3","server":"cm.newhua99.xyz","port":22808,"type":"ss","country":"🇨🇳_CN_中国->🇰🇷_KR_韩国_3","cipher":"aes-128-gcm","password":"d2143b25-6a10-440f-a513-6b720be505f4"}
-  - {"name":"🇭🇰_HK_香港_4","server":"0320hk857.fans8.xyz","port":443,"type":"vmess","uuid":"5c70da5d-e641-3bf8-b7dc-5babd843ff3c","alterId":2,"cipher":"auto","country":"🇭🇰_HK_香港_4","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/ray","headers":{"host":"0320hk857.fans8.xyz"}}}
-  - {"name":"🇨🇳_CN_中国->🇭🇰_HK_香港_5","server":"cm2.newhua99.xyz","port":22825,"type":"ss","country":"🇨🇳_CN_中国->🇭🇰_HK_香港_5","cipher":"aes-128-gcm","password":"d2143b25-6a10-440f-a513-6b720be505f4"}
-  - {"name":"🇨🇳_CN_中国->🇭🇰_HK_香港_6","server":"cm.newhua99.xyz","port":22825,"type":"ss","country":"🇨🇳_CN_中国->🇭🇰_HK_香港_6","cipher":"aes-128-gcm","password":"d2143b25-6a10-440f-a513-6b720be505f4"}
-  - {"name":"🇭🇰_HK_香港_7","server":"0320hk857.fans8.xyz","port":443,"type":"vmess","uuid":"5c70da5d-e641-3bf8-b7dc-5babd843ff3c","alterId":2,"cipher":"auto","country":"🇭🇰_HK_香港_7","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/ray","headers":{"host":"0320hk857.fans8.xyz"}}}
-  - {"name":"🇨🇳_CN_中国->🇭🇰_HK_香港_8","server":"cm.newhua99.xyz","port":22825,"type":"ss","country":"🇨🇳_CN_中国->🇭🇰_HK_香港_8","cipher":"aes-128-gcm","password":"d2143b25-6a10-440f-a513-6b720be505f4"}
-  - {"name":"🇨🇳_CN_中国->🇸🇬_SG_新加坡_9","server":"cm.newhua99.xyz","port":22801,"type":"ss","country":"🇨🇳_CN_中国->🇸🇬_SG_新加坡_9","cipher":"aes-128-gcm","password":"d2143b25-6a10-440f-a513-6b720be505f4"}
-  - {"name":"🇨🇳_CN_中国->🇭🇰_HK_香港_10","server":"cm.newhua99.xyz","port":22823,"type":"ss","country":"🇨🇳_CN_中国->🇭🇰_HK_香港_10","cipher":"aes-128-gcm","password":"d2143b25-6a10-440f-a513-6b720be505f4"}
+proxies: 
+  - {name: 'Relay_🇷🇺RU-🇷🇺RU_985', server: 'v2-r03.xiaohouzi.club', port: 10083, type: vmess, uuid: 'dbf20899-f0d8-33bd-bed0-ddc16105dfe3', alterId: 1, cipher: auto, country: "Relay_🇷🇺RU-🇷🇺RU_985", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'v2-r03.xiaohouzi.club'}} }
+  - {name: 'Relay_🇺🇸US-🇩🇪DE_3176', server: '104.17.103.125', port: 80, type: vmess, uuid: 'e46835e3-b770-4d5b-8ba0-5507f8385c44', alterId: 0, cipher: auto, country: "Relay_🇺🇸US-🇩🇪DE_3176", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/wwwnet', headers: {host: 'caa.ziyun.ga'}} }
+  - {name: '欧洲-_3', server: '134.195.196.51', port: 8888, type: ss, country: '欧洲-_3', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: '🏁ZZ_2940', server: '198.41.221.169', port: 443, type: vmess, uuid: 'a8910831-f56b-4ac4-c68f-e4dd83f71e60', alterId: 0, cipher: auto, country: "🏁ZZ_2940", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/sakura/', headers: {host: 'zero1.a-yu.xyz'}} }
+  - {name: '🏁ZZ_3239', server: '134.195.196.51', port: 9102, type: ss, country: '🏁ZZ_3239', cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
+  - {name: '', server: '169.197.142.99', port: 9102, type: ss, country: '', cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
+  - {name: '🇺🇸US_2327', server: 'cloudflare.a-yu.xyz', port: 443, type: vmess, uuid: 'a8910831-f56b-4ac4-c68f-e4dd83f71e60', alterId: 0, cipher: auto, country: "🇺🇸US_2327", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/sakura/', headers: {host: 'zero2.a-yu.xyz'}} }
+  - {name: 'Relay_🇦🇺AU-🇦🇺AU_140', server: 'aws-hk03.xiaohouzi.club', port: 10050, type: vmess, uuid: 'dbf20899-f0d8-33bd-bed0-ddc16105dfe3', alterId: 1, cipher: auto, country: "Relay_🇦🇺AU-🇦🇺AU_140", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'aws-hk03.xiaohouzi.club'}} }
+  - {name: 'Relay_🇯🇵JP-🇯🇵JP_876', server: 'scjp.scsevers.cf', port: 11312, type: vmess, uuid: '71f2e024-6b64-4f37-dba3-dc25614ccce8', alterId: 0, cipher: auto, country: "Relay_🇯🇵JP-🇯🇵JP_876", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/'} }
+  - {name: '', server: 'ahdaeph8.com', port: 443, type: vmess, uuid: 'aba50dd4-5484-3b05-b14a-4661caf862d5', alterId: 4, cipher: auto, country: "", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/ws', headers: {host: 'ahdaeph8.com'}} }
+  - {name: '🇭🇰HK_217', server: 'vn.mumi.bid', port: 10125, type: vmess, uuid: '83ae9f04-47f0-4e34-9a1c-9c2e5161f586', alterId: 0, cipher: auto, country: "🇭🇰HK_217", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/'} }
+  - {name: 'Relay_🇺🇸US-🇺🇸US_1055', server: '029.NA.POP.BIGAIRPORT.NET', port: 12356, type: vmess, uuid: 'c899fb95-cc39-4f3a-a882-36b70d4bef0f', alterId: 0, cipher: auto, country: "Relay_🇺🇸US-🇺🇸US_1055", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/'} }
+  - {name: 'Relay_🇨🇳CN-🇺🇸US_441', server: 'mc.xiaohouzi.club', port: 28118, type: vmess, uuid: 'dbf20899-f0d8-33bd-bed0-ddc16105dfe3', alterId: 1, cipher: auto, country: "Relay_🇨🇳CN-🇺🇸US_441", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'mc.xiaohouzi.club'}} }
+  - {name: 'Relay_🇦🇺AU-🇦🇺AU_128', server: 'nazhk03.xiaohouzi.club', port: 10030, type: vmess, uuid: 'dbf20899-f0d8-33bd-bed0-ddc16105dfe3', alterId: 1, cipher: auto, country: "Relay_🇦🇺AU-🇦🇺AU_128", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'nazhk03.xiaohouzi.club'}} }
+  - {name: '_197', server: '169.197.142.99', port: 2375, type: ss, country: '_197', cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
+  - {name: '公益机场:https://bit_ly/3BPeo5G_16', server: '86.wowogg.cyou', port: 52286, type: vmess, uuid: '08103798-414e-32b6-8748-2507732d2c51', alterId: 2, cipher: auto, country: "公益机场:https://bit_ly/3BPeo5G_16", "skip-cert-verify": true, tls: false, network: 'tcp', ws-opts: {headers: {host: '86.wowogg.cyou'}} }
+  - {name: 'atSSRSUB-V01-付费推荐:suo_yt/ssrsub_17', server: '0320jp.fans8.xyz', port: 443, type: vmess, uuid: '5c70da5d-e641-3bf8-b7dc-5babd843ff3c', alterId: 2, cipher: auto, country: "atSSRSUB-V01-付费推荐:suo_yt/ssrsub_17", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/ray', headers: {host: '0320jp.fans8.xyz'}} }
+  - {name: 'atSSRSUB-V02-付费推荐:suo_yt/ssrsub_18', server: 'ahdaeph8.com', port: 443, type: vmess, uuid: 'aba50dd4-5484-3b05-b14a-4661caf862d5', alterId: 4, cipher: auto, country: "atSSRSUB-V02-付费推荐:suo_yt/ssrsub_18", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/ws', headers: {host: 'ahdaeph8.com'}} }
+  - {name: 'atSSRSUB-V03-付费推荐:suo_yt/ssrsub_19', server: '139.162.122.205', port: 3845, type: vmess, uuid: '76d5c6e3-c74c-3406-b9e8-9859d0a71c56', alterId: 0, cipher: auto, country: "atSSRSUB-V03-付费推荐:suo_yt/ssrsub_19", "skip-cert-verify": true, tls: false, network: 'tcp', ws-opts: {headers: {host: '139.162.122.205'}} }
+  - {name: 'atSSRSUB-V04-付费推荐:suo_yt/ssrsub_20', server: '132.145.92.147', port: 29660, type: vmess, uuid: '2c02504a-1067-4835-9235-5d50840b4530', alterId: 0, cipher: auto, country: "atSSRSUB-V04-付费推荐:suo_yt/ssrsub_20", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/', headers: {host: '132.145.92.147'}} }
+  - {name: 'atSSRSUB-V05-付费推荐:suo_yt/ssrsub_21', server: 'azhk01.xiaohouzi.club', port: 10050, type: vmess, uuid: 'dbf20899-f0d8-33bd-bed0-ddc16105dfe3', alterId: 0, cipher: auto, country: "atSSRSUB-V05-付费推荐:suo_yt/ssrsub_21", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'www.ibm.com'}} }
+  - {name: 'atSSRSUB-V06-付费推荐:suo_yt/ssrsub_22', server: 'ingress-i1.onebox6.org', port: 38106, type: vmess, uuid: '79386685-16da-327c-9e14-aa6d702d86bc', alterId: 1, cipher: auto, country: "atSSRSUB-V06-付费推荐:suo_yt/ssrsub_22", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/hls/cctv5phd.m3u8', headers: {host: 'www.ivpnpro.net'}} }
+  - {name: 'atSSRSUB-V07-付费推荐:suo_yt/ssrsub_23', server: 'v2fly.sab.quest', port: 443, type: vmess, uuid: '9e6ceeff-2546-3690-ac00-6fcdf31dec94', alterId: 1, cipher: auto, country: "atSSRSUB-V07-付费推荐:suo_yt/ssrsub_23", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/chaug', headers: {host: 'v2fly.samrt.website'}} }
+  - {name: 'atSSRSUB-V08-付费推荐:suo_yt/ssrsub_24', server: '0320hk857.fans8.xyz', port: 443, type: vmess, uuid: '5c70da5d-e641-3bf8-b7dc-5babd843ff3c', alterId: 2, cipher: auto, country: "atSSRSUB-V08-付费推荐:suo_yt/ssrsub_24", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/ray', headers: {host: '0320hk857.fans8.xyz'}} }
+  - {name: 'atSSRSUB-V09-付费推荐:suo_yt/ssrsub_25', server: '154.23.190.162', port: 443, type: vmess, uuid: 'b9984674-f771-4e67-a198-c7e60720ba2c', alterId: 0, cipher: auto, country: "atSSRSUB-V09-付费推荐:suo_yt/ssrsub_25", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/', headers: {host: '154.23.190.162'}} }
+  - {name: 'atSSRSUB-V10-付费推荐:suo_yt/ssrsub_26', server: 'azhk097.xiaohouzi.club', port: 443, type: vmess, uuid: 'dbf20899-f0d8-33bd-bed0-ddc16105dfe3', alterId: 0, cipher: auto, country: "atSSRSUB-V10-付费推荐:suo_yt/ssrsub_26", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'azhk097.xiaohouzi.club'}} }
+  - {name: 'atSSRSUB-V11-付费推荐:suo_yt/ssrsub_27', server: '172.64.143.70', port: 443, type: vmess, uuid: 'e9a1bf07-ba3c-2bf0-c18a-632c80084fbb', alterId: 0, cipher: auto, country: "atSSRSUB-V11-付费推荐:suo_yt/ssrsub_27", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/zvduvws', headers: {host: 'sg.xxioixx.com'}} }
+  - {name: 'atSSRSUB-V12-付费推荐:suo_yt/ssrsub_28', server: '202.61.141.130', port: 443, type: vmess, uuid: 'aba50dd4-5484-3b05-b14a-4661caf862d5', alterId: 4, cipher: auto, country: "atSSRSUB-V12-付费推荐:suo_yt/ssrsub_28", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/ws', headers: {host: '202.61.141.130'}} }
+  - {name: 'atSSRSUB-V13-付费推荐:suo_yt/ssrsub_29', server: 'fri.ncugo.cf', port: 443, type: vmess, uuid: 'de0eb598-2cea-43a0-c5fe-77335fb07a35', alterId: 0, cipher: auto, country: "atSSRSUB-V13-付费推荐:suo_yt/ssrsub_29", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/', headers: {host: 'fri.ncugo.cf'}} }
+  - {name: 'atSSRSUB-V14-付费推荐:suo_yt/ssrsub_30', server: 'azhk096.xiaohouzi.club', port: 10082, type: vmess, uuid: 'dbf20899-f0d8-33bd-bed0-ddc16105dfe3', alterId: 0, cipher: auto, country: "atSSRSUB-V14-付费推荐:suo_yt/ssrsub_30", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'www.ibm.com'}} }
+  - {name: 'atSSRSUB-V15-付费推荐:suo_yt/ssrsub_31', server: 'awv094.xiaohouzi.club', port: 10082, type: vmess, uuid: 'dbf20899-f0d8-33bd-bed0-ddc16105dfe3', alterId: 0, cipher: auto, country: "atSSRSUB-V15-付费推荐:suo_yt/ssrsub_31", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'www.ibm.com'}} }
+  - {name: 'atSSRSUB-V16-付费推荐:suo_yt/ssrsub_32', server: 'shk01.xiaohouzi.club', port: 10050, type: vmess, uuid: 'dbf20899-f0d8-33bd-bed0-ddc16105dfe3', alterId: 0, cipher: auto, country: "atSSRSUB-V16-付费推荐:suo_yt/ssrsub_32", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'www.ibm.com'}} }
+  - {name: 'atSSRSUB-V17-付费推荐:suo_yt/ssrsub_33', server: 'azhk003.xiaohouzi.club', port: 10051, type: vmess, uuid: 'dbf20899-f0d8-33bd-bed0-ddc16105dfe3', alterId: 0, cipher: auto, country: "atSSRSUB-V17-付费推荐:suo_yt/ssrsub_33", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'www.ibm.com'}} }
+  - {name: 'atSSRSUB-V18-付费推荐:suo_yt/ssrsub_34', server: 'aws-hk06.xiaohouzi.club', port: 443, type: vmess, uuid: 'dbf20899-f0d8-33bd-bed0-ddc16105dfe3', alterId: 0, cipher: auto, country: "atSSRSUB-V18-付费推荐:suo_yt/ssrsub_34", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'aws-hk06.xiaohouzi.club'}} }
+  - {name: 'atSSRSUB-V19-付费推荐:suo_yt/ssrsub_35', server: '0319hzm01.fans8.xyz', port: 443, type: vmess, uuid: '5c70da5d-e641-3bf8-b7dc-5babd843ff3c', alterId: 2, cipher: auto, country: "atSSRSUB-V19-付费推荐:suo_yt/ssrsub_35", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/nmsl', headers: {host: '0319hzm01.fans8.xyz'}} }
+  - {name: 'atSSRSUB-V20-付费推荐:suo_yt/ssrsub_36', server: '183.232.56.161', port: 1101, type: vmess, uuid: '3a226645-c640-39a2-8177-000381e29f20', alterId: 0, cipher: auto, country: "atSSRSUB-V20-付费推荐:suo_yt/ssrsub_36", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: '183.232.56.161'}} }
+  - {name: 'atSSRSUB-V21-付费推荐:suo_yt/ssrsub_37', server: '183.232.56.161', port: 1952, type: vmess, uuid: '3a226645-c640-39a2-8177-000381e29f20', alterId: 0, cipher: auto, country: "atSSRSUB-V21-付费推荐:suo_yt/ssrsub_37", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: '183.232.56.161'}} }
+  - {name: 'atSSRSUB-V22-付费推荐:suo_yt/ssrsub_38', server: 'cn-cu-2.sgdns.club', port: 11190, type: vmess, uuid: '2dc10784-c7fb-377d-a579-2b541eb16d7b', alterId: 2, cipher: auto, country: "atSSRSUB-V22-付费推荐:suo_yt/ssrsub_38", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/114514.apk', headers: {host: 'cn-cu-2.sgdns.club'}} }
+  - {name: 'atSSRSUB-V23-付费推荐:suo_yt/ssrsub_39', server: '0316ro.fans8.xyz', port: 443, type: vmess, uuid: '5c70da5d-e641-3bf8-b7dc-5babd843ff3c', alterId: 2, cipher: auto, country: "atSSRSUB-V23-付费推荐:suo_yt/ssrsub_39", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/nl', headers: {host: '0316ro.fans8.xyz'}} }
+  - {name: 'atSSRSUB-V24-付费推荐:suo_yt/ssrsub_40', server: 'v2-r02.xiaohouzi.club', port: 10082, type: vmess, uuid: 'dbf20899-f0d8-33bd-bed0-ddc16105dfe3', alterId: 0, cipher: auto, country: "atSSRSUB-V24-付费推荐:suo_yt/ssrsub_40", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'www.ibm.com'}} }
+  - {name: 'atSSRSUB-V25-付费推荐:suo_yt/ssrsub_41', server: 'sg2.bpyun.live', port: 443, type: vmess, uuid: '029b7c20-6a1b-397c-be58-f8d4c3f7f2f9', alterId: 0, cipher: auto, country: "atSSRSUB-V25-付费推荐:suo_yt/ssrsub_41", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/cocksucker', headers: {host: 'sg2.bpyun.live'}} }
+  - {name: 'atSSRSUB-V26-付费推荐:suo_yt/ssrsub_42', server: '0320hk567.fans8.xyz', port: 443, type: vmess, uuid: '5c70da5d-e641-3bf8-b7dc-5babd843ff3c', alterId: 2, cipher: auto, country: "atSSRSUB-V26-付费推荐:suo_yt/ssrsub_42", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/ray', headers: {host: '0320hk567.fans8.xyz'}} }
+  - {name: 'atSSRSUB-V27-付费推荐:suo_yt/ssrsub_43', server: 'in-v1.sdgdn.com', port: 50207, type: vmess, uuid: 'b1478e24-4916-3abe-8f17-15931012ecbe', alterId: 1, cipher: auto, country: "atSSRSUB-V27-付费推荐:suo_yt/ssrsub_43", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/hls/cctv5phd.m3u8', headers: {host: 'in-v1.sdgdn.com'}} }
+  - {name: 'github_com/freefq-香港特别行政区1_44', server: '104.208.84.177', port: 33578, type: vmess, uuid: '5919b468-a268-4012-9cf1-08f96260d0c8', alterId: 0, cipher: auto, country: "github_com/freefq-香港特别行政区1_44", "skip-cert-verify": true, tls: false, network: 'tcp', ws-opts: { path: '/'} }
+  - {name: 'github_com/freefq-美国加利福尼亚州圣克拉拉Microsoft公司2_45', server: '52.175.12.141', port: 24396, type: vmess, uuid: 'c4b30765-3dbc-422e-93c4-3591b1debb6a', alterId: 0, cipher: auto, country: "github_com/freefq-美国加利福尼亚州圣克拉拉Microsoft公司2_45", "skip-cert-verify": true, tls: false, network: 'tcp' }
+  - {name: 'github_com/freefq-香港腾讯云3_46', server: 'shk01.xiaohouzi.club', port: 10050, type: vmess, uuid: 'dbf20899-f0d8-33bd-bed0-ddc16105dfe3', alterId: 0, cipher: auto, country: "github_com/freefq-香港腾讯云3_46", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'shk01.xiaohouzi.club'}} }
+  - {name: 'github_com/freefq-香港环球全域电讯4_47', server: '210.3.245.46', port: 50021, type: vmess, uuid: 'f3666ca6-b94a-4a27-9aa9-00c8eaede12c', alterId: 0, cipher: auto, country: "github_com/freefq-香港环球全域电讯4_47", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/D1LYYDHH', headers: {host: 'hk1.lolvps.xyz'}} }
+  - {name: 'github_com/freefq-香港Microsoft公司5_48', server: '13.75.44.200', port: 40903, type: vmess, uuid: '6d1f4a41-f79e-45f5-8268-460e4f9f5d63', alterId: 0, cipher: auto, country: "github_com/freefq-香港Microsoft公司5_48", "skip-cert-verify": true, tls: false, network: 'tcp' }
+  - {name: 'github_com/freefq-香港XNNETLLC6_49', server: '45.137.10.174', port: 39043, type: vmess, uuid: '1b2f44e4-a810-48a8-b620-a4567b46c9b7', alterId: 0, cipher: auto, country: "github_com/freefq-香港XNNETLLC6_49", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/', headers: {host: '%7B%22Host%22:%22v2ex.downk.cc%22%7D'}} }
+  - {name: 'github_com/freefq-加拿大7_50', server: '0320jp.fans8.xyz', port: 443, type: vmess, uuid: '5c70da5d-e641-3bf8-b7dc-5babd843ff3c', alterId: 2, cipher: auto, country: "github_com/freefq-加拿大7_50", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/ray', headers: {host: '0320jp.fans8.xyz'}} }
+  - {name: 'github_com/freefq-上海市电信8_51', server: '101.91.121.247', port: 50004, type: ss, country: 'github_com/freefq-上海市电信8_51', cipher: 'aes-256-cfb', password: '4415934295'}
+  - {name: 'github_com/freefq-北美地区9_52', server: '169.197.142.99', port: 443, type: ss, country: 'github_com/freefq-北美地区9_52', cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
+  - {name: 'github_com/freefq-罗马尼亚10_53', server: '62.216.91.229', port: 9080, type: ss, country: 'github_com/freefq-罗马尼亚10_53', cipher: 'aes-256-cfb', password: 'VP8ZPxQpJtZRCjfZ'}
+  - {name: 'github_com/freefq-广东省广州市移动11_54', server: '183.232.56.161', port: 1952, type: vmess, uuid: '3a226645-c640-39a2-8177-000381e29f20', alterId: 0, cipher: auto, country: "github_com/freefq-广东省广州市移动11_54", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray'} }
+  - {name: 'github_com/freefq-日本12_55', server: 'azhk02.xiaohouzi.club', port: 443, type: vmess, uuid: 'dbf20899-f0d8-33bd-bed0-ddc16105dfe3', alterId: 2, cipher: auto, country: "github_com/freefq-日本12_55", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray'} }
+  - {name: 'github_com/freefq-广东省汕头市移动13_56', server: 'china-gzyd-1.forwardserver.xyz', port: 52024, type: vmess, uuid: '9e2c37d4-ab58-4730-8869-cb7b923d55d1', alterId: 0, cipher: auto, country: "github_com/freefq-广东省汕头市移动13_56", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/sakura', headers: {host: 'china-gzyd-1.forwardserver.xyz'}} }
+  - {name: 'github_com/freefq-日本14_57', server: 'shk02.xiaohouzi.club', port: 10053, type: vmess, uuid: 'dbf20899-f0d8-33bd-bed0-ddc16105dfe3', alterId: 0, cipher: auto, country: "github_com/freefq-日本14_57", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'shk02.xiaohouzi.club'}} }
+  - {name: 'github_com/freefq-广东省广州市移动15_58', server: 'in-v1.sdgdn.com', port: 50207, type: vmess, uuid: 'b1478e24-4916-3abe-8f17-15931012ecbe', alterId: 1, cipher: auto, country: "github_com/freefq-广东省广州市移动15_58", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/hls/cctv5phd.m3u8', headers: {host: 'in-v1.sdgdn.com'}} }
+  - { name: 'github_com/freefq-美国16_59', server: 'misaka1433.tk', port: 443, type: trojan, country: 'github_com/freefq-美国16_59', 'skip-cert-verify': true, udp: true, password: JAtFrEpLX8mryvu8 }
+  - { name: 'github_com/freefq-美国惠普公司17_60', server: 'tj-sg02.yiyodns.xyz', port: 443, type: trojan, country: 'github_com/freefq-美国惠普公司17_60', 'skip-cert-verify': true, udp: true, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc }
+  - {name: 'github_com/freefq-俄罗斯新西伯利亚justhost18_61', server: 'v2-r01.xiaohouzi.club', port: 10082, type: vmess, uuid: 'dbf20899-f0d8-33bd-bed0-ddc16105dfe3', alterId: 1, cipher: auto, country: "github_com/freefq-俄罗斯新西伯利亚justhost18_61", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'www.ibm.com'}} }
+  - {name: 'github_com/freefq-希腊19_62', server: '144.24.72.229', port: 38086, type: vmess, uuid: '85b07edc-de86-416f-9d5d-18bc081fec54', alterId: 0, cipher: auto, country: "github_com/freefq-希腊19_62", "skip-cert-verify": true, tls: false, network: 'tcp' }
+  - {name: 'github_com/freefq-美国CloudFlare公司CDN节点20_63', server: '104.17.103.125', port: 80, type: vmess, uuid: 'e46835e3-b770-4d5b-8ba0-5507f8385c44', alterId: 0, cipher: auto, country: "github_com/freefq-美国CloudFlare公司CDN节点20_63", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/wwwnet', headers: {host: 'caa.ziyun.ga'}} }
+  - {name: 'github_com/freefq-美国CloudFlare公司CDN节点21_64', server: 'cloudflare.xrenblog.com', port: 443, type: vmess, uuid: '6c175d1a-a57f-4881-a471-173eb139694b', alterId: 0, cipher: auto, country: "github_com/freefq-美国CloudFlare公司CDN节点21_64", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/xrenblog/', headers: {host: 'ipv6.xrenblog.com'}} }
+  - {name: 'github_com/freefq-香港腾讯云22_65', server: 'azhk098.xiaohouzi.club', port: 10090, type: vmess, uuid: 'dbf20899-f0d8-33bd-bed0-ddc16105dfe3', alterId: 1, cipher: auto, country: "github_com/freefq-香港腾讯云22_65", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'azhk098.xiaohouzi.club'}} }
+  - {name: 'github_com/freefq-加拿大23_66', server: '0320hk857.fans8.xyz', port: 443, type: vmess, uuid: '5c70da5d-e641-3bf8-b7dc-5babd843ff3c', alterId: 2, cipher: auto, country: "github_com/freefq-加拿大23_66", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/ray', headers: {host: '0320hk857.fans8.xyz'}} }
+  - {name: 'github_com/freefq-日本东京都品川区Linode数据中心24_67', server: '139.162.122.205', port: 3845, type: vmess, uuid: '76d5c6e3-c74c-3406-b9e8-9859d0a71c56', alterId: 0, cipher: auto, country: "github_com/freefq-日本东京都品川区Linode数据中心24_67", "skip-cert-verify": true, tls: false, network: 'tcp', ws-opts: { path: '/TS/recharge/tzUrl.html', headers: {host: '139.162.122.205'}} }
+  - {name: 'github_com/freefq-美国25_68', server: 'us04.xiaohouzi.club', port: 10083, type: vmess, uuid: 'dbf20899-f0d8-33bd-bed0-ddc16105dfe3', alterId: 1, cipher: auto, country: "github_com/freefq-美国25_68", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'www.ibm.com'}} }
+  - {name: 'github_com/freefq-亚太地区26_69', server: '0320hk567.fans8.xyz', port: 443, type: vmess, uuid: '5c70da5d-e641-3bf8-b7dc-5babd843ff3c', alterId: 2, cipher: auto, country: "github_com/freefq-亚太地区26_69", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/ray', headers: {host: '0320hk567.fans8.xyz'}} }
+  - {name: 'github_com/freefq-美国CloudFlare节点27_70', server: 'app.ssfree.ru', port: 443, type: vmess, uuid: 'f43ba546-b29d-11ec-901f-000017022008', alterId: 64, cipher: auto, country: "github_com/freefq-美国CloudFlare节点27_70", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/getweather'} }
+  - {name: 'github_com/freefq-上海市联通28_71', server: 'bgp.xiaohouzi.club', port: 28523, type: vmess, uuid: 'dbf20899-f0d8-33bd-bed0-ddc16105dfe3', alterId: 1, cipher: auto, country: "github_com/freefq-上海市联通28_71", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'www.ibm.com'}} }
+  - {name: 'github_com/freefq-日本29_72', server: 'aws-hk03.xiaohouzi.club', port: 10050, type: vmess, uuid: 'dbf20899-f0d8-33bd-bed0-ddc16105dfe3', alterId: 1, cipher: auto, country: "github_com/freefq-日本29_72", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'aws-hk03.xiaohouzi.club'}} }
+  - {name: 'github_com/freefq-俄罗斯鞑靼斯坦喀山justhost30_73', server: 'v2-r02.xiaohouzi.club', port: 10082, type: vmess, uuid: 'dbf20899-f0d8-33bd-bed0-ddc16105dfe3', alterId: 0, cipher: auto, country: "github_com/freefq-俄罗斯鞑靼斯坦喀山justhost30_73", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'www.ibm.com'}} }
+  - {name: 'github_com/freefq-上海市联通31_74', server: 'mc.xiaohouzi.club', port: 28325, type: vmess, uuid: 'dbf20899-f0d8-33bd-bed0-ddc16105dfe3', alterId: 1, cipher: auto, country: "github_com/freefq-上海市联通31_74", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'www.ibm.com'}} }
+  - {name: 'github_com/freefq-英国32_75', server: 'vs.mumi.bid', port: 10124, type: vmess, uuid: '0748a567-ca97-4fc8-9d9c-9ca18f2b9ff4', alterId: 0, cipher: auto, country: "github_com/freefq-英国32_75", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/'} }
+  - {name: 'github_com/freefq-日本33_76', server: 'azhk01.xiaohouzi.club', port: 10050, type: vmess, uuid: 'dbf20899-f0d8-33bd-bed0-ddc16105dfe3', alterId: 1, cipher: auto, country: "github_com/freefq-日本33_76", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/v2ray', headers: {host: 'azhk01.xiaohouzi.club'}} }
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_3
-      - 🇭🇰_HK_香港_4
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_5
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_6
-      - 🇭🇰_HK_香港_7
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_8
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_9
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_10
+      - Relay_🇷🇺RU-🇷🇺RU_985
+      - Relay_🇺🇸US-🇩🇪DE_3176
+      - 欧洲-_3
+      - 🏁ZZ_2940
+      - 🏁ZZ_3239
+      - 
+      - 🇺🇸US_2327
+      - Relay_🇦🇺AU-🇦🇺AU_140
+      - Relay_🇯🇵JP-🇯🇵JP_876
+      - 
+      - 🇭🇰HK_217
+      - Relay_🇺🇸US-🇺🇸US_1055
+      - Relay_🇨🇳CN-🇺🇸US_441
+      - Relay_🇦🇺AU-🇦🇺AU_128
+      - _197
+      - 公益机场:https://bit_ly/3BPeo5G_16
+      - atSSRSUB-V01-付费推荐:suo_yt/ssrsub_17
+      - atSSRSUB-V02-付费推荐:suo_yt/ssrsub_18
+      - atSSRSUB-V03-付费推荐:suo_yt/ssrsub_19
+      - atSSRSUB-V04-付费推荐:suo_yt/ssrsub_20
+      - atSSRSUB-V05-付费推荐:suo_yt/ssrsub_21
+      - atSSRSUB-V06-付费推荐:suo_yt/ssrsub_22
+      - atSSRSUB-V07-付费推荐:suo_yt/ssrsub_23
+      - atSSRSUB-V08-付费推荐:suo_yt/ssrsub_24
+      - atSSRSUB-V09-付费推荐:suo_yt/ssrsub_25
+      - atSSRSUB-V10-付费推荐:suo_yt/ssrsub_26
+      - atSSRSUB-V11-付费推荐:suo_yt/ssrsub_27
+      - atSSRSUB-V12-付费推荐:suo_yt/ssrsub_28
+      - atSSRSUB-V13-付费推荐:suo_yt/ssrsub_29
+      - atSSRSUB-V14-付费推荐:suo_yt/ssrsub_30
+      - atSSRSUB-V15-付费推荐:suo_yt/ssrsub_31
+      - atSSRSUB-V16-付费推荐:suo_yt/ssrsub_32
+      - atSSRSUB-V17-付费推荐:suo_yt/ssrsub_33
+      - atSSRSUB-V18-付费推荐:suo_yt/ssrsub_34
+      - atSSRSUB-V19-付费推荐:suo_yt/ssrsub_35
+      - atSSRSUB-V20-付费推荐:suo_yt/ssrsub_36
+      - atSSRSUB-V21-付费推荐:suo_yt/ssrsub_37
+      - atSSRSUB-V22-付费推荐:suo_yt/ssrsub_38
+      - atSSRSUB-V23-付费推荐:suo_yt/ssrsub_39
+      - atSSRSUB-V24-付费推荐:suo_yt/ssrsub_40
+      - atSSRSUB-V25-付费推荐:suo_yt/ssrsub_41
+      - atSSRSUB-V26-付费推荐:suo_yt/ssrsub_42
+      - atSSRSUB-V27-付费推荐:suo_yt/ssrsub_43
+      - github_com/freefq-香港特别行政区1_44
+      - github_com/freefq-美国加利福尼亚州圣克拉拉Microsoft公司2_45
+      - github_com/freefq-香港腾讯云3_46
+      - github_com/freefq-香港环球全域电讯4_47
+      - github_com/freefq-香港Microsoft公司5_48
+      - github_com/freefq-香港XNNETLLC6_49
+      - github_com/freefq-加拿大7_50
+      - github_com/freefq-上海市电信8_51
+      - github_com/freefq-北美地区9_52
+      - github_com/freefq-罗马尼亚10_53
+      - github_com/freefq-广东省广州市移动11_54
+      - github_com/freefq-日本12_55
+      - github_com/freefq-广东省汕头市移动13_56
+      - github_com/freefq-日本14_57
+      - github_com/freefq-广东省广州市移动15_58
+      - github_com/freefq-美国16_59
+      - github_com/freefq-美国惠普公司17_60
+      - github_com/freefq-俄罗斯新西伯利亚justhost18_61
+      - github_com/freefq-希腊19_62
+      - github_com/freefq-美国CloudFlare公司CDN节点20_63
+      - github_com/freefq-美国CloudFlare公司CDN节点21_64
+      - github_com/freefq-香港腾讯云22_65
+      - github_com/freefq-加拿大23_66
+      - github_com/freefq-日本东京都品川区Linode数据中心24_67
+      - github_com/freefq-美国25_68
+      - github_com/freefq-亚太地区26_69
+      - github_com/freefq-美国CloudFlare节点27_70
+      - github_com/freefq-上海市联通28_71
+      - github_com/freefq-日本29_72
+      - github_com/freefq-俄罗斯鞑靼斯坦喀山justhost30_73
+      - github_com/freefq-上海市联通31_74
+      - github_com/freefq-英国32_75
+      - github_com/freefq-日本33_76
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_3
-      - 🇭🇰_HK_香港_4
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_5
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_6
-      - 🇭🇰_HK_香港_7
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_8
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_9
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_10
+      - Relay_🇷🇺RU-🇷🇺RU_985
+      - Relay_🇺🇸US-🇩🇪DE_3176
+      - 欧洲-_3
+      - 🏁ZZ_2940
+      - 🏁ZZ_3239
+      - 
+      - 🇺🇸US_2327
+      - Relay_🇦🇺AU-🇦🇺AU_140
+      - Relay_🇯🇵JP-🇯🇵JP_876
+      - 
+      - 🇭🇰HK_217
+      - Relay_🇺🇸US-🇺🇸US_1055
+      - Relay_🇨🇳CN-🇺🇸US_441
+      - Relay_🇦🇺AU-🇦🇺AU_128
+      - _197
+      - 公益机场:https://bit_ly/3BPeo5G_16
+      - atSSRSUB-V01-付费推荐:suo_yt/ssrsub_17
+      - atSSRSUB-V02-付费推荐:suo_yt/ssrsub_18
+      - atSSRSUB-V03-付费推荐:suo_yt/ssrsub_19
+      - atSSRSUB-V04-付费推荐:suo_yt/ssrsub_20
+      - atSSRSUB-V05-付费推荐:suo_yt/ssrsub_21
+      - atSSRSUB-V06-付费推荐:suo_yt/ssrsub_22
+      - atSSRSUB-V07-付费推荐:suo_yt/ssrsub_23
+      - atSSRSUB-V08-付费推荐:suo_yt/ssrsub_24
+      - atSSRSUB-V09-付费推荐:suo_yt/ssrsub_25
+      - atSSRSUB-V10-付费推荐:suo_yt/ssrsub_26
+      - atSSRSUB-V11-付费推荐:suo_yt/ssrsub_27
+      - atSSRSUB-V12-付费推荐:suo_yt/ssrsub_28
+      - atSSRSUB-V13-付费推荐:suo_yt/ssrsub_29
+      - atSSRSUB-V14-付费推荐:suo_yt/ssrsub_30
+      - atSSRSUB-V15-付费推荐:suo_yt/ssrsub_31
+      - atSSRSUB-V16-付费推荐:suo_yt/ssrsub_32
+      - atSSRSUB-V17-付费推荐:suo_yt/ssrsub_33
+      - atSSRSUB-V18-付费推荐:suo_yt/ssrsub_34
+      - atSSRSUB-V19-付费推荐:suo_yt/ssrsub_35
+      - atSSRSUB-V20-付费推荐:suo_yt/ssrsub_36
+      - atSSRSUB-V21-付费推荐:suo_yt/ssrsub_37
+      - atSSRSUB-V22-付费推荐:suo_yt/ssrsub_38
+      - atSSRSUB-V23-付费推荐:suo_yt/ssrsub_39
+      - atSSRSUB-V24-付费推荐:suo_yt/ssrsub_40
+      - atSSRSUB-V25-付费推荐:suo_yt/ssrsub_41
+      - atSSRSUB-V26-付费推荐:suo_yt/ssrsub_42
+      - atSSRSUB-V27-付费推荐:suo_yt/ssrsub_43
+      - github_com/freefq-香港特别行政区1_44
+      - github_com/freefq-美国加利福尼亚州圣克拉拉Microsoft公司2_45
+      - github_com/freefq-香港腾讯云3_46
+      - github_com/freefq-香港环球全域电讯4_47
+      - github_com/freefq-香港Microsoft公司5_48
+      - github_com/freefq-香港XNNETLLC6_49
+      - github_com/freefq-加拿大7_50
+      - github_com/freefq-上海市电信8_51
+      - github_com/freefq-北美地区9_52
+      - github_com/freefq-罗马尼亚10_53
+      - github_com/freefq-广东省广州市移动11_54
+      - github_com/freefq-日本12_55
+      - github_com/freefq-广东省汕头市移动13_56
+      - github_com/freefq-日本14_57
+      - github_com/freefq-广东省广州市移动15_58
+      - github_com/freefq-美国16_59
+      - github_com/freefq-美国惠普公司17_60
+      - github_com/freefq-俄罗斯新西伯利亚justhost18_61
+      - github_com/freefq-希腊19_62
+      - github_com/freefq-美国CloudFlare公司CDN节点20_63
+      - github_com/freefq-美国CloudFlare公司CDN节点21_64
+      - github_com/freefq-香港腾讯云22_65
+      - github_com/freefq-加拿大23_66
+      - github_com/freefq-日本东京都品川区Linode数据中心24_67
+      - github_com/freefq-美国25_68
+      - github_com/freefq-亚太地区26_69
+      - github_com/freefq-美国CloudFlare节点27_70
+      - github_com/freefq-上海市联通28_71
+      - github_com/freefq-日本29_72
+      - github_com/freefq-俄罗斯鞑靼斯坦喀山justhost30_73
+      - github_com/freefq-上海市联通31_74
+      - github_com/freefq-英国32_75
+      - github_com/freefq-日本33_76
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_3
-      - 🇭🇰_HK_香港_4
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_5
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_6
-      - 🇭🇰_HK_香港_7
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_8
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_9
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_10
+      - Relay_🇷🇺RU-🇷🇺RU_985
+      - Relay_🇺🇸US-🇩🇪DE_3176
+      - 欧洲-_3
+      - 🏁ZZ_2940
+      - 🏁ZZ_3239
+      - 
+      - 🇺🇸US_2327
+      - Relay_🇦🇺AU-🇦🇺AU_140
+      - Relay_🇯🇵JP-🇯🇵JP_876
+      - 
+      - 🇭🇰HK_217
+      - Relay_🇺🇸US-🇺🇸US_1055
+      - Relay_🇨🇳CN-🇺🇸US_441
+      - Relay_🇦🇺AU-🇦🇺AU_128
+      - _197
+      - 公益机场:https://bit_ly/3BPeo5G_16
+      - atSSRSUB-V01-付费推荐:suo_yt/ssrsub_17
+      - atSSRSUB-V02-付费推荐:suo_yt/ssrsub_18
+      - atSSRSUB-V03-付费推荐:suo_yt/ssrsub_19
+      - atSSRSUB-V04-付费推荐:suo_yt/ssrsub_20
+      - atSSRSUB-V05-付费推荐:suo_yt/ssrsub_21
+      - atSSRSUB-V06-付费推荐:suo_yt/ssrsub_22
+      - atSSRSUB-V07-付费推荐:suo_yt/ssrsub_23
+      - atSSRSUB-V08-付费推荐:suo_yt/ssrsub_24
+      - atSSRSUB-V09-付费推荐:suo_yt/ssrsub_25
+      - atSSRSUB-V10-付费推荐:suo_yt/ssrsub_26
+      - atSSRSUB-V11-付费推荐:suo_yt/ssrsub_27
+      - atSSRSUB-V12-付费推荐:suo_yt/ssrsub_28
+      - atSSRSUB-V13-付费推荐:suo_yt/ssrsub_29
+      - atSSRSUB-V14-付费推荐:suo_yt/ssrsub_30
+      - atSSRSUB-V15-付费推荐:suo_yt/ssrsub_31
+      - atSSRSUB-V16-付费推荐:suo_yt/ssrsub_32
+      - atSSRSUB-V17-付费推荐:suo_yt/ssrsub_33
+      - atSSRSUB-V18-付费推荐:suo_yt/ssrsub_34
+      - atSSRSUB-V19-付费推荐:suo_yt/ssrsub_35
+      - atSSRSUB-V20-付费推荐:suo_yt/ssrsub_36
+      - atSSRSUB-V21-付费推荐:suo_yt/ssrsub_37
+      - atSSRSUB-V22-付费推荐:suo_yt/ssrsub_38
+      - atSSRSUB-V23-付费推荐:suo_yt/ssrsub_39
+      - atSSRSUB-V24-付费推荐:suo_yt/ssrsub_40
+      - atSSRSUB-V25-付费推荐:suo_yt/ssrsub_41
+      - atSSRSUB-V26-付费推荐:suo_yt/ssrsub_42
+      - atSSRSUB-V27-付费推荐:suo_yt/ssrsub_43
+      - github_com/freefq-香港特别行政区1_44
+      - github_com/freefq-美国加利福尼亚州圣克拉拉Microsoft公司2_45
+      - github_com/freefq-香港腾讯云3_46
+      - github_com/freefq-香港环球全域电讯4_47
+      - github_com/freefq-香港Microsoft公司5_48
+      - github_com/freefq-香港XNNETLLC6_49
+      - github_com/freefq-加拿大7_50
+      - github_com/freefq-上海市电信8_51
+      - github_com/freefq-北美地区9_52
+      - github_com/freefq-罗马尼亚10_53
+      - github_com/freefq-广东省广州市移动11_54
+      - github_com/freefq-日本12_55
+      - github_com/freefq-广东省汕头市移动13_56
+      - github_com/freefq-日本14_57
+      - github_com/freefq-广东省广州市移动15_58
+      - github_com/freefq-美国16_59
+      - github_com/freefq-美国惠普公司17_60
+      - github_com/freefq-俄罗斯新西伯利亚justhost18_61
+      - github_com/freefq-希腊19_62
+      - github_com/freefq-美国CloudFlare公司CDN节点20_63
+      - github_com/freefq-美国CloudFlare公司CDN节点21_64
+      - github_com/freefq-香港腾讯云22_65
+      - github_com/freefq-加拿大23_66
+      - github_com/freefq-日本东京都品川区Linode数据中心24_67
+      - github_com/freefq-美国25_68
+      - github_com/freefq-亚太地区26_69
+      - github_com/freefq-美国CloudFlare节点27_70
+      - github_com/freefq-上海市联通28_71
+      - github_com/freefq-日本29_72
+      - github_com/freefq-俄罗斯鞑靼斯坦喀山justhost30_73
+      - github_com/freefq-上海市联通31_74
+      - github_com/freefq-英国32_75
+      - github_com/freefq-日本33_76
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_3
-      - 🇭🇰_HK_香港_4
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_5
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_6
-      - 🇭🇰_HK_香港_7
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_8
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_9
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_10
+      - Relay_🇷🇺RU-🇷🇺RU_985
+      - Relay_🇺🇸US-🇩🇪DE_3176
+      - 欧洲-_3
+      - 🏁ZZ_2940
+      - 🏁ZZ_3239
+      - 
+      - 🇺🇸US_2327
+      - Relay_🇦🇺AU-🇦🇺AU_140
+      - Relay_🇯🇵JP-🇯🇵JP_876
+      - 
+      - 🇭🇰HK_217
+      - Relay_🇺🇸US-🇺🇸US_1055
+      - Relay_🇨🇳CN-🇺🇸US_441
+      - Relay_🇦🇺AU-🇦🇺AU_128
+      - _197
+      - 公益机场:https://bit_ly/3BPeo5G_16
+      - atSSRSUB-V01-付费推荐:suo_yt/ssrsub_17
+      - atSSRSUB-V02-付费推荐:suo_yt/ssrsub_18
+      - atSSRSUB-V03-付费推荐:suo_yt/ssrsub_19
+      - atSSRSUB-V04-付费推荐:suo_yt/ssrsub_20
+      - atSSRSUB-V05-付费推荐:suo_yt/ssrsub_21
+      - atSSRSUB-V06-付费推荐:suo_yt/ssrsub_22
+      - atSSRSUB-V07-付费推荐:suo_yt/ssrsub_23
+      - atSSRSUB-V08-付费推荐:suo_yt/ssrsub_24
+      - atSSRSUB-V09-付费推荐:suo_yt/ssrsub_25
+      - atSSRSUB-V10-付费推荐:suo_yt/ssrsub_26
+      - atSSRSUB-V11-付费推荐:suo_yt/ssrsub_27
+      - atSSRSUB-V12-付费推荐:suo_yt/ssrsub_28
+      - atSSRSUB-V13-付费推荐:suo_yt/ssrsub_29
+      - atSSRSUB-V14-付费推荐:suo_yt/ssrsub_30
+      - atSSRSUB-V15-付费推荐:suo_yt/ssrsub_31
+      - atSSRSUB-V16-付费推荐:suo_yt/ssrsub_32
+      - atSSRSUB-V17-付费推荐:suo_yt/ssrsub_33
+      - atSSRSUB-V18-付费推荐:suo_yt/ssrsub_34
+      - atSSRSUB-V19-付费推荐:suo_yt/ssrsub_35
+      - atSSRSUB-V20-付费推荐:suo_yt/ssrsub_36
+      - atSSRSUB-V21-付费推荐:suo_yt/ssrsub_37
+      - atSSRSUB-V22-付费推荐:suo_yt/ssrsub_38
+      - atSSRSUB-V23-付费推荐:suo_yt/ssrsub_39
+      - atSSRSUB-V24-付费推荐:suo_yt/ssrsub_40
+      - atSSRSUB-V25-付费推荐:suo_yt/ssrsub_41
+      - atSSRSUB-V26-付费推荐:suo_yt/ssrsub_42
+      - atSSRSUB-V27-付费推荐:suo_yt/ssrsub_43
+      - github_com/freefq-香港特别行政区1_44
+      - github_com/freefq-美国加利福尼亚州圣克拉拉Microsoft公司2_45
+      - github_com/freefq-香港腾讯云3_46
+      - github_com/freefq-香港环球全域电讯4_47
+      - github_com/freefq-香港Microsoft公司5_48
+      - github_com/freefq-香港XNNETLLC6_49
+      - github_com/freefq-加拿大7_50
+      - github_com/freefq-上海市电信8_51
+      - github_com/freefq-北美地区9_52
+      - github_com/freefq-罗马尼亚10_53
+      - github_com/freefq-广东省广州市移动11_54
+      - github_com/freefq-日本12_55
+      - github_com/freefq-广东省汕头市移动13_56
+      - github_com/freefq-日本14_57
+      - github_com/freefq-广东省广州市移动15_58
+      - github_com/freefq-美国16_59
+      - github_com/freefq-美国惠普公司17_60
+      - github_com/freefq-俄罗斯新西伯利亚justhost18_61
+      - github_com/freefq-希腊19_62
+      - github_com/freefq-美国CloudFlare公司CDN节点20_63
+      - github_com/freefq-美国CloudFlare公司CDN节点21_64
+      - github_com/freefq-香港腾讯云22_65
+      - github_com/freefq-加拿大23_66
+      - github_com/freefq-日本东京都品川区Linode数据中心24_67
+      - github_com/freefq-美国25_68
+      - github_com/freefq-亚太地区26_69
+      - github_com/freefq-美国CloudFlare节点27_70
+      - github_com/freefq-上海市联通28_71
+      - github_com/freefq-日本29_72
+      - github_com/freefq-俄罗斯鞑靼斯坦喀山justhost30_73
+      - github_com/freefq-上海市联通31_74
+      - github_com/freefq-英国32_75
+      - github_com/freefq-日本33_76
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_3
-      - 🇭🇰_HK_香港_4
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_5
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_6
-      - 🇭🇰_HK_香港_7
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_8
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_9
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_10
+      - Relay_🇷🇺RU-🇷🇺RU_985
+      - Relay_🇺🇸US-🇩🇪DE_3176
+      - 欧洲-_3
+      - 🏁ZZ_2940
+      - 🏁ZZ_3239
+      - 
+      - 🇺🇸US_2327
+      - Relay_🇦🇺AU-🇦🇺AU_140
+      - Relay_🇯🇵JP-🇯🇵JP_876
+      - 
+      - 🇭🇰HK_217
+      - Relay_🇺🇸US-🇺🇸US_1055
+      - Relay_🇨🇳CN-🇺🇸US_441
+      - Relay_🇦🇺AU-🇦🇺AU_128
+      - _197
+      - 公益机场:https://bit_ly/3BPeo5G_16
+      - atSSRSUB-V01-付费推荐:suo_yt/ssrsub_17
+      - atSSRSUB-V02-付费推荐:suo_yt/ssrsub_18
+      - atSSRSUB-V03-付费推荐:suo_yt/ssrsub_19
+      - atSSRSUB-V04-付费推荐:suo_yt/ssrsub_20
+      - atSSRSUB-V05-付费推荐:suo_yt/ssrsub_21
+      - atSSRSUB-V06-付费推荐:suo_yt/ssrsub_22
+      - atSSRSUB-V07-付费推荐:suo_yt/ssrsub_23
+      - atSSRSUB-V08-付费推荐:suo_yt/ssrsub_24
+      - atSSRSUB-V09-付费推荐:suo_yt/ssrsub_25
+      - atSSRSUB-V10-付费推荐:suo_yt/ssrsub_26
+      - atSSRSUB-V11-付费推荐:suo_yt/ssrsub_27
+      - atSSRSUB-V12-付费推荐:suo_yt/ssrsub_28
+      - atSSRSUB-V13-付费推荐:suo_yt/ssrsub_29
+      - atSSRSUB-V14-付费推荐:suo_yt/ssrsub_30
+      - atSSRSUB-V15-付费推荐:suo_yt/ssrsub_31
+      - atSSRSUB-V16-付费推荐:suo_yt/ssrsub_32
+      - atSSRSUB-V17-付费推荐:suo_yt/ssrsub_33
+      - atSSRSUB-V18-付费推荐:suo_yt/ssrsub_34
+      - atSSRSUB-V19-付费推荐:suo_yt/ssrsub_35
+      - atSSRSUB-V20-付费推荐:suo_yt/ssrsub_36
+      - atSSRSUB-V21-付费推荐:suo_yt/ssrsub_37
+      - atSSRSUB-V22-付费推荐:suo_yt/ssrsub_38
+      - atSSRSUB-V23-付费推荐:suo_yt/ssrsub_39
+      - atSSRSUB-V24-付费推荐:suo_yt/ssrsub_40
+      - atSSRSUB-V25-付费推荐:suo_yt/ssrsub_41
+      - atSSRSUB-V26-付费推荐:suo_yt/ssrsub_42
+      - atSSRSUB-V27-付费推荐:suo_yt/ssrsub_43
+      - github_com/freefq-香港特别行政区1_44
+      - github_com/freefq-美国加利福尼亚州圣克拉拉Microsoft公司2_45
+      - github_com/freefq-香港腾讯云3_46
+      - github_com/freefq-香港环球全域电讯4_47
+      - github_com/freefq-香港Microsoft公司5_48
+      - github_com/freefq-香港XNNETLLC6_49
+      - github_com/freefq-加拿大7_50
+      - github_com/freefq-上海市电信8_51
+      - github_com/freefq-北美地区9_52
+      - github_com/freefq-罗马尼亚10_53
+      - github_com/freefq-广东省广州市移动11_54
+      - github_com/freefq-日本12_55
+      - github_com/freefq-广东省汕头市移动13_56
+      - github_com/freefq-日本14_57
+      - github_com/freefq-广东省广州市移动15_58
+      - github_com/freefq-美国16_59
+      - github_com/freefq-美国惠普公司17_60
+      - github_com/freefq-俄罗斯新西伯利亚justhost18_61
+      - github_com/freefq-希腊19_62
+      - github_com/freefq-美国CloudFlare公司CDN节点20_63
+      - github_com/freefq-美国CloudFlare公司CDN节点21_64
+      - github_com/freefq-香港腾讯云22_65
+      - github_com/freefq-加拿大23_66
+      - github_com/freefq-日本东京都品川区Linode数据中心24_67
+      - github_com/freefq-美国25_68
+      - github_com/freefq-亚太地区26_69
+      - github_com/freefq-美国CloudFlare节点27_70
+      - github_com/freefq-上海市联通28_71
+      - github_com/freefq-日本29_72
+      - github_com/freefq-俄罗斯鞑靼斯坦喀山justhost30_73
+      - github_com/freefq-上海市联通31_74
+      - github_com/freefq-英国32_75
+      - github_com/freefq-日本33_76
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_3
-      - 🇭🇰_HK_香港_4
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_5
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_6
-      - 🇭🇰_HK_香港_7
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_8
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_9
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_10
+      - Relay_🇷🇺RU-🇷🇺RU_985
+      - Relay_🇺🇸US-🇩🇪DE_3176
+      - 欧洲-_3
+      - 🏁ZZ_2940
+      - 🏁ZZ_3239
+      - 
+      - 🇺🇸US_2327
+      - Relay_🇦🇺AU-🇦🇺AU_140
+      - Relay_🇯🇵JP-🇯🇵JP_876
+      - 
+      - 🇭🇰HK_217
+      - Relay_🇺🇸US-🇺🇸US_1055
+      - Relay_🇨🇳CN-🇺🇸US_441
+      - Relay_🇦🇺AU-🇦🇺AU_128
+      - _197
+      - 公益机场:https://bit_ly/3BPeo5G_16
+      - atSSRSUB-V01-付费推荐:suo_yt/ssrsub_17
+      - atSSRSUB-V02-付费推荐:suo_yt/ssrsub_18
+      - atSSRSUB-V03-付费推荐:suo_yt/ssrsub_19
+      - atSSRSUB-V04-付费推荐:suo_yt/ssrsub_20
+      - atSSRSUB-V05-付费推荐:suo_yt/ssrsub_21
+      - atSSRSUB-V06-付费推荐:suo_yt/ssrsub_22
+      - atSSRSUB-V07-付费推荐:suo_yt/ssrsub_23
+      - atSSRSUB-V08-付费推荐:suo_yt/ssrsub_24
+      - atSSRSUB-V09-付费推荐:suo_yt/ssrsub_25
+      - atSSRSUB-V10-付费推荐:suo_yt/ssrsub_26
+      - atSSRSUB-V11-付费推荐:suo_yt/ssrsub_27
+      - atSSRSUB-V12-付费推荐:suo_yt/ssrsub_28
+      - atSSRSUB-V13-付费推荐:suo_yt/ssrsub_29
+      - atSSRSUB-V14-付费推荐:suo_yt/ssrsub_30
+      - atSSRSUB-V15-付费推荐:suo_yt/ssrsub_31
+      - atSSRSUB-V16-付费推荐:suo_yt/ssrsub_32
+      - atSSRSUB-V17-付费推荐:suo_yt/ssrsub_33
+      - atSSRSUB-V18-付费推荐:suo_yt/ssrsub_34
+      - atSSRSUB-V19-付费推荐:suo_yt/ssrsub_35
+      - atSSRSUB-V20-付费推荐:suo_yt/ssrsub_36
+      - atSSRSUB-V21-付费推荐:suo_yt/ssrsub_37
+      - atSSRSUB-V22-付费推荐:suo_yt/ssrsub_38
+      - atSSRSUB-V23-付费推荐:suo_yt/ssrsub_39
+      - atSSRSUB-V24-付费推荐:suo_yt/ssrsub_40
+      - atSSRSUB-V25-付费推荐:suo_yt/ssrsub_41
+      - atSSRSUB-V26-付费推荐:suo_yt/ssrsub_42
+      - atSSRSUB-V27-付费推荐:suo_yt/ssrsub_43
+      - github_com/freefq-香港特别行政区1_44
+      - github_com/freefq-美国加利福尼亚州圣克拉拉Microsoft公司2_45
+      - github_com/freefq-香港腾讯云3_46
+      - github_com/freefq-香港环球全域电讯4_47
+      - github_com/freefq-香港Microsoft公司5_48
+      - github_com/freefq-香港XNNETLLC6_49
+      - github_com/freefq-加拿大7_50
+      - github_com/freefq-上海市电信8_51
+      - github_com/freefq-北美地区9_52
+      - github_com/freefq-罗马尼亚10_53
+      - github_com/freefq-广东省广州市移动11_54
+      - github_com/freefq-日本12_55
+      - github_com/freefq-广东省汕头市移动13_56
+      - github_com/freefq-日本14_57
+      - github_com/freefq-广东省广州市移动15_58
+      - github_com/freefq-美国16_59
+      - github_com/freefq-美国惠普公司17_60
+      - github_com/freefq-俄罗斯新西伯利亚justhost18_61
+      - github_com/freefq-希腊19_62
+      - github_com/freefq-美国CloudFlare公司CDN节点20_63
+      - github_com/freefq-美国CloudFlare公司CDN节点21_64
+      - github_com/freefq-香港腾讯云22_65
+      - github_com/freefq-加拿大23_66
+      - github_com/freefq-日本东京都品川区Linode数据中心24_67
+      - github_com/freefq-美国25_68
+      - github_com/freefq-亚太地区26_69
+      - github_com/freefq-美国CloudFlare节点27_70
+      - github_com/freefq-上海市联通28_71
+      - github_com/freefq-日本29_72
+      - github_com/freefq-俄罗斯鞑靼斯坦喀山justhost30_73
+      - github_com/freefq-上海市联通31_74
+      - github_com/freefq-英国32_75
+      - github_com/freefq-日本33_76
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -130,16 +592,82 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_3
-      - 🇭🇰_HK_香港_4
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_5
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_6
-      - 🇭🇰_HK_香港_7
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_8
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_9
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_10
+      - Relay_🇷🇺RU-🇷🇺RU_985
+      - Relay_🇺🇸US-🇩🇪DE_3176
+      - 欧洲-_3
+      - 🏁ZZ_2940
+      - 🏁ZZ_3239
+      - 
+      - 🇺🇸US_2327
+      - Relay_🇦🇺AU-🇦🇺AU_140
+      - Relay_🇯🇵JP-🇯🇵JP_876
+      - 
+      - 🇭🇰HK_217
+      - Relay_🇺🇸US-🇺🇸US_1055
+      - Relay_🇨🇳CN-🇺🇸US_441
+      - Relay_🇦🇺AU-🇦🇺AU_128
+      - _197
+      - 公益机场:https://bit_ly/3BPeo5G_16
+      - atSSRSUB-V01-付费推荐:suo_yt/ssrsub_17
+      - atSSRSUB-V02-付费推荐:suo_yt/ssrsub_18
+      - atSSRSUB-V03-付费推荐:suo_yt/ssrsub_19
+      - atSSRSUB-V04-付费推荐:suo_yt/ssrsub_20
+      - atSSRSUB-V05-付费推荐:suo_yt/ssrsub_21
+      - atSSRSUB-V06-付费推荐:suo_yt/ssrsub_22
+      - atSSRSUB-V07-付费推荐:suo_yt/ssrsub_23
+      - atSSRSUB-V08-付费推荐:suo_yt/ssrsub_24
+      - atSSRSUB-V09-付费推荐:suo_yt/ssrsub_25
+      - atSSRSUB-V10-付费推荐:suo_yt/ssrsub_26
+      - atSSRSUB-V11-付费推荐:suo_yt/ssrsub_27
+      - atSSRSUB-V12-付费推荐:suo_yt/ssrsub_28
+      - atSSRSUB-V13-付费推荐:suo_yt/ssrsub_29
+      - atSSRSUB-V14-付费推荐:suo_yt/ssrsub_30
+      - atSSRSUB-V15-付费推荐:suo_yt/ssrsub_31
+      - atSSRSUB-V16-付费推荐:suo_yt/ssrsub_32
+      - atSSRSUB-V17-付费推荐:suo_yt/ssrsub_33
+      - atSSRSUB-V18-付费推荐:suo_yt/ssrsub_34
+      - atSSRSUB-V19-付费推荐:suo_yt/ssrsub_35
+      - atSSRSUB-V20-付费推荐:suo_yt/ssrsub_36
+      - atSSRSUB-V21-付费推荐:suo_yt/ssrsub_37
+      - atSSRSUB-V22-付费推荐:suo_yt/ssrsub_38
+      - atSSRSUB-V23-付费推荐:suo_yt/ssrsub_39
+      - atSSRSUB-V24-付费推荐:suo_yt/ssrsub_40
+      - atSSRSUB-V25-付费推荐:suo_yt/ssrsub_41
+      - atSSRSUB-V26-付费推荐:suo_yt/ssrsub_42
+      - atSSRSUB-V27-付费推荐:suo_yt/ssrsub_43
+      - github_com/freefq-香港特别行政区1_44
+      - github_com/freefq-美国加利福尼亚州圣克拉拉Microsoft公司2_45
+      - github_com/freefq-香港腾讯云3_46
+      - github_com/freefq-香港环球全域电讯4_47
+      - github_com/freefq-香港Microsoft公司5_48
+      - github_com/freefq-香港XNNETLLC6_49
+      - github_com/freefq-加拿大7_50
+      - github_com/freefq-上海市电信8_51
+      - github_com/freefq-北美地区9_52
+      - github_com/freefq-罗马尼亚10_53
+      - github_com/freefq-广东省广州市移动11_54
+      - github_com/freefq-日本12_55
+      - github_com/freefq-广东省汕头市移动13_56
+      - github_com/freefq-日本14_57
+      - github_com/freefq-广东省广州市移动15_58
+      - github_com/freefq-美国16_59
+      - github_com/freefq-美国惠普公司17_60
+      - github_com/freefq-俄罗斯新西伯利亚justhost18_61
+      - github_com/freefq-希腊19_62
+      - github_com/freefq-美国CloudFlare公司CDN节点20_63
+      - github_com/freefq-美国CloudFlare公司CDN节点21_64
+      - github_com/freefq-香港腾讯云22_65
+      - github_com/freefq-加拿大23_66
+      - github_com/freefq-日本东京都品川区Linode数据中心24_67
+      - github_com/freefq-美国25_68
+      - github_com/freefq-亚太地区26_69
+      - github_com/freefq-美国CloudFlare节点27_70
+      - github_com/freefq-上海市联通28_71
+      - github_com/freefq-日本29_72
+      - github_com/freefq-俄罗斯鞑靼斯坦喀山justhost30_73
+      - github_com/freefq-上海市联通31_74
+      - github_com/freefq-英国32_75
+      - github_com/freefq-日本33_76
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
