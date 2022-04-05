@@ -4,552 +4,136 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
-proxies: 
-  - {name: '🇫🇷_FR_法国_Sodium_360', server: '54.37.192.112', port: 443, type: vmess, uuid: '9f58234c-355b-4065-ae21-d4a63099aba5', alterId: 64, cipher: auto, country: "🇫🇷_FR_法国_Sodium_360", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/path/120208301422', headers: {host: 'www.15738743.xyz'}} }
-  - {name: '🇨🇳_CN_中国_Sodium_359', server: '7704d818-78e5-471a-a1d6-655c4d79f662.1c5f5adf-a6ce-4066-b318-fa7eb97f68c8.xn--9kq12xdq7a.com', port: 10014, type: ss, country: '🇨🇳_CN_中国_Sodium_359', cipher: 'aes-256-gcm', password: '1d0ffc47-9e73-482e-bb98-0b6b637124c1'}
-  - {name: '🇺🇸_US_美国_Sodium_499', server: '207.246.94.28', port: 42383, type: vmess, uuid: '4773dfdc-9c85-4873-8720-ce8cf5f74f7c', alterId: 0, cipher: auto, country: "🇺🇸_US_美国_Sodium_499", "skip-cert-verify": true, tls: false, network: 'tcp', ws-opts: { path: '/xrenblog/', headers: {host: '207.246.94.28'}} }
-  - {name: 'Sodium_510', server: '104.16.162.16', port: 2053, type: vmess, uuid: 'bf67437e-6c90-45ca-abc2-c7240a5ce2aa', alterId: 0, cipher: auto, country: "Sodium_510", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/eisasqa', headers: {host: 'foxus.fovi.tk'}} }
-  - {name: 'Sodium_514', server: '104.18.96.85', port: 2053, type: vmess, uuid: 'bf67437e-6c90-45ca-abc2-c7240a5ce2aa', alterId: 0, cipher: auto, country: "Sodium_514", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/eisasqa', headers: {host: 'foxus.fovi.tk'}} }
-  - {name: 'Sodium_518', server: '104.16.42.170', port: 2053, type: vmess, uuid: 'bf67437e-6c90-45ca-abc2-c7240a5ce2aa', alterId: 0, cipher: auto, country: "Sodium_518", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/eisasqa', headers: {host: 'foxus.fovi.tk'}} }
-  - {name: '🇨🇦_CA_加拿大_Sodium_531', server: '134.195.196.51', port: 443, type: ss, country: '🇨🇦_CA_加拿大_Sodium_531', cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
-  - {name: '🇺🇸_US_美国_Sodium_532', server: '169.197.142.99', port: 9102, type: ss, country: '🇺🇸_US_美国_Sodium_532', cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
-  - {name: '🇨🇦_CA_加拿大_Sodium_535', server: '134.195.196.51', port: 9102, type: ss, country: '🇨🇦_CA_加拿大_Sodium_535', cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
-  - {name: '🇺🇸_US_美国_Sodium_539', server: '169.197.142.99', port: 3306, type: ss, country: '🇺🇸_US_美国_Sodium_539', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: '🇨🇦_CA_加拿大_Sodium_544', server: '134.195.196.51', port: 8090, type: ss, country: '🇨🇦_CA_加拿大_Sodium_544', cipher: 'aes-256-gcm', password: 'PCnnH6SQSnfoS27'}
-  - {name: '🇺🇸_US_美国_Sodium_545', server: '169.197.142.99', port: 2376, type: ss, country: '🇺🇸_US_美国_Sodium_545', cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
-  - {name: '🇺🇸_US_美国_Sodium_557', server: '169.197.142.99', port: 8000, type: ss, country: '🇺🇸_US_美国_Sodium_557', cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
-  - {name: '🇨🇦_CA_加拿大_Sodium_561', server: '134.195.196.51', port: 8009, type: ss, country: '🇨🇦_CA_加拿大_Sodium_561', cipher: 'aes-256-gcm', password: 'XKFKl2rULjIp74'}
-  - {name: '🇨🇦_CA_加拿大_Sodium_565', server: '134.195.196.51', port: 6679, type: ss, country: '🇨🇦_CA_加拿大_Sodium_565', cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
-  - {name: '🇺🇸_US_美国_Sodium_567', server: '169.197.142.99', port: 8118, type: ss, country: '🇺🇸_US_美国_Sodium_567', cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
-  - {name: '🇺🇸_US_美国_Sodium_569', server: '169.197.142.99', port: 443, type: ss, country: '🇺🇸_US_美国_Sodium_569', cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
-  - {name: '🇨🇦_CA_加拿大_Sodium_571', server: '134.195.196.51', port: 8008, type: ss, country: '🇨🇦_CA_加拿大_Sodium_571', cipher: 'aes-256-gcm', password: 'XKFKl2rULjIp74'}
-  - {name: '🇨🇦_CA_加拿大_Sodium_576', server: '134.195.196.51', port: 8882, type: ss, country: '🇨🇦_CA_加拿大_Sodium_576', cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
-  - {name: '🇨🇦_CA_加拿大_Sodium_577', server: '134.195.196.51', port: 5000, type: ss, country: '🇨🇦_CA_加拿大_Sodium_577', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: '🇫🇷_FR_法国_Sodium_580', server: '188.165.26.49', port: 443, type: vmess, uuid: 'a048a6ff-d537-4303-b8cd-9507bea0a79c', alterId: 64, cipher: auto, country: "🇫🇷_FR_法国_Sodium_580", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/path/120208301422', headers: {host: 'www.57275413.xyz'}} }
-  - {name: '🇺🇸_US_美国_Sodium_582', server: '169.197.142.99', port: 3389, type: ss, country: '🇺🇸_US_美国_Sodium_582', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: '🇨🇦_CA_加拿大_Sodium_586', server: '134.195.196.51', port: 8118, type: ss, country: '🇨🇦_CA_加拿大_Sodium_586', cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
-  - {name: '🇺🇸_US_美国_Sodium_594', server: '169.197.142.99', port: 7001, type: ss, country: '🇺🇸_US_美国_Sodium_594', cipher: 'aes-256-gcm', password: 'RexnBgU7EV5ADxG'}
-  - {name: '🇺🇸_US_美国_Sodium_600', server: '169.197.142.99', port: 5001, type: ss, country: '🇺🇸_US_美国_Sodium_600', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: '🇺🇸_US_美国_Sodium_604', server: '169.197.142.99', port: 6379, type: ss, country: '🇺🇸_US_美国_Sodium_604', cipher: 'aes-256-gcm', password: 'zDNVedRFPQexG9v'}
-  - {name: '🇺🇸_US_美国_Sodium_612', server: '169.197.142.99', port: 6679, type: ss, country: '🇺🇸_US_美国_Sodium_612', cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
-  - {name: '🇨🇦_CA_加拿大_Sodium_621', server: '134.195.196.51', port: 6697, type: ss, country: '🇨🇦_CA_加拿大_Sodium_621', cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
-  - {name: '🇺🇸_US_美国_Sodium_622', server: '169.197.142.99', port: 2375, type: ss, country: '🇺🇸_US_美国_Sodium_622', cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
-  - {name: '🇨🇳_CN_中国_Sodium_630', server: '49.234.158.14', port: 10909, type: vmess, uuid: 'c3082e6f-37b2-41b6-b40a-1063bc8e2853', alterId: 0, cipher: auto, country: "🇨🇳_CN_中国_Sodium_630", "skip-cert-verify": true, tls: false, network: 'tcp', ws-opts: { path: '/', headers: {host: '49.234.158.14'}} }
-  - {name: '🇨🇦_CA_加拿大_Sodium_636', server: '134.195.196.51', port: 8881, type: ss, country: '🇨🇦_CA_加拿大_Sodium_636', cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
-  - {name: '🇺🇸_US_美国_Sodium_647', server: 'ruvds.testx.eu.org', port: 443, type: vmess, uuid: '0e7036c1-6de1-4a83-ef4f-e0d56c67fa10', alterId: 0, cipher: auto, country: "🇺🇸_US_美国_Sodium_647", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/vmess-share/?ed=2048', headers: {host: 'ruvds.testx.eu.org'}} }
-  - {name: '🇨🇦_CA_加拿大_Sodium_648', server: '134.195.196.51', port: 8080, type: ss, country: '🇨🇦_CA_加拿大_Sodium_648', cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
-  - {name: '🇨🇦_CA_加拿大_Sodium_649', server: '134.195.196.51', port: 5500, type: ss, country: '🇨🇦_CA_加拿大_Sodium_649', cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
-  - {name: '🇨🇦_CA_加拿大_Sodium_651', server: '134.195.196.51', port: 5601, type: ss, country: '🇨🇦_CA_加拿大_Sodium_651', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - {name: '🇨🇦_CA_加拿大_Sodium_655', server: '134.195.196.51', port: 9101, type: ss, country: '🇨🇦_CA_加拿大_Sodium_655', cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
-  - {name: '🇻🇳_VN_越南_Sodium_669', server: '0319hzm01.fans8.xyz', port: 443, type: vmess, uuid: '5c70da5d-e641-3bf8-b7dc-5babd843ff3c', alterId: 2, cipher: auto, country: "🇻🇳_VN_越南_Sodium_669", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/nmsl', headers: {host: '0319hzm01.fans8.xyz'}} }
-  - {name: '🇺🇸_US_美国_Sodium_670', server: '172.67.190.72', port: 443, type: vmess, uuid: 'a8910831-f56b-4ac4-c68f-e4dd83f71e60', alterId: 0, cipher: auto, country: "🇺🇸_US_美国_Sodium_670", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/sakura/', headers: {host: 'zero2.a-yu.xyz'}} }
-  - {name: '🇺🇸_US_美国_Sodium_671', server: 'cloudflare.xrenblog.com', port: 443, type: vmess, uuid: '6c175d1a-a57f-4881-a471-173eb139694b', alterId: 0, cipher: auto, country: "🇺🇸_US_美国_Sodium_671", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/xrenblog/', headers: {host: 'ipv6.xrenblog.com'}} }
-  - {name: 'Sodium_672', server: '104.21.84.81', port: 443, type: vmess, uuid: 'a8910831-f56b-4ac4-c68f-e4dd83f71e60', alterId: 0, cipher: auto, country: "Sodium_672", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/sakura/', headers: {host: 'zero2.a-yu.xyz'}} }
-  - {name: '🇺🇸_US_美国_Sodium_673', server: '03071t.moonfree.top', port: 443, type: vmess, uuid: 'aa5dd703-195d-4682-8c35-ea0083ea1a74', alterId: 0, cipher: auto, country: "🇺🇸_US_美国_Sodium_673", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/', headers: {host: '03071t.moonfree.top'}} }
-  - {name: '🇨🇳_CN_中国_Sodium_674', server: 'gzydv.baidupi.best', port: 15501, type: vmess, uuid: '84479bf7-0525-3aad-98e0-0a7130fb77c9', alterId: 0, cipher: auto, country: "🇨🇳_CN_中国_Sodium_674", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/asuq', headers: {host: 'gzydv.baidupi.best'}} }
-  - {name: '🇨🇳_CN_中国_Sodium_675', server: 'gzydv2.baidupi.xyz', port: 27740, type: vmess, uuid: '84479bf7-0525-3aad-98e0-0a7130fb77c9', alterId: 0, cipher: auto, country: "🇨🇳_CN_中国_Sodium_675", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/videos', headers: {host: 'gzydv2.baidupi.xyz'}} }
-  - {name: '🇨🇳_CN_中国_Sodium_676', server: 'gzydn2.baidupi.xyz', port: 21104, type: vmess, uuid: '84479bf7-0525-3aad-98e0-0a7130fb77c9', alterId: 0, cipher: auto, country: "🇨🇳_CN_中国_Sodium_676", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/asuq', headers: {host: 'gzydn2.baidupi.xyz'}} }
-  - {name: '🇨🇳_CN_中国_Sodium_677', server: 'gzydn1.qiqifamily.top', port: 24575, type: vmess, uuid: '84479bf7-0525-3aad-98e0-0a7130fb77c9', alterId: 0, cipher: auto, country: "🇨🇳_CN_中国_Sodium_677", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/mess', headers: {host: 'gzydn1.qiqifamily.top'}} }
-  - {name: '🇨🇳_CN_中国_Sodium_678', server: 'gzydn1.qiqifamily.top', port: 24571, type: vmess, uuid: '84479bf7-0525-3aad-98e0-0a7130fb77c9', alterId: 0, cipher: auto, country: "🇨🇳_CN_中国_Sodium_678", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/hka', headers: {host: 'gzydn1.qiqifamily.top'}} }
-  - { name: '🇯🇵_JP_日本_Sodium_679', server: 'jgwdj1.gaox.ml', port: 443, type: trojan, country: '🇯🇵_JP_日本_Sodium_679', 'skip-cert-verify': true, udp: true, password: e8553fc5-f3a0-409c-ac06-1cd93b026cf4 }
-  - {name: '🇺🇸_US_美国_Sodium_681', server: '20.24.80.151', port: 30913, type: vmess, uuid: '530c6415-b7c9-447b-ed49-7ccee0a64237', alterId: 0, cipher: auto, country: "🇺🇸_US_美国_Sodium_681", "skip-cert-verify": true, tls: false, network: 'tcp', ws-opts: { path: '/', headers: {host: '20.24.80.151'}} }
-  - {name: 'Sodium_684', server: '104.16.104.126', port: 443, type: vmess, uuid: '24b4b1e1-7a89-45f6-858c-242cf53b5bdb', alterId: 0, cipher: auto, country: "Sodium_684", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/24b4b1e1-7a89-45f6-858c-242cf53b5bdb-vmess', headers: {host: 'sweet-salad-aa33.tianzhen19880808.workers.dev'}} }
-  - {name: '🇰🇷_KR_韩国_Sodium_685', server: 's5.walkunderground.com', port: 11218, type: vmess, uuid: '343c8ad8-7fe1-405d-bb0d-c12ca62494ec', alterId: 0, cipher: auto, country: "🇰🇷_KR_韩国_Sodium_685", "skip-cert-verify": true, tls: true, network: 'tcp', ws-opts: { path: '/shuier', headers: {host: 's5.walkunderground.com'}} }
-  - {name: '🇨🇳_CN_中国_Sodium_686', server: 'gzydv.baidupi.xyz', port: 14002, type: vmess, uuid: '84479bf7-0525-3aad-98e0-0a7130fb77c9', alterId: 0, cipher: auto, country: "🇨🇳_CN_中国_Sodium_686", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/asuq', headers: {host: 'gzydv.baidupi.xyz'}} }
-  - {name: '🇨🇳_CN_中国_Sodium_689', server: 'twc.sttlink.xyz', port: 31107, type: vmess, uuid: '84479bf7-0525-3aad-98e0-0a7130fb77c9', alterId: 0, cipher: auto, country: "🇨🇳_CN_中国_Sodium_689", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/ka', headers: {host: 'twc.sttlink.xyz'}} }
-  - {name: '🇨🇳_CN_中国_Sodium_693', server: 'in-v1.sdgdn.com', port: 50701, type: vmess, uuid: 'b1478e24-4916-3abe-8f17-15931012ecbe', alterId: 1, cipher: auto, country: "🇨🇳_CN_中国_Sodium_693", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/hls/cctv5phd.m3u8', headers: {host: 'telegram.channel.ripaojiedian'}} }
-  - {name: '🇨🇳_CN_中国_Sodium_695', server: 'ultimate-stack.atomwan.link', port: 11004, type: ss, country: '🇨🇳_CN_中国_Sodium_695', cipher: 'chacha20-ietf-poly1305', password: '9680e06a-fd10-4381-b796-8f305e09b08f'}
-  - {name: '🇨🇳_CN_中国_Sodium_696', server: 'ingress-i1.onebox6.org', port: 38701, type: vmess, uuid: '79386685-16da-327c-9e14-aa6d702d86bc', alterId: 1, cipher: auto, country: "🇨🇳_CN_中国_Sodium_696", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/hls/cctv5phd.m3u8', headers: {host: 'ingress-i1.onebox6.org'}} }
-  - {name: '🇨🇳_CN_中国_Sodium_697', server: 'in-v1.sdgdn.com', port: 50401, type: vmess, uuid: 'b1478e24-4916-3abe-8f17-15931012ecbe', alterId: 1, cipher: auto, country: "🇨🇳_CN_中国_Sodium_697", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/hls/cctv5phd.m3u8'} }
-  - {name: '🇺🇸_US_美国_Sodium_698', server: '169.197.142.99', port: 9101, type: ss, country: '🇺🇸_US_美国_Sodium_698', cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
-  - {name: '🇨🇦_CA_加拿大_Sodium_703', server: '134.195.196.51', port: 6379, type: ss, country: '🇨🇦_CA_加拿大_Sodium_703', cipher: 'aes-256-gcm', password: 'zDNVedRFPQexG9v'}
-  - {name: '🇨🇳_CN_中国_Sodium_704', server: 'ultimate-stack.atomwan.link', port: 11020, type: ss, country: '🇨🇳_CN_中国_Sodium_704', cipher: 'chacha20-ietf-poly1305', password: '9680e06a-fd10-4381-b796-8f305e09b08f'}
-  - {name: '🇨🇦_CA_加拿大_Sodium_705', server: '134.195.196.51', port: 8888, type: ss, country: '🇨🇦_CA_加拿大_Sodium_705', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
-  - { name: '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_Sodium_710', server: '104.25.234.170', port: 443, country: "%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_Sodium_710", type: vless, uuid: '82c1fef7-c60b-4ddc-a84c-1dc24a8a5331', cipher: 'auto', skip-cert-verify: true, tls: true, path: '/Support-Putin-Kill-all-Ukrainians_ws', host: 'in.884899.cf', network: http }
-  - {name: 'Sodium_711', server: '104.19.3.31', port: 443, type: vmess, uuid: '9e6ceeff-2546-3690-ac00-6fcdf31dec94', alterId: 1, cipher: auto, country: "Sodium_711", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/chaugg', headers: {host: 'v2fly.samrt.website'}} }
-  - {name: 'Sodium_718', server: 'v2ray.788644.xyz', port: 443, type: vmess, uuid: '000fe881-b655-4212-b804-b00f9970d5aa', alterId: 0, cipher: auto, country: "Sodium_718", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/happy', headers: {host: 'v2ray.788644.xyz'}} }
-  - {name: '🇨🇳_CN_中国_Sodium_721', server: 'in-v1.sdgdn.com', port: 50205, type: vmess, uuid: 'b1478e24-4916-3abe-8f17-15931012ecbe', alterId: 1, cipher: auto, country: "🇨🇳_CN_中国_Sodium_721", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/hls/cctv5phd.m3u8', headers: {host: 'in-v1.sdgdn.com'}} }
-  - {name: '🇨🇳_CN_中国_Sodium_722', server: 'in-v1.sdgdn.com', port: 50301, type: vmess, uuid: 'b1478e24-4916-3abe-8f17-15931012ecbe', alterId: 1, cipher: auto, country: "🇨🇳_CN_中国_Sodium_722", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/hls/cctv5phd.m3u8'} }
-  - {name: '🇨🇳_CN_中国_Sodium_726', server: 'ingress-i1.onebox6.org', port: 38201, type: vmess, uuid: '79386685-16da-327c-9e14-aa6d702d86bc', alterId: 1, cipher: auto, country: "🇨🇳_CN_中国_Sodium_726", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/hls/cctv5phd.m3u8', headers: {host: 'ingress-i1.onebox6.org'}} }
-  - {name: '🇨🇳_CN_中国_Sodium_727', server: 'in-v1.sdgdn.com', port: 50206, type: vmess, uuid: 'b1478e24-4916-3abe-8f17-15931012ecbe', alterId: 1, cipher: auto, country: "🇨🇳_CN_中国_Sodium_727", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/hls/cctv5phd.m3u8', headers: {host: 'telegram.channel.p2psharing'}} }
-  - {name: '🇨🇳_CN_中国_Sodium_728', server: 'ingress-i1.onebox6.org', port: 38106, type: vmess, uuid: '79386685-16da-327c-9e14-aa6d702d86bc', alterId: 1, cipher: auto, country: "🇨🇳_CN_中国_Sodium_728", "skip-cert-verify": true, tls: false, network: 'ws', ws-opts: { path: '/hls/cctv5phd.m3u8', headers: {host: 'www.ivpnpro.net'}} }
-  - {name: '🇨🇦_CA_加拿大_69', server: '134.195.196.51', port: 8008, type: ss, country: '🇨🇦_CA_加拿大_69', cipher: 'aes-256-gcm', password: 'XKFKl2rULjIp74'}
-  - {name: '🇻🇳_VN_越南_70', server: '0319hzm01.fans8.xyz', port: 443, type: vmess, uuid: '5c70da5d-e641-3bf8-b7dc-5babd843ff3c', alterId: 2, cipher: auto, country: "🇻🇳_VN_越南_70", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/nmsl', headers: {host: '0319hzm01.fans8.xyz'}} }
-  - {name: '🇺🇸_US_美国_71', server: '172.67.190.72', port: 443, type: vmess, uuid: 'a8910831-f56b-4ac4-c68f-e4dd83f71e60', alterId: 0, cipher: auto, country: "🇺🇸_US_美国_71", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/sakura/', headers: {host: 'zero2.a-yu.xyz'}} }
-  - {name: '🇺🇸_US_美国->🇩🇪_DE_德国_72', server: 'cloudflare.xrenblog.com', port: 443, type: vmess, uuid: '6c175d1a-a57f-4881-a471-173eb139694b', alterId: 0, cipher: auto, country: "🇺🇸_US_美国->🇩🇪_DE_德国_72", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/xrenblog/', headers: {host: 'ipv6.xrenblog.com'}} }
-  - {name: 'default_name_73', server: '104.21.84.81', port: 443, type: vmess, uuid: 'a8910831-f56b-4ac4-c68f-e4dd83f71e60', alterId: 0, cipher: auto, country: "default_name_73", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/sakura/', headers: {host: 'zero2.a-yu.xyz'}} }
-  - {name: '🇺🇸_US_美国->🇫🇷_FR_法国_74', server: '03071t.moonfree.top', port: 443, type: vmess, uuid: 'aa5dd703-195d-4682-8c35-ea0083ea1a74', alterId: 0, cipher: auto, country: "🇺🇸_US_美国->🇫🇷_FR_法国_74", "skip-cert-verify": true, tls: true, network: 'ws', ws-opts: { path: '/', headers: {host: '03071t.moonfree.top'}} }
+proxies:
+  - {"name":"俄罗斯E_1","server":"193.233.16.243","port":8616,"type":"ssr","country":"俄罗斯E_1","password":"lncn.org
+    5e","cipher":"rc4","protocol":"origin","obfs":"plain"}
+  - {"name":"俄罗斯F_2","server":"195.245.239.15","port":8616,"type":"ssr","country":"俄罗斯F_2","password":"lncn.org
+    5e","cipher":"rc4","protocol":"origin","obfs":"plain"}
+  - {"name":"俄罗斯G_3","server":"45.8.158.201","port":8616,"type":"ssr","country":"俄罗斯G_3","password":"lncn.org
+    5e","cipher":"rc4","protocol":"origin","obfs":"plain"}
+  - {"name":"俄罗斯H_4","server":"46.29.160.130","port":8616,"type":"ssr","country":"俄罗斯H_4","password":"lncn.org
+    5e","cipher":"rc4","protocol":"origin","obfs":"plain"}
+  - {"name":"俄罗斯I_5","server":"194.147.34.32","port":8616,"type":"ssr","country":"俄罗斯I_5","password":"lncn.org
+    3j","cipher":"rc4","protocol":"origin","obfs":"plain"}
+  - {"name":"俄罗斯J_6","server":"45.130.147.192","port":8616,"type":"ssr","country":"俄罗斯J_6","password":"lncn.org
+    3j","cipher":"rc4","protocol":"origin","obfs":"plain"}
+  - {"name":"俄罗斯K_7","server":"176.32.32.118","port":8616,"type":"ssr","country":"俄罗斯K_7","password":"lncn.org
+    3j","cipher":"rc4","protocol":"origin","obfs":"plain"}
+  - {"name":"俄罗斯L_8","server":"176.32.32.223","port":8616,"type":"ssr","country":"俄罗斯L_8","password":"lncn.org
+    3j","cipher":"rc4","protocol":"origin","obfs":"plain"}
+  - {"name":"俄罗斯M_9","server":"194.147.34.162","port":8616,"type":"ssr","country":"俄罗斯M_9","password":"lncn.org
+    i9","cipher":"rc4","protocol":"origin","obfs":"plain"}
+  - {"name":"俄罗斯N_10","server":"46.17.46.83","port":8616,"type":"ssr","country":"俄罗斯N_10","password":"lncn.org
+    i9","cipher":"rc4","protocol":"origin","obfs":"plain"}
+  - {"name":"俄罗斯O_11","server":"46.17.47.156","port":8616,"type":"ssr","country":"俄罗斯O_11","password":"lncn.org
+    i9","cipher":"rc4","protocol":"origin","obfs":"plain"}
+  - {"name":"俄罗斯P_12","server":"46.29.160.101","port":8616,"type":"ssr","country":"俄罗斯P_12","password":"lncn.org
+    i9","cipher":"rc4","protocol":"origin","obfs":"plain"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇫🇷_FR_法国_Sodium_360
-      - 🇨🇳_CN_中国_Sodium_359
-      - 🇺🇸_US_美国_Sodium_499
-      - Sodium_510
-      - Sodium_514
-      - Sodium_518
-      - 🇨🇦_CA_加拿大_Sodium_531
-      - 🇺🇸_US_美国_Sodium_532
-      - 🇨🇦_CA_加拿大_Sodium_535
-      - 🇺🇸_US_美国_Sodium_539
-      - 🇨🇦_CA_加拿大_Sodium_544
-      - 🇺🇸_US_美国_Sodium_545
-      - 🇺🇸_US_美国_Sodium_557
-      - 🇨🇦_CA_加拿大_Sodium_561
-      - 🇨🇦_CA_加拿大_Sodium_565
-      - 🇺🇸_US_美国_Sodium_567
-      - 🇺🇸_US_美国_Sodium_569
-      - 🇨🇦_CA_加拿大_Sodium_571
-      - 🇨🇦_CA_加拿大_Sodium_576
-      - 🇨🇦_CA_加拿大_Sodium_577
-      - 🇫🇷_FR_法国_Sodium_580
-      - 🇺🇸_US_美国_Sodium_582
-      - 🇨🇦_CA_加拿大_Sodium_586
-      - 🇺🇸_US_美国_Sodium_594
-      - 🇺🇸_US_美国_Sodium_600
-      - 🇺🇸_US_美国_Sodium_604
-      - 🇺🇸_US_美国_Sodium_612
-      - 🇨🇦_CA_加拿大_Sodium_621
-      - 🇺🇸_US_美国_Sodium_622
-      - 🇨🇳_CN_中国_Sodium_630
-      - 🇨🇦_CA_加拿大_Sodium_636
-      - 🇺🇸_US_美国_Sodium_647
-      - 🇨🇦_CA_加拿大_Sodium_648
-      - 🇨🇦_CA_加拿大_Sodium_649
-      - 🇨🇦_CA_加拿大_Sodium_651
-      - 🇨🇦_CA_加拿大_Sodium_655
-      - 🇻🇳_VN_越南_Sodium_669
-      - 🇺🇸_US_美国_Sodium_670
-      - 🇺🇸_US_美国_Sodium_671
-      - Sodium_672
-      - 🇺🇸_US_美国_Sodium_673
-      - 🇨🇳_CN_中国_Sodium_674
-      - 🇨🇳_CN_中国_Sodium_675
-      - 🇨🇳_CN_中国_Sodium_676
-      - 🇨🇳_CN_中国_Sodium_677
-      - 🇨🇳_CN_中国_Sodium_678
-      - 🇯🇵_JP_日本_Sodium_679
-      - 🇺🇸_US_美国_Sodium_681
-      - Sodium_684
-      - 🇰🇷_KR_韩国_Sodium_685
-      - 🇨🇳_CN_中国_Sodium_686
-      - 🇨🇳_CN_中国_Sodium_689
-      - 🇨🇳_CN_中国_Sodium_693
-      - 🇨🇳_CN_中国_Sodium_695
-      - 🇨🇳_CN_中国_Sodium_696
-      - 🇨🇳_CN_中国_Sodium_697
-      - 🇺🇸_US_美国_Sodium_698
-      - 🇨🇦_CA_加拿大_Sodium_703
-      - 🇨🇳_CN_中国_Sodium_704
-      - 🇨🇦_CA_加拿大_Sodium_705
-      - Sodium_711
-      - Sodium_718
-      - 🇨🇳_CN_中国_Sodium_721
-      - 🇨🇳_CN_中国_Sodium_722
-      - 🇨🇳_CN_中国_Sodium_726
-      - 🇨🇳_CN_中国_Sodium_727
-      - 🇨🇳_CN_中国_Sodium_728
-      - 🇨🇦_CA_加拿大_69
-      - 🇻🇳_VN_越南_70
-      - 🇺🇸_US_美国_71
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_72
-      - default_name_73
-      - 🇺🇸_US_美国->🇫🇷_FR_法国_74
+      - 俄罗斯E_1
+      - 俄罗斯F_2
+      - 俄罗斯G_3
+      - 俄罗斯H_4
+      - 俄罗斯I_5
+      - 俄罗斯J_6
+      - 俄罗斯K_7
+      - 俄罗斯L_8
+      - 俄罗斯M_9
+      - 俄罗斯N_10
+      - 俄罗斯O_11
+      - 俄罗斯P_12
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇫🇷_FR_法国_Sodium_360
-      - 🇨🇳_CN_中国_Sodium_359
-      - 🇺🇸_US_美国_Sodium_499
-      - Sodium_510
-      - Sodium_514
-      - Sodium_518
-      - 🇨🇦_CA_加拿大_Sodium_531
-      - 🇺🇸_US_美国_Sodium_532
-      - 🇨🇦_CA_加拿大_Sodium_535
-      - 🇺🇸_US_美国_Sodium_539
-      - 🇨🇦_CA_加拿大_Sodium_544
-      - 🇺🇸_US_美国_Sodium_545
-      - 🇺🇸_US_美国_Sodium_557
-      - 🇨🇦_CA_加拿大_Sodium_561
-      - 🇨🇦_CA_加拿大_Sodium_565
-      - 🇺🇸_US_美国_Sodium_567
-      - 🇺🇸_US_美国_Sodium_569
-      - 🇨🇦_CA_加拿大_Sodium_571
-      - 🇨🇦_CA_加拿大_Sodium_576
-      - 🇨🇦_CA_加拿大_Sodium_577
-      - 🇫🇷_FR_法国_Sodium_580
-      - 🇺🇸_US_美国_Sodium_582
-      - 🇨🇦_CA_加拿大_Sodium_586
-      - 🇺🇸_US_美国_Sodium_594
-      - 🇺🇸_US_美国_Sodium_600
-      - 🇺🇸_US_美国_Sodium_604
-      - 🇺🇸_US_美国_Sodium_612
-      - 🇨🇦_CA_加拿大_Sodium_621
-      - 🇺🇸_US_美国_Sodium_622
-      - 🇨🇳_CN_中国_Sodium_630
-      - 🇨🇦_CA_加拿大_Sodium_636
-      - 🇺🇸_US_美国_Sodium_647
-      - 🇨🇦_CA_加拿大_Sodium_648
-      - 🇨🇦_CA_加拿大_Sodium_649
-      - 🇨🇦_CA_加拿大_Sodium_651
-      - 🇨🇦_CA_加拿大_Sodium_655
-      - 🇻🇳_VN_越南_Sodium_669
-      - 🇺🇸_US_美国_Sodium_670
-      - 🇺🇸_US_美国_Sodium_671
-      - Sodium_672
-      - 🇺🇸_US_美国_Sodium_673
-      - 🇨🇳_CN_中国_Sodium_674
-      - 🇨🇳_CN_中国_Sodium_675
-      - 🇨🇳_CN_中国_Sodium_676
-      - 🇨🇳_CN_中国_Sodium_677
-      - 🇨🇳_CN_中国_Sodium_678
-      - 🇯🇵_JP_日本_Sodium_679
-      - 🇺🇸_US_美国_Sodium_681
-      - Sodium_684
-      - 🇰🇷_KR_韩国_Sodium_685
-      - 🇨🇳_CN_中国_Sodium_686
-      - 🇨🇳_CN_中国_Sodium_689
-      - 🇨🇳_CN_中国_Sodium_693
-      - 🇨🇳_CN_中国_Sodium_695
-      - 🇨🇳_CN_中国_Sodium_696
-      - 🇨🇳_CN_中国_Sodium_697
-      - 🇺🇸_US_美国_Sodium_698
-      - 🇨🇦_CA_加拿大_Sodium_703
-      - 🇨🇳_CN_中国_Sodium_704
-      - 🇨🇦_CA_加拿大_Sodium_705
-      - Sodium_711
-      - Sodium_718
-      - 🇨🇳_CN_中国_Sodium_721
-      - 🇨🇳_CN_中国_Sodium_722
-      - 🇨🇳_CN_中国_Sodium_726
-      - 🇨🇳_CN_中国_Sodium_727
-      - 🇨🇳_CN_中国_Sodium_728
-      - 🇨🇦_CA_加拿大_69
-      - 🇻🇳_VN_越南_70
-      - 🇺🇸_US_美国_71
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_72
-      - default_name_73
-      - 🇺🇸_US_美国->🇫🇷_FR_法国_74
+      - 俄罗斯E_1
+      - 俄罗斯F_2
+      - 俄罗斯G_3
+      - 俄罗斯H_4
+      - 俄罗斯I_5
+      - 俄罗斯J_6
+      - 俄罗斯K_7
+      - 俄罗斯L_8
+      - 俄罗斯M_9
+      - 俄罗斯N_10
+      - 俄罗斯O_11
+      - 俄罗斯P_12
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇫🇷_FR_法国_Sodium_360
-      - 🇨🇳_CN_中国_Sodium_359
-      - 🇺🇸_US_美国_Sodium_499
-      - Sodium_510
-      - Sodium_514
-      - Sodium_518
-      - 🇨🇦_CA_加拿大_Sodium_531
-      - 🇺🇸_US_美国_Sodium_532
-      - 🇨🇦_CA_加拿大_Sodium_535
-      - 🇺🇸_US_美国_Sodium_539
-      - 🇨🇦_CA_加拿大_Sodium_544
-      - 🇺🇸_US_美国_Sodium_545
-      - 🇺🇸_US_美国_Sodium_557
-      - 🇨🇦_CA_加拿大_Sodium_561
-      - 🇨🇦_CA_加拿大_Sodium_565
-      - 🇺🇸_US_美国_Sodium_567
-      - 🇺🇸_US_美国_Sodium_569
-      - 🇨🇦_CA_加拿大_Sodium_571
-      - 🇨🇦_CA_加拿大_Sodium_576
-      - 🇨🇦_CA_加拿大_Sodium_577
-      - 🇫🇷_FR_法国_Sodium_580
-      - 🇺🇸_US_美国_Sodium_582
-      - 🇨🇦_CA_加拿大_Sodium_586
-      - 🇺🇸_US_美国_Sodium_594
-      - 🇺🇸_US_美国_Sodium_600
-      - 🇺🇸_US_美国_Sodium_604
-      - 🇺🇸_US_美国_Sodium_612
-      - 🇨🇦_CA_加拿大_Sodium_621
-      - 🇺🇸_US_美国_Sodium_622
-      - 🇨🇳_CN_中国_Sodium_630
-      - 🇨🇦_CA_加拿大_Sodium_636
-      - 🇺🇸_US_美国_Sodium_647
-      - 🇨🇦_CA_加拿大_Sodium_648
-      - 🇨🇦_CA_加拿大_Sodium_649
-      - 🇨🇦_CA_加拿大_Sodium_651
-      - 🇨🇦_CA_加拿大_Sodium_655
-      - 🇻🇳_VN_越南_Sodium_669
-      - 🇺🇸_US_美国_Sodium_670
-      - 🇺🇸_US_美国_Sodium_671
-      - Sodium_672
-      - 🇺🇸_US_美国_Sodium_673
-      - 🇨🇳_CN_中国_Sodium_674
-      - 🇨🇳_CN_中国_Sodium_675
-      - 🇨🇳_CN_中国_Sodium_676
-      - 🇨🇳_CN_中国_Sodium_677
-      - 🇨🇳_CN_中国_Sodium_678
-      - 🇯🇵_JP_日本_Sodium_679
-      - 🇺🇸_US_美国_Sodium_681
-      - Sodium_684
-      - 🇰🇷_KR_韩国_Sodium_685
-      - 🇨🇳_CN_中国_Sodium_686
-      - 🇨🇳_CN_中国_Sodium_689
-      - 🇨🇳_CN_中国_Sodium_693
-      - 🇨🇳_CN_中国_Sodium_695
-      - 🇨🇳_CN_中国_Sodium_696
-      - 🇨🇳_CN_中国_Sodium_697
-      - 🇺🇸_US_美国_Sodium_698
-      - 🇨🇦_CA_加拿大_Sodium_703
-      - 🇨🇳_CN_中国_Sodium_704
-      - 🇨🇦_CA_加拿大_Sodium_705
-      - Sodium_711
-      - Sodium_718
-      - 🇨🇳_CN_中国_Sodium_721
-      - 🇨🇳_CN_中国_Sodium_722
-      - 🇨🇳_CN_中国_Sodium_726
-      - 🇨🇳_CN_中国_Sodium_727
-      - 🇨🇳_CN_中国_Sodium_728
-      - 🇨🇦_CA_加拿大_69
-      - 🇻🇳_VN_越南_70
-      - 🇺🇸_US_美国_71
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_72
-      - default_name_73
-      - 🇺🇸_US_美国->🇫🇷_FR_法国_74
+      - 俄罗斯E_1
+      - 俄罗斯F_2
+      - 俄罗斯G_3
+      - 俄罗斯H_4
+      - 俄罗斯I_5
+      - 俄罗斯J_6
+      - 俄罗斯K_7
+      - 俄罗斯L_8
+      - 俄罗斯M_9
+      - 俄罗斯N_10
+      - 俄罗斯O_11
+      - 俄罗斯P_12
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇫🇷_FR_法国_Sodium_360
-      - 🇨🇳_CN_中国_Sodium_359
-      - 🇺🇸_US_美国_Sodium_499
-      - Sodium_510
-      - Sodium_514
-      - Sodium_518
-      - 🇨🇦_CA_加拿大_Sodium_531
-      - 🇺🇸_US_美国_Sodium_532
-      - 🇨🇦_CA_加拿大_Sodium_535
-      - 🇺🇸_US_美国_Sodium_539
-      - 🇨🇦_CA_加拿大_Sodium_544
-      - 🇺🇸_US_美国_Sodium_545
-      - 🇺🇸_US_美国_Sodium_557
-      - 🇨🇦_CA_加拿大_Sodium_561
-      - 🇨🇦_CA_加拿大_Sodium_565
-      - 🇺🇸_US_美国_Sodium_567
-      - 🇺🇸_US_美国_Sodium_569
-      - 🇨🇦_CA_加拿大_Sodium_571
-      - 🇨🇦_CA_加拿大_Sodium_576
-      - 🇨🇦_CA_加拿大_Sodium_577
-      - 🇫🇷_FR_法国_Sodium_580
-      - 🇺🇸_US_美国_Sodium_582
-      - 🇨🇦_CA_加拿大_Sodium_586
-      - 🇺🇸_US_美国_Sodium_594
-      - 🇺🇸_US_美国_Sodium_600
-      - 🇺🇸_US_美国_Sodium_604
-      - 🇺🇸_US_美国_Sodium_612
-      - 🇨🇦_CA_加拿大_Sodium_621
-      - 🇺🇸_US_美国_Sodium_622
-      - 🇨🇳_CN_中国_Sodium_630
-      - 🇨🇦_CA_加拿大_Sodium_636
-      - 🇺🇸_US_美国_Sodium_647
-      - 🇨🇦_CA_加拿大_Sodium_648
-      - 🇨🇦_CA_加拿大_Sodium_649
-      - 🇨🇦_CA_加拿大_Sodium_651
-      - 🇨🇦_CA_加拿大_Sodium_655
-      - 🇻🇳_VN_越南_Sodium_669
-      - 🇺🇸_US_美国_Sodium_670
-      - 🇺🇸_US_美国_Sodium_671
-      - Sodium_672
-      - 🇺🇸_US_美国_Sodium_673
-      - 🇨🇳_CN_中国_Sodium_674
-      - 🇨🇳_CN_中国_Sodium_675
-      - 🇨🇳_CN_中国_Sodium_676
-      - 🇨🇳_CN_中国_Sodium_677
-      - 🇨🇳_CN_中国_Sodium_678
-      - 🇯🇵_JP_日本_Sodium_679
-      - 🇺🇸_US_美国_Sodium_681
-      - Sodium_684
-      - 🇰🇷_KR_韩国_Sodium_685
-      - 🇨🇳_CN_中国_Sodium_686
-      - 🇨🇳_CN_中国_Sodium_689
-      - 🇨🇳_CN_中国_Sodium_693
-      - 🇨🇳_CN_中国_Sodium_695
-      - 🇨🇳_CN_中国_Sodium_696
-      - 🇨🇳_CN_中国_Sodium_697
-      - 🇺🇸_US_美国_Sodium_698
-      - 🇨🇦_CA_加拿大_Sodium_703
-      - 🇨🇳_CN_中国_Sodium_704
-      - 🇨🇦_CA_加拿大_Sodium_705
-      - Sodium_711
-      - Sodium_718
-      - 🇨🇳_CN_中国_Sodium_721
-      - 🇨🇳_CN_中国_Sodium_722
-      - 🇨🇳_CN_中国_Sodium_726
-      - 🇨🇳_CN_中国_Sodium_727
-      - 🇨🇳_CN_中国_Sodium_728
-      - 🇨🇦_CA_加拿大_69
-      - 🇻🇳_VN_越南_70
-      - 🇺🇸_US_美国_71
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_72
-      - default_name_73
-      - 🇺🇸_US_美国->🇫🇷_FR_法国_74
+      - 俄罗斯E_1
+      - 俄罗斯F_2
+      - 俄罗斯G_3
+      - 俄罗斯H_4
+      - 俄罗斯I_5
+      - 俄罗斯J_6
+      - 俄罗斯K_7
+      - 俄罗斯L_8
+      - 俄罗斯M_9
+      - 俄罗斯N_10
+      - 俄罗斯O_11
+      - 俄罗斯P_12
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇫🇷_FR_法国_Sodium_360
-      - 🇨🇳_CN_中国_Sodium_359
-      - 🇺🇸_US_美国_Sodium_499
-      - Sodium_510
-      - Sodium_514
-      - Sodium_518
-      - 🇨🇦_CA_加拿大_Sodium_531
-      - 🇺🇸_US_美国_Sodium_532
-      - 🇨🇦_CA_加拿大_Sodium_535
-      - 🇺🇸_US_美国_Sodium_539
-      - 🇨🇦_CA_加拿大_Sodium_544
-      - 🇺🇸_US_美国_Sodium_545
-      - 🇺🇸_US_美国_Sodium_557
-      - 🇨🇦_CA_加拿大_Sodium_561
-      - 🇨🇦_CA_加拿大_Sodium_565
-      - 🇺🇸_US_美国_Sodium_567
-      - 🇺🇸_US_美国_Sodium_569
-      - 🇨🇦_CA_加拿大_Sodium_571
-      - 🇨🇦_CA_加拿大_Sodium_576
-      - 🇨🇦_CA_加拿大_Sodium_577
-      - 🇫🇷_FR_法国_Sodium_580
-      - 🇺🇸_US_美国_Sodium_582
-      - 🇨🇦_CA_加拿大_Sodium_586
-      - 🇺🇸_US_美国_Sodium_594
-      - 🇺🇸_US_美国_Sodium_600
-      - 🇺🇸_US_美国_Sodium_604
-      - 🇺🇸_US_美国_Sodium_612
-      - 🇨🇦_CA_加拿大_Sodium_621
-      - 🇺🇸_US_美国_Sodium_622
-      - 🇨🇳_CN_中国_Sodium_630
-      - 🇨🇦_CA_加拿大_Sodium_636
-      - 🇺🇸_US_美国_Sodium_647
-      - 🇨🇦_CA_加拿大_Sodium_648
-      - 🇨🇦_CA_加拿大_Sodium_649
-      - 🇨🇦_CA_加拿大_Sodium_651
-      - 🇨🇦_CA_加拿大_Sodium_655
-      - 🇻🇳_VN_越南_Sodium_669
-      - 🇺🇸_US_美国_Sodium_670
-      - 🇺🇸_US_美国_Sodium_671
-      - Sodium_672
-      - 🇺🇸_US_美国_Sodium_673
-      - 🇨🇳_CN_中国_Sodium_674
-      - 🇨🇳_CN_中国_Sodium_675
-      - 🇨🇳_CN_中国_Sodium_676
-      - 🇨🇳_CN_中国_Sodium_677
-      - 🇨🇳_CN_中国_Sodium_678
-      - 🇯🇵_JP_日本_Sodium_679
-      - 🇺🇸_US_美国_Sodium_681
-      - Sodium_684
-      - 🇰🇷_KR_韩国_Sodium_685
-      - 🇨🇳_CN_中国_Sodium_686
-      - 🇨🇳_CN_中国_Sodium_689
-      - 🇨🇳_CN_中国_Sodium_693
-      - 🇨🇳_CN_中国_Sodium_695
-      - 🇨🇳_CN_中国_Sodium_696
-      - 🇨🇳_CN_中国_Sodium_697
-      - 🇺🇸_US_美国_Sodium_698
-      - 🇨🇦_CA_加拿大_Sodium_703
-      - 🇨🇳_CN_中国_Sodium_704
-      - 🇨🇦_CA_加拿大_Sodium_705
-      - Sodium_711
-      - Sodium_718
-      - 🇨🇳_CN_中国_Sodium_721
-      - 🇨🇳_CN_中国_Sodium_722
-      - 🇨🇳_CN_中国_Sodium_726
-      - 🇨🇳_CN_中国_Sodium_727
-      - 🇨🇳_CN_中国_Sodium_728
-      - 🇨🇦_CA_加拿大_69
-      - 🇻🇳_VN_越南_70
-      - 🇺🇸_US_美国_71
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_72
-      - default_name_73
-      - 🇺🇸_US_美国->🇫🇷_FR_法国_74
+      - 俄罗斯E_1
+      - 俄罗斯F_2
+      - 俄罗斯G_3
+      - 俄罗斯H_4
+      - 俄罗斯I_5
+      - 俄罗斯J_6
+      - 俄罗斯K_7
+      - 俄罗斯L_8
+      - 俄罗斯M_9
+      - 俄罗斯N_10
+      - 俄罗斯O_11
+      - 俄罗斯P_12
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇫🇷_FR_法国_Sodium_360
-      - 🇨🇳_CN_中国_Sodium_359
-      - 🇺🇸_US_美国_Sodium_499
-      - Sodium_510
-      - Sodium_514
-      - Sodium_518
-      - 🇨🇦_CA_加拿大_Sodium_531
-      - 🇺🇸_US_美国_Sodium_532
-      - 🇨🇦_CA_加拿大_Sodium_535
-      - 🇺🇸_US_美国_Sodium_539
-      - 🇨🇦_CA_加拿大_Sodium_544
-      - 🇺🇸_US_美国_Sodium_545
-      - 🇺🇸_US_美国_Sodium_557
-      - 🇨🇦_CA_加拿大_Sodium_561
-      - 🇨🇦_CA_加拿大_Sodium_565
-      - 🇺🇸_US_美国_Sodium_567
-      - 🇺🇸_US_美国_Sodium_569
-      - 🇨🇦_CA_加拿大_Sodium_571
-      - 🇨🇦_CA_加拿大_Sodium_576
-      - 🇨🇦_CA_加拿大_Sodium_577
-      - 🇫🇷_FR_法国_Sodium_580
-      - 🇺🇸_US_美国_Sodium_582
-      - 🇨🇦_CA_加拿大_Sodium_586
-      - 🇺🇸_US_美国_Sodium_594
-      - 🇺🇸_US_美国_Sodium_600
-      - 🇺🇸_US_美国_Sodium_604
-      - 🇺🇸_US_美国_Sodium_612
-      - 🇨🇦_CA_加拿大_Sodium_621
-      - 🇺🇸_US_美国_Sodium_622
-      - 🇨🇳_CN_中国_Sodium_630
-      - 🇨🇦_CA_加拿大_Sodium_636
-      - 🇺🇸_US_美国_Sodium_647
-      - 🇨🇦_CA_加拿大_Sodium_648
-      - 🇨🇦_CA_加拿大_Sodium_649
-      - 🇨🇦_CA_加拿大_Sodium_651
-      - 🇨🇦_CA_加拿大_Sodium_655
-      - 🇻🇳_VN_越南_Sodium_669
-      - 🇺🇸_US_美国_Sodium_670
-      - 🇺🇸_US_美国_Sodium_671
-      - Sodium_672
-      - 🇺🇸_US_美国_Sodium_673
-      - 🇨🇳_CN_中国_Sodium_674
-      - 🇨🇳_CN_中国_Sodium_675
-      - 🇨🇳_CN_中国_Sodium_676
-      - 🇨🇳_CN_中国_Sodium_677
-      - 🇨🇳_CN_中国_Sodium_678
-      - 🇯🇵_JP_日本_Sodium_679
-      - 🇺🇸_US_美国_Sodium_681
-      - Sodium_684
-      - 🇰🇷_KR_韩国_Sodium_685
-      - 🇨🇳_CN_中国_Sodium_686
-      - 🇨🇳_CN_中国_Sodium_689
-      - 🇨🇳_CN_中国_Sodium_693
-      - 🇨🇳_CN_中国_Sodium_695
-      - 🇨🇳_CN_中国_Sodium_696
-      - 🇨🇳_CN_中国_Sodium_697
-      - 🇺🇸_US_美国_Sodium_698
-      - 🇨🇦_CA_加拿大_Sodium_703
-      - 🇨🇳_CN_中国_Sodium_704
-      - 🇨🇦_CA_加拿大_Sodium_705
-      - Sodium_711
-      - Sodium_718
-      - 🇨🇳_CN_中国_Sodium_721
-      - 🇨🇳_CN_中国_Sodium_722
-      - 🇨🇳_CN_中国_Sodium_726
-      - 🇨🇳_CN_中国_Sodium_727
-      - 🇨🇳_CN_中国_Sodium_728
-      - 🇨🇦_CA_加拿大_69
-      - 🇻🇳_VN_越南_70
-      - 🇺🇸_US_美国_71
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_72
-      - default_name_73
-      - 🇺🇸_US_美国->🇫🇷_FR_法国_74
+      - 俄罗斯E_1
+      - 俄罗斯F_2
+      - 俄罗斯G_3
+      - 俄罗斯H_4
+      - 俄罗斯I_5
+      - 俄罗斯J_6
+      - 俄罗斯K_7
+      - 俄罗斯L_8
+      - 俄罗斯M_9
+      - 俄罗斯N_10
+      - 俄罗斯O_11
+      - 俄罗斯P_12
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -572,79 +156,18 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇫🇷_FR_法国_Sodium_360
-      - 🇨🇳_CN_中国_Sodium_359
-      - 🇺🇸_US_美国_Sodium_499
-      - Sodium_510
-      - Sodium_514
-      - Sodium_518
-      - 🇨🇦_CA_加拿大_Sodium_531
-      - 🇺🇸_US_美国_Sodium_532
-      - 🇨🇦_CA_加拿大_Sodium_535
-      - 🇺🇸_US_美国_Sodium_539
-      - 🇨🇦_CA_加拿大_Sodium_544
-      - 🇺🇸_US_美国_Sodium_545
-      - 🇺🇸_US_美国_Sodium_557
-      - 🇨🇦_CA_加拿大_Sodium_561
-      - 🇨🇦_CA_加拿大_Sodium_565
-      - 🇺🇸_US_美国_Sodium_567
-      - 🇺🇸_US_美国_Sodium_569
-      - 🇨🇦_CA_加拿大_Sodium_571
-      - 🇨🇦_CA_加拿大_Sodium_576
-      - 🇨🇦_CA_加拿大_Sodium_577
-      - 🇫🇷_FR_法国_Sodium_580
-      - 🇺🇸_US_美国_Sodium_582
-      - 🇨🇦_CA_加拿大_Sodium_586
-      - 🇺🇸_US_美国_Sodium_594
-      - 🇺🇸_US_美国_Sodium_600
-      - 🇺🇸_US_美国_Sodium_604
-      - 🇺🇸_US_美国_Sodium_612
-      - 🇨🇦_CA_加拿大_Sodium_621
-      - 🇺🇸_US_美国_Sodium_622
-      - 🇨🇳_CN_中国_Sodium_630
-      - 🇨🇦_CA_加拿大_Sodium_636
-      - 🇺🇸_US_美国_Sodium_647
-      - 🇨🇦_CA_加拿大_Sodium_648
-      - 🇨🇦_CA_加拿大_Sodium_649
-      - 🇨🇦_CA_加拿大_Sodium_651
-      - 🇨🇦_CA_加拿大_Sodium_655
-      - 🇻🇳_VN_越南_Sodium_669
-      - 🇺🇸_US_美国_Sodium_670
-      - 🇺🇸_US_美国_Sodium_671
-      - Sodium_672
-      - 🇺🇸_US_美国_Sodium_673
-      - 🇨🇳_CN_中国_Sodium_674
-      - 🇨🇳_CN_中国_Sodium_675
-      - 🇨🇳_CN_中国_Sodium_676
-      - 🇨🇳_CN_中国_Sodium_677
-      - 🇨🇳_CN_中国_Sodium_678
-      - 🇯🇵_JP_日本_Sodium_679
-      - 🇺🇸_US_美国_Sodium_681
-      - Sodium_684
-      - 🇰🇷_KR_韩国_Sodium_685
-      - 🇨🇳_CN_中国_Sodium_686
-      - 🇨🇳_CN_中国_Sodium_689
-      - 🇨🇳_CN_中国_Sodium_693
-      - 🇨🇳_CN_中国_Sodium_695
-      - 🇨🇳_CN_中国_Sodium_696
-      - 🇨🇳_CN_中国_Sodium_697
-      - 🇺🇸_US_美国_Sodium_698
-      - 🇨🇦_CA_加拿大_Sodium_703
-      - 🇨🇳_CN_中国_Sodium_704
-      - 🇨🇦_CA_加拿大_Sodium_705
-      - Sodium_711
-      - Sodium_718
-      - 🇨🇳_CN_中国_Sodium_721
-      - 🇨🇳_CN_中国_Sodium_722
-      - 🇨🇳_CN_中国_Sodium_726
-      - 🇨🇳_CN_中国_Sodium_727
-      - 🇨🇳_CN_中国_Sodium_728
-      - 🇨🇦_CA_加拿大_69
-      - 🇻🇳_VN_越南_70
-      - 🇺🇸_US_美国_71
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_72
-      - default_name_73
-      - 🇺🇸_US_美国->🇫🇷_FR_法国_74
+      - 俄罗斯E_1
+      - 俄罗斯F_2
+      - 俄罗斯G_3
+      - 俄罗斯H_4
+      - 俄罗斯I_5
+      - 俄罗斯J_6
+      - 俄罗斯K_7
+      - 俄罗斯L_8
+      - 俄罗斯M_9
+      - 俄罗斯N_10
+      - 俄罗斯O_11
+      - 俄罗斯P_12
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
