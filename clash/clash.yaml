@@ -5,81 +5,160 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"name":"🇨🇦_CA_加拿大_1","server":"134.195.198.252","port":443,"type":"ss","country":"🇨🇦_CA_加拿大_1","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
-  - {"name":"🇨🇳_CN_中国->🇮🇳_IN_印度_2","server":"cm.newhua99.ga","port":21682,"type":"ss","country":"🇨🇳_CN_中国->🇮🇳_IN_印度_2","cipher":"aes-128-gcm","password":"29890b98-a08a-48cc-9983-accb3a16e325"}
-  - {"name":"🇨🇦_CA_加拿大_3","server":"134.195.198.252","port":6379,"type":"ss","country":"🇨🇦_CA_加拿大_3","cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
-  - {"name":"🇨🇦_CA_加拿大_4","server":"134.195.198.252","port":7002,"type":"ss","country":"🇨🇦_CA_加拿大_4","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
-  - {"name":"🇨🇦_CA_加拿大_5","server":"134.195.198.252","port":4444,"type":"ss","country":"🇨🇦_CA_加拿大_5","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
-  - {"name":"default_name_6","server":"gz.520vpn.cc","port":51615,"type":"vmess","uuid":"b3a9f849-a4c7-364c-a74b-8331c18209be","alterId":0,"cipher":"auto","country":"default_name_6","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/v2ray","headers":{"host":"hk2.520vpn.top"}}}
+  - {name: 1, server: L1-aws-hk-02.baipiao.de, port: 1080, type: vmess, uuid: 2e937b49-04fb-36d1-886d-97b2617aabb1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /pucloud, ws-headers: {Host: L1-aws-hk-02.baipiao.de}}
+  - {name: 2, server: global-transit-01-hk.baipiao.de, port: 1114, type: vmess, uuid: 2e937b49-04fb-36d1-886d-97b2617aabb1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: global-transit-01-hk.baipiao.de}}
+  - {name: 3, server: 30.HKG.ASIA.BIGAIRPORT.NET, port: 80, type: vmess, uuid: 11fa70b1-5c8b-46a5-a4be-a16244a227a0, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 30.HKG.ASIA.BIGAIRPORT.NET}}
+  - {name: 4, server: L1-aws-hk-01.baipiao.de, port: 1080, type: vmess, uuid: 2e937b49-04fb-36d1-886d-97b2617aabb1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /pucloud, ws-headers: {Host: L1-aws-hk-01.baipiao.de}}
+  - {name: 5, server: global-transit-01-hk.baipiao.de, port: 1117, type: vmess, uuid: 2e937b49-04fb-36d1-886d-97b2617aabb1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: global-transit-01-hk.baipiao.de}}
+  - {name: 6, server: global-transit-01-hk.baipiao.de, port: 1112, type: vmess, uuid: 2e937b49-04fb-36d1-886d-97b2617aabb1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: global-transit-01-hk.baipiao.de}}
+  - {name: 7, server: global-transit-01-hk.baipiao.de, port: 1115, type: vmess, uuid: 2e937b49-04fb-36d1-886d-97b2617aabb1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: global-transit-01-hk.baipiao.de}}
+  - {name: 8, server: global-transit-01-hk.baipiao.de, port: 1108, type: vmess, uuid: 2e937b49-04fb-36d1-886d-97b2617aabb1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: global-transit-01-hk.baipiao.de}}
+  - {name: 9, server: 29.HKG.ASIA.BIGAIRPORT.NET, port: 80, type: vmess, uuid: 11fa70b1-5c8b-46a5-a4be-a16244a227a0, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 29.HKG.ASIA.BIGAIRPORT.NET}}
+  - {name: 10, server: global-transit-01-hk.baipiao.de, port: 1109, type: vmess, uuid: 2e937b49-04fb-36d1-886d-97b2617aabb1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: global-transit-01-hk.baipiao.de}}
+  - {name: 11, server: global-transit-01-hk.baipiao.de, port: 1110, type: vmess, uuid: 2e937b49-04fb-36d1-886d-97b2617aabb1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: global-transit-01-hk.baipiao.de}}
+  - {name: 12, server: global-transit-01-hk.baipiao.de, port: 1113, type: vmess, uuid: 2e937b49-04fb-36d1-886d-97b2617aabb1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: global-transit-01-hk.baipiao.de}}
+  - {name: 13, server: j12.yt001.xyz, port: 8005, type: vmess, uuid: 7c6f2348-0ebd-3a1f-a8a0-c3b5629c2e0b, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 45.77.132.135}}
+  - {name: 14, server: 45.32.60.26, port: 59583, type: vmess, uuid: 54e0213c-dfe2-4850-95d6-a7bc0e17517a, alterId: 0, cipher: auto, tls: false}
+  - {name: 15, server: global-transit-02-sg.baipiao.de, port: 1123, type: vmess, uuid: 2e937b49-04fb-36d1-886d-97b2617aabb1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: global-transit-02-sg.baipiao.de}}
+  - {name: 16, server: L1-aws-kr-13.baipiao.de, port: 80, type: vmess, uuid: 2e937b49-04fb-36d1-886d-97b2617aabb1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /pucloud, ws-headers: {Host: L1-aws-kr-13.baipiao.de}}
+  - {name: 17, server: global-cdn-sg-01.baipiao.de, port: 443, type: vmess, uuid: 2e937b49-04fb-36d1-886d-97b2617aabb1, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /pucloud, ws-headers: {Host: l1-sg-a-01.pucdn.me}}
+  - {name: 18, server: L1-aws-kr-15.baipiao.de, port: 80, type: vmess, uuid: 2e937b49-04fb-36d1-886d-97b2617aabb1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /pucloud, ws-headers: {Host: L1-aws-kr-15.baipiao.de}}
+  - {name: 19, server: j11.yt001.xyz, port: 15010, type: vmess, uuid: 7c6f2348-0ebd-3a1f-a8a0-c3b5629c2e0b, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 107.191.53.211}}
+  - {name: 20, server: L1-aws-kr-08.baipiao.de, port: 80, type: vmess, uuid: 2e937b49-04fb-36d1-886d-97b2617aabb1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /pucloud, ws-headers: {Host: L1-aws-kr-08.baipiao.de}}
+  - {name: 21, server: global-transit-02-jp.baipiao.de, port: 114, type: vmess, uuid: 2e937b49-04fb-36d1-886d-97b2617aabb1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: global-transit-02-jp.baipiao.de}}
+  - {name: 22, server: j10.yt001.xyz, port: 15008, type: vmess, uuid: 7c6f2348-0ebd-3a1f-a8a0-c3b5629c2e0b, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 167.179.80.15}}
+  - {name: 23, server: global-cdn-lt-01.pucdn.me, port: 443, type: vmess, uuid: 2e937b49-04fb-36d1-886d-97b2617aabb1, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /baipiao, ws-headers: {Host: l2-in-01.pucdn.me}}
+  - {name: 24, server: 167.179.85.109, port: 59476, type: vmess, uuid: 954edf0f-9f98-4786-a993-db129ad77aa1, alterId: 0, cipher: auto, tls: false}
+  - {name: 25, server: global-transit-02-jp.baipiao.de, port: 105, type: vmess, uuid: 2e937b49-04fb-36d1-886d-97b2617aabb1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: global-transit-02-jp.baipiao.de}}
+  - {name: 26, server: L1-aws-kr-14.baipiao.de, port: 80, type: vmess, uuid: 2e937b49-04fb-36d1-886d-97b2617aabb1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /pucloud, ws-headers: {Host: L1-aws-kr-14.baipiao.de}}
+  - {name: 27, server: 172.67.199.187, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: llajv.rebldp.tech}}
+  - {name: 28, server: ac74dcea623fbeebf.awsglobalaccelerator.com, port: 1000, type: vmess, uuid: 786d1602-3cc9-405f-87c7-446c84cd92a8, alterId: 2, cipher: auto, tls: true}
+  - {name: 29, server: k10.yt001.xyz, port: 15011, type: vmess, uuid: 7c6f2348-0ebd-3a1f-a8a0-c3b5629c2e0b, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 158.247.216.127}}
+  - {name: 30, server: L1-aws-kr-09.baipiao.de, port: 80, type: vmess, uuid: 2e937b49-04fb-36d1-886d-97b2617aabb1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /pucloud, ws-headers: {Host: L1-aws-kr-09.baipiao.de}}
+  - {name: 31, server: ahvuxfq.oqnqrysa.com, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: ahvuxfq.oqnqrysa.com}}
+  - {name: 32, server: L1-aws-kr-12.baipiao.de, port: 80, type: vmess, uuid: 2e937b49-04fb-36d1-886d-97b2617aabb1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /pucloud, ws-headers: {Host: L1-aws-kr-12.baipiao.de}}
+  - {name: 33, server: L1-aws-kr-21.baipiao.de, port: 80, type: vmess, uuid: 2e937b49-04fb-36d1-886d-97b2617aabb1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /pucloud, ws-headers: {Host: L1-aws-kr-21.baipiao.de}}
+  - {name: 34, server: 155.94.184.179, port: 52333, type: vmess, uuid: 475e7113-a34c-455a-e2a4-1ec8ec930108, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 155.94.184.179}}
+  - {name: 35, server: global-transit-02-jp.baipiao.de, port: 107, type: vmess, uuid: 2e937b49-04fb-36d1-886d-97b2617aabb1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: global-transit-02-jp.baipiao.de}}
+  - {name: 36, server: global-transit-02-jp.baipiao.de, port: 109, type: vmess, uuid: 2e937b49-04fb-36d1-886d-97b2617aabb1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: global-transit-02-jp.baipiao.de}}
+  - {name: 37, server: L1-aws-kr-07.baipiao.de, port: 80, type: vmess, uuid: 2e937b49-04fb-36d1-886d-97b2617aabb1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /pucloud, ws-headers: {Host: L1-aws-kr-07.baipiao.de}}
+  - {name: 38, server: c-ru2.ooxc.cc, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /jj, ws-headers: {Host: c-ru2.ooxc.cc}}
+  - {name: 39, server: 104.18.47.77, port: 443, type: vmess, uuid: d31deba4-a686-40ff-b8d5-59a6349effb0, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ws/, ws-headers: {Host: download.china666.ml}}
+  - {name: 40, server: v2.ddns1312.top, port: 443, type: vmess, uuid: 81a4c231-d055-4dbd-a374-0fe5bfe9ed72, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: v2.ddns1312.top}}
+  - {name: 41, server: 103.219.154.170, port: 52333, type: vmess, uuid: 475e7113-a34c-455a-e2a4-1ec8ec930108, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 103.219.154.170}}
+  - {"name":"github_com/freefq-香港电讯盈科有限公司27_1","server":"h3.shopbuy.club","port":443,"type":"vmess","uuid":"92261659-55a6-4b43-85d2-d3d3f30ca8eb","alterId":0,"cipher":"auto","country":"github_com/freefq-香港电讯盈科有限公司27_1","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/KoUJaiN8","headers":{"host":"h3.shopbuy.club"}}}
+  - {"name":"default_name_2","server":"198.41.212.9","port":443,"type":"vmess","uuid":"a8910831-f56b-4ac4-c68f-e4dd83f71e60","alterId":0,"cipher":"auto","country":"default_name_2","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/sakura/","headers":{"host":"zero1.a-yu.xyz"}}}
+  - {"name":"🇰🇷_KR_韩国_3","server":"141.164.47.208","port":5001,"type":"ss","country":"🇰🇷_KR_韩国_3","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"github_com/freefq+-+美国惠普公司+24_4","server":"tj-sg02.yiyodns.xyz","port":443,"type":"trojan","country":"github_com/freefq+-+美国惠普公司+24_4","skip-cert-verify":true,"udp":true,"password":"7dafe71e-2be6-302f-bdfc-e6319a3299bc"}
+  - {"name":"YouTube*阿阳AYANG*科技大师_5","server":"172.99.190.109","port":7306,"type":"ss","country":"YouTube*阿阳AYANG*科技大师_5","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
+  - {"name":"000英国_6","server":"212.38.189.174","port":6697,"type":"ss","country":"000英国_6","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"name":"github_com/freefq-亚太地区21_7","server":"0320hk567.fans8.xyz","port":443,"type":"vmess","uuid":"5c70da5d-e641-3bf8-b7dc-5babd843ff3c","alterId":2,"cipher":"auto","country":"github_com/freefq-亚太地区21_7","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/ray","headers":{"host":"0320hk567.fans8.xyz"}}}
+  - {"name":"github_com/freefq-加拿大19_8","server":"0320hk857.fans8.xyz","port":443,"type":"vmess","uuid":"5c70da5d-e641-3bf8-b7dc-5babd843ff3c","alterId":2,"cipher":"auto","country":"github_com/freefq-加拿大19_8","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/ray","headers":{"host":"0320hk857.fans8.xyz"}}}
+  - {"name":"0000000_韩国_9","server":"158.247.206.19","port":8000,"type":"ss","country":"0000000_韩国_9","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"name":"🇨🇳CN+_+3_72Mb_10","server":"101.91.121.247","port":50004,"type":"ss","country":"🇨🇳CN+_+3_72Mb_10","cipher":"aes-256-cfb","password":"4415934295"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇦_CA_加拿大_1
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度_2
-      - 🇨🇦_CA_加拿大_3
-      - 🇨🇦_CA_加拿大_4
-      - 🇨🇦_CA_加拿大_5
-      - default_name_6
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
+      - github_com/freefq-香港电讯盈科有限公司27_1
+      - default_name_2
+      - 🇰🇷_KR_韩国_3
+      - github_com/freefq+-+美国惠普公司+24_4
+      - YouTube*阿阳AYANG*科技大师_5
+      - 000英国_6
+      - github_com/freefq-亚太地区21_7
+      - github_com/freefq-加拿大19_8
+      - 0000000_韩国_9
+      - 🇨🇳CN+_+3_72Mb_10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇦_CA_加拿大_1
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度_2
-      - 🇨🇦_CA_加拿大_3
-      - 🇨🇦_CA_加拿大_4
-      - 🇨🇦_CA_加拿大_5
-      - default_name_6
+      - github_com/freefq-香港电讯盈科有限公司27_1
+      - default_name_2
+      - 🇰🇷_KR_韩国_3
+      - github_com/freefq+-+美国惠普公司+24_4
+      - YouTube*阿阳AYANG*科技大师_5
+      - 000英国_6
+      - github_com/freefq-亚太地区21_7
+      - github_com/freefq-加拿大19_8
+      - 0000000_韩国_9
+      - 🇨🇳CN+_+3_72Mb_10
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇦_CA_加拿大_1
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度_2
-      - 🇨🇦_CA_加拿大_3
-      - 🇨🇦_CA_加拿大_4
-      - 🇨🇦_CA_加拿大_5
-      - default_name_6
+      - github_com/freefq-香港电讯盈科有限公司27_1
+      - default_name_2
+      - 🇰🇷_KR_韩国_3
+      - github_com/freefq+-+美国惠普公司+24_4
+      - YouTube*阿阳AYANG*科技大师_5
+      - 000英国_6
+      - github_com/freefq-亚太地区21_7
+      - github_com/freefq-加拿大19_8
+      - 0000000_韩国_9
+      - 🇨🇳CN+_+3_72Mb_10
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇦_CA_加拿大_1
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度_2
-      - 🇨🇦_CA_加拿大_3
-      - 🇨🇦_CA_加拿大_4
-      - 🇨🇦_CA_加拿大_5
-      - default_name_6
+      - github_com/freefq-香港电讯盈科有限公司27_1
+      - default_name_2
+      - 🇰🇷_KR_韩国_3
+      - github_com/freefq+-+美国惠普公司+24_4
+      - YouTube*阿阳AYANG*科技大师_5
+      - 000英国_6
+      - github_com/freefq-亚太地区21_7
+      - github_com/freefq-加拿大19_8
+      - 0000000_韩国_9
+      - 🇨🇳CN+_+3_72Mb_10
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇦_CA_加拿大_1
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度_2
-      - 🇨🇦_CA_加拿大_3
-      - 🇨🇦_CA_加拿大_4
-      - 🇨🇦_CA_加拿大_5
-      - default_name_6
+      - github_com/freefq-香港电讯盈科有限公司27_1
+      - default_name_2
+      - 🇰🇷_KR_韩国_3
+      - github_com/freefq+-+美国惠普公司+24_4
+      - YouTube*阿阳AYANG*科技大师_5
+      - 000英国_6
+      - github_com/freefq-亚太地区21_7
+      - github_com/freefq-加拿大19_8
+      - 0000000_韩国_9
+      - 🇨🇳CN+_+3_72Mb_10
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇦_CA_加拿大_1
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度_2
-      - 🇨🇦_CA_加拿大_3
-      - 🇨🇦_CA_加拿大_4
-      - 🇨🇦_CA_加拿大_5
-      - default_name_6
+      - github_com/freefq-香港电讯盈科有限公司27_1
+      - default_name_2
+      - 🇰🇷_KR_韩国_3
+      - github_com/freefq+-+美国惠普公司+24_4
+      - YouTube*阿阳AYANG*科技大师_5
+      - 000英国_6
+      - github_com/freefq-亚太地区21_7
+      - github_com/freefq-加拿大19_8
+      - 0000000_韩国_9
+      - 🇨🇳CN+_+3_72Mb_10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -102,12 +181,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇦_CA_加拿大_1
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度_2
-      - 🇨🇦_CA_加拿大_3
-      - 🇨🇦_CA_加拿大_4
-      - 🇨🇦_CA_加拿大_5
-      - default_name_6
+      - github_com/freefq-香港电讯盈科有限公司27_1
+      - default_name_2
+      - 🇰🇷_KR_韩国_3
+      - github_com/freefq+-+美国惠普公司+24_4
+      - YouTube*阿阳AYANG*科技大师_5
+      - 000英国_6
+      - github_com/freefq-亚太地区21_7
+      - github_com/freefq-加拿大19_8
+      - 0000000_韩国_9
+      - 🇨🇳CN+_+3_72Mb_10
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
