@@ -5,46 +5,53 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"name":"♥️YouTube梦歌♥️_29","server":"5.253.16.234","port":17263,"type":"vmess","uuid":"c6793501-826a-6f95-9960-c352762c825b","alterId":0,"cipher":"auto","country":"♥️YouTube梦歌♥️_29","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/nvws","headers":{"host":"5.253.16.234"}}}
+  - {"name":"洛杉矶SS_1","server":"45.66.157.105","port":12345,"type":"ss","country":"洛杉矶SS_1","cipher":"aes-256-gcm","password":"dongtaiwang.com"}
+  - {"name":"洛杉矶SSR_2","server":"45.66.157.106","port":23456,"type":"ssr","country":"洛杉矶SSR_2","password":"dongtaiwang.com","cipher":"none","protocol":"auth_chain_a","obfs":"tls1.2_ticket_auth"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - ♥️YouTube梦歌♥️_29
+      - 洛杉矶SS_1
+      - 洛杉矶SSR_2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - ♥️YouTube梦歌♥️_29
+      - 洛杉矶SS_1
+      - 洛杉矶SSR_2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ♥️YouTube梦歌♥️_29
+      - 洛杉矶SS_1
+      - 洛杉矶SSR_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ♥️YouTube梦歌♥️_29
+      - 洛杉矶SS_1
+      - 洛杉矶SSR_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - ♥️YouTube梦歌♥️_29
+      - 洛杉矶SS_1
+      - 洛杉矶SSR_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ♥️YouTube梦歌♥️_29
+      - 洛杉矶SS_1
+      - 洛杉矶SSR_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -67,7 +74,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ♥️YouTube梦歌♥️_29
+      - 洛杉矶SS_1
+      - 洛杉矶SSR_2
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
