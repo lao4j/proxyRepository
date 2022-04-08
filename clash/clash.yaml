@@ -5,95 +5,151 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"name":"🇭🇰_HK_香港->🇰🇷_KR_韩国_1","server":"zhuzhu12.com","port":33893,"type":"vmess","uuid":"9c31a43c-11f7-34b7-bc1f-dfb08f831599","alterId":0,"cipher":"auto","country":"🇭🇰_HK_香港->🇰🇷_KR_韩国_1","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/zz","headers":{"host":"korea2.zhuzhu12.com"}}}
-  - {"name":"🇨🇦_CA_加拿大_2","server":"134.195.198.252","port":6379,"type":"ss","country":"🇨🇦_CA_加拿大_2","cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
-  - {"name":"🇺🇸_US_美国->🇰🇷_KR_韩国_3","server":"v2ray.788644.xyz","port":443,"type":"vmess","uuid":"000fe881-b655-4212-b804-b00f9970d5aa","alterId":0,"cipher":"auto","country":"🇺🇸_US_美国->🇰🇷_KR_韩国_3","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/happy"}}
-  - {"name":"🇨🇦_CA_加拿大_4","server":"134.195.198.252","port":443,"type":"ss","country":"🇨🇦_CA_加拿大_4","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
-  - {"name":"🇭🇰_HK_香港_5","server":"148.66.56.99","port":801,"type":"ss","country":"🇭🇰_HK_香港_5","cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"name":"🇭🇰_HK_香港_6","server":"vn.mumi.bid","port":10125,"type":"vmess","uuid":"83ae9f04-47f0-4e34-9a1c-9c2e5161f586","alterId":0,"cipher":"auto","country":"🇭🇰_HK_香港_6","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"default_name_7","server":"104.21.84.81","port":443,"type":"vmess","uuid":"a8910831-f56b-4ac4-c68f-e4dd83f71e60","alterId":0,"cipher":"auto","country":"default_name_7","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/sakura/","headers":{"host":"zero2.a-yu.xyz"}}}
-  - {"name":"🇺🇸_US_美国->🇨🇿_CZ_捷克_8","server":"cf.rutracker-cn.com","port":443,"type":"vmess","uuid":"55dc4077-3fed-4903-9c39-a3b12cb979db","alterId":0,"cipher":"auto","country":"🇺🇸_US_美国->🇨🇿_CZ_捷克_8","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/cdwOCfZC","headers":{"host":"cf.rutracker-cn.com"}}}
+  - {"name":"🇹🇼【奢侈版】台湾Hinet-中转-1x_1","server":"zz1.yinhu.bar","port":38090,"type":"trojan","country":"🇹🇼【奢侈版】台湾Hinet-中转-1x_1","skip-cert-verify":true,"udp":true,"password":"f372f0ce-74f9-3829-99fd-4c6f36379af3"}
+  - {"name":"🇹🇼【奢侈版】台湾Hinet-直连-1x_2","server":"tw2.yinhu.bar","port":38100,"type":"trojan","country":"🇹🇼【奢侈版】台湾Hinet-直连-1x_2","skip-cert-verify":true,"udp":true,"password":"f372f0ce-74f9-3829-99fd-4c6f36379af3"}
+  - {"name":"🇹🇷【奢侈版】土耳其-中转-1x_3","server":"zz1.yinhu.bar","port":38170,"type":"trojan","country":"🇹🇷【奢侈版】土耳其-中转-1x_3","skip-cert-verify":true,"udp":true,"password":"f372f0ce-74f9-3829-99fd-4c6f36379af3"}
+  - {"name":"🇹🇷【奢侈版】土耳其2-直连-1x_4","server":"tr2.yinhu.bar","port":38180,"type":"trojan","country":"🇹🇷【奢侈版】土耳其2-直连-1x_4","skip-cert-verify":true,"udp":true,"password":"f372f0ce-74f9-3829-99fd-4c6f36379af3"}
+  - {"name":"🇸🇬【奢侈版】新加坡-中转-1x_5","server":"zz1.yinhu.bar","port":38150,"type":"trojan","country":"🇸🇬【奢侈版】新加坡-中转-1x_5","skip-cert-verify":true,"udp":true,"password":"f372f0ce-74f9-3829-99fd-4c6f36379af3"}
+  - {"name":"🇸🇬【奢侈版】新加坡-直连-1x_6","server":"xjp2.yinhu.bar","port":38160,"type":"trojan","country":"🇸🇬【奢侈版】新加坡-直连-1x_6","skip-cert-verify":true,"udp":true,"password":"f372f0ce-74f9-3829-99fd-4c6f36379af3"}
+  - {"name":"🇯🇵【奢侈版】日本-中转-1x_7","server":"zz1.yinhu.bar","port":38070,"type":"trojan","country":"🇯🇵【奢侈版】日本-中转-1x_7","skip-cert-verify":true,"udp":true,"password":"f372f0ce-74f9-3829-99fd-4c6f36379af3"}
+  - {"name":"🇯🇵【奢侈版】日本-直连-1x_8","server":"ri2.yinhu.bar","port":38080,"type":"trojan","country":"🇯🇵【奢侈版】日本-直连-1x_8","skip-cert-verify":true,"udp":true,"password":"f372f0ce-74f9-3829-99fd-4c6f36379af3"}
+  - {"name":"🇰🇷【奢侈版】韩国-中转-1x_9","server":"zz1.yinhu.bar","port":38110,"type":"trojan","country":"🇰🇷【奢侈版】韩国-中转-1x_9","skip-cert-verify":true,"udp":true,"password":"f372f0ce-74f9-3829-99fd-4c6f36379af3"}
+  - {"name":"🇰🇷【奢侈版】韩国-直连-1x_10","server":"kr2.yinhu.bar","port":38120,"type":"trojan","country":"🇰🇷【奢侈版】韩国-直连-1x_10","skip-cert-verify":true,"udp":true,"password":"f372f0ce-74f9-3829-99fd-4c6f36379af3"}
+  - {"name":"🇭🇰【奢侈版】香港-中转-3x_11","server":"zz1.yinhu.bar","port":38130,"type":"trojan","country":"🇭🇰【奢侈版】香港-中转-3x_11","skip-cert-verify":true,"udp":true,"password":"f372f0ce-74f9-3829-99fd-4c6f36379af3"}
+  - {"name":"🇭🇰【奢侈版】香港-直连-3x_12","server":"hkt2.yinhu.bar","port":38140,"type":"trojan","country":"🇭🇰【奢侈版】香港-直连-3x_12","skip-cert-verify":true,"udp":true,"password":"f372f0ce-74f9-3829-99fd-4c6f36379af3"}
+  - {"name":"🇷🇺【学生版】俄罗斯-中转-1x_13","server":"zz2.yinhu.bar","port":38050,"type":"trojan","country":"🇷🇺【学生版】俄罗斯-中转-1x_13","skip-cert-verify":true,"udp":true,"password":"f372f0ce-74f9-3829-99fd-4c6f36379af3"}
+  - {"name":"🇷🇺【学生版】俄罗斯-直连-1x_14","server":"rujust2.yinhu.bar","port":38060,"type":"trojan","country":"🇷🇺【学生版】俄罗斯-直连-1x_14","skip-cert-verify":true,"udp":true,"password":"f372f0ce-74f9-3829-99fd-4c6f36379af3"}
+  - {"name":"🇺🇸【学生版】美国-中转-1x_15","server":"zz2.yinhu.bar","port":38030,"type":"trojan","country":"🇺🇸【学生版】美国-中转-1x_15","skip-cert-verify":true,"udp":true,"password":"f372f0ce-74f9-3829-99fd-4c6f36379af3"}
+  - {"name":"🇺🇸【学生版】美国-直连-1x_16","server":"usrn2.yinhu.bar","port":38040,"type":"trojan","country":"🇺🇸【学生版】美国-直连-1x_16","skip-cert-verify":true,"udp":true,"password":"f372f0ce-74f9-3829-99fd-4c6f36379af3"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰_HK_香港->🇰🇷_KR_韩国_1
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇰🇷_KR_韩国_3
-      - 🇨🇦_CA_加拿大_4
-      - 🇭🇰_HK_香港_5
-      - 🇭🇰_HK_香港_6
-      - default_name_7
-      - 🇺🇸_US_美国->🇨🇿_CZ_捷克_8
+      - 🇹🇼【奢侈版】台湾Hinet-中转-1x_1
+      - 🇹🇼【奢侈版】台湾Hinet-直连-1x_2
+      - 🇹🇷【奢侈版】土耳其-中转-1x_3
+      - 🇹🇷【奢侈版】土耳其2-直连-1x_4
+      - 🇸🇬【奢侈版】新加坡-中转-1x_5
+      - 🇸🇬【奢侈版】新加坡-直连-1x_6
+      - 🇯🇵【奢侈版】日本-中转-1x_7
+      - 🇯🇵【奢侈版】日本-直连-1x_8
+      - 🇰🇷【奢侈版】韩国-中转-1x_9
+      - 🇰🇷【奢侈版】韩国-直连-1x_10
+      - 🇭🇰【奢侈版】香港-中转-3x_11
+      - 🇭🇰【奢侈版】香港-直连-3x_12
+      - 🇷🇺【学生版】俄罗斯-中转-1x_13
+      - 🇷🇺【学生版】俄罗斯-直连-1x_14
+      - 🇺🇸【学生版】美国-中转-1x_15
+      - 🇺🇸【学生版】美国-直连-1x_16
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰_HK_香港->🇰🇷_KR_韩国_1
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇰🇷_KR_韩国_3
-      - 🇨🇦_CA_加拿大_4
-      - 🇭🇰_HK_香港_5
-      - 🇭🇰_HK_香港_6
-      - default_name_7
-      - 🇺🇸_US_美国->🇨🇿_CZ_捷克_8
+      - 🇹🇼【奢侈版】台湾Hinet-中转-1x_1
+      - 🇹🇼【奢侈版】台湾Hinet-直连-1x_2
+      - 🇹🇷【奢侈版】土耳其-中转-1x_3
+      - 🇹🇷【奢侈版】土耳其2-直连-1x_4
+      - 🇸🇬【奢侈版】新加坡-中转-1x_5
+      - 🇸🇬【奢侈版】新加坡-直连-1x_6
+      - 🇯🇵【奢侈版】日本-中转-1x_7
+      - 🇯🇵【奢侈版】日本-直连-1x_8
+      - 🇰🇷【奢侈版】韩国-中转-1x_9
+      - 🇰🇷【奢侈版】韩国-直连-1x_10
+      - 🇭🇰【奢侈版】香港-中转-3x_11
+      - 🇭🇰【奢侈版】香港-直连-3x_12
+      - 🇷🇺【学生版】俄罗斯-中转-1x_13
+      - 🇷🇺【学生版】俄罗斯-直连-1x_14
+      - 🇺🇸【学生版】美国-中转-1x_15
+      - 🇺🇸【学生版】美国-直连-1x_16
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰_HK_香港->🇰🇷_KR_韩国_1
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇰🇷_KR_韩国_3
-      - 🇨🇦_CA_加拿大_4
-      - 🇭🇰_HK_香港_5
-      - 🇭🇰_HK_香港_6
-      - default_name_7
-      - 🇺🇸_US_美国->🇨🇿_CZ_捷克_8
+      - 🇹🇼【奢侈版】台湾Hinet-中转-1x_1
+      - 🇹🇼【奢侈版】台湾Hinet-直连-1x_2
+      - 🇹🇷【奢侈版】土耳其-中转-1x_3
+      - 🇹🇷【奢侈版】土耳其2-直连-1x_4
+      - 🇸🇬【奢侈版】新加坡-中转-1x_5
+      - 🇸🇬【奢侈版】新加坡-直连-1x_6
+      - 🇯🇵【奢侈版】日本-中转-1x_7
+      - 🇯🇵【奢侈版】日本-直连-1x_8
+      - 🇰🇷【奢侈版】韩国-中转-1x_9
+      - 🇰🇷【奢侈版】韩国-直连-1x_10
+      - 🇭🇰【奢侈版】香港-中转-3x_11
+      - 🇭🇰【奢侈版】香港-直连-3x_12
+      - 🇷🇺【学生版】俄罗斯-中转-1x_13
+      - 🇷🇺【学生版】俄罗斯-直连-1x_14
+      - 🇺🇸【学生版】美国-中转-1x_15
+      - 🇺🇸【学生版】美国-直连-1x_16
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰_HK_香港->🇰🇷_KR_韩国_1
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇰🇷_KR_韩国_3
-      - 🇨🇦_CA_加拿大_4
-      - 🇭🇰_HK_香港_5
-      - 🇭🇰_HK_香港_6
-      - default_name_7
-      - 🇺🇸_US_美国->🇨🇿_CZ_捷克_8
+      - 🇹🇼【奢侈版】台湾Hinet-中转-1x_1
+      - 🇹🇼【奢侈版】台湾Hinet-直连-1x_2
+      - 🇹🇷【奢侈版】土耳其-中转-1x_3
+      - 🇹🇷【奢侈版】土耳其2-直连-1x_4
+      - 🇸🇬【奢侈版】新加坡-中转-1x_5
+      - 🇸🇬【奢侈版】新加坡-直连-1x_6
+      - 🇯🇵【奢侈版】日本-中转-1x_7
+      - 🇯🇵【奢侈版】日本-直连-1x_8
+      - 🇰🇷【奢侈版】韩国-中转-1x_9
+      - 🇰🇷【奢侈版】韩国-直连-1x_10
+      - 🇭🇰【奢侈版】香港-中转-3x_11
+      - 🇭🇰【奢侈版】香港-直连-3x_12
+      - 🇷🇺【学生版】俄罗斯-中转-1x_13
+      - 🇷🇺【学生版】俄罗斯-直连-1x_14
+      - 🇺🇸【学生版】美国-中转-1x_15
+      - 🇺🇸【学生版】美国-直连-1x_16
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇭🇰_HK_香港->🇰🇷_KR_韩国_1
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇰🇷_KR_韩国_3
-      - 🇨🇦_CA_加拿大_4
-      - 🇭🇰_HK_香港_5
-      - 🇭🇰_HK_香港_6
-      - default_name_7
-      - 🇺🇸_US_美国->🇨🇿_CZ_捷克_8
+      - 🇹🇼【奢侈版】台湾Hinet-中转-1x_1
+      - 🇹🇼【奢侈版】台湾Hinet-直连-1x_2
+      - 🇹🇷【奢侈版】土耳其-中转-1x_3
+      - 🇹🇷【奢侈版】土耳其2-直连-1x_4
+      - 🇸🇬【奢侈版】新加坡-中转-1x_5
+      - 🇸🇬【奢侈版】新加坡-直连-1x_6
+      - 🇯🇵【奢侈版】日本-中转-1x_7
+      - 🇯🇵【奢侈版】日本-直连-1x_8
+      - 🇰🇷【奢侈版】韩国-中转-1x_9
+      - 🇰🇷【奢侈版】韩国-直连-1x_10
+      - 🇭🇰【奢侈版】香港-中转-3x_11
+      - 🇭🇰【奢侈版】香港-直连-3x_12
+      - 🇷🇺【学生版】俄罗斯-中转-1x_13
+      - 🇷🇺【学生版】俄罗斯-直连-1x_14
+      - 🇺🇸【学生版】美国-中转-1x_15
+      - 🇺🇸【学生版】美国-直连-1x_16
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰_HK_香港->🇰🇷_KR_韩国_1
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇰🇷_KR_韩国_3
-      - 🇨🇦_CA_加拿大_4
-      - 🇭🇰_HK_香港_5
-      - 🇭🇰_HK_香港_6
-      - default_name_7
-      - 🇺🇸_US_美国->🇨🇿_CZ_捷克_8
+      - 🇹🇼【奢侈版】台湾Hinet-中转-1x_1
+      - 🇹🇼【奢侈版】台湾Hinet-直连-1x_2
+      - 🇹🇷【奢侈版】土耳其-中转-1x_3
+      - 🇹🇷【奢侈版】土耳其2-直连-1x_4
+      - 🇸🇬【奢侈版】新加坡-中转-1x_5
+      - 🇸🇬【奢侈版】新加坡-直连-1x_6
+      - 🇯🇵【奢侈版】日本-中转-1x_7
+      - 🇯🇵【奢侈版】日本-直连-1x_8
+      - 🇰🇷【奢侈版】韩国-中转-1x_9
+      - 🇰🇷【奢侈版】韩国-直连-1x_10
+      - 🇭🇰【奢侈版】香港-中转-3x_11
+      - 🇭🇰【奢侈版】香港-直连-3x_12
+      - 🇷🇺【学生版】俄罗斯-中转-1x_13
+      - 🇷🇺【学生版】俄罗斯-直连-1x_14
+      - 🇺🇸【学生版】美国-中转-1x_15
+      - 🇺🇸【学生版】美国-直连-1x_16
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -116,14 +172,22 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰_HK_香港->🇰🇷_KR_韩国_1
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇰🇷_KR_韩国_3
-      - 🇨🇦_CA_加拿大_4
-      - 🇭🇰_HK_香港_5
-      - 🇭🇰_HK_香港_6
-      - default_name_7
-      - 🇺🇸_US_美国->🇨🇿_CZ_捷克_8
+      - 🇹🇼【奢侈版】台湾Hinet-中转-1x_1
+      - 🇹🇼【奢侈版】台湾Hinet-直连-1x_2
+      - 🇹🇷【奢侈版】土耳其-中转-1x_3
+      - 🇹🇷【奢侈版】土耳其2-直连-1x_4
+      - 🇸🇬【奢侈版】新加坡-中转-1x_5
+      - 🇸🇬【奢侈版】新加坡-直连-1x_6
+      - 🇯🇵【奢侈版】日本-中转-1x_7
+      - 🇯🇵【奢侈版】日本-直连-1x_8
+      - 🇰🇷【奢侈版】韩国-中转-1x_9
+      - 🇰🇷【奢侈版】韩国-直连-1x_10
+      - 🇭🇰【奢侈版】香港-中转-3x_11
+      - 🇭🇰【奢侈版】香港-直连-3x_12
+      - 🇷🇺【学生版】俄罗斯-中转-1x_13
+      - 🇷🇺【学生版】俄罗斯-直连-1x_14
+      - 🇺🇸【学生版】美国-中转-1x_15
+      - 🇺🇸【学生版】美国-直连-1x_16
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
