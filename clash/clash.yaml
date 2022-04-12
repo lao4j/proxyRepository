@@ -5,46 +5,67 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"name":"🇹🇼_TW_台湾_1","server":"211.72.35.153","port":3389,"type":"trojan","country":"🇹🇼_TW_台湾_1","skip-cert-verify":true,"udp":true,"password":"22e7ebb2dc8ab524"}
+  - {"name":"🇨🇳_CN_1","server":"120.233.10.230","port":50300,"type":"ss","country":"🇨🇳_CN_1","cipher":"aes-128-gcm","password":"ced52354-bec2-4209-9121-b57d3dfb59e9"}
+  - {"name":"🇨🇳_CN_2","server":"120.233.10.230","port":50500,"type":"ss","country":"🇨🇳_CN_2","cipher":"aes-128-gcm","password":"ced52354-bec2-4209-9121-b57d3dfb59e9"}
+  - {"name":"🇨🇳_CN_3","server":"120.233.10.230","port":50600,"type":"ss","country":"🇨🇳_CN_3","cipher":"aes-128-gcm","password":"ced52354-bec2-4209-9121-b57d3dfb59e9"}
+  - {"name":"🇨🇳_CN_4","server":"120.233.10.230","port":50200,"type":"ss","country":"🇨🇳_CN_4","cipher":"aes-128-gcm","password":"ced52354-bec2-4209-9121-b57d3dfb59e9"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇹🇼_TW_台湾_1
+      - 🇨🇳_CN_1
+      - 🇨🇳_CN_2
+      - 🇨🇳_CN_3
+      - 🇨🇳_CN_4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇹🇼_TW_台湾_1
+      - 🇨🇳_CN_1
+      - 🇨🇳_CN_2
+      - 🇨🇳_CN_3
+      - 🇨🇳_CN_4
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇹🇼_TW_台湾_1
+      - 🇨🇳_CN_1
+      - 🇨🇳_CN_2
+      - 🇨🇳_CN_3
+      - 🇨🇳_CN_4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇹🇼_TW_台湾_1
+      - 🇨🇳_CN_1
+      - 🇨🇳_CN_2
+      - 🇨🇳_CN_3
+      - 🇨🇳_CN_4
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇹🇼_TW_台湾_1
+      - 🇨🇳_CN_1
+      - 🇨🇳_CN_2
+      - 🇨🇳_CN_3
+      - 🇨🇳_CN_4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇹🇼_TW_台湾_1
+      - 🇨🇳_CN_1
+      - 🇨🇳_CN_2
+      - 🇨🇳_CN_3
+      - 🇨🇳_CN_4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -67,7 +88,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇹🇼_TW_台湾_1
+      - 🇨🇳_CN_1
+      - 🇨🇳_CN_2
+      - 🇨🇳_CN_3
+      - 🇨🇳_CN_4
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
