@@ -5,53 +5,46 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"name":"🇮🇳_IN_印度_1","server":"jgwhdlb4.gaox.ml","port":443,"type":"trojan","country":"🇮🇳_IN_印度_1","skip-cert-verify":true,"udp":true,"password":"081a4198-d664-4bc5-a7c6-e35982da964b"}
-  - {"name":"🇨🇳_CN_中国->🇸🇬_SG_新加坡_2","server":"116.129.253.177","port":3389,"type":"trojan","country":"🇨🇳_CN_中国->🇸🇬_SG_新加坡_2","skip-cert-verify":true,"udp":true,"password":"ca911d30af65ef1b"}
+  - {"name":"香港_洛尘8（www_lcr189_com）_1","server":"47.243.42.106","port":80,"type":"vmess","uuid":"4dd6cbf5-7ff5-3aeb-b5ac-8cff4b21d0e5","alterId":2,"cipher":"auto","country":"香港_洛尘8（www_lcr189_com）_1","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"t.me/vpnhat"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇮🇳_IN_印度_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
+      - 香港_洛尘8（www_lcr189_com）_1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇮🇳_IN_印度_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
+      - 香港_洛尘8（www_lcr189_com）_1
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇮🇳_IN_印度_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
+      - 香港_洛尘8（www_lcr189_com）_1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇮🇳_IN_印度_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
+      - 香港_洛尘8（www_lcr189_com）_1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇮🇳_IN_印度_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
+      - 香港_洛尘8（www_lcr189_com）_1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇮🇳_IN_印度_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
+      - 香港_洛尘8（www_lcr189_com）_1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -74,8 +67,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇮🇳_IN_印度_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
+      - 香港_洛尘8（www_lcr189_com）_1
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
