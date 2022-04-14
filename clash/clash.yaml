@@ -5,46 +5,109 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"name":"osg2_trojan_1","server":"osg2.wyhfunk.xyz","port":18405,"type":"trojan","country":"osg2_trojan_1","skip-cert-verify":true,"udp":true,"password":"EMt02Xl2UI"}
+  - {"name":"🇨🇳_CN_中国->🇸🇬_SG_新加坡_1","server":"116.129.253.177","port":3389,"type":"trojan","country":"🇨🇳_CN_中国->🇸🇬_SG_新加坡_1","skip-cert-verify":true,"udp":true,"password":"ca911d30af65ef1b"}
+  - {"name":"defaultName_2","server":"gz1.52168.xyz","port":1102,"type":"ssr","country":"defaultName_2","password":"epChJS35fV","cipher":"aes-256-cfb","protocol":"auth_aes128_sha1","obfs":"tls1.2_ticket_auth"}
+  - {"name":"defaultName_3","server":"gz2.52168.xyz","port":2103,"type":"ssr","country":"defaultName_3","password":"epChJS35fV","cipher":"aes-256-cfb","protocol":"auth_aes128_sha1","obfs":"tls1.2_ticket_auth"}
+  - {"name":"🇺🇸_US_美国_4","server":"38.68.135.112","port":8882,"type":"ss","country":"🇺🇸_US_美国_4","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"name":"🇺🇸_US_美国_5","server":"38.68.135.112","port":9101,"type":"ss","country":"🇺🇸_US_美国_5","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"🇺🇸_US_美国_6","server":"45.32.94.166","port":31676,"type":"vmess","uuid":"6f3ec45c-5283-40e8-aea9-7749f4c75753","alterId":0,"cipher":"auto","country":"🇺🇸_US_美国_6","skip-cert-verify":true,"tls":false,"network":"http","ws-opts":{"path":"/","headers":{"host":"45.32.94.166"}}}
+  - {"name":"🇺🇸_US_美国_7","server":"20.222.84.185","port":443,"type":"trojan","country":"🇺🇸_US_美国_7","skip-cert-verify":true,"udp":true,"password":"b345dea8-d232-4aa5-8bec-517f78f986e3"}
+  - {"name":"🇺🇸_US_美国_8","server":"hax.hax01.tk","port":443,"type":"vmess","uuid":"e2e073ce-c1d4-43ed-89f5-ca978507548a","alterId":0,"cipher":"auto","country":"🇺🇸_US_美国_8","skip-cert-verify":true,"tls":true,"network":"ws"}
+  - {"name":"defaultName_9","server":"213.183.53.177","port":9097,"type":"ssr","country":"defaultName_9","password":"Sn5B7jTqr76aCJT8","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+  - {"name":"defaultName_10","server":"213.183.53.177","port":9073,"type":"ssr","country":"defaultName_10","password":"daFYagqDdBdA6VTX","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - osg2_trojan_1
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - defaultName_2
+      - defaultName_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_7
+      - 🇺🇸_US_美国_8
+      - defaultName_9
+      - defaultName_10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - osg2_trojan_1
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - defaultName_2
+      - defaultName_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_7
+      - 🇺🇸_US_美国_8
+      - defaultName_9
+      - defaultName_10
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - osg2_trojan_1
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - defaultName_2
+      - defaultName_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_7
+      - 🇺🇸_US_美国_8
+      - defaultName_9
+      - defaultName_10
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - osg2_trojan_1
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - defaultName_2
+      - defaultName_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_7
+      - 🇺🇸_US_美国_8
+      - defaultName_9
+      - defaultName_10
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - osg2_trojan_1
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - defaultName_2
+      - defaultName_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_7
+      - 🇺🇸_US_美国_8
+      - defaultName_9
+      - defaultName_10
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - osg2_trojan_1
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - defaultName_2
+      - defaultName_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_7
+      - 🇺🇸_US_美国_8
+      - defaultName_9
+      - defaultName_10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -67,7 +130,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - osg2_trojan_1
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - defaultName_2
+      - defaultName_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_7
+      - 🇺🇸_US_美国_8
+      - defaultName_9
+      - defaultName_10
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
