@@ -5,8 +5,7 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"name":"defaultName_1","server":"quaex7oo.nodeinfo.icu","port":7005,"type":"ssr","country":"defaultName_1","password":"di15PV","cipher":"rc4-md5","protocol":"auth_aes128_md5","obfs":"tls1.2_ticket_auth"}
-  - {"name":"defaultName_2","server":"weiyoh2u.nodeinfo.icu","port":2601,"type":"ssr","country":"defaultName_2","password":"di15PV","cipher":"aes-256-cfb","protocol":"auth_aes128_md5","obfs":"tls1.2_ticket_auth"}
+  - {"name":"defaultName_1","server":"0.0.0.0","port":8388,"type":"ss","country":"defaultName_1","cipher":"aes-256-cfb","password":"u1rRWTssNv0p"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -14,7 +13,6 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - defaultName_1
-      - defaultName_2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -22,7 +20,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - defaultName_1
-      - defaultName_2
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -30,28 +27,24 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - defaultName_1
-      - defaultName_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - defaultName_1
-      - defaultName_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - defaultName_1
-      - defaultName_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - defaultName_1
-      - defaultName_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -75,7 +68,6 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - defaultName_1
-      - defaultName_2
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
