@@ -5,88 +5,655 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"name":"🇳🇱_NL_荷兰_1","server":"c6s5.jamjams.net","port":27620,"type":"vmess","uuid":"b08fce9e-b88c-4edd-8f72-b6db2a3cdf58","alterId":0,"cipher":"auto","country":"🇳🇱_NL_荷兰_1","skip-cert-verify":true,"tls":false,"network":"tcp","ws-opts":{"headers":{"host":"c6s5.jamjams.net"}}}
-  - {"name":"🇺🇸_US_美国_2","server":"us-am32-5.eqnode.net","port":8081,"type":"ssr","country":"🇺🇸_US_美国_2","password":"YFVrXZgRo","cipher":"aes-256-cfb","protocol":"origin","obfs":"tls1.2_ticket_auth"}
-  - {"name":"🇭🇰_HK_香港_3","server":"gyazm.susenl.com","port":10030,"type":"trojan","country":"🇭🇰_HK_香港_3","skip-cert-verify":true,"udp":true,"password":"c4b65d4c-ca53-328b-a4f2-4d8bc4b912b0"}
-  - {"name":"🇺🇸_US_美国_4","server":"c6s3.jamjams.net","port":27620,"type":"vmess","uuid":"b08fce9e-b88c-4edd-8f72-b6db2a3cdf58","alterId":0,"cipher":"auto","country":"🇺🇸_US_美国_4","skip-cert-verify":true,"tls":false,"network":"tcp","ws-opts":{"headers":{"host":"c6s3.jamjams.net"}}}
-  - {"name":"🇺🇸_US_美国_5","server":"c6s801.jamjams.net","port":27620,"type":"vmess","uuid":"b08fce9e-b88c-4edd-8f72-b6db2a3cdf58","alterId":0,"cipher":"auto","country":"🇺🇸_US_美国_5","skip-cert-verify":true,"tls":false,"network":"tcp","ws-opts":{"headers":{"host":"c6s801.jamjams.net"}}}
-  - {"name":"🇯🇵_JP_日本_6","server":"c6s4.jamjams.net","port":27620,"type":"vmess","uuid":"b08fce9e-b88c-4edd-8f72-b6db2a3cdf58","alterId":0,"cipher":"auto","country":"🇯🇵_JP_日本_6","skip-cert-verify":true,"tls":false,"network":"tcp","ws-opts":{"headers":{"host":"c6s4.jamjams.net"}}}
-  - {"name":"🇭🇰_HK_香港_7","server":"heinuproxy.gimovo.com","port":12345,"type":"vmess","uuid":"61aa0ec9-ceef-4d60-ac38-00ad982fba38","alterId":0,"cipher":"auto","country":"🇭🇰_HK_香港_7","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"headers":{"host":"www.paypal.com"}}}
+  - {"name":"-美国-inapus_mooncloud_bike_1","server":"inapus.mooncloud.bike","port":8443,"type":"vmess","uuid":"2c42a34e-5f88-492b-8a59-3531090578f8","alterId":0,"cipher":"auto","country":"-美国-inapus_mooncloud_bike_1","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"inapus1.mooncloud.bike"}}}
+  - {"name":"美国-NewYork-29防失效githubSubCrawler_2","server":"104.19.23.24","port":443,"type":"vmess","uuid":"8e8b5097-1d75-47c4-ff28-eef6609916c1","alterId":0,"cipher":"auto","country":"美国-NewYork-29防失效githubSubCrawler_2","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/The-Great-Awakening_vws?ed=2048","headers":{"host":"vincent-jackson2021.cf"}}}
+  - {"name":"0703-_3","server":"104.19.36.160","port":443,"type":"vmess","uuid":"ad806487-2d26-4636-98b6-ab85cc8521f7","alterId":64,"cipher":"auto","country":"0703-_3","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"restless-haze-599b.zjjcool.workers.dev"}}}
+  - {"name":"美国加利福尼亚州洛杉矶市CoperationColoction数据中心23_4","server":"23.225.165.242","port":443,"type":"vmess","uuid":"34f8dd2e-55f0-4d95-bfda-714f50b6c0e1","alterId":64,"cipher":"auto","country":"美国加利福尼亚州洛杉矶市CoperationColoction数据中心23_4","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/path/160317342506","headers":{"host":"23.225.165.242"}}}
+  - {"name":"0703-ip34_5","server":"ping.pe","port":443,"type":"vmess","uuid":"3a3e263d-223f-49cc-bbdb-f7e07a55e6fe","alterId":0,"cipher":"auto","country":"0703-ip34_5","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/111111.online","headers":{"host":"by.6111.online"}}}
+  - {"name":"104_16_149_48:443-V2-466410157_6","server":"104.16.149.48","port":443,"type":"vmess","uuid":"1a54e756-d454-45a0-aefa-e9514e1da1f1","alterId":1,"cipher":"auto","country":"104_16_149_48:443-V2-466410157_6","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/The-Great-Awakening_vws","headers":{"host":"vincent-jackson2021.cf"}}}
+  - {"name":"美国_7","server":"104.24.42.148","port":443,"type":"vmess","uuid":"3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2","alterId":64,"cipher":"auto","country":"美国_7","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cdnde.irteyz.today"}}}
+  - {"name":"韩国_589_589_578","server":"kraws001.xmrth-node.xyz","port":11095,"type":"vmess","uuid":"453dfa48-d477-3eef-b791-fc1fddc17ae3","alterId":0,"cipher":"auto","country":"韩国_589_589_578","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/index","headers":{"host":"kraws001.xmrth-node.xyz"}}}
+  - {"name":"0703-美国2_9","server":"104.18.6.138","port":443,"type":"vmess","uuid":"3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2","alterId":64,"cipher":"auto","country":"0703-美国2_9","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cdnde.irteyz.today"}}}
+  - {"name":"美国_10","server":"us1.31vpn.com","port":80,"type":"vmess","uuid":"bb4b9e95-c9ff-411c-9a47-483570e169aa","alterId":0,"cipher":"auto","country":"美国_10","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/fastssh/remaoqi/624ca41d72e6d/","headers":{"host":"us1.31vpn.com"}}}
+  - {"name":"日本_11","server":"jp01-vm0.entry.ikuuu.casa","port":448,"type":"vmess","uuid":"e1241a61-e533-3aa0-a25e-ad86cf34cd64","alterId":1,"cipher":"auto","country":"日本_11","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"jp01-vm0.entry.ikuuu.casa"}}}
+  - {"name":"亚洲_12","server":"download.cn.connecat.com","port":60016,"type":"vmess","uuid":"d8b51f0b-8d4a-34ef-bc02-9c729c253e96","alterId":1,"cipher":"auto","country":"亚洲_12","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"download.cn.connecat.com"}}}
+  - {"name":"-美国加利福尼亚州洛杉矶-23_225_210_195","server":"23.225.210.195","port":443,"type":"vmess","uuid":"dd36ec60-04bd-4cfe-bbf1-f4d591265202","alterId":64,"cipher":"auto","country":"-美国加利福尼亚州洛杉矶-23_225_210_195","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/path/292026011205","headers":{"host":"www.40296182.xyz"}}}
+  - {"name":"欧洲_14","server":"cm.awslcn.com","port":25220,"type":"vmess","uuid":"7599c3d5-e842-46c5-bf6e-42b8519d34e3","alterId":0,"cipher":"auto","country":"欧洲_14","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cm.awslcn.com"}}}
+  - {"name":"Relay_加拿大-_389","server":"331tw.fans8.xyz","port":443,"type":"vmess","uuid":"5c70da5d-e641-3bf8-b7dc-5babd843ff3c","alterId":2,"cipher":"auto","country":"Relay_加拿大-_389","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/ray","headers":{"host":"331tw.fans8.xyz"}}}
+  - {"name":"荷兰0703-NL_3079","server":"46.182.107.82","port":443,"type":"vmess","uuid":"37c29f42-b7c7-40c7-9da9-743dcc4895bc","alterId":64,"cipher":"auto","country":"荷兰0703-NL_3079","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/footers","headers":{"host":"46.182.107.82"}}}
+  - {"name":"美国_17","server":"104.24.233.209","port":443,"type":"vmess","uuid":"3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2","alterId":64,"cipher":"auto","country":"美国_17","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cdnde.irteyz.today"}}}
+  - {"name":"倾城极速_tk-香港-Openit_ml_18","server":"23.99.123.83","port":8022,"type":"vmess","uuid":"a7c876a7-a838-3083-a970-95571fe7b57f","alterId":0,"cipher":"auto","country":"倾城极速_tk-香港-Openit_ml_18","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"23.99.123.83"}}}
+  - {"name":"荷兰_19","server":"46.182.107.37","port":443,"type":"vmess","uuid":"65ea6727-4461-47a7-a5c4-fef2c67f2f68","alterId":64,"cipher":"auto","country":"荷兰_19","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/footers","headers":{"host":"www.32811341.xyz"}}}
+  - {"name":"荷兰_20","server":"46.182.107.151","port":443,"type":"vmess","uuid":"f5250c4e-f855-4eff-b73c-a02226d42fe7","alterId":64,"cipher":"auto","country":"荷兰_20","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/footers","headers":{"host":"www.06321530.xyz"}}}
+  - {"name":"防失效githubSubCrawler_21","server":"129.227.201.234","port":443,"type":"vmess","uuid":"aba50dd4-5484-3b05-b14a-4661caf862d5","alterId":4,"cipher":"auto","country":"防失效githubSubCrawler_21","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/ws","headers":{"host":"aicoo6du.com"}}}
+  - {"name":"欧洲_22","server":"v1.369855.xyz","port":11443,"type":"vmess","uuid":"d5c70a71-1b3c-41f2-a8e0-17323bc23821","alterId":1,"cipher":"auto","country":"欧洲_22","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/api/sg","headers":{"host":"sgav2.ddns.tjiasu.xyz"}}}
+  - {"name":"欧洲_23","server":"v2fly.sab.quest","port":443,"type":"vmess","uuid":"9e6ceeff-2546-3690-ac00-6fcdf31dec94","alterId":1,"cipher":"auto","country":"欧洲_23","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/chaug","headers":{"host":"v2fly.samrt.website"}}}
+  - {"name":"荷兰_24","server":"46.182.107.82","port":443,"type":"vmess","uuid":"37c29f42-b7c7-40c7-9da9-743dcc4895bc","alterId":64,"cipher":"auto","country":"荷兰_24","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/footers","headers":{"host":"www.63681459.xyz"}}}
+  - {"name":"Relay_美国-俄罗斯_2226","server":"v5.ssrsub.com","port":8443,"type":"vmess","uuid":"974aeac3-c27c-4e20-86e4-03f526faaccd","alterId":0,"cipher":"auto","country":"Relay_美国-俄罗斯_2226","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/ssrsub","headers":{"host":"v5.ssrsub.com"}}}
+  - {"name":"_美国_YouTube:VV科技_7","server":"v3.ssrsub.com","port":443,"type":"vmess","uuid":"739e53db-d41c-4bad-a61d-6cd5a173f85b","alterId":0,"cipher":"auto","country":"_美国_YouTube:VV科技_7","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/ssrsub","headers":{"host":"v3.ssrsub.com"}}}
+  - {"name":"EXTM3U-香港HKT-nf-iplc_27","server":"120.233.10.55","port":40306,"type":"vmess","uuid":"e4cba870-e545-3e17-bd03-f3ce5e3e292e","alterId":0,"cipher":"auto","country":"EXTM3U-香港HKT-nf-iplc_27","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/jz666666","headers":{"host":"t.me/vpnhat"}}}
+  - {"name":"美国0703-US_63","server":"104.19.7.84","port":443,"type":"vmess","uuid":"4cdb016f-f14e-30b3-97d6-453c741a5c80","alterId":1,"cipher":"auto","country":"美国0703-US_63","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/y475","headers":{"host":"free.frli.xyz"}}}
+  - {"name":"荷兰_29","server":"46.182.107.25","port":443,"type":"vmess","uuid":"0a1ab3bd-0431-4da8-ad8a-238367ce4efc","alterId":64,"cipher":"auto","country":"荷兰_29","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/path/310910211916","headers":{"host":"www.11300814.xyz"}}}
+  - {"name":"美国_30","server":"nyyd.zerohost.live","port":53009,"type":"vmess","uuid":"c008a763-2123-312f-bae6-bf7630517e22","alterId":2,"cipher":"auto","country":"美国_30","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/v2ray","headers":{"host":"nyyd.zerohost.live"}}}
+  - {"name":"美国-NewYork-12防失效githubSubCrawler_31","server":"104.20.130.175","port":443,"type":"vmess","uuid":"8e8b5097-1d75-47c4-ff28-eef6609916c1","alterId":0,"cipher":"auto","country":"美国-NewYork-12防失效githubSubCrawler_31","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/The-Great-Awakening_vws?ed=2048","headers":{"host":"vincent-jackson2021.cf"}}}
+  - {"name":"防失效githubSubCrawler_32","server":"www.kernels.bid","port":80,"type":"vmess","uuid":"25ec39f7-7cdd-4c3c-bc3c-60e9a8927b4a","alterId":0,"cipher":"auto","country":"防失效githubSubCrawler_32","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"/ws"}}}
+  - {"name":"防失效githubSubCrawler_33","server":"shcu01.iplc188.com","port":10004,"type":"vmess","uuid":"65cac56d-4155-43c8-bae0-f368cb21f771","alterId":1,"cipher":"auto","country":"防失效githubSubCrawler_33","skip-cert-verify":true,"tls":false,"network":"tcp","ws-opts":{"path":"/","headers":{"host":"shcu01.iplc188.com"}}}
+  - {"name":"日本_34","server":"jp04-vm0.entry.ikuuu.casa","port":447,"type":"vmess","uuid":"74bf73ff-b403-3a17-a662-67d024d0ffec","alterId":1,"cipher":"auto","country":"日本_34","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"jp04-vm0.entry.ikuuu.casa"}}}
+  - {"name":"YouTubeat阿阳AYANG7_35","server":"165.154.225.176","port":443,"type":"vmess","uuid":"5c70da5d-e641-3bf8-b7dc-5babd843ff3c","alterId":2,"cipher":"auto","country":"YouTubeat阿阳AYANG7_35","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/ray","headers":{"host":"0326hk01.fans8.xyz"}}}
+  - {"name":"-美国-104_160_172_173","server":"104.160.172.173","port":443,"type":"vmess","uuid":"b697d727-cf6c-41dd-a0de-c7a9478e4a4a","alterId":64,"cipher":"auto","country":"-美国-104_160_172_173","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"www.97574341.xyz"}}}
+  - {"name":"美国_37","server":"app.ssfree.ru","port":443,"type":"vmess","uuid":"3c613ff4-99dd-11ec-b73a-000017022008","alterId":64,"cipher":"auto","country":"美国_37","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/getweather","headers":{"host":"app.ssfree.ru"}}}
+  - {"name":"美国_38","server":"172.67.117.187","port":443,"type":"vmess","uuid":"3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2","alterId":64,"cipher":"auto","country":"美国_38","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cdnde.irteyz.today"}}}
+  - {"name":"美国_39","server":"172.67.118.232","port":443,"type":"vmess","uuid":"3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2","alterId":64,"cipher":"auto","country":"美国_39","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cdnde.irteyz.today"}}}
+  - {"name":"法国_40","server":"51.89.84.233","port":443,"type":"vmess","uuid":"bc53ae6f-b939-4b36-9c38-67e9cb76b71c","alterId":64,"cipher":"auto","country":"法国_40","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/path/310910211916","headers":{"host":"www.47733853.xyz"}}}
+  - {"name":"-台湾-61_220_28_198","server":"61.220.28.198","port":9233,"type":"vmess","uuid":"be58f4e4-894a-47ee-8836-cf75e74fa9c9","alterId":0,"cipher":"auto","country":"-台湾-61_220_28_198","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"61.220.28.198"}}}
+  - {"name":"香港_42","server":"46.v2-ray.cyou","port":15046,"type":"vmess","uuid":"047184b7-6da2-3d3f-ac27-6a1a8701daf8","alterId":2,"cipher":"auto","country":"香港_42","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"46.v2-ray.cyou"}}}
+  - {"name":"CN_43","server":"ck77.ck222.xyz","port":55133,"type":"vmess","uuid":"247c589a-a456-452b-90b7-7d9fc211d052","alterId":0,"cipher":"auto","country":"CN_43","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ck77.ck222.xyz"}}}
+  - {"name":"-美国-104_22_3_3","server":"104.22.3.3","port":443,"type":"vmess","uuid":"8e8b5097-1d75-47c4-ff28-eef6609916c1","alterId":0,"cipher":"auto","country":"-美国-104_22_3_3","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/The-Great-Awakening_vws?ed=2048","headers":{"host":"vincent-jackson2021.cf"}}}
+  - {"name":"日本_45","server":"jp03-vm0.entry.ikuuu.casa","port":447,"type":"vmess","uuid":"74bf73ff-b403-3a17-a662-67d024d0ffec","alterId":1,"cipher":"auto","country":"日本_45","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"jp03-vm0.entry.ikuuu.casa"}}}
+  - {"name":"倾城极速_tk-美国-Openit_ml_46","server":"v4.ssrsub.com","port":8443,"type":"vmess","uuid":"b7c70df3-f92f-4800-a8e1-67e6dc833256","alterId":0,"cipher":"auto","country":"倾城极速_tk-美国-Openit_ml_46","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/ssrsub","headers":{"host":"v4.ssrsub.com"}}}
+  - {"name":"香港_47","server":"hk14.xniuniu888.club","port":31417,"type":"vmess","uuid":"64d94b3c-1d10-30b1-8e53-68479ff77276","alterId":2,"cipher":"auto","country":"香港_47","skip-cert-verify":true,"tls":false,"network":"tcp","ws-opts":{"path":"/","headers":{"host":"hk14.xniuniu888.club"}}}
+  - {"name":"香港_48","server":"relay1.sgdns.club","port":11070,"type":"vmess","uuid":"2dc10784-c7fb-377d-a579-2b541eb16d7b","alterId":2,"cipher":"auto","country":"香港_48","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/sgy","headers":{"host":"relay1.sgdns.club"}}}
+  - {"name":"美国_49","server":"104.19.1.1","port":2053,"type":"vmess","uuid":"8bb15a90-0f6c-4d0c-dada-5c35cdfc9d9f","alterId":64,"cipher":"auto","country":"美国_49","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"e.fovi.tk"}}}
+  - {"name":"倾城极速_tk-美国-Openit_ml_50","server":"us1.lolvps.xyz","port":60060,"type":"vmess","uuid":"95886c76-9207-48bd-9e64-d1422e75ad89","alterId":0,"cipher":"auto","country":"倾城极速_tk-美国-Openit_ml_50","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/AY920UMR","headers":{"host":"us1.lolvps.xyz"}}}
+  - {"name":"Relay_美国-俄罗斯_23","server":"v2.ssrsub.com","port":8443,"type":"vmess","uuid":"b7c70df3-f92f-4800-a8e1-67e6dc833256","alterId":0,"cipher":"auto","country":"Relay_美国-俄罗斯_23","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/ssrsub","headers":{"host":"v2.ssrsub.com"}}}
+  - {"name":"防失效githubSubCrawler_52","server":"www.kernels.bid","port":443,"type":"vmess","uuid":"6c7c5e3a-73ad-467a-1241-206987daa04f","alterId":0,"cipher":"auto","country":"防失效githubSubCrawler_52","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"/ws"}}}
+  - {"name":"Relay_俄罗斯-_1484","server":"rufree.v2yun.vip","port":8080,"type":"vmess","uuid":"f66a5167-fde0-3e21-8f41-90595e6ab12a","alterId":0,"cipher":"auto","country":"Relay_俄罗斯-_1484","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"rufree.v2yun.vip"}}}
+  - {"name":"CN_54","server":"ck77.ck222.xyz","port":55126,"type":"vmess","uuid":"247c589a-a456-452b-90b7-7d9fc211d052","alterId":0,"cipher":"auto","country":"CN_54","skip-cert-verify":true,"tls":false,"network":"tcp","ws-opts":{"path":"/","headers":{"host":"ck77.ck222.xyz"}}}
+  - {"name":"YouTube:VV科技_56","server":"198.41.212.8","port":443,"type":"vmess","uuid":"a8910831-f56b-4ac4-c68f-e4dd83f71e60","alterId":0,"cipher":"auto","country":"YouTube:VV科技_56","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/sakura/","headers":{"host":"zero1.a-yu.xyz"}}}
+  - {"name":"日本_56","server":"jp02-vm0.entry.ikuuu.casa","port":448,"type":"vmess","uuid":"e1241a61-e533-3aa0-a25e-ad86cf34cd64","alterId":1,"cipher":"auto","country":"日本_56","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"jp02-vm0.entry.ikuuu.casa"}}}
+  - {"name":"Relay_","server":"172.67.68.58","port":443,"type":"vmess","uuid":"f2f578e4-692d-40b5-af99-9f1dd712eb32","alterId":0,"cipher":"auto","country":"Relay_","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/shuier"}}
+  - {"name":"法国26_58","server":"0316ro.fans8.xyz","port":443,"type":"vmess","uuid":"5c70da5d-e641-3bf8-b7dc-5babd843ff3c","alterId":2,"cipher":"auto","country":"法国26_58","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/nl","headers":{"host":"0316ro.fans8.xyz"}}}
+  - {"name":"Relay_美国-_2238","server":"v1.ssrsub.com","port":8443,"type":"vmess","uuid":"974aeac3-c27c-4e20-86e4-03f526faaccd","alterId":0,"cipher":"auto","country":"Relay_美国-_2238","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/ssrsub","headers":{"host":"v1.ssrsub.com"}}}
+  - {"name":"欧洲_60","server":"100.wowogg.cyou","port":11220,"type":"vmess","uuid":"08103798-414e-32b6-8748-2507732d2c51","alterId":2,"cipher":"auto","country":"欧洲_60","skip-cert-verify":true,"tls":false,"network":"tcp","ws-opts":{"path":"/","headers":{"host":"100.wowogg.cyou"}}}
+  - {"name":"美国_61","server":"104.21.67.220","port":443,"type":"vmess","uuid":"e1aa83ff-b8b5-41b8-a854-fdcd3faa8875","alterId":1,"cipher":"auto","country":"美国_61","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"us-04.yinriver.top"}}}
+  - {"name":"Relay_新加坡-_1639","server":"026.AP.POP.BIGAIRPORT.NET","port":12356,"type":"vmess","uuid":"204204eb-0f49-41e5-bd91-b2f3cd8fca89","alterId":0,"cipher":"auto","country":"Relay_新加坡-_1639","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"026.AP.POP.BIGAIRPORT.NET"}}}
+  - {"name":"美国_63","server":"104.16.237.48","port":443,"type":"vmess","uuid":"58f25243-623d-4c8b-9c47-095b4b54257f","alterId":64,"cipher":"auto","country":"美国_63","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/ray","headers":{"host":"v2ray.gd1214b.workers.dev"}}}
+  - {"name":"新加坡_64","server":"v2-3.godlight.xyz","port":39273,"type":"vmess","uuid":"6a52f259-4367-468c-a828-7b8283c2f059","alterId":0,"cipher":"auto","country":"新加坡_64","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/f45361465j175","headers":{"host":"v2-3.godlight.xyz"}}}
+  - {"name":"美国_65","server":"107.148.198.53","port":443,"type":"vmess","uuid":"4c7923df-700f-4bf2-918e-08c6e141037c","alterId":64,"cipher":"auto","country":"美国_65","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/footers","headers":{"host":"www.78577665.xyz"}}}
+  - {"name":"美国_66","server":"104.26.12.122","port":443,"type":"vmess","uuid":"3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2","alterId":64,"cipher":"auto","country":"美国_66","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cdnde.irteyz.today"}}}
+  - {"name":"荷兰0703-NL_270","server":"46.182.107.46","port":443,"type":"vmess","uuid":"fe5f69e7-e183-439b-950b-8221ef0651f2","alterId":64,"cipher":"auto","country":"荷兰0703-NL_270","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/footers","headers":{"host":"46.182.107.46"}}}
+  - {"name":"美国_68","server":"23.224.82.171","port":443,"type":"vmess","uuid":"95f388b3-68c9-421a-9de2-d8ab2e414a5e","alterId":64,"cipher":"auto","country":"美国_68","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/path/181012123433","headers":{"host":"www.19241194.xyz"}}}
+  - {"name":"-美国-142_4_105_253","server":"142.4.105.253","port":9233,"type":"vmess","uuid":"be58f4e4-894a-47ee-8836-cf75e74fa9c9","alterId":0,"cipher":"auto","country":"-美国-142_4_105_253","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"142.4.105.253"}}}
+  - {"name":"香港_70","server":"anycast01.v2cy.com","port":80,"type":"vmess","uuid":"586fb889-61ee-42d9-b374-c1440b0a0664","alterId":1,"cipher":"auto","country":"香港_70","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"dn-pd2hiel8.cn2.run.gxu.edu.cn"}}}
+  - {"name":"美国-Openit_ml_71","server":"45.32.94.166","port":31676,"type":"vmess","uuid":"6f3ec45c-5283-40e8-aea9-7749f4c75753","alterId":0,"cipher":"auto","country":"美国-Openit_ml_71","skip-cert-verify":true,"tls":false,"network":"http","ws-opts":{"path":"/","headers":{"host":"45.32.94.166"}}}
+  - {"name":"倾城极速_tk-新加坡-Openit_ml_72","server":"sgaws004.xmrth-node.xyz","port":11296,"type":"vmess","uuid":"453dfa48-d477-3eef-b791-fc1fddc17ae3","alterId":0,"cipher":"auto","country":"倾城极速_tk-新加坡-Openit_ml_72","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/index","headers":{"host":"www.baidu.com"}}}
+  - {"name":"亚洲_73","server":"download.cn.connecat.com","port":60014,"type":"vmess","uuid":"d8b51f0b-8d4a-34ef-bc02-9c729c253e96","alterId":0,"cipher":"auto","country":"亚洲_73","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"download.cn.connecat.com"}}}
+  - {"name":"YouTubeat阿阳AYANG4_74","server":"104.16.162.16","port":2053,"type":"vmess","uuid":"bf67437e-6c90-45ca-abc2-c7240a5ce2aa","alterId":0,"cipher":"auto","country":"YouTubeat阿阳AYANG4_74","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/eisasqa","headers":{"host":"foxus.fovi.tk"}}}
+  - {"name":"Relay_美国-_27","server":"niaop.tk","port":443,"type":"vmess","uuid":"a0b0df87-bda2-440e-830f-347da6cc7760","alterId":0,"cipher":"auto","country":"Relay_美国-_27","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/wsssdr1","headers":{"host":"niaop.tk"}}}
+  - {"name":"这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)_76","server":"104.17.21.243","port":443,"type":"vmess","uuid":"4cdb016f-f14e-30b3-97d6-453c741a5c80","alterId":1,"cipher":"auto","country":"这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)_76","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/y475","headers":{"host":"104.17.21.243"}}}
+  - {"name":"美国_77","server":"105.wowogg.cyou","port":52205,"type":"vmess","uuid":"08103798-414e-32b6-8748-2507732d2c51","alterId":2,"cipher":"auto","country":"美国_77","skip-cert-verify":true,"tls":false,"network":"tcp","ws-opts":{"path":"/","headers":{"host":"105.wowogg.cyou"}}}
+  - {"name":"欧洲_78","server":"cm.awslcn.com","port":25220,"type":"vmess","uuid":"7599c3d5-e842-46c5-bf6e-42b8519d34e3","alterId":0,"cipher":"auto","country":"欧洲_78","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cm.awslcn.com"}}}
+  - {"name":"❶香港B1[推荐]_79","server":"js01.balala2016.xyz","port":20086,"type":"vmess","uuid":"e3121cd0-b493-11ec-8a78-69c637e5ed92","alterId":0,"cipher":"auto","country":"❶香港B1[推荐]_79","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/balala","headers":{"host":"js01.balala2016.xyz"}}}
+  - {"name":"美国_80","server":"fri.ncugo.cf","port":443,"type":"vmess","uuid":"de0eb598-2cea-43a0-c5fe-77335fb07a35","alterId":0,"cipher":"auto","country":"美国_80","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"fri.ncugo.cf"}}}
+  - {"name":"欧洲_81","server":"133.wowogg.cyou","port":52333,"type":"vmess","uuid":"08103798-414e-32b6-8748-2507732d2c51","alterId":2,"cipher":"auto","country":"欧洲_81","skip-cert-verify":true,"tls":false,"network":"tcp","ws-opts":{"path":"/","headers":{"host":"133.wowogg.cyou"}}}
+  - {"name":"0703-_82","server":"104.19.36.160","port":443,"type":"vmess","uuid":"ad806487-2d26-4636-98b6-ab85cc8521f7","alterId":64,"cipher":"auto","country":"0703-_82","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"restless-haze-599b.zjjcool.workers.dev"}}}
+  - {"name":"美国-NewYork-28防失效githubSubCrawler_83","server":"104.16.148.48","port":443,"type":"vmess","uuid":"8e8b5097-1d75-47c4-ff28-eef6609916c1","alterId":0,"cipher":"auto","country":"美国-NewYork-28防失效githubSubCrawler_83","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/The-Great-Awakening_vws?ed=2048","headers":{"host":"vincent-jackson2021.cf"}}}
+  - {"name":"美国_2563","server":"45.35.84.162","port":443,"type":"vmess","uuid":"aba50dd4-5484-3b05-b14a-4661caf862d5","alterId":4,"cipher":"auto","country":"美国_2563","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/ws"}}
+  - {"name":"美国_1996","server":"usa-washington.lvuft.com","port":443,"type":"vmess","uuid":"aba50dd4-5484-3b05-b14a-4661caf862d5","alterId":4,"cipher":"auto","country":"美国_1996","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/ws","headers":{"host":"usa-washington.lvuft.com"}}}
+  - {"name":"美国CloudFlare公司CDN节点23_86","server":"hax.hax01.tk","port":443,"type":"vmess","uuid":"e2e073ce-c1d4-43ed-89f5-ca978507548a","alterId":0,"cipher":"auto","country":"美国CloudFlare公司CDN节点23_86","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"hax.hax01.tk"}}}
+  - {"name":"倾城极速_tk-RELAY-Openit_ml_87","server":"hax2.hax01.ml","port":443,"type":"vmess","uuid":"25af03c3-27ff-4c14-c142-ad7694ec42f9","alterId":0,"cipher":"auto","country":"倾城极速_tk-RELAY-Openit_ml_87","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"hax2.hax01.ml"}}}
+  - {"name":"-罗马尼亚-ukdll_52jjyun_top_88","server":"ukdll.52jjyun.top","port":80,"type":"vmess","uuid":"90cab127-9c02-46f2-8642-c7d230c88355","alterId":10,"cipher":"auto","country":"-罗马尼亚-ukdll_52jjyun_top_88","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ukdll.52jjyun.top"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇳🇱_NL_荷兰_1
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_香港_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇯🇵_JP_日本_6
-      - 🇭🇰_HK_香港_7
+      - '-美国-inapus_mooncloud_bike_1'
+      - 美国-NewYork-29防失效githubSubCrawler_2
+      - 0703-_3
+      - 美国加利福尼亚州洛杉矶市CoperationColoction数据中心23_4
+      - 0703-ip34_5
+      - 104_16_149_48:443-V2-466410157_6
+      - 美国_7
+      - 韩国_589_589_578
+      - 0703-美国2_9
+      - 美国_10
+      - 日本_11
+      - 亚洲_12
+      - '-美国加利福尼亚州洛杉矶-23_225_210_195'
+      - 欧洲_14
+      - Relay_加拿大-_389
+      - 荷兰0703-NL_3079
+      - 美国_17
+      - 倾城极速_tk-香港-Openit_ml_18
+      - 荷兰_19
+      - 荷兰_20
+      - 防失效githubSubCrawler_21
+      - 欧洲_22
+      - 欧洲_23
+      - 荷兰_24
+      - Relay_美国-俄罗斯_2226
+      - _美国_YouTube:VV科技_7
+      - EXTM3U-香港HKT-nf-iplc_27
+      - 美国0703-US_63
+      - 荷兰_29
+      - 美国_30
+      - 美国-NewYork-12防失效githubSubCrawler_31
+      - 防失效githubSubCrawler_32
+      - 防失效githubSubCrawler_33
+      - 日本_34
+      - YouTubeat阿阳AYANG7_35
+      - '-美国-104_160_172_173'
+      - 美国_37
+      - 美国_38
+      - 美国_39
+      - 法国_40
+      - '-台湾-61_220_28_198'
+      - 香港_42
+      - CN_43
+      - '-美国-104_22_3_3'
+      - 日本_45
+      - 倾城极速_tk-美国-Openit_ml_46
+      - 香港_47
+      - 香港_48
+      - 美国_49
+      - 倾城极速_tk-美国-Openit_ml_50
+      - Relay_美国-俄罗斯_23
+      - 防失效githubSubCrawler_52
+      - Relay_俄罗斯-_1484
+      - CN_54
+      - YouTube:VV科技_56
+      - 日本_56
+      - Relay_
+      - 法国26_58
+      - Relay_美国-_2238
+      - 欧洲_60
+      - 美国_61
+      - Relay_新加坡-_1639
+      - 美国_63
+      - 新加坡_64
+      - 美国_65
+      - 美国_66
+      - 荷兰0703-NL_270
+      - 美国_68
+      - '-美国-142_4_105_253'
+      - 香港_70
+      - 美国-Openit_ml_71
+      - 倾城极速_tk-新加坡-Openit_ml_72
+      - 亚洲_73
+      - YouTubeat阿阳AYANG4_74
+      - Relay_美国-_27
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)_76
+      - 美国_77
+      - 欧洲_78
+      - ❶香港B1[推荐]_79
+      - 美国_80
+      - 欧洲_81
+      - 0703-_82
+      - 美国-NewYork-28防失效githubSubCrawler_83
+      - 美国_2563
+      - 美国_1996
+      - 美国CloudFlare公司CDN节点23_86
+      - 倾城极速_tk-RELAY-Openit_ml_87
+      - '-罗马尼亚-ukdll_52jjyun_top_88'
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇳🇱_NL_荷兰_1
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_香港_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇯🇵_JP_日本_6
-      - 🇭🇰_HK_香港_7
+      - '-美国-inapus_mooncloud_bike_1'
+      - 美国-NewYork-29防失效githubSubCrawler_2
+      - 0703-_3
+      - 美国加利福尼亚州洛杉矶市CoperationColoction数据中心23_4
+      - 0703-ip34_5
+      - 104_16_149_48:443-V2-466410157_6
+      - 美国_7
+      - 韩国_589_589_578
+      - 0703-美国2_9
+      - 美国_10
+      - 日本_11
+      - 亚洲_12
+      - '-美国加利福尼亚州洛杉矶-23_225_210_195'
+      - 欧洲_14
+      - Relay_加拿大-_389
+      - 荷兰0703-NL_3079
+      - 美国_17
+      - 倾城极速_tk-香港-Openit_ml_18
+      - 荷兰_19
+      - 荷兰_20
+      - 防失效githubSubCrawler_21
+      - 欧洲_22
+      - 欧洲_23
+      - 荷兰_24
+      - Relay_美国-俄罗斯_2226
+      - _美国_YouTube:VV科技_7
+      - EXTM3U-香港HKT-nf-iplc_27
+      - 美国0703-US_63
+      - 荷兰_29
+      - 美国_30
+      - 美国-NewYork-12防失效githubSubCrawler_31
+      - 防失效githubSubCrawler_32
+      - 防失效githubSubCrawler_33
+      - 日本_34
+      - YouTubeat阿阳AYANG7_35
+      - '-美国-104_160_172_173'
+      - 美国_37
+      - 美国_38
+      - 美国_39
+      - 法国_40
+      - '-台湾-61_220_28_198'
+      - 香港_42
+      - CN_43
+      - '-美国-104_22_3_3'
+      - 日本_45
+      - 倾城极速_tk-美国-Openit_ml_46
+      - 香港_47
+      - 香港_48
+      - 美国_49
+      - 倾城极速_tk-美国-Openit_ml_50
+      - Relay_美国-俄罗斯_23
+      - 防失效githubSubCrawler_52
+      - Relay_俄罗斯-_1484
+      - CN_54
+      - YouTube:VV科技_56
+      - 日本_56
+      - Relay_
+      - 法国26_58
+      - Relay_美国-_2238
+      - 欧洲_60
+      - 美国_61
+      - Relay_新加坡-_1639
+      - 美国_63
+      - 新加坡_64
+      - 美国_65
+      - 美国_66
+      - 荷兰0703-NL_270
+      - 美国_68
+      - '-美国-142_4_105_253'
+      - 香港_70
+      - 美国-Openit_ml_71
+      - 倾城极速_tk-新加坡-Openit_ml_72
+      - 亚洲_73
+      - YouTubeat阿阳AYANG4_74
+      - Relay_美国-_27
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)_76
+      - 美国_77
+      - 欧洲_78
+      - ❶香港B1[推荐]_79
+      - 美国_80
+      - 欧洲_81
+      - 0703-_82
+      - 美国-NewYork-28防失效githubSubCrawler_83
+      - 美国_2563
+      - 美国_1996
+      - 美国CloudFlare公司CDN节点23_86
+      - 倾城极速_tk-RELAY-Openit_ml_87
+      - '-罗马尼亚-ukdll_52jjyun_top_88'
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇳🇱_NL_荷兰_1
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_香港_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇯🇵_JP_日本_6
-      - 🇭🇰_HK_香港_7
+      - '-美国-inapus_mooncloud_bike_1'
+      - 美国-NewYork-29防失效githubSubCrawler_2
+      - 0703-_3
+      - 美国加利福尼亚州洛杉矶市CoperationColoction数据中心23_4
+      - 0703-ip34_5
+      - 104_16_149_48:443-V2-466410157_6
+      - 美国_7
+      - 韩国_589_589_578
+      - 0703-美国2_9
+      - 美国_10
+      - 日本_11
+      - 亚洲_12
+      - '-美国加利福尼亚州洛杉矶-23_225_210_195'
+      - 欧洲_14
+      - Relay_加拿大-_389
+      - 荷兰0703-NL_3079
+      - 美国_17
+      - 倾城极速_tk-香港-Openit_ml_18
+      - 荷兰_19
+      - 荷兰_20
+      - 防失效githubSubCrawler_21
+      - 欧洲_22
+      - 欧洲_23
+      - 荷兰_24
+      - Relay_美国-俄罗斯_2226
+      - _美国_YouTube:VV科技_7
+      - EXTM3U-香港HKT-nf-iplc_27
+      - 美国0703-US_63
+      - 荷兰_29
+      - 美国_30
+      - 美国-NewYork-12防失效githubSubCrawler_31
+      - 防失效githubSubCrawler_32
+      - 防失效githubSubCrawler_33
+      - 日本_34
+      - YouTubeat阿阳AYANG7_35
+      - '-美国-104_160_172_173'
+      - 美国_37
+      - 美国_38
+      - 美国_39
+      - 法国_40
+      - '-台湾-61_220_28_198'
+      - 香港_42
+      - CN_43
+      - '-美国-104_22_3_3'
+      - 日本_45
+      - 倾城极速_tk-美国-Openit_ml_46
+      - 香港_47
+      - 香港_48
+      - 美国_49
+      - 倾城极速_tk-美国-Openit_ml_50
+      - Relay_美国-俄罗斯_23
+      - 防失效githubSubCrawler_52
+      - Relay_俄罗斯-_1484
+      - CN_54
+      - YouTube:VV科技_56
+      - 日本_56
+      - Relay_
+      - 法国26_58
+      - Relay_美国-_2238
+      - 欧洲_60
+      - 美国_61
+      - Relay_新加坡-_1639
+      - 美国_63
+      - 新加坡_64
+      - 美国_65
+      - 美国_66
+      - 荷兰0703-NL_270
+      - 美国_68
+      - '-美国-142_4_105_253'
+      - 香港_70
+      - 美国-Openit_ml_71
+      - 倾城极速_tk-新加坡-Openit_ml_72
+      - 亚洲_73
+      - YouTubeat阿阳AYANG4_74
+      - Relay_美国-_27
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)_76
+      - 美国_77
+      - 欧洲_78
+      - ❶香港B1[推荐]_79
+      - 美国_80
+      - 欧洲_81
+      - 0703-_82
+      - 美国-NewYork-28防失效githubSubCrawler_83
+      - 美国_2563
+      - 美国_1996
+      - 美国CloudFlare公司CDN节点23_86
+      - 倾城极速_tk-RELAY-Openit_ml_87
+      - '-罗马尼亚-ukdll_52jjyun_top_88'
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇳🇱_NL_荷兰_1
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_香港_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇯🇵_JP_日本_6
-      - 🇭🇰_HK_香港_7
+      - '-美国-inapus_mooncloud_bike_1'
+      - 美国-NewYork-29防失效githubSubCrawler_2
+      - 0703-_3
+      - 美国加利福尼亚州洛杉矶市CoperationColoction数据中心23_4
+      - 0703-ip34_5
+      - 104_16_149_48:443-V2-466410157_6
+      - 美国_7
+      - 韩国_589_589_578
+      - 0703-美国2_9
+      - 美国_10
+      - 日本_11
+      - 亚洲_12
+      - '-美国加利福尼亚州洛杉矶-23_225_210_195'
+      - 欧洲_14
+      - Relay_加拿大-_389
+      - 荷兰0703-NL_3079
+      - 美国_17
+      - 倾城极速_tk-香港-Openit_ml_18
+      - 荷兰_19
+      - 荷兰_20
+      - 防失效githubSubCrawler_21
+      - 欧洲_22
+      - 欧洲_23
+      - 荷兰_24
+      - Relay_美国-俄罗斯_2226
+      - _美国_YouTube:VV科技_7
+      - EXTM3U-香港HKT-nf-iplc_27
+      - 美国0703-US_63
+      - 荷兰_29
+      - 美国_30
+      - 美国-NewYork-12防失效githubSubCrawler_31
+      - 防失效githubSubCrawler_32
+      - 防失效githubSubCrawler_33
+      - 日本_34
+      - YouTubeat阿阳AYANG7_35
+      - '-美国-104_160_172_173'
+      - 美国_37
+      - 美国_38
+      - 美国_39
+      - 法国_40
+      - '-台湾-61_220_28_198'
+      - 香港_42
+      - CN_43
+      - '-美国-104_22_3_3'
+      - 日本_45
+      - 倾城极速_tk-美国-Openit_ml_46
+      - 香港_47
+      - 香港_48
+      - 美国_49
+      - 倾城极速_tk-美国-Openit_ml_50
+      - Relay_美国-俄罗斯_23
+      - 防失效githubSubCrawler_52
+      - Relay_俄罗斯-_1484
+      - CN_54
+      - YouTube:VV科技_56
+      - 日本_56
+      - Relay_
+      - 法国26_58
+      - Relay_美国-_2238
+      - 欧洲_60
+      - 美国_61
+      - Relay_新加坡-_1639
+      - 美国_63
+      - 新加坡_64
+      - 美国_65
+      - 美国_66
+      - 荷兰0703-NL_270
+      - 美国_68
+      - '-美国-142_4_105_253'
+      - 香港_70
+      - 美国-Openit_ml_71
+      - 倾城极速_tk-新加坡-Openit_ml_72
+      - 亚洲_73
+      - YouTubeat阿阳AYANG4_74
+      - Relay_美国-_27
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)_76
+      - 美国_77
+      - 欧洲_78
+      - ❶香港B1[推荐]_79
+      - 美国_80
+      - 欧洲_81
+      - 0703-_82
+      - 美国-NewYork-28防失效githubSubCrawler_83
+      - 美国_2563
+      - 美国_1996
+      - 美国CloudFlare公司CDN节点23_86
+      - 倾城极速_tk-RELAY-Openit_ml_87
+      - '-罗马尼亚-ukdll_52jjyun_top_88'
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇳🇱_NL_荷兰_1
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_香港_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇯🇵_JP_日本_6
-      - 🇭🇰_HK_香港_7
+      - '-美国-inapus_mooncloud_bike_1'
+      - 美国-NewYork-29防失效githubSubCrawler_2
+      - 0703-_3
+      - 美国加利福尼亚州洛杉矶市CoperationColoction数据中心23_4
+      - 0703-ip34_5
+      - 104_16_149_48:443-V2-466410157_6
+      - 美国_7
+      - 韩国_589_589_578
+      - 0703-美国2_9
+      - 美国_10
+      - 日本_11
+      - 亚洲_12
+      - '-美国加利福尼亚州洛杉矶-23_225_210_195'
+      - 欧洲_14
+      - Relay_加拿大-_389
+      - 荷兰0703-NL_3079
+      - 美国_17
+      - 倾城极速_tk-香港-Openit_ml_18
+      - 荷兰_19
+      - 荷兰_20
+      - 防失效githubSubCrawler_21
+      - 欧洲_22
+      - 欧洲_23
+      - 荷兰_24
+      - Relay_美国-俄罗斯_2226
+      - _美国_YouTube:VV科技_7
+      - EXTM3U-香港HKT-nf-iplc_27
+      - 美国0703-US_63
+      - 荷兰_29
+      - 美国_30
+      - 美国-NewYork-12防失效githubSubCrawler_31
+      - 防失效githubSubCrawler_32
+      - 防失效githubSubCrawler_33
+      - 日本_34
+      - YouTubeat阿阳AYANG7_35
+      - '-美国-104_160_172_173'
+      - 美国_37
+      - 美国_38
+      - 美国_39
+      - 法国_40
+      - '-台湾-61_220_28_198'
+      - 香港_42
+      - CN_43
+      - '-美国-104_22_3_3'
+      - 日本_45
+      - 倾城极速_tk-美国-Openit_ml_46
+      - 香港_47
+      - 香港_48
+      - 美国_49
+      - 倾城极速_tk-美国-Openit_ml_50
+      - Relay_美国-俄罗斯_23
+      - 防失效githubSubCrawler_52
+      - Relay_俄罗斯-_1484
+      - CN_54
+      - YouTube:VV科技_56
+      - 日本_56
+      - Relay_
+      - 法国26_58
+      - Relay_美国-_2238
+      - 欧洲_60
+      - 美国_61
+      - Relay_新加坡-_1639
+      - 美国_63
+      - 新加坡_64
+      - 美国_65
+      - 美国_66
+      - 荷兰0703-NL_270
+      - 美国_68
+      - '-美国-142_4_105_253'
+      - 香港_70
+      - 美国-Openit_ml_71
+      - 倾城极速_tk-新加坡-Openit_ml_72
+      - 亚洲_73
+      - YouTubeat阿阳AYANG4_74
+      - Relay_美国-_27
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)_76
+      - 美国_77
+      - 欧洲_78
+      - ❶香港B1[推荐]_79
+      - 美国_80
+      - 欧洲_81
+      - 0703-_82
+      - 美国-NewYork-28防失效githubSubCrawler_83
+      - 美国_2563
+      - 美国_1996
+      - 美国CloudFlare公司CDN节点23_86
+      - 倾城极速_tk-RELAY-Openit_ml_87
+      - '-罗马尼亚-ukdll_52jjyun_top_88'
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇳🇱_NL_荷兰_1
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_香港_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇯🇵_JP_日本_6
-      - 🇭🇰_HK_香港_7
+      - '-美国-inapus_mooncloud_bike_1'
+      - 美国-NewYork-29防失效githubSubCrawler_2
+      - 0703-_3
+      - 美国加利福尼亚州洛杉矶市CoperationColoction数据中心23_4
+      - 0703-ip34_5
+      - 104_16_149_48:443-V2-466410157_6
+      - 美国_7
+      - 韩国_589_589_578
+      - 0703-美国2_9
+      - 美国_10
+      - 日本_11
+      - 亚洲_12
+      - '-美国加利福尼亚州洛杉矶-23_225_210_195'
+      - 欧洲_14
+      - Relay_加拿大-_389
+      - 荷兰0703-NL_3079
+      - 美国_17
+      - 倾城极速_tk-香港-Openit_ml_18
+      - 荷兰_19
+      - 荷兰_20
+      - 防失效githubSubCrawler_21
+      - 欧洲_22
+      - 欧洲_23
+      - 荷兰_24
+      - Relay_美国-俄罗斯_2226
+      - _美国_YouTube:VV科技_7
+      - EXTM3U-香港HKT-nf-iplc_27
+      - 美国0703-US_63
+      - 荷兰_29
+      - 美国_30
+      - 美国-NewYork-12防失效githubSubCrawler_31
+      - 防失效githubSubCrawler_32
+      - 防失效githubSubCrawler_33
+      - 日本_34
+      - YouTubeat阿阳AYANG7_35
+      - '-美国-104_160_172_173'
+      - 美国_37
+      - 美国_38
+      - 美国_39
+      - 法国_40
+      - '-台湾-61_220_28_198'
+      - 香港_42
+      - CN_43
+      - '-美国-104_22_3_3'
+      - 日本_45
+      - 倾城极速_tk-美国-Openit_ml_46
+      - 香港_47
+      - 香港_48
+      - 美国_49
+      - 倾城极速_tk-美国-Openit_ml_50
+      - Relay_美国-俄罗斯_23
+      - 防失效githubSubCrawler_52
+      - Relay_俄罗斯-_1484
+      - CN_54
+      - YouTube:VV科技_56
+      - 日本_56
+      - Relay_
+      - 法国26_58
+      - Relay_美国-_2238
+      - 欧洲_60
+      - 美国_61
+      - Relay_新加坡-_1639
+      - 美国_63
+      - 新加坡_64
+      - 美国_65
+      - 美国_66
+      - 荷兰0703-NL_270
+      - 美国_68
+      - '-美国-142_4_105_253'
+      - 香港_70
+      - 美国-Openit_ml_71
+      - 倾城极速_tk-新加坡-Openit_ml_72
+      - 亚洲_73
+      - YouTubeat阿阳AYANG4_74
+      - Relay_美国-_27
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)_76
+      - 美国_77
+      - 欧洲_78
+      - ❶香港B1[推荐]_79
+      - 美国_80
+      - 欧洲_81
+      - 0703-_82
+      - 美国-NewYork-28防失效githubSubCrawler_83
+      - 美国_2563
+      - 美国_1996
+      - 美国CloudFlare公司CDN节点23_86
+      - 倾城极速_tk-RELAY-Openit_ml_87
+      - '-罗马尼亚-ukdll_52jjyun_top_88'
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -109,13 +676,94 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇳🇱_NL_荷兰_1
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_香港_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇯🇵_JP_日本_6
-      - 🇭🇰_HK_香港_7
+      - '-美国-inapus_mooncloud_bike_1'
+      - 美国-NewYork-29防失效githubSubCrawler_2
+      - 0703-_3
+      - 美国加利福尼亚州洛杉矶市CoperationColoction数据中心23_4
+      - 0703-ip34_5
+      - 104_16_149_48:443-V2-466410157_6
+      - 美国_7
+      - 韩国_589_589_578
+      - 0703-美国2_9
+      - 美国_10
+      - 日本_11
+      - 亚洲_12
+      - '-美国加利福尼亚州洛杉矶-23_225_210_195'
+      - 欧洲_14
+      - Relay_加拿大-_389
+      - 荷兰0703-NL_3079
+      - 美国_17
+      - 倾城极速_tk-香港-Openit_ml_18
+      - 荷兰_19
+      - 荷兰_20
+      - 防失效githubSubCrawler_21
+      - 欧洲_22
+      - 欧洲_23
+      - 荷兰_24
+      - Relay_美国-俄罗斯_2226
+      - _美国_YouTube:VV科技_7
+      - EXTM3U-香港HKT-nf-iplc_27
+      - 美国0703-US_63
+      - 荷兰_29
+      - 美国_30
+      - 美国-NewYork-12防失效githubSubCrawler_31
+      - 防失效githubSubCrawler_32
+      - 防失效githubSubCrawler_33
+      - 日本_34
+      - YouTubeat阿阳AYANG7_35
+      - '-美国-104_160_172_173'
+      - 美国_37
+      - 美国_38
+      - 美国_39
+      - 法国_40
+      - '-台湾-61_220_28_198'
+      - 香港_42
+      - CN_43
+      - '-美国-104_22_3_3'
+      - 日本_45
+      - 倾城极速_tk-美国-Openit_ml_46
+      - 香港_47
+      - 香港_48
+      - 美国_49
+      - 倾城极速_tk-美国-Openit_ml_50
+      - Relay_美国-俄罗斯_23
+      - 防失效githubSubCrawler_52
+      - Relay_俄罗斯-_1484
+      - CN_54
+      - YouTube:VV科技_56
+      - 日本_56
+      - Relay_
+      - 法国26_58
+      - Relay_美国-_2238
+      - 欧洲_60
+      - 美国_61
+      - Relay_新加坡-_1639
+      - 美国_63
+      - 新加坡_64
+      - 美国_65
+      - 美国_66
+      - 荷兰0703-NL_270
+      - 美国_68
+      - '-美国-142_4_105_253'
+      - 香港_70
+      - 美国-Openit_ml_71
+      - 倾城极速_tk-新加坡-Openit_ml_72
+      - 亚洲_73
+      - YouTubeat阿阳AYANG4_74
+      - Relay_美国-_27
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)_76
+      - 美国_77
+      - 欧洲_78
+      - ❶香港B1[推荐]_79
+      - 美国_80
+      - 欧洲_81
+      - 0703-_82
+      - 美国-NewYork-28防失效githubSubCrawler_83
+      - 美国_2563
+      - 美国_1996
+      - 美国CloudFlare公司CDN节点23_86
+      - 倾城极速_tk-RELAY-Openit_ml_87
+      - '-罗马尼亚-ukdll_52jjyun_top_88'
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
