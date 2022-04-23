@@ -4,89 +4,2308 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
-proxies:
-  - {"name":"🇯🇵_JP_1","server":"jp.567568.ml","port":443,"type":"trojan","country":"🇯🇵_JP_1","skip-cert-verify":true,"udp":true,"password":"1293e022-6347-4d7e-8425-e65576b6ae0e"}
-  - {"name":"🇬🇧_GB_2","server":"jgwld1.gaox.ml","port":443,"type":"trojan","country":"🇬🇧_GB_2","skip-cert-verify":true,"udp":true,"password":"02e653c9-7c93-46a9-999d-11834bd0c577"}
-  - {"name":"🇷🇺_RU_3","server":"213.183.53.177","port":9064,"type":"ssr","country":"🇷🇺_RU_3","password":"cp8pRSUAyLhTfVWH","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
-  - {"name":"🇷🇺_RU_4","server":"213.183.53.177","port":9019,"type":"ssr","country":"🇷🇺_RU_4","password":"GA9KzeEgvfxNrgmM","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
-  - {"name":"🇷🇺_RU_5","server":"213.183.53.177","port":9073,"type":"ssr","country":"🇷🇺_RU_5","password":"daFYagqDdBdA6VTX","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
-  - {"name":"🇨🇳_CN_6","server":"gz2.52168.xyz","port":2101,"type":"ssr","country":"🇨🇳_CN_6","password":"epChJS35fV","cipher":"aes-256-cfb","protocol":"auth_aes128_sha1","obfs":"tls1.2_ticket_auth","protocol-param":"149:gt9img0d2jp","obfs-param":"ee821149.baidu.com"}
-  - {"name":"🇷🇺_RU_7","server":"213.183.53.177","port":9056,"type":"ssr","country":"🇷🇺_RU_7","password":"rNBfNuuANFCAk7KB","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+proxies: 
+  - {name: '🇦🇪_AE_1', server: '217.138.193.10', port: 805, type: ss, country: '🇦🇪_AE_1', cipher: 'chacha20-ietf-poly1305', password: 'G!yBwPWH3Vao'}
+  - {name: '🇦🇪_AE_2', server: '217.138.193.10', port: 808, type: ss, country: '🇦🇪_AE_2', cipher: 'chacha20-ietf-poly1305', password: 'G!yBwPWH3Vao'}
+  - {name: '🇦🇺_AU_3', server: '185.167.116.253', port: 9019, type: ss, country: '🇦🇺_AU_3', cipher: 'aes-256-cfb', password: 'GA9KzeEgvfxNrgmM'}
+  - {name: '🇦🇺_AU_4', server: '185.167.116.38', port: 9056, type: ss, country: '🇦🇺_AU_4', cipher: 'aes-256-cfb', password: 'rNBfNuuANFCAk7KB'}
+  - {name: '🇦🇺_AU_5', server: '172.105.171.80', port: 5003, type: ss, country: '🇦🇺_AU_5', cipher: 'aes-256-gcm', password: 'g5MeD6Ft3CWlJId'}
+  - {name: '🇦🇺_AU_6', server: '185.167.116.252', port: 9080, type: ss, country: '🇦🇺_AU_6', cipher: 'aes-256-cfb', password: 'VP8ZPxQpJtZRCjfZ'}
+  - {name: '🇨🇦_CA_7', server: '198.57.27.172', port: 5601, type: ss, country: '🇨🇦_CA_7', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: '🇨🇦_CA_8', server: '198.57.27.172', port: 2376, type: ss, country: '🇨🇦_CA_8', cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
+  - {name: '🇨🇦_CA_9', server: '198.57.27.243', port: 2375, type: ss, country: '🇨🇦_CA_9', cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
+  - {name: '🇨🇦_CA_10', server: '51.161.118.38', port: 800, type: ss, country: '🇨🇦_CA_10', cipher: 'chacha20-ietf-poly1305', password: 'G!yBwPWH3Vao'}
+  - {name: '🇨🇦_CA_11', server: '198.57.27.172', port: 2375, type: ss, country: '🇨🇦_CA_11', cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
+  - {name: '🇨🇦_CA_12', server: '198.57.27.233', port: 8091, type: ss, country: '🇨🇦_CA_12', cipher: 'aes-256-gcm', password: 'PCnnH6SQSnfoS27'}
+  - {name: '🇨🇦_CA_13', server: '198.57.27.184', port: 5004, type: ss, country: '🇨🇦_CA_13', cipher: 'aes-256-gcm', password: 'g5MeD6Ft3CWlJId'}
+  - {name: '🇨🇦_CA_14', server: '198.57.27.184', port: 7306, type: ss, country: '🇨🇦_CA_14', cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
+  - {name: '🇨🇦_CA_15', server: '198.57.27.218', port: 6379, type: ss, country: '🇨🇦_CA_15', cipher: 'aes-256-gcm', password: 'zDNVedRFPQexG9v'}
+  - {name: '🇨🇦_CA_16', server: '198.57.27.172', port: 8881, type: ss, country: '🇨🇦_CA_16', cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
+  - {name: '🇨🇦_CA_17', server: '198.57.27.218', port: 8119, type: ss, country: '🇨🇦_CA_17', cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
+  - {name: '🇨🇦_CA_18', server: '198.57.27.218', port: 7306, type: ss, country: '🇨🇦_CA_18', cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
+  - {name: '🇨🇦_CA_19', server: '198.57.27.172', port: 3306, type: ss, country: '🇨🇦_CA_19', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: '🇨🇦_CA_20', server: '198.57.27.172', port: 6379, type: ss, country: '🇨🇦_CA_20', cipher: 'aes-256-gcm', password: 'zDNVedRFPQexG9v'}
+  - {name: '🇨🇦_CA_21', server: '198.57.27.172', port: 6679, type: ss, country: '🇨🇦_CA_21', cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
+  - {name: '🇨🇦_CA_22', server: '198.57.27.152', port: 3306, type: ss, country: '🇨🇦_CA_22', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: '🇨🇦_CA_23', server: '198.57.27.172', port: 6697, type: ss, country: '🇨🇦_CA_23', cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
+  - {name: '🇨🇦_CA_24', server: '198.57.27.218', port: 8882, type: ss, country: '🇨🇦_CA_24', cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
+  - {name: '🇨🇦_CA_25', server: '198.57.27.172', port: 8888, type: ss, country: '🇨🇦_CA_25', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: '🇨🇦_CA_26', server: '198.57.27.218', port: 8008, type: ss, country: '🇨🇦_CA_26', cipher: 'aes-256-gcm', password: 'XKFKl2rULjIp74'}
+  - {name: '🇨🇦_CA_27', server: '198.57.27.172', port: 8119, type: ss, country: '🇨🇦_CA_27', cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
+  - {name: '🇨🇦_CA_28', server: '198.57.27.152', port: 5004, type: ss, country: '🇨🇦_CA_28', cipher: 'aes-256-gcm', password: 'g5MeD6Ft3CWlJId'}
+  - {name: '🇨🇦_CA_29', server: '198.57.27.172', port: 5004, type: ss, country: '🇨🇦_CA_29', cipher: 'aes-256-gcm', password: 'g5MeD6Ft3CWlJId'}
+  - {name: '🇨🇦_CA_30', server: '198.57.27.241', port: 7307, type: ss, country: '🇨🇦_CA_30', cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
+  - {name: '🇨🇦_CA_31', server: '198.57.27.152', port: 3389, type: ss, country: '🇨🇦_CA_31', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: '🇨🇦_CA_32', server: '198.57.27.218', port: 8118, type: ss, country: '🇨🇦_CA_32', cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
+  - {name: '🇸🇬_SG_33', server: '139.99.123.156', port: 7002, type: ss, country: '🇸🇬_SG_33', cipher: 'aes-256-gcm', password: 'RexnBgU7EV5ADxG'}
+  - {name: '🇨🇦_CA_34', server: '198.57.27.172', port: 5001, type: ss, country: '🇨🇦_CA_34', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: '🇨🇦_CA_35', server: '198.57.27.172', port: 5600, type: ss, country: '🇨🇦_CA_35', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: '🇨🇦_CA_36', server: '198.57.27.241', port: 5003, type: ss, country: '🇨🇦_CA_36', cipher: 'aes-256-gcm', password: 'g5MeD6Ft3CWlJId'}
+  - {name: '', server: '$*@14.29.124.168', port: 25294, type: ss, country: '', cipher: 'aes-128-cfb', password: 'QazEdcTgb159'}
+  - {name: '', server: '$*@14.29.124.168', port: 25238, type: ss, country: '', cipher: 'aes-128-cfb', password: 'QazEdcTgb159'}
+  - {name: '', server: '$*@14.29.124.168', port: 25210, type: ss, country: '', cipher: 'aes-128-cfb', password: 'QazEdcTgb159'}
+  - {name: '', server: '$*@14.29.124.168', port: 25218, type: ss, country: '', cipher: 'aes-128-cfb', password: 'QazEdcTgb159'}
+  - {name: '🇨🇳_CN_41', server: 'music.desperadoj.com', port: 30003, type: ss, country: '🇨🇳_CN_41', cipher: 'aes-128-gcm', password: 'desperadoj.com_free_proxy_d39m'}
+  - {name: '', server: '$*@14.29.124.168', port: 25270, type: ss, country: '', cipher: 'aes-128-cfb', password: 'QazEdcTgb159'}
+  - {name: '🇨🇳_CN_43', server: '101.132.192.212', port: 30003, type: ss, country: '🇨🇳_CN_43', cipher: 'aes-128-gcm', password: 'desperadoj.com_free_proxy_d39m'}
+  - {name: '', server: '$*@14.29.124.168', port: 25295, type: ss, country: '', cipher: 'aes-128-cfb', password: 'QazEdcTgb159'}
+  - {name: '🇨🇳_CN_45', server: '101.91.121.247', port: 50004, type: ss, country: '🇨🇳_CN_45', cipher: 'aes-256-cfb', password: '4415934295'}
+  - {name: '', server: '$*@14.29.124.168', port: 25252, type: ss, country: '', cipher: 'aes-128-cfb', password: 'QazEdcTgb159'}
+  - {name: '', server: '$*@14.29.124.168', port: 25279, type: ss, country: '', cipher: 'aes-128-cfb', password: 'QazEdcTgb159'}
+  - {name: '🇩🇪_DE_48', server: '139.162.130.101', port: 8888, type: ss, country: '🇩🇪_DE_48', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: '🇩🇪_DE_49', server: '5.183.179.137', port: 9010, type: ss, country: '🇩🇪_DE_49', cipher: 'aes-256-cfb', password: 'f63gg8EruDnUrmz4'}
+  - {name: '🇩🇪_DE_50', server: '5.183.179.166', port: 9059, type: ss, country: '🇩🇪_DE_50', cipher: 'aes-256-cfb', password: '9XwYyZsK8SNzQDtY'}
+  - {name: '🇩🇪_DE_51', server: '5.183.179.145', port: 9015, type: ss, country: '🇩🇪_DE_51', cipher: 'aes-256-cfb', password: 'ZpNDDKRu9MagNvaf'}
+  - {name: '🇩🇪_DE_52', server: '5.183.179.145', port: 9003, type: ss, country: '🇩🇪_DE_52', cipher: 'aes-256-cfb', password: 'JdmRK9gMEqFgs8nP'}
+  - {name: '🇩🇪_DE_53', server: '5.183.179.140', port: 9042, type: ss, country: '🇩🇪_DE_53', cipher: 'aes-256-cfb', password: 'S7KwUu7yBy58S3Ga'}
+  - {name: '🇩🇪_DE_54', server: '5.183.179.141', port: 9088, type: ss, country: '🇩🇪_DE_54', cipher: 'aes-256-cfb', password: 'f8npKgNzdkss2ytn'}
+  - {name: '🇩🇪_DE_55', server: '5.183.179.146', port: 9097, type: ss, country: '🇩🇪_DE_55', cipher: 'aes-256-cfb', password: 'Sn5B7jTqr76aCJT8'}
+  - {name: '🇩🇪_DE_56', server: '5.183.179.148', port: 9007, type: ss, country: '🇩🇪_DE_56', cipher: 'aes-256-cfb', password: 'kSPmvwdFzGMMW5pY'}
+  - {name: '🇩🇪_DE_57', server: '5.183.179.148', port: 9064, type: ss, country: '🇩🇪_DE_57', cipher: 'aes-256-cfb', password: 'cp8pRSUAyLhTfVWH'}
+  - {name: '🇫🇷_FR_58', server: '149.202.82.172', port: 7002, type: ss, country: '🇫🇷_FR_58', cipher: 'aes-256-gcm', password: 'RexnBgU7EV5ADxG'}
+  - {name: '🇬🇧_GB_59', server: '152.89.210.105', port: 9093, type: ss, country: '🇬🇧_GB_59', cipher: 'aes-256-cfb', password: 'wfLC2y7rzZyCmuyt'}
+  - {name: '🇬🇧_GB_60', server: '152.89.210.105', port: 9046, type: ss, country: '🇬🇧_GB_60', cipher: 'aes-256-cfb', password: 'NvS8N4Vf8qAGPSCL'}
+  - {name: '🇬🇧_GB_61', server: '152.89.210.105', port: 9060, type: ss, country: '🇬🇧_GB_61', cipher: 'aes-256-cfb', password: 'ueLXVkvh4hckhErQ'}
+  - {name: '🇬🇧_GB_62', server: '152.89.210.84', port: 9038, type: ss, country: '🇬🇧_GB_62', cipher: 'aes-256-cfb', password: 'gYCYXfkUQEs2TaJQ'}
+  - {name: '🇬🇧_GB_63', server: '152.89.210.84', port: 9059, type: ss, country: '🇬🇧_GB_63', cipher: 'aes-256-cfb', password: '9XwYyZsK8SNzQDtY'}
+  - {name: '🇬🇧_GB_64', server: '152.89.210.105', port: 9038, type: ss, country: '🇬🇧_GB_64', cipher: 'aes-256-cfb', password: 'gYCYXfkUQEs2TaJQ'}
+  - {name: '🇬🇧_GB_65', server: '152.89.210.105', port: 9073, type: ss, country: '🇬🇧_GB_65', cipher: 'aes-256-cfb', password: 'daFYagqDdBdA6VTX'}
+  - {name: '🇬🇧_GB_66', server: '152.89.210.105', port: 9037, type: ss, country: '🇬🇧_GB_66', cipher: 'aes-256-cfb', password: 'TN2YqghxeFDKZfLU'}
+  - {name: '🇬🇧_GB_67', server: '152.89.210.105', port: 9056, type: ss, country: '🇬🇧_GB_67', cipher: 'aes-256-cfb', password: 'rNBfNuuANFCAk7KB'}
+  - {name: '🇬🇧_GB_68', server: '185.167.117.171', port: 9003, type: ss, country: '🇬🇧_GB_68', cipher: 'aes-256-cfb', password: 'JdmRK9gMEqFgs8nP'}
+  - {name: '🇬🇧_GB_69', server: '152.89.210.105', port: 9014, type: ss, country: '🇬🇧_GB_69', cipher: 'aes-256-cfb', password: 'KnJGad3FqTvjqbaX'}
+  - {name: '🇬🇧_GB_70', server: '152.89.210.105', port: 9094, type: ss, country: '🇬🇧_GB_70', cipher: 'aes-256-cfb', password: 'rpgbNnU9rDDU4aWZ'}
+  - {name: '🇬🇧_GB_71', server: '152.89.210.105', port: 9006, type: ss, country: '🇬🇧_GB_71', cipher: 'aes-256-cfb', password: 'FAdUvMJUq5vDgKEq'}
+  - {name: '🇬🇧_GB_72', server: '152.89.210.105', port: 9059, type: ss, country: '🇬🇧_GB_72', cipher: 'aes-256-cfb', password: '9XwYyZsK8SNzQDtY'}
+  - {name: '🇬🇧_GB_73', server: '152.89.210.105', port: 9032, type: ss, country: '🇬🇧_GB_73', cipher: 'aes-256-cfb', password: 'UWZQeLRWnkqgkseq'}
+  - {name: '🇬🇧_GB_74', server: '152.89.210.105', port: 9042, type: ss, country: '🇬🇧_GB_74', cipher: 'aes-256-cfb', password: 'S7KwUu7yBy58S3Ga'}
+  - {name: '🇬🇧_GB_75', server: '152.89.210.105', port: 9088, type: ss, country: '🇬🇧_GB_75', cipher: 'aes-256-cfb', password: 'f8npKgNzdkss2ytn'}
+  - {name: '🇬🇧_GB_76', server: '152.89.210.84', port: 9015, type: ss, country: '🇬🇧_GB_76', cipher: 'aes-256-cfb', password: 'ZpNDDKRu9MagNvaf'}
+  - {name: '🇬🇧_GB_77', server: '152.89.210.105', port: 9098, type: ss, country: '🇬🇧_GB_77', cipher: 'aes-256-cfb', password: 'aLpQtfEZe445QyHk'}
+  - {name: '🇬🇧_GB_78', server: '152.89.210.84', port: 9037, type: ss, country: '🇬🇧_GB_78', cipher: 'aes-256-cfb', password: 'TN2YqghxeFDKZfLU'}
+  - {name: '🇬🇧_GB_79', server: '152.89.210.105', port: 9084, type: ss, country: '🇬🇧_GB_79', cipher: 'aes-256-cfb', password: 'c3NtHJ5ujV2tGDfj'}
+  - {name: '🇬🇧_GB_80', server: '152.89.210.105', port: 9050, type: ss, country: '🇬🇧_GB_80', cipher: 'aes-256-cfb', password: 'FG5ddLsMPbV5CutE'}
+  - {name: '🇯🇵_JP_81', server: 'SS-NODE-1-B.GFWAIRPORT.NET', port: 50001, type: ss, country: '🇯🇵_JP_81', cipher: 'chacha20-ietf-poly1305', password: '9e7256ac-f3bb-4f60-830f-48e75191c207'}
+  - {name: '🇰🇷_KR_82', server: '141.164.56.250', port: 2375, type: ss, country: '🇰🇷_KR_82', cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
+  - {name: '🇰🇷_KR_83', server: '141.164.52.21', port: 7001, type: ss, country: '🇰🇷_KR_83', cipher: 'aes-256-gcm', password: 'RexnBgU7EV5ADxG'}
+  - {name: '🇷🇺_RU_84', server: '213.183.53.200', port: 9064, type: ss, country: '🇷🇺_RU_84', cipher: 'aes-256-cfb', password: 'cp8pRSUAyLhTfVWH'}
+  - {name: '🇷🇺_RU_85', server: '213.183.53.200', port: 9060, type: ss, country: '🇷🇺_RU_85', cipher: 'aes-256-cfb', password: 'ueLXVkvh4hckhErQ'}
+  - {name: '🇷🇺_RU_86', server: '213.183.53.200', port: 9097, type: ss, country: '🇷🇺_RU_86', cipher: 'aes-256-cfb', password: 'Sn5B7jTqr76aCJT8'}
+  - {name: '🇷🇺_RU_87', server: '213.183.53.200', port: 9020, type: ss, country: '🇷🇺_RU_87', cipher: 'aes-256-cfb', password: 'BNmAXXxAHYpTRdzu'}
+  - {name: '🇷🇺_RU_88', server: '213.183.53.177', port: 9031, type: ss, country: '🇷🇺_RU_88', cipher: 'aes-256-cfb', password: 'BwcAUZk8hUFAkDGN'}
+  - {name: '🇷🇺_RU_89', server: '213.183.53.200', port: 9084, type: ss, country: '🇷🇺_RU_89', cipher: 'aes-256-cfb', password: 'c3NtHJ5ujV2tGDfj'}
+  - {name: '🇷🇺_RU_90', server: '213.183.53.177', port: 9007, type: ss, country: '🇷🇺_RU_90', cipher: 'aes-256-cfb', password: 'kSPmvwdFzGMMW5pY'}
+  - {name: '🇷🇺_RU_91', server: '213.183.53.177', port: 9020, type: ss, country: '🇷🇺_RU_91', cipher: 'aes-256-cfb', password: 'BNmAXXxAHYpTRdzu'}
+  - {name: '🇷🇺_RU_92', server: '213.183.53.202', port: 9053, type: ss, country: '🇷🇺_RU_92', cipher: 'aes-256-cfb', password: 'SBM7R883jBmnqe6C'}
+  - {name: '🇷🇺_RU_93', server: '213.183.53.177', port: 9014, type: ss, country: '🇷🇺_RU_93', cipher: 'aes-256-cfb', password: 'KnJGad3FqTvjqbaX'}
+  - {name: '🇷🇺_RU_94', server: '213.183.53.177', port: 9088, type: ss, country: '🇷🇺_RU_94', cipher: 'aes-256-cfb', password: 'f8npKgNzdkss2ytn'}
+  - {name: '🇧🇬_BG_95', server: '213.183.63.219', port: 9008, type: ss, country: '🇧🇬_BG_95', cipher: 'aes-256-cfb', password: 'y9VURyNzJWNRYEGQ'}
+  - {name: '🇷🇺_RU_96', server: '213.183.53.200', port: 9093, type: ss, country: '🇷🇺_RU_96', cipher: 'aes-256-cfb', password: 'wfLC2y7rzZyCmuyt'}
+  - {name: '🇷🇺_RU_97', server: '213.183.53.200', port: 9003, type: ss, country: '🇷🇺_RU_97', cipher: 'aes-256-cfb', password: 'JdmRK9gMEqFgs8nP'}
+  - {name: '🇷🇺_RU_98', server: '213.183.53.200', port: 9059, type: ss, country: '🇷🇺_RU_98', cipher: 'aes-256-cfb', password: '9XwYyZsK8SNzQDtY'}
+  - {name: '🇷🇺_RU_99', server: '213.183.53.177', port: 9010, type: ss, country: '🇷🇺_RU_99', cipher: 'aes-256-cfb', password: 'f63gg8EruDnUrmz4'}
+  - {name: '🇷🇺_RU_100', server: '213.183.53.177', port: 9037, type: ss, country: '🇷🇺_RU_100', cipher: 'aes-256-cfb', password: 'TN2YqghxeFDKZfLU'}
+  - {name: '🇧🇬_BG_101', server: '213.183.63.218', port: 9064, type: ss, country: '🇧🇬_BG_101', cipher: 'aes-256-cfb', password: 'cp8pRSUAyLhTfVWH'}
+  - {name: '🇷🇺_RU_102', server: '213.183.53.200', port: 9005, type: ss, country: '🇷🇺_RU_102', cipher: 'aes-256-cfb', password: 'ZET59LF6DvCC8KVt'}
+  - {name: '🇷🇺_RU_103', server: '213.183.53.177', port: 9008, type: ss, country: '🇷🇺_RU_103', cipher: 'aes-256-cfb', password: 'y9VURyNzJWNRYEGQ'}
+  - {name: '🇷🇺_RU_104', server: '213.183.53.177', port: 9045, type: ss, country: '🇷🇺_RU_104', cipher: 'aes-256-cfb', password: 'Lp27rqyJq72bZsqX'}
+  - {name: '🇷🇺_RU_105', server: '213.183.53.177', port: 9084, type: ss, country: '🇷🇺_RU_105', cipher: 'aes-256-cfb', password: 'c3NtHJ5ujV2tGDfj'}
+  - {name: '🇷🇺_RU_106', server: '213.183.53.200', port: 9040, type: ss, country: '🇷🇺_RU_106', cipher: 'aes-256-cfb', password: 'p9z5BVADH2YFs3MN'}
+  - {name: '🇷🇺_RU_107', server: '213.183.53.177', port: 9046, type: ss, country: '🇷🇺_RU_107', cipher: 'aes-256-cfb', password: 'NvS8N4Vf8qAGPSCL'}
+  - {name: '🇷🇺_RU_108', server: '213.183.53.177', port: 9043, type: ss, country: '🇷🇺_RU_108', cipher: 'aes-256-cfb', password: 'HSZuyJQcWe8dxNdF'}
+  - {name: '🇷🇺_RU_109', server: '213.183.53.200', port: 9038, type: ss, country: '🇷🇺_RU_109', cipher: 'aes-256-cfb', password: 'gYCYXfkUQEs2TaJQ'}
+  - {name: '🇷🇺_RU_110', server: '213.183.53.200', port: 9007, type: ss, country: '🇷🇺_RU_110', cipher: 'aes-256-cfb', password: 'kSPmvwdFzGMMW5pY'}
+  - {name: '🇧🇬_BG_111', server: '213.183.63.218', port: 9084, type: ss, country: '🇧🇬_BG_111', cipher: 'aes-256-cfb', password: 'c3NtHJ5ujV2tGDfj'}
+  - {name: '🇷🇺_RU_112', server: '213.183.53.200', port: 9001, type: ss, country: '🇷🇺_RU_112', cipher: 'aes-256-cfb', password: 'UkXRsXvR6buDMG2Y'}
+  - {name: '🇷🇺_RU_113', server: '213.183.53.200', port: 9010, type: ss, country: '🇷🇺_RU_113', cipher: 'aes-256-cfb', password: 'f63gg8EruDnUrmz4'}
+  - {name: '🇷🇺_RU_114', server: '213.183.53.200', port: 9018, type: ss, country: '🇷🇺_RU_114', cipher: 'aes-256-cfb', password: 'fG2artUmHfNT2cX7'}
+  - {name: '🇷🇺_RU_115', server: '213.183.53.177', port: 9001, type: ss, country: '🇷🇺_RU_115', cipher: 'aes-256-cfb', password: 'UkXRsXvR6buDMG2Y'}
+  - {name: '🇧🇬_BG_116', server: '213.183.63.217', port: 9015, type: ss, country: '🇧🇬_BG_116', cipher: 'aes-256-cfb', password: 'ZpNDDKRu9MagNvaf'}
+  - {name: '🇷🇺_RU_117', server: '213.183.53.200', port: 9014, type: ss, country: '🇷🇺_RU_117', cipher: 'aes-256-cfb', password: 'KnJGad3FqTvjqbaX'}
+  - {name: '🇷🇺_RU_118', server: '213.183.53.177', port: 9070, type: ss, country: '🇷🇺_RU_118', cipher: 'aes-256-cfb', password: 'bf7v334KKDV3YDhH'}
+  - {name: '🇷🇺_RU_119', server: '213.183.53.200', port: 9053, type: ss, country: '🇷🇺_RU_119', cipher: 'aes-256-cfb', password: 'SBM7R883jBmnqe6C'}
+  - {name: '🇷🇺_RU_120', server: '213.183.53.177', port: 9073, type: ss, country: '🇷🇺_RU_120', cipher: 'aes-256-cfb', password: 'daFYagqDdBdA6VTX'}
+  - {name: '🇷🇺_RU_121', server: '213.183.53.177', port: 9094, type: ss, country: '🇷🇺_RU_121', cipher: 'aes-256-cfb', password: 'rpgbNnU9rDDU4aWZ'}
+  - {name: '🇷🇺_RU_122', server: '213.183.53.177', port: 9003, type: ss, country: '🇷🇺_RU_122', cipher: 'aes-256-cfb', password: 'JdmRK9gMEqFgs8nP'}
+  - {name: '🇷🇺_RU_123', server: '213.183.53.200', port: 9046, type: ss, country: '🇷🇺_RU_123', cipher: 'aes-256-cfb', password: 'NvS8N4Vf8qAGPSCL'}
+  - {name: '🇳🇱_NL_124', server: '213.183.51.171', port: 9097, type: ss, country: '🇳🇱_NL_124', cipher: 'aes-256-cfb', password: 'Sn5B7jTqr76aCJT8'}
+  - {name: '🇳🇱_NL_125', server: '213.183.51.171', port: 9094, type: ss, country: '🇳🇱_NL_125', cipher: 'aes-256-cfb', password: 'rpgbNnU9rDDU4aWZ'}
+  - {name: '🇳🇱_NL_126', server: '213.183.51.171', port: 9079, type: ss, country: '🇳🇱_NL_126', cipher: 'aes-256-cfb', password: 'TPqX8edgbAURcAMb'}
+  - {name: '🇳🇱_NL_127', server: '213.183.51.171', port: 9084, type: ss, country: '🇳🇱_NL_127', cipher: 'aes-256-cfb', password: 'c3NtHJ5ujV2tGDfj'}
+  - {name: '🇳🇱_NL_128', server: '213.183.51.171', port: 9019, type: ss, country: '🇳🇱_NL_128', cipher: 'aes-256-cfb', password: 'GA9KzeEgvfxNrgmM'}
+  - {name: '🇳🇱_NL_129', server: '213.183.51.171', port: 9026, type: ss, country: '🇳🇱_NL_129', cipher: 'aes-256-cfb', password: 'QWDDvVE9npNurQfA'}
+  - {name: '🇳🇱_NL_130', server: '92.38.184.228', port: 55231, type: ss, country: '🇳🇱_NL_130', cipher: 'chacha20-ietf-poly1305', password: 'zidKl2rcLVBm'}
+  - {name: '🇳🇱_NL_131', server: '213.183.51.172', port: 9033, type: ss, country: '🇳🇱_NL_131', cipher: 'aes-256-cfb', password: 'UTJA57ypk2XKQpnm'}
+  - {name: '🇳🇱_NL_132', server: '213.183.51.171', port: 9014, type: ss, country: '🇳🇱_NL_132', cipher: 'aes-256-cfb', password: 'KnJGad3FqTvjqbaX'}
+  - {name: '🇳🇱_NL_133', server: '213.183.51.171', port: 9070, type: ss, country: '🇳🇱_NL_133', cipher: 'aes-256-cfb', password: 'bf7v334KKDV3YDhH'}
+  - {name: '🇳🇱_NL_134', server: '213.183.51.172', port: 9020, type: ss, country: '🇳🇱_NL_134', cipher: 'aes-256-cfb', password: 'BNmAXXxAHYpTRdzu'}
+  - {name: '🇨🇭_CH_135', server: '185.126.116.117', port: 9088, type: ss, country: '🇨🇭_CH_135', cipher: 'aes-256-cfb', password: 'f8npKgNzdkss2ytn'}
+  - {name: '🇨🇭_CH_136', server: '185.126.116.125', port: 9015, type: ss, country: '🇨🇭_CH_136', cipher: 'aes-256-cfb', password: 'ZpNDDKRu9MagNvaf'}
+  - {name: '🇨🇭_CH_137', server: '185.126.116.117', port: 9032, type: ss, country: '🇨🇭_CH_137', cipher: 'aes-256-cfb', password: 'UWZQeLRWnkqgkseq'}
+  - {name: '🇨🇭_CH_138', server: '185.126.116.117', port: 9003, type: ss, country: '🇨🇭_CH_138', cipher: 'aes-256-cfb', password: 'JdmRK9gMEqFgs8nP'}
+  - {name: '🇵🇱_PL_139', server: '217.30.10.64', port: 9070, type: ss, country: '🇵🇱_PL_139', cipher: 'aes-256-cfb', password: 'bf7v334KKDV3YDhH'}
+  - {name: '🇵🇱_PL_140', server: '217.30.10.66', port: 9059, type: ss, country: '🇵🇱_PL_140', cipher: 'aes-256-cfb', password: '9XwYyZsK8SNzQDtY'}
+  - {name: '🇵🇱_PL_141', server: '217.30.10.64', port: 9001, type: ss, country: '🇵🇱_PL_141', cipher: 'aes-256-cfb', password: 'UkXRsXvR6buDMG2Y'}
+  - {name: '🇵🇱_PL_142', server: '217.30.10.64', port: 9015, type: ss, country: '🇵🇱_PL_142', cipher: 'aes-256-cfb', password: 'ZpNDDKRu9MagNvaf'}
+  - {name: '🇵🇱_PL_143', server: '217.30.10.64', port: 9007, type: ss, country: '🇵🇱_PL_143', cipher: 'aes-256-cfb', password: 'kSPmvwdFzGMMW5pY'}
+  - {name: '🇵🇱_PL_144', server: '217.30.10.64', port: 9037, type: ss, country: '🇵🇱_PL_144', cipher: 'aes-256-cfb', password: 'TN2YqghxeFDKZfLU'}
+  - {name: '🇵🇱_PL_145', server: '217.30.10.68', port: 9064, type: ss, country: '🇵🇱_PL_145', cipher: 'aes-256-cfb', password: 'cp8pRSUAyLhTfVWH'}
+  - {name: '🇵🇱_PL_146', server: '217.30.10.66', port: 9098, type: ss, country: '🇵🇱_PL_146', cipher: 'aes-256-cfb', password: 'aLpQtfEZe445QyHk'}
+  - {name: '🇵🇱_PL_147', server: '217.30.10.64', port: 9026, type: ss, country: '🇵🇱_PL_147', cipher: 'aes-256-cfb', password: 'QWDDvVE9npNurQfA'}
+  - {name: '🇵🇱_PL_148', server: '217.30.10.64', port: 9033, type: ss, country: '🇵🇱_PL_148', cipher: 'aes-256-cfb', password: 'UTJA57ypk2XKQpnm'}
+  - {name: '🇵🇱_PL_149', server: '217.30.10.67', port: 9020, type: ss, country: '🇵🇱_PL_149', cipher: 'aes-256-cfb', password: 'BNmAXXxAHYpTRdzu'}
+  - {name: '🇵🇱_PL_150', server: '217.30.10.66', port: 9057, type: ss, country: '🇵🇱_PL_150', cipher: 'aes-256-cfb', password: 'wjTugX3ZtHMB9c3Z'}
+  - {name: '🇵🇱_PL_151', server: '217.30.10.68', port: 9093, type: ss, country: '🇵🇱_PL_151', cipher: 'aes-256-cfb', password: 'wfLC2y7rzZyCmuyt'}
+  - {name: '🇵🇱_PL_152', server: '217.30.10.64', port: 9046, type: ss, country: '🇵🇱_PL_152', cipher: 'aes-256-cfb', password: 'NvS8N4Vf8qAGPSCL'}
+  - {name: '🇵🇱_PL_153', server: '217.30.10.68', port: 9046, type: ss, country: '🇵🇱_PL_153', cipher: 'aes-256-cfb', password: 'NvS8N4Vf8qAGPSCL'}
+  - {name: '🇵🇱_PL_154', server: '217.30.10.68', port: 9006, type: ss, country: '🇵🇱_PL_154', cipher: 'aes-256-cfb', password: 'FAdUvMJUq5vDgKEq'}
+  - {name: '🇵🇱_PL_155', server: '217.30.10.68', port: 9025, type: ss, country: '🇵🇱_PL_155', cipher: 'aes-256-cfb', password: 'XPtzA9sCug3SPR4c'}
+  - {name: '🇵🇱_PL_156', server: '217.30.10.67', port: 9000, type: ss, country: '🇵🇱_PL_156', cipher: 'aes-256-cfb', password: 'a3GFYt36Sm82Vys9'}
+  - {name: '🇵🇱_PL_157', server: '217.30.10.68', port: 9031, type: ss, country: '🇵🇱_PL_157', cipher: 'aes-256-cfb', password: 'BwcAUZk8hUFAkDGN'}
+  - {name: '🇵🇱_PL_158', server: '217.30.10.67', port: 9097, type: ss, country: '🇵🇱_PL_158', cipher: 'aes-256-cfb', password: 'Sn5B7jTqr76aCJT8'}
+  - {name: '🇵🇱_PL_159', server: '217.30.10.68', port: 9098, type: ss, country: '🇵🇱_PL_159', cipher: 'aes-256-cfb', password: 'aLpQtfEZe445QyHk'}
+  - {name: '🇵🇱_PL_160', server: '217.30.10.68', port: 9097, type: ss, country: '🇵🇱_PL_160', cipher: 'aes-256-cfb', password: 'Sn5B7jTqr76aCJT8'}
+  - {name: '🇵🇱_PL_161', server: '217.30.10.67', port: 9026, type: ss, country: '🇵🇱_PL_161', cipher: 'aes-256-cfb', password: 'QWDDvVE9npNurQfA'}
+  - {name: '🇵🇱_PL_162', server: '217.30.10.68', port: 9001, type: ss, country: '🇵🇱_PL_162', cipher: 'aes-256-cfb', password: 'UkXRsXvR6buDMG2Y'}
+  - {name: '🇵🇱_PL_163', server: '217.30.10.68', port: 9033, type: ss, country: '🇵🇱_PL_163', cipher: 'aes-256-cfb', password: 'UTJA57ypk2XKQpnm'}
+  - {name: '🇵🇱_PL_164', server: '217.30.10.66', port: 9027, type: ss, country: '🇵🇱_PL_164', cipher: 'aes-256-cfb', password: 'EXN3S3eQpjE7EJu8'}
+  - {name: '🇵🇱_PL_165', server: '217.30.10.66', port: 9060, type: ss, country: '🇵🇱_PL_165', cipher: 'aes-256-cfb', password: 'ueLXVkvh4hckhErQ'}
+  - {name: '🇵🇱_PL_166', server: '217.30.10.66', port: 9008, type: ss, country: '🇵🇱_PL_166', cipher: 'aes-256-cfb', password: 'y9VURyNzJWNRYEGQ'}
+  - {name: '🇵🇱_PL_167', server: '217.30.10.64', port: 9042, type: ss, country: '🇵🇱_PL_167', cipher: 'aes-256-cfb', password: 'S7KwUu7yBy58S3Ga'}
+  - {name: '🇵🇱_PL_168', server: '217.30.10.64', port: 9045, type: ss, country: '🇵🇱_PL_168', cipher: 'aes-256-cfb', password: 'Lp27rqyJq72bZsqX'}
+  - {name: '🇵🇱_PL_169', server: '217.30.10.64', port: 9094, type: ss, country: '🇵🇱_PL_169', cipher: 'aes-256-cfb', password: 'rpgbNnU9rDDU4aWZ'}
+  - {name: '🇵🇱_PL_170', server: '217.30.10.64', port: 9040, type: ss, country: '🇵🇱_PL_170', cipher: 'aes-256-cfb', password: 'p9z5BVADH2YFs3MN'}
+  - {name: '🇵🇱_PL_171', server: '217.30.10.66', port: 9093, type: ss, country: '🇵🇱_PL_171', cipher: 'aes-256-cfb', password: 'wfLC2y7rzZyCmuyt'}
+  - {name: '🇵🇱_PL_172', server: '217.30.10.64', port: 9088, type: ss, country: '🇵🇱_PL_172', cipher: 'aes-256-cfb', password: 'f8npKgNzdkss2ytn'}
+  - {name: '🇵🇱_PL_173', server: '217.30.10.67', port: 9015, type: ss, country: '🇵🇱_PL_173', cipher: 'aes-256-cfb', password: 'ZpNDDKRu9MagNvaf'}
+  - {name: '🇵🇱_PL_174', server: '217.30.10.67', port: 9079, type: ss, country: '🇵🇱_PL_174', cipher: 'aes-256-cfb', password: 'TPqX8edgbAURcAMb'}
+  - {name: '🇵🇱_PL_175', server: '217.30.10.66', port: 9079, type: ss, country: '🇵🇱_PL_175', cipher: 'aes-256-cfb', password: 'TPqX8edgbAURcAMb'}
+  - {name: '🇵🇱_PL_176', server: '217.30.10.66', port: 9050, type: ss, country: '🇵🇱_PL_176', cipher: 'aes-256-cfb', password: 'FG5ddLsMPbV5CutE'}
+  - {name: '🇵🇱_PL_177', server: '217.30.10.68', port: 9042, type: ss, country: '🇵🇱_PL_177', cipher: 'aes-256-cfb', password: 'S7KwUu7yBy58S3Ga'}
+  - {name: '🇷🇺_RU_178', server: '92.223.65.31', port: 29092, type: ss, country: '🇷🇺_RU_178', cipher: 'chacha20-ietf-poly1305', password: 'ypoq8dJBPqst'}
+  - {name: '🇵🇱_PL_179', server: '217.30.10.67', port: 9042, type: ss, country: '🇵🇱_PL_179', cipher: 'aes-256-cfb', password: 'S7KwUu7yBy58S3Ga'}
+  - {name: '🇵🇱_PL_180', server: '217.30.10.66', port: 9040, type: ss, country: '🇵🇱_PL_180', cipher: 'aes-256-cfb', password: 'p9z5BVADH2YFs3MN'}
+  - {name: '🇵🇱_PL_181', server: '217.30.10.67', port: 9025, type: ss, country: '🇵🇱_PL_181', cipher: 'aes-256-cfb', password: 'XPtzA9sCug3SPR4c'}
+  - {name: '🇵🇱_PL_182', server: '217.30.10.67', port: 9098, type: ss, country: '🇵🇱_PL_182', cipher: 'aes-256-cfb', password: 'aLpQtfEZe445QyHk'}
+  - {name: '🇺🇸_US_183', server: '45.66.157.193', port: 34567, type: ss, country: '🇺🇸_US_183', cipher: 'aes-256-gcm', password: 'dongtaiwang.com'}
+  - {name: '🇵🇱_PL_184', server: '217.30.10.66', port: 9038, type: ss, country: '🇵🇱_PL_184', cipher: 'aes-256-cfb', password: 'gYCYXfkUQEs2TaJQ'}
+  - {name: '🇵🇱_PL_185', server: '217.30.10.66', port: 9041, type: ss, country: '🇵🇱_PL_185', cipher: 'aes-256-cfb', password: 'U6qnYRhfyDmn8sgn'}
+  - {name: '🇵🇱_PL_186', server: '217.30.10.67', port: 9059, type: ss, country: '🇵🇱_PL_186', cipher: 'aes-256-cfb', password: '9XwYyZsK8SNzQDtY'}
+  - {name: '🇵🇱_PL_187', server: '217.30.10.68', port: 9070, type: ss, country: '🇵🇱_PL_187', cipher: 'aes-256-cfb', password: 'bf7v334KKDV3YDhH'}
+  - {name: '🇵🇱_PL_188', server: '217.30.10.64', port: 9043, type: ss, country: '🇵🇱_PL_188', cipher: 'aes-256-cfb', password: 'HSZuyJQcWe8dxNdF'}
+  - {name: '🇵🇱_PL_189', server: '217.30.10.67', port: 9094, type: ss, country: '🇵🇱_PL_189', cipher: 'aes-256-cfb', password: 'rpgbNnU9rDDU4aWZ'}
+  - {name: '🇸🇬_SG_190', server: 'SS-NODE-3-B.GFWAIRPORT.NET', port: 50001, type: ss, country: '🇸🇬_SG_190', cipher: 'chacha20-ietf-poly1305', password: '9e7256ac-f3bb-4f60-830f-48e75191c207'}
+  - {name: '🇺🇸_US_191', server: '38.68.134.23', port: 8882, type: ss, country: '🇺🇸_US_191', cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
+  - {name: '🇺🇸_US_192', server: '142.202.48.58', port: 7306, type: ss, country: '🇺🇸_US_192', cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
+  - {name: '🇬🇧_GB_193', server: '172.99.190.149', port: 7307, type: ss, country: '🇬🇧_GB_193', cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
+  - {name: '🇺🇸_US_194', server: '38.107.226.146', port: 8091, type: ss, country: '🇺🇸_US_194', cipher: 'aes-256-gcm', password: 'PCnnH6SQSnfoS27'}
+  - {name: '🇺🇸_US_195', server: '142.202.48.17', port: 9102, type: ss, country: '🇺🇸_US_195', cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
+  - {name: '🇺🇸_US_196', server: '38.75.136.49', port: 6697, type: ss, country: '🇺🇸_US_196', cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
+  - {name: '🇬🇧_GB_197', server: '172.99.190.149', port: 7306, type: ss, country: '🇬🇧_GB_197', cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
+  - {name: '🇺🇸_US_198', server: '38.121.43.71', port: 5003, type: ss, country: '🇺🇸_US_198', cipher: 'aes-256-gcm', password: 'g5MeD6Ft3CWlJId'}
+  - {name: '🇺🇸_US_199', server: '97.64.21.214', port: 253, type: ss, country: '🇺🇸_US_199', cipher: 'aes-256-cfb', password: 'bwhskrskr03'}
+  - {name: '🇺🇸_US_200', server: '167.88.62.34', port: 8091, type: ss, country: '🇺🇸_US_200', cipher: 'aes-256-gcm', password: 'PCnnH6SQSnfoS27'}
+  - {name: '🇰🇷_KR_201', server: '158.247.203.168', port: 8881, type: ss, country: '🇰🇷_KR_201', cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
+  - {name: '🇺🇸_US_202', server: '167.88.62.34', port: 2376, type: ss, country: '🇺🇸_US_202', cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
+  - {name: '🇺🇸_US_203', server: '38.114.114.69', port: 8000, type: ss, country: '🇺🇸_US_203', cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
+  - {name: '🇺🇸_US_204', server: '38.114.114.69', port: 6697, type: ss, country: '🇺🇸_US_204', cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
+  - {name: '🇺🇸_US_205', server: '167.88.63.61', port: 8881, type: ss, country: '🇺🇸_US_205', cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
+  - {name: '🇺🇸_US_206', server: '38.121.43.71', port: 3306, type: ss, country: '🇺🇸_US_206', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: '🇰🇷_KR_207', server: '158.247.205.87', port: 5003, type: ss, country: '🇰🇷_KR_207', cipher: 'aes-256-gcm', password: 'g5MeD6Ft3CWlJId'}
+  - {name: '🇺🇸_US_208', server: '38.114.114.49', port: 9101, type: ss, country: '🇺🇸_US_208', cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
+  - {name: '🇺🇸_US_209', server: '167.88.61.175', port: 8119, type: ss, country: '🇺🇸_US_209', cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
+  - {name: '🇺🇸_US_210', server: '167.88.61.50', port: 8090, type: ss, country: '🇺🇸_US_210', cipher: 'aes-256-gcm', password: 'PCnnH6SQSnfoS27'}
+  - {name: '🇺🇸_US_211', server: '38.68.135.123', port: 443, type: ss, country: '🇺🇸_US_211', cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
+  - {name: '🇺🇸_US_212', server: '167.88.62.62', port: 8080, type: ss, country: '🇺🇸_US_212', cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
+  - {name: '🇰🇷_KR_213', server: '158.247.206.19', port: 7307, type: ss, country: '🇰🇷_KR_213', cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
+  - {name: '🇰🇷_KR_214', server: '158.247.199.253', port: 443, type: ss, country: '🇰🇷_KR_214', cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
+  - {name: '🇺🇸_US_215', server: '162.251.61.221', port: 804, type: ss, country: '🇺🇸_US_215', cipher: 'chacha20-ietf-poly1305', password: 'G!yBwPWH3Vao'}
+  - {name: '🇺🇸_US_216', server: '38.75.136.139', port: 8080, type: ss, country: '🇺🇸_US_216', cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
+  - {name: '🇺🇸_US_217', server: '38.75.136.45', port: 8090, type: ss, country: '🇺🇸_US_217', cipher: 'aes-256-gcm', password: 'PCnnH6SQSnfoS27'}
+  - {name: '🇺🇸_US_218', server: '142.202.48.34', port: 7307, type: ss, country: '🇺🇸_US_218', cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
+  - {name: '🇺🇸_US_219', server: '38.75.136.116', port: 8080, type: ss, country: '🇺🇸_US_219', cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
+  - {name: '🇺🇸_US_220', server: '38.107.226.238', port: 2376, type: ss, country: '🇺🇸_US_220', cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
+  - {name: '🇺🇸_US_221', server: '38.107.226.149', port: 8090, type: ss, country: '🇺🇸_US_221', cipher: 'aes-256-gcm', password: 'PCnnH6SQSnfoS27'}
+  - {name: '🇺🇸_US_222', server: '167.88.61.213', port: 8091, type: ss, country: '🇺🇸_US_222', cipher: 'aes-256-gcm', password: 'PCnnH6SQSnfoS27'}
+  - {name: '🇺🇸_US_223', server: '167.88.61.96', port: 5001, type: ss, country: '🇺🇸_US_223', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: '🇺🇸_US_224', server: '167.88.63.61', port: 9101, type: ss, country: '🇺🇸_US_224', cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
+  - {name: '🇬🇧_GB_225', server: '172.99.190.149', port: 5003, type: ss, country: '🇬🇧_GB_225', cipher: 'aes-256-gcm', password: 'g5MeD6Ft3CWlJId'}
+  - {name: '🇺🇸_US_226', server: '167.88.61.50', port: 7307, type: ss, country: '🇺🇸_US_226', cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
+  - {name: '🇺🇸_US_227', server: '38.68.134.23', port: 3306, type: ss, country: '🇺🇸_US_227', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: '🇬🇧_GB_228', server: '172.99.190.149', port: 2375, type: ss, country: '🇬🇧_GB_228', cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
+  - {name: '🇺🇸_US_229', server: '38.68.134.23', port: 443, type: ss, country: '🇺🇸_US_229', cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
+  - {name: '🇬🇧_GB_230', server: '172.99.190.149', port: 8090, type: ss, country: '🇬🇧_GB_230', cipher: 'aes-256-gcm', password: 'PCnnH6SQSnfoS27'}
+  - {name: '🇬🇧_GB_231', server: '172.99.190.188', port: 8882, type: ss, country: '🇬🇧_GB_231', cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
+  - {name: '🇰🇷_KR_232', server: '158.247.209.92', port: 9102, type: ss, country: '🇰🇷_KR_232', cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
+  - {name: '🇬🇧_GB_233', server: '172.99.190.57', port: 8090, type: ss, country: '🇬🇧_GB_233', cipher: 'aes-256-gcm', password: 'PCnnH6SQSnfoS27'}
+  - {name: '🇺🇸_US_234', server: '167.88.61.70', port: 6697, type: ss, country: '🇺🇸_US_234', cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
+  - {name: '🇬🇧_GB_235', server: '172.99.190.149', port: 3389, type: ss, country: '🇬🇧_GB_235', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: '🇺🇸_US_236', server: '38.68.135.19', port: 7306, type: ss, country: '🇺🇸_US_236', cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
+  - {name: '🇺🇸_US_237', server: '38.68.134.69', port: 2375, type: ss, country: '🇺🇸_US_237', cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
+  - {name: '🇺🇸_US_238', server: '38.68.134.190', port: 9101, type: ss, country: '🇺🇸_US_238', cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
+  - {name: '🇺🇸_US_239', server: '167.88.61.70', port: 2376, type: ss, country: '🇺🇸_US_239', cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
+  - {name: '🇺🇸_US_240', server: '167.88.62.34', port: 7307, type: ss, country: '🇺🇸_US_240', cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
+  - {name: '🇺🇸_US_241', server: '167.88.63.64', port: 5500, type: ss, country: '🇺🇸_US_241', cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
+  - {name: '🇺🇸_US_242', server: '167.88.63.21', port: 5601, type: ss, country: '🇺🇸_US_242', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: '🇺🇸_US_243', server: '38.75.137.71', port: 6679, type: ss, country: '🇺🇸_US_243', cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
+  - {name: '🇬🇧_GB_244', server: '172.99.190.149', port: 5004, type: ss, country: '🇬🇧_GB_244', cipher: 'aes-256-gcm', password: 'g5MeD6Ft3CWlJId'}
+  - {name: '🇬🇧_GB_245', server: '172.99.190.205', port: 7306, type: ss, country: '🇬🇧_GB_245', cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
+  - {name: '🇬🇧_GB_246', server: '172.99.190.92', port: 443, type: ss, country: '🇬🇧_GB_246', cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
+  - {name: '🇮🇳_IN_247', server: '172.104.207.231', port: 7001, type: ss, country: '🇮🇳_IN_247', cipher: 'aes-256-gcm', password: 'RexnBgU7EV5ADxG'}
+  - {name: '🇺🇸_US_248', server: '167.88.61.50', port: 5003, type: ss, country: '🇺🇸_US_248', cipher: 'aes-256-gcm', password: 'g5MeD6Ft3CWlJId'}
+  - {name: '🇺🇸_US_249', server: '142.202.48.34', port: 8091, type: ss, country: '🇺🇸_US_249', cipher: 'aes-256-gcm', password: 'PCnnH6SQSnfoS27'}
+  - {name: '🇬🇧_GB_250', server: '172.99.190.149', port: 3306, type: ss, country: '🇬🇧_GB_250', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: '🇺🇸_US_251', server: '167.88.63.61', port: 8118, type: ss, country: '🇺🇸_US_251', cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
+  - {name: '🇺🇸_US_252', server: '167.88.63.108', port: 443, type: ss, country: '🇺🇸_US_252', cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
+  - {name: '🇺🇸_US_253', server: '142.202.48.34', port: 3306, type: ss, country: '🇺🇸_US_253', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: '🇺🇸_US_254', server: '167.88.61.130', port: 8080, type: ss, country: '🇺🇸_US_254', cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
+  - {name: '🇺🇸_US_255', server: '142.202.48.77', port: 8090, type: ss, country: '🇺🇸_US_255', cipher: 'aes-256-gcm', password: 'PCnnH6SQSnfoS27'}
+  - {name: '🇺🇸_US_256', server: '167.88.63.28', port: 2376, type: ss, country: '🇺🇸_US_256', cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
+  - {name: '🇺🇸_US_257', server: '142.202.48.34', port: 5004, type: ss, country: '🇺🇸_US_257', cipher: 'aes-256-gcm', password: 'g5MeD6Ft3CWlJId'}
+  - {name: '🇺🇸_US_258', server: '167.88.63.61', port: 8119, type: ss, country: '🇺🇸_US_258', cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
+  - {name: '🇺🇸_US_259', server: '38.68.134.23', port: 8881, type: ss, country: '🇺🇸_US_259', cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
+  - {name: '🇺🇸_US_260', server: '164.92.81.198', port: 59508, type: ss, country: '🇺🇸_US_260', cipher: 'aes-256-gcm', password: '354d7de4-ce1a-4ebd-9c6b-b502a08821a3'}
+  - {name: '🇺🇸_US_261', server: '167.88.63.74', port: 2376, type: ss, country: '🇺🇸_US_261', cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
+  - {name: '🇺🇸_US_262', server: 'SS-NODE-5-B.GFWAIRPORT.NET', port: 50001, type: ss, country: '🇺🇸_US_262', cipher: 'chacha20-ietf-poly1305', password: '9e7256ac-f3bb-4f60-830f-48e75191c207'}
+  - {name: '🇺🇸_US_263', server: '38.91.101.11', port: 7307, type: ss, country: '🇺🇸_US_263', cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
+  - {name: '🇰🇷_KR_264', server: 'SS-NODE-2-B.GFWAIRPORT.NET', port: 50001, type: ss, country: '🇰🇷_KR_264', cipher: 'chacha20-ietf-poly1305', password: '9e7256ac-f3bb-4f60-830f-48e75191c207'}
+  - {name: '🇺🇸_US_265', server: '142.202.48.74', port: 8091, type: ss, country: '🇺🇸_US_265', cipher: 'aes-256-gcm', password: 'PCnnH6SQSnfoS27'}
+  - {name: '🇨🇦_CA_266', server: '134.195.196.81', port: 8881, type: ss, country: '🇨🇦_CA_266', cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
+  - {name: '🇨🇦_CA_267', server: '134.195.196.81', port: 8118, type: ss, country: '🇨🇦_CA_267', cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
+  - {name: '🇨🇦_CA_268', server: '134.195.198.95', port: 2375, type: ss, country: '🇨🇦_CA_268', cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
+  - {name: '🇨🇦_CA_269', server: '134.195.198.252', port: 443, type: ss, country: '🇨🇦_CA_269', cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
+  - {name: '🇨🇦_CA_270', server: '134.195.196.132', port: 8881, type: ss, country: '🇨🇦_CA_270', cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
+  - {name: '🇺🇸_US_271', server: '169.197.141.91', port: 9101, type: ss, country: '🇺🇸_US_271', cipher: 'aes-256-gcm', password: 'e4FCWrgpkji3QY'}
+  - {name: '🇨🇦_CA_272', server: '134.195.196.51', port: 443, type: ss, country: '🇨🇦_CA_272', cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
+  - {name: '🇨🇦_CA_273', server: '134.195.196.68', port: 7002, type: ss, country: '🇨🇦_CA_273', cipher: 'aes-256-gcm', password: 'RexnBgU7EV5ADxG'}
+  - {name: '🇨🇦_CA_274', server: '134.195.196.68', port: 443, type: ss, country: '🇨🇦_CA_274', cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
+  - {name: '🇺🇸_US_275', server: '169.197.142.39', port: 5601, type: ss, country: '🇺🇸_US_275', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: '🇺🇸_US_276', server: '169.197.141.91', port: 5004, type: ss, country: '🇺🇸_US_276', cipher: 'aes-256-gcm', password: 'g5MeD6Ft3CWlJId'}
+  - {name: '', server: '103.172.116.10', port: 9093, type: ss, country: '', cipher: 'aes-256-cfb', password: 'wfLC2y7rzZyCmuyt'}
+  - {name: '🇨🇦_CA_278', server: '134.195.198.211', port: 443, type: ss, country: '🇨🇦_CA_278', cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
+  - {name: '🇨🇦_CA_279', server: '134.195.196.200', port: 3306, type: ss, country: '🇨🇦_CA_279', cipher: 'aes-256-gcm', password: 'Y6R9pAtvxxzmGC'}
+  - {name: '🇨🇦_CA_280', server: '134.195.196.200', port: 8000, type: ss, country: '🇨🇦_CA_280', cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
+  - {name: '', server: '103.172.116.9', port: 9011, type: ss, country: '', cipher: 'aes-256-cfb', password: 'M3t2ZEQcMGRWBjRa'}
+  - {name: '', server: '103.172.116.7', port: 9033, type: ss, country: '', cipher: 'aes-256-cfb', password: 'UTJA57ypk2XKQpnm'}
+  - {name: '', server: '103.172.116.8', port: 9011, type: ss, country: '', cipher: 'aes-256-cfb', password: 'M3t2ZEQcMGRWBjRa'}
+  - {name: '', server: '103.172.116.10', port: 9027, type: ss, country: '', cipher: 'aes-256-cfb', password: 'EXN3S3eQpjE7EJu8'}
+  - {name: '🇨🇦_CA_285', server: '134.195.196.81', port: 7307, type: ss, country: '🇨🇦_CA_285', cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
+  - {name: '🇺🇸_US_286', server: '169.197.141.91', port: 7306, type: ss, country: '🇺🇸_US_286', cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
+  - {name: '🇨🇦_CA_287', server: '134.195.196.193', port: 2375, type: ss, country: '🇨🇦_CA_287', cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
+  - {name: '🇨🇦_CA_288', server: '134.195.196.193', port: 8091, type: ss, country: '🇨🇦_CA_288', cipher: 'aes-256-gcm', password: 'PCnnH6SQSnfoS27'}
+  - {name: '🇺🇸_US_289', server: '169.197.141.24', port: 6697, type: ss, country: '🇺🇸_US_289', cipher: 'aes-256-gcm', password: 'TEzjfAYq2IjtuoS'}
+  - {name: '🇨🇦_CA_290', server: '134.195.196.193', port: 7307, type: ss, country: '🇨🇦_CA_290', cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
+  - {name: '🇨🇦_CA_291', server: '134.195.196.200', port: 2375, type: ss, country: '🇨🇦_CA_291', cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
+  - {name: '🇨🇦_CA_292', server: '134.195.196.221', port: 8118, type: ss, country: '🇨🇦_CA_292', cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
+  - {name: '🇺🇸_US_293', server: '169.197.142.216', port: 7001, type: ss, country: '🇺🇸_US_293', cipher: 'aes-256-gcm', password: 'RexnBgU7EV5ADxG'}
+  - {name: '🇨🇦_CA_294', server: '134.195.196.64', port: 8118, type: ss, country: '🇨🇦_CA_294', cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
+  - {name: '🇺🇸_US_295', server: '169.197.142.99', port: 443, type: ss, country: '🇺🇸_US_295', cipher: 'aes-256-gcm', password: 'pKEW8JPByTVTLtM'}
+  - {name: '', server: '103.172.116.9', port: 9003, type: ss, country: '', cipher: 'aes-256-cfb', password: 'JdmRK9gMEqFgs8nP'}
+  - {name: '🇺🇸_US_297', server: '169.197.142.4', port: 2375, type: ss, country: '🇺🇸_US_297', cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
+  - {name: '🇺🇸_US_298', server: '169.197.143.157', port: 7002, type: ss, country: '🇺🇸_US_298', cipher: 'aes-256-gcm', password: 'RexnBgU7EV5ADxG'}
+  - {name: '🇺🇸_US_299', server: '169.197.142.39', port: 8881, type: ss, country: '🇺🇸_US_299', cipher: 'aes-256-gcm', password: 'kDWvXYZoTBcGkC4'}
+  - {name: '🇺🇸_US_300', server: '169.197.143.157', port: 8118, type: ss, country: '🇺🇸_US_300', cipher: 'aes-256-gcm', password: 'cdBIDV42DCwnfIN'}
+  - {name: '', server: '103.172.116.7', port: 9010, type: ss, country: '', cipher: 'aes-256-cfb', password: 'f63gg8EruDnUrmz4'}
+  - {name: '🇨🇦_CA_302', server: '134.195.196.68', port: 6379, type: ss, country: '🇨🇦_CA_302', cipher: 'aes-256-gcm', password: 'zDNVedRFPQexG9v'}
+  - {name: '🇨🇦_CA_303', server: '134.195.196.51', port: 7002, type: ss, country: '🇨🇦_CA_303', cipher: 'aes-256-gcm', password: 'RexnBgU7EV5ADxG'}
+  - {name: '🇨🇦_CA_304', server: '134.195.196.193', port: 5004, type: ss, country: '🇨🇦_CA_304', cipher: 'aes-256-gcm', password: 'g5MeD6Ft3CWlJId'}
+  - {name: '', server: '103.172.116.9', port: 9088, type: ss, country: '', cipher: 'aes-256-cfb', password: 'f8npKgNzdkss2ytn'}
+  - {name: '🇨🇦_CA_306', server: '134.195.196.200', port: 8008, type: ss, country: '🇨🇦_CA_306', cipher: 'aes-256-gcm', password: 'XKFKl2rULjIp74'}
+  - {name: '', server: '103.172.116.10', port: 9059, type: ss, country: '', cipher: 'aes-256-cfb', password: '9XwYyZsK8SNzQDtY'}
+  - {name: '🇨🇦_CA_308', server: '134.195.198.95', port: 2376, type: ss, country: '🇨🇦_CA_308', cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
+  - {name: '🇨🇦_CA_309', server: '134.195.196.193', port: 8080, type: ss, country: '🇨🇦_CA_309', cipher: 'aes-256-gcm', password: 'KixLvKzwjekG00rm'}
+  - {name: '', server: '103.172.116.8', port: 9000, type: ss, country: '', cipher: 'aes-256-cfb', password: 'a3GFYt36Sm82Vys9'}
+  - {name: '🇨🇦_CA_311', server: '134.195.196.200', port: 6379, type: ss, country: '🇨🇦_CA_311', cipher: 'aes-256-gcm', password: 'zDNVedRFPQexG9v'}
+  - {name: '🇨🇦_CA_312', server: '134.195.196.200', port: 5003, type: ss, country: '🇨🇦_CA_312', cipher: 'aes-256-gcm', password: 'g5MeD6Ft3CWlJId'}
+  - {name: '', server: '103.172.116.10', port: 9094, type: ss, country: '', cipher: 'aes-256-cfb', password: 'rpgbNnU9rDDU4aWZ'}
+  - {name: '', server: '103.172.116.10', port: 9032, type: ss, country: '', cipher: 'aes-256-cfb', password: 'UWZQeLRWnkqgkseq'}
+  - {name: '', server: '103.172.116.10', port: 9031, type: ss, country: '', cipher: 'aes-256-cfb', password: 'BwcAUZk8hUFAkDGN'}
+  - {name: '', server: '103.172.116.10', port: 9041, type: ss, country: '', cipher: 'aes-256-cfb', password: 'U6qnYRhfyDmn8sgn'}
+  - {name: '🇺🇸_US_317', server: '169.197.141.15', port: 6379, type: ss, country: '🇺🇸_US_317', cipher: 'aes-256-gcm', password: 'zDNVedRFPQexG9v'}
+  - {name: '', server: '103.172.116.9', port: 9026, type: ss, country: '', cipher: 'aes-256-cfb', password: 'QWDDvVE9npNurQfA'}
+  - {name: '', server: '103.172.116.9', port: 9097, type: ss, country: '', cipher: 'aes-256-cfb', password: 'Sn5B7jTqr76aCJT8'}
+  - {name: '🇨🇦_CA_320', server: '134.195.196.200', port: 2376, type: ss, country: '🇨🇦_CA_320', cipher: 'aes-256-gcm', password: 'faBAoD54k87UJG7'}
+  - {name: '', server: '103.172.116.10', port: 9057, type: ss, country: '', cipher: 'aes-256-cfb', password: 'wjTugX3ZtHMB9c3Z'}
+  - {name: '🇨🇦_CA_322', server: '134.195.196.139', port: 7306, type: ss, country: '🇨🇦_CA_322', cipher: 'aes-256-gcm', password: 'FoOiGlkAA9yPEGP'}
+  - {name: '🇨🇦_CA_323', server: '134.195.196.81', port: 8008, type: ss, country: '🇨🇦_CA_323', cipher: 'aes-256-gcm', password: 'XKFKl2rULjIp74'}
+  - {name: '', server: '103.172.116.10', port: 9008, type: ss, country: '', cipher: 'aes-256-cfb', password: 'y9VURyNzJWNRYEGQ'}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇯🇵_JP_1
-      - 🇬🇧_GB_2
-      - 🇷🇺_RU_3
-      - 🇷🇺_RU_4
-      - 🇷🇺_RU_5
-      - 🇨🇳_CN_6
-      - 🇷🇺_RU_7
+      - 🇦🇪_AE_1
+      - 🇦🇪_AE_2
+      - 🇦🇺_AU_3
+      - 🇦🇺_AU_4
+      - 🇦🇺_AU_5
+      - 🇦🇺_AU_6
+      - 🇨🇦_CA_7
+      - 🇨🇦_CA_8
+      - 🇨🇦_CA_9
+      - 🇨🇦_CA_10
+      - 🇨🇦_CA_11
+      - 🇨🇦_CA_12
+      - 🇨🇦_CA_13
+      - 🇨🇦_CA_14
+      - 🇨🇦_CA_15
+      - 🇨🇦_CA_16
+      - 🇨🇦_CA_17
+      - 🇨🇦_CA_18
+      - 🇨🇦_CA_19
+      - 🇨🇦_CA_20
+      - 🇨🇦_CA_21
+      - 🇨🇦_CA_22
+      - 🇨🇦_CA_23
+      - 🇨🇦_CA_24
+      - 🇨🇦_CA_25
+      - 🇨🇦_CA_26
+      - 🇨🇦_CA_27
+      - 🇨🇦_CA_28
+      - 🇨🇦_CA_29
+      - 🇨🇦_CA_30
+      - 🇨🇦_CA_31
+      - 🇨🇦_CA_32
+      - 🇸🇬_SG_33
+      - 🇨🇦_CA_34
+      - 🇨🇦_CA_35
+      - 🇨🇦_CA_36
+      - 
+      - 
+      - 
+      - 
+      - 🇨🇳_CN_41
+      - 
+      - 🇨🇳_CN_43
+      - 
+      - 🇨🇳_CN_45
+      - 
+      - 
+      - 🇩🇪_DE_48
+      - 🇩🇪_DE_49
+      - 🇩🇪_DE_50
+      - 🇩🇪_DE_51
+      - 🇩🇪_DE_52
+      - 🇩🇪_DE_53
+      - 🇩🇪_DE_54
+      - 🇩🇪_DE_55
+      - 🇩🇪_DE_56
+      - 🇩🇪_DE_57
+      - 🇫🇷_FR_58
+      - 🇬🇧_GB_59
+      - 🇬🇧_GB_60
+      - 🇬🇧_GB_61
+      - 🇬🇧_GB_62
+      - 🇬🇧_GB_63
+      - 🇬🇧_GB_64
+      - 🇬🇧_GB_65
+      - 🇬🇧_GB_66
+      - 🇬🇧_GB_67
+      - 🇬🇧_GB_68
+      - 🇬🇧_GB_69
+      - 🇬🇧_GB_70
+      - 🇬🇧_GB_71
+      - 🇬🇧_GB_72
+      - 🇬🇧_GB_73
+      - 🇬🇧_GB_74
+      - 🇬🇧_GB_75
+      - 🇬🇧_GB_76
+      - 🇬🇧_GB_77
+      - 🇬🇧_GB_78
+      - 🇬🇧_GB_79
+      - 🇬🇧_GB_80
+      - 🇯🇵_JP_81
+      - 🇰🇷_KR_82
+      - 🇰🇷_KR_83
+      - 🇷🇺_RU_84
+      - 🇷🇺_RU_85
+      - 🇷🇺_RU_86
+      - 🇷🇺_RU_87
+      - 🇷🇺_RU_88
+      - 🇷🇺_RU_89
+      - 🇷🇺_RU_90
+      - 🇷🇺_RU_91
+      - 🇷🇺_RU_92
+      - 🇷🇺_RU_93
+      - 🇷🇺_RU_94
+      - 🇧🇬_BG_95
+      - 🇷🇺_RU_96
+      - 🇷🇺_RU_97
+      - 🇷🇺_RU_98
+      - 🇷🇺_RU_99
+      - 🇷🇺_RU_100
+      - 🇧🇬_BG_101
+      - 🇷🇺_RU_102
+      - 🇷🇺_RU_103
+      - 🇷🇺_RU_104
+      - 🇷🇺_RU_105
+      - 🇷🇺_RU_106
+      - 🇷🇺_RU_107
+      - 🇷🇺_RU_108
+      - 🇷🇺_RU_109
+      - 🇷🇺_RU_110
+      - 🇧🇬_BG_111
+      - 🇷🇺_RU_112
+      - 🇷🇺_RU_113
+      - 🇷🇺_RU_114
+      - 🇷🇺_RU_115
+      - 🇧🇬_BG_116
+      - 🇷🇺_RU_117
+      - 🇷🇺_RU_118
+      - 🇷🇺_RU_119
+      - 🇷🇺_RU_120
+      - 🇷🇺_RU_121
+      - 🇷🇺_RU_122
+      - 🇷🇺_RU_123
+      - 🇳🇱_NL_124
+      - 🇳🇱_NL_125
+      - 🇳🇱_NL_126
+      - 🇳🇱_NL_127
+      - 🇳🇱_NL_128
+      - 🇳🇱_NL_129
+      - 🇳🇱_NL_130
+      - 🇳🇱_NL_131
+      - 🇳🇱_NL_132
+      - 🇳🇱_NL_133
+      - 🇳🇱_NL_134
+      - 🇨🇭_CH_135
+      - 🇨🇭_CH_136
+      - 🇨🇭_CH_137
+      - 🇨🇭_CH_138
+      - 🇵🇱_PL_139
+      - 🇵🇱_PL_140
+      - 🇵🇱_PL_141
+      - 🇵🇱_PL_142
+      - 🇵🇱_PL_143
+      - 🇵🇱_PL_144
+      - 🇵🇱_PL_145
+      - 🇵🇱_PL_146
+      - 🇵🇱_PL_147
+      - 🇵🇱_PL_148
+      - 🇵🇱_PL_149
+      - 🇵🇱_PL_150
+      - 🇵🇱_PL_151
+      - 🇵🇱_PL_152
+      - 🇵🇱_PL_153
+      - 🇵🇱_PL_154
+      - 🇵🇱_PL_155
+      - 🇵🇱_PL_156
+      - 🇵🇱_PL_157
+      - 🇵🇱_PL_158
+      - 🇵🇱_PL_159
+      - 🇵🇱_PL_160
+      - 🇵🇱_PL_161
+      - 🇵🇱_PL_162
+      - 🇵🇱_PL_163
+      - 🇵🇱_PL_164
+      - 🇵🇱_PL_165
+      - 🇵🇱_PL_166
+      - 🇵🇱_PL_167
+      - 🇵🇱_PL_168
+      - 🇵🇱_PL_169
+      - 🇵🇱_PL_170
+      - 🇵🇱_PL_171
+      - 🇵🇱_PL_172
+      - 🇵🇱_PL_173
+      - 🇵🇱_PL_174
+      - 🇵🇱_PL_175
+      - 🇵🇱_PL_176
+      - 🇵🇱_PL_177
+      - 🇷🇺_RU_178
+      - 🇵🇱_PL_179
+      - 🇵🇱_PL_180
+      - 🇵🇱_PL_181
+      - 🇵🇱_PL_182
+      - 🇺🇸_US_183
+      - 🇵🇱_PL_184
+      - 🇵🇱_PL_185
+      - 🇵🇱_PL_186
+      - 🇵🇱_PL_187
+      - 🇵🇱_PL_188
+      - 🇵🇱_PL_189
+      - 🇸🇬_SG_190
+      - 🇺🇸_US_191
+      - 🇺🇸_US_192
+      - 🇬🇧_GB_193
+      - 🇺🇸_US_194
+      - 🇺🇸_US_195
+      - 🇺🇸_US_196
+      - 🇬🇧_GB_197
+      - 🇺🇸_US_198
+      - 🇺🇸_US_199
+      - 🇺🇸_US_200
+      - 🇰🇷_KR_201
+      - 🇺🇸_US_202
+      - 🇺🇸_US_203
+      - 🇺🇸_US_204
+      - 🇺🇸_US_205
+      - 🇺🇸_US_206
+      - 🇰🇷_KR_207
+      - 🇺🇸_US_208
+      - 🇺🇸_US_209
+      - 🇺🇸_US_210
+      - 🇺🇸_US_211
+      - 🇺🇸_US_212
+      - 🇰🇷_KR_213
+      - 🇰🇷_KR_214
+      - 🇺🇸_US_215
+      - 🇺🇸_US_216
+      - 🇺🇸_US_217
+      - 🇺🇸_US_218
+      - 🇺🇸_US_219
+      - 🇺🇸_US_220
+      - 🇺🇸_US_221
+      - 🇺🇸_US_222
+      - 🇺🇸_US_223
+      - 🇺🇸_US_224
+      - 🇬🇧_GB_225
+      - 🇺🇸_US_226
+      - 🇺🇸_US_227
+      - 🇬🇧_GB_228
+      - 🇺🇸_US_229
+      - 🇬🇧_GB_230
+      - 🇬🇧_GB_231
+      - 🇰🇷_KR_232
+      - 🇬🇧_GB_233
+      - 🇺🇸_US_234
+      - 🇬🇧_GB_235
+      - 🇺🇸_US_236
+      - 🇺🇸_US_237
+      - 🇺🇸_US_238
+      - 🇺🇸_US_239
+      - 🇺🇸_US_240
+      - 🇺🇸_US_241
+      - 🇺🇸_US_242
+      - 🇺🇸_US_243
+      - 🇬🇧_GB_244
+      - 🇬🇧_GB_245
+      - 🇬🇧_GB_246
+      - 🇮🇳_IN_247
+      - 🇺🇸_US_248
+      - 🇺🇸_US_249
+      - 🇬🇧_GB_250
+      - 🇺🇸_US_251
+      - 🇺🇸_US_252
+      - 🇺🇸_US_253
+      - 🇺🇸_US_254
+      - 🇺🇸_US_255
+      - 🇺🇸_US_256
+      - 🇺🇸_US_257
+      - 🇺🇸_US_258
+      - 🇺🇸_US_259
+      - 🇺🇸_US_260
+      - 🇺🇸_US_261
+      - 🇺🇸_US_262
+      - 🇺🇸_US_263
+      - 🇰🇷_KR_264
+      - 🇺🇸_US_265
+      - 🇨🇦_CA_266
+      - 🇨🇦_CA_267
+      - 🇨🇦_CA_268
+      - 🇨🇦_CA_269
+      - 🇨🇦_CA_270
+      - 🇺🇸_US_271
+      - 🇨🇦_CA_272
+      - 🇨🇦_CA_273
+      - 🇨🇦_CA_274
+      - 🇺🇸_US_275
+      - 🇺🇸_US_276
+      - 
+      - 🇨🇦_CA_278
+      - 🇨🇦_CA_279
+      - 🇨🇦_CA_280
+      - 
+      - 
+      - 
+      - 
+      - 🇨🇦_CA_285
+      - 🇺🇸_US_286
+      - 🇨🇦_CA_287
+      - 🇨🇦_CA_288
+      - 🇺🇸_US_289
+      - 🇨🇦_CA_290
+      - 🇨🇦_CA_291
+      - 🇨🇦_CA_292
+      - 🇺🇸_US_293
+      - 🇨🇦_CA_294
+      - 🇺🇸_US_295
+      - 
+      - 🇺🇸_US_297
+      - 🇺🇸_US_298
+      - 🇺🇸_US_299
+      - 🇺🇸_US_300
+      - 
+      - 🇨🇦_CA_302
+      - 🇨🇦_CA_303
+      - 🇨🇦_CA_304
+      - 
+      - 🇨🇦_CA_306
+      - 
+      - 🇨🇦_CA_308
+      - 🇨🇦_CA_309
+      - 
+      - 🇨🇦_CA_311
+      - 🇨🇦_CA_312
+      - 
+      - 
+      - 
+      - 
+      - 🇺🇸_US_317
+      - 
+      - 
+      - 🇨🇦_CA_320
+      - 
+      - 🇨🇦_CA_322
+      - 🇨🇦_CA_323
+      - 
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵_JP_1
-      - 🇬🇧_GB_2
-      - 🇷🇺_RU_3
-      - 🇷🇺_RU_4
-      - 🇷🇺_RU_5
-      - 🇨🇳_CN_6
-      - 🇷🇺_RU_7
+      - 🇦🇪_AE_1
+      - 🇦🇪_AE_2
+      - 🇦🇺_AU_3
+      - 🇦🇺_AU_4
+      - 🇦🇺_AU_5
+      - 🇦🇺_AU_6
+      - 🇨🇦_CA_7
+      - 🇨🇦_CA_8
+      - 🇨🇦_CA_9
+      - 🇨🇦_CA_10
+      - 🇨🇦_CA_11
+      - 🇨🇦_CA_12
+      - 🇨🇦_CA_13
+      - 🇨🇦_CA_14
+      - 🇨🇦_CA_15
+      - 🇨🇦_CA_16
+      - 🇨🇦_CA_17
+      - 🇨🇦_CA_18
+      - 🇨🇦_CA_19
+      - 🇨🇦_CA_20
+      - 🇨🇦_CA_21
+      - 🇨🇦_CA_22
+      - 🇨🇦_CA_23
+      - 🇨🇦_CA_24
+      - 🇨🇦_CA_25
+      - 🇨🇦_CA_26
+      - 🇨🇦_CA_27
+      - 🇨🇦_CA_28
+      - 🇨🇦_CA_29
+      - 🇨🇦_CA_30
+      - 🇨🇦_CA_31
+      - 🇨🇦_CA_32
+      - 🇸🇬_SG_33
+      - 🇨🇦_CA_34
+      - 🇨🇦_CA_35
+      - 🇨🇦_CA_36
+      - 
+      - 
+      - 
+      - 
+      - 🇨🇳_CN_41
+      - 
+      - 🇨🇳_CN_43
+      - 
+      - 🇨🇳_CN_45
+      - 
+      - 
+      - 🇩🇪_DE_48
+      - 🇩🇪_DE_49
+      - 🇩🇪_DE_50
+      - 🇩🇪_DE_51
+      - 🇩🇪_DE_52
+      - 🇩🇪_DE_53
+      - 🇩🇪_DE_54
+      - 🇩🇪_DE_55
+      - 🇩🇪_DE_56
+      - 🇩🇪_DE_57
+      - 🇫🇷_FR_58
+      - 🇬🇧_GB_59
+      - 🇬🇧_GB_60
+      - 🇬🇧_GB_61
+      - 🇬🇧_GB_62
+      - 🇬🇧_GB_63
+      - 🇬🇧_GB_64
+      - 🇬🇧_GB_65
+      - 🇬🇧_GB_66
+      - 🇬🇧_GB_67
+      - 🇬🇧_GB_68
+      - 🇬🇧_GB_69
+      - 🇬🇧_GB_70
+      - 🇬🇧_GB_71
+      - 🇬🇧_GB_72
+      - 🇬🇧_GB_73
+      - 🇬🇧_GB_74
+      - 🇬🇧_GB_75
+      - 🇬🇧_GB_76
+      - 🇬🇧_GB_77
+      - 🇬🇧_GB_78
+      - 🇬🇧_GB_79
+      - 🇬🇧_GB_80
+      - 🇯🇵_JP_81
+      - 🇰🇷_KR_82
+      - 🇰🇷_KR_83
+      - 🇷🇺_RU_84
+      - 🇷🇺_RU_85
+      - 🇷🇺_RU_86
+      - 🇷🇺_RU_87
+      - 🇷🇺_RU_88
+      - 🇷🇺_RU_89
+      - 🇷🇺_RU_90
+      - 🇷🇺_RU_91
+      - 🇷🇺_RU_92
+      - 🇷🇺_RU_93
+      - 🇷🇺_RU_94
+      - 🇧🇬_BG_95
+      - 🇷🇺_RU_96
+      - 🇷🇺_RU_97
+      - 🇷🇺_RU_98
+      - 🇷🇺_RU_99
+      - 🇷🇺_RU_100
+      - 🇧🇬_BG_101
+      - 🇷🇺_RU_102
+      - 🇷🇺_RU_103
+      - 🇷🇺_RU_104
+      - 🇷🇺_RU_105
+      - 🇷🇺_RU_106
+      - 🇷🇺_RU_107
+      - 🇷🇺_RU_108
+      - 🇷🇺_RU_109
+      - 🇷🇺_RU_110
+      - 🇧🇬_BG_111
+      - 🇷🇺_RU_112
+      - 🇷🇺_RU_113
+      - 🇷🇺_RU_114
+      - 🇷🇺_RU_115
+      - 🇧🇬_BG_116
+      - 🇷🇺_RU_117
+      - 🇷🇺_RU_118
+      - 🇷🇺_RU_119
+      - 🇷🇺_RU_120
+      - 🇷🇺_RU_121
+      - 🇷🇺_RU_122
+      - 🇷🇺_RU_123
+      - 🇳🇱_NL_124
+      - 🇳🇱_NL_125
+      - 🇳🇱_NL_126
+      - 🇳🇱_NL_127
+      - 🇳🇱_NL_128
+      - 🇳🇱_NL_129
+      - 🇳🇱_NL_130
+      - 🇳🇱_NL_131
+      - 🇳🇱_NL_132
+      - 🇳🇱_NL_133
+      - 🇳🇱_NL_134
+      - 🇨🇭_CH_135
+      - 🇨🇭_CH_136
+      - 🇨🇭_CH_137
+      - 🇨🇭_CH_138
+      - 🇵🇱_PL_139
+      - 🇵🇱_PL_140
+      - 🇵🇱_PL_141
+      - 🇵🇱_PL_142
+      - 🇵🇱_PL_143
+      - 🇵🇱_PL_144
+      - 🇵🇱_PL_145
+      - 🇵🇱_PL_146
+      - 🇵🇱_PL_147
+      - 🇵🇱_PL_148
+      - 🇵🇱_PL_149
+      - 🇵🇱_PL_150
+      - 🇵🇱_PL_151
+      - 🇵🇱_PL_152
+      - 🇵🇱_PL_153
+      - 🇵🇱_PL_154
+      - 🇵🇱_PL_155
+      - 🇵🇱_PL_156
+      - 🇵🇱_PL_157
+      - 🇵🇱_PL_158
+      - 🇵🇱_PL_159
+      - 🇵🇱_PL_160
+      - 🇵🇱_PL_161
+      - 🇵🇱_PL_162
+      - 🇵🇱_PL_163
+      - 🇵🇱_PL_164
+      - 🇵🇱_PL_165
+      - 🇵🇱_PL_166
+      - 🇵🇱_PL_167
+      - 🇵🇱_PL_168
+      - 🇵🇱_PL_169
+      - 🇵🇱_PL_170
+      - 🇵🇱_PL_171
+      - 🇵🇱_PL_172
+      - 🇵🇱_PL_173
+      - 🇵🇱_PL_174
+      - 🇵🇱_PL_175
+      - 🇵🇱_PL_176
+      - 🇵🇱_PL_177
+      - 🇷🇺_RU_178
+      - 🇵🇱_PL_179
+      - 🇵🇱_PL_180
+      - 🇵🇱_PL_181
+      - 🇵🇱_PL_182
+      - 🇺🇸_US_183
+      - 🇵🇱_PL_184
+      - 🇵🇱_PL_185
+      - 🇵🇱_PL_186
+      - 🇵🇱_PL_187
+      - 🇵🇱_PL_188
+      - 🇵🇱_PL_189
+      - 🇸🇬_SG_190
+      - 🇺🇸_US_191
+      - 🇺🇸_US_192
+      - 🇬🇧_GB_193
+      - 🇺🇸_US_194
+      - 🇺🇸_US_195
+      - 🇺🇸_US_196
+      - 🇬🇧_GB_197
+      - 🇺🇸_US_198
+      - 🇺🇸_US_199
+      - 🇺🇸_US_200
+      - 🇰🇷_KR_201
+      - 🇺🇸_US_202
+      - 🇺🇸_US_203
+      - 🇺🇸_US_204
+      - 🇺🇸_US_205
+      - 🇺🇸_US_206
+      - 🇰🇷_KR_207
+      - 🇺🇸_US_208
+      - 🇺🇸_US_209
+      - 🇺🇸_US_210
+      - 🇺🇸_US_211
+      - 🇺🇸_US_212
+      - 🇰🇷_KR_213
+      - 🇰🇷_KR_214
+      - 🇺🇸_US_215
+      - 🇺🇸_US_216
+      - 🇺🇸_US_217
+      - 🇺🇸_US_218
+      - 🇺🇸_US_219
+      - 🇺🇸_US_220
+      - 🇺🇸_US_221
+      - 🇺🇸_US_222
+      - 🇺🇸_US_223
+      - 🇺🇸_US_224
+      - 🇬🇧_GB_225
+      - 🇺🇸_US_226
+      - 🇺🇸_US_227
+      - 🇬🇧_GB_228
+      - 🇺🇸_US_229
+      - 🇬🇧_GB_230
+      - 🇬🇧_GB_231
+      - 🇰🇷_KR_232
+      - 🇬🇧_GB_233
+      - 🇺🇸_US_234
+      - 🇬🇧_GB_235
+      - 🇺🇸_US_236
+      - 🇺🇸_US_237
+      - 🇺🇸_US_238
+      - 🇺🇸_US_239
+      - 🇺🇸_US_240
+      - 🇺🇸_US_241
+      - 🇺🇸_US_242
+      - 🇺🇸_US_243
+      - 🇬🇧_GB_244
+      - 🇬🇧_GB_245
+      - 🇬🇧_GB_246
+      - 🇮🇳_IN_247
+      - 🇺🇸_US_248
+      - 🇺🇸_US_249
+      - 🇬🇧_GB_250
+      - 🇺🇸_US_251
+      - 🇺🇸_US_252
+      - 🇺🇸_US_253
+      - 🇺🇸_US_254
+      - 🇺🇸_US_255
+      - 🇺🇸_US_256
+      - 🇺🇸_US_257
+      - 🇺🇸_US_258
+      - 🇺🇸_US_259
+      - 🇺🇸_US_260
+      - 🇺🇸_US_261
+      - 🇺🇸_US_262
+      - 🇺🇸_US_263
+      - 🇰🇷_KR_264
+      - 🇺🇸_US_265
+      - 🇨🇦_CA_266
+      - 🇨🇦_CA_267
+      - 🇨🇦_CA_268
+      - 🇨🇦_CA_269
+      - 🇨🇦_CA_270
+      - 🇺🇸_US_271
+      - 🇨🇦_CA_272
+      - 🇨🇦_CA_273
+      - 🇨🇦_CA_274
+      - 🇺🇸_US_275
+      - 🇺🇸_US_276
+      - 
+      - 🇨🇦_CA_278
+      - 🇨🇦_CA_279
+      - 🇨🇦_CA_280
+      - 
+      - 
+      - 
+      - 
+      - 🇨🇦_CA_285
+      - 🇺🇸_US_286
+      - 🇨🇦_CA_287
+      - 🇨🇦_CA_288
+      - 🇺🇸_US_289
+      - 🇨🇦_CA_290
+      - 🇨🇦_CA_291
+      - 🇨🇦_CA_292
+      - 🇺🇸_US_293
+      - 🇨🇦_CA_294
+      - 🇺🇸_US_295
+      - 
+      - 🇺🇸_US_297
+      - 🇺🇸_US_298
+      - 🇺🇸_US_299
+      - 🇺🇸_US_300
+      - 
+      - 🇨🇦_CA_302
+      - 🇨🇦_CA_303
+      - 🇨🇦_CA_304
+      - 
+      - 🇨🇦_CA_306
+      - 
+      - 🇨🇦_CA_308
+      - 🇨🇦_CA_309
+      - 
+      - 🇨🇦_CA_311
+      - 🇨🇦_CA_312
+      - 
+      - 
+      - 
+      - 
+      - 🇺🇸_US_317
+      - 
+      - 
+      - 🇨🇦_CA_320
+      - 
+      - 🇨🇦_CA_322
+      - 🇨🇦_CA_323
+      - 
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵_JP_1
-      - 🇬🇧_GB_2
-      - 🇷🇺_RU_3
-      - 🇷🇺_RU_4
-      - 🇷🇺_RU_5
-      - 🇨🇳_CN_6
-      - 🇷🇺_RU_7
+      - 🇦🇪_AE_1
+      - 🇦🇪_AE_2
+      - 🇦🇺_AU_3
+      - 🇦🇺_AU_4
+      - 🇦🇺_AU_5
+      - 🇦🇺_AU_6
+      - 🇨🇦_CA_7
+      - 🇨🇦_CA_8
+      - 🇨🇦_CA_9
+      - 🇨🇦_CA_10
+      - 🇨🇦_CA_11
+      - 🇨🇦_CA_12
+      - 🇨🇦_CA_13
+      - 🇨🇦_CA_14
+      - 🇨🇦_CA_15
+      - 🇨🇦_CA_16
+      - 🇨🇦_CA_17
+      - 🇨🇦_CA_18
+      - 🇨🇦_CA_19
+      - 🇨🇦_CA_20
+      - 🇨🇦_CA_21
+      - 🇨🇦_CA_22
+      - 🇨🇦_CA_23
+      - 🇨🇦_CA_24
+      - 🇨🇦_CA_25
+      - 🇨🇦_CA_26
+      - 🇨🇦_CA_27
+      - 🇨🇦_CA_28
+      - 🇨🇦_CA_29
+      - 🇨🇦_CA_30
+      - 🇨🇦_CA_31
+      - 🇨🇦_CA_32
+      - 🇸🇬_SG_33
+      - 🇨🇦_CA_34
+      - 🇨🇦_CA_35
+      - 🇨🇦_CA_36
+      - 
+      - 
+      - 
+      - 
+      - 🇨🇳_CN_41
+      - 
+      - 🇨🇳_CN_43
+      - 
+      - 🇨🇳_CN_45
+      - 
+      - 
+      - 🇩🇪_DE_48
+      - 🇩🇪_DE_49
+      - 🇩🇪_DE_50
+      - 🇩🇪_DE_51
+      - 🇩🇪_DE_52
+      - 🇩🇪_DE_53
+      - 🇩🇪_DE_54
+      - 🇩🇪_DE_55
+      - 🇩🇪_DE_56
+      - 🇩🇪_DE_57
+      - 🇫🇷_FR_58
+      - 🇬🇧_GB_59
+      - 🇬🇧_GB_60
+      - 🇬🇧_GB_61
+      - 🇬🇧_GB_62
+      - 🇬🇧_GB_63
+      - 🇬🇧_GB_64
+      - 🇬🇧_GB_65
+      - 🇬🇧_GB_66
+      - 🇬🇧_GB_67
+      - 🇬🇧_GB_68
+      - 🇬🇧_GB_69
+      - 🇬🇧_GB_70
+      - 🇬🇧_GB_71
+      - 🇬🇧_GB_72
+      - 🇬🇧_GB_73
+      - 🇬🇧_GB_74
+      - 🇬🇧_GB_75
+      - 🇬🇧_GB_76
+      - 🇬🇧_GB_77
+      - 🇬🇧_GB_78
+      - 🇬🇧_GB_79
+      - 🇬🇧_GB_80
+      - 🇯🇵_JP_81
+      - 🇰🇷_KR_82
+      - 🇰🇷_KR_83
+      - 🇷🇺_RU_84
+      - 🇷🇺_RU_85
+      - 🇷🇺_RU_86
+      - 🇷🇺_RU_87
+      - 🇷🇺_RU_88
+      - 🇷🇺_RU_89
+      - 🇷🇺_RU_90
+      - 🇷🇺_RU_91
+      - 🇷🇺_RU_92
+      - 🇷🇺_RU_93
+      - 🇷🇺_RU_94
+      - 🇧🇬_BG_95
+      - 🇷🇺_RU_96
+      - 🇷🇺_RU_97
+      - 🇷🇺_RU_98
+      - 🇷🇺_RU_99
+      - 🇷🇺_RU_100
+      - 🇧🇬_BG_101
+      - 🇷🇺_RU_102
+      - 🇷🇺_RU_103
+      - 🇷🇺_RU_104
+      - 🇷🇺_RU_105
+      - 🇷🇺_RU_106
+      - 🇷🇺_RU_107
+      - 🇷🇺_RU_108
+      - 🇷🇺_RU_109
+      - 🇷🇺_RU_110
+      - 🇧🇬_BG_111
+      - 🇷🇺_RU_112
+      - 🇷🇺_RU_113
+      - 🇷🇺_RU_114
+      - 🇷🇺_RU_115
+      - 🇧🇬_BG_116
+      - 🇷🇺_RU_117
+      - 🇷🇺_RU_118
+      - 🇷🇺_RU_119
+      - 🇷🇺_RU_120
+      - 🇷🇺_RU_121
+      - 🇷🇺_RU_122
+      - 🇷🇺_RU_123
+      - 🇳🇱_NL_124
+      - 🇳🇱_NL_125
+      - 🇳🇱_NL_126
+      - 🇳🇱_NL_127
+      - 🇳🇱_NL_128
+      - 🇳🇱_NL_129
+      - 🇳🇱_NL_130
+      - 🇳🇱_NL_131
+      - 🇳🇱_NL_132
+      - 🇳🇱_NL_133
+      - 🇳🇱_NL_134
+      - 🇨🇭_CH_135
+      - 🇨🇭_CH_136
+      - 🇨🇭_CH_137
+      - 🇨🇭_CH_138
+      - 🇵🇱_PL_139
+      - 🇵🇱_PL_140
+      - 🇵🇱_PL_141
+      - 🇵🇱_PL_142
+      - 🇵🇱_PL_143
+      - 🇵🇱_PL_144
+      - 🇵🇱_PL_145
+      - 🇵🇱_PL_146
+      - 🇵🇱_PL_147
+      - 🇵🇱_PL_148
+      - 🇵🇱_PL_149
+      - 🇵🇱_PL_150
+      - 🇵🇱_PL_151
+      - 🇵🇱_PL_152
+      - 🇵🇱_PL_153
+      - 🇵🇱_PL_154
+      - 🇵🇱_PL_155
+      - 🇵🇱_PL_156
+      - 🇵🇱_PL_157
+      - 🇵🇱_PL_158
+      - 🇵🇱_PL_159
+      - 🇵🇱_PL_160
+      - 🇵🇱_PL_161
+      - 🇵🇱_PL_162
+      - 🇵🇱_PL_163
+      - 🇵🇱_PL_164
+      - 🇵🇱_PL_165
+      - 🇵🇱_PL_166
+      - 🇵🇱_PL_167
+      - 🇵🇱_PL_168
+      - 🇵🇱_PL_169
+      - 🇵🇱_PL_170
+      - 🇵🇱_PL_171
+      - 🇵🇱_PL_172
+      - 🇵🇱_PL_173
+      - 🇵🇱_PL_174
+      - 🇵🇱_PL_175
+      - 🇵🇱_PL_176
+      - 🇵🇱_PL_177
+      - 🇷🇺_RU_178
+      - 🇵🇱_PL_179
+      - 🇵🇱_PL_180
+      - 🇵🇱_PL_181
+      - 🇵🇱_PL_182
+      - 🇺🇸_US_183
+      - 🇵🇱_PL_184
+      - 🇵🇱_PL_185
+      - 🇵🇱_PL_186
+      - 🇵🇱_PL_187
+      - 🇵🇱_PL_188
+      - 🇵🇱_PL_189
+      - 🇸🇬_SG_190
+      - 🇺🇸_US_191
+      - 🇺🇸_US_192
+      - 🇬🇧_GB_193
+      - 🇺🇸_US_194
+      - 🇺🇸_US_195
+      - 🇺🇸_US_196
+      - 🇬🇧_GB_197
+      - 🇺🇸_US_198
+      - 🇺🇸_US_199
+      - 🇺🇸_US_200
+      - 🇰🇷_KR_201
+      - 🇺🇸_US_202
+      - 🇺🇸_US_203
+      - 🇺🇸_US_204
+      - 🇺🇸_US_205
+      - 🇺🇸_US_206
+      - 🇰🇷_KR_207
+      - 🇺🇸_US_208
+      - 🇺🇸_US_209
+      - 🇺🇸_US_210
+      - 🇺🇸_US_211
+      - 🇺🇸_US_212
+      - 🇰🇷_KR_213
+      - 🇰🇷_KR_214
+      - 🇺🇸_US_215
+      - 🇺🇸_US_216
+      - 🇺🇸_US_217
+      - 🇺🇸_US_218
+      - 🇺🇸_US_219
+      - 🇺🇸_US_220
+      - 🇺🇸_US_221
+      - 🇺🇸_US_222
+      - 🇺🇸_US_223
+      - 🇺🇸_US_224
+      - 🇬🇧_GB_225
+      - 🇺🇸_US_226
+      - 🇺🇸_US_227
+      - 🇬🇧_GB_228
+      - 🇺🇸_US_229
+      - 🇬🇧_GB_230
+      - 🇬🇧_GB_231
+      - 🇰🇷_KR_232
+      - 🇬🇧_GB_233
+      - 🇺🇸_US_234
+      - 🇬🇧_GB_235
+      - 🇺🇸_US_236
+      - 🇺🇸_US_237
+      - 🇺🇸_US_238
+      - 🇺🇸_US_239
+      - 🇺🇸_US_240
+      - 🇺🇸_US_241
+      - 🇺🇸_US_242
+      - 🇺🇸_US_243
+      - 🇬🇧_GB_244
+      - 🇬🇧_GB_245
+      - 🇬🇧_GB_246
+      - 🇮🇳_IN_247
+      - 🇺🇸_US_248
+      - 🇺🇸_US_249
+      - 🇬🇧_GB_250
+      - 🇺🇸_US_251
+      - 🇺🇸_US_252
+      - 🇺🇸_US_253
+      - 🇺🇸_US_254
+      - 🇺🇸_US_255
+      - 🇺🇸_US_256
+      - 🇺🇸_US_257
+      - 🇺🇸_US_258
+      - 🇺🇸_US_259
+      - 🇺🇸_US_260
+      - 🇺🇸_US_261
+      - 🇺🇸_US_262
+      - 🇺🇸_US_263
+      - 🇰🇷_KR_264
+      - 🇺🇸_US_265
+      - 🇨🇦_CA_266
+      - 🇨🇦_CA_267
+      - 🇨🇦_CA_268
+      - 🇨🇦_CA_269
+      - 🇨🇦_CA_270
+      - 🇺🇸_US_271
+      - 🇨🇦_CA_272
+      - 🇨🇦_CA_273
+      - 🇨🇦_CA_274
+      - 🇺🇸_US_275
+      - 🇺🇸_US_276
+      - 
+      - 🇨🇦_CA_278
+      - 🇨🇦_CA_279
+      - 🇨🇦_CA_280
+      - 
+      - 
+      - 
+      - 
+      - 🇨🇦_CA_285
+      - 🇺🇸_US_286
+      - 🇨🇦_CA_287
+      - 🇨🇦_CA_288
+      - 🇺🇸_US_289
+      - 🇨🇦_CA_290
+      - 🇨🇦_CA_291
+      - 🇨🇦_CA_292
+      - 🇺🇸_US_293
+      - 🇨🇦_CA_294
+      - 🇺🇸_US_295
+      - 
+      - 🇺🇸_US_297
+      - 🇺🇸_US_298
+      - 🇺🇸_US_299
+      - 🇺🇸_US_300
+      - 
+      - 🇨🇦_CA_302
+      - 🇨🇦_CA_303
+      - 🇨🇦_CA_304
+      - 
+      - 🇨🇦_CA_306
+      - 
+      - 🇨🇦_CA_308
+      - 🇨🇦_CA_309
+      - 
+      - 🇨🇦_CA_311
+      - 🇨🇦_CA_312
+      - 
+      - 
+      - 
+      - 
+      - 🇺🇸_US_317
+      - 
+      - 
+      - 🇨🇦_CA_320
+      - 
+      - 🇨🇦_CA_322
+      - 🇨🇦_CA_323
+      - 
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵_JP_1
-      - 🇬🇧_GB_2
-      - 🇷🇺_RU_3
-      - 🇷🇺_RU_4
-      - 🇷🇺_RU_5
-      - 🇨🇳_CN_6
-      - 🇷🇺_RU_7
+      - 🇦🇪_AE_1
+      - 🇦🇪_AE_2
+      - 🇦🇺_AU_3
+      - 🇦🇺_AU_4
+      - 🇦🇺_AU_5
+      - 🇦🇺_AU_6
+      - 🇨🇦_CA_7
+      - 🇨🇦_CA_8
+      - 🇨🇦_CA_9
+      - 🇨🇦_CA_10
+      - 🇨🇦_CA_11
+      - 🇨🇦_CA_12
+      - 🇨🇦_CA_13
+      - 🇨🇦_CA_14
+      - 🇨🇦_CA_15
+      - 🇨🇦_CA_16
+      - 🇨🇦_CA_17
+      - 🇨🇦_CA_18
+      - 🇨🇦_CA_19
+      - 🇨🇦_CA_20
+      - 🇨🇦_CA_21
+      - 🇨🇦_CA_22
+      - 🇨🇦_CA_23
+      - 🇨🇦_CA_24
+      - 🇨🇦_CA_25
+      - 🇨🇦_CA_26
+      - 🇨🇦_CA_27
+      - 🇨🇦_CA_28
+      - 🇨🇦_CA_29
+      - 🇨🇦_CA_30
+      - 🇨🇦_CA_31
+      - 🇨🇦_CA_32
+      - 🇸🇬_SG_33
+      - 🇨🇦_CA_34
+      - 🇨🇦_CA_35
+      - 🇨🇦_CA_36
+      - 
+      - 
+      - 
+      - 
+      - 🇨🇳_CN_41
+      - 
+      - 🇨🇳_CN_43
+      - 
+      - 🇨🇳_CN_45
+      - 
+      - 
+      - 🇩🇪_DE_48
+      - 🇩🇪_DE_49
+      - 🇩🇪_DE_50
+      - 🇩🇪_DE_51
+      - 🇩🇪_DE_52
+      - 🇩🇪_DE_53
+      - 🇩🇪_DE_54
+      - 🇩🇪_DE_55
+      - 🇩🇪_DE_56
+      - 🇩🇪_DE_57
+      - 🇫🇷_FR_58
+      - 🇬🇧_GB_59
+      - 🇬🇧_GB_60
+      - 🇬🇧_GB_61
+      - 🇬🇧_GB_62
+      - 🇬🇧_GB_63
+      - 🇬🇧_GB_64
+      - 🇬🇧_GB_65
+      - 🇬🇧_GB_66
+      - 🇬🇧_GB_67
+      - 🇬🇧_GB_68
+      - 🇬🇧_GB_69
+      - 🇬🇧_GB_70
+      - 🇬🇧_GB_71
+      - 🇬🇧_GB_72
+      - 🇬🇧_GB_73
+      - 🇬🇧_GB_74
+      - 🇬🇧_GB_75
+      - 🇬🇧_GB_76
+      - 🇬🇧_GB_77
+      - 🇬🇧_GB_78
+      - 🇬🇧_GB_79
+      - 🇬🇧_GB_80
+      - 🇯🇵_JP_81
+      - 🇰🇷_KR_82
+      - 🇰🇷_KR_83
+      - 🇷🇺_RU_84
+      - 🇷🇺_RU_85
+      - 🇷🇺_RU_86
+      - 🇷🇺_RU_87
+      - 🇷🇺_RU_88
+      - 🇷🇺_RU_89
+      - 🇷🇺_RU_90
+      - 🇷🇺_RU_91
+      - 🇷🇺_RU_92
+      - 🇷🇺_RU_93
+      - 🇷🇺_RU_94
+      - 🇧🇬_BG_95
+      - 🇷🇺_RU_96
+      - 🇷🇺_RU_97
+      - 🇷🇺_RU_98
+      - 🇷🇺_RU_99
+      - 🇷🇺_RU_100
+      - 🇧🇬_BG_101
+      - 🇷🇺_RU_102
+      - 🇷🇺_RU_103
+      - 🇷🇺_RU_104
+      - 🇷🇺_RU_105
+      - 🇷🇺_RU_106
+      - 🇷🇺_RU_107
+      - 🇷🇺_RU_108
+      - 🇷🇺_RU_109
+      - 🇷🇺_RU_110
+      - 🇧🇬_BG_111
+      - 🇷🇺_RU_112
+      - 🇷🇺_RU_113
+      - 🇷🇺_RU_114
+      - 🇷🇺_RU_115
+      - 🇧🇬_BG_116
+      - 🇷🇺_RU_117
+      - 🇷🇺_RU_118
+      - 🇷🇺_RU_119
+      - 🇷🇺_RU_120
+      - 🇷🇺_RU_121
+      - 🇷🇺_RU_122
+      - 🇷🇺_RU_123
+      - 🇳🇱_NL_124
+      - 🇳🇱_NL_125
+      - 🇳🇱_NL_126
+      - 🇳🇱_NL_127
+      - 🇳🇱_NL_128
+      - 🇳🇱_NL_129
+      - 🇳🇱_NL_130
+      - 🇳🇱_NL_131
+      - 🇳🇱_NL_132
+      - 🇳🇱_NL_133
+      - 🇳🇱_NL_134
+      - 🇨🇭_CH_135
+      - 🇨🇭_CH_136
+      - 🇨🇭_CH_137
+      - 🇨🇭_CH_138
+      - 🇵🇱_PL_139
+      - 🇵🇱_PL_140
+      - 🇵🇱_PL_141
+      - 🇵🇱_PL_142
+      - 🇵🇱_PL_143
+      - 🇵🇱_PL_144
+      - 🇵🇱_PL_145
+      - 🇵🇱_PL_146
+      - 🇵🇱_PL_147
+      - 🇵🇱_PL_148
+      - 🇵🇱_PL_149
+      - 🇵🇱_PL_150
+      - 🇵🇱_PL_151
+      - 🇵🇱_PL_152
+      - 🇵🇱_PL_153
+      - 🇵🇱_PL_154
+      - 🇵🇱_PL_155
+      - 🇵🇱_PL_156
+      - 🇵🇱_PL_157
+      - 🇵🇱_PL_158
+      - 🇵🇱_PL_159
+      - 🇵🇱_PL_160
+      - 🇵🇱_PL_161
+      - 🇵🇱_PL_162
+      - 🇵🇱_PL_163
+      - 🇵🇱_PL_164
+      - 🇵🇱_PL_165
+      - 🇵🇱_PL_166
+      - 🇵🇱_PL_167
+      - 🇵🇱_PL_168
+      - 🇵🇱_PL_169
+      - 🇵🇱_PL_170
+      - 🇵🇱_PL_171
+      - 🇵🇱_PL_172
+      - 🇵🇱_PL_173
+      - 🇵🇱_PL_174
+      - 🇵🇱_PL_175
+      - 🇵🇱_PL_176
+      - 🇵🇱_PL_177
+      - 🇷🇺_RU_178
+      - 🇵🇱_PL_179
+      - 🇵🇱_PL_180
+      - 🇵🇱_PL_181
+      - 🇵🇱_PL_182
+      - 🇺🇸_US_183
+      - 🇵🇱_PL_184
+      - 🇵🇱_PL_185
+      - 🇵🇱_PL_186
+      - 🇵🇱_PL_187
+      - 🇵🇱_PL_188
+      - 🇵🇱_PL_189
+      - 🇸🇬_SG_190
+      - 🇺🇸_US_191
+      - 🇺🇸_US_192
+      - 🇬🇧_GB_193
+      - 🇺🇸_US_194
+      - 🇺🇸_US_195
+      - 🇺🇸_US_196
+      - 🇬🇧_GB_197
+      - 🇺🇸_US_198
+      - 🇺🇸_US_199
+      - 🇺🇸_US_200
+      - 🇰🇷_KR_201
+      - 🇺🇸_US_202
+      - 🇺🇸_US_203
+      - 🇺🇸_US_204
+      - 🇺🇸_US_205
+      - 🇺🇸_US_206
+      - 🇰🇷_KR_207
+      - 🇺🇸_US_208
+      - 🇺🇸_US_209
+      - 🇺🇸_US_210
+      - 🇺🇸_US_211
+      - 🇺🇸_US_212
+      - 🇰🇷_KR_213
+      - 🇰🇷_KR_214
+      - 🇺🇸_US_215
+      - 🇺🇸_US_216
+      - 🇺🇸_US_217
+      - 🇺🇸_US_218
+      - 🇺🇸_US_219
+      - 🇺🇸_US_220
+      - 🇺🇸_US_221
+      - 🇺🇸_US_222
+      - 🇺🇸_US_223
+      - 🇺🇸_US_224
+      - 🇬🇧_GB_225
+      - 🇺🇸_US_226
+      - 🇺🇸_US_227
+      - 🇬🇧_GB_228
+      - 🇺🇸_US_229
+      - 🇬🇧_GB_230
+      - 🇬🇧_GB_231
+      - 🇰🇷_KR_232
+      - 🇬🇧_GB_233
+      - 🇺🇸_US_234
+      - 🇬🇧_GB_235
+      - 🇺🇸_US_236
+      - 🇺🇸_US_237
+      - 🇺🇸_US_238
+      - 🇺🇸_US_239
+      - 🇺🇸_US_240
+      - 🇺🇸_US_241
+      - 🇺🇸_US_242
+      - 🇺🇸_US_243
+      - 🇬🇧_GB_244
+      - 🇬🇧_GB_245
+      - 🇬🇧_GB_246
+      - 🇮🇳_IN_247
+      - 🇺🇸_US_248
+      - 🇺🇸_US_249
+      - 🇬🇧_GB_250
+      - 🇺🇸_US_251
+      - 🇺🇸_US_252
+      - 🇺🇸_US_253
+      - 🇺🇸_US_254
+      - 🇺🇸_US_255
+      - 🇺🇸_US_256
+      - 🇺🇸_US_257
+      - 🇺🇸_US_258
+      - 🇺🇸_US_259
+      - 🇺🇸_US_260
+      - 🇺🇸_US_261
+      - 🇺🇸_US_262
+      - 🇺🇸_US_263
+      - 🇰🇷_KR_264
+      - 🇺🇸_US_265
+      - 🇨🇦_CA_266
+      - 🇨🇦_CA_267
+      - 🇨🇦_CA_268
+      - 🇨🇦_CA_269
+      - 🇨🇦_CA_270
+      - 🇺🇸_US_271
+      - 🇨🇦_CA_272
+      - 🇨🇦_CA_273
+      - 🇨🇦_CA_274
+      - 🇺🇸_US_275
+      - 🇺🇸_US_276
+      - 
+      - 🇨🇦_CA_278
+      - 🇨🇦_CA_279
+      - 🇨🇦_CA_280
+      - 
+      - 
+      - 
+      - 
+      - 🇨🇦_CA_285
+      - 🇺🇸_US_286
+      - 🇨🇦_CA_287
+      - 🇨🇦_CA_288
+      - 🇺🇸_US_289
+      - 🇨🇦_CA_290
+      - 🇨🇦_CA_291
+      - 🇨🇦_CA_292
+      - 🇺🇸_US_293
+      - 🇨🇦_CA_294
+      - 🇺🇸_US_295
+      - 
+      - 🇺🇸_US_297
+      - 🇺🇸_US_298
+      - 🇺🇸_US_299
+      - 🇺🇸_US_300
+      - 
+      - 🇨🇦_CA_302
+      - 🇨🇦_CA_303
+      - 🇨🇦_CA_304
+      - 
+      - 🇨🇦_CA_306
+      - 
+      - 🇨🇦_CA_308
+      - 🇨🇦_CA_309
+      - 
+      - 🇨🇦_CA_311
+      - 🇨🇦_CA_312
+      - 
+      - 
+      - 
+      - 
+      - 🇺🇸_US_317
+      - 
+      - 
+      - 🇨🇦_CA_320
+      - 
+      - 🇨🇦_CA_322
+      - 🇨🇦_CA_323
+      - 
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇯🇵_JP_1
-      - 🇬🇧_GB_2
-      - 🇷🇺_RU_3
-      - 🇷🇺_RU_4
-      - 🇷🇺_RU_5
-      - 🇨🇳_CN_6
-      - 🇷🇺_RU_7
+      - 🇦🇪_AE_1
+      - 🇦🇪_AE_2
+      - 🇦🇺_AU_3
+      - 🇦🇺_AU_4
+      - 🇦🇺_AU_5
+      - 🇦🇺_AU_6
+      - 🇨🇦_CA_7
+      - 🇨🇦_CA_8
+      - 🇨🇦_CA_9
+      - 🇨🇦_CA_10
+      - 🇨🇦_CA_11
+      - 🇨🇦_CA_12
+      - 🇨🇦_CA_13
+      - 🇨🇦_CA_14
+      - 🇨🇦_CA_15
+      - 🇨🇦_CA_16
+      - 🇨🇦_CA_17
+      - 🇨🇦_CA_18
+      - 🇨🇦_CA_19
+      - 🇨🇦_CA_20
+      - 🇨🇦_CA_21
+      - 🇨🇦_CA_22
+      - 🇨🇦_CA_23
+      - 🇨🇦_CA_24
+      - 🇨🇦_CA_25
+      - 🇨🇦_CA_26
+      - 🇨🇦_CA_27
+      - 🇨🇦_CA_28
+      - 🇨🇦_CA_29
+      - 🇨🇦_CA_30
+      - 🇨🇦_CA_31
+      - 🇨🇦_CA_32
+      - 🇸🇬_SG_33
+      - 🇨🇦_CA_34
+      - 🇨🇦_CA_35
+      - 🇨🇦_CA_36
+      - 
+      - 
+      - 
+      - 
+      - 🇨🇳_CN_41
+      - 
+      - 🇨🇳_CN_43
+      - 
+      - 🇨🇳_CN_45
+      - 
+      - 
+      - 🇩🇪_DE_48
+      - 🇩🇪_DE_49
+      - 🇩🇪_DE_50
+      - 🇩🇪_DE_51
+      - 🇩🇪_DE_52
+      - 🇩🇪_DE_53
+      - 🇩🇪_DE_54
+      - 🇩🇪_DE_55
+      - 🇩🇪_DE_56
+      - 🇩🇪_DE_57
+      - 🇫🇷_FR_58
+      - 🇬🇧_GB_59
+      - 🇬🇧_GB_60
+      - 🇬🇧_GB_61
+      - 🇬🇧_GB_62
+      - 🇬🇧_GB_63
+      - 🇬🇧_GB_64
+      - 🇬🇧_GB_65
+      - 🇬🇧_GB_66
+      - 🇬🇧_GB_67
+      - 🇬🇧_GB_68
+      - 🇬🇧_GB_69
+      - 🇬🇧_GB_70
+      - 🇬🇧_GB_71
+      - 🇬🇧_GB_72
+      - 🇬🇧_GB_73
+      - 🇬🇧_GB_74
+      - 🇬🇧_GB_75
+      - 🇬🇧_GB_76
+      - 🇬🇧_GB_77
+      - 🇬🇧_GB_78
+      - 🇬🇧_GB_79
+      - 🇬🇧_GB_80
+      - 🇯🇵_JP_81
+      - 🇰🇷_KR_82
+      - 🇰🇷_KR_83
+      - 🇷🇺_RU_84
+      - 🇷🇺_RU_85
+      - 🇷🇺_RU_86
+      - 🇷🇺_RU_87
+      - 🇷🇺_RU_88
+      - 🇷🇺_RU_89
+      - 🇷🇺_RU_90
+      - 🇷🇺_RU_91
+      - 🇷🇺_RU_92
+      - 🇷🇺_RU_93
+      - 🇷🇺_RU_94
+      - 🇧🇬_BG_95
+      - 🇷🇺_RU_96
+      - 🇷🇺_RU_97
+      - 🇷🇺_RU_98
+      - 🇷🇺_RU_99
+      - 🇷🇺_RU_100
+      - 🇧🇬_BG_101
+      - 🇷🇺_RU_102
+      - 🇷🇺_RU_103
+      - 🇷🇺_RU_104
+      - 🇷🇺_RU_105
+      - 🇷🇺_RU_106
+      - 🇷🇺_RU_107
+      - 🇷🇺_RU_108
+      - 🇷🇺_RU_109
+      - 🇷🇺_RU_110
+      - 🇧🇬_BG_111
+      - 🇷🇺_RU_112
+      - 🇷🇺_RU_113
+      - 🇷🇺_RU_114
+      - 🇷🇺_RU_115
+      - 🇧🇬_BG_116
+      - 🇷🇺_RU_117
+      - 🇷🇺_RU_118
+      - 🇷🇺_RU_119
+      - 🇷🇺_RU_120
+      - 🇷🇺_RU_121
+      - 🇷🇺_RU_122
+      - 🇷🇺_RU_123
+      - 🇳🇱_NL_124
+      - 🇳🇱_NL_125
+      - 🇳🇱_NL_126
+      - 🇳🇱_NL_127
+      - 🇳🇱_NL_128
+      - 🇳🇱_NL_129
+      - 🇳🇱_NL_130
+      - 🇳🇱_NL_131
+      - 🇳🇱_NL_132
+      - 🇳🇱_NL_133
+      - 🇳🇱_NL_134
+      - 🇨🇭_CH_135
+      - 🇨🇭_CH_136
+      - 🇨🇭_CH_137
+      - 🇨🇭_CH_138
+      - 🇵🇱_PL_139
+      - 🇵🇱_PL_140
+      - 🇵🇱_PL_141
+      - 🇵🇱_PL_142
+      - 🇵🇱_PL_143
+      - 🇵🇱_PL_144
+      - 🇵🇱_PL_145
+      - 🇵🇱_PL_146
+      - 🇵🇱_PL_147
+      - 🇵🇱_PL_148
+      - 🇵🇱_PL_149
+      - 🇵🇱_PL_150
+      - 🇵🇱_PL_151
+      - 🇵🇱_PL_152
+      - 🇵🇱_PL_153
+      - 🇵🇱_PL_154
+      - 🇵🇱_PL_155
+      - 🇵🇱_PL_156
+      - 🇵🇱_PL_157
+      - 🇵🇱_PL_158
+      - 🇵🇱_PL_159
+      - 🇵🇱_PL_160
+      - 🇵🇱_PL_161
+      - 🇵🇱_PL_162
+      - 🇵🇱_PL_163
+      - 🇵🇱_PL_164
+      - 🇵🇱_PL_165
+      - 🇵🇱_PL_166
+      - 🇵🇱_PL_167
+      - 🇵🇱_PL_168
+      - 🇵🇱_PL_169
+      - 🇵🇱_PL_170
+      - 🇵🇱_PL_171
+      - 🇵🇱_PL_172
+      - 🇵🇱_PL_173
+      - 🇵🇱_PL_174
+      - 🇵🇱_PL_175
+      - 🇵🇱_PL_176
+      - 🇵🇱_PL_177
+      - 🇷🇺_RU_178
+      - 🇵🇱_PL_179
+      - 🇵🇱_PL_180
+      - 🇵🇱_PL_181
+      - 🇵🇱_PL_182
+      - 🇺🇸_US_183
+      - 🇵🇱_PL_184
+      - 🇵🇱_PL_185
+      - 🇵🇱_PL_186
+      - 🇵🇱_PL_187
+      - 🇵🇱_PL_188
+      - 🇵🇱_PL_189
+      - 🇸🇬_SG_190
+      - 🇺🇸_US_191
+      - 🇺🇸_US_192
+      - 🇬🇧_GB_193
+      - 🇺🇸_US_194
+      - 🇺🇸_US_195
+      - 🇺🇸_US_196
+      - 🇬🇧_GB_197
+      - 🇺🇸_US_198
+      - 🇺🇸_US_199
+      - 🇺🇸_US_200
+      - 🇰🇷_KR_201
+      - 🇺🇸_US_202
+      - 🇺🇸_US_203
+      - 🇺🇸_US_204
+      - 🇺🇸_US_205
+      - 🇺🇸_US_206
+      - 🇰🇷_KR_207
+      - 🇺🇸_US_208
+      - 🇺🇸_US_209
+      - 🇺🇸_US_210
+      - 🇺🇸_US_211
+      - 🇺🇸_US_212
+      - 🇰🇷_KR_213
+      - 🇰🇷_KR_214
+      - 🇺🇸_US_215
+      - 🇺🇸_US_216
+      - 🇺🇸_US_217
+      - 🇺🇸_US_218
+      - 🇺🇸_US_219
+      - 🇺🇸_US_220
+      - 🇺🇸_US_221
+      - 🇺🇸_US_222
+      - 🇺🇸_US_223
+      - 🇺🇸_US_224
+      - 🇬🇧_GB_225
+      - 🇺🇸_US_226
+      - 🇺🇸_US_227
+      - 🇬🇧_GB_228
+      - 🇺🇸_US_229
+      - 🇬🇧_GB_230
+      - 🇬🇧_GB_231
+      - 🇰🇷_KR_232
+      - 🇬🇧_GB_233
+      - 🇺🇸_US_234
+      - 🇬🇧_GB_235
+      - 🇺🇸_US_236
+      - 🇺🇸_US_237
+      - 🇺🇸_US_238
+      - 🇺🇸_US_239
+      - 🇺🇸_US_240
+      - 🇺🇸_US_241
+      - 🇺🇸_US_242
+      - 🇺🇸_US_243
+      - 🇬🇧_GB_244
+      - 🇬🇧_GB_245
+      - 🇬🇧_GB_246
+      - 🇮🇳_IN_247
+      - 🇺🇸_US_248
+      - 🇺🇸_US_249
+      - 🇬🇧_GB_250
+      - 🇺🇸_US_251
+      - 🇺🇸_US_252
+      - 🇺🇸_US_253
+      - 🇺🇸_US_254
+      - 🇺🇸_US_255
+      - 🇺🇸_US_256
+      - 🇺🇸_US_257
+      - 🇺🇸_US_258
+      - 🇺🇸_US_259
+      - 🇺🇸_US_260
+      - 🇺🇸_US_261
+      - 🇺🇸_US_262
+      - 🇺🇸_US_263
+      - 🇰🇷_KR_264
+      - 🇺🇸_US_265
+      - 🇨🇦_CA_266
+      - 🇨🇦_CA_267
+      - 🇨🇦_CA_268
+      - 🇨🇦_CA_269
+      - 🇨🇦_CA_270
+      - 🇺🇸_US_271
+      - 🇨🇦_CA_272
+      - 🇨🇦_CA_273
+      - 🇨🇦_CA_274
+      - 🇺🇸_US_275
+      - 🇺🇸_US_276
+      - 
+      - 🇨🇦_CA_278
+      - 🇨🇦_CA_279
+      - 🇨🇦_CA_280
+      - 
+      - 
+      - 
+      - 
+      - 🇨🇦_CA_285
+      - 🇺🇸_US_286
+      - 🇨🇦_CA_287
+      - 🇨🇦_CA_288
+      - 🇺🇸_US_289
+      - 🇨🇦_CA_290
+      - 🇨🇦_CA_291
+      - 🇨🇦_CA_292
+      - 🇺🇸_US_293
+      - 🇨🇦_CA_294
+      - 🇺🇸_US_295
+      - 
+      - 🇺🇸_US_297
+      - 🇺🇸_US_298
+      - 🇺🇸_US_299
+      - 🇺🇸_US_300
+      - 
+      - 🇨🇦_CA_302
+      - 🇨🇦_CA_303
+      - 🇨🇦_CA_304
+      - 
+      - 🇨🇦_CA_306
+      - 
+      - 🇨🇦_CA_308
+      - 🇨🇦_CA_309
+      - 
+      - 🇨🇦_CA_311
+      - 🇨🇦_CA_312
+      - 
+      - 
+      - 
+      - 
+      - 🇺🇸_US_317
+      - 
+      - 
+      - 🇨🇦_CA_320
+      - 
+      - 🇨🇦_CA_322
+      - 🇨🇦_CA_323
+      - 
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵_JP_1
-      - 🇬🇧_GB_2
-      - 🇷🇺_RU_3
-      - 🇷🇺_RU_4
-      - 🇷🇺_RU_5
-      - 🇨🇳_CN_6
-      - 🇷🇺_RU_7
+      - 🇦🇪_AE_1
+      - 🇦🇪_AE_2
+      - 🇦🇺_AU_3
+      - 🇦🇺_AU_4
+      - 🇦🇺_AU_5
+      - 🇦🇺_AU_6
+      - 🇨🇦_CA_7
+      - 🇨🇦_CA_8
+      - 🇨🇦_CA_9
+      - 🇨🇦_CA_10
+      - 🇨🇦_CA_11
+      - 🇨🇦_CA_12
+      - 🇨🇦_CA_13
+      - 🇨🇦_CA_14
+      - 🇨🇦_CA_15
+      - 🇨🇦_CA_16
+      - 🇨🇦_CA_17
+      - 🇨🇦_CA_18
+      - 🇨🇦_CA_19
+      - 🇨🇦_CA_20
+      - 🇨🇦_CA_21
+      - 🇨🇦_CA_22
+      - 🇨🇦_CA_23
+      - 🇨🇦_CA_24
+      - 🇨🇦_CA_25
+      - 🇨🇦_CA_26
+      - 🇨🇦_CA_27
+      - 🇨🇦_CA_28
+      - 🇨🇦_CA_29
+      - 🇨🇦_CA_30
+      - 🇨🇦_CA_31
+      - 🇨🇦_CA_32
+      - 🇸🇬_SG_33
+      - 🇨🇦_CA_34
+      - 🇨🇦_CA_35
+      - 🇨🇦_CA_36
+      - 
+      - 
+      - 
+      - 
+      - 🇨🇳_CN_41
+      - 
+      - 🇨🇳_CN_43
+      - 
+      - 🇨🇳_CN_45
+      - 
+      - 
+      - 🇩🇪_DE_48
+      - 🇩🇪_DE_49
+      - 🇩🇪_DE_50
+      - 🇩🇪_DE_51
+      - 🇩🇪_DE_52
+      - 🇩🇪_DE_53
+      - 🇩🇪_DE_54
+      - 🇩🇪_DE_55
+      - 🇩🇪_DE_56
+      - 🇩🇪_DE_57
+      - 🇫🇷_FR_58
+      - 🇬🇧_GB_59
+      - 🇬🇧_GB_60
+      - 🇬🇧_GB_61
+      - 🇬🇧_GB_62
+      - 🇬🇧_GB_63
+      - 🇬🇧_GB_64
+      - 🇬🇧_GB_65
+      - 🇬🇧_GB_66
+      - 🇬🇧_GB_67
+      - 🇬🇧_GB_68
+      - 🇬🇧_GB_69
+      - 🇬🇧_GB_70
+      - 🇬🇧_GB_71
+      - 🇬🇧_GB_72
+      - 🇬🇧_GB_73
+      - 🇬🇧_GB_74
+      - 🇬🇧_GB_75
+      - 🇬🇧_GB_76
+      - 🇬🇧_GB_77
+      - 🇬🇧_GB_78
+      - 🇬🇧_GB_79
+      - 🇬🇧_GB_80
+      - 🇯🇵_JP_81
+      - 🇰🇷_KR_82
+      - 🇰🇷_KR_83
+      - 🇷🇺_RU_84
+      - 🇷🇺_RU_85
+      - 🇷🇺_RU_86
+      - 🇷🇺_RU_87
+      - 🇷🇺_RU_88
+      - 🇷🇺_RU_89
+      - 🇷🇺_RU_90
+      - 🇷🇺_RU_91
+      - 🇷🇺_RU_92
+      - 🇷🇺_RU_93
+      - 🇷🇺_RU_94
+      - 🇧🇬_BG_95
+      - 🇷🇺_RU_96
+      - 🇷🇺_RU_97
+      - 🇷🇺_RU_98
+      - 🇷🇺_RU_99
+      - 🇷🇺_RU_100
+      - 🇧🇬_BG_101
+      - 🇷🇺_RU_102
+      - 🇷🇺_RU_103
+      - 🇷🇺_RU_104
+      - 🇷🇺_RU_105
+      - 🇷🇺_RU_106
+      - 🇷🇺_RU_107
+      - 🇷🇺_RU_108
+      - 🇷🇺_RU_109
+      - 🇷🇺_RU_110
+      - 🇧🇬_BG_111
+      - 🇷🇺_RU_112
+      - 🇷🇺_RU_113
+      - 🇷🇺_RU_114
+      - 🇷🇺_RU_115
+      - 🇧🇬_BG_116
+      - 🇷🇺_RU_117
+      - 🇷🇺_RU_118
+      - 🇷🇺_RU_119
+      - 🇷🇺_RU_120
+      - 🇷🇺_RU_121
+      - 🇷🇺_RU_122
+      - 🇷🇺_RU_123
+      - 🇳🇱_NL_124
+      - 🇳🇱_NL_125
+      - 🇳🇱_NL_126
+      - 🇳🇱_NL_127
+      - 🇳🇱_NL_128
+      - 🇳🇱_NL_129
+      - 🇳🇱_NL_130
+      - 🇳🇱_NL_131
+      - 🇳🇱_NL_132
+      - 🇳🇱_NL_133
+      - 🇳🇱_NL_134
+      - 🇨🇭_CH_135
+      - 🇨🇭_CH_136
+      - 🇨🇭_CH_137
+      - 🇨🇭_CH_138
+      - 🇵🇱_PL_139
+      - 🇵🇱_PL_140
+      - 🇵🇱_PL_141
+      - 🇵🇱_PL_142
+      - 🇵🇱_PL_143
+      - 🇵🇱_PL_144
+      - 🇵🇱_PL_145
+      - 🇵🇱_PL_146
+      - 🇵🇱_PL_147
+      - 🇵🇱_PL_148
+      - 🇵🇱_PL_149
+      - 🇵🇱_PL_150
+      - 🇵🇱_PL_151
+      - 🇵🇱_PL_152
+      - 🇵🇱_PL_153
+      - 🇵🇱_PL_154
+      - 🇵🇱_PL_155
+      - 🇵🇱_PL_156
+      - 🇵🇱_PL_157
+      - 🇵🇱_PL_158
+      - 🇵🇱_PL_159
+      - 🇵🇱_PL_160
+      - 🇵🇱_PL_161
+      - 🇵🇱_PL_162
+      - 🇵🇱_PL_163
+      - 🇵🇱_PL_164
+      - 🇵🇱_PL_165
+      - 🇵🇱_PL_166
+      - 🇵🇱_PL_167
+      - 🇵🇱_PL_168
+      - 🇵🇱_PL_169
+      - 🇵🇱_PL_170
+      - 🇵🇱_PL_171
+      - 🇵🇱_PL_172
+      - 🇵🇱_PL_173
+      - 🇵🇱_PL_174
+      - 🇵🇱_PL_175
+      - 🇵🇱_PL_176
+      - 🇵🇱_PL_177
+      - 🇷🇺_RU_178
+      - 🇵🇱_PL_179
+      - 🇵🇱_PL_180
+      - 🇵🇱_PL_181
+      - 🇵🇱_PL_182
+      - 🇺🇸_US_183
+      - 🇵🇱_PL_184
+      - 🇵🇱_PL_185
+      - 🇵🇱_PL_186
+      - 🇵🇱_PL_187
+      - 🇵🇱_PL_188
+      - 🇵🇱_PL_189
+      - 🇸🇬_SG_190
+      - 🇺🇸_US_191
+      - 🇺🇸_US_192
+      - 🇬🇧_GB_193
+      - 🇺🇸_US_194
+      - 🇺🇸_US_195
+      - 🇺🇸_US_196
+      - 🇬🇧_GB_197
+      - 🇺🇸_US_198
+      - 🇺🇸_US_199
+      - 🇺🇸_US_200
+      - 🇰🇷_KR_201
+      - 🇺🇸_US_202
+      - 🇺🇸_US_203
+      - 🇺🇸_US_204
+      - 🇺🇸_US_205
+      - 🇺🇸_US_206
+      - 🇰🇷_KR_207
+      - 🇺🇸_US_208
+      - 🇺🇸_US_209
+      - 🇺🇸_US_210
+      - 🇺🇸_US_211
+      - 🇺🇸_US_212
+      - 🇰🇷_KR_213
+      - 🇰🇷_KR_214
+      - 🇺🇸_US_215
+      - 🇺🇸_US_216
+      - 🇺🇸_US_217
+      - 🇺🇸_US_218
+      - 🇺🇸_US_219
+      - 🇺🇸_US_220
+      - 🇺🇸_US_221
+      - 🇺🇸_US_222
+      - 🇺🇸_US_223
+      - 🇺🇸_US_224
+      - 🇬🇧_GB_225
+      - 🇺🇸_US_226
+      - 🇺🇸_US_227
+      - 🇬🇧_GB_228
+      - 🇺🇸_US_229
+      - 🇬🇧_GB_230
+      - 🇬🇧_GB_231
+      - 🇰🇷_KR_232
+      - 🇬🇧_GB_233
+      - 🇺🇸_US_234
+      - 🇬🇧_GB_235
+      - 🇺🇸_US_236
+      - 🇺🇸_US_237
+      - 🇺🇸_US_238
+      - 🇺🇸_US_239
+      - 🇺🇸_US_240
+      - 🇺🇸_US_241
+      - 🇺🇸_US_242
+      - 🇺🇸_US_243
+      - 🇬🇧_GB_244
+      - 🇬🇧_GB_245
+      - 🇬🇧_GB_246
+      - 🇮🇳_IN_247
+      - 🇺🇸_US_248
+      - 🇺🇸_US_249
+      - 🇬🇧_GB_250
+      - 🇺🇸_US_251
+      - 🇺🇸_US_252
+      - 🇺🇸_US_253
+      - 🇺🇸_US_254
+      - 🇺🇸_US_255
+      - 🇺🇸_US_256
+      - 🇺🇸_US_257
+      - 🇺🇸_US_258
+      - 🇺🇸_US_259
+      - 🇺🇸_US_260
+      - 🇺🇸_US_261
+      - 🇺🇸_US_262
+      - 🇺🇸_US_263
+      - 🇰🇷_KR_264
+      - 🇺🇸_US_265
+      - 🇨🇦_CA_266
+      - 🇨🇦_CA_267
+      - 🇨🇦_CA_268
+      - 🇨🇦_CA_269
+      - 🇨🇦_CA_270
+      - 🇺🇸_US_271
+      - 🇨🇦_CA_272
+      - 🇨🇦_CA_273
+      - 🇨🇦_CA_274
+      - 🇺🇸_US_275
+      - 🇺🇸_US_276
+      - 
+      - 🇨🇦_CA_278
+      - 🇨🇦_CA_279
+      - 🇨🇦_CA_280
+      - 
+      - 
+      - 
+      - 
+      - 🇨🇦_CA_285
+      - 🇺🇸_US_286
+      - 🇨🇦_CA_287
+      - 🇨🇦_CA_288
+      - 🇺🇸_US_289
+      - 🇨🇦_CA_290
+      - 🇨🇦_CA_291
+      - 🇨🇦_CA_292
+      - 🇺🇸_US_293
+      - 🇨🇦_CA_294
+      - 🇺🇸_US_295
+      - 
+      - 🇺🇸_US_297
+      - 🇺🇸_US_298
+      - 🇺🇸_US_299
+      - 🇺🇸_US_300
+      - 
+      - 🇨🇦_CA_302
+      - 🇨🇦_CA_303
+      - 🇨🇦_CA_304
+      - 
+      - 🇨🇦_CA_306
+      - 
+      - 🇨🇦_CA_308
+      - 🇨🇦_CA_309
+      - 
+      - 🇨🇦_CA_311
+      - 🇨🇦_CA_312
+      - 
+      - 
+      - 
+      - 
+      - 🇺🇸_US_317
+      - 
+      - 
+      - 🇨🇦_CA_320
+      - 
+      - 🇨🇦_CA_322
+      - 🇨🇦_CA_323
+      - 
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -109,13 +2328,330 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵_JP_1
-      - 🇬🇧_GB_2
-      - 🇷🇺_RU_3
-      - 🇷🇺_RU_4
-      - 🇷🇺_RU_5
-      - 🇨🇳_CN_6
-      - 🇷🇺_RU_7
+      - 🇦🇪_AE_1
+      - 🇦🇪_AE_2
+      - 🇦🇺_AU_3
+      - 🇦🇺_AU_4
+      - 🇦🇺_AU_5
+      - 🇦🇺_AU_6
+      - 🇨🇦_CA_7
+      - 🇨🇦_CA_8
+      - 🇨🇦_CA_9
+      - 🇨🇦_CA_10
+      - 🇨🇦_CA_11
+      - 🇨🇦_CA_12
+      - 🇨🇦_CA_13
+      - 🇨🇦_CA_14
+      - 🇨🇦_CA_15
+      - 🇨🇦_CA_16
+      - 🇨🇦_CA_17
+      - 🇨🇦_CA_18
+      - 🇨🇦_CA_19
+      - 🇨🇦_CA_20
+      - 🇨🇦_CA_21
+      - 🇨🇦_CA_22
+      - 🇨🇦_CA_23
+      - 🇨🇦_CA_24
+      - 🇨🇦_CA_25
+      - 🇨🇦_CA_26
+      - 🇨🇦_CA_27
+      - 🇨🇦_CA_28
+      - 🇨🇦_CA_29
+      - 🇨🇦_CA_30
+      - 🇨🇦_CA_31
+      - 🇨🇦_CA_32
+      - 🇸🇬_SG_33
+      - 🇨🇦_CA_34
+      - 🇨🇦_CA_35
+      - 🇨🇦_CA_36
+      - 
+      - 
+      - 
+      - 
+      - 🇨🇳_CN_41
+      - 
+      - 🇨🇳_CN_43
+      - 
+      - 🇨🇳_CN_45
+      - 
+      - 
+      - 🇩🇪_DE_48
+      - 🇩🇪_DE_49
+      - 🇩🇪_DE_50
+      - 🇩🇪_DE_51
+      - 🇩🇪_DE_52
+      - 🇩🇪_DE_53
+      - 🇩🇪_DE_54
+      - 🇩🇪_DE_55
+      - 🇩🇪_DE_56
+      - 🇩🇪_DE_57
+      - 🇫🇷_FR_58
+      - 🇬🇧_GB_59
+      - 🇬🇧_GB_60
+      - 🇬🇧_GB_61
+      - 🇬🇧_GB_62
+      - 🇬🇧_GB_63
+      - 🇬🇧_GB_64
+      - 🇬🇧_GB_65
+      - 🇬🇧_GB_66
+      - 🇬🇧_GB_67
+      - 🇬🇧_GB_68
+      - 🇬🇧_GB_69
+      - 🇬🇧_GB_70
+      - 🇬🇧_GB_71
+      - 🇬🇧_GB_72
+      - 🇬🇧_GB_73
+      - 🇬🇧_GB_74
+      - 🇬🇧_GB_75
+      - 🇬🇧_GB_76
+      - 🇬🇧_GB_77
+      - 🇬🇧_GB_78
+      - 🇬🇧_GB_79
+      - 🇬🇧_GB_80
+      - 🇯🇵_JP_81
+      - 🇰🇷_KR_82
+      - 🇰🇷_KR_83
+      - 🇷🇺_RU_84
+      - 🇷🇺_RU_85
+      - 🇷🇺_RU_86
+      - 🇷🇺_RU_87
+      - 🇷🇺_RU_88
+      - 🇷🇺_RU_89
+      - 🇷🇺_RU_90
+      - 🇷🇺_RU_91
+      - 🇷🇺_RU_92
+      - 🇷🇺_RU_93
+      - 🇷🇺_RU_94
+      - 🇧🇬_BG_95
+      - 🇷🇺_RU_96
+      - 🇷🇺_RU_97
+      - 🇷🇺_RU_98
+      - 🇷🇺_RU_99
+      - 🇷🇺_RU_100
+      - 🇧🇬_BG_101
+      - 🇷🇺_RU_102
+      - 🇷🇺_RU_103
+      - 🇷🇺_RU_104
+      - 🇷🇺_RU_105
+      - 🇷🇺_RU_106
+      - 🇷🇺_RU_107
+      - 🇷🇺_RU_108
+      - 🇷🇺_RU_109
+      - 🇷🇺_RU_110
+      - 🇧🇬_BG_111
+      - 🇷🇺_RU_112
+      - 🇷🇺_RU_113
+      - 🇷🇺_RU_114
+      - 🇷🇺_RU_115
+      - 🇧🇬_BG_116
+      - 🇷🇺_RU_117
+      - 🇷🇺_RU_118
+      - 🇷🇺_RU_119
+      - 🇷🇺_RU_120
+      - 🇷🇺_RU_121
+      - 🇷🇺_RU_122
+      - 🇷🇺_RU_123
+      - 🇳🇱_NL_124
+      - 🇳🇱_NL_125
+      - 🇳🇱_NL_126
+      - 🇳🇱_NL_127
+      - 🇳🇱_NL_128
+      - 🇳🇱_NL_129
+      - 🇳🇱_NL_130
+      - 🇳🇱_NL_131
+      - 🇳🇱_NL_132
+      - 🇳🇱_NL_133
+      - 🇳🇱_NL_134
+      - 🇨🇭_CH_135
+      - 🇨🇭_CH_136
+      - 🇨🇭_CH_137
+      - 🇨🇭_CH_138
+      - 🇵🇱_PL_139
+      - 🇵🇱_PL_140
+      - 🇵🇱_PL_141
+      - 🇵🇱_PL_142
+      - 🇵🇱_PL_143
+      - 🇵🇱_PL_144
+      - 🇵🇱_PL_145
+      - 🇵🇱_PL_146
+      - 🇵🇱_PL_147
+      - 🇵🇱_PL_148
+      - 🇵🇱_PL_149
+      - 🇵🇱_PL_150
+      - 🇵🇱_PL_151
+      - 🇵🇱_PL_152
+      - 🇵🇱_PL_153
+      - 🇵🇱_PL_154
+      - 🇵🇱_PL_155
+      - 🇵🇱_PL_156
+      - 🇵🇱_PL_157
+      - 🇵🇱_PL_158
+      - 🇵🇱_PL_159
+      - 🇵🇱_PL_160
+      - 🇵🇱_PL_161
+      - 🇵🇱_PL_162
+      - 🇵🇱_PL_163
+      - 🇵🇱_PL_164
+      - 🇵🇱_PL_165
+      - 🇵🇱_PL_166
+      - 🇵🇱_PL_167
+      - 🇵🇱_PL_168
+      - 🇵🇱_PL_169
+      - 🇵🇱_PL_170
+      - 🇵🇱_PL_171
+      - 🇵🇱_PL_172
+      - 🇵🇱_PL_173
+      - 🇵🇱_PL_174
+      - 🇵🇱_PL_175
+      - 🇵🇱_PL_176
+      - 🇵🇱_PL_177
+      - 🇷🇺_RU_178
+      - 🇵🇱_PL_179
+      - 🇵🇱_PL_180
+      - 🇵🇱_PL_181
+      - 🇵🇱_PL_182
+      - 🇺🇸_US_183
+      - 🇵🇱_PL_184
+      - 🇵🇱_PL_185
+      - 🇵🇱_PL_186
+      - 🇵🇱_PL_187
+      - 🇵🇱_PL_188
+      - 🇵🇱_PL_189
+      - 🇸🇬_SG_190
+      - 🇺🇸_US_191
+      - 🇺🇸_US_192
+      - 🇬🇧_GB_193
+      - 🇺🇸_US_194
+      - 🇺🇸_US_195
+      - 🇺🇸_US_196
+      - 🇬🇧_GB_197
+      - 🇺🇸_US_198
+      - 🇺🇸_US_199
+      - 🇺🇸_US_200
+      - 🇰🇷_KR_201
+      - 🇺🇸_US_202
+      - 🇺🇸_US_203
+      - 🇺🇸_US_204
+      - 🇺🇸_US_205
+      - 🇺🇸_US_206
+      - 🇰🇷_KR_207
+      - 🇺🇸_US_208
+      - 🇺🇸_US_209
+      - 🇺🇸_US_210
+      - 🇺🇸_US_211
+      - 🇺🇸_US_212
+      - 🇰🇷_KR_213
+      - 🇰🇷_KR_214
+      - 🇺🇸_US_215
+      - 🇺🇸_US_216
+      - 🇺🇸_US_217
+      - 🇺🇸_US_218
+      - 🇺🇸_US_219
+      - 🇺🇸_US_220
+      - 🇺🇸_US_221
+      - 🇺🇸_US_222
+      - 🇺🇸_US_223
+      - 🇺🇸_US_224
+      - 🇬🇧_GB_225
+      - 🇺🇸_US_226
+      - 🇺🇸_US_227
+      - 🇬🇧_GB_228
+      - 🇺🇸_US_229
+      - 🇬🇧_GB_230
+      - 🇬🇧_GB_231
+      - 🇰🇷_KR_232
+      - 🇬🇧_GB_233
+      - 🇺🇸_US_234
+      - 🇬🇧_GB_235
+      - 🇺🇸_US_236
+      - 🇺🇸_US_237
+      - 🇺🇸_US_238
+      - 🇺🇸_US_239
+      - 🇺🇸_US_240
+      - 🇺🇸_US_241
+      - 🇺🇸_US_242
+      - 🇺🇸_US_243
+      - 🇬🇧_GB_244
+      - 🇬🇧_GB_245
+      - 🇬🇧_GB_246
+      - 🇮🇳_IN_247
+      - 🇺🇸_US_248
+      - 🇺🇸_US_249
+      - 🇬🇧_GB_250
+      - 🇺🇸_US_251
+      - 🇺🇸_US_252
+      - 🇺🇸_US_253
+      - 🇺🇸_US_254
+      - 🇺🇸_US_255
+      - 🇺🇸_US_256
+      - 🇺🇸_US_257
+      - 🇺🇸_US_258
+      - 🇺🇸_US_259
+      - 🇺🇸_US_260
+      - 🇺🇸_US_261
+      - 🇺🇸_US_262
+      - 🇺🇸_US_263
+      - 🇰🇷_KR_264
+      - 🇺🇸_US_265
+      - 🇨🇦_CA_266
+      - 🇨🇦_CA_267
+      - 🇨🇦_CA_268
+      - 🇨🇦_CA_269
+      - 🇨🇦_CA_270
+      - 🇺🇸_US_271
+      - 🇨🇦_CA_272
+      - 🇨🇦_CA_273
+      - 🇨🇦_CA_274
+      - 🇺🇸_US_275
+      - 🇺🇸_US_276
+      - 
+      - 🇨🇦_CA_278
+      - 🇨🇦_CA_279
+      - 🇨🇦_CA_280
+      - 
+      - 
+      - 
+      - 
+      - 🇨🇦_CA_285
+      - 🇺🇸_US_286
+      - 🇨🇦_CA_287
+      - 🇨🇦_CA_288
+      - 🇺🇸_US_289
+      - 🇨🇦_CA_290
+      - 🇨🇦_CA_291
+      - 🇨🇦_CA_292
+      - 🇺🇸_US_293
+      - 🇨🇦_CA_294
+      - 🇺🇸_US_295
+      - 
+      - 🇺🇸_US_297
+      - 🇺🇸_US_298
+      - 🇺🇸_US_299
+      - 🇺🇸_US_300
+      - 
+      - 🇨🇦_CA_302
+      - 🇨🇦_CA_303
+      - 🇨🇦_CA_304
+      - 
+      - 🇨🇦_CA_306
+      - 
+      - 🇨🇦_CA_308
+      - 🇨🇦_CA_309
+      - 
+      - 🇨🇦_CA_311
+      - 🇨🇦_CA_312
+      - 
+      - 
+      - 
+      - 
+      - 🇺🇸_US_317
+      - 
+      - 
+      - 🇨🇦_CA_320
+      - 
+      - 🇨🇦_CA_322
+      - 🇨🇦_CA_323
+      - 
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
