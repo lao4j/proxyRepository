@@ -5,53 +5,74 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"name":"🇭🇰_HK_香港_1","server":"azhk2.mayiyun.vip","port":80,"type":"vmess","uuid":"54b3ef87-0084-4362-af57-2fb494d8ca15","alterId":0,"cipher":"auto","country":"🇭🇰_HK_香港_1","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"headers":{"host":"open.dingtalk.com"}}}
-  - {"name":"🇯🇵_JP_日本_2","server":"jp2.mayiyun.vip","port":80,"type":"vmess","uuid":"54b3ef87-0084-4362-af57-2fb494d8ca15","alterId":0,"cipher":"auto","country":"🇯🇵_JP_日本_2","skip-cert-verify":true,"tls":false,"network":"ws","ws-opts":{"headers":{"host":"shoutingtoutiao3.10010.com"}}}
+  - {"name":"🇨🇳台湾TG/＠yzcloud_1","server":"hinet.rdns.link","port":50024,"type":"ssr","country":"🇨🇳台湾TG/＠yzcloud_1","password":"Getfree.Cloud","cipher":"aes-256-cfb","protocol":"auth_aes128_md5","obfs":"tls1.2_ticket_auth","protocol-param":"19557:Jy6TMz","obfs-param":"a321d19557.software-download.microsoft.com"}
+  - {"name":"🇨🇳台湾TG/＠yzcloud_2","server":"hinet.rdns.link","port":50021,"type":"ssr","country":"🇨🇳台湾TG/＠yzcloud_2","password":"Getfree.Cloud","cipher":"aes-256-cfb","protocol":"auth_aes128_md5","obfs":"tls1.2_ticket_auth","protocol-param":"19557:Jy6TMz","obfs-param":"a321d19557.software-download.microsoft.com"}
+  - {"name":"test_10","server":"cm-jm.okvpn.xyz","port":20005,"type":"trojan","country":"test_10","skip-cert-verify":true,"udp":true,"password":"e337ee02-3ce7-4ec1-9409-1db48c29192c"}
+  - {"name":"defaultName_%%�_4","server":"173.82.186.25","port":60001,"type":"ssr","country":"defaultName_%%�_4","password":"enterpassword","cipher":"dummy","protocol":"auth_chain_a","obfs":"plain","obfs-param":"ajax.microsoft.com"}
+  - {"name":"瑞典_5","server":"20.91.188.160","port":5905,"type":"vmess","uuid":"b8e3df1c-826c-4a68-b3e3-ed6cc143aa81","alterId":0,"cipher":"auto","country":"瑞典_5","skip-cert-verify":true,"tls":false,"network":"tcp","ws-opts":{"path":"/","headers":{"host":"20.91.188.160"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰_HK_香港_1
-      - 🇯🇵_JP_日本_2
+      - 🇨🇳台湾TG/＠yzcloud_1
+      - 🇨🇳台湾TG/＠yzcloud_2
+      - test_10
+      - defaultName_%%�_4
+      - 瑞典_5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰_HK_香港_1
-      - 🇯🇵_JP_日本_2
+      - 🇨🇳台湾TG/＠yzcloud_1
+      - 🇨🇳台湾TG/＠yzcloud_2
+      - test_10
+      - defaultName_%%�_4
+      - 瑞典_5
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰_HK_香港_1
-      - 🇯🇵_JP_日本_2
+      - 🇨🇳台湾TG/＠yzcloud_1
+      - 🇨🇳台湾TG/＠yzcloud_2
+      - test_10
+      - defaultName_%%�_4
+      - 瑞典_5
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰_HK_香港_1
-      - 🇯🇵_JP_日本_2
+      - 🇨🇳台湾TG/＠yzcloud_1
+      - 🇨🇳台湾TG/＠yzcloud_2
+      - test_10
+      - defaultName_%%�_4
+      - 瑞典_5
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇭🇰_HK_香港_1
-      - 🇯🇵_JP_日本_2
+      - 🇨🇳台湾TG/＠yzcloud_1
+      - 🇨🇳台湾TG/＠yzcloud_2
+      - test_10
+      - defaultName_%%�_4
+      - 瑞典_5
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰_HK_香港_1
-      - 🇯🇵_JP_日本_2
+      - 🇨🇳台湾TG/＠yzcloud_1
+      - 🇨🇳台湾TG/＠yzcloud_2
+      - test_10
+      - defaultName_%%�_4
+      - 瑞典_5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -74,8 +95,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰_HK_香港_1
-      - 🇯🇵_JP_日本_2
+      - 🇨🇳台湾TG/＠yzcloud_1
+      - 🇨🇳台湾TG/＠yzcloud_2
+      - test_10
+      - defaultName_%%�_4
+      - 瑞典_5
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
