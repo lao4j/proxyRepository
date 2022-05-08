@@ -5,46 +5,74 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"name":"Server%20A%20%28xtls%29_1","server":"iranmci.myandroidplus1.ir","port":443,"country":"Server%20A%20%28xtls%29_1","type":"vless","uuid":"dad9a92c-efca-684b-308b-69ab227ec13f","cipher":"auto","skip-cert-verify":true,"tls":true,"flow":"xtls-rprx-splice","network":"tcp"}
+  - {"name":"🇧🇬_BG_保加利亚_1","server":"213.183.63.221","port":9003,"type":"ss","country":"🇧🇬_BG_保加利亚_1","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP"}
+  - {"name":"🇵🇱_PL_波兰_2","server":"217.30.10.63","port":9097,"type":"ss","country":"🇵🇱_PL_波兰_2","cipher":"aes-256-cfb","password":"Sn5B7jTqr76aCJT8"}
+  - {"name":"🇺🇸_US_美国_3","server":"38.75.136.102","port":8118,"type":"ss","country":"🇺🇸_US_美国_3","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"name":"🇩🇪_DE_德国_4","server":"5.183.179.148","port":9020,"type":"ss","country":"🇩🇪_DE_德国_4","cipher":"aes-256-cfb","password":"BNmAXXxAHYpTRdzu"}
+  - {"name":"🇬🇧_GB_英国_5","server":"152.89.210.105","port":9060,"type":"ssr","country":"🇬🇧_GB_英国_5","password":"ueLXVkvh4hckhErQ","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - Server%20A%20%28xtls%29_1
+      - 🇧🇬_BG_保加利亚_1
+      - 🇵🇱_PL_波兰_2
+      - 🇺🇸_US_美国_3
+      - 🇩🇪_DE_德国_4
+      - 🇬🇧_GB_英国_5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - Server%20A%20%28xtls%29_1
+      - 🇧🇬_BG_保加利亚_1
+      - 🇵🇱_PL_波兰_2
+      - 🇺🇸_US_美国_3
+      - 🇩🇪_DE_德国_4
+      - 🇬🇧_GB_英国_5
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Server%20A%20%28xtls%29_1
+      - 🇧🇬_BG_保加利亚_1
+      - 🇵🇱_PL_波兰_2
+      - 🇺🇸_US_美国_3
+      - 🇩🇪_DE_德国_4
+      - 🇬🇧_GB_英国_5
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - Server%20A%20%28xtls%29_1
+      - 🇧🇬_BG_保加利亚_1
+      - 🇵🇱_PL_波兰_2
+      - 🇺🇸_US_美国_3
+      - 🇩🇪_DE_德国_4
+      - 🇬🇧_GB_英国_5
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - Server%20A%20%28xtls%29_1
+      - 🇧🇬_BG_保加利亚_1
+      - 🇵🇱_PL_波兰_2
+      - 🇺🇸_US_美国_3
+      - 🇩🇪_DE_德国_4
+      - 🇬🇧_GB_英国_5
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - Server%20A%20%28xtls%29_1
+      - 🇧🇬_BG_保加利亚_1
+      - 🇵🇱_PL_波兰_2
+      - 🇺🇸_US_美国_3
+      - 🇩🇪_DE_德国_4
+      - 🇬🇧_GB_英国_5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -67,7 +95,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Server%20A%20%28xtls%29_1
+      - 🇧🇬_BG_保加利亚_1
+      - 🇵🇱_PL_波兰_2
+      - 🇺🇸_US_美国_3
+      - 🇩🇪_DE_德国_4
+      - 🇬🇧_GB_英国_5
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
