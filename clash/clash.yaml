@@ -5,203 +5,109 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"name":"v2cross.com_1","type":"vless","server":"cg.rutracker-cn.com","port":443,"uuid":"72972da9-d188-40c6-83a6-4ec28fde2c0a","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","headers":{"path":"/xxPb49hL0C","servername":"cg.rutracker-cn.com"}}
-  - {"type":"trojan","name":"v2cross.com_2","server":"ce.rutracker-cn.com","password":"5y8y3CwxRVYhyfSY","port":"443","udp":true,"skip-cert-verify":true,"sni":"ce.rutracker-cn.com"}
-  - {"name":"v2cross.com_3","type":"vless","server":"cf.rutracker-cn.com","port":443,"uuid":"e9c14629-fcd5-4584-bb9e-d1431c20ee00","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","headers":{"path":"/1GDNonF","servername":"cf.rutracker-cn.com"}}
-  - {"type":"trojan","name":"v2cross.com_4","server":"cd.rutracker-cn.com","password":"ukMzuFSmIXDvgW0h","port":"443","udp":true,"skip-cert-verify":true,"sni":"cd.rutracker-cn.com"}
-  - {"name":"v2cross.com_5","type":"vless","server":"cz1.v2ce.com","port":443,"uuid":"d7e810f6-9389-47f4-be4b-438f410f3968","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","headers":{"path":"/Hm4aRbSa","servername":"cz1.v2ce.com"}}
-  - {"type":"trojan","name":"v2cross.com_6","server":"los2-cn2.v2ce.com","password":"1Qfea1eL3zCALPJm","port":"443","udp":true,"skip-cert-verify":true,"sni":"los2-cn2.v2ce.com"}
-  - {"type":"trojan","name":"v2cross.com_7","server":"los1.v2ce.com","password":"fIYU5DCiWZ6uYOou","port":"443","udp":true,"skip-cert-verify":true,"sni":"los1.v2ce.com"}
-  - {"type":"trojan","name":"v2cross.com_8","server":"v2cross.com.01.v2ce.com","password":"mMQ6qJB9xbhiRvgg","port":"443","udp":true,"skip-cert-verify":true,"sni":"v2cross.com.01.v2ce.com"}
-  - {"type":"trojan","name":"v2cross.com_9","server":"v2cross.com.02.v2ce.com","password":"3gLlCYBipVwr6Y5F","port":"443","udp":true,"skip-cert-verify":true,"sni":"v2cross.com.02.v2ce.com"}
-  - {"type":"trojan","name":"v2cross.com_10","server":"v2cross.com.03.v2ce.com","password":"ZD4dLSBXiMrmzdLd","port":"443","udp":true,"skip-cert-verify":true,"sni":"v2cross.com.03.v2ce.com"}
-  - {"type":"trojan","name":"v2cross.com_11","server":"v2cross.com.04.v2ce.com","password":"vGWCNNfBHwSY6m6M","port":"443","udp":true,"skip-cert-verify":true,"sni":"v2cross.com.04.v2ce.com"}
-  - {"type":"trojan","name":"v2cross.com_12","server":"v2cross.com.05.v2ce.com","password":"kGrwqmB1nEKUsDwE","port":"443","udp":true,"skip-cert-verify":true,"sni":"v2cross.com.05.v2ce.com"}
-  - {"name":"US-v2cross.com","type":"vless","server":"138.2.119.229","port":48934,"uuid":"d7c57704-224b-44a1-d3d6-5b798b993b5e","skip-cert-verify":true,"network":"tcp"}
-  - {"type":"trojan","name":"v2cross.com - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司
-    39","server":"sg-sr-116.mitoption.com","password":"e5d46365e25e31d94279c2bcf93390a2","port":"443","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","cipher":"aes-256-cfb","password":"Sn5B7jTqr76aCJT8","server":"185.167.116.252","port":9097,"name":"🇦🇺AU_53"}
-  - {"type":"vmess","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"jp21301.cloudmatrix.xyz"}},"server":"jp21301.cloudmatrix.xyz","name":"CN-v2cross.com_1","port":"21301","uuid":"479a9dbc-b896-3fc7-8f68-c26c92f3ae2a","alterId":"2","cipher":"auto","network":"ws"}
-  - {"type":"vmess","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"us24052.cloudmatrix.xyz"}},"server":"us24052.cloudmatrix.xyz","name":"CN-v2cross.com_2","port":"24052","uuid":"479a9dbc-b896-3fc7-8f68-c26c92f3ae2a","alterId":"2","cipher":"auto","network":"ws"}
-  - {"type":"trojan","name":"v2cross.com - 美国亚利桑那州凤凰城Oracle云计算数据中心
-    6","server":"fhcamd2.gaox.ml","password":"dbf9bf9c-2c3f-474a-8031-d4c00666a989","port":"443","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","cipher":"aes-256-cfb","password":"GA9KzeEgvfxNrgmM","server":"185.167.116.252","port":9019,"name":"🇦🇺AU_30"}
-  - {"name":"HK-v2cross.com","type":"vless","server":"47.243.193.32","port":24351,"uuid":"4f4b2e1f-7ae4-4be9-d328-10aa862454be","skip-cert-verify":true,"network":"tcp"}
-  - {"type":"vmess","ws-opts":{"path":"/ssrsub"},"server":"v3.ssrsub.com","name":"v2cross.com_13","port":"8443","uuid":"b7c70df3-f92f-4800-a8e1-67e6dc833256","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","ws-opts":{"path":"/ssrsub"},"server":"v1.ssrsub.com","name":"@SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub","port":"8443","uuid":"b7c70df3-f92f-4800-a8e1-67e6dc833256","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"trojan","name":"v2cross.com - 英国伦敦Oracle云计算数据中心
-    35","server":"jgwld2.gaox.ml","password":"d7fd8aaa-4581-4281-80aa-4b63e5e1f157","port":"443","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"🇨🇳_CN_中国->🇭🇰_HK_香港_1","server":"lt.yhy520.xyz","password":"981528f8-0dc8-3276-860f-74b6d31d6aef","port":"58819","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"🇨🇳_CN_中国->🇭🇰_HK_香港_2","server":"lt.yhy520.xyz","password":"981528f8-0dc8-3276-860f-74b6d31d6aef","port":"58802","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"🇨🇳_CN_中国->🇸🇬_SG_新加坡_1","server":"116.129.253.134","password":"c3c448da2363a6f7","port":"3389","udp":true,"skip-cert-verify":true}
+  - {"type":"vmess","server":"120.240.168.118","name":"🇨🇳_CN_中国->🇰🇷_KR_韩国_1","port":63004,"uuid":"49a0585b-6abe-3e62-ae2e-aacf364d88c0","alterId":0,"cipher":"auto","network":"ws","tls":true}
+  - {"type":"trojan","name":"🇨🇳_CN_中国->🇭🇰_HK_香港_3","server":"dx.yhy520.xyz","password":"981528f8-0dc8-3276-860f-74b6d31d6aef","port":"58804","udp":true,"skip-cert-verify":true}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC","server":"167.88.61.70","port":5001,"name":"🇺🇸_US_美国"}
+  - {"type":"ss","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*","server":"180.163.62.91","port":10065,"name":"🇨🇳_CN_中国->🇰🇷_KR_韩国_2"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"6kA7b3f9Aw2508erQ3W7D4","server":"49.12.203.80","port":40960,"name":"🇩🇪_DE_德国"}
+  - {"type":"vmess","server":"183.232.56.108","name":"🇨🇳_CN_中国->🇰🇷_KR_韩国_3","port":63004,"uuid":"49a0585b-6abe-3e62-ae2e-aacf364d88c0","alterId":0,"cipher":"auto","network":"ws","tls":true}
+  - {"type":"trojan","name":"🇨🇳_CN_中国->🇸🇬_SG_新加坡_2","server":"116.129.253.191","password":"e37c6d7efa845d60","port":"3389","udp":true,"skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - v2cross.com_1
-      - v2cross.com_2
-      - v2cross.com_3
-      - v2cross.com_4
-      - v2cross.com_5
-      - v2cross.com_6
-      - v2cross.com_7
-      - v2cross.com_8
-      - v2cross.com_9
-      - v2cross.com_10
-      - v2cross.com_11
-      - v2cross.com_12
-      - US-v2cross.com
-      - v2cross.com - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 39
-      - 🇦🇺AU_53
-      - CN-v2cross.com_1
-      - CN-v2cross.com_2
-      - v2cross.com - 美国亚利桑那州凤凰城Oracle云计算数据中心 6
-      - 🇦🇺AU_30
-      - HK-v2cross.com
-      - v2cross.com_13
-      - '@SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub'
-      - v2cross.com - 英国伦敦Oracle云计算数据中心 35
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港_3
+      - 🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_2
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_3
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - v2cross.com_1
-      - v2cross.com_2
-      - v2cross.com_3
-      - v2cross.com_4
-      - v2cross.com_5
-      - v2cross.com_6
-      - v2cross.com_7
-      - v2cross.com_8
-      - v2cross.com_9
-      - v2cross.com_10
-      - v2cross.com_11
-      - v2cross.com_12
-      - US-v2cross.com
-      - v2cross.com - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 39
-      - 🇦🇺AU_53
-      - CN-v2cross.com_1
-      - CN-v2cross.com_2
-      - v2cross.com - 美国亚利桑那州凤凰城Oracle云计算数据中心 6
-      - 🇦🇺AU_30
-      - HK-v2cross.com
-      - v2cross.com_13
-      - '@SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub'
-      - v2cross.com - 英国伦敦Oracle云计算数据中心 35
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港_3
+      - 🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_2
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_3
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - v2cross.com_1
-      - v2cross.com_2
-      - v2cross.com_3
-      - v2cross.com_4
-      - v2cross.com_5
-      - v2cross.com_6
-      - v2cross.com_7
-      - v2cross.com_8
-      - v2cross.com_9
-      - v2cross.com_10
-      - v2cross.com_11
-      - v2cross.com_12
-      - US-v2cross.com
-      - v2cross.com - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 39
-      - 🇦🇺AU_53
-      - CN-v2cross.com_1
-      - CN-v2cross.com_2
-      - v2cross.com - 美国亚利桑那州凤凰城Oracle云计算数据中心 6
-      - 🇦🇺AU_30
-      - HK-v2cross.com
-      - v2cross.com_13
-      - '@SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub'
-      - v2cross.com - 英国伦敦Oracle云计算数据中心 35
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港_3
+      - 🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_2
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_3
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - v2cross.com_1
-      - v2cross.com_2
-      - v2cross.com_3
-      - v2cross.com_4
-      - v2cross.com_5
-      - v2cross.com_6
-      - v2cross.com_7
-      - v2cross.com_8
-      - v2cross.com_9
-      - v2cross.com_10
-      - v2cross.com_11
-      - v2cross.com_12
-      - US-v2cross.com
-      - v2cross.com - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 39
-      - 🇦🇺AU_53
-      - CN-v2cross.com_1
-      - CN-v2cross.com_2
-      - v2cross.com - 美国亚利桑那州凤凰城Oracle云计算数据中心 6
-      - 🇦🇺AU_30
-      - HK-v2cross.com
-      - v2cross.com_13
-      - '@SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub'
-      - v2cross.com - 英国伦敦Oracle云计算数据中心 35
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港_3
+      - 🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_2
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_3
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - v2cross.com_1
-      - v2cross.com_2
-      - v2cross.com_3
-      - v2cross.com_4
-      - v2cross.com_5
-      - v2cross.com_6
-      - v2cross.com_7
-      - v2cross.com_8
-      - v2cross.com_9
-      - v2cross.com_10
-      - v2cross.com_11
-      - v2cross.com_12
-      - US-v2cross.com
-      - v2cross.com - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 39
-      - 🇦🇺AU_53
-      - CN-v2cross.com_1
-      - CN-v2cross.com_2
-      - v2cross.com - 美国亚利桑那州凤凰城Oracle云计算数据中心 6
-      - 🇦🇺AU_30
-      - HK-v2cross.com
-      - v2cross.com_13
-      - '@SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub'
-      - v2cross.com - 英国伦敦Oracle云计算数据中心 35
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港_3
+      - 🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_2
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_3
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - v2cross.com_1
-      - v2cross.com_2
-      - v2cross.com_3
-      - v2cross.com_4
-      - v2cross.com_5
-      - v2cross.com_6
-      - v2cross.com_7
-      - v2cross.com_8
-      - v2cross.com_9
-      - v2cross.com_10
-      - v2cross.com_11
-      - v2cross.com_12
-      - US-v2cross.com
-      - v2cross.com - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 39
-      - 🇦🇺AU_53
-      - CN-v2cross.com_1
-      - CN-v2cross.com_2
-      - v2cross.com - 美国亚利桑那州凤凰城Oracle云计算数据中心 6
-      - 🇦🇺AU_30
-      - HK-v2cross.com
-      - v2cross.com_13
-      - '@SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub'
-      - v2cross.com - 英国伦敦Oracle云计算数据中心 35
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港_3
+      - 🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_2
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_3
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -224,29 +130,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - v2cross.com_1
-      - v2cross.com_2
-      - v2cross.com_3
-      - v2cross.com_4
-      - v2cross.com_5
-      - v2cross.com_6
-      - v2cross.com_7
-      - v2cross.com_8
-      - v2cross.com_9
-      - v2cross.com_10
-      - v2cross.com_11
-      - v2cross.com_12
-      - US-v2cross.com
-      - v2cross.com - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 39
-      - 🇦🇺AU_53
-      - CN-v2cross.com_1
-      - CN-v2cross.com_2
-      - v2cross.com - 美国亚利桑那州凤凰城Oracle云计算数据中心 6
-      - 🇦🇺AU_30
-      - HK-v2cross.com
-      - v2cross.com_13
-      - '@SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub'
-      - v2cross.com - 英国伦敦Oracle云计算数据中心 35
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港_3
+      - 🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_2
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_3
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
