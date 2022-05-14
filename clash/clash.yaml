@@ -5,102 +5,1991 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"vmess","http-opts":{"path":["/"],"headers":{"Host":["43.154.72.145"]}},"server":"43.154.72.145","name":"🇨🇳_CN_中国_1","port":27091,"uuid":"2f1e82e4-5319-4278-92aa-74d49c04683f","alterId":0,"cipher":"auto","network":"http"}
-  - {"type":"vmess","http-opts":{"path":["/"],"headers":{"Host":["43.154.77.196"]}},"server":"43.154.77.196","name":"🇨🇳_CN_中国_2","port":38539,"uuid":"a379bd7f-9d0d-4fb5-90c2-9b302782c4d6","alterId":0,"cipher":"auto","network":"http"}
-  - {"type":"ss","cipher":"aes-256-cfb","password":"y9VURyNzJWNRYEGQ","server":"103.172.116.9","port":9008,"name":"default_name_1"}
-  - {"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4","server":"169.197.142.216","port":8881,"name":"🇺🇸_US_美国_1"}
-  - {"type":"ss","cipher":"aes-256-cfb","password":"U6qnYRhfyDmn8sgn","server":"103.172.116.9","port":9041,"name":"default_name_2"}
-  - {"type":"trojan","name":"🇺🇸_US_美国_2","server":"free.spcloud.us","password":"118fc04e-fb8c-4154-9092-352cf1958fcd","port":21010,"udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇺🇸_US_美国_3","server":"fhcarm1.gaox.ml","password":"05742120-ce23-4cc8-88f5-6d221ce45bf4","port":443,"udp":true,"skip-cert-verify":true}
-  - {"type":"ss","cipher":"aes-128-gcm","password":"fcae85b5-baf0-4c5a-ba80-5f513e70512a","server":"183.240.124.200","port":25600,"name":"🇨🇳_CN_中国->🇹🇼_TW_台湾"}
-  - {"type":"ss","cipher":"aes-128-gcm","password":"fcae85b5-baf0-4c5a-ba80-5f513e70512a","server":"183.240.124.200","port":44817,"name":"🇨🇳_CN_中国->🇸🇬_SG_新加坡"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM","server":"134.195.196.24","port":443,"name":"‌‌🇨🇦CA_0443
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"faBAoD54k87UJG7","server":"134.195.196.24","port":2375,"name":"‌‌🇨🇦CA_2375
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"faBAoD54k87UJG7","server":"134.195.196.24","port":2376,"name":"‌‌🇨🇦CA_2376
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC","server":"134.195.196.24","port":3306,"name":"‌‌🇨🇦CA_3306
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC","server":"134.195.196.24","port":3389,"name":"‌‌🇨🇦CA_3389
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM","server":"134.195.196.24","port":4444,"name":"‌‌🇨🇦CA_4444
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC","server":"134.195.196.24","port":5000,"name":"‌‌🇨🇦CA_5000
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC","server":"134.195.196.24","port":5001,"name":"‌‌🇨🇦CA_5001
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId","server":"134.195.196.24","port":5003,"name":"‌‌🇨🇦CA_5003
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId","server":"134.195.196.24","port":5004,"name":"‌‌🇨🇦CA_5004
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm","server":"134.195.196.24","port":5500,"name":"‌‌🇨🇦CA_5500
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC","server":"134.195.196.24","port":5600,"name":"‌‌🇨🇦CA_5600
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC","server":"134.195.196.24","port":5601,"name":"‌‌🇨🇦CA_5601
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v","server":"134.195.196.24","port":6379,"name":"‌‌🇨🇦CA_6379
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS","server":"134.195.196.24","port":6679,"name":"‌‌🇨🇦CA_6679
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS","server":"134.195.196.24","port":6697,"name":"‌‌🇨🇦CA_6697
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG","server":"134.195.196.24","port":7001,"name":"‌‌🇨🇦CA_7001
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG","server":"134.195.196.24","port":7002,"name":"‌‌🇨🇦CA_7002
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP","server":"134.195.196.24","port":7306,"name":"‌‌🇨🇦CA_7306
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP","server":"134.195.196.24","port":7307,"name":"‌‌🇨🇦CA_7307
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm","server":"134.195.196.24","port":8000,"name":"‌‌🇨🇦CA_8000
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74","server":"134.195.196.24","port":8008,"name":"‌‌🇨🇦CA_8008
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74","server":"134.195.196.24","port":8009,"name":"‌‌🇨🇦CA_8009
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm","server":"134.195.196.24","port":8080,"name":"‌‌🇨🇦CA_8080
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27","server":"134.195.196.24","port":8090,"name":"‌‌🇨🇦CA_8090
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27","server":"134.195.196.24","port":8091,"name":"‌‌🇨🇦CA_8091
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN","server":"134.195.196.24","port":8118,"name":"‌‌🇨🇦CA_8118
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN","server":"134.195.196.24","port":8119,"name":"‌‌🇨🇦CA_8119
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4","server":"134.195.196.24","port":8881,"name":"‌‌🇨🇦CA_8881
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4","server":"134.195.196.24","port":8882,"name":"‌‌🇨🇦CA_8882
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC","server":"134.195.196.24","port":8888,"name":"‌‌🇨🇦CA_8888
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY","server":"134.195.196.24","port":9101,"name":"‌‌🇨🇦CA_9101
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY","server":"134.195.196.24","port":9102,"name":"‌‌🇨🇦CA_9102
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM","server":"145.239.1.100","port":443,"name":"🇩🇪DE_0443
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"faBAoD54k87UJG7","server":"145.239.1.100","port":2376,"name":"🇩🇪DE_2376
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC","server":"145.239.1.100","port":3306,"name":"🇩🇪DE_3306
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC","server":"145.239.1.100","port":3389,"name":"🇩🇪DE_3389
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM","server":"145.239.1.100","port":4444,"name":"🇩🇪DE_4444
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC","server":"145.239.1.100","port":5000,"name":"🇩🇪DE_5000
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId","server":"145.239.1.100","port":5003,"name":"🇩🇪DE_5003
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId","server":"145.239.1.100","port":5004,"name":"🇩🇪DE_5004
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm","server":"145.239.1.100","port":5500,"name":"🇩🇪DE_5500
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC","server":"145.239.1.100","port":5600,"name":"🇩🇪DE_5600
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC","server":"145.239.1.100","port":5601,"name":"🇩🇪DE_5601
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v","server":"145.239.1.100","port":6379,"name":"🇩🇪DE_6379
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS","server":"145.239.1.100","port":6679,"name":"🇩🇪DE_6679
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS","server":"145.239.1.100","port":6697,"name":"🇩🇪DE_6697
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG","server":"145.239.1.100","port":7001,"name":"🇩🇪DE_7001
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG","server":"145.239.1.100","port":7002,"name":"🇩🇪DE_7002
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP","server":"145.239.1.100","port":7306,"name":"🇩🇪DE_7306
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP","server":"145.239.1.100","port":7307,"name":"🇩🇪DE_7307
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm","server":"145.239.1.100","port":8000,"name":"🇩🇪DE_8000
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74","server":"145.239.1.100","port":8008,"name":"🇩🇪DE_8008
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74","server":"145.239.1.100","port":8009,"name":"🇩🇪DE_8009
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm","server":"145.239.1.100","port":8080,"name":"🇩🇪DE_8080
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27","server":"145.239.1.100","port":8090,"name":"🇩🇪DE_8090
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27","server":"145.239.1.100","port":8091,"name":"🇩🇪DE_8091
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN","server":"145.239.1.100","port":8118,"name":"🇩🇪DE_8118
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN","server":"145.239.1.100","port":8119,"name":"🇩🇪DE_8119
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4","server":"145.239.1.100","port":8881,"name":"🇩🇪DE_8881
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4","server":"145.239.1.100","port":8882,"name":"🇩🇪DE_8882
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC","server":"145.239.1.100","port":8888,"name":"🇩🇪DE_8888
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY","server":"145.239.1.100","port":9101,"name":"🇩🇪DE_9101
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY","server":"145.239.1.100","port":9102,"name":"🇩🇪DE_9102
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"a3GFYt36Sm82Vys9","server":"213.183.59.229","port":9000,"name":"🇳🇱NL_9000
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"UkXRsXvR6buDMG2Y","server":"213.183.59.229","port":9001,"name":"🇳🇱NL_9001
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP","server":"213.183.59.229","port":9003,"name":"🇳🇱NL_9003
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"ZET59LF6DvCC8KVt","server":"213.183.59.229","port":9005,"name":"🇳🇱NL_9005
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"FAdUvMJUq5vDgKEq","server":"213.183.59.229","port":9006,"name":"🇳🇱NL_9006
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"kSPmvwdFzGMMW5pY","server":"213.183.59.229","port":9007,"name":"🇳🇱NL_9007
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"y9VURyNzJWNRYEGQ","server":"213.183.59.229","port":9008,"name":"🇳🇱NL_9008
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"f63gg8EruDnUrmz4","server":"213.183.59.229","port":9010,"name":"🇳🇱NL_9010
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"M3t2ZEQcMGRWBjRa","server":"213.183.59.229","port":9011,"name":"🇳🇱NL_9011
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"KnJGad3FqTvjqbaX","server":"213.183.59.229","port":9014,"name":"🇳🇱NL_9014
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"ZpNDDKRu9MagNvaf","server":"213.183.59.229","port":9015,"name":"🇳🇱NL_9015
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"fG2artUmHfNT2cX7","server":"213.183.59.229","port":9018,"name":"🇳🇱NL_9018
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"GA9KzeEgvfxNrgmM","server":"213.183.59.229","port":9019,"name":"🇳🇱NL_9019
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"BNmAXXxAHYpTRdzu","server":"213.183.59.229","port":9020,"name":"🇳🇱NL_9020
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"BejrQvtu9sqUeNuZ","server":"213.183.59.229","port":9024,"name":"🇳🇱NL_9024
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"XPtzA9sCug3SPR4c","server":"213.183.59.229","port":9025,"name":"🇳🇱NL_9025
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"QWDDvVE9npNurQfA","server":"213.183.59.229","port":9026,"name":"🇳🇱NL_9026
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"EXN3S3eQpjE7EJu8","server":"213.183.59.229","port":9027,"name":"🇳🇱NL_9027
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"GeregetR8cvQHzYr","server":"213.183.59.229","port":9030,"name":"🇳🇱NL_9030
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"BwcAUZk8hUFAkDGN","server":"213.183.59.229","port":9031,"name":"🇳🇱NL_9031
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"UWZQeLRWnkqgkseq","server":"213.183.59.229","port":9032,"name":"🇳🇱NL_9032
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"UTJA57ypk2XKQpnm","server":"213.183.59.229","port":9033,"name":"🇳🇱NL_9033
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"TN2YqghxeFDKZfLU","server":"213.183.59.229","port":9037,"name":"🇳🇱NL_9037
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"gYCYXfkUQEs2TaJQ","server":"213.183.59.229","port":9038,"name":"🇳🇱NL_9038
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"p9z5BVADH2YFs3MN","server":"213.183.59.229","port":9040,"name":"🇳🇱NL_9040
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"U6qnYRhfyDmn8sgn","server":"213.183.59.229","port":9041,"name":"🇳🇱NL_9041
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"S7KwUu7yBy58S3Ga","server":"213.183.59.229","port":9042,"name":"🇳🇱NL_9042
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"HSZuyJQcWe8dxNdF","server":"213.183.59.229","port":9043,"name":"🇳🇱NL_9043
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"Lp27rqyJq72bZsqX","server":"213.183.59.229","port":9045,"name":"🇳🇱NL_9045
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"NvS8N4Vf8qAGPSCL","server":"213.183.59.229","port":9046,"name":"🇳🇱NL_9046
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"FG5ddLsMPbV5CutE","server":"213.183.59.229","port":9050,"name":"🇳🇱NL_9050
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"SBM7R883jBmnqe6C","server":"213.183.59.229","port":9053,"name":"🇳🇱NL_9053
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"rNBfNuuANFCAk7KB","server":"213.183.59.229","port":9056,"name":"🇳🇱NL_9056
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"wjTugX3ZtHMB9c3Z","server":"213.183.59.229","port":9057,"name":"🇳🇱NL_9057
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"dML2sfhbVwvtfNPe","server":"213.183.59.229","port":9058,"name":"🇳🇱NL_9058
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"9XwYyZsK8SNzQDtY","server":"213.183.59.229","port":9059,"name":"🇳🇱NL_9059
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"ueLXVkvh4hckhErQ","server":"213.183.59.229","port":9060,"name":"🇳🇱NL_9060
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"4R3hUfZ2FHhDmNcP","server":"213.183.59.229","port":9061,"name":"🇳🇱NL_9061
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"cp8pRSUAyLhTfVWH","server":"213.183.59.229","port":9064,"name":"🇳🇱NL_9064
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"bf7v334KKDV3YDhH","server":"213.183.59.229","port":9070,"name":"🇳🇱NL_9070
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"daFYagqDdBdA6VTX","server":"213.183.59.229","port":9073,"name":"🇳🇱NL_9073
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"TPqX8edgbAURcAMb","server":"213.183.59.229","port":9079,"name":"🇳🇱NL_9079
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"VP8ZPxQpJtZRCjfZ","server":"213.183.59.229","port":9080,"name":"🇳🇱NL_9080
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"c3NtHJ5ujV2tGDfj","server":"213.183.59.229","port":9084,"name":"🇳🇱NL_9084
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"f8npKgNzdkss2ytn","server":"213.183.59.229","port":9088,"name":"🇳🇱NL_9088
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"wfLC2y7rzZyCmuyt","server":"213.183.59.229","port":9093,"name":"🇳🇱NL_9093
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"rpgbNnU9rDDU4aWZ","server":"213.183.59.229","port":9094,"name":"🇳🇱NL_9094
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"Sn5B7jTqr76aCJT8","server":"213.183.59.229","port":9097,"name":"🇳🇱NL_9097
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"aLpQtfEZe445QyHk","server":"213.183.59.229","port":9098,"name":"🇳🇱NL_9098
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"a3GFYt36Sm82Vys9","server":"185.167.116.24","port":9000,"name":"🇳🇿AU_9000
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"UkXRsXvR6buDMG2Y","server":"185.167.116.24","port":9001,"name":"🇳🇿AU_9001
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP","server":"185.167.116.24","port":9003,"name":"🇳🇿AU_9003
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"ZET59LF6DvCC8KVt","server":"185.167.116.24","port":9005,"name":"🇳🇿AU_9005
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"FAdUvMJUq5vDgKEq","server":"185.167.116.24","port":9006,"name":"🇳🇿AU_9006
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"kSPmvwdFzGMMW5pY","server":"185.167.116.24","port":9007,"name":"🇳🇿AU_9007
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"y9VURyNzJWNRYEGQ","server":"185.167.116.24","port":9008,"name":"🇳🇿AU_9008
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"f63gg8EruDnUrmz4","server":"185.167.116.24","port":9010,"name":"🇳🇿AU_9010
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"M3t2ZEQcMGRWBjRa","server":"185.167.116.24","port":9011,"name":"🇳🇿AU_9011
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"KnJGad3FqTvjqbaX","server":"185.167.116.24","port":9014,"name":"🇳🇿AU_9014
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"ZpNDDKRu9MagNvaf","server":"185.167.116.24","port":9015,"name":"🇳🇿AU_9015
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"fG2artUmHfNT2cX7","server":"185.167.116.24","port":9018,"name":"🇳🇿AU_9018
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"GA9KzeEgvfxNrgmM","server":"185.167.116.24","port":9019,"name":"🇳🇿AU_9019
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"BNmAXXxAHYpTRdzu","server":"185.167.116.24","port":9020,"name":"🇳🇿AU_9020
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"BejrQvtu9sqUeNuZ","server":"185.167.116.24","port":9024,"name":"🇳🇿AU_9024
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"XPtzA9sCug3SPR4c","server":"185.167.116.24","port":9025,"name":"🇳🇿AU_9025
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"QWDDvVE9npNurQfA","server":"185.167.116.24","port":9026,"name":"🇳🇿AU_9026
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"EXN3S3eQpjE7EJu8","server":"185.167.116.24","port":9027,"name":"🇳🇿AU_9027
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"GeregetR8cvQHzYr","server":"185.167.116.24","port":9030,"name":"🇳🇿AU_9030
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"BwcAUZk8hUFAkDGN","server":"185.167.116.24","port":9031,"name":"🇳🇿AU_9031
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"UWZQeLRWnkqgkseq","server":"185.167.116.24","port":9032,"name":"🇳🇿AU_9032
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"UTJA57ypk2XKQpnm","server":"185.167.116.24","port":9033,"name":"🇳🇿AU_9033
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"TN2YqghxeFDKZfLU","server":"185.167.116.24","port":9037,"name":"🇳🇿AU_9037
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"gYCYXfkUQEs2TaJQ","server":"185.167.116.24","port":9038,"name":"🇳🇿AU_9038
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"p9z5BVADH2YFs3MN","server":"185.167.116.24","port":9040,"name":"🇳🇿AU_9040
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"U6qnYRhfyDmn8sgn","server":"185.167.116.24","port":9041,"name":"🇳🇿AU_9041
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"S7KwUu7yBy58S3Ga","server":"185.167.116.24","port":9042,"name":"🇳🇿AU_9042
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"HSZuyJQcWe8dxNdF","server":"185.167.116.24","port":9043,"name":"🇳🇿AU_9043
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"Lp27rqyJq72bZsqX","server":"185.167.116.24","port":9045,"name":"🇳🇿AU_9045
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"NvS8N4Vf8qAGPSCL","server":"185.167.116.24","port":9046,"name":"🇳🇿AU_9046
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"FG5ddLsMPbV5CutE","server":"185.167.116.24","port":9050,"name":"🇳🇿AU_9050
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"SBM7R883jBmnqe6C","server":"185.167.116.24","port":9053,"name":"🇳🇿AU_9053
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"rNBfNuuANFCAk7KB","server":"185.167.116.24","port":9056,"name":"🇳🇿AU_9056
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"wjTugX3ZtHMB9c3Z","server":"185.167.116.24","port":9057,"name":"🇳🇿AU_9057
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"dML2sfhbVwvtfNPe","server":"185.167.116.24","port":9058,"name":"🇳🇿AU_9058
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"9XwYyZsK8SNzQDtY","server":"185.167.116.24","port":9059,"name":"🇳🇿AU_9059
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"ueLXVkvh4hckhErQ","server":"185.167.116.24","port":9060,"name":"🇳🇿AU_9060
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"4R3hUfZ2FHhDmNcP","server":"185.167.116.24","port":9061,"name":"🇳🇿AU_9061
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"cp8pRSUAyLhTfVWH","server":"185.167.116.24","port":9064,"name":"🇳🇿AU_9064
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"bf7v334KKDV3YDhH","server":"185.167.116.24","port":9070,"name":"🇳🇿AU_9070
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"daFYagqDdBdA6VTX","server":"185.167.116.24","port":9073,"name":"🇳🇿AU_9073
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"TPqX8edgbAURcAMb","server":"185.167.116.24","port":9079,"name":"🇳🇿AU_9079
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"VP8ZPxQpJtZRCjfZ","server":"185.167.116.24","port":9080,"name":"🇳🇿AU_9080
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"c3NtHJ5ujV2tGDfj","server":"185.167.116.24","port":9084,"name":"🇳🇿AU_9084
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"f8npKgNzdkss2ytn","server":"185.167.116.24","port":9088,"name":"🇳🇿AU_9088
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"wfLC2y7rzZyCmuyt","server":"185.167.116.24","port":9093,"name":"🇳🇿AU_9093
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"rpgbNnU9rDDU4aWZ","server":"185.167.116.24","port":9094,"name":"🇳🇿AU_9094
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"Sn5B7jTqr76aCJT8","server":"185.167.116.24","port":9097,"name":"🇳🇿AU_9097
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"aLpQtfEZe445QyHk","server":"185.167.116.24","port":9098,"name":"🇳🇿AU_9098
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"a3GFYt36Sm82Vys9","server":"213.183.53.221","port":9000,"name":"🇷🇺RU_9000
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"UkXRsXvR6buDMG2Y","server":"213.183.53.221","port":9001,"name":"🇷🇺RU_9001
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP","server":"213.183.53.221","port":9003,"name":"🇷🇺RU_9003
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"ZET59LF6DvCC8KVt","server":"213.183.53.221","port":9005,"name":"🇷🇺RU_9005
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"FAdUvMJUq5vDgKEq","server":"213.183.53.221","port":9006,"name":"🇷🇺RU_9006
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"kSPmvwdFzGMMW5pY","server":"213.183.53.221","port":9007,"name":"🇷🇺RU_9007
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"y9VURyNzJWNRYEGQ","server":"213.183.53.221","port":9008,"name":"🇷🇺RU_9008
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"f63gg8EruDnUrmz4","server":"213.183.53.221","port":9010,"name":"🇷🇺RU_9010
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"M3t2ZEQcMGRWBjRa","server":"213.183.53.221","port":9011,"name":"🇷🇺RU_9011
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"KnJGad3FqTvjqbaX","server":"213.183.53.221","port":9014,"name":"🇷🇺RU_9014
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"ZpNDDKRu9MagNvaf","server":"213.183.53.221","port":9015,"name":"🇷🇺RU_9015
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"fG2artUmHfNT2cX7","server":"213.183.53.221","port":9018,"name":"🇷🇺RU_9018
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"GA9KzeEgvfxNrgmM","server":"213.183.53.221","port":9019,"name":"🇷🇺RU_9019
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"BNmAXXxAHYpTRdzu","server":"213.183.53.221","port":9020,"name":"🇷🇺RU_9020
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"BejrQvtu9sqUeNuZ","server":"213.183.53.221","port":9024,"name":"🇷🇺RU_9024
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"XPtzA9sCug3SPR4c","server":"213.183.53.221","port":9025,"name":"🇷🇺RU_9025
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"QWDDvVE9npNurQfA","server":"213.183.53.221","port":9026,"name":"🇷🇺RU_9026
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"EXN3S3eQpjE7EJu8","server":"213.183.53.221","port":9027,"name":"🇷🇺RU_9027
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"GeregetR8cvQHzYr","server":"213.183.53.221","port":9030,"name":"🇷🇺RU_9030
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"BwcAUZk8hUFAkDGN","server":"213.183.53.221","port":9031,"name":"🇷🇺RU_9031
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"UWZQeLRWnkqgkseq","server":"213.183.53.221","port":9032,"name":"🇷🇺RU_9032
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"UTJA57ypk2XKQpnm","server":"213.183.53.221","port":9033,"name":"🇷🇺RU_9033
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"TN2YqghxeFDKZfLU","server":"213.183.53.221","port":9037,"name":"🇷🇺RU_9037
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"gYCYXfkUQEs2TaJQ","server":"213.183.53.221","port":9038,"name":"🇷🇺RU_9038
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"p9z5BVADH2YFs3MN","server":"213.183.53.221","port":9040,"name":"🇷🇺RU_9040
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"U6qnYRhfyDmn8sgn","server":"213.183.53.221","port":9041,"name":"🇷🇺RU_9041
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"S7KwUu7yBy58S3Ga","server":"213.183.53.221","port":9042,"name":"🇷🇺RU_9042
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"HSZuyJQcWe8dxNdF","server":"213.183.53.221","port":9043,"name":"🇷🇺RU_9043
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"Lp27rqyJq72bZsqX","server":"213.183.53.221","port":9045,"name":"🇷🇺RU_9045
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"NvS8N4Vf8qAGPSCL","server":"213.183.53.221","port":9046,"name":"🇷🇺RU_9046
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"FG5ddLsMPbV5CutE","server":"213.183.53.221","port":9050,"name":"🇷🇺RU_9050
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"SBM7R883jBmnqe6C","server":"213.183.53.221","port":9053,"name":"🇷🇺RU_9053
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"rNBfNuuANFCAk7KB","server":"213.183.53.221","port":9056,"name":"🇷🇺RU_9056
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"wjTugX3ZtHMB9c3Z","server":"213.183.53.221","port":9057,"name":"🇷🇺RU_9057
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"dML2sfhbVwvtfNPe","server":"213.183.53.221","port":9058,"name":"🇷🇺RU_9058
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"9XwYyZsK8SNzQDtY","server":"213.183.53.221","port":9059,"name":"🇷🇺RU_9059
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"ueLXVkvh4hckhErQ","server":"213.183.53.221","port":9060,"name":"🇷🇺RU_9060
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"4R3hUfZ2FHhDmNcP","server":"213.183.53.221","port":9061,"name":"🇷🇺RU_9061
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"cp8pRSUAyLhTfVWH","server":"213.183.53.221","port":9064,"name":"🇷🇺RU_9064
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"bf7v334KKDV3YDhH","server":"213.183.53.221","port":9070,"name":"🇷🇺RU_9070
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"daFYagqDdBdA6VTX","server":"213.183.53.221","port":9073,"name":"🇷🇺RU_9073
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"TPqX8edgbAURcAMb","server":"213.183.53.221","port":9079,"name":"🇷🇺RU_9079
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"VP8ZPxQpJtZRCjfZ","server":"213.183.53.221","port":9080,"name":"🇷🇺RU_9080
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"c3NtHJ5ujV2tGDfj","server":"213.183.53.221","port":9084,"name":"🇷🇺RU_9084
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"f8npKgNzdkss2ytn","server":"213.183.53.221","port":9088,"name":"🇷🇺RU_9088
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"wfLC2y7rzZyCmuyt","server":"213.183.53.221","port":9093,"name":"🇷🇺RU_9093
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"rpgbNnU9rDDU4aWZ","server":"213.183.53.221","port":9094,"name":"🇷🇺RU_9094
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"Sn5B7jTqr76aCJT8","server":"213.183.53.221","port":9097,"name":"🇷🇺RU_9097
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"aLpQtfEZe445QyHk","server":"213.183.53.221","port":9098,"name":"🇷🇺RU_9098
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN","server":"142.202.48.43","port":8118,"name":"🇺🇸US_8118
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS","server":"142.202.48.43","port":6697,"name":"🇺🇸US_6697
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC","server":"142.202.48.43","port":5601,"name":"🇺🇸US_5601
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN","server":"142.202.48.43","port":8119,"name":"🇺🇸US_8119
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId","server":"142.202.48.43","port":5003,"name":"🇺🇸US_5003
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC","server":"142.202.48.43","port":5001,"name":"🇺🇸US_5001
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY","server":"142.202.48.43","port":9102,"name":"🇺🇸US_9102
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP","server":"142.202.48.43","port":7306,"name":"🇺🇸US_7306
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4","server":"142.202.48.43","port":8881,"name":"🇺🇸US_8881
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm","server":"142.202.48.43","port":8080,"name":"🇺🇸US_8080
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC","server":"142.202.48.43","port":5000,"name":"🇺🇸US_5000
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM","server":"142.202.48.43","port":4444,"name":"🇺🇸US_4444
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM","server":"142.202.48.43","port":443,"name":"🇺🇸US_0443
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74","server":"142.202.48.43","port":8009,"name":"🇺🇸US_8009
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74","server":"142.202.48.43","port":8008,"name":"🇺🇸US_8008
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG","server":"142.202.48.43","port":7002,"name":"🇺🇸US_7002
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP","server":"142.202.48.43","port":7307,"name":"🇺🇸US_7307
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC","server":"142.202.48.43","port":3306,"name":"🇺🇸US_3306
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm","server":"142.202.48.43","port":8000,"name":"🇺🇸US_8000
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS","server":"142.202.48.43","port":6679,"name":"🇺🇸US_6679
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC","server":"142.202.48.43","port":8888,"name":"🇺🇸US_8888
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27","server":"142.202.48.43","port":8090,"name":"🇺🇸US_8090
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4","server":"142.202.48.43","port":8882,"name":"🇺🇸US_8882
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v","server":"142.202.48.43","port":6379,"name":"🇺🇸US_6379
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY","server":"142.202.48.43","port":9101,"name":"🇺🇸US_9101
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27","server":"142.202.48.43","port":8091,"name":"🇺🇸US_8091
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm","server":"142.202.48.43","port":5500,"name":"🇺🇸US_5500
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC","server":"142.202.48.43","port":5600,"name":"🇺🇸US_5600
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId","server":"142.202.48.43","port":5004,"name":"🇺🇸US_5004
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"faBAoD54k87UJG7","server":"142.202.48.43","port":2375,"name":"🇺🇸US_2375
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG","server":"142.202.48.43","port":7001,"name":"🇺🇸US_7001
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC","server":"142.202.48.43","port":3389,"name":"🇺🇸US_3389
+    @WangCai_1\r"}
+  - {"type":"ss","cipher":"aes-256-gcm","password":"faBAoD54k87UJG7","server":"142.202.48.43","port":2376,"name":"🇺🇸US_2376
+    @WangCai_1"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国_2
-      - default_name_1
-      - 🇺🇸_US_美国_1
-      - default_name_2
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - "‌‌🇨🇦CA_0443 @WangCai_1\r"
+      - "‌‌🇨🇦CA_2375 @WangCai_1\r"
+      - "‌‌🇨🇦CA_2376 @WangCai_1\r"
+      - "‌‌🇨🇦CA_3306 @WangCai_1\r"
+      - "‌‌🇨🇦CA_3389 @WangCai_1\r"
+      - "‌‌🇨🇦CA_4444 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5000 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5001 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5003 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5004 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5500 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5600 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5601 @WangCai_1\r"
+      - "‌‌🇨🇦CA_6379 @WangCai_1\r"
+      - "‌‌🇨🇦CA_6679 @WangCai_1\r"
+      - "‌‌🇨🇦CA_6697 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7001 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7002 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7306 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7307 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8000 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8008 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8009 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8080 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8090 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8091 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8118 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8119 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8881 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8882 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8888 @WangCai_1\r"
+      - "‌‌🇨🇦CA_9101 @WangCai_1\r"
+      - "‌‌🇨🇦CA_9102 @WangCai_1\r"
+      - "🇩🇪DE_0443 @WangCai_1\r"
+      - "🇩🇪DE_2376 @WangCai_1\r"
+      - "🇩🇪DE_3306 @WangCai_1\r"
+      - "🇩🇪DE_3389 @WangCai_1\r"
+      - "🇩🇪DE_4444 @WangCai_1\r"
+      - "🇩🇪DE_5000 @WangCai_1\r"
+      - "🇩🇪DE_5003 @WangCai_1\r"
+      - "🇩🇪DE_5004 @WangCai_1\r"
+      - "🇩🇪DE_5500 @WangCai_1\r"
+      - "🇩🇪DE_5600 @WangCai_1\r"
+      - "🇩🇪DE_5601 @WangCai_1\r"
+      - "🇩🇪DE_6379 @WangCai_1\r"
+      - "🇩🇪DE_6679 @WangCai_1\r"
+      - "🇩🇪DE_6697 @WangCai_1\r"
+      - "🇩🇪DE_7001 @WangCai_1\r"
+      - "🇩🇪DE_7002 @WangCai_1\r"
+      - "🇩🇪DE_7306 @WangCai_1\r"
+      - "🇩🇪DE_7307 @WangCai_1\r"
+      - "🇩🇪DE_8000 @WangCai_1\r"
+      - "🇩🇪DE_8008 @WangCai_1\r"
+      - "🇩🇪DE_8009 @WangCai_1\r"
+      - "🇩🇪DE_8080 @WangCai_1\r"
+      - "🇩🇪DE_8090 @WangCai_1\r"
+      - "🇩🇪DE_8091 @WangCai_1\r"
+      - "🇩🇪DE_8118 @WangCai_1\r"
+      - "🇩🇪DE_8119 @WangCai_1\r"
+      - "🇩🇪DE_8881 @WangCai_1\r"
+      - "🇩🇪DE_8882 @WangCai_1\r"
+      - "🇩🇪DE_8888 @WangCai_1\r"
+      - "🇩🇪DE_9101 @WangCai_1\r"
+      - "🇩🇪DE_9102 @WangCai_1\r"
+      - "🇳🇱NL_9000 @WangCai_1\r"
+      - "🇳🇱NL_9001 @WangCai_1\r"
+      - "🇳🇱NL_9003 @WangCai_1\r"
+      - "🇳🇱NL_9005 @WangCai_1\r"
+      - "🇳🇱NL_9006 @WangCai_1\r"
+      - "🇳🇱NL_9007 @WangCai_1\r"
+      - "🇳🇱NL_9008 @WangCai_1\r"
+      - "🇳🇱NL_9010 @WangCai_1\r"
+      - "🇳🇱NL_9011 @WangCai_1\r"
+      - "🇳🇱NL_9014 @WangCai_1\r"
+      - "🇳🇱NL_9015 @WangCai_1\r"
+      - "🇳🇱NL_9018 @WangCai_1\r"
+      - "🇳🇱NL_9019 @WangCai_1\r"
+      - "🇳🇱NL_9020 @WangCai_1\r"
+      - "🇳🇱NL_9024 @WangCai_1\r"
+      - "🇳🇱NL_9025 @WangCai_1\r"
+      - "🇳🇱NL_9026 @WangCai_1\r"
+      - "🇳🇱NL_9027 @WangCai_1\r"
+      - "🇳🇱NL_9030 @WangCai_1\r"
+      - "🇳🇱NL_9031 @WangCai_1\r"
+      - "🇳🇱NL_9032 @WangCai_1\r"
+      - "🇳🇱NL_9033 @WangCai_1\r"
+      - "🇳🇱NL_9037 @WangCai_1\r"
+      - "🇳🇱NL_9038 @WangCai_1\r"
+      - "🇳🇱NL_9040 @WangCai_1\r"
+      - "🇳🇱NL_9041 @WangCai_1\r"
+      - "🇳🇱NL_9042 @WangCai_1\r"
+      - "🇳🇱NL_9043 @WangCai_1\r"
+      - "🇳🇱NL_9045 @WangCai_1\r"
+      - "🇳🇱NL_9046 @WangCai_1\r"
+      - "🇳🇱NL_9050 @WangCai_1\r"
+      - "🇳🇱NL_9053 @WangCai_1\r"
+      - "🇳🇱NL_9056 @WangCai_1\r"
+      - "🇳🇱NL_9057 @WangCai_1\r"
+      - "🇳🇱NL_9058 @WangCai_1\r"
+      - "🇳🇱NL_9059 @WangCai_1\r"
+      - "🇳🇱NL_9060 @WangCai_1\r"
+      - "🇳🇱NL_9061 @WangCai_1\r"
+      - "🇳🇱NL_9064 @WangCai_1\r"
+      - "🇳🇱NL_9070 @WangCai_1\r"
+      - "🇳🇱NL_9073 @WangCai_1\r"
+      - "🇳🇱NL_9079 @WangCai_1\r"
+      - "🇳🇱NL_9080 @WangCai_1\r"
+      - "🇳🇱NL_9084 @WangCai_1\r"
+      - "🇳🇱NL_9088 @WangCai_1\r"
+      - "🇳🇱NL_9093 @WangCai_1\r"
+      - "🇳🇱NL_9094 @WangCai_1\r"
+      - "🇳🇱NL_9097 @WangCai_1\r"
+      - "🇳🇱NL_9098 @WangCai_1\r"
+      - "🇳🇿AU_9000 @WangCai_1\r"
+      - "🇳🇿AU_9001 @WangCai_1\r"
+      - "🇳🇿AU_9003 @WangCai_1\r"
+      - "🇳🇿AU_9005 @WangCai_1\r"
+      - "🇳🇿AU_9006 @WangCai_1\r"
+      - "🇳🇿AU_9007 @WangCai_1\r"
+      - "🇳🇿AU_9008 @WangCai_1\r"
+      - "🇳🇿AU_9010 @WangCai_1\r"
+      - "🇳🇿AU_9011 @WangCai_1\r"
+      - "🇳🇿AU_9014 @WangCai_1\r"
+      - "🇳🇿AU_9015 @WangCai_1\r"
+      - "🇳🇿AU_9018 @WangCai_1\r"
+      - "🇳🇿AU_9019 @WangCai_1\r"
+      - "🇳🇿AU_9020 @WangCai_1\r"
+      - "🇳🇿AU_9024 @WangCai_1\r"
+      - "🇳🇿AU_9025 @WangCai_1\r"
+      - "🇳🇿AU_9026 @WangCai_1\r"
+      - "🇳🇿AU_9027 @WangCai_1\r"
+      - "🇳🇿AU_9030 @WangCai_1\r"
+      - "🇳🇿AU_9031 @WangCai_1\r"
+      - "🇳🇿AU_9032 @WangCai_1\r"
+      - "🇳🇿AU_9033 @WangCai_1\r"
+      - "🇳🇿AU_9037 @WangCai_1\r"
+      - "🇳🇿AU_9038 @WangCai_1\r"
+      - "🇳🇿AU_9040 @WangCai_1\r"
+      - "🇳🇿AU_9041 @WangCai_1\r"
+      - "🇳🇿AU_9042 @WangCai_1\r"
+      - "🇳🇿AU_9043 @WangCai_1\r"
+      - "🇳🇿AU_9045 @WangCai_1\r"
+      - "🇳🇿AU_9046 @WangCai_1\r"
+      - "🇳🇿AU_9050 @WangCai_1\r"
+      - "🇳🇿AU_9053 @WangCai_1\r"
+      - "🇳🇿AU_9056 @WangCai_1\r"
+      - "🇳🇿AU_9057 @WangCai_1\r"
+      - "🇳🇿AU_9058 @WangCai_1\r"
+      - "🇳🇿AU_9059 @WangCai_1\r"
+      - "🇳🇿AU_9060 @WangCai_1\r"
+      - "🇳🇿AU_9061 @WangCai_1\r"
+      - "🇳🇿AU_9064 @WangCai_1\r"
+      - "🇳🇿AU_9070 @WangCai_1\r"
+      - "🇳🇿AU_9073 @WangCai_1\r"
+      - "🇳🇿AU_9079 @WangCai_1\r"
+      - "🇳🇿AU_9080 @WangCai_1\r"
+      - "🇳🇿AU_9084 @WangCai_1\r"
+      - "🇳🇿AU_9088 @WangCai_1\r"
+      - "🇳🇿AU_9093 @WangCai_1\r"
+      - "🇳🇿AU_9094 @WangCai_1\r"
+      - "🇳🇿AU_9097 @WangCai_1\r"
+      - "🇳🇿AU_9098 @WangCai_1\r"
+      - "🇷🇺RU_9000 @WangCai_1\r"
+      - "🇷🇺RU_9001 @WangCai_1\r"
+      - "🇷🇺RU_9003 @WangCai_1\r"
+      - "🇷🇺RU_9005 @WangCai_1\r"
+      - "🇷🇺RU_9006 @WangCai_1\r"
+      - "🇷🇺RU_9007 @WangCai_1\r"
+      - "🇷🇺RU_9008 @WangCai_1\r"
+      - "🇷🇺RU_9010 @WangCai_1\r"
+      - "🇷🇺RU_9011 @WangCai_1\r"
+      - "🇷🇺RU_9014 @WangCai_1\r"
+      - "🇷🇺RU_9015 @WangCai_1\r"
+      - "🇷🇺RU_9018 @WangCai_1\r"
+      - "🇷🇺RU_9019 @WangCai_1\r"
+      - "🇷🇺RU_9020 @WangCai_1\r"
+      - "🇷🇺RU_9024 @WangCai_1\r"
+      - "🇷🇺RU_9025 @WangCai_1\r"
+      - "🇷🇺RU_9026 @WangCai_1\r"
+      - "🇷🇺RU_9027 @WangCai_1\r"
+      - "🇷🇺RU_9030 @WangCai_1\r"
+      - "🇷🇺RU_9031 @WangCai_1\r"
+      - "🇷🇺RU_9032 @WangCai_1\r"
+      - "🇷🇺RU_9033 @WangCai_1\r"
+      - "🇷🇺RU_9037 @WangCai_1\r"
+      - "🇷🇺RU_9038 @WangCai_1\r"
+      - "🇷🇺RU_9040 @WangCai_1\r"
+      - "🇷🇺RU_9041 @WangCai_1\r"
+      - "🇷🇺RU_9042 @WangCai_1\r"
+      - "🇷🇺RU_9043 @WangCai_1\r"
+      - "🇷🇺RU_9045 @WangCai_1\r"
+      - "🇷🇺RU_9046 @WangCai_1\r"
+      - "🇷🇺RU_9050 @WangCai_1\r"
+      - "🇷🇺RU_9053 @WangCai_1\r"
+      - "🇷🇺RU_9056 @WangCai_1\r"
+      - "🇷🇺RU_9057 @WangCai_1\r"
+      - "🇷🇺RU_9058 @WangCai_1\r"
+      - "🇷🇺RU_9059 @WangCai_1\r"
+      - "🇷🇺RU_9060 @WangCai_1\r"
+      - "🇷🇺RU_9061 @WangCai_1\r"
+      - "🇷🇺RU_9064 @WangCai_1\r"
+      - "🇷🇺RU_9070 @WangCai_1\r"
+      - "🇷🇺RU_9073 @WangCai_1\r"
+      - "🇷🇺RU_9079 @WangCai_1\r"
+      - "🇷🇺RU_9080 @WangCai_1\r"
+      - "🇷🇺RU_9084 @WangCai_1\r"
+      - "🇷🇺RU_9088 @WangCai_1\r"
+      - "🇷🇺RU_9093 @WangCai_1\r"
+      - "🇷🇺RU_9094 @WangCai_1\r"
+      - "🇷🇺RU_9097 @WangCai_1\r"
+      - "🇷🇺RU_9098 @WangCai_1\r"
+      - "🇺🇸US_8118 @WangCai_1\r"
+      - "🇺🇸US_6697 @WangCai_1\r"
+      - "🇺🇸US_5601 @WangCai_1\r"
+      - "🇺🇸US_8119 @WangCai_1\r"
+      - "🇺🇸US_5003 @WangCai_1\r"
+      - "🇺🇸US_5001 @WangCai_1\r"
+      - "🇺🇸US_9102 @WangCai_1\r"
+      - "🇺🇸US_7306 @WangCai_1\r"
+      - "🇺🇸US_8881 @WangCai_1\r"
+      - "🇺🇸US_8080 @WangCai_1\r"
+      - "🇺🇸US_5000 @WangCai_1\r"
+      - "🇺🇸US_4444 @WangCai_1\r"
+      - "🇺🇸US_0443 @WangCai_1\r"
+      - "🇺🇸US_8009 @WangCai_1\r"
+      - "🇺🇸US_8008 @WangCai_1\r"
+      - "🇺🇸US_7002 @WangCai_1\r"
+      - "🇺🇸US_7307 @WangCai_1\r"
+      - "🇺🇸US_3306 @WangCai_1\r"
+      - "🇺🇸US_8000 @WangCai_1\r"
+      - "🇺🇸US_6679 @WangCai_1\r"
+      - "🇺🇸US_8888 @WangCai_1\r"
+      - "🇺🇸US_8090 @WangCai_1\r"
+      - "🇺🇸US_8882 @WangCai_1\r"
+      - "🇺🇸US_6379 @WangCai_1\r"
+      - "🇺🇸US_9101 @WangCai_1\r"
+      - "🇺🇸US_8091 @WangCai_1\r"
+      - "🇺🇸US_5500 @WangCai_1\r"
+      - "🇺🇸US_5600 @WangCai_1\r"
+      - "🇺🇸US_5004 @WangCai_1\r"
+      - "🇺🇸US_2375 @WangCai_1\r"
+      - "🇺🇸US_7001 @WangCai_1\r"
+      - "🇺🇸US_3389 @WangCai_1\r"
+      - 🇺🇸US_2376 @WangCai_1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国_2
-      - default_name_1
-      - 🇺🇸_US_美国_1
-      - default_name_2
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - "‌‌🇨🇦CA_0443 @WangCai_1\r"
+      - "‌‌🇨🇦CA_2375 @WangCai_1\r"
+      - "‌‌🇨🇦CA_2376 @WangCai_1\r"
+      - "‌‌🇨🇦CA_3306 @WangCai_1\r"
+      - "‌‌🇨🇦CA_3389 @WangCai_1\r"
+      - "‌‌🇨🇦CA_4444 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5000 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5001 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5003 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5004 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5500 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5600 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5601 @WangCai_1\r"
+      - "‌‌🇨🇦CA_6379 @WangCai_1\r"
+      - "‌‌🇨🇦CA_6679 @WangCai_1\r"
+      - "‌‌🇨🇦CA_6697 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7001 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7002 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7306 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7307 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8000 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8008 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8009 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8080 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8090 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8091 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8118 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8119 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8881 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8882 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8888 @WangCai_1\r"
+      - "‌‌🇨🇦CA_9101 @WangCai_1\r"
+      - "‌‌🇨🇦CA_9102 @WangCai_1\r"
+      - "🇩🇪DE_0443 @WangCai_1\r"
+      - "🇩🇪DE_2376 @WangCai_1\r"
+      - "🇩🇪DE_3306 @WangCai_1\r"
+      - "🇩🇪DE_3389 @WangCai_1\r"
+      - "🇩🇪DE_4444 @WangCai_1\r"
+      - "🇩🇪DE_5000 @WangCai_1\r"
+      - "🇩🇪DE_5003 @WangCai_1\r"
+      - "🇩🇪DE_5004 @WangCai_1\r"
+      - "🇩🇪DE_5500 @WangCai_1\r"
+      - "🇩🇪DE_5600 @WangCai_1\r"
+      - "🇩🇪DE_5601 @WangCai_1\r"
+      - "🇩🇪DE_6379 @WangCai_1\r"
+      - "🇩🇪DE_6679 @WangCai_1\r"
+      - "🇩🇪DE_6697 @WangCai_1\r"
+      - "🇩🇪DE_7001 @WangCai_1\r"
+      - "🇩🇪DE_7002 @WangCai_1\r"
+      - "🇩🇪DE_7306 @WangCai_1\r"
+      - "🇩🇪DE_7307 @WangCai_1\r"
+      - "🇩🇪DE_8000 @WangCai_1\r"
+      - "🇩🇪DE_8008 @WangCai_1\r"
+      - "🇩🇪DE_8009 @WangCai_1\r"
+      - "🇩🇪DE_8080 @WangCai_1\r"
+      - "🇩🇪DE_8090 @WangCai_1\r"
+      - "🇩🇪DE_8091 @WangCai_1\r"
+      - "🇩🇪DE_8118 @WangCai_1\r"
+      - "🇩🇪DE_8119 @WangCai_1\r"
+      - "🇩🇪DE_8881 @WangCai_1\r"
+      - "🇩🇪DE_8882 @WangCai_1\r"
+      - "🇩🇪DE_8888 @WangCai_1\r"
+      - "🇩🇪DE_9101 @WangCai_1\r"
+      - "🇩🇪DE_9102 @WangCai_1\r"
+      - "🇳🇱NL_9000 @WangCai_1\r"
+      - "🇳🇱NL_9001 @WangCai_1\r"
+      - "🇳🇱NL_9003 @WangCai_1\r"
+      - "🇳🇱NL_9005 @WangCai_1\r"
+      - "🇳🇱NL_9006 @WangCai_1\r"
+      - "🇳🇱NL_9007 @WangCai_1\r"
+      - "🇳🇱NL_9008 @WangCai_1\r"
+      - "🇳🇱NL_9010 @WangCai_1\r"
+      - "🇳🇱NL_9011 @WangCai_1\r"
+      - "🇳🇱NL_9014 @WangCai_1\r"
+      - "🇳🇱NL_9015 @WangCai_1\r"
+      - "🇳🇱NL_9018 @WangCai_1\r"
+      - "🇳🇱NL_9019 @WangCai_1\r"
+      - "🇳🇱NL_9020 @WangCai_1\r"
+      - "🇳🇱NL_9024 @WangCai_1\r"
+      - "🇳🇱NL_9025 @WangCai_1\r"
+      - "🇳🇱NL_9026 @WangCai_1\r"
+      - "🇳🇱NL_9027 @WangCai_1\r"
+      - "🇳🇱NL_9030 @WangCai_1\r"
+      - "🇳🇱NL_9031 @WangCai_1\r"
+      - "🇳🇱NL_9032 @WangCai_1\r"
+      - "🇳🇱NL_9033 @WangCai_1\r"
+      - "🇳🇱NL_9037 @WangCai_1\r"
+      - "🇳🇱NL_9038 @WangCai_1\r"
+      - "🇳🇱NL_9040 @WangCai_1\r"
+      - "🇳🇱NL_9041 @WangCai_1\r"
+      - "🇳🇱NL_9042 @WangCai_1\r"
+      - "🇳🇱NL_9043 @WangCai_1\r"
+      - "🇳🇱NL_9045 @WangCai_1\r"
+      - "🇳🇱NL_9046 @WangCai_1\r"
+      - "🇳🇱NL_9050 @WangCai_1\r"
+      - "🇳🇱NL_9053 @WangCai_1\r"
+      - "🇳🇱NL_9056 @WangCai_1\r"
+      - "🇳🇱NL_9057 @WangCai_1\r"
+      - "🇳🇱NL_9058 @WangCai_1\r"
+      - "🇳🇱NL_9059 @WangCai_1\r"
+      - "🇳🇱NL_9060 @WangCai_1\r"
+      - "🇳🇱NL_9061 @WangCai_1\r"
+      - "🇳🇱NL_9064 @WangCai_1\r"
+      - "🇳🇱NL_9070 @WangCai_1\r"
+      - "🇳🇱NL_9073 @WangCai_1\r"
+      - "🇳🇱NL_9079 @WangCai_1\r"
+      - "🇳🇱NL_9080 @WangCai_1\r"
+      - "🇳🇱NL_9084 @WangCai_1\r"
+      - "🇳🇱NL_9088 @WangCai_1\r"
+      - "🇳🇱NL_9093 @WangCai_1\r"
+      - "🇳🇱NL_9094 @WangCai_1\r"
+      - "🇳🇱NL_9097 @WangCai_1\r"
+      - "🇳🇱NL_9098 @WangCai_1\r"
+      - "🇳🇿AU_9000 @WangCai_1\r"
+      - "🇳🇿AU_9001 @WangCai_1\r"
+      - "🇳🇿AU_9003 @WangCai_1\r"
+      - "🇳🇿AU_9005 @WangCai_1\r"
+      - "🇳🇿AU_9006 @WangCai_1\r"
+      - "🇳🇿AU_9007 @WangCai_1\r"
+      - "🇳🇿AU_9008 @WangCai_1\r"
+      - "🇳🇿AU_9010 @WangCai_1\r"
+      - "🇳🇿AU_9011 @WangCai_1\r"
+      - "🇳🇿AU_9014 @WangCai_1\r"
+      - "🇳🇿AU_9015 @WangCai_1\r"
+      - "🇳🇿AU_9018 @WangCai_1\r"
+      - "🇳🇿AU_9019 @WangCai_1\r"
+      - "🇳🇿AU_9020 @WangCai_1\r"
+      - "🇳🇿AU_9024 @WangCai_1\r"
+      - "🇳🇿AU_9025 @WangCai_1\r"
+      - "🇳🇿AU_9026 @WangCai_1\r"
+      - "🇳🇿AU_9027 @WangCai_1\r"
+      - "🇳🇿AU_9030 @WangCai_1\r"
+      - "🇳🇿AU_9031 @WangCai_1\r"
+      - "🇳🇿AU_9032 @WangCai_1\r"
+      - "🇳🇿AU_9033 @WangCai_1\r"
+      - "🇳🇿AU_9037 @WangCai_1\r"
+      - "🇳🇿AU_9038 @WangCai_1\r"
+      - "🇳🇿AU_9040 @WangCai_1\r"
+      - "🇳🇿AU_9041 @WangCai_1\r"
+      - "🇳🇿AU_9042 @WangCai_1\r"
+      - "🇳🇿AU_9043 @WangCai_1\r"
+      - "🇳🇿AU_9045 @WangCai_1\r"
+      - "🇳🇿AU_9046 @WangCai_1\r"
+      - "🇳🇿AU_9050 @WangCai_1\r"
+      - "🇳🇿AU_9053 @WangCai_1\r"
+      - "🇳🇿AU_9056 @WangCai_1\r"
+      - "🇳🇿AU_9057 @WangCai_1\r"
+      - "🇳🇿AU_9058 @WangCai_1\r"
+      - "🇳🇿AU_9059 @WangCai_1\r"
+      - "🇳🇿AU_9060 @WangCai_1\r"
+      - "🇳🇿AU_9061 @WangCai_1\r"
+      - "🇳🇿AU_9064 @WangCai_1\r"
+      - "🇳🇿AU_9070 @WangCai_1\r"
+      - "🇳🇿AU_9073 @WangCai_1\r"
+      - "🇳🇿AU_9079 @WangCai_1\r"
+      - "🇳🇿AU_9080 @WangCai_1\r"
+      - "🇳🇿AU_9084 @WangCai_1\r"
+      - "🇳🇿AU_9088 @WangCai_1\r"
+      - "🇳🇿AU_9093 @WangCai_1\r"
+      - "🇳🇿AU_9094 @WangCai_1\r"
+      - "🇳🇿AU_9097 @WangCai_1\r"
+      - "🇳🇿AU_9098 @WangCai_1\r"
+      - "🇷🇺RU_9000 @WangCai_1\r"
+      - "🇷🇺RU_9001 @WangCai_1\r"
+      - "🇷🇺RU_9003 @WangCai_1\r"
+      - "🇷🇺RU_9005 @WangCai_1\r"
+      - "🇷🇺RU_9006 @WangCai_1\r"
+      - "🇷🇺RU_9007 @WangCai_1\r"
+      - "🇷🇺RU_9008 @WangCai_1\r"
+      - "🇷🇺RU_9010 @WangCai_1\r"
+      - "🇷🇺RU_9011 @WangCai_1\r"
+      - "🇷🇺RU_9014 @WangCai_1\r"
+      - "🇷🇺RU_9015 @WangCai_1\r"
+      - "🇷🇺RU_9018 @WangCai_1\r"
+      - "🇷🇺RU_9019 @WangCai_1\r"
+      - "🇷🇺RU_9020 @WangCai_1\r"
+      - "🇷🇺RU_9024 @WangCai_1\r"
+      - "🇷🇺RU_9025 @WangCai_1\r"
+      - "🇷🇺RU_9026 @WangCai_1\r"
+      - "🇷🇺RU_9027 @WangCai_1\r"
+      - "🇷🇺RU_9030 @WangCai_1\r"
+      - "🇷🇺RU_9031 @WangCai_1\r"
+      - "🇷🇺RU_9032 @WangCai_1\r"
+      - "🇷🇺RU_9033 @WangCai_1\r"
+      - "🇷🇺RU_9037 @WangCai_1\r"
+      - "🇷🇺RU_9038 @WangCai_1\r"
+      - "🇷🇺RU_9040 @WangCai_1\r"
+      - "🇷🇺RU_9041 @WangCai_1\r"
+      - "🇷🇺RU_9042 @WangCai_1\r"
+      - "🇷🇺RU_9043 @WangCai_1\r"
+      - "🇷🇺RU_9045 @WangCai_1\r"
+      - "🇷🇺RU_9046 @WangCai_1\r"
+      - "🇷🇺RU_9050 @WangCai_1\r"
+      - "🇷🇺RU_9053 @WangCai_1\r"
+      - "🇷🇺RU_9056 @WangCai_1\r"
+      - "🇷🇺RU_9057 @WangCai_1\r"
+      - "🇷🇺RU_9058 @WangCai_1\r"
+      - "🇷🇺RU_9059 @WangCai_1\r"
+      - "🇷🇺RU_9060 @WangCai_1\r"
+      - "🇷🇺RU_9061 @WangCai_1\r"
+      - "🇷🇺RU_9064 @WangCai_1\r"
+      - "🇷🇺RU_9070 @WangCai_1\r"
+      - "🇷🇺RU_9073 @WangCai_1\r"
+      - "🇷🇺RU_9079 @WangCai_1\r"
+      - "🇷🇺RU_9080 @WangCai_1\r"
+      - "🇷🇺RU_9084 @WangCai_1\r"
+      - "🇷🇺RU_9088 @WangCai_1\r"
+      - "🇷🇺RU_9093 @WangCai_1\r"
+      - "🇷🇺RU_9094 @WangCai_1\r"
+      - "🇷🇺RU_9097 @WangCai_1\r"
+      - "🇷🇺RU_9098 @WangCai_1\r"
+      - "🇺🇸US_8118 @WangCai_1\r"
+      - "🇺🇸US_6697 @WangCai_1\r"
+      - "🇺🇸US_5601 @WangCai_1\r"
+      - "🇺🇸US_8119 @WangCai_1\r"
+      - "🇺🇸US_5003 @WangCai_1\r"
+      - "🇺🇸US_5001 @WangCai_1\r"
+      - "🇺🇸US_9102 @WangCai_1\r"
+      - "🇺🇸US_7306 @WangCai_1\r"
+      - "🇺🇸US_8881 @WangCai_1\r"
+      - "🇺🇸US_8080 @WangCai_1\r"
+      - "🇺🇸US_5000 @WangCai_1\r"
+      - "🇺🇸US_4444 @WangCai_1\r"
+      - "🇺🇸US_0443 @WangCai_1\r"
+      - "🇺🇸US_8009 @WangCai_1\r"
+      - "🇺🇸US_8008 @WangCai_1\r"
+      - "🇺🇸US_7002 @WangCai_1\r"
+      - "🇺🇸US_7307 @WangCai_1\r"
+      - "🇺🇸US_3306 @WangCai_1\r"
+      - "🇺🇸US_8000 @WangCai_1\r"
+      - "🇺🇸US_6679 @WangCai_1\r"
+      - "🇺🇸US_8888 @WangCai_1\r"
+      - "🇺🇸US_8090 @WangCai_1\r"
+      - "🇺🇸US_8882 @WangCai_1\r"
+      - "🇺🇸US_6379 @WangCai_1\r"
+      - "🇺🇸US_9101 @WangCai_1\r"
+      - "🇺🇸US_8091 @WangCai_1\r"
+      - "🇺🇸US_5500 @WangCai_1\r"
+      - "🇺🇸US_5600 @WangCai_1\r"
+      - "🇺🇸US_5004 @WangCai_1\r"
+      - "🇺🇸US_2375 @WangCai_1\r"
+      - "🇺🇸US_7001 @WangCai_1\r"
+      - "🇺🇸US_3389 @WangCai_1\r"
+      - 🇺🇸US_2376 @WangCai_1
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国_2
-      - default_name_1
-      - 🇺🇸_US_美国_1
-      - default_name_2
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - "‌‌🇨🇦CA_0443 @WangCai_1\r"
+      - "‌‌🇨🇦CA_2375 @WangCai_1\r"
+      - "‌‌🇨🇦CA_2376 @WangCai_1\r"
+      - "‌‌🇨🇦CA_3306 @WangCai_1\r"
+      - "‌‌🇨🇦CA_3389 @WangCai_1\r"
+      - "‌‌🇨🇦CA_4444 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5000 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5001 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5003 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5004 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5500 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5600 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5601 @WangCai_1\r"
+      - "‌‌🇨🇦CA_6379 @WangCai_1\r"
+      - "‌‌🇨🇦CA_6679 @WangCai_1\r"
+      - "‌‌🇨🇦CA_6697 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7001 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7002 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7306 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7307 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8000 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8008 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8009 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8080 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8090 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8091 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8118 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8119 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8881 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8882 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8888 @WangCai_1\r"
+      - "‌‌🇨🇦CA_9101 @WangCai_1\r"
+      - "‌‌🇨🇦CA_9102 @WangCai_1\r"
+      - "🇩🇪DE_0443 @WangCai_1\r"
+      - "🇩🇪DE_2376 @WangCai_1\r"
+      - "🇩🇪DE_3306 @WangCai_1\r"
+      - "🇩🇪DE_3389 @WangCai_1\r"
+      - "🇩🇪DE_4444 @WangCai_1\r"
+      - "🇩🇪DE_5000 @WangCai_1\r"
+      - "🇩🇪DE_5003 @WangCai_1\r"
+      - "🇩🇪DE_5004 @WangCai_1\r"
+      - "🇩🇪DE_5500 @WangCai_1\r"
+      - "🇩🇪DE_5600 @WangCai_1\r"
+      - "🇩🇪DE_5601 @WangCai_1\r"
+      - "🇩🇪DE_6379 @WangCai_1\r"
+      - "🇩🇪DE_6679 @WangCai_1\r"
+      - "🇩🇪DE_6697 @WangCai_1\r"
+      - "🇩🇪DE_7001 @WangCai_1\r"
+      - "🇩🇪DE_7002 @WangCai_1\r"
+      - "🇩🇪DE_7306 @WangCai_1\r"
+      - "🇩🇪DE_7307 @WangCai_1\r"
+      - "🇩🇪DE_8000 @WangCai_1\r"
+      - "🇩🇪DE_8008 @WangCai_1\r"
+      - "🇩🇪DE_8009 @WangCai_1\r"
+      - "🇩🇪DE_8080 @WangCai_1\r"
+      - "🇩🇪DE_8090 @WangCai_1\r"
+      - "🇩🇪DE_8091 @WangCai_1\r"
+      - "🇩🇪DE_8118 @WangCai_1\r"
+      - "🇩🇪DE_8119 @WangCai_1\r"
+      - "🇩🇪DE_8881 @WangCai_1\r"
+      - "🇩🇪DE_8882 @WangCai_1\r"
+      - "🇩🇪DE_8888 @WangCai_1\r"
+      - "🇩🇪DE_9101 @WangCai_1\r"
+      - "🇩🇪DE_9102 @WangCai_1\r"
+      - "🇳🇱NL_9000 @WangCai_1\r"
+      - "🇳🇱NL_9001 @WangCai_1\r"
+      - "🇳🇱NL_9003 @WangCai_1\r"
+      - "🇳🇱NL_9005 @WangCai_1\r"
+      - "🇳🇱NL_9006 @WangCai_1\r"
+      - "🇳🇱NL_9007 @WangCai_1\r"
+      - "🇳🇱NL_9008 @WangCai_1\r"
+      - "🇳🇱NL_9010 @WangCai_1\r"
+      - "🇳🇱NL_9011 @WangCai_1\r"
+      - "🇳🇱NL_9014 @WangCai_1\r"
+      - "🇳🇱NL_9015 @WangCai_1\r"
+      - "🇳🇱NL_9018 @WangCai_1\r"
+      - "🇳🇱NL_9019 @WangCai_1\r"
+      - "🇳🇱NL_9020 @WangCai_1\r"
+      - "🇳🇱NL_9024 @WangCai_1\r"
+      - "🇳🇱NL_9025 @WangCai_1\r"
+      - "🇳🇱NL_9026 @WangCai_1\r"
+      - "🇳🇱NL_9027 @WangCai_1\r"
+      - "🇳🇱NL_9030 @WangCai_1\r"
+      - "🇳🇱NL_9031 @WangCai_1\r"
+      - "🇳🇱NL_9032 @WangCai_1\r"
+      - "🇳🇱NL_9033 @WangCai_1\r"
+      - "🇳🇱NL_9037 @WangCai_1\r"
+      - "🇳🇱NL_9038 @WangCai_1\r"
+      - "🇳🇱NL_9040 @WangCai_1\r"
+      - "🇳🇱NL_9041 @WangCai_1\r"
+      - "🇳🇱NL_9042 @WangCai_1\r"
+      - "🇳🇱NL_9043 @WangCai_1\r"
+      - "🇳🇱NL_9045 @WangCai_1\r"
+      - "🇳🇱NL_9046 @WangCai_1\r"
+      - "🇳🇱NL_9050 @WangCai_1\r"
+      - "🇳🇱NL_9053 @WangCai_1\r"
+      - "🇳🇱NL_9056 @WangCai_1\r"
+      - "🇳🇱NL_9057 @WangCai_1\r"
+      - "🇳🇱NL_9058 @WangCai_1\r"
+      - "🇳🇱NL_9059 @WangCai_1\r"
+      - "🇳🇱NL_9060 @WangCai_1\r"
+      - "🇳🇱NL_9061 @WangCai_1\r"
+      - "🇳🇱NL_9064 @WangCai_1\r"
+      - "🇳🇱NL_9070 @WangCai_1\r"
+      - "🇳🇱NL_9073 @WangCai_1\r"
+      - "🇳🇱NL_9079 @WangCai_1\r"
+      - "🇳🇱NL_9080 @WangCai_1\r"
+      - "🇳🇱NL_9084 @WangCai_1\r"
+      - "🇳🇱NL_9088 @WangCai_1\r"
+      - "🇳🇱NL_9093 @WangCai_1\r"
+      - "🇳🇱NL_9094 @WangCai_1\r"
+      - "🇳🇱NL_9097 @WangCai_1\r"
+      - "🇳🇱NL_9098 @WangCai_1\r"
+      - "🇳🇿AU_9000 @WangCai_1\r"
+      - "🇳🇿AU_9001 @WangCai_1\r"
+      - "🇳🇿AU_9003 @WangCai_1\r"
+      - "🇳🇿AU_9005 @WangCai_1\r"
+      - "🇳🇿AU_9006 @WangCai_1\r"
+      - "🇳🇿AU_9007 @WangCai_1\r"
+      - "🇳🇿AU_9008 @WangCai_1\r"
+      - "🇳🇿AU_9010 @WangCai_1\r"
+      - "🇳🇿AU_9011 @WangCai_1\r"
+      - "🇳🇿AU_9014 @WangCai_1\r"
+      - "🇳🇿AU_9015 @WangCai_1\r"
+      - "🇳🇿AU_9018 @WangCai_1\r"
+      - "🇳🇿AU_9019 @WangCai_1\r"
+      - "🇳🇿AU_9020 @WangCai_1\r"
+      - "🇳🇿AU_9024 @WangCai_1\r"
+      - "🇳🇿AU_9025 @WangCai_1\r"
+      - "🇳🇿AU_9026 @WangCai_1\r"
+      - "🇳🇿AU_9027 @WangCai_1\r"
+      - "🇳🇿AU_9030 @WangCai_1\r"
+      - "🇳🇿AU_9031 @WangCai_1\r"
+      - "🇳🇿AU_9032 @WangCai_1\r"
+      - "🇳🇿AU_9033 @WangCai_1\r"
+      - "🇳🇿AU_9037 @WangCai_1\r"
+      - "🇳🇿AU_9038 @WangCai_1\r"
+      - "🇳🇿AU_9040 @WangCai_1\r"
+      - "🇳🇿AU_9041 @WangCai_1\r"
+      - "🇳🇿AU_9042 @WangCai_1\r"
+      - "🇳🇿AU_9043 @WangCai_1\r"
+      - "🇳🇿AU_9045 @WangCai_1\r"
+      - "🇳🇿AU_9046 @WangCai_1\r"
+      - "🇳🇿AU_9050 @WangCai_1\r"
+      - "🇳🇿AU_9053 @WangCai_1\r"
+      - "🇳🇿AU_9056 @WangCai_1\r"
+      - "🇳🇿AU_9057 @WangCai_1\r"
+      - "🇳🇿AU_9058 @WangCai_1\r"
+      - "🇳🇿AU_9059 @WangCai_1\r"
+      - "🇳🇿AU_9060 @WangCai_1\r"
+      - "🇳🇿AU_9061 @WangCai_1\r"
+      - "🇳🇿AU_9064 @WangCai_1\r"
+      - "🇳🇿AU_9070 @WangCai_1\r"
+      - "🇳🇿AU_9073 @WangCai_1\r"
+      - "🇳🇿AU_9079 @WangCai_1\r"
+      - "🇳🇿AU_9080 @WangCai_1\r"
+      - "🇳🇿AU_9084 @WangCai_1\r"
+      - "🇳🇿AU_9088 @WangCai_1\r"
+      - "🇳🇿AU_9093 @WangCai_1\r"
+      - "🇳🇿AU_9094 @WangCai_1\r"
+      - "🇳🇿AU_9097 @WangCai_1\r"
+      - "🇳🇿AU_9098 @WangCai_1\r"
+      - "🇷🇺RU_9000 @WangCai_1\r"
+      - "🇷🇺RU_9001 @WangCai_1\r"
+      - "🇷🇺RU_9003 @WangCai_1\r"
+      - "🇷🇺RU_9005 @WangCai_1\r"
+      - "🇷🇺RU_9006 @WangCai_1\r"
+      - "🇷🇺RU_9007 @WangCai_1\r"
+      - "🇷🇺RU_9008 @WangCai_1\r"
+      - "🇷🇺RU_9010 @WangCai_1\r"
+      - "🇷🇺RU_9011 @WangCai_1\r"
+      - "🇷🇺RU_9014 @WangCai_1\r"
+      - "🇷🇺RU_9015 @WangCai_1\r"
+      - "🇷🇺RU_9018 @WangCai_1\r"
+      - "🇷🇺RU_9019 @WangCai_1\r"
+      - "🇷🇺RU_9020 @WangCai_1\r"
+      - "🇷🇺RU_9024 @WangCai_1\r"
+      - "🇷🇺RU_9025 @WangCai_1\r"
+      - "🇷🇺RU_9026 @WangCai_1\r"
+      - "🇷🇺RU_9027 @WangCai_1\r"
+      - "🇷🇺RU_9030 @WangCai_1\r"
+      - "🇷🇺RU_9031 @WangCai_1\r"
+      - "🇷🇺RU_9032 @WangCai_1\r"
+      - "🇷🇺RU_9033 @WangCai_1\r"
+      - "🇷🇺RU_9037 @WangCai_1\r"
+      - "🇷🇺RU_9038 @WangCai_1\r"
+      - "🇷🇺RU_9040 @WangCai_1\r"
+      - "🇷🇺RU_9041 @WangCai_1\r"
+      - "🇷🇺RU_9042 @WangCai_1\r"
+      - "🇷🇺RU_9043 @WangCai_1\r"
+      - "🇷🇺RU_9045 @WangCai_1\r"
+      - "🇷🇺RU_9046 @WangCai_1\r"
+      - "🇷🇺RU_9050 @WangCai_1\r"
+      - "🇷🇺RU_9053 @WangCai_1\r"
+      - "🇷🇺RU_9056 @WangCai_1\r"
+      - "🇷🇺RU_9057 @WangCai_1\r"
+      - "🇷🇺RU_9058 @WangCai_1\r"
+      - "🇷🇺RU_9059 @WangCai_1\r"
+      - "🇷🇺RU_9060 @WangCai_1\r"
+      - "🇷🇺RU_9061 @WangCai_1\r"
+      - "🇷🇺RU_9064 @WangCai_1\r"
+      - "🇷🇺RU_9070 @WangCai_1\r"
+      - "🇷🇺RU_9073 @WangCai_1\r"
+      - "🇷🇺RU_9079 @WangCai_1\r"
+      - "🇷🇺RU_9080 @WangCai_1\r"
+      - "🇷🇺RU_9084 @WangCai_1\r"
+      - "🇷🇺RU_9088 @WangCai_1\r"
+      - "🇷🇺RU_9093 @WangCai_1\r"
+      - "🇷🇺RU_9094 @WangCai_1\r"
+      - "🇷🇺RU_9097 @WangCai_1\r"
+      - "🇷🇺RU_9098 @WangCai_1\r"
+      - "🇺🇸US_8118 @WangCai_1\r"
+      - "🇺🇸US_6697 @WangCai_1\r"
+      - "🇺🇸US_5601 @WangCai_1\r"
+      - "🇺🇸US_8119 @WangCai_1\r"
+      - "🇺🇸US_5003 @WangCai_1\r"
+      - "🇺🇸US_5001 @WangCai_1\r"
+      - "🇺🇸US_9102 @WangCai_1\r"
+      - "🇺🇸US_7306 @WangCai_1\r"
+      - "🇺🇸US_8881 @WangCai_1\r"
+      - "🇺🇸US_8080 @WangCai_1\r"
+      - "🇺🇸US_5000 @WangCai_1\r"
+      - "🇺🇸US_4444 @WangCai_1\r"
+      - "🇺🇸US_0443 @WangCai_1\r"
+      - "🇺🇸US_8009 @WangCai_1\r"
+      - "🇺🇸US_8008 @WangCai_1\r"
+      - "🇺🇸US_7002 @WangCai_1\r"
+      - "🇺🇸US_7307 @WangCai_1\r"
+      - "🇺🇸US_3306 @WangCai_1\r"
+      - "🇺🇸US_8000 @WangCai_1\r"
+      - "🇺🇸US_6679 @WangCai_1\r"
+      - "🇺🇸US_8888 @WangCai_1\r"
+      - "🇺🇸US_8090 @WangCai_1\r"
+      - "🇺🇸US_8882 @WangCai_1\r"
+      - "🇺🇸US_6379 @WangCai_1\r"
+      - "🇺🇸US_9101 @WangCai_1\r"
+      - "🇺🇸US_8091 @WangCai_1\r"
+      - "🇺🇸US_5500 @WangCai_1\r"
+      - "🇺🇸US_5600 @WangCai_1\r"
+      - "🇺🇸US_5004 @WangCai_1\r"
+      - "🇺🇸US_2375 @WangCai_1\r"
+      - "🇺🇸US_7001 @WangCai_1\r"
+      - "🇺🇸US_3389 @WangCai_1\r"
+      - 🇺🇸US_2376 @WangCai_1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国_2
-      - default_name_1
-      - 🇺🇸_US_美国_1
-      - default_name_2
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - "‌‌🇨🇦CA_0443 @WangCai_1\r"
+      - "‌‌🇨🇦CA_2375 @WangCai_1\r"
+      - "‌‌🇨🇦CA_2376 @WangCai_1\r"
+      - "‌‌🇨🇦CA_3306 @WangCai_1\r"
+      - "‌‌🇨🇦CA_3389 @WangCai_1\r"
+      - "‌‌🇨🇦CA_4444 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5000 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5001 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5003 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5004 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5500 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5600 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5601 @WangCai_1\r"
+      - "‌‌🇨🇦CA_6379 @WangCai_1\r"
+      - "‌‌🇨🇦CA_6679 @WangCai_1\r"
+      - "‌‌🇨🇦CA_6697 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7001 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7002 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7306 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7307 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8000 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8008 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8009 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8080 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8090 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8091 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8118 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8119 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8881 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8882 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8888 @WangCai_1\r"
+      - "‌‌🇨🇦CA_9101 @WangCai_1\r"
+      - "‌‌🇨🇦CA_9102 @WangCai_1\r"
+      - "🇩🇪DE_0443 @WangCai_1\r"
+      - "🇩🇪DE_2376 @WangCai_1\r"
+      - "🇩🇪DE_3306 @WangCai_1\r"
+      - "🇩🇪DE_3389 @WangCai_1\r"
+      - "🇩🇪DE_4444 @WangCai_1\r"
+      - "🇩🇪DE_5000 @WangCai_1\r"
+      - "🇩🇪DE_5003 @WangCai_1\r"
+      - "🇩🇪DE_5004 @WangCai_1\r"
+      - "🇩🇪DE_5500 @WangCai_1\r"
+      - "🇩🇪DE_5600 @WangCai_1\r"
+      - "🇩🇪DE_5601 @WangCai_1\r"
+      - "🇩🇪DE_6379 @WangCai_1\r"
+      - "🇩🇪DE_6679 @WangCai_1\r"
+      - "🇩🇪DE_6697 @WangCai_1\r"
+      - "🇩🇪DE_7001 @WangCai_1\r"
+      - "🇩🇪DE_7002 @WangCai_1\r"
+      - "🇩🇪DE_7306 @WangCai_1\r"
+      - "🇩🇪DE_7307 @WangCai_1\r"
+      - "🇩🇪DE_8000 @WangCai_1\r"
+      - "🇩🇪DE_8008 @WangCai_1\r"
+      - "🇩🇪DE_8009 @WangCai_1\r"
+      - "🇩🇪DE_8080 @WangCai_1\r"
+      - "🇩🇪DE_8090 @WangCai_1\r"
+      - "🇩🇪DE_8091 @WangCai_1\r"
+      - "🇩🇪DE_8118 @WangCai_1\r"
+      - "🇩🇪DE_8119 @WangCai_1\r"
+      - "🇩🇪DE_8881 @WangCai_1\r"
+      - "🇩🇪DE_8882 @WangCai_1\r"
+      - "🇩🇪DE_8888 @WangCai_1\r"
+      - "🇩🇪DE_9101 @WangCai_1\r"
+      - "🇩🇪DE_9102 @WangCai_1\r"
+      - "🇳🇱NL_9000 @WangCai_1\r"
+      - "🇳🇱NL_9001 @WangCai_1\r"
+      - "🇳🇱NL_9003 @WangCai_1\r"
+      - "🇳🇱NL_9005 @WangCai_1\r"
+      - "🇳🇱NL_9006 @WangCai_1\r"
+      - "🇳🇱NL_9007 @WangCai_1\r"
+      - "🇳🇱NL_9008 @WangCai_1\r"
+      - "🇳🇱NL_9010 @WangCai_1\r"
+      - "🇳🇱NL_9011 @WangCai_1\r"
+      - "🇳🇱NL_9014 @WangCai_1\r"
+      - "🇳🇱NL_9015 @WangCai_1\r"
+      - "🇳🇱NL_9018 @WangCai_1\r"
+      - "🇳🇱NL_9019 @WangCai_1\r"
+      - "🇳🇱NL_9020 @WangCai_1\r"
+      - "🇳🇱NL_9024 @WangCai_1\r"
+      - "🇳🇱NL_9025 @WangCai_1\r"
+      - "🇳🇱NL_9026 @WangCai_1\r"
+      - "🇳🇱NL_9027 @WangCai_1\r"
+      - "🇳🇱NL_9030 @WangCai_1\r"
+      - "🇳🇱NL_9031 @WangCai_1\r"
+      - "🇳🇱NL_9032 @WangCai_1\r"
+      - "🇳🇱NL_9033 @WangCai_1\r"
+      - "🇳🇱NL_9037 @WangCai_1\r"
+      - "🇳🇱NL_9038 @WangCai_1\r"
+      - "🇳🇱NL_9040 @WangCai_1\r"
+      - "🇳🇱NL_9041 @WangCai_1\r"
+      - "🇳🇱NL_9042 @WangCai_1\r"
+      - "🇳🇱NL_9043 @WangCai_1\r"
+      - "🇳🇱NL_9045 @WangCai_1\r"
+      - "🇳🇱NL_9046 @WangCai_1\r"
+      - "🇳🇱NL_9050 @WangCai_1\r"
+      - "🇳🇱NL_9053 @WangCai_1\r"
+      - "🇳🇱NL_9056 @WangCai_1\r"
+      - "🇳🇱NL_9057 @WangCai_1\r"
+      - "🇳🇱NL_9058 @WangCai_1\r"
+      - "🇳🇱NL_9059 @WangCai_1\r"
+      - "🇳🇱NL_9060 @WangCai_1\r"
+      - "🇳🇱NL_9061 @WangCai_1\r"
+      - "🇳🇱NL_9064 @WangCai_1\r"
+      - "🇳🇱NL_9070 @WangCai_1\r"
+      - "🇳🇱NL_9073 @WangCai_1\r"
+      - "🇳🇱NL_9079 @WangCai_1\r"
+      - "🇳🇱NL_9080 @WangCai_1\r"
+      - "🇳🇱NL_9084 @WangCai_1\r"
+      - "🇳🇱NL_9088 @WangCai_1\r"
+      - "🇳🇱NL_9093 @WangCai_1\r"
+      - "🇳🇱NL_9094 @WangCai_1\r"
+      - "🇳🇱NL_9097 @WangCai_1\r"
+      - "🇳🇱NL_9098 @WangCai_1\r"
+      - "🇳🇿AU_9000 @WangCai_1\r"
+      - "🇳🇿AU_9001 @WangCai_1\r"
+      - "🇳🇿AU_9003 @WangCai_1\r"
+      - "🇳🇿AU_9005 @WangCai_1\r"
+      - "🇳🇿AU_9006 @WangCai_1\r"
+      - "🇳🇿AU_9007 @WangCai_1\r"
+      - "🇳🇿AU_9008 @WangCai_1\r"
+      - "🇳🇿AU_9010 @WangCai_1\r"
+      - "🇳🇿AU_9011 @WangCai_1\r"
+      - "🇳🇿AU_9014 @WangCai_1\r"
+      - "🇳🇿AU_9015 @WangCai_1\r"
+      - "🇳🇿AU_9018 @WangCai_1\r"
+      - "🇳🇿AU_9019 @WangCai_1\r"
+      - "🇳🇿AU_9020 @WangCai_1\r"
+      - "🇳🇿AU_9024 @WangCai_1\r"
+      - "🇳🇿AU_9025 @WangCai_1\r"
+      - "🇳🇿AU_9026 @WangCai_1\r"
+      - "🇳🇿AU_9027 @WangCai_1\r"
+      - "🇳🇿AU_9030 @WangCai_1\r"
+      - "🇳🇿AU_9031 @WangCai_1\r"
+      - "🇳🇿AU_9032 @WangCai_1\r"
+      - "🇳🇿AU_9033 @WangCai_1\r"
+      - "🇳🇿AU_9037 @WangCai_1\r"
+      - "🇳🇿AU_9038 @WangCai_1\r"
+      - "🇳🇿AU_9040 @WangCai_1\r"
+      - "🇳🇿AU_9041 @WangCai_1\r"
+      - "🇳🇿AU_9042 @WangCai_1\r"
+      - "🇳🇿AU_9043 @WangCai_1\r"
+      - "🇳🇿AU_9045 @WangCai_1\r"
+      - "🇳🇿AU_9046 @WangCai_1\r"
+      - "🇳🇿AU_9050 @WangCai_1\r"
+      - "🇳🇿AU_9053 @WangCai_1\r"
+      - "🇳🇿AU_9056 @WangCai_1\r"
+      - "🇳🇿AU_9057 @WangCai_1\r"
+      - "🇳🇿AU_9058 @WangCai_1\r"
+      - "🇳🇿AU_9059 @WangCai_1\r"
+      - "🇳🇿AU_9060 @WangCai_1\r"
+      - "🇳🇿AU_9061 @WangCai_1\r"
+      - "🇳🇿AU_9064 @WangCai_1\r"
+      - "🇳🇿AU_9070 @WangCai_1\r"
+      - "🇳🇿AU_9073 @WangCai_1\r"
+      - "🇳🇿AU_9079 @WangCai_1\r"
+      - "🇳🇿AU_9080 @WangCai_1\r"
+      - "🇳🇿AU_9084 @WangCai_1\r"
+      - "🇳🇿AU_9088 @WangCai_1\r"
+      - "🇳🇿AU_9093 @WangCai_1\r"
+      - "🇳🇿AU_9094 @WangCai_1\r"
+      - "🇳🇿AU_9097 @WangCai_1\r"
+      - "🇳🇿AU_9098 @WangCai_1\r"
+      - "🇷🇺RU_9000 @WangCai_1\r"
+      - "🇷🇺RU_9001 @WangCai_1\r"
+      - "🇷🇺RU_9003 @WangCai_1\r"
+      - "🇷🇺RU_9005 @WangCai_1\r"
+      - "🇷🇺RU_9006 @WangCai_1\r"
+      - "🇷🇺RU_9007 @WangCai_1\r"
+      - "🇷🇺RU_9008 @WangCai_1\r"
+      - "🇷🇺RU_9010 @WangCai_1\r"
+      - "🇷🇺RU_9011 @WangCai_1\r"
+      - "🇷🇺RU_9014 @WangCai_1\r"
+      - "🇷🇺RU_9015 @WangCai_1\r"
+      - "🇷🇺RU_9018 @WangCai_1\r"
+      - "🇷🇺RU_9019 @WangCai_1\r"
+      - "🇷🇺RU_9020 @WangCai_1\r"
+      - "🇷🇺RU_9024 @WangCai_1\r"
+      - "🇷🇺RU_9025 @WangCai_1\r"
+      - "🇷🇺RU_9026 @WangCai_1\r"
+      - "🇷🇺RU_9027 @WangCai_1\r"
+      - "🇷🇺RU_9030 @WangCai_1\r"
+      - "🇷🇺RU_9031 @WangCai_1\r"
+      - "🇷🇺RU_9032 @WangCai_1\r"
+      - "🇷🇺RU_9033 @WangCai_1\r"
+      - "🇷🇺RU_9037 @WangCai_1\r"
+      - "🇷🇺RU_9038 @WangCai_1\r"
+      - "🇷🇺RU_9040 @WangCai_1\r"
+      - "🇷🇺RU_9041 @WangCai_1\r"
+      - "🇷🇺RU_9042 @WangCai_1\r"
+      - "🇷🇺RU_9043 @WangCai_1\r"
+      - "🇷🇺RU_9045 @WangCai_1\r"
+      - "🇷🇺RU_9046 @WangCai_1\r"
+      - "🇷🇺RU_9050 @WangCai_1\r"
+      - "🇷🇺RU_9053 @WangCai_1\r"
+      - "🇷🇺RU_9056 @WangCai_1\r"
+      - "🇷🇺RU_9057 @WangCai_1\r"
+      - "🇷🇺RU_9058 @WangCai_1\r"
+      - "🇷🇺RU_9059 @WangCai_1\r"
+      - "🇷🇺RU_9060 @WangCai_1\r"
+      - "🇷🇺RU_9061 @WangCai_1\r"
+      - "🇷🇺RU_9064 @WangCai_1\r"
+      - "🇷🇺RU_9070 @WangCai_1\r"
+      - "🇷🇺RU_9073 @WangCai_1\r"
+      - "🇷🇺RU_9079 @WangCai_1\r"
+      - "🇷🇺RU_9080 @WangCai_1\r"
+      - "🇷🇺RU_9084 @WangCai_1\r"
+      - "🇷🇺RU_9088 @WangCai_1\r"
+      - "🇷🇺RU_9093 @WangCai_1\r"
+      - "🇷🇺RU_9094 @WangCai_1\r"
+      - "🇷🇺RU_9097 @WangCai_1\r"
+      - "🇷🇺RU_9098 @WangCai_1\r"
+      - "🇺🇸US_8118 @WangCai_1\r"
+      - "🇺🇸US_6697 @WangCai_1\r"
+      - "🇺🇸US_5601 @WangCai_1\r"
+      - "🇺🇸US_8119 @WangCai_1\r"
+      - "🇺🇸US_5003 @WangCai_1\r"
+      - "🇺🇸US_5001 @WangCai_1\r"
+      - "🇺🇸US_9102 @WangCai_1\r"
+      - "🇺🇸US_7306 @WangCai_1\r"
+      - "🇺🇸US_8881 @WangCai_1\r"
+      - "🇺🇸US_8080 @WangCai_1\r"
+      - "🇺🇸US_5000 @WangCai_1\r"
+      - "🇺🇸US_4444 @WangCai_1\r"
+      - "🇺🇸US_0443 @WangCai_1\r"
+      - "🇺🇸US_8009 @WangCai_1\r"
+      - "🇺🇸US_8008 @WangCai_1\r"
+      - "🇺🇸US_7002 @WangCai_1\r"
+      - "🇺🇸US_7307 @WangCai_1\r"
+      - "🇺🇸US_3306 @WangCai_1\r"
+      - "🇺🇸US_8000 @WangCai_1\r"
+      - "🇺🇸US_6679 @WangCai_1\r"
+      - "🇺🇸US_8888 @WangCai_1\r"
+      - "🇺🇸US_8090 @WangCai_1\r"
+      - "🇺🇸US_8882 @WangCai_1\r"
+      - "🇺🇸US_6379 @WangCai_1\r"
+      - "🇺🇸US_9101 @WangCai_1\r"
+      - "🇺🇸US_8091 @WangCai_1\r"
+      - "🇺🇸US_5500 @WangCai_1\r"
+      - "🇺🇸US_5600 @WangCai_1\r"
+      - "🇺🇸US_5004 @WangCai_1\r"
+      - "🇺🇸US_2375 @WangCai_1\r"
+      - "🇺🇸US_7001 @WangCai_1\r"
+      - "🇺🇸US_3389 @WangCai_1\r"
+      - 🇺🇸US_2376 @WangCai_1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国_2
-      - default_name_1
-      - 🇺🇸_US_美国_1
-      - default_name_2
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - "‌‌🇨🇦CA_0443 @WangCai_1\r"
+      - "‌‌🇨🇦CA_2375 @WangCai_1\r"
+      - "‌‌🇨🇦CA_2376 @WangCai_1\r"
+      - "‌‌🇨🇦CA_3306 @WangCai_1\r"
+      - "‌‌🇨🇦CA_3389 @WangCai_1\r"
+      - "‌‌🇨🇦CA_4444 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5000 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5001 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5003 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5004 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5500 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5600 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5601 @WangCai_1\r"
+      - "‌‌🇨🇦CA_6379 @WangCai_1\r"
+      - "‌‌🇨🇦CA_6679 @WangCai_1\r"
+      - "‌‌🇨🇦CA_6697 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7001 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7002 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7306 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7307 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8000 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8008 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8009 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8080 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8090 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8091 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8118 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8119 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8881 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8882 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8888 @WangCai_1\r"
+      - "‌‌🇨🇦CA_9101 @WangCai_1\r"
+      - "‌‌🇨🇦CA_9102 @WangCai_1\r"
+      - "🇩🇪DE_0443 @WangCai_1\r"
+      - "🇩🇪DE_2376 @WangCai_1\r"
+      - "🇩🇪DE_3306 @WangCai_1\r"
+      - "🇩🇪DE_3389 @WangCai_1\r"
+      - "🇩🇪DE_4444 @WangCai_1\r"
+      - "🇩🇪DE_5000 @WangCai_1\r"
+      - "🇩🇪DE_5003 @WangCai_1\r"
+      - "🇩🇪DE_5004 @WangCai_1\r"
+      - "🇩🇪DE_5500 @WangCai_1\r"
+      - "🇩🇪DE_5600 @WangCai_1\r"
+      - "🇩🇪DE_5601 @WangCai_1\r"
+      - "🇩🇪DE_6379 @WangCai_1\r"
+      - "🇩🇪DE_6679 @WangCai_1\r"
+      - "🇩🇪DE_6697 @WangCai_1\r"
+      - "🇩🇪DE_7001 @WangCai_1\r"
+      - "🇩🇪DE_7002 @WangCai_1\r"
+      - "🇩🇪DE_7306 @WangCai_1\r"
+      - "🇩🇪DE_7307 @WangCai_1\r"
+      - "🇩🇪DE_8000 @WangCai_1\r"
+      - "🇩🇪DE_8008 @WangCai_1\r"
+      - "🇩🇪DE_8009 @WangCai_1\r"
+      - "🇩🇪DE_8080 @WangCai_1\r"
+      - "🇩🇪DE_8090 @WangCai_1\r"
+      - "🇩🇪DE_8091 @WangCai_1\r"
+      - "🇩🇪DE_8118 @WangCai_1\r"
+      - "🇩🇪DE_8119 @WangCai_1\r"
+      - "🇩🇪DE_8881 @WangCai_1\r"
+      - "🇩🇪DE_8882 @WangCai_1\r"
+      - "🇩🇪DE_8888 @WangCai_1\r"
+      - "🇩🇪DE_9101 @WangCai_1\r"
+      - "🇩🇪DE_9102 @WangCai_1\r"
+      - "🇳🇱NL_9000 @WangCai_1\r"
+      - "🇳🇱NL_9001 @WangCai_1\r"
+      - "🇳🇱NL_9003 @WangCai_1\r"
+      - "🇳🇱NL_9005 @WangCai_1\r"
+      - "🇳🇱NL_9006 @WangCai_1\r"
+      - "🇳🇱NL_9007 @WangCai_1\r"
+      - "🇳🇱NL_9008 @WangCai_1\r"
+      - "🇳🇱NL_9010 @WangCai_1\r"
+      - "🇳🇱NL_9011 @WangCai_1\r"
+      - "🇳🇱NL_9014 @WangCai_1\r"
+      - "🇳🇱NL_9015 @WangCai_1\r"
+      - "🇳🇱NL_9018 @WangCai_1\r"
+      - "🇳🇱NL_9019 @WangCai_1\r"
+      - "🇳🇱NL_9020 @WangCai_1\r"
+      - "🇳🇱NL_9024 @WangCai_1\r"
+      - "🇳🇱NL_9025 @WangCai_1\r"
+      - "🇳🇱NL_9026 @WangCai_1\r"
+      - "🇳🇱NL_9027 @WangCai_1\r"
+      - "🇳🇱NL_9030 @WangCai_1\r"
+      - "🇳🇱NL_9031 @WangCai_1\r"
+      - "🇳🇱NL_9032 @WangCai_1\r"
+      - "🇳🇱NL_9033 @WangCai_1\r"
+      - "🇳🇱NL_9037 @WangCai_1\r"
+      - "🇳🇱NL_9038 @WangCai_1\r"
+      - "🇳🇱NL_9040 @WangCai_1\r"
+      - "🇳🇱NL_9041 @WangCai_1\r"
+      - "🇳🇱NL_9042 @WangCai_1\r"
+      - "🇳🇱NL_9043 @WangCai_1\r"
+      - "🇳🇱NL_9045 @WangCai_1\r"
+      - "🇳🇱NL_9046 @WangCai_1\r"
+      - "🇳🇱NL_9050 @WangCai_1\r"
+      - "🇳🇱NL_9053 @WangCai_1\r"
+      - "🇳🇱NL_9056 @WangCai_1\r"
+      - "🇳🇱NL_9057 @WangCai_1\r"
+      - "🇳🇱NL_9058 @WangCai_1\r"
+      - "🇳🇱NL_9059 @WangCai_1\r"
+      - "🇳🇱NL_9060 @WangCai_1\r"
+      - "🇳🇱NL_9061 @WangCai_1\r"
+      - "🇳🇱NL_9064 @WangCai_1\r"
+      - "🇳🇱NL_9070 @WangCai_1\r"
+      - "🇳🇱NL_9073 @WangCai_1\r"
+      - "🇳🇱NL_9079 @WangCai_1\r"
+      - "🇳🇱NL_9080 @WangCai_1\r"
+      - "🇳🇱NL_9084 @WangCai_1\r"
+      - "🇳🇱NL_9088 @WangCai_1\r"
+      - "🇳🇱NL_9093 @WangCai_1\r"
+      - "🇳🇱NL_9094 @WangCai_1\r"
+      - "🇳🇱NL_9097 @WangCai_1\r"
+      - "🇳🇱NL_9098 @WangCai_1\r"
+      - "🇳🇿AU_9000 @WangCai_1\r"
+      - "🇳🇿AU_9001 @WangCai_1\r"
+      - "🇳🇿AU_9003 @WangCai_1\r"
+      - "🇳🇿AU_9005 @WangCai_1\r"
+      - "🇳🇿AU_9006 @WangCai_1\r"
+      - "🇳🇿AU_9007 @WangCai_1\r"
+      - "🇳🇿AU_9008 @WangCai_1\r"
+      - "🇳🇿AU_9010 @WangCai_1\r"
+      - "🇳🇿AU_9011 @WangCai_1\r"
+      - "🇳🇿AU_9014 @WangCai_1\r"
+      - "🇳🇿AU_9015 @WangCai_1\r"
+      - "🇳🇿AU_9018 @WangCai_1\r"
+      - "🇳🇿AU_9019 @WangCai_1\r"
+      - "🇳🇿AU_9020 @WangCai_1\r"
+      - "🇳🇿AU_9024 @WangCai_1\r"
+      - "🇳🇿AU_9025 @WangCai_1\r"
+      - "🇳🇿AU_9026 @WangCai_1\r"
+      - "🇳🇿AU_9027 @WangCai_1\r"
+      - "🇳🇿AU_9030 @WangCai_1\r"
+      - "🇳🇿AU_9031 @WangCai_1\r"
+      - "🇳🇿AU_9032 @WangCai_1\r"
+      - "🇳🇿AU_9033 @WangCai_1\r"
+      - "🇳🇿AU_9037 @WangCai_1\r"
+      - "🇳🇿AU_9038 @WangCai_1\r"
+      - "🇳🇿AU_9040 @WangCai_1\r"
+      - "🇳🇿AU_9041 @WangCai_1\r"
+      - "🇳🇿AU_9042 @WangCai_1\r"
+      - "🇳🇿AU_9043 @WangCai_1\r"
+      - "🇳🇿AU_9045 @WangCai_1\r"
+      - "🇳🇿AU_9046 @WangCai_1\r"
+      - "🇳🇿AU_9050 @WangCai_1\r"
+      - "🇳🇿AU_9053 @WangCai_1\r"
+      - "🇳🇿AU_9056 @WangCai_1\r"
+      - "🇳🇿AU_9057 @WangCai_1\r"
+      - "🇳🇿AU_9058 @WangCai_1\r"
+      - "🇳🇿AU_9059 @WangCai_1\r"
+      - "🇳🇿AU_9060 @WangCai_1\r"
+      - "🇳🇿AU_9061 @WangCai_1\r"
+      - "🇳🇿AU_9064 @WangCai_1\r"
+      - "🇳🇿AU_9070 @WangCai_1\r"
+      - "🇳🇿AU_9073 @WangCai_1\r"
+      - "🇳🇿AU_9079 @WangCai_1\r"
+      - "🇳🇿AU_9080 @WangCai_1\r"
+      - "🇳🇿AU_9084 @WangCai_1\r"
+      - "🇳🇿AU_9088 @WangCai_1\r"
+      - "🇳🇿AU_9093 @WangCai_1\r"
+      - "🇳🇿AU_9094 @WangCai_1\r"
+      - "🇳🇿AU_9097 @WangCai_1\r"
+      - "🇳🇿AU_9098 @WangCai_1\r"
+      - "🇷🇺RU_9000 @WangCai_1\r"
+      - "🇷🇺RU_9001 @WangCai_1\r"
+      - "🇷🇺RU_9003 @WangCai_1\r"
+      - "🇷🇺RU_9005 @WangCai_1\r"
+      - "🇷🇺RU_9006 @WangCai_1\r"
+      - "🇷🇺RU_9007 @WangCai_1\r"
+      - "🇷🇺RU_9008 @WangCai_1\r"
+      - "🇷🇺RU_9010 @WangCai_1\r"
+      - "🇷🇺RU_9011 @WangCai_1\r"
+      - "🇷🇺RU_9014 @WangCai_1\r"
+      - "🇷🇺RU_9015 @WangCai_1\r"
+      - "🇷🇺RU_9018 @WangCai_1\r"
+      - "🇷🇺RU_9019 @WangCai_1\r"
+      - "🇷🇺RU_9020 @WangCai_1\r"
+      - "🇷🇺RU_9024 @WangCai_1\r"
+      - "🇷🇺RU_9025 @WangCai_1\r"
+      - "🇷🇺RU_9026 @WangCai_1\r"
+      - "🇷🇺RU_9027 @WangCai_1\r"
+      - "🇷🇺RU_9030 @WangCai_1\r"
+      - "🇷🇺RU_9031 @WangCai_1\r"
+      - "🇷🇺RU_9032 @WangCai_1\r"
+      - "🇷🇺RU_9033 @WangCai_1\r"
+      - "🇷🇺RU_9037 @WangCai_1\r"
+      - "🇷🇺RU_9038 @WangCai_1\r"
+      - "🇷🇺RU_9040 @WangCai_1\r"
+      - "🇷🇺RU_9041 @WangCai_1\r"
+      - "🇷🇺RU_9042 @WangCai_1\r"
+      - "🇷🇺RU_9043 @WangCai_1\r"
+      - "🇷🇺RU_9045 @WangCai_1\r"
+      - "🇷🇺RU_9046 @WangCai_1\r"
+      - "🇷🇺RU_9050 @WangCai_1\r"
+      - "🇷🇺RU_9053 @WangCai_1\r"
+      - "🇷🇺RU_9056 @WangCai_1\r"
+      - "🇷🇺RU_9057 @WangCai_1\r"
+      - "🇷🇺RU_9058 @WangCai_1\r"
+      - "🇷🇺RU_9059 @WangCai_1\r"
+      - "🇷🇺RU_9060 @WangCai_1\r"
+      - "🇷🇺RU_9061 @WangCai_1\r"
+      - "🇷🇺RU_9064 @WangCai_1\r"
+      - "🇷🇺RU_9070 @WangCai_1\r"
+      - "🇷🇺RU_9073 @WangCai_1\r"
+      - "🇷🇺RU_9079 @WangCai_1\r"
+      - "🇷🇺RU_9080 @WangCai_1\r"
+      - "🇷🇺RU_9084 @WangCai_1\r"
+      - "🇷🇺RU_9088 @WangCai_1\r"
+      - "🇷🇺RU_9093 @WangCai_1\r"
+      - "🇷🇺RU_9094 @WangCai_1\r"
+      - "🇷🇺RU_9097 @WangCai_1\r"
+      - "🇷🇺RU_9098 @WangCai_1\r"
+      - "🇺🇸US_8118 @WangCai_1\r"
+      - "🇺🇸US_6697 @WangCai_1\r"
+      - "🇺🇸US_5601 @WangCai_1\r"
+      - "🇺🇸US_8119 @WangCai_1\r"
+      - "🇺🇸US_5003 @WangCai_1\r"
+      - "🇺🇸US_5001 @WangCai_1\r"
+      - "🇺🇸US_9102 @WangCai_1\r"
+      - "🇺🇸US_7306 @WangCai_1\r"
+      - "🇺🇸US_8881 @WangCai_1\r"
+      - "🇺🇸US_8080 @WangCai_1\r"
+      - "🇺🇸US_5000 @WangCai_1\r"
+      - "🇺🇸US_4444 @WangCai_1\r"
+      - "🇺🇸US_0443 @WangCai_1\r"
+      - "🇺🇸US_8009 @WangCai_1\r"
+      - "🇺🇸US_8008 @WangCai_1\r"
+      - "🇺🇸US_7002 @WangCai_1\r"
+      - "🇺🇸US_7307 @WangCai_1\r"
+      - "🇺🇸US_3306 @WangCai_1\r"
+      - "🇺🇸US_8000 @WangCai_1\r"
+      - "🇺🇸US_6679 @WangCai_1\r"
+      - "🇺🇸US_8888 @WangCai_1\r"
+      - "🇺🇸US_8090 @WangCai_1\r"
+      - "🇺🇸US_8882 @WangCai_1\r"
+      - "🇺🇸US_6379 @WangCai_1\r"
+      - "🇺🇸US_9101 @WangCai_1\r"
+      - "🇺🇸US_8091 @WangCai_1\r"
+      - "🇺🇸US_5500 @WangCai_1\r"
+      - "🇺🇸US_5600 @WangCai_1\r"
+      - "🇺🇸US_5004 @WangCai_1\r"
+      - "🇺🇸US_2375 @WangCai_1\r"
+      - "🇺🇸US_7001 @WangCai_1\r"
+      - "🇺🇸US_3389 @WangCai_1\r"
+      - 🇺🇸US_2376 @WangCai_1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国_2
-      - default_name_1
-      - 🇺🇸_US_美国_1
-      - default_name_2
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - "‌‌🇨🇦CA_0443 @WangCai_1\r"
+      - "‌‌🇨🇦CA_2375 @WangCai_1\r"
+      - "‌‌🇨🇦CA_2376 @WangCai_1\r"
+      - "‌‌🇨🇦CA_3306 @WangCai_1\r"
+      - "‌‌🇨🇦CA_3389 @WangCai_1\r"
+      - "‌‌🇨🇦CA_4444 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5000 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5001 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5003 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5004 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5500 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5600 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5601 @WangCai_1\r"
+      - "‌‌🇨🇦CA_6379 @WangCai_1\r"
+      - "‌‌🇨🇦CA_6679 @WangCai_1\r"
+      - "‌‌🇨🇦CA_6697 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7001 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7002 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7306 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7307 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8000 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8008 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8009 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8080 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8090 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8091 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8118 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8119 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8881 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8882 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8888 @WangCai_1\r"
+      - "‌‌🇨🇦CA_9101 @WangCai_1\r"
+      - "‌‌🇨🇦CA_9102 @WangCai_1\r"
+      - "🇩🇪DE_0443 @WangCai_1\r"
+      - "🇩🇪DE_2376 @WangCai_1\r"
+      - "🇩🇪DE_3306 @WangCai_1\r"
+      - "🇩🇪DE_3389 @WangCai_1\r"
+      - "🇩🇪DE_4444 @WangCai_1\r"
+      - "🇩🇪DE_5000 @WangCai_1\r"
+      - "🇩🇪DE_5003 @WangCai_1\r"
+      - "🇩🇪DE_5004 @WangCai_1\r"
+      - "🇩🇪DE_5500 @WangCai_1\r"
+      - "🇩🇪DE_5600 @WangCai_1\r"
+      - "🇩🇪DE_5601 @WangCai_1\r"
+      - "🇩🇪DE_6379 @WangCai_1\r"
+      - "🇩🇪DE_6679 @WangCai_1\r"
+      - "🇩🇪DE_6697 @WangCai_1\r"
+      - "🇩🇪DE_7001 @WangCai_1\r"
+      - "🇩🇪DE_7002 @WangCai_1\r"
+      - "🇩🇪DE_7306 @WangCai_1\r"
+      - "🇩🇪DE_7307 @WangCai_1\r"
+      - "🇩🇪DE_8000 @WangCai_1\r"
+      - "🇩🇪DE_8008 @WangCai_1\r"
+      - "🇩🇪DE_8009 @WangCai_1\r"
+      - "🇩🇪DE_8080 @WangCai_1\r"
+      - "🇩🇪DE_8090 @WangCai_1\r"
+      - "🇩🇪DE_8091 @WangCai_1\r"
+      - "🇩🇪DE_8118 @WangCai_1\r"
+      - "🇩🇪DE_8119 @WangCai_1\r"
+      - "🇩🇪DE_8881 @WangCai_1\r"
+      - "🇩🇪DE_8882 @WangCai_1\r"
+      - "🇩🇪DE_8888 @WangCai_1\r"
+      - "🇩🇪DE_9101 @WangCai_1\r"
+      - "🇩🇪DE_9102 @WangCai_1\r"
+      - "🇳🇱NL_9000 @WangCai_1\r"
+      - "🇳🇱NL_9001 @WangCai_1\r"
+      - "🇳🇱NL_9003 @WangCai_1\r"
+      - "🇳🇱NL_9005 @WangCai_1\r"
+      - "🇳🇱NL_9006 @WangCai_1\r"
+      - "🇳🇱NL_9007 @WangCai_1\r"
+      - "🇳🇱NL_9008 @WangCai_1\r"
+      - "🇳🇱NL_9010 @WangCai_1\r"
+      - "🇳🇱NL_9011 @WangCai_1\r"
+      - "🇳🇱NL_9014 @WangCai_1\r"
+      - "🇳🇱NL_9015 @WangCai_1\r"
+      - "🇳🇱NL_9018 @WangCai_1\r"
+      - "🇳🇱NL_9019 @WangCai_1\r"
+      - "🇳🇱NL_9020 @WangCai_1\r"
+      - "🇳🇱NL_9024 @WangCai_1\r"
+      - "🇳🇱NL_9025 @WangCai_1\r"
+      - "🇳🇱NL_9026 @WangCai_1\r"
+      - "🇳🇱NL_9027 @WangCai_1\r"
+      - "🇳🇱NL_9030 @WangCai_1\r"
+      - "🇳🇱NL_9031 @WangCai_1\r"
+      - "🇳🇱NL_9032 @WangCai_1\r"
+      - "🇳🇱NL_9033 @WangCai_1\r"
+      - "🇳🇱NL_9037 @WangCai_1\r"
+      - "🇳🇱NL_9038 @WangCai_1\r"
+      - "🇳🇱NL_9040 @WangCai_1\r"
+      - "🇳🇱NL_9041 @WangCai_1\r"
+      - "🇳🇱NL_9042 @WangCai_1\r"
+      - "🇳🇱NL_9043 @WangCai_1\r"
+      - "🇳🇱NL_9045 @WangCai_1\r"
+      - "🇳🇱NL_9046 @WangCai_1\r"
+      - "🇳🇱NL_9050 @WangCai_1\r"
+      - "🇳🇱NL_9053 @WangCai_1\r"
+      - "🇳🇱NL_9056 @WangCai_1\r"
+      - "🇳🇱NL_9057 @WangCai_1\r"
+      - "🇳🇱NL_9058 @WangCai_1\r"
+      - "🇳🇱NL_9059 @WangCai_1\r"
+      - "🇳🇱NL_9060 @WangCai_1\r"
+      - "🇳🇱NL_9061 @WangCai_1\r"
+      - "🇳🇱NL_9064 @WangCai_1\r"
+      - "🇳🇱NL_9070 @WangCai_1\r"
+      - "🇳🇱NL_9073 @WangCai_1\r"
+      - "🇳🇱NL_9079 @WangCai_1\r"
+      - "🇳🇱NL_9080 @WangCai_1\r"
+      - "🇳🇱NL_9084 @WangCai_1\r"
+      - "🇳🇱NL_9088 @WangCai_1\r"
+      - "🇳🇱NL_9093 @WangCai_1\r"
+      - "🇳🇱NL_9094 @WangCai_1\r"
+      - "🇳🇱NL_9097 @WangCai_1\r"
+      - "🇳🇱NL_9098 @WangCai_1\r"
+      - "🇳🇿AU_9000 @WangCai_1\r"
+      - "🇳🇿AU_9001 @WangCai_1\r"
+      - "🇳🇿AU_9003 @WangCai_1\r"
+      - "🇳🇿AU_9005 @WangCai_1\r"
+      - "🇳🇿AU_9006 @WangCai_1\r"
+      - "🇳🇿AU_9007 @WangCai_1\r"
+      - "🇳🇿AU_9008 @WangCai_1\r"
+      - "🇳🇿AU_9010 @WangCai_1\r"
+      - "🇳🇿AU_9011 @WangCai_1\r"
+      - "🇳🇿AU_9014 @WangCai_1\r"
+      - "🇳🇿AU_9015 @WangCai_1\r"
+      - "🇳🇿AU_9018 @WangCai_1\r"
+      - "🇳🇿AU_9019 @WangCai_1\r"
+      - "🇳🇿AU_9020 @WangCai_1\r"
+      - "🇳🇿AU_9024 @WangCai_1\r"
+      - "🇳🇿AU_9025 @WangCai_1\r"
+      - "🇳🇿AU_9026 @WangCai_1\r"
+      - "🇳🇿AU_9027 @WangCai_1\r"
+      - "🇳🇿AU_9030 @WangCai_1\r"
+      - "🇳🇿AU_9031 @WangCai_1\r"
+      - "🇳🇿AU_9032 @WangCai_1\r"
+      - "🇳🇿AU_9033 @WangCai_1\r"
+      - "🇳🇿AU_9037 @WangCai_1\r"
+      - "🇳🇿AU_9038 @WangCai_1\r"
+      - "🇳🇿AU_9040 @WangCai_1\r"
+      - "🇳🇿AU_9041 @WangCai_1\r"
+      - "🇳🇿AU_9042 @WangCai_1\r"
+      - "🇳🇿AU_9043 @WangCai_1\r"
+      - "🇳🇿AU_9045 @WangCai_1\r"
+      - "🇳🇿AU_9046 @WangCai_1\r"
+      - "🇳🇿AU_9050 @WangCai_1\r"
+      - "🇳🇿AU_9053 @WangCai_1\r"
+      - "🇳🇿AU_9056 @WangCai_1\r"
+      - "🇳🇿AU_9057 @WangCai_1\r"
+      - "🇳🇿AU_9058 @WangCai_1\r"
+      - "🇳🇿AU_9059 @WangCai_1\r"
+      - "🇳🇿AU_9060 @WangCai_1\r"
+      - "🇳🇿AU_9061 @WangCai_1\r"
+      - "🇳🇿AU_9064 @WangCai_1\r"
+      - "🇳🇿AU_9070 @WangCai_1\r"
+      - "🇳🇿AU_9073 @WangCai_1\r"
+      - "🇳🇿AU_9079 @WangCai_1\r"
+      - "🇳🇿AU_9080 @WangCai_1\r"
+      - "🇳🇿AU_9084 @WangCai_1\r"
+      - "🇳🇿AU_9088 @WangCai_1\r"
+      - "🇳🇿AU_9093 @WangCai_1\r"
+      - "🇳🇿AU_9094 @WangCai_1\r"
+      - "🇳🇿AU_9097 @WangCai_1\r"
+      - "🇳🇿AU_9098 @WangCai_1\r"
+      - "🇷🇺RU_9000 @WangCai_1\r"
+      - "🇷🇺RU_9001 @WangCai_1\r"
+      - "🇷🇺RU_9003 @WangCai_1\r"
+      - "🇷🇺RU_9005 @WangCai_1\r"
+      - "🇷🇺RU_9006 @WangCai_1\r"
+      - "🇷🇺RU_9007 @WangCai_1\r"
+      - "🇷🇺RU_9008 @WangCai_1\r"
+      - "🇷🇺RU_9010 @WangCai_1\r"
+      - "🇷🇺RU_9011 @WangCai_1\r"
+      - "🇷🇺RU_9014 @WangCai_1\r"
+      - "🇷🇺RU_9015 @WangCai_1\r"
+      - "🇷🇺RU_9018 @WangCai_1\r"
+      - "🇷🇺RU_9019 @WangCai_1\r"
+      - "🇷🇺RU_9020 @WangCai_1\r"
+      - "🇷🇺RU_9024 @WangCai_1\r"
+      - "🇷🇺RU_9025 @WangCai_1\r"
+      - "🇷🇺RU_9026 @WangCai_1\r"
+      - "🇷🇺RU_9027 @WangCai_1\r"
+      - "🇷🇺RU_9030 @WangCai_1\r"
+      - "🇷🇺RU_9031 @WangCai_1\r"
+      - "🇷🇺RU_9032 @WangCai_1\r"
+      - "🇷🇺RU_9033 @WangCai_1\r"
+      - "🇷🇺RU_9037 @WangCai_1\r"
+      - "🇷🇺RU_9038 @WangCai_1\r"
+      - "🇷🇺RU_9040 @WangCai_1\r"
+      - "🇷🇺RU_9041 @WangCai_1\r"
+      - "🇷🇺RU_9042 @WangCai_1\r"
+      - "🇷🇺RU_9043 @WangCai_1\r"
+      - "🇷🇺RU_9045 @WangCai_1\r"
+      - "🇷🇺RU_9046 @WangCai_1\r"
+      - "🇷🇺RU_9050 @WangCai_1\r"
+      - "🇷🇺RU_9053 @WangCai_1\r"
+      - "🇷🇺RU_9056 @WangCai_1\r"
+      - "🇷🇺RU_9057 @WangCai_1\r"
+      - "🇷🇺RU_9058 @WangCai_1\r"
+      - "🇷🇺RU_9059 @WangCai_1\r"
+      - "🇷🇺RU_9060 @WangCai_1\r"
+      - "🇷🇺RU_9061 @WangCai_1\r"
+      - "🇷🇺RU_9064 @WangCai_1\r"
+      - "🇷🇺RU_9070 @WangCai_1\r"
+      - "🇷🇺RU_9073 @WangCai_1\r"
+      - "🇷🇺RU_9079 @WangCai_1\r"
+      - "🇷🇺RU_9080 @WangCai_1\r"
+      - "🇷🇺RU_9084 @WangCai_1\r"
+      - "🇷🇺RU_9088 @WangCai_1\r"
+      - "🇷🇺RU_9093 @WangCai_1\r"
+      - "🇷🇺RU_9094 @WangCai_1\r"
+      - "🇷🇺RU_9097 @WangCai_1\r"
+      - "🇷🇺RU_9098 @WangCai_1\r"
+      - "🇺🇸US_8118 @WangCai_1\r"
+      - "🇺🇸US_6697 @WangCai_1\r"
+      - "🇺🇸US_5601 @WangCai_1\r"
+      - "🇺🇸US_8119 @WangCai_1\r"
+      - "🇺🇸US_5003 @WangCai_1\r"
+      - "🇺🇸US_5001 @WangCai_1\r"
+      - "🇺🇸US_9102 @WangCai_1\r"
+      - "🇺🇸US_7306 @WangCai_1\r"
+      - "🇺🇸US_8881 @WangCai_1\r"
+      - "🇺🇸US_8080 @WangCai_1\r"
+      - "🇺🇸US_5000 @WangCai_1\r"
+      - "🇺🇸US_4444 @WangCai_1\r"
+      - "🇺🇸US_0443 @WangCai_1\r"
+      - "🇺🇸US_8009 @WangCai_1\r"
+      - "🇺🇸US_8008 @WangCai_1\r"
+      - "🇺🇸US_7002 @WangCai_1\r"
+      - "🇺🇸US_7307 @WangCai_1\r"
+      - "🇺🇸US_3306 @WangCai_1\r"
+      - "🇺🇸US_8000 @WangCai_1\r"
+      - "🇺🇸US_6679 @WangCai_1\r"
+      - "🇺🇸US_8888 @WangCai_1\r"
+      - "🇺🇸US_8090 @WangCai_1\r"
+      - "🇺🇸US_8882 @WangCai_1\r"
+      - "🇺🇸US_6379 @WangCai_1\r"
+      - "🇺🇸US_9101 @WangCai_1\r"
+      - "🇺🇸US_8091 @WangCai_1\r"
+      - "🇺🇸US_5500 @WangCai_1\r"
+      - "🇺🇸US_5600 @WangCai_1\r"
+      - "🇺🇸US_5004 @WangCai_1\r"
+      - "🇺🇸US_2375 @WangCai_1\r"
+      - "🇺🇸US_7001 @WangCai_1\r"
+      - "🇺🇸US_3389 @WangCai_1\r"
+      - 🇺🇸US_2376 @WangCai_1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -123,15 +2012,250 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国_2
-      - default_name_1
-      - 🇺🇸_US_美国_1
-      - default_name_2
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - "‌‌🇨🇦CA_0443 @WangCai_1\r"
+      - "‌‌🇨🇦CA_2375 @WangCai_1\r"
+      - "‌‌🇨🇦CA_2376 @WangCai_1\r"
+      - "‌‌🇨🇦CA_3306 @WangCai_1\r"
+      - "‌‌🇨🇦CA_3389 @WangCai_1\r"
+      - "‌‌🇨🇦CA_4444 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5000 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5001 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5003 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5004 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5500 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5600 @WangCai_1\r"
+      - "‌‌🇨🇦CA_5601 @WangCai_1\r"
+      - "‌‌🇨🇦CA_6379 @WangCai_1\r"
+      - "‌‌🇨🇦CA_6679 @WangCai_1\r"
+      - "‌‌🇨🇦CA_6697 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7001 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7002 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7306 @WangCai_1\r"
+      - "‌‌🇨🇦CA_7307 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8000 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8008 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8009 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8080 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8090 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8091 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8118 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8119 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8881 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8882 @WangCai_1\r"
+      - "‌‌🇨🇦CA_8888 @WangCai_1\r"
+      - "‌‌🇨🇦CA_9101 @WangCai_1\r"
+      - "‌‌🇨🇦CA_9102 @WangCai_1\r"
+      - "🇩🇪DE_0443 @WangCai_1\r"
+      - "🇩🇪DE_2376 @WangCai_1\r"
+      - "🇩🇪DE_3306 @WangCai_1\r"
+      - "🇩🇪DE_3389 @WangCai_1\r"
+      - "🇩🇪DE_4444 @WangCai_1\r"
+      - "🇩🇪DE_5000 @WangCai_1\r"
+      - "🇩🇪DE_5003 @WangCai_1\r"
+      - "🇩🇪DE_5004 @WangCai_1\r"
+      - "🇩🇪DE_5500 @WangCai_1\r"
+      - "🇩🇪DE_5600 @WangCai_1\r"
+      - "🇩🇪DE_5601 @WangCai_1\r"
+      - "🇩🇪DE_6379 @WangCai_1\r"
+      - "🇩🇪DE_6679 @WangCai_1\r"
+      - "🇩🇪DE_6697 @WangCai_1\r"
+      - "🇩🇪DE_7001 @WangCai_1\r"
+      - "🇩🇪DE_7002 @WangCai_1\r"
+      - "🇩🇪DE_7306 @WangCai_1\r"
+      - "🇩🇪DE_7307 @WangCai_1\r"
+      - "🇩🇪DE_8000 @WangCai_1\r"
+      - "🇩🇪DE_8008 @WangCai_1\r"
+      - "🇩🇪DE_8009 @WangCai_1\r"
+      - "🇩🇪DE_8080 @WangCai_1\r"
+      - "🇩🇪DE_8090 @WangCai_1\r"
+      - "🇩🇪DE_8091 @WangCai_1\r"
+      - "🇩🇪DE_8118 @WangCai_1\r"
+      - "🇩🇪DE_8119 @WangCai_1\r"
+      - "🇩🇪DE_8881 @WangCai_1\r"
+      - "🇩🇪DE_8882 @WangCai_1\r"
+      - "🇩🇪DE_8888 @WangCai_1\r"
+      - "🇩🇪DE_9101 @WangCai_1\r"
+      - "🇩🇪DE_9102 @WangCai_1\r"
+      - "🇳🇱NL_9000 @WangCai_1\r"
+      - "🇳🇱NL_9001 @WangCai_1\r"
+      - "🇳🇱NL_9003 @WangCai_1\r"
+      - "🇳🇱NL_9005 @WangCai_1\r"
+      - "🇳🇱NL_9006 @WangCai_1\r"
+      - "🇳🇱NL_9007 @WangCai_1\r"
+      - "🇳🇱NL_9008 @WangCai_1\r"
+      - "🇳🇱NL_9010 @WangCai_1\r"
+      - "🇳🇱NL_9011 @WangCai_1\r"
+      - "🇳🇱NL_9014 @WangCai_1\r"
+      - "🇳🇱NL_9015 @WangCai_1\r"
+      - "🇳🇱NL_9018 @WangCai_1\r"
+      - "🇳🇱NL_9019 @WangCai_1\r"
+      - "🇳🇱NL_9020 @WangCai_1\r"
+      - "🇳🇱NL_9024 @WangCai_1\r"
+      - "🇳🇱NL_9025 @WangCai_1\r"
+      - "🇳🇱NL_9026 @WangCai_1\r"
+      - "🇳🇱NL_9027 @WangCai_1\r"
+      - "🇳🇱NL_9030 @WangCai_1\r"
+      - "🇳🇱NL_9031 @WangCai_1\r"
+      - "🇳🇱NL_9032 @WangCai_1\r"
+      - "🇳🇱NL_9033 @WangCai_1\r"
+      - "🇳🇱NL_9037 @WangCai_1\r"
+      - "🇳🇱NL_9038 @WangCai_1\r"
+      - "🇳🇱NL_9040 @WangCai_1\r"
+      - "🇳🇱NL_9041 @WangCai_1\r"
+      - "🇳🇱NL_9042 @WangCai_1\r"
+      - "🇳🇱NL_9043 @WangCai_1\r"
+      - "🇳🇱NL_9045 @WangCai_1\r"
+      - "🇳🇱NL_9046 @WangCai_1\r"
+      - "🇳🇱NL_9050 @WangCai_1\r"
+      - "🇳🇱NL_9053 @WangCai_1\r"
+      - "🇳🇱NL_9056 @WangCai_1\r"
+      - "🇳🇱NL_9057 @WangCai_1\r"
+      - "🇳🇱NL_9058 @WangCai_1\r"
+      - "🇳🇱NL_9059 @WangCai_1\r"
+      - "🇳🇱NL_9060 @WangCai_1\r"
+      - "🇳🇱NL_9061 @WangCai_1\r"
+      - "🇳🇱NL_9064 @WangCai_1\r"
+      - "🇳🇱NL_9070 @WangCai_1\r"
+      - "🇳🇱NL_9073 @WangCai_1\r"
+      - "🇳🇱NL_9079 @WangCai_1\r"
+      - "🇳🇱NL_9080 @WangCai_1\r"
+      - "🇳🇱NL_9084 @WangCai_1\r"
+      - "🇳🇱NL_9088 @WangCai_1\r"
+      - "🇳🇱NL_9093 @WangCai_1\r"
+      - "🇳🇱NL_9094 @WangCai_1\r"
+      - "🇳🇱NL_9097 @WangCai_1\r"
+      - "🇳🇱NL_9098 @WangCai_1\r"
+      - "🇳🇿AU_9000 @WangCai_1\r"
+      - "🇳🇿AU_9001 @WangCai_1\r"
+      - "🇳🇿AU_9003 @WangCai_1\r"
+      - "🇳🇿AU_9005 @WangCai_1\r"
+      - "🇳🇿AU_9006 @WangCai_1\r"
+      - "🇳🇿AU_9007 @WangCai_1\r"
+      - "🇳🇿AU_9008 @WangCai_1\r"
+      - "🇳🇿AU_9010 @WangCai_1\r"
+      - "🇳🇿AU_9011 @WangCai_1\r"
+      - "🇳🇿AU_9014 @WangCai_1\r"
+      - "🇳🇿AU_9015 @WangCai_1\r"
+      - "🇳🇿AU_9018 @WangCai_1\r"
+      - "🇳🇿AU_9019 @WangCai_1\r"
+      - "🇳🇿AU_9020 @WangCai_1\r"
+      - "🇳🇿AU_9024 @WangCai_1\r"
+      - "🇳🇿AU_9025 @WangCai_1\r"
+      - "🇳🇿AU_9026 @WangCai_1\r"
+      - "🇳🇿AU_9027 @WangCai_1\r"
+      - "🇳🇿AU_9030 @WangCai_1\r"
+      - "🇳🇿AU_9031 @WangCai_1\r"
+      - "🇳🇿AU_9032 @WangCai_1\r"
+      - "🇳🇿AU_9033 @WangCai_1\r"
+      - "🇳🇿AU_9037 @WangCai_1\r"
+      - "🇳🇿AU_9038 @WangCai_1\r"
+      - "🇳🇿AU_9040 @WangCai_1\r"
+      - "🇳🇿AU_9041 @WangCai_1\r"
+      - "🇳🇿AU_9042 @WangCai_1\r"
+      - "🇳🇿AU_9043 @WangCai_1\r"
+      - "🇳🇿AU_9045 @WangCai_1\r"
+      - "🇳🇿AU_9046 @WangCai_1\r"
+      - "🇳🇿AU_9050 @WangCai_1\r"
+      - "🇳🇿AU_9053 @WangCai_1\r"
+      - "🇳🇿AU_9056 @WangCai_1\r"
+      - "🇳🇿AU_9057 @WangCai_1\r"
+      - "🇳🇿AU_9058 @WangCai_1\r"
+      - "🇳🇿AU_9059 @WangCai_1\r"
+      - "🇳🇿AU_9060 @WangCai_1\r"
+      - "🇳🇿AU_9061 @WangCai_1\r"
+      - "🇳🇿AU_9064 @WangCai_1\r"
+      - "🇳🇿AU_9070 @WangCai_1\r"
+      - "🇳🇿AU_9073 @WangCai_1\r"
+      - "🇳🇿AU_9079 @WangCai_1\r"
+      - "🇳🇿AU_9080 @WangCai_1\r"
+      - "🇳🇿AU_9084 @WangCai_1\r"
+      - "🇳🇿AU_9088 @WangCai_1\r"
+      - "🇳🇿AU_9093 @WangCai_1\r"
+      - "🇳🇿AU_9094 @WangCai_1\r"
+      - "🇳🇿AU_9097 @WangCai_1\r"
+      - "🇳🇿AU_9098 @WangCai_1\r"
+      - "🇷🇺RU_9000 @WangCai_1\r"
+      - "🇷🇺RU_9001 @WangCai_1\r"
+      - "🇷🇺RU_9003 @WangCai_1\r"
+      - "🇷🇺RU_9005 @WangCai_1\r"
+      - "🇷🇺RU_9006 @WangCai_1\r"
+      - "🇷🇺RU_9007 @WangCai_1\r"
+      - "🇷🇺RU_9008 @WangCai_1\r"
+      - "🇷🇺RU_9010 @WangCai_1\r"
+      - "🇷🇺RU_9011 @WangCai_1\r"
+      - "🇷🇺RU_9014 @WangCai_1\r"
+      - "🇷🇺RU_9015 @WangCai_1\r"
+      - "🇷🇺RU_9018 @WangCai_1\r"
+      - "🇷🇺RU_9019 @WangCai_1\r"
+      - "🇷🇺RU_9020 @WangCai_1\r"
+      - "🇷🇺RU_9024 @WangCai_1\r"
+      - "🇷🇺RU_9025 @WangCai_1\r"
+      - "🇷🇺RU_9026 @WangCai_1\r"
+      - "🇷🇺RU_9027 @WangCai_1\r"
+      - "🇷🇺RU_9030 @WangCai_1\r"
+      - "🇷🇺RU_9031 @WangCai_1\r"
+      - "🇷🇺RU_9032 @WangCai_1\r"
+      - "🇷🇺RU_9033 @WangCai_1\r"
+      - "🇷🇺RU_9037 @WangCai_1\r"
+      - "🇷🇺RU_9038 @WangCai_1\r"
+      - "🇷🇺RU_9040 @WangCai_1\r"
+      - "🇷🇺RU_9041 @WangCai_1\r"
+      - "🇷🇺RU_9042 @WangCai_1\r"
+      - "🇷🇺RU_9043 @WangCai_1\r"
+      - "🇷🇺RU_9045 @WangCai_1\r"
+      - "🇷🇺RU_9046 @WangCai_1\r"
+      - "🇷🇺RU_9050 @WangCai_1\r"
+      - "🇷🇺RU_9053 @WangCai_1\r"
+      - "🇷🇺RU_9056 @WangCai_1\r"
+      - "🇷🇺RU_9057 @WangCai_1\r"
+      - "🇷🇺RU_9058 @WangCai_1\r"
+      - "🇷🇺RU_9059 @WangCai_1\r"
+      - "🇷🇺RU_9060 @WangCai_1\r"
+      - "🇷🇺RU_9061 @WangCai_1\r"
+      - "🇷🇺RU_9064 @WangCai_1\r"
+      - "🇷🇺RU_9070 @WangCai_1\r"
+      - "🇷🇺RU_9073 @WangCai_1\r"
+      - "🇷🇺RU_9079 @WangCai_1\r"
+      - "🇷🇺RU_9080 @WangCai_1\r"
+      - "🇷🇺RU_9084 @WangCai_1\r"
+      - "🇷🇺RU_9088 @WangCai_1\r"
+      - "🇷🇺RU_9093 @WangCai_1\r"
+      - "🇷🇺RU_9094 @WangCai_1\r"
+      - "🇷🇺RU_9097 @WangCai_1\r"
+      - "🇷🇺RU_9098 @WangCai_1\r"
+      - "🇺🇸US_8118 @WangCai_1\r"
+      - "🇺🇸US_6697 @WangCai_1\r"
+      - "🇺🇸US_5601 @WangCai_1\r"
+      - "🇺🇸US_8119 @WangCai_1\r"
+      - "🇺🇸US_5003 @WangCai_1\r"
+      - "🇺🇸US_5001 @WangCai_1\r"
+      - "🇺🇸US_9102 @WangCai_1\r"
+      - "🇺🇸US_7306 @WangCai_1\r"
+      - "🇺🇸US_8881 @WangCai_1\r"
+      - "🇺🇸US_8080 @WangCai_1\r"
+      - "🇺🇸US_5000 @WangCai_1\r"
+      - "🇺🇸US_4444 @WangCai_1\r"
+      - "🇺🇸US_0443 @WangCai_1\r"
+      - "🇺🇸US_8009 @WangCai_1\r"
+      - "🇺🇸US_8008 @WangCai_1\r"
+      - "🇺🇸US_7002 @WangCai_1\r"
+      - "🇺🇸US_7307 @WangCai_1\r"
+      - "🇺🇸US_3306 @WangCai_1\r"
+      - "🇺🇸US_8000 @WangCai_1\r"
+      - "🇺🇸US_6679 @WangCai_1\r"
+      - "🇺🇸US_8888 @WangCai_1\r"
+      - "🇺🇸US_8090 @WangCai_1\r"
+      - "🇺🇸US_8882 @WangCai_1\r"
+      - "🇺🇸US_6379 @WangCai_1\r"
+      - "🇺🇸US_9101 @WangCai_1\r"
+      - "🇺🇸US_8091 @WangCai_1\r"
+      - "🇺🇸US_5500 @WangCai_1\r"
+      - "🇺🇸US_5600 @WangCai_1\r"
+      - "🇺🇸US_5004 @WangCai_1\r"
+      - "🇺🇸US_2375 @WangCai_1\r"
+      - "🇺🇸US_7001 @WangCai_1\r"
+      - "🇺🇸US_3389 @WangCai_1\r"
+      - 🇺🇸US_2376 @WangCai_1
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
