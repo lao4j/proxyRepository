@@ -5,116 +5,81 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"trojan","name":"🇺🇸_US_美国_1","server":"miner-two.pickaxe.sh","password":"YzJI2mQftXqA6ZH4","port":443,"udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇺🇸_US_美国_2","server":"us-01.pickaxe.sh","password":"VQcup0dd7ulkb1pV","port":443,"udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇺🇸_US_美国_3","server":"blogs.defun.us","password":"0STIv0ePoRzjxFTV","port":443,"udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇺🇸_US_美国_4","server":"miner-one.pickaxe.sh","password":"8JYTzmWdnn5Ilft0","port":443,"udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇯🇵_JP_日本","server":"jgwdb1.gaox.ml","password":"a580d839-ee41-4df1-bf03-6789dca32e30","port":443,"udp":true,"skip-cert-verify":true}
-  - {"type":"ss","cipher":"aes-256-cfb","password":"VP8ZPxQpJtZRCjfZ","server":"62.216.91.229","port":9080,"name":"🇷🇴_RO_罗马尼亚"}
-  - {"type":"trojan","name":"🇬🇧_GB_英国_1","server":"jgwld4.gaox.ml","password":"58d32c66-43b1-4561-9951-d87c9123774e","port":443,"udp":true,"skip-cert-verify":true}
-  - {"type":"vmess","http-opts":{"path":["/"],"headers":{"Host":["43.154.77.196"]}},"server":"43.154.77.196","name":"🇨🇳_CN_中国","port":38539,"uuid":"a379bd7f-9d0d-4fb5-90c2-9b302782c4d6","alterId":0,"cipher":"auto","network":"http"}
-  - {"type":"trojan","name":"🇦🇺_AU_澳大利亚","server":"jgwxn4.gaox.ml","password":"e8c1ab3c-89b3-4933-92df-682e6dce7819","port":443,"udp":true,"skip-cert-verify":true}
-  - {"type":"ss","cipher":"aes-128-gcm","password":"015c28b8-13ba-4b69-a068-0d81139fe794","server":"sssg03.wangyiyunniubi.com","port":12011,"name":"🇨🇳_CN_中国->🇸🇬_SG_新加坡"}
-  - {"type":"trojan","name":"🇬🇧_GB_英国_2","server":"jgwld1.gaox.ml","password":"02e653c9-7c93-46a9-999d-11834bd0c577","port":443,"udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"YouTube梦歌|Netflix_9","server":"game.tcpbbr.net","password":"280a1162-00cb-11ec-a8bf-f23c91cfbbc9","port":5228,"udp":true,"skip-cert-verify":true,"sni":"game.tcpbbr.net"}
+  - {"type":"vmess","ws-opts":{"path":"/ws"},"server":"hk-d.sserver.top","name":"YouTube梦歌|Netflix_26","port":80,"uuid":"8d0ceab5-1008-300f-996f-0751e11038f1","alterId":0,"cipher":"auto","network":"ws"}
+  - {"type":"vmess","ws-opts":{"path":"/"},"server":"hk.aqvpn.me","name":"YouTube梦歌|Netflix_28","port":80,"uuid":"fc1905c5-8a19-4948-9f0d-e6e5427bc72f","alterId":0,"cipher":"auto","network":"ws"}
+  - {"type":"vmess","server":"s4.mine.com.cn","name":"YouTube梦歌|Netflix_54","port":3333,"uuid":"5eea1f96-6e33-4409-b8b4-a8d3596ec991","alterId":0,"cipher":"auto","network":"tcp"}
+  - {"type":"vmess","ws-opts":{"path":"/hls/cctv5phd.m3u8"},"server":"zzcm06.bdate.xyz","name":"YouTube梦歌|Netflix_168","port":1040,"uuid":"b9ecdb44-236b-30a7-94f2-f464993d84cf","alterId":0,"cipher":"auto","network":"ws"}
+  - {"type":"vmess","ws-opts":{"path":"/hls/cctv5phd.m3u8"},"server":"zzcm06.bdate.xyz","name":"YouTube梦歌|Netflix_255","port":1030,"uuid":"b9ecdb44-236b-30a7-94f2-f464993d84cf","alterId":0,"cipher":"auto","network":"ws"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇯🇵_JP_日本
-      - 🇷🇴_RO_罗马尼亚
-      - 🇬🇧_GB_英国_1
-      - 🇨🇳_CN_中国
-      - 🇦🇺_AU_澳大利亚
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇬🇧_GB_英国_2
+      - YouTube梦歌|Netflix_9
+      - YouTube梦歌|Netflix_26
+      - YouTube梦歌|Netflix_28
+      - YouTube梦歌|Netflix_54
+      - YouTube梦歌|Netflix_168
+      - YouTube梦歌|Netflix_255
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇯🇵_JP_日本
-      - 🇷🇴_RO_罗马尼亚
-      - 🇬🇧_GB_英国_1
-      - 🇨🇳_CN_中国
-      - 🇦🇺_AU_澳大利亚
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇬🇧_GB_英国_2
+      - YouTube梦歌|Netflix_9
+      - YouTube梦歌|Netflix_26
+      - YouTube梦歌|Netflix_28
+      - YouTube梦歌|Netflix_54
+      - YouTube梦歌|Netflix_168
+      - YouTube梦歌|Netflix_255
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇯🇵_JP_日本
-      - 🇷🇴_RO_罗马尼亚
-      - 🇬🇧_GB_英国_1
-      - 🇨🇳_CN_中国
-      - 🇦🇺_AU_澳大利亚
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇬🇧_GB_英国_2
+      - YouTube梦歌|Netflix_9
+      - YouTube梦歌|Netflix_26
+      - YouTube梦歌|Netflix_28
+      - YouTube梦歌|Netflix_54
+      - YouTube梦歌|Netflix_168
+      - YouTube梦歌|Netflix_255
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇯🇵_JP_日本
-      - 🇷🇴_RO_罗马尼亚
-      - 🇬🇧_GB_英国_1
-      - 🇨🇳_CN_中国
-      - 🇦🇺_AU_澳大利亚
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇬🇧_GB_英国_2
+      - YouTube梦歌|Netflix_9
+      - YouTube梦歌|Netflix_26
+      - YouTube梦歌|Netflix_28
+      - YouTube梦歌|Netflix_54
+      - YouTube梦歌|Netflix_168
+      - YouTube梦歌|Netflix_255
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇯🇵_JP_日本
-      - 🇷🇴_RO_罗马尼亚
-      - 🇬🇧_GB_英国_1
-      - 🇨🇳_CN_中国
-      - 🇦🇺_AU_澳大利亚
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇬🇧_GB_英国_2
+      - YouTube梦歌|Netflix_9
+      - YouTube梦歌|Netflix_26
+      - YouTube梦歌|Netflix_28
+      - YouTube梦歌|Netflix_54
+      - YouTube梦歌|Netflix_168
+      - YouTube梦歌|Netflix_255
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇯🇵_JP_日本
-      - 🇷🇴_RO_罗马尼亚
-      - 🇬🇧_GB_英国_1
-      - 🇨🇳_CN_中国
-      - 🇦🇺_AU_澳大利亚
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇬🇧_GB_英国_2
+      - YouTube梦歌|Netflix_9
+      - YouTube梦歌|Netflix_26
+      - YouTube梦歌|Netflix_28
+      - YouTube梦歌|Netflix_54
+      - YouTube梦歌|Netflix_168
+      - YouTube梦歌|Netflix_255
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -137,17 +102,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇯🇵_JP_日本
-      - 🇷🇴_RO_罗马尼亚
-      - 🇬🇧_GB_英国_1
-      - 🇨🇳_CN_中国
-      - 🇦🇺_AU_澳大利亚
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇬🇧_GB_英国_2
+      - YouTube梦歌|Netflix_9
+      - YouTube梦歌|Netflix_26
+      - YouTube梦歌|Netflix_28
+      - YouTube梦歌|Netflix_54
+      - YouTube梦歌|Netflix_168
+      - YouTube梦歌|Netflix_255
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
