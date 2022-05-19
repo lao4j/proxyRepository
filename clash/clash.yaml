@@ -5,53 +5,67 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"ssr","server":"ssr3.ssrfree1.xyz","port":443,"protocol":"auth_chain_a","cipher":"dummy","obfs":"tls1.2_ticket_auth","password":"dongtaiwang.com","name":"www.dongtaiwang.com免费ssr"}
-  - {"type":"ssr","server":"ssrfree10.free4444.xyz","port":443,"protocol":"auth_chain_a","cipher":"dummy","obfs":"tls1.2_ticket_auth","password":"dongtaiwang.com","name":"www.dongtaiwang.com免费ssr节点"}
+  - {"type":"ss","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*","server":"180.163.62.91","port":10065,"name":"🇨🇳_CN_中国->🇰🇷_KR_韩国"}
+  - {"type":"trojan","name":"🇨🇳_CN_中国->🇲🇾_MY_马来西亚","server":"cm-jm.okvpn.xyz","password":"8c8578b9-3d56-425d-8bcc-880c4da3600a","port":20005,"udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"🇨🇳_CN_中国->🇹🇼_TW_台湾","server":"cm-jm.okvpn.xyz","password":"8c8578b9-3d56-425d-8bcc-880c4da3600a","port":20003,"udp":true,"skip-cert-verify":true}
+  - {"type":"ss","cipher":"aes-256-cfb","password":"amazonskr05","server":"52.79.164.73","port":443,"name":"🇰🇷_KR_韩国"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - www.dongtaiwang.com免费ssr
-      - www.dongtaiwang.com免费ssr节点
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇨🇳_CN_中国->🇲🇾_MY_马来西亚
+      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
+      - 🇰🇷_KR_韩国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - www.dongtaiwang.com免费ssr
-      - www.dongtaiwang.com免费ssr节点
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇨🇳_CN_中国->🇲🇾_MY_马来西亚
+      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
+      - 🇰🇷_KR_韩国
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - www.dongtaiwang.com免费ssr
-      - www.dongtaiwang.com免费ssr节点
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇨🇳_CN_中国->🇲🇾_MY_马来西亚
+      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
+      - 🇰🇷_KR_韩国
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - www.dongtaiwang.com免费ssr
-      - www.dongtaiwang.com免费ssr节点
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇨🇳_CN_中国->🇲🇾_MY_马来西亚
+      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
+      - 🇰🇷_KR_韩国
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - www.dongtaiwang.com免费ssr
-      - www.dongtaiwang.com免费ssr节点
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇨🇳_CN_中国->🇲🇾_MY_马来西亚
+      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
+      - 🇰🇷_KR_韩国
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - www.dongtaiwang.com免费ssr
-      - www.dongtaiwang.com免费ssr节点
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇨🇳_CN_中国->🇲🇾_MY_马来西亚
+      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
+      - 🇰🇷_KR_韩国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -74,8 +88,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - www.dongtaiwang.com免费ssr
-      - www.dongtaiwang.com免费ssr节点
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇨🇳_CN_中国->🇲🇾_MY_马来西亚
+      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
+      - 🇰🇷_KR_韩国
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
