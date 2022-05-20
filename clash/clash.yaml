@@ -5,137 +5,508 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM","server":"134.195.198.252","port":4444,"name":"🇨🇦_CA_加拿大"}
-  - {"type":"trojan","name":"🇨🇳_CN_中国->🇸🇬_SG_新加坡_1","server":"116.129.253.191","password":"e37c6d7efa845d60","port":3389,"udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇨🇳_CN_中国->🇲🇾_MY_马来西亚","server":"cm-jm.okvpn.xyz","password":"e5cf7069-e269-4926-bdb0-fbb39cde6a3a","port":20005,"udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇨🇳_CN_中国->🇸🇬_SG_新加坡_2","server":"116.129.253.227","password":"f6f2072a2e4cfc91","port":3389,"udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇦🇺_AU_澳大利亚","server":"jgwxn2.gaox.ml","password":"c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26","port":443,"udp":true,"skip-cert-verify":true}
-  - {"type":"vmess","server":"gy.cwcsrsyby.xyz","name":"🇨🇳_CN_中国->🇭🇰_HK_香港_1","port":47514,"uuid":"140663cb-e2ea-39ca-8a85-040968d9de44","alterId":0,"cipher":"auto","network":"tcp"}
-  - {"type":"trojan","name":"🇨🇳_CN_中国->🇹🇼_TW_台湾","server":"cm-jm.okvpn.xyz","password":"e5cf7069-e269-4926-bdb0-fbb39cde6a3a","port":20003,"udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇨🇳_CN_中国->🇸🇬_SG_新加坡_3","server":"116.129.253.134","password":"e37c6d7efa845d60","port":3389,"udp":true,"skip-cert-verify":true}
-  - {"type":"ss","cipher":"chacha20-ietf-poly1305","password":"5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3","server":"164.92.121.170","port":61598,"name":"🇺🇸_US_美国_1"}
-  - {"type":"ss","cipher":"chacha20-ietf-poly1305","password":"5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3","server":"164.92.99.126","port":52441,"name":"🇺🇸_US_美国_2"}
-  - {"type":"vmess","server":"125.94.37.107","name":"🇨🇳_CN_中国->🇺🇸_US_美国","port":13413,"uuid":"1cb72800-3d77-4db3-b656-26c3bc04125d","alterId":0,"cipher":"auto","network":"tcp"}
-  - {"type":"ssr","server":"112.65.95.60","port":11420,"protocol":"auth_aes128_sha1","cipher":"chacha20-ietf","obfs":"tls1.2_ticket_auth","password":"Fhbe0z","protocol-param":"MTMzNzA6RHFHRGZF","name":"🇨🇳_CN_中国->🇭🇰_HK_香港_2"}
-  - {"type":"ss","cipher":"aes-128-cfb","password":"QazEdcTgb159@$*","server":"180.163.62.91","port":10065,"name":"🇨🇳_CN_中国->🇰🇷_KR_韩国"}
-  - {"type":"ss","cipher":"chacha20-ietf-poly1305","password":"5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3","server":"206.189.136.113","port":46786,"name":"🇮🇳_IN_印度"}
+  - {"type":"vmess","ws-opts":{"path":"/54f634fs","headers":{"host":"v2-2.godlight.xyz"}},"server":"v2-2.godlight.xyz","name":"🇸🇬_新加坡_www.lcr189.com_1","port":"26944","uuid":"43308d27-94ec-408e-a8f6-d682cfb99ca9","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"ss","cipher":"aes-128-gcm","password":"bzUdYJ4JzjGfIwhG","server":"bb01.nfeng6.pp.ua","port":26240,"name":"🇨🇳_中国_www.lcr189.com_1"}
+  - {"type":"trojan","name":"🇦🇺_澳大利亚_www.lcr189.com_1","server":"neteasy.cf","password":"2XWUtOT64u","port":45929,"udp":true,"skip-cert-verify":true}
+  - {"type":"vmess","server":"gkdcm.gkdcn.top","name":"🇨🇳_中国_www.lcr189.com_2","port":"25886","uuid":"13054cdc-3cbc-4465-9a3d-8f478b418d79","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","ws-opts":{"path":"/ray","headers":{"host":"51us.fans8.xyz"}},"server":"51us.fans8.xyz","name":"🇺🇸_美国_www.lcr189.com_1","port":"80","uuid":"dc09c9a0-1697-3f39-8ba9-65f2985e00ec","alterId":"2","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","ws-opts":{"path":"/","headers":{"host":"aweikeji-YouTube"}},"server":"20.210.236.182","name":"🇺🇸_美国_www.lcr189.com_2","port":"80","uuid":"f778539f-5954-4b0e-987b-94a6081c1af7","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","ws-opts":{"path":"/ws","headers":{"host":"ahdaeph8.com"}},"server":"104.166.135.10","name":"🇺🇸_美国_www.lcr189.com_3","port":"443","uuid":"aba50dd4-5484-3b05-b14a-4661caf862d5","alterId":"4","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","ws-opts":{"path":"/movies"},"server":"douban.babazhuji.com","name":"🇺🇸_美国_www.lcr189.com_4","port":"443","uuid":"27848739-7e62-4138-9fd3-098a63964b6b","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","ws-opts":{"path":"/ws","headers":{"host":"ahdaeph8.com"}},"server":"ahdaeph8.com","name":"🇺🇸_美国_www.lcr189.com_5","port":"443","uuid":"aba50dd4-5484-3b05-b14a-4661caf862d5","alterId":"4","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","ws-opts":{"path":"/movies","headers":{"host":"douban.babazhuji.com"}},"server":"douban.babazhuji.com","name":"🇺🇸_美国_www.lcr189.com_6","port":"443","uuid":"27848739-7e62-4138-9fd3-098a63964b6b","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","ws-opts":{"path":"/ws","headers":{"host":"ahdaeph8.com"}},"server":"b21.v2.gay","name":"🇺🇸_美国_www.lcr189.com_7","port":"443","uuid":"aba50dd4-5484-3b05-b14a-4661caf862d5","alterId":"4","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","ws-opts":{"path":"/getweather"},"server":"app.ssfree.ru","name":"🇺🇸_美国_www.lcr189.com_8","port":"443","uuid":"52aa8660-d7f1-11ec-9cb7-000017022008","alterId":"64","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","server":"125.94.37.107","name":"🇨🇳_中国_www.lcr189.com_3","port":"50603","uuid":"1cb72800-3d77-4db3-b656-26c3bc04125d","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"ss","cipher":"chacha20-ietf-poly1305","password":"ljqdalu13..","server":"20.239.177.88","port":8313,"name":"🇺🇸_美国_www.lcr189.com_9"}
+  - {"type":"ss","cipher":"chacha20-ietf-poly1305","password":"1c0e4a18-4d7a-4231-a55d-1dee0fe6732a","server":"164.92.121.170","port":61598,"name":"🇺🇸_美国_www.lcr189.com_10"}
+  - {"type":"trojan","name":"🇺🇸_美国_www.lcr189.com_11","server":"basic-us2.starscloud.in","password":"099619cf-34cb-3e90-bacd-48c281b114aa","port":20007,"udp":true,"skip-cert-verify":true,"sni":"host20007.starscloud.in"}
+  - {"type":"trojan","name":"🇺🇸_美国_www.lcr189.com_12","server":"basic-us2.starscloud.in","password":"485ab718-e91d-36ac-8b85-b2a9e9abecbd","port":20007,"udp":true,"skip-cert-verify":true,"sni":"host20007.starscloud.in"}
+  - {"type":"trojan","name":"🇺🇸_美国_www.lcr189.com_13","server":"usmax03.170809.xyz","password":"462024b8-a5c8-444f-bc65-7bb7f4ae413f","port":443,"udp":true,"skip-cert-verify":true,"sni":"usmax03.170809.xyz"}
+  - {"type":"trojan","name":"🇺🇸_美国_www.lcr189.com_14","server":"us01.170809.xyz","password":"462024b8-a5c8-444f-bc65-7bb7f4ae413f","port":443,"udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"🇺🇸_美国_www.lcr189.com_15","server":"kr01.wangxd.life","password":"3a2c0c6c-9ee5-c05f-c951-fcd73831983e","port":3052,"udp":true,"skip-cert-verify":true}
+  - {"type":"vmess","server":"gkdcu.gkdcn.top","name":"🇨🇳_中国_www.lcr189.com_4","port":"25889","uuid":"13054cdc-3cbc-4465-9a3d-8f478b418d79","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"aweikeji-YouTube"}},"server":"b10.v2.gay","name":"🇨🇳_中国_www.lcr189.com_5","port":"1930","uuid":"b9ecdb44-236b-30a7-94f2-f464993d84cf","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","ws-opts":{"path":"/hinet04","headers":{"host":"aweikeji-YouTube"}},"server":"cs.daxun.cyou","name":"🇨🇳_中国_www.lcr189.com_6","port":"20631","uuid":"99591e4d-b11e-4488-b366-53f3b6787bba","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","ws-opts":{"path":"/ray","headers":{"host":"330tw.fans8.xyz"}},"server":"330tw.fans8.xyz","name":"🇹🇼_台湾_www.lcr189.com_1","port":"443","uuid":"dc09c9a0-1697-3f39-8ba9-65f2985e00ec","alterId":"2","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","server":"gy.cwcsrsyby.xyz","name":"🇨🇳_中国_www.lcr189.com_7","port":"47519","uuid":"140663cb-e2ea-39ca-8a85-040968d9de44","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"ss","cipher":"chacha20-ietf-poly1305","password":"462024b8-a5c8-444f-bc65-7bb7f4ae413f","server":"tw01.170809.xyz","port":32352,"name":"🇹🇼_台湾_www.lcr189.com_2"}
+  - {"type":"ss","cipher":"chacha20-ietf-poly1305","password":"462024b8-a5c8-444f-bc65-7bb7f4ae413f","server":"tw02.170809.xyz","port":56634,"name":"🇹🇼_台湾_www.lcr189.com_3"}
+  - {"type":"ss","cipher":"chacha20-ietf-poly1305","password":"462024b8-a5c8-444f-bc65-7bb7f4ae413f","server":"tw03.170809.xyz","port":34325,"name":"🇹🇼_台湾_www.lcr189.com_4"}
+  - {"type":"ss","cipher":"aes-128-gcm","password":"b6040656-96c5-4748-a73c-5a8f15ed7531","server":"cn1.relay.iepl.pw","port":50200,"name":"🇨🇳_中国_www.lcr189.com_8"}
+  - {"type":"ss","cipher":"aes-128-gcm","password":"b6040656-96c5-4748-a73c-5a8f15ed7531","server":"cn1.relay.iepl.pw","port":50200,"name":"🇨🇳_中国_www.lcr189.com_9"}
+  - {"type":"vmess","ws-opts":{"path":"/f45361465j175","headers":{"host":"v2-3.godlight.xyz"}},"server":"v2-3.godlight.xyz","name":"🇸🇬_新加坡_www.lcr189.com_2","port":"26944","uuid":"6a52f259-4367-468c-a828-7b8283c2f059","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","ws-opts":{"path":"/54f634fs","headers":{"host":"v2-2.godlight.xyz"}},"server":"v2-2.godlight.xyz","name":"🇸🇬_新加坡_www.lcr189.com_3","port":"26944","uuid":"43308d27-94ec-408e-a8f6-d682cfb99ca9","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","ws-opts":{"path":"/54f634fs","headers":{"host":"v2-2.godlight.xyz"}},"server":"v2-2.godlight.xyz","name":"🇸🇬_新加坡_www.lcr189.com_4","port":"26944","uuid":"43308d27-94ec-408e-a8f6-d682cfb99ca9","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","ws-opts":{"path":"/sometimesnaive","headers":{"host":"node.gkddd.buzz"}},"server":"node.gkddd.buzz","name":"🇸🇬_新加坡_www.lcr189.com_5","port":"23312","uuid":"a6f34df0-6e9e-4522-80ff-a41517803f17","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"ss","cipher":"aes-128-gcm","password":"b6040656-96c5-4748-a73c-5a8f15ed7531","server":"cn1.relay.iepl.pw","port":50500,"name":"🇨🇳_中国_www.lcr189.com_10"}
+  - {"type":"ss","cipher":"aes-128-gcm","password":"bzUdYJ4JzjGfIwhG","server":"163.177.158.215","port":16030,"name":"🇨🇳_中国_www.lcr189.com_11"}
+  - {"type":"trojan","name":"🇺🇸_美国_www.lcr189.com_16","server":"sg01.170809.xyz","password":"462024b8-a5c8-444f-bc65-7bb7f4ae413f","port":443,"udp":true,"skip-cert-verify":true,"sni":"sg01.170809.xyz"}
+  - {"type":"trojan","name":"🇺🇸_美国_www.lcr189.com_17","server":"azhk.orange7.cf","password":"462024b8-a5c8-444f-bc65-7bb7f4ae413f","port":21230,"udp":true,"skip-cert-verify":true,"sni":"sg01.170809.xyz"}
+  - {"type":"trojan","name":"🇺🇸_美国_www.lcr189.com_18","server":"sgmax04.170809.xyz","password":"462024b8-a5c8-444f-bc65-7bb7f4ae413f","port":443,"udp":true,"skip-cert-verify":true,"sni":"sgmax04.170809.xyz"}
+  - {"type":"ss","cipher":"aes-128-gcm","password":"b6040656-96c5-4748-a73c-5a8f15ed7531","server":"cn1.relay.iepl.pw","port":50700,"name":"🇨🇳_中国_www.lcr189.com_12"}
+  - {"type":"ss","cipher":"aes-128-gcm","password":"b6040656-96c5-4748-a73c-5a8f15ed7531","server":"120.233.10.230","port":50700,"name":"🇨🇳_中国_www.lcr189.com_13"}
+  - {"type":"vmess","server":"nnv.chitacdn.xyz","name":"🇳🇱_荷兰_www.lcr189.com","port":"54242","uuid":"f2393d82-94c4-4b12-8267-293a7500e487","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","ws-opts":{"path":"/g1641hvx","headers":{"host":"v2-4.godlight.xyz"}},"server":"v2-4.godlight.xyz","name":"🇰🇷_韩国_www.lcr189.com_1","port":"26944","uuid":"07ea283e-bbe8-466f-a268-c5819763a9bf","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","server":"gkdcu.gkdcn.top","name":"🇨🇳_中国_www.lcr189.com_14","port":"25881","uuid":"13054cdc-3cbc-4465-9a3d-8f478b418d79","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","ws-opts":{"path":"/71h4b3s1f53","headers":{"host":"v2-5.godlight.xyz"}},"server":"v2-5.godlight.xyz","name":"🇰🇷_韩国_www.lcr189.com_2","port":"26944","uuid":"767e55a4-43fa-4301-a9c2-ad30eaa9f61a","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","server":"gkdcu.gkdcn.top","name":"🇨🇳_中国_www.lcr189.com_15","port":"25888","uuid":"13054cdc-3cbc-4465-9a3d-8f478b418d79","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","ws-opts":{"path":"/dajdklw231f","headers":{"host":"v2.godlight.xyz"}},"server":"v2.godlight.xyz","name":"🇯🇵_日本_www.lcr189.com_1","port":"26944","uuid":"1a059eff-ad8a-42ad-921c-465c5b31f183","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","ws-opts":{"path":"/dajdklw231f","headers":{"host":"v2.godlight.xyz"}},"server":"v2.godlight.xyz","name":"🇯🇵_日本_www.lcr189.com_2","port":"26944","uuid":"1a059eff-ad8a-42ad-921c-465c5b31f183","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","server":"gy.cwcsrsyby.xyz","name":"🇨🇳_中国_www.lcr189.com_16","port":"47520","uuid":"140663cb-e2ea-39ca-8a85-040968d9de44","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"ss","cipher":"aes-128-gcm","password":"b6040656-96c5-4748-a73c-5a8f15ed7531","server":"120.233.10.230","port":50300,"name":"🇨🇳_中国_www.lcr189.com_17"}
+  - {"type":"ss","cipher":"aes-128-gcm","password":"b6040656-96c5-4748-a73c-5a8f15ed7531","server":"cn1.relay.iepl.pw","port":50300,"name":"🇨🇳_中国_www.lcr189.com_18"}
+  - {"type":"ss","cipher":"aes-128-gcm","password":"b6040656-96c5-4748-a73c-5a8f15ed7531","server":"cn1.relay.iepl.pw","port":50300,"name":"🇨🇳_中国_www.lcr189.com_19"}
+  - {"type":"trojan","name":"🇺🇸_美国_www.lcr189.com_19","server":"jgwdb2.gaox.ml","password":"c19d1432-8b3e-4818-8837-3d160cf65908","port":443,"udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"🇯🇵_日本_www.lcr189.com_3","server":"azjp.orange7.cf","password":"462024b8-a5c8-444f-bc65-7bb7f4ae413f","port":10050,"udp":true,"skip-cert-verify":true,"sni":"jp02.170809.xyz"}
+  - {"type":"trojan","name":"🇯🇵_日本_www.lcr189.com_4","server":"jp04.170809.xyz","password":"462024b8-a5c8-444f-bc65-7bb7f4ae413f","port":443,"udp":true,"skip-cert-verify":true,"sni":"jp04.170809.xyz"}
+  - {"type":"trojan","name":"🇯🇵_日本_www.lcr189.com_5","server":"jp05.170809.xyz","password":"462024b8-a5c8-444f-bc65-7bb7f4ae413f","port":443,"udp":true,"skip-cert-verify":true,"sni":"jp05.170809.xyz"}
+  - {"type":"trojan","name":"🇺🇸_美国_www.lcr189.com_20","server":"azhk.orange7.cf","password":"462024b8-a5c8-444f-bc65-7bb7f4ae413f","port":19542,"udp":true,"skip-cert-verify":true,"sni":"jpmax03.170809.xyz"}
+  - {"type":"trojan","name":"🇺🇸_美国_www.lcr189.com_21","server":"jgwdj3.gaox.ml","password":"da777aae-defb-41d0-a183-2c27da2b4677","port":443,"udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"🇸🇬_新加坡_www.lcr189.com_6","server":"hy.hsichu.xyz","password":"HsCOkje2HH2PuRFb","port":443,"udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"🇸🇬_新加坡_www.lcr189.com_7","server":"hy.hsichu.xyz","password":"HsCOkje2HH2PuRFb","port":443,"udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"🇺🇸_美国_www.lcr189.com_22","server":"azhk.orange7.cf","password":"462024b8-a5c8-444f-bc65-7bb7f4ae413f","port":47822,"udp":true,"skip-cert-verify":true,"sni":"in02.170809.xyz"}
+  - {"type":"vmess","server":"gy.cwcsrsyby.xyz","name":"🇨🇳_中国_www.lcr189.com_20","port":"47513","uuid":"140663cb-e2ea-39ca-8a85-040968d9de44","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"trojan","name":"🇺🇸_美国_www.lcr189.com_23","server":"azhk.orange7.cf","password":"462024b8-a5c8-444f-bc65-7bb7f4ae413f","port":32505,"udp":true,"skip-cert-verify":true,"sni":"hk13.170809.xyz"}
+  - {"type":"trojan","name":"🇺🇸_美国_www.lcr189.com_24","server":"hkmax13.170809.xyz","password":"462024b8-a5c8-444f-bc65-7bb7f4ae413f","port":443,"udp":true,"skip-cert-verify":true,"sni":"hkmax13.170809.xyz"}
+  - {"type":"ss","cipher":"aes-128-gcm","password":"bzUdYJ4JzjGfIwhG","server":"bb01.nfeng6.pp.ua","port":16040,"name":"🇨🇳_中国_www.lcr189.com_21"}
+  - {"type":"trojan","name":"🇦🇺_澳大利亚_www.lcr189.com_2","server":"kr04.wangxd.life","password":"3a2c0c6c-9ee5-c05f-c951-fcd73831983e","port":3052,"udp":true,"skip-cert-verify":true}
+  - {"type":"vmess","ws-opts":{"path":"/vpnsieure","headers":{"host":"aweikeji-YouTube"}},"server":"vn02v2.vpnsieure.com","name":"www.lcr189.com","port":"80","uuid":"330efbdb-7171-4fd1-a524-d7b7d8e76732","alterId":"0","cipher":"auto","network":"ws"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇦_CA_加拿大
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
-      - 🇨🇳_CN_中国->🇲🇾_MY_马来西亚
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
-      - 🇦🇺_AU_澳大利亚
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_3
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
-      - 🇮🇳_IN_印度
+      - 🇸🇬_新加坡_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_1
+      - 🇦🇺_澳大利亚_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_2
+      - 🇺🇸_美国_www.lcr189.com_1
+      - 🇺🇸_美国_www.lcr189.com_2
+      - 🇺🇸_美国_www.lcr189.com_3
+      - 🇺🇸_美国_www.lcr189.com_4
+      - 🇺🇸_美国_www.lcr189.com_5
+      - 🇺🇸_美国_www.lcr189.com_6
+      - 🇺🇸_美国_www.lcr189.com_7
+      - 🇺🇸_美国_www.lcr189.com_8
+      - 🇨🇳_中国_www.lcr189.com_3
+      - 🇺🇸_美国_www.lcr189.com_9
+      - 🇺🇸_美国_www.lcr189.com_10
+      - 🇺🇸_美国_www.lcr189.com_11
+      - 🇺🇸_美国_www.lcr189.com_12
+      - 🇺🇸_美国_www.lcr189.com_13
+      - 🇺🇸_美国_www.lcr189.com_14
+      - 🇺🇸_美国_www.lcr189.com_15
+      - 🇨🇳_中国_www.lcr189.com_4
+      - 🇨🇳_中国_www.lcr189.com_5
+      - 🇨🇳_中国_www.lcr189.com_6
+      - 🇹🇼_台湾_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_7
+      - 🇹🇼_台湾_www.lcr189.com_2
+      - 🇹🇼_台湾_www.lcr189.com_3
+      - 🇹🇼_台湾_www.lcr189.com_4
+      - 🇨🇳_中国_www.lcr189.com_8
+      - 🇨🇳_中国_www.lcr189.com_9
+      - 🇸🇬_新加坡_www.lcr189.com_2
+      - 🇸🇬_新加坡_www.lcr189.com_3
+      - 🇸🇬_新加坡_www.lcr189.com_4
+      - 🇸🇬_新加坡_www.lcr189.com_5
+      - 🇨🇳_中国_www.lcr189.com_10
+      - 🇨🇳_中国_www.lcr189.com_11
+      - 🇺🇸_美国_www.lcr189.com_16
+      - 🇺🇸_美国_www.lcr189.com_17
+      - 🇺🇸_美国_www.lcr189.com_18
+      - 🇨🇳_中国_www.lcr189.com_12
+      - 🇨🇳_中国_www.lcr189.com_13
+      - 🇳🇱_荷兰_www.lcr189.com
+      - 🇰🇷_韩国_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_14
+      - 🇰🇷_韩国_www.lcr189.com_2
+      - 🇨🇳_中国_www.lcr189.com_15
+      - 🇯🇵_日本_www.lcr189.com_1
+      - 🇯🇵_日本_www.lcr189.com_2
+      - 🇨🇳_中国_www.lcr189.com_16
+      - 🇨🇳_中国_www.lcr189.com_17
+      - 🇨🇳_中国_www.lcr189.com_18
+      - 🇨🇳_中国_www.lcr189.com_19
+      - 🇺🇸_美国_www.lcr189.com_19
+      - 🇯🇵_日本_www.lcr189.com_3
+      - 🇯🇵_日本_www.lcr189.com_4
+      - 🇯🇵_日本_www.lcr189.com_5
+      - 🇺🇸_美国_www.lcr189.com_20
+      - 🇺🇸_美国_www.lcr189.com_21
+      - 🇸🇬_新加坡_www.lcr189.com_6
+      - 🇸🇬_新加坡_www.lcr189.com_7
+      - 🇺🇸_美国_www.lcr189.com_22
+      - 🇨🇳_中国_www.lcr189.com_20
+      - 🇺🇸_美国_www.lcr189.com_23
+      - 🇺🇸_美国_www.lcr189.com_24
+      - 🇨🇳_中国_www.lcr189.com_21
+      - 🇦🇺_澳大利亚_www.lcr189.com_2
+      - www.lcr189.com
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇦_CA_加拿大
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
-      - 🇨🇳_CN_中国->🇲🇾_MY_马来西亚
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
-      - 🇦🇺_AU_澳大利亚
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_3
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
-      - 🇮🇳_IN_印度
+      - 🇸🇬_新加坡_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_1
+      - 🇦🇺_澳大利亚_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_2
+      - 🇺🇸_美国_www.lcr189.com_1
+      - 🇺🇸_美国_www.lcr189.com_2
+      - 🇺🇸_美国_www.lcr189.com_3
+      - 🇺🇸_美国_www.lcr189.com_4
+      - 🇺🇸_美国_www.lcr189.com_5
+      - 🇺🇸_美国_www.lcr189.com_6
+      - 🇺🇸_美国_www.lcr189.com_7
+      - 🇺🇸_美国_www.lcr189.com_8
+      - 🇨🇳_中国_www.lcr189.com_3
+      - 🇺🇸_美国_www.lcr189.com_9
+      - 🇺🇸_美国_www.lcr189.com_10
+      - 🇺🇸_美国_www.lcr189.com_11
+      - 🇺🇸_美国_www.lcr189.com_12
+      - 🇺🇸_美国_www.lcr189.com_13
+      - 🇺🇸_美国_www.lcr189.com_14
+      - 🇺🇸_美国_www.lcr189.com_15
+      - 🇨🇳_中国_www.lcr189.com_4
+      - 🇨🇳_中国_www.lcr189.com_5
+      - 🇨🇳_中国_www.lcr189.com_6
+      - 🇹🇼_台湾_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_7
+      - 🇹🇼_台湾_www.lcr189.com_2
+      - 🇹🇼_台湾_www.lcr189.com_3
+      - 🇹🇼_台湾_www.lcr189.com_4
+      - 🇨🇳_中国_www.lcr189.com_8
+      - 🇨🇳_中国_www.lcr189.com_9
+      - 🇸🇬_新加坡_www.lcr189.com_2
+      - 🇸🇬_新加坡_www.lcr189.com_3
+      - 🇸🇬_新加坡_www.lcr189.com_4
+      - 🇸🇬_新加坡_www.lcr189.com_5
+      - 🇨🇳_中国_www.lcr189.com_10
+      - 🇨🇳_中国_www.lcr189.com_11
+      - 🇺🇸_美国_www.lcr189.com_16
+      - 🇺🇸_美国_www.lcr189.com_17
+      - 🇺🇸_美国_www.lcr189.com_18
+      - 🇨🇳_中国_www.lcr189.com_12
+      - 🇨🇳_中国_www.lcr189.com_13
+      - 🇳🇱_荷兰_www.lcr189.com
+      - 🇰🇷_韩国_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_14
+      - 🇰🇷_韩国_www.lcr189.com_2
+      - 🇨🇳_中国_www.lcr189.com_15
+      - 🇯🇵_日本_www.lcr189.com_1
+      - 🇯🇵_日本_www.lcr189.com_2
+      - 🇨🇳_中国_www.lcr189.com_16
+      - 🇨🇳_中国_www.lcr189.com_17
+      - 🇨🇳_中国_www.lcr189.com_18
+      - 🇨🇳_中国_www.lcr189.com_19
+      - 🇺🇸_美国_www.lcr189.com_19
+      - 🇯🇵_日本_www.lcr189.com_3
+      - 🇯🇵_日本_www.lcr189.com_4
+      - 🇯🇵_日本_www.lcr189.com_5
+      - 🇺🇸_美国_www.lcr189.com_20
+      - 🇺🇸_美国_www.lcr189.com_21
+      - 🇸🇬_新加坡_www.lcr189.com_6
+      - 🇸🇬_新加坡_www.lcr189.com_7
+      - 🇺🇸_美国_www.lcr189.com_22
+      - 🇨🇳_中国_www.lcr189.com_20
+      - 🇺🇸_美国_www.lcr189.com_23
+      - 🇺🇸_美国_www.lcr189.com_24
+      - 🇨🇳_中国_www.lcr189.com_21
+      - 🇦🇺_澳大利亚_www.lcr189.com_2
+      - www.lcr189.com
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇦_CA_加拿大
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
-      - 🇨🇳_CN_中国->🇲🇾_MY_马来西亚
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
-      - 🇦🇺_AU_澳大利亚
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_3
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
-      - 🇮🇳_IN_印度
+      - 🇸🇬_新加坡_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_1
+      - 🇦🇺_澳大利亚_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_2
+      - 🇺🇸_美国_www.lcr189.com_1
+      - 🇺🇸_美国_www.lcr189.com_2
+      - 🇺🇸_美国_www.lcr189.com_3
+      - 🇺🇸_美国_www.lcr189.com_4
+      - 🇺🇸_美国_www.lcr189.com_5
+      - 🇺🇸_美国_www.lcr189.com_6
+      - 🇺🇸_美国_www.lcr189.com_7
+      - 🇺🇸_美国_www.lcr189.com_8
+      - 🇨🇳_中国_www.lcr189.com_3
+      - 🇺🇸_美国_www.lcr189.com_9
+      - 🇺🇸_美国_www.lcr189.com_10
+      - 🇺🇸_美国_www.lcr189.com_11
+      - 🇺🇸_美国_www.lcr189.com_12
+      - 🇺🇸_美国_www.lcr189.com_13
+      - 🇺🇸_美国_www.lcr189.com_14
+      - 🇺🇸_美国_www.lcr189.com_15
+      - 🇨🇳_中国_www.lcr189.com_4
+      - 🇨🇳_中国_www.lcr189.com_5
+      - 🇨🇳_中国_www.lcr189.com_6
+      - 🇹🇼_台湾_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_7
+      - 🇹🇼_台湾_www.lcr189.com_2
+      - 🇹🇼_台湾_www.lcr189.com_3
+      - 🇹🇼_台湾_www.lcr189.com_4
+      - 🇨🇳_中国_www.lcr189.com_8
+      - 🇨🇳_中国_www.lcr189.com_9
+      - 🇸🇬_新加坡_www.lcr189.com_2
+      - 🇸🇬_新加坡_www.lcr189.com_3
+      - 🇸🇬_新加坡_www.lcr189.com_4
+      - 🇸🇬_新加坡_www.lcr189.com_5
+      - 🇨🇳_中国_www.lcr189.com_10
+      - 🇨🇳_中国_www.lcr189.com_11
+      - 🇺🇸_美国_www.lcr189.com_16
+      - 🇺🇸_美国_www.lcr189.com_17
+      - 🇺🇸_美国_www.lcr189.com_18
+      - 🇨🇳_中国_www.lcr189.com_12
+      - 🇨🇳_中国_www.lcr189.com_13
+      - 🇳🇱_荷兰_www.lcr189.com
+      - 🇰🇷_韩国_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_14
+      - 🇰🇷_韩国_www.lcr189.com_2
+      - 🇨🇳_中国_www.lcr189.com_15
+      - 🇯🇵_日本_www.lcr189.com_1
+      - 🇯🇵_日本_www.lcr189.com_2
+      - 🇨🇳_中国_www.lcr189.com_16
+      - 🇨🇳_中国_www.lcr189.com_17
+      - 🇨🇳_中国_www.lcr189.com_18
+      - 🇨🇳_中国_www.lcr189.com_19
+      - 🇺🇸_美国_www.lcr189.com_19
+      - 🇯🇵_日本_www.lcr189.com_3
+      - 🇯🇵_日本_www.lcr189.com_4
+      - 🇯🇵_日本_www.lcr189.com_5
+      - 🇺🇸_美国_www.lcr189.com_20
+      - 🇺🇸_美国_www.lcr189.com_21
+      - 🇸🇬_新加坡_www.lcr189.com_6
+      - 🇸🇬_新加坡_www.lcr189.com_7
+      - 🇺🇸_美国_www.lcr189.com_22
+      - 🇨🇳_中国_www.lcr189.com_20
+      - 🇺🇸_美国_www.lcr189.com_23
+      - 🇺🇸_美国_www.lcr189.com_24
+      - 🇨🇳_中国_www.lcr189.com_21
+      - 🇦🇺_澳大利亚_www.lcr189.com_2
+      - www.lcr189.com
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇦_CA_加拿大
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
-      - 🇨🇳_CN_中国->🇲🇾_MY_马来西亚
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
-      - 🇦🇺_AU_澳大利亚
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_3
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
-      - 🇮🇳_IN_印度
+      - 🇸🇬_新加坡_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_1
+      - 🇦🇺_澳大利亚_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_2
+      - 🇺🇸_美国_www.lcr189.com_1
+      - 🇺🇸_美国_www.lcr189.com_2
+      - 🇺🇸_美国_www.lcr189.com_3
+      - 🇺🇸_美国_www.lcr189.com_4
+      - 🇺🇸_美国_www.lcr189.com_5
+      - 🇺🇸_美国_www.lcr189.com_6
+      - 🇺🇸_美国_www.lcr189.com_7
+      - 🇺🇸_美国_www.lcr189.com_8
+      - 🇨🇳_中国_www.lcr189.com_3
+      - 🇺🇸_美国_www.lcr189.com_9
+      - 🇺🇸_美国_www.lcr189.com_10
+      - 🇺🇸_美国_www.lcr189.com_11
+      - 🇺🇸_美国_www.lcr189.com_12
+      - 🇺🇸_美国_www.lcr189.com_13
+      - 🇺🇸_美国_www.lcr189.com_14
+      - 🇺🇸_美国_www.lcr189.com_15
+      - 🇨🇳_中国_www.lcr189.com_4
+      - 🇨🇳_中国_www.lcr189.com_5
+      - 🇨🇳_中国_www.lcr189.com_6
+      - 🇹🇼_台湾_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_7
+      - 🇹🇼_台湾_www.lcr189.com_2
+      - 🇹🇼_台湾_www.lcr189.com_3
+      - 🇹🇼_台湾_www.lcr189.com_4
+      - 🇨🇳_中国_www.lcr189.com_8
+      - 🇨🇳_中国_www.lcr189.com_9
+      - 🇸🇬_新加坡_www.lcr189.com_2
+      - 🇸🇬_新加坡_www.lcr189.com_3
+      - 🇸🇬_新加坡_www.lcr189.com_4
+      - 🇸🇬_新加坡_www.lcr189.com_5
+      - 🇨🇳_中国_www.lcr189.com_10
+      - 🇨🇳_中国_www.lcr189.com_11
+      - 🇺🇸_美国_www.lcr189.com_16
+      - 🇺🇸_美国_www.lcr189.com_17
+      - 🇺🇸_美国_www.lcr189.com_18
+      - 🇨🇳_中国_www.lcr189.com_12
+      - 🇨🇳_中国_www.lcr189.com_13
+      - 🇳🇱_荷兰_www.lcr189.com
+      - 🇰🇷_韩国_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_14
+      - 🇰🇷_韩国_www.lcr189.com_2
+      - 🇨🇳_中国_www.lcr189.com_15
+      - 🇯🇵_日本_www.lcr189.com_1
+      - 🇯🇵_日本_www.lcr189.com_2
+      - 🇨🇳_中国_www.lcr189.com_16
+      - 🇨🇳_中国_www.lcr189.com_17
+      - 🇨🇳_中国_www.lcr189.com_18
+      - 🇨🇳_中国_www.lcr189.com_19
+      - 🇺🇸_美国_www.lcr189.com_19
+      - 🇯🇵_日本_www.lcr189.com_3
+      - 🇯🇵_日本_www.lcr189.com_4
+      - 🇯🇵_日本_www.lcr189.com_5
+      - 🇺🇸_美国_www.lcr189.com_20
+      - 🇺🇸_美国_www.lcr189.com_21
+      - 🇸🇬_新加坡_www.lcr189.com_6
+      - 🇸🇬_新加坡_www.lcr189.com_7
+      - 🇺🇸_美国_www.lcr189.com_22
+      - 🇨🇳_中国_www.lcr189.com_20
+      - 🇺🇸_美国_www.lcr189.com_23
+      - 🇺🇸_美国_www.lcr189.com_24
+      - 🇨🇳_中国_www.lcr189.com_21
+      - 🇦🇺_澳大利亚_www.lcr189.com_2
+      - www.lcr189.com
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇦_CA_加拿大
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
-      - 🇨🇳_CN_中国->🇲🇾_MY_马来西亚
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
-      - 🇦🇺_AU_澳大利亚
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_3
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
-      - 🇮🇳_IN_印度
+      - 🇸🇬_新加坡_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_1
+      - 🇦🇺_澳大利亚_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_2
+      - 🇺🇸_美国_www.lcr189.com_1
+      - 🇺🇸_美国_www.lcr189.com_2
+      - 🇺🇸_美国_www.lcr189.com_3
+      - 🇺🇸_美国_www.lcr189.com_4
+      - 🇺🇸_美国_www.lcr189.com_5
+      - 🇺🇸_美国_www.lcr189.com_6
+      - 🇺🇸_美国_www.lcr189.com_7
+      - 🇺🇸_美国_www.lcr189.com_8
+      - 🇨🇳_中国_www.lcr189.com_3
+      - 🇺🇸_美国_www.lcr189.com_9
+      - 🇺🇸_美国_www.lcr189.com_10
+      - 🇺🇸_美国_www.lcr189.com_11
+      - 🇺🇸_美国_www.lcr189.com_12
+      - 🇺🇸_美国_www.lcr189.com_13
+      - 🇺🇸_美国_www.lcr189.com_14
+      - 🇺🇸_美国_www.lcr189.com_15
+      - 🇨🇳_中国_www.lcr189.com_4
+      - 🇨🇳_中国_www.lcr189.com_5
+      - 🇨🇳_中国_www.lcr189.com_6
+      - 🇹🇼_台湾_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_7
+      - 🇹🇼_台湾_www.lcr189.com_2
+      - 🇹🇼_台湾_www.lcr189.com_3
+      - 🇹🇼_台湾_www.lcr189.com_4
+      - 🇨🇳_中国_www.lcr189.com_8
+      - 🇨🇳_中国_www.lcr189.com_9
+      - 🇸🇬_新加坡_www.lcr189.com_2
+      - 🇸🇬_新加坡_www.lcr189.com_3
+      - 🇸🇬_新加坡_www.lcr189.com_4
+      - 🇸🇬_新加坡_www.lcr189.com_5
+      - 🇨🇳_中国_www.lcr189.com_10
+      - 🇨🇳_中国_www.lcr189.com_11
+      - 🇺🇸_美国_www.lcr189.com_16
+      - 🇺🇸_美国_www.lcr189.com_17
+      - 🇺🇸_美国_www.lcr189.com_18
+      - 🇨🇳_中国_www.lcr189.com_12
+      - 🇨🇳_中国_www.lcr189.com_13
+      - 🇳🇱_荷兰_www.lcr189.com
+      - 🇰🇷_韩国_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_14
+      - 🇰🇷_韩国_www.lcr189.com_2
+      - 🇨🇳_中国_www.lcr189.com_15
+      - 🇯🇵_日本_www.lcr189.com_1
+      - 🇯🇵_日本_www.lcr189.com_2
+      - 🇨🇳_中国_www.lcr189.com_16
+      - 🇨🇳_中国_www.lcr189.com_17
+      - 🇨🇳_中国_www.lcr189.com_18
+      - 🇨🇳_中国_www.lcr189.com_19
+      - 🇺🇸_美国_www.lcr189.com_19
+      - 🇯🇵_日本_www.lcr189.com_3
+      - 🇯🇵_日本_www.lcr189.com_4
+      - 🇯🇵_日本_www.lcr189.com_5
+      - 🇺🇸_美国_www.lcr189.com_20
+      - 🇺🇸_美国_www.lcr189.com_21
+      - 🇸🇬_新加坡_www.lcr189.com_6
+      - 🇸🇬_新加坡_www.lcr189.com_7
+      - 🇺🇸_美国_www.lcr189.com_22
+      - 🇨🇳_中国_www.lcr189.com_20
+      - 🇺🇸_美国_www.lcr189.com_23
+      - 🇺🇸_美国_www.lcr189.com_24
+      - 🇨🇳_中国_www.lcr189.com_21
+      - 🇦🇺_澳大利亚_www.lcr189.com_2
+      - www.lcr189.com
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇦_CA_加拿大
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
-      - 🇨🇳_CN_中国->🇲🇾_MY_马来西亚
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
-      - 🇦🇺_AU_澳大利亚
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_3
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
-      - 🇮🇳_IN_印度
+      - 🇸🇬_新加坡_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_1
+      - 🇦🇺_澳大利亚_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_2
+      - 🇺🇸_美国_www.lcr189.com_1
+      - 🇺🇸_美国_www.lcr189.com_2
+      - 🇺🇸_美国_www.lcr189.com_3
+      - 🇺🇸_美国_www.lcr189.com_4
+      - 🇺🇸_美国_www.lcr189.com_5
+      - 🇺🇸_美国_www.lcr189.com_6
+      - 🇺🇸_美国_www.lcr189.com_7
+      - 🇺🇸_美国_www.lcr189.com_8
+      - 🇨🇳_中国_www.lcr189.com_3
+      - 🇺🇸_美国_www.lcr189.com_9
+      - 🇺🇸_美国_www.lcr189.com_10
+      - 🇺🇸_美国_www.lcr189.com_11
+      - 🇺🇸_美国_www.lcr189.com_12
+      - 🇺🇸_美国_www.lcr189.com_13
+      - 🇺🇸_美国_www.lcr189.com_14
+      - 🇺🇸_美国_www.lcr189.com_15
+      - 🇨🇳_中国_www.lcr189.com_4
+      - 🇨🇳_中国_www.lcr189.com_5
+      - 🇨🇳_中国_www.lcr189.com_6
+      - 🇹🇼_台湾_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_7
+      - 🇹🇼_台湾_www.lcr189.com_2
+      - 🇹🇼_台湾_www.lcr189.com_3
+      - 🇹🇼_台湾_www.lcr189.com_4
+      - 🇨🇳_中国_www.lcr189.com_8
+      - 🇨🇳_中国_www.lcr189.com_9
+      - 🇸🇬_新加坡_www.lcr189.com_2
+      - 🇸🇬_新加坡_www.lcr189.com_3
+      - 🇸🇬_新加坡_www.lcr189.com_4
+      - 🇸🇬_新加坡_www.lcr189.com_5
+      - 🇨🇳_中国_www.lcr189.com_10
+      - 🇨🇳_中国_www.lcr189.com_11
+      - 🇺🇸_美国_www.lcr189.com_16
+      - 🇺🇸_美国_www.lcr189.com_17
+      - 🇺🇸_美国_www.lcr189.com_18
+      - 🇨🇳_中国_www.lcr189.com_12
+      - 🇨🇳_中国_www.lcr189.com_13
+      - 🇳🇱_荷兰_www.lcr189.com
+      - 🇰🇷_韩国_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_14
+      - 🇰🇷_韩国_www.lcr189.com_2
+      - 🇨🇳_中国_www.lcr189.com_15
+      - 🇯🇵_日本_www.lcr189.com_1
+      - 🇯🇵_日本_www.lcr189.com_2
+      - 🇨🇳_中国_www.lcr189.com_16
+      - 🇨🇳_中国_www.lcr189.com_17
+      - 🇨🇳_中国_www.lcr189.com_18
+      - 🇨🇳_中国_www.lcr189.com_19
+      - 🇺🇸_美国_www.lcr189.com_19
+      - 🇯🇵_日本_www.lcr189.com_3
+      - 🇯🇵_日本_www.lcr189.com_4
+      - 🇯🇵_日本_www.lcr189.com_5
+      - 🇺🇸_美国_www.lcr189.com_20
+      - 🇺🇸_美国_www.lcr189.com_21
+      - 🇸🇬_新加坡_www.lcr189.com_6
+      - 🇸🇬_新加坡_www.lcr189.com_7
+      - 🇺🇸_美国_www.lcr189.com_22
+      - 🇨🇳_中国_www.lcr189.com_20
+      - 🇺🇸_美国_www.lcr189.com_23
+      - 🇺🇸_美国_www.lcr189.com_24
+      - 🇨🇳_中国_www.lcr189.com_21
+      - 🇦🇺_澳大利亚_www.lcr189.com_2
+      - www.lcr189.com
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -158,20 +529,73 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇦_CA_加拿大
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
-      - 🇨🇳_CN_中国->🇲🇾_MY_马来西亚
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
-      - 🇦🇺_AU_澳大利亚
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_3
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
-      - 🇮🇳_IN_印度
+      - 🇸🇬_新加坡_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_1
+      - 🇦🇺_澳大利亚_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_2
+      - 🇺🇸_美国_www.lcr189.com_1
+      - 🇺🇸_美国_www.lcr189.com_2
+      - 🇺🇸_美国_www.lcr189.com_3
+      - 🇺🇸_美国_www.lcr189.com_4
+      - 🇺🇸_美国_www.lcr189.com_5
+      - 🇺🇸_美国_www.lcr189.com_6
+      - 🇺🇸_美国_www.lcr189.com_7
+      - 🇺🇸_美国_www.lcr189.com_8
+      - 🇨🇳_中国_www.lcr189.com_3
+      - 🇺🇸_美国_www.lcr189.com_9
+      - 🇺🇸_美国_www.lcr189.com_10
+      - 🇺🇸_美国_www.lcr189.com_11
+      - 🇺🇸_美国_www.lcr189.com_12
+      - 🇺🇸_美国_www.lcr189.com_13
+      - 🇺🇸_美国_www.lcr189.com_14
+      - 🇺🇸_美国_www.lcr189.com_15
+      - 🇨🇳_中国_www.lcr189.com_4
+      - 🇨🇳_中国_www.lcr189.com_5
+      - 🇨🇳_中国_www.lcr189.com_6
+      - 🇹🇼_台湾_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_7
+      - 🇹🇼_台湾_www.lcr189.com_2
+      - 🇹🇼_台湾_www.lcr189.com_3
+      - 🇹🇼_台湾_www.lcr189.com_4
+      - 🇨🇳_中国_www.lcr189.com_8
+      - 🇨🇳_中国_www.lcr189.com_9
+      - 🇸🇬_新加坡_www.lcr189.com_2
+      - 🇸🇬_新加坡_www.lcr189.com_3
+      - 🇸🇬_新加坡_www.lcr189.com_4
+      - 🇸🇬_新加坡_www.lcr189.com_5
+      - 🇨🇳_中国_www.lcr189.com_10
+      - 🇨🇳_中国_www.lcr189.com_11
+      - 🇺🇸_美国_www.lcr189.com_16
+      - 🇺🇸_美国_www.lcr189.com_17
+      - 🇺🇸_美国_www.lcr189.com_18
+      - 🇨🇳_中国_www.lcr189.com_12
+      - 🇨🇳_中国_www.lcr189.com_13
+      - 🇳🇱_荷兰_www.lcr189.com
+      - 🇰🇷_韩国_www.lcr189.com_1
+      - 🇨🇳_中国_www.lcr189.com_14
+      - 🇰🇷_韩国_www.lcr189.com_2
+      - 🇨🇳_中国_www.lcr189.com_15
+      - 🇯🇵_日本_www.lcr189.com_1
+      - 🇯🇵_日本_www.lcr189.com_2
+      - 🇨🇳_中国_www.lcr189.com_16
+      - 🇨🇳_中国_www.lcr189.com_17
+      - 🇨🇳_中国_www.lcr189.com_18
+      - 🇨🇳_中国_www.lcr189.com_19
+      - 🇺🇸_美国_www.lcr189.com_19
+      - 🇯🇵_日本_www.lcr189.com_3
+      - 🇯🇵_日本_www.lcr189.com_4
+      - 🇯🇵_日本_www.lcr189.com_5
+      - 🇺🇸_美国_www.lcr189.com_20
+      - 🇺🇸_美国_www.lcr189.com_21
+      - 🇸🇬_新加坡_www.lcr189.com_6
+      - 🇸🇬_新加坡_www.lcr189.com_7
+      - 🇺🇸_美国_www.lcr189.com_22
+      - 🇨🇳_中国_www.lcr189.com_20
+      - 🇺🇸_美国_www.lcr189.com_23
+      - 🇺🇸_美国_www.lcr189.com_24
+      - 🇨🇳_中国_www.lcr189.com_21
+      - 🇦🇺_澳大利亚_www.lcr189.com_2
+      - www.lcr189.com
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
