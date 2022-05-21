@@ -5,67 +5,95 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"vmess","name":"🇰🇷_KR_韩国","ws-opts":{"path":"/g1641hvx","headers":{"host":"v2-4.godlight.xyz"}},"server":"v2-4.godlight.xyz","port":26944,"uuid":"07ea283e-bbe8-466f-a268-c5819763a9bf","alterId":0,"cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"🇺🇸_US_美国_1","ws-opts":{"path":"/go","headers":{"host":"us02.gogogoo.cyou"}},"server":"us02.gogogoo.cyou","port":443,"uuid":"db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda","alterId":0,"cipher":"auto","network":"ws","tls":true}
-  - {"type":"ss","name":"🇺🇸_US_美国\r","server":"169.197.142.99","port":6697,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
-  - {"type":"ss","name":"🇺🇸_US_美国_2","server":"169.197.142.99","port":5004,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"type":"vmess","name":"ServerA","ws-opts":{"path":"/api","headers":{"host":"Shocket1.iranlms.ir"}},"server":"mci.myandroidplus1.ir","port":"80","uuid":"f30fe7c5-dbc2-42bf-d604-132b28921e73","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vless","name":"ServerA(xtls)\r","server":"iranmci.myandroidplus1.ir","port":443,"uuid":"f30fe7c5-dbc2-42bf-d604-132b28921e73","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-splice","servername":"android-club.ir"}
+  - {"type":"vmess","name":"ServerF","ws-opts":{"path":"/apiws","headers":{"host":"Shocket1.iranlms.ir"}},"server":"srvf.myandroidplus1.ir","port":"80","uuid":"f30fe7c5-dbc2-42bf-d604-132b28921e73","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vless","name":"ServerF(XTLS)\r","server":"46.102.130.219","port":443,"uuid":"f30fe7c5-dbc2-42bf-d604-132b28921e73","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-splice","servername":"android-club.ir"}
+  - {"type":"vmess","name":"ServerM","ws-opts":{"path":"/api","headers":{"host":"Shsocket1.iranlms.ir"}},"server":"irancell.myandroidplus1.ir","port":"80","uuid":"f30fe7c5-dbc2-42bf-d604-132b28921e73","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vless","name":"ServerM(xtls)\r","server":"irancell.myandroidplus1.ir","port":443,"uuid":"f30fe7c5-dbc2-42bf-d604-132b28921e73","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-splice","servername":"android-club.ir"}
+  - {"type":"vmess","name":"ServerQ","ws-opts":{"path":"/apiws","headers":{"host":"Shocket1.iranlms.ir"}},"server":"irancell.android-club.ir","port":"80","uuid":"f30fe7c5-dbc2-42bf-d604-132b28921e73","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vless","name":"ServerQ(xtls)","server":"asiatech.android-club.ir","port":443,"uuid":"f30fe7c5-dbc2-42bf-d604-132b28921e73","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-splice","servername":"android-club.ir"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
-      - "🇺🇸_US_美国\r"
-      - 🇺🇸_US_美国_2
+      - ServerA
+      - "ServerA(xtls)\r"
+      - ServerF
+      - "ServerF(XTLS)\r"
+      - ServerM
+      - "ServerM(xtls)\r"
+      - ServerQ
+      - ServerQ(xtls)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
-      - "🇺🇸_US_美国\r"
-      - 🇺🇸_US_美国_2
+      - ServerA
+      - "ServerA(xtls)\r"
+      - ServerF
+      - "ServerF(XTLS)\r"
+      - ServerM
+      - "ServerM(xtls)\r"
+      - ServerQ
+      - ServerQ(xtls)
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
-      - "🇺🇸_US_美国\r"
-      - 🇺🇸_US_美国_2
+      - ServerA
+      - "ServerA(xtls)\r"
+      - ServerF
+      - "ServerF(XTLS)\r"
+      - ServerM
+      - "ServerM(xtls)\r"
+      - ServerQ
+      - ServerQ(xtls)
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
-      - "🇺🇸_US_美国\r"
-      - 🇺🇸_US_美国_2
+      - ServerA
+      - "ServerA(xtls)\r"
+      - ServerF
+      - "ServerF(XTLS)\r"
+      - ServerM
+      - "ServerM(xtls)\r"
+      - ServerQ
+      - ServerQ(xtls)
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
-      - "🇺🇸_US_美国\r"
-      - 🇺🇸_US_美国_2
+      - ServerA
+      - "ServerA(xtls)\r"
+      - ServerF
+      - "ServerF(XTLS)\r"
+      - ServerM
+      - "ServerM(xtls)\r"
+      - ServerQ
+      - ServerQ(xtls)
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
-      - "🇺🇸_US_美国\r"
-      - 🇺🇸_US_美国_2
+      - ServerA
+      - "ServerA(xtls)\r"
+      - ServerF
+      - "ServerF(XTLS)\r"
+      - ServerM
+      - "ServerM(xtls)\r"
+      - ServerQ
+      - ServerQ(xtls)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -88,10 +116,14 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
-      - "🇺🇸_US_美国\r"
-      - 🇺🇸_US_美国_2
+      - ServerA
+      - "ServerA(xtls)\r"
+      - ServerF
+      - "ServerF(XTLS)\r"
+      - ServerM
+      - "ServerM(xtls)\r"
+      - ServerQ
+      - ServerQ(xtls)
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
