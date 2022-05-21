@@ -5,95 +5,46 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"vmess","name":"ServerA","ws-opts":{"path":"/api","headers":{"host":"Shocket1.iranlms.ir"}},"server":"mci.myandroidplus1.ir","port":"80","uuid":"f30fe7c5-dbc2-42bf-d604-132b28921e73","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vless","name":"ServerA(xtls)\r","server":"iranmci.myandroidplus1.ir","port":443,"uuid":"f30fe7c5-dbc2-42bf-d604-132b28921e73","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-splice","servername":"android-club.ir"}
-  - {"type":"vmess","name":"ServerF","ws-opts":{"path":"/apiws","headers":{"host":"Shocket1.iranlms.ir"}},"server":"srvf.myandroidplus1.ir","port":"80","uuid":"f30fe7c5-dbc2-42bf-d604-132b28921e73","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vless","name":"ServerF(XTLS)\r","server":"46.102.130.219","port":443,"uuid":"f30fe7c5-dbc2-42bf-d604-132b28921e73","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-splice","servername":"android-club.ir"}
-  - {"type":"vmess","name":"ServerM","ws-opts":{"path":"/api","headers":{"host":"Shsocket1.iranlms.ir"}},"server":"irancell.myandroidplus1.ir","port":"80","uuid":"f30fe7c5-dbc2-42bf-d604-132b28921e73","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vless","name":"ServerM(xtls)\r","server":"irancell.myandroidplus1.ir","port":443,"uuid":"f30fe7c5-dbc2-42bf-d604-132b28921e73","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-splice","servername":"android-club.ir"}
-  - {"type":"vmess","name":"ServerQ","ws-opts":{"path":"/apiws","headers":{"host":"Shocket1.iranlms.ir"}},"server":"irancell.android-club.ir","port":"80","uuid":"f30fe7c5-dbc2-42bf-d604-132b28921e73","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vless","name":"ServerQ(xtls)","server":"asiatech.android-club.ir","port":443,"uuid":"f30fe7c5-dbc2-42bf-d604-132b28921e73","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-splice","servername":"android-club.ir"}
+  - {"type":"vmess","name":"🇭🇰_HK_香港","server":"hk-iv.sserver.top","port":80,"uuid":"8d0ceab5-1008-300f-996f-0751e11038f1","alterId":0,"cipher":"auto","network":"ws"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - ServerA
-      - "ServerA(xtls)\r"
-      - ServerF
-      - "ServerF(XTLS)\r"
-      - ServerM
-      - "ServerM(xtls)\r"
-      - ServerQ
-      - ServerQ(xtls)
+      - 🇭🇰_HK_香港
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - ServerA
-      - "ServerA(xtls)\r"
-      - ServerF
-      - "ServerF(XTLS)\r"
-      - ServerM
-      - "ServerM(xtls)\r"
-      - ServerQ
-      - ServerQ(xtls)
+      - 🇭🇰_HK_香港
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ServerA
-      - "ServerA(xtls)\r"
-      - ServerF
-      - "ServerF(XTLS)\r"
-      - ServerM
-      - "ServerM(xtls)\r"
-      - ServerQ
-      - ServerQ(xtls)
+      - 🇭🇰_HK_香港
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ServerA
-      - "ServerA(xtls)\r"
-      - ServerF
-      - "ServerF(XTLS)\r"
-      - ServerM
-      - "ServerM(xtls)\r"
-      - ServerQ
-      - ServerQ(xtls)
+      - 🇭🇰_HK_香港
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - ServerA
-      - "ServerA(xtls)\r"
-      - ServerF
-      - "ServerF(XTLS)\r"
-      - ServerM
-      - "ServerM(xtls)\r"
-      - ServerQ
-      - ServerQ(xtls)
+      - 🇭🇰_HK_香港
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ServerA
-      - "ServerA(xtls)\r"
-      - ServerF
-      - "ServerF(XTLS)\r"
-      - ServerM
-      - "ServerM(xtls)\r"
-      - ServerQ
-      - ServerQ(xtls)
+      - 🇭🇰_HK_香港
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -116,14 +67,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ServerA
-      - "ServerA(xtls)\r"
-      - ServerF
-      - "ServerF(XTLS)\r"
-      - ServerM
-      - "ServerM(xtls)\r"
-      - ServerQ
-      - ServerQ(xtls)
+      - 🇭🇰_HK_香港
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
