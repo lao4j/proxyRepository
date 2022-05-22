@@ -5,207 +5,74 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"ss","name":"US_1259\r","server":"34.223.227.127","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
-  - {"type":"ss","name":"Relay_🇨🇳+CN-🇨🇳CN_139\r","server":"momuz.sulink.cn","port":19016,"cipher":"aes-256-cfb","password":"z20010608"}
-  - {"type":"trojan","name":"Relay_🇨🇳+CN-🇲🇾MY_143\r","server":"cm-jm.okvpn.xyz","port":20005,"password":"2e1a3721-c322-40ed-8d23-881c7be90839","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","name":"US_19\r","server":"c8s2.jamjams.net","port":30162,"cipher":"aes-256-gcm","password":"eWh5br48eraTyoJS"}
-  - {"type":"ss","name":"US_20\r","server":"c8s1.jamjams.net","port":30162,"cipher":"aes-256-gcm","password":"eWh5br48eraTyoJS"}
-  - {"type":"ss","name":"CN_181\r","server":"14.29.124.168","port":25241,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
-  - {"type":"ss","name":"CN🇨🇳CN_157_152\r","server":"14.29.124.168","port":25294,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
-  - {"type":"ss","name":"CN_180\r","server":"14.29.124.168","port":25268,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
-  - {"type":"ss","name":"CN🇨🇳CN_148_155\r","server":"14.29.124.168","port":25219,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
-  - {"type":"ss","name":"CN_177\r","server":"14.29.124.168","port":25217,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
-  - {"type":"ss","name":"CN🇨🇳CN_151_144\r","server":"14.29.124.168","port":25238,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
-  - {"type":"ss","name":"CN🇨🇳CN_146_157\r","server":"14.29.124.168","port":25252,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
-  - {"type":"ss","name":"CN_173\r","server":"14.29.124.168","port":25293,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
-  - {"type":"ss","name":"CN_167\r","server":"14.29.124.168","port":25222,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
-  - {"type":"ss","name":"CN_155\r","server":"14.29.124.168","port":25259,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
-  - {"type":"ss","name":"CN_176\r","server":"14.29.124.168","port":25267,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
-  - {"type":"ss","name":"CN🇨🇳CN_156_153\r","server":"14.29.124.168","port":25271,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
-  - {"type":"ss","name":"CN🇨🇳CN_143_145\r","server":"14.29.124.168","port":25235,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
-  - {"type":"ss","name":"CN_154\r","server":"14.29.124.168","port":25233,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
-  - {"type":"ss","name":"CN🇨🇳CN_149_154\r","server":"14.29.124.168","port":25230,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
-  - {"type":"ss","name":"CN🇨🇳CN_152_147\r","server":"14.29.124.168","port":25220,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
-  - {"type":"ss","name":"CN🇨🇳CN_147_156\r","server":"14.29.124.168","port":25283,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
-  - {"type":"ss","name":"CN🇨🇳CN_145_160\r","server":"14.29.124.168","port":25231,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
-  - {"type":"ss","name":"CN🇨🇳CN_158_158\r","server":"14.29.124.168","port":25296,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇺🇸_US_美国_1","server":"34.223.227.127","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
+  - {"type":"ss","name":"🇺🇸_US_美国_2","server":"c8s2.jamjams.net","port":30162,"cipher":"aes-256-gcm","password":"eWh5br48eraTyoJS"}
+  - {"type":"trojan","name":"🇨🇳_CN_中国->🇬🇧_GB_英国","server":"cm-jm.okvpn.xyz","port":20006,"password":"2e1a3721-c322-40ed-8d23-881c7be90839","udp":true,"skip-cert-verify":true}
+  - {"type":"ss","name":"🇺🇸_US_美国_3","server":"45.78.11.116","port":30162,"cipher":"aes-256-gcm","password":"eWh5br48eraTyoJS"}
+  - {"type":"ss","name":"🇰🇷_KR_韩国","server":"3.38.250.217","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "US_1259\r"
-      - "Relay_🇨🇳+CN-🇨🇳CN_139\r"
-      - "Relay_🇨🇳+CN-🇲🇾MY_143\r"
-      - "US_19\r"
-      - "US_20\r"
-      - "CN_181\r"
-      - "CN🇨🇳CN_157_152\r"
-      - "CN_180\r"
-      - "CN🇨🇳CN_148_155\r"
-      - "CN_177\r"
-      - "CN🇨🇳CN_151_144\r"
-      - "CN🇨🇳CN_146_157\r"
-      - "CN_173\r"
-      - "CN_167\r"
-      - "CN_155\r"
-      - "CN_176\r"
-      - "CN🇨🇳CN_156_153\r"
-      - "CN🇨🇳CN_143_145\r"
-      - "CN_154\r"
-      - "CN🇨🇳CN_149_154\r"
-      - "CN🇨🇳CN_152_147\r"
-      - "CN🇨🇳CN_147_156\r"
-      - "CN🇨🇳CN_145_160\r"
-      - "CN🇨🇳CN_158_158\r"
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国_3
+      - 🇰🇷_KR_韩国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "US_1259\r"
-      - "Relay_🇨🇳+CN-🇨🇳CN_139\r"
-      - "Relay_🇨🇳+CN-🇲🇾MY_143\r"
-      - "US_19\r"
-      - "US_20\r"
-      - "CN_181\r"
-      - "CN🇨🇳CN_157_152\r"
-      - "CN_180\r"
-      - "CN🇨🇳CN_148_155\r"
-      - "CN_177\r"
-      - "CN🇨🇳CN_151_144\r"
-      - "CN🇨🇳CN_146_157\r"
-      - "CN_173\r"
-      - "CN_167\r"
-      - "CN_155\r"
-      - "CN_176\r"
-      - "CN🇨🇳CN_156_153\r"
-      - "CN🇨🇳CN_143_145\r"
-      - "CN_154\r"
-      - "CN🇨🇳CN_149_154\r"
-      - "CN🇨🇳CN_152_147\r"
-      - "CN🇨🇳CN_147_156\r"
-      - "CN🇨🇳CN_145_160\r"
-      - "CN🇨🇳CN_158_158\r"
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国_3
+      - 🇰🇷_KR_韩国
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "US_1259\r"
-      - "Relay_🇨🇳+CN-🇨🇳CN_139\r"
-      - "Relay_🇨🇳+CN-🇲🇾MY_143\r"
-      - "US_19\r"
-      - "US_20\r"
-      - "CN_181\r"
-      - "CN🇨🇳CN_157_152\r"
-      - "CN_180\r"
-      - "CN🇨🇳CN_148_155\r"
-      - "CN_177\r"
-      - "CN🇨🇳CN_151_144\r"
-      - "CN🇨🇳CN_146_157\r"
-      - "CN_173\r"
-      - "CN_167\r"
-      - "CN_155\r"
-      - "CN_176\r"
-      - "CN🇨🇳CN_156_153\r"
-      - "CN🇨🇳CN_143_145\r"
-      - "CN_154\r"
-      - "CN🇨🇳CN_149_154\r"
-      - "CN🇨🇳CN_152_147\r"
-      - "CN🇨🇳CN_147_156\r"
-      - "CN🇨🇳CN_145_160\r"
-      - "CN🇨🇳CN_158_158\r"
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国_3
+      - 🇰🇷_KR_韩国
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "US_1259\r"
-      - "Relay_🇨🇳+CN-🇨🇳CN_139\r"
-      - "Relay_🇨🇳+CN-🇲🇾MY_143\r"
-      - "US_19\r"
-      - "US_20\r"
-      - "CN_181\r"
-      - "CN🇨🇳CN_157_152\r"
-      - "CN_180\r"
-      - "CN🇨🇳CN_148_155\r"
-      - "CN_177\r"
-      - "CN🇨🇳CN_151_144\r"
-      - "CN🇨🇳CN_146_157\r"
-      - "CN_173\r"
-      - "CN_167\r"
-      - "CN_155\r"
-      - "CN_176\r"
-      - "CN🇨🇳CN_156_153\r"
-      - "CN🇨🇳CN_143_145\r"
-      - "CN_154\r"
-      - "CN🇨🇳CN_149_154\r"
-      - "CN🇨🇳CN_152_147\r"
-      - "CN🇨🇳CN_147_156\r"
-      - "CN🇨🇳CN_145_160\r"
-      - "CN🇨🇳CN_158_158\r"
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国_3
+      - 🇰🇷_KR_韩国
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - "US_1259\r"
-      - "Relay_🇨🇳+CN-🇨🇳CN_139\r"
-      - "Relay_🇨🇳+CN-🇲🇾MY_143\r"
-      - "US_19\r"
-      - "US_20\r"
-      - "CN_181\r"
-      - "CN🇨🇳CN_157_152\r"
-      - "CN_180\r"
-      - "CN🇨🇳CN_148_155\r"
-      - "CN_177\r"
-      - "CN🇨🇳CN_151_144\r"
-      - "CN🇨🇳CN_146_157\r"
-      - "CN_173\r"
-      - "CN_167\r"
-      - "CN_155\r"
-      - "CN_176\r"
-      - "CN🇨🇳CN_156_153\r"
-      - "CN🇨🇳CN_143_145\r"
-      - "CN_154\r"
-      - "CN🇨🇳CN_149_154\r"
-      - "CN🇨🇳CN_152_147\r"
-      - "CN🇨🇳CN_147_156\r"
-      - "CN🇨🇳CN_145_160\r"
-      - "CN🇨🇳CN_158_158\r"
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国_3
+      - 🇰🇷_KR_韩国
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "US_1259\r"
-      - "Relay_🇨🇳+CN-🇨🇳CN_139\r"
-      - "Relay_🇨🇳+CN-🇲🇾MY_143\r"
-      - "US_19\r"
-      - "US_20\r"
-      - "CN_181\r"
-      - "CN🇨🇳CN_157_152\r"
-      - "CN_180\r"
-      - "CN🇨🇳CN_148_155\r"
-      - "CN_177\r"
-      - "CN🇨🇳CN_151_144\r"
-      - "CN🇨🇳CN_146_157\r"
-      - "CN_173\r"
-      - "CN_167\r"
-      - "CN_155\r"
-      - "CN_176\r"
-      - "CN🇨🇳CN_156_153\r"
-      - "CN🇨🇳CN_143_145\r"
-      - "CN_154\r"
-      - "CN🇨🇳CN_149_154\r"
-      - "CN🇨🇳CN_152_147\r"
-      - "CN🇨🇳CN_147_156\r"
-      - "CN🇨🇳CN_145_160\r"
-      - "CN🇨🇳CN_158_158\r"
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国_3
+      - 🇰🇷_KR_韩国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -228,30 +95,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "US_1259\r"
-      - "Relay_🇨🇳+CN-🇨🇳CN_139\r"
-      - "Relay_🇨🇳+CN-🇲🇾MY_143\r"
-      - "US_19\r"
-      - "US_20\r"
-      - "CN_181\r"
-      - "CN🇨🇳CN_157_152\r"
-      - "CN_180\r"
-      - "CN🇨🇳CN_148_155\r"
-      - "CN_177\r"
-      - "CN🇨🇳CN_151_144\r"
-      - "CN🇨🇳CN_146_157\r"
-      - "CN_173\r"
-      - "CN_167\r"
-      - "CN_155\r"
-      - "CN_176\r"
-      - "CN🇨🇳CN_156_153\r"
-      - "CN🇨🇳CN_143_145\r"
-      - "CN_154\r"
-      - "CN🇨🇳CN_149_154\r"
-      - "CN🇨🇳CN_152_147\r"
-      - "CN🇨🇳CN_147_156\r"
-      - "CN🇨🇳CN_145_160\r"
-      - "CN🇨🇳CN_158_158\r"
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国_3
+      - 🇰🇷_KR_韩国
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
