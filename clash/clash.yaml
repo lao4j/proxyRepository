@@ -5,116 +5,46 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"vmess","name":"Relay_🇨🇳CN-🇭🇰HK_271","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"ingress-i1.onebox6.org"}},"server":"ingress-i1.onebox6.org","port":"38701","uuid":"79386685-16da-327c-9e14-aa6d702d86bc","alterId":"1","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"Pool_🇺🇸US_2799","ws-opts":{"path":"/ws","headers":{"host":"ahdaeph8.com"}},"server":"104.166.135.10","port":"443","uuid":"aba50dd4-5484-3b05-b14a-4661caf862d5","alterId":"4","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"Relay_🇺🇸US-🇬🇧GB_2805","ws-opts":{"path":"/getweather"},"server":"app.ssfree.ru","port":"443","uuid":"d0c8a356-df03-11ec-a345-000017022008","alterId":"64","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"Relay_🇺🇸US-🇺🇸US_2806","ws-opts":{"path":"/ws","headers":{"host":"ahdaeph8.com"}},"server":"ahdaeph8.com","port":"443","uuid":"aba50dd4-5484-3b05-b14a-4661caf862d5","alterId":"4","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"Relay_🇺🇸US-🇷🇺RU_2810","ws-opts":{"path":"/api/v3/download.getFile","headers":{"host":"v4.ssrsub.com"}},"server":"v4.ssrsub.com","port":"443","uuid":"620d82a8-22ba-4945-90ba-a2bed1cde1d2","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"Relay_🇺🇸US-🇷🇺RU_2816","ws-opts":{"path":"/api/v3/download.getFile","headers":{"host":"v5.ssrsub.com"}},"server":"v5.ssrsub.com","port":"443","uuid":"620d82a8-22ba-4945-90ba-a2bed1cde1d2","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"Relay_🇺🇸US-🇺🇸US_2820","ws-opts":{"path":"/chcar","headers":{"host":"v2fly.samrt.website"}},"server":"104.19.3.32","port":"443","uuid":"9e6ceeff-2546-3690-ac00-6fcdf31dec94","alterId":"1","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"🇺🇸US_2822","ws-opts":{"path":"/"},"server":"129.150.61.170","port":"29493","uuid":"ac0d0076-93d2-48ad-ba6e-ea5c8d7b0132","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"Relay_🇺🇸US-🇷🇺RU_2824","ws-opts":{"path":"/api/v3/download.getFile","headers":{"host":"v1.ssrsub.com"}},"server":"v1.ssrsub.com","port":"443","uuid":"620d82a8-22ba-4945-90ba-a2bed1cde1d2","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"Relay_🇺🇸US-🇺🇸US_2826","ws-opts":{"path":"/chcar","headers":{"host":"v2fly.samrt.website"}},"server":"104.19.3.12","port":"443","uuid":"9e6ceeff-2546-3690-ac00-6fcdf31dec94","alterId":"1","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"Relay_🇺🇸US-🇺🇸US_2828","ws-opts":{"path":"/chcar","headers":{"host":"v2fly.samrt.website"}},"server":"104.19.3.16","port":"443","uuid":"9e6ceeff-2546-3690-ac00-6fcdf31dec94","alterId":"1","cipher":"auto","network":"ws","tls":true}
+  - {"type":"trojan","name":"🇯🇵_JP_日本","server":"jp04.vproxy.us","port":56565,"password":"acf34fb3-6fed-40c6-b6ab-b5bedf5827a2","udp":true,"skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - Relay_🇨🇳CN-🇭🇰HK_271
-      - Pool_🇺🇸US_2799
-      - Relay_🇺🇸US-🇬🇧GB_2805
-      - Relay_🇺🇸US-🇺🇸US_2806
-      - Relay_🇺🇸US-🇷🇺RU_2810
-      - Relay_🇺🇸US-🇷🇺RU_2816
-      - Relay_🇺🇸US-🇺🇸US_2820
-      - 🇺🇸US_2822
-      - Relay_🇺🇸US-🇷🇺RU_2824
-      - Relay_🇺🇸US-🇺🇸US_2826
-      - Relay_🇺🇸US-🇺🇸US_2828
+      - 🇯🇵_JP_日本
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - Relay_🇨🇳CN-🇭🇰HK_271
-      - Pool_🇺🇸US_2799
-      - Relay_🇺🇸US-🇬🇧GB_2805
-      - Relay_🇺🇸US-🇺🇸US_2806
-      - Relay_🇺🇸US-🇷🇺RU_2810
-      - Relay_🇺🇸US-🇷🇺RU_2816
-      - Relay_🇺🇸US-🇺🇸US_2820
-      - 🇺🇸US_2822
-      - Relay_🇺🇸US-🇷🇺RU_2824
-      - Relay_🇺🇸US-🇺🇸US_2826
-      - Relay_🇺🇸US-🇺🇸US_2828
+      - 🇯🇵_JP_日本
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇭🇰HK_271
-      - Pool_🇺🇸US_2799
-      - Relay_🇺🇸US-🇬🇧GB_2805
-      - Relay_🇺🇸US-🇺🇸US_2806
-      - Relay_🇺🇸US-🇷🇺RU_2810
-      - Relay_🇺🇸US-🇷🇺RU_2816
-      - Relay_🇺🇸US-🇺🇸US_2820
-      - 🇺🇸US_2822
-      - Relay_🇺🇸US-🇷🇺RU_2824
-      - Relay_🇺🇸US-🇺🇸US_2826
-      - Relay_🇺🇸US-🇺🇸US_2828
+      - 🇯🇵_JP_日本
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇭🇰HK_271
-      - Pool_🇺🇸US_2799
-      - Relay_🇺🇸US-🇬🇧GB_2805
-      - Relay_🇺🇸US-🇺🇸US_2806
-      - Relay_🇺🇸US-🇷🇺RU_2810
-      - Relay_🇺🇸US-🇷🇺RU_2816
-      - Relay_🇺🇸US-🇺🇸US_2820
-      - 🇺🇸US_2822
-      - Relay_🇺🇸US-🇷🇺RU_2824
-      - Relay_🇺🇸US-🇺🇸US_2826
-      - Relay_🇺🇸US-🇺🇸US_2828
+      - 🇯🇵_JP_日本
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - Relay_🇨🇳CN-🇭🇰HK_271
-      - Pool_🇺🇸US_2799
-      - Relay_🇺🇸US-🇬🇧GB_2805
-      - Relay_🇺🇸US-🇺🇸US_2806
-      - Relay_🇺🇸US-🇷🇺RU_2810
-      - Relay_🇺🇸US-🇷🇺RU_2816
-      - Relay_🇺🇸US-🇺🇸US_2820
-      - 🇺🇸US_2822
-      - Relay_🇺🇸US-🇷🇺RU_2824
-      - Relay_🇺🇸US-🇺🇸US_2826
-      - Relay_🇺🇸US-🇺🇸US_2828
+      - 🇯🇵_JP_日本
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇭🇰HK_271
-      - Pool_🇺🇸US_2799
-      - Relay_🇺🇸US-🇬🇧GB_2805
-      - Relay_🇺🇸US-🇺🇸US_2806
-      - Relay_🇺🇸US-🇷🇺RU_2810
-      - Relay_🇺🇸US-🇷🇺RU_2816
-      - Relay_🇺🇸US-🇺🇸US_2820
-      - 🇺🇸US_2822
-      - Relay_🇺🇸US-🇷🇺RU_2824
-      - Relay_🇺🇸US-🇺🇸US_2826
-      - Relay_🇺🇸US-🇺🇸US_2828
+      - 🇯🇵_JP_日本
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -137,17 +67,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇭🇰HK_271
-      - Pool_🇺🇸US_2799
-      - Relay_🇺🇸US-🇬🇧GB_2805
-      - Relay_🇺🇸US-🇺🇸US_2806
-      - Relay_🇺🇸US-🇷🇺RU_2810
-      - Relay_🇺🇸US-🇷🇺RU_2816
-      - Relay_🇺🇸US-🇺🇸US_2820
-      - 🇺🇸US_2822
-      - Relay_🇺🇸US-🇷🇺RU_2824
-      - Relay_🇺🇸US-🇺🇸US_2826
-      - Relay_🇺🇸US-🇺🇸US_2828
+      - 🇯🇵_JP_日本
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
