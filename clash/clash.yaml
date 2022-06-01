@@ -5,109 +5,1817 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"trojan","name":"🇺🇸_US_美国_1","server":"212.81.47.12","port":443,"password":"3yFq7NCP53mVfpXJz3","udp":true,"skip-cert-verify":true}
-  - {"type":"ssr","name":"🇷🇺_RU_俄罗斯联邦","server":"213.183.53.177","port":9018,"protocol":"origin","cipher":"aes-256-cfb","obfs":"plain","password":"fG2artUmHfNT2cX7"}
-  - {"type":"ss","name":"🇺🇸_US_美国_2","server":"169.197.142.39","port":3306,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"type":"ss","name":"🇺🇸_US_美国_3","server":"169.197.142.39","port":5003,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
-  - {"type":"ss","name":"🇺🇸_US_美国_4","server":"169.197.142.39","port":7002,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
-  - {"type":"vmess","name":"🇺🇸_US_美国_5","server":"hk01.bosaidong.buzz","port":80,"uuid":"2adef817-ff89-4d0c-8782-694ba4e8d899","alterId":0,"cipher":"auto","network":"ws"}
-  - {"type":"ss","name":"🇺🇸_US_美国_6","server":"38.68.134.71","port":8881,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
-  - {"type":"ss","name":"🇺🇸_US_美国_7","server":"169.197.142.39","port":9102,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
-  - {"type":"ss","name":"🇺🇸_US_美国_8","server":"38.68.135.19","port":5601,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"type":"ss","name":"🇺🇸_US_美国_9","server":"38.68.134.71","port":8000,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"vmess","name":"@SSRSUB-V19-付费推荐:suo.yt/ssrsub","server":"bgpv2.ktyjsq.com","port":"12005","uuid":"9ea70d57-9cb6-3bd0-ae41-5601e516dcc6","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇺🇸_US_美国_1","ws-opts":{"path":"xxX3","headers":{"host":"web1.wweblog.pw"}},"server":"172.64.94.238","port":"2053","uuid":"80e098a1-f768-3dfb-b97f-6c3a5d34bcd8","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇺🇦_youtube：全网最强白嫖","ws-opts":{"path":"/ray","headers":{"host":"422wkl.fans8.xyz"}},"server":"422wkl.fans8.xyz","port":"443","uuid":"7f4ff2e1-c08f-35bd-afe7-4a6a386907aa","alterId":"2","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇯🇵_youtube：全网最强白嫖","ws-opts":{"path":"/ray","headers":{"host":"51jp1.fans8.xyz"}},"server":"51jp1.fans8.xyz","port":"80","uuid":"7f4ff2e1-c08f-35bd-afe7-4a6a386907aa","alterId":"2","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇷🇺_youtube：全网最强白嫖","ws-opts":{"path":"/ray","headers":{"host":"331tw.fans8.xyz"}},"server":"331tw.fans8.xyz","port":"80","uuid":"7f4ff2e1-c08f-35bd-afe7-4a6a386907aa","alterId":"2","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇹🇼_youtube：全网最强白嫖","ws-opts":{"path":"/ray","headers":{"host":"330tw.fans8.xyz"}},"server":"330tw.fans8.xyz","port":"443","uuid":"7f4ff2e1-c08f-35bd-afe7-4a6a386907aa","alterId":"2","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇨🇳_youtube：全网最强白嫖_1","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"ingress-i1.onebox6.org"}},"server":"ingress-i1.onebox6.org","port":"38201","uuid":"79386685-16da-327c-9e14-aa6d702d86bc","alterId":"1","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"🇨🇳_youtube：全网最强白嫖_2","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"www.ivpnpro.net"}},"server":"ingress-i1.onebox6.org","port":"38106","uuid":"79386685-16da-327c-9e14-aa6d702d86bc","alterId":"1","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"关注tg频道:@mftizi","ws-opts":{"path":"/eisasqa","headers":{"host":"foxsg.fovi.tk"}},"server":"d03.v2.gay","port":"2053","uuid":"bf67437e-6c90-45ca-abc2-c7240a5ce2aa","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"翻墙党fanqiangdang.com","ws-opts":{"path":"/ray","headers":{"host":"hax.wodaming.cf"}},"server":"lll.wodaming.cf","port":"443","uuid":"48fd10df-1206-4faf-905e-3f178c7d7585","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"冰河圈子（个人买的节点，无限流量）","ws-opts":{"path":"/b2759bef3a17","headers":{"host":"2630478367ef393d6.spbohk.com"}},"server":"node1.binghe.ga","port":"443","uuid":"e20ad6b5-6714-4920-b43b-b2759bef3a17","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇨🇳_油管频道：全网最强白嫖","ws-opts":{"path":"/ray","headers":{"host":"523hk1.fans8.xyz"}},"server":"523hk1.fans8.xyz","port":"443","uuid":"7f4ff2e1-c08f-35bd-afe7-4a6a386907aa","alterId":"2","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇸🇬_油管：全网最强白嫖_1","server":"129.226.95.188","port":"20792","uuid":"b7335dae-b946-46ae-f341-acbf8df21c86","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇸🇬_油管：全网最强白嫖_2","server":"129.226.217.168","port":"15322","uuid":"7676a524-3603-473e-de41-2bc6273d52fc","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇸🇬_油管：全网最强白嫖_3","server":"129.226.215.211","port":"49981","uuid":"876631b4-3f5c-4289-f266-3c7afa5b9e70","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"trojan","name":"🇯🇵_油管：全网最强白嫖_1","server":"jp1.v2yyds.cc","port":32111,"password":"c0669346-7ba9-4fda-91a4-238fb8d0a4d2","udp":true,"skip-cert-verify":true,"sni":"jp1.v2yyds.cc"}
+  - {"type":"vmess","name":"🇯🇵_JP_日本","ws-opts":{"path":"/","headers":{"host":"ocrb2.moonfree.top"}},"server":"c01.v2.gay","port":"443","uuid":"6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"ss","name":"🇺🇸_US_美国_2","server":"38.114.114.69","port":8090,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+  - {"type":"ss","name":"🇺🇸_US_美国_3","server":"38.68.134.71","port":7001,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"type":"ss","name":"🇺🇸_US_美国_4","server":"38.114.114.69","port":5500,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"🇺🇸_US_美国_5","server":"169.197.142.39","port":443,"cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"type":"vmess","name":"油管：全网最强白嫖_1","server":"129.226.95.71","port":"56916","uuid":"29d4cfd8-9aea-4796-9320-b2b9234fc141","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"油管：全网最强白嫖_2","server":"129.226.214.101","port":"51332","uuid":"6951282c-94d5-4f5d-cbc5-1e97f90bfe39","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"油管：全网最强白嫖_3","server":"43.129.200.215","port":"46232","uuid":"a6174b94-7340-440c-a505-2acf39f591f8","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"ss","name":"油管：全网最强白嫖_4","server":"cdn2.myuuusss.com","port":20021,"cipher":"aes-128-gcm","password":"b195963c-2631-442d-ab3a-6e78df25d904"}
+  - {"type":"vmess","name":"油管：全网最强白嫖_5","server":"u2.anmu.one","port":"16499","uuid":"32b306e1-d5b1-4913-d8d3-56ac23637de7","alterId":"0","cipher":"auto","network":"tcp","tls":true}
+  - {"type":"vmess","name":"🇨🇳_油管：全网最强白嫖_1","server":"bgp.keaiyun.top","port":"47519","uuid":"2b41ef2c-a339-3142-ae7b-9f5f6b531e16","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇻🇳_油管：全网最强白嫖","ws-opts":{"path":"/fuzzyng?ed=2048","headers":{"host":"fuzzyng.akamaized.net"}},"server":"103.162.28.128","port":"80","uuid":"8c7dd76c-f5b6-4453-b94d-6dd289b08752","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：全网最强白嫖_6","server":"fr1t.moonfree.top","port":"8443","uuid":"6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇯🇵_油管：全网最强白嫖_2","ws-opts":{"path":"/","headers":{"host":"ocrb1.moonfree.top"}},"server":"sh.moonfree.top","port":"11263","uuid":"6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇺🇸_油管：全网最强白嫖_1","server":"20.243.69.62","port":"80","uuid":"5f405152-88b2-4e5e-9091-b730e65e8983","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"🇸🇬_油管：全网最强白嫖_4","server":"129.226.93.161","port":"40236","uuid":"931416fe-98f2-4098-c8e7-3634e27ce6f4","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇸🇬_油管：全网最强白嫖_5","server":"129.226.214.28","port":"15430","uuid":"6e9a4ae9-e60b-4cea-af9f-9de18d37404e","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇺🇸_油管：全网最强白嫖_2","ws-opts":{"path":"/api/v3/download.getFile","headers":{"host":"v4.ssrsub.com"}},"server":"v4.ssrsub.com","port":"443","uuid":"620d82a8-22ba-4945-90ba-a2bed1cde1d2","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇺🇸_油管：全网最强白嫖_3","ws-opts":{"path":"/"},"server":"oz.moonfree.top","port":"443","uuid":"6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇸🇬_油管：全网最强白嫖_6","server":"129.226.215.95","port":"43613","uuid":"9e1be3ad-911d-4dcc-822f-f8f8e79f62e2","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"油管：全网最强白嫖_7","ws-opts":{"path":"/api/v3/download.getFile","headers":{"host":"v1.ssrsub.com"}},"server":"v1.ssrsub.com","port":"443","uuid":"620d82a8-22ba-4945-90ba-a2bed1cde1d2","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇨🇳_油管：全网最强白嫖_2","server":"bgpv2.ktyjsq.com","port":"12222","uuid":"9ea70d57-9cb6-3bd0-ae41-5601e516dcc6","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇨🇳_油管：全网最强白嫖_3","server":"bgpv2.ktyjsq.com","port":"12221","uuid":"9ea70d57-9cb6-3bd0-ae41-5601e516dcc6","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇨🇳_油管：全网最强白嫖_4","server":"bgpv2.ktyjsq.com","port":"12223","uuid":"9ea70d57-9cb6-3bd0-ae41-5601e516dcc6","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇺🇸_油管：全网最强白嫖_4","ws-opts":{"path":"/","headers":{"host":"oz.moonfree.top"}},"server":"oz.moonfree.top","port":"443","uuid":"6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇨🇳_油管：全网最强白嫖_5","server":"bgpv2.ktyjsq.com","port":"12229","uuid":"9ea70d57-9cb6-3bd0-ae41-5601e516dcc6","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇺🇸_油管：全网最强白嫖_5","ws-opts":{"path":"/go","headers":{"host":"lu1.gogogoo.cyou"}},"server":"lu1.gogogoo.cyou","port":"443","uuid":"db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"ss","name":"🇺🇸_油管：全网最强白嫖_6","server":"38.68.135.19","port":2376,"cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+  - {"type":"ss","name":"🇺🇸_油管：全网最强白嫖_7","server":"38.68.135.19","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"type":"ss","name":"🇺🇸_油管：全网最强白嫖_8","server":"167.88.61.50","port":8882,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"type":"ss","name":"🇺🇸_油管：全网最强白嫖_9","server":"38.68.135.19","port":8888,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇺🇸_油管：全网最强白嫖_10","server":"38.68.135.18","port":5500,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"🇺🇸_油管：全网最强白嫖_11","server":"38.68.135.19","port":3389,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇺🇸_油管：全网最强白嫖_12","server":"38.68.135.19","port":8008,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"type":"ss","name":"🇯🇵_油管：全网最强白嫖_3","server":"85.208.108.58","port":8080,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"🇺🇸_油管：全网最强白嫖_13","server":"38.68.135.19","port":8881,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"type":"ss","name":"🇺🇸_油管：全网最强白嫖_14","server":"38.68.135.19","port":5500,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"🇺🇸_油管：全网最强白嫖_15","server":"38.68.135.18","port":6697,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"type":"ss","name":"🇺🇸_油管：全网最强白嫖_16","server":"38.68.134.71","port":8881,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"type":"ss","name":"🇺🇸_油管：全网最强白嫖_17","server":"38.68.135.19","port":7001,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"type":"ss","name":"🇨🇦_油管：全网最强白嫖","server":"198.57.27.225","port":5500,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"trojan","name":"🇺🇸_油管：全网最强白嫖_18","server":"rooms.starspace.link","port":443,"password":"5HfENR8nt2PR8reH","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"🇨🇿_油管：全网最强白嫖_1","server":"v2cross.com.04.v2ce.com","port":443,"password":"vGWCNNfBHwSY6m6M","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"🇨🇿_油管：全网最强白嫖_2","server":"v2cross.com.05.v2ce.com","port":443,"password":"kGrwqmB1nEKUsDwE","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"🇨🇿_油管：全网最强白嫖_3","server":"v2cross.com.03.v2ce.com","port":443,"password":"ZD4dLSBXiMrmzdLd","udp":true,"skip-cert-verify":true}
+  - {"type":"vmess","name":"油管：最网最强白嫖_1","server":"20.243.71.225","port":"80","uuid":"5f405152-88b2-4e5e-9091-b730e65e8983","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_2","ws-opts":{"path":"/","headers":{"host":"aweikeji-YouTube"}},"server":"20.243.69.62","port":"80","uuid":"5f405152-88b2-4e5e-9091-b730e65e8983","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_3","ws-opts":{"path":"/v2ray","headers":{"host":"cn.zzv01.infonode.xyz"}},"server":"cn.zzv01.infonode.xyz","port":"17011","uuid":"edac1153-eff4-3719-92a3-c7620ea00bd7","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_4","ws-opts":{"path":"/v2ray","headers":{"host":"cn.zzv02.infonode.xyz"}},"server":"cn.zzv02.infonode.xyz","port":"17012","uuid":"edac1153-eff4-3719-92a3-c7620ea00bd7","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_5","ws-opts":{"path":"/v2ray","headers":{"host":"cn.zzv05.infonode.xyz"}},"server":"cn.zzv05.infonode.xyz","port":"17016","uuid":"edac1153-eff4-3719-92a3-c7620ea00bd7","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_6","ws-opts":{"path":"/v2ray","headers":{"host":"cn.zzv01.infonode.xyz"}},"server":"cn.zzv01.infonode.xyz","port":"17013","uuid":"edac1153-eff4-3719-92a3-c7620ea00bd7","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_7","ws-opts":{"path":"/v2ray","headers":{"host":"cn.zzv02.infonode.xyz"}},"server":"cn.zzv02.infonode.xyz","port":"17013","uuid":"edac1153-eff4-3719-92a3-c7620ea00bd7","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_8","ws-opts":{"path":"/v2ray","headers":{"host":"cn.zzv12.infonode.xyz"}},"server":"cn.zzv12.infonode.xyz","port":"17014","uuid":"edac1153-eff4-3719-92a3-c7620ea00bd7","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_9","ws-opts":{"path":"/v2ray","headers":{"host":"cn.zzv02.infonode.xyz"}},"server":"cn.zzv02.infonode.xyz","port":"17015","uuid":"edac1153-eff4-3719-92a3-c7620ea00bd7","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_10","ws-opts":{"path":"/v2ray","headers":{"host":"cn.zzv02.infonode.xyz"}},"server":"cn.zzv02.infonode.xyz","port":"17016","uuid":"edac1153-eff4-3719-92a3-c7620ea00bd7","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_11","ws-opts":{"path":"/v2ray","headers":{"host":"cn.zzv06.infonode.xyz"}},"server":"cn.zzv06.infonode.xyz","port":"17016","uuid":"edac1153-eff4-3719-92a3-c7620ea00bd7","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_12","ws-opts":{"path":"/","headers":{"host":"aweikeji-YouTube"}},"server":"20.222.106.239","port":"80","uuid":"5f405152-88b2-4e5e-9091-b730e65e8983","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_13","server":"161.117.224.49","port":"29235","uuid":"71090d6b-ae98-4b7e-8367-bc1c700a75c2","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_14","ws-opts":{"path":"/","headers":{"host":"rk59.moonfree.top"}},"server":"rk59.moonfree.top","port":"443","uuid":"6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"油管：最网最强白嫖_15","ws-opts":{"path":"/vmess-share/?ed=2048","headers":{"host":"ruvds.testx.eu.org"}},"server":"ruvds.testx.eu.org","port":"443","uuid":"0e7036c1-6de1-4a83-ef4f-e0d56c67fa10","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"油管：最网最强白嫖_16","ws-opts":{"path":"/v2ray","headers":{"host":"cn.zzv01.infonode.xyz"}},"server":"cn.zzv01.infonode.xyz","port":"17016","uuid":"edac1153-eff4-3719-92a3-c7620ea00bd7","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_17","ws-opts":{"path":"/v2ray","headers":{"host":"cn.zzv12.infonode.xyz"}},"server":"cn.zzv12.infonode.xyz","port":"17016","uuid":"edac1153-eff4-3719-92a3-c7620ea00bd7","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_18","ws-opts":{"path":"/","headers":{"host":"aweikeji-YouTube"}},"server":"20.243.71.225","port":"80","uuid":"5f405152-88b2-4e5e-9091-b730e65e8983","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_19","server":"129.226.217.153","port":"15184","uuid":"bb02fa5b-1d15-46f4-fa47-053c6db61e39","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_20","ws-opts":{"path":"/v2ray","headers":{"host":"cn.zzv01.infonode.xyz"}},"server":"cn.zzv01.infonode.xyz","port":"17012","uuid":"edac1153-eff4-3719-92a3-c7620ea00bd7","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_21","ws-opts":{"path":"/project4gyuna.pw","headers":{"host":"yuna4g.akamaized.net"}},"server":"se2.project4gyuna.pw","port":"80","uuid":"0613c82b-1f56-432f-b94b-691e294d2314","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_22","ws-opts":{"path":"/v2ray","headers":{"host":"cn.zzv07.infonode.xyz"}},"server":"cn.zzv07.infonode.xyz","port":"17012","uuid":"edac1153-eff4-3719-92a3-c7620ea00bd7","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_23","ws-opts":{"path":"/v2ray","headers":{"host":"cn.zzv07.infonode.xyz"}},"server":"cn.zzv07.infonode.xyz","port":"17013","uuid":"edac1153-eff4-3719-92a3-c7620ea00bd7","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_24","ws-opts":{"path":"/","headers":{"host":"rackedgeuk510.moonfree.top"}},"server":"rackedgeuk510.moonfree.top","port":"443","uuid":"6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"油管：最网最强白嫖_25","ws-opts":{"path":"/v2ray","headers":{"host":"cn.zzv05.infonode.xyz"}},"server":"cn.zzv05.infonode.xyz","port":"17013","uuid":"edac1153-eff4-3719-92a3-c7620ea00bd7","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_26","ws-opts":{"path":"/","headers":{"host":"fr1t.moonfree.top"}},"server":"fr1t.moonfree.top","port":"8443","uuid":"6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"油管：最网最强白嫖_27","server":"20.222.106.239","port":"80","uuid":"5f405152-88b2-4e5e-9091-b730e65e8983","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_28","ws-opts":{"path":"/v2ray","headers":{"host":"cn.zzv01.infonode.xyz"}},"server":"cn.zzv01.infonode.xyz","port":"17014","uuid":"edac1153-eff4-3719-92a3-c7620ea00bd7","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_29","ws-opts":{"path":"/v2ray","headers":{"host":"cn.zzv06.infonode.xyz"}},"server":"cn.zzv06.infonode.xyz","port":"17012","uuid":"edac1153-eff4-3719-92a3-c7620ea00bd7","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_30","ws-opts":{"path":"/","headers":{"host":"ocrb1.moonfree.top"}},"server":"ocrb1.moonfree.top","port":"443","uuid":"6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"油管：最网最强白嫖_31","ws-opts":{"path":"/v2ray","headers":{"host":"cn.zzv06.infonode.xyz"}},"server":"cn.zzv06.infonode.xyz","port":"17013","uuid":"edac1153-eff4-3719-92a3-c7620ea00bd7","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_32","ws-opts":{"path":"/api/v3/download.getFile","headers":{"host":"v3.ssrsub.com"}},"server":"v3.ssrsub.com","port":"443","uuid":"620d82a8-22ba-4945-90ba-a2bed1cde1d2","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"油管：最网最强白嫖_33","ws-opts":{"path":"/v2ray","headers":{"host":"cn.zzv07.infonode.xyz"}},"server":"cn.zzv07.infonode.xyz","port":"17016","uuid":"edac1153-eff4-3719-92a3-c7620ea00bd7","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_34","ws-opts":{"path":"/v2ray","headers":{"host":"cn.zzv07.infonode.xyz"}},"server":"cn.zzv07.infonode.xyz","port":"17011","uuid":"edac1153-eff4-3719-92a3-c7620ea00bd7","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_35","ws-opts":{"path":"/v2ray","headers":{"host":"cn.zzv12.infonode.xyz"}},"server":"cn.zzv12.infonode.xyz","port":"17013","uuid":"edac1153-eff4-3719-92a3-c7620ea00bd7","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_36","ws-opts":{"path":"/","headers":{"host":"v6d1.moonfree.top"}},"server":"v6d1.moonfree.top","port":"443","uuid":"6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"油管：最网最强白嫖_37","server":"oz.moonfree.top","port":"443","uuid":"6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"油管：最网最强白嫖_38","ws-opts":{"path":"/project4gyuna.pw","headers":{"host":"yuna4g.akamaized.net"}},"server":"au.project4gyuna.pw","port":"80","uuid":"0613c82b-1f56-432f-b94b-691e294d2314","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_39","ws-opts":{"path":"/project4gyuna.pw","headers":{"host":"vietteltelecom.tv360.yunasnivip.akamaized.net"}},"server":"vnpaid.project4gyuna.pw","port":"80","uuid":"0613c82b-1f56-432f-b94b-691e294d2314","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"油管：最网最强白嫖_40","server":"u2.anmu.one","port":"16161","uuid":"919ac815-1776-47fe-8b54-508ef4f39421","alterId":"0","cipher":"auto","network":"tcp","tls":true}
+  - {"type":"vmess","name":"油管：最网最强白嫖_41","server":"129.226.213.30","port":"35006","uuid":"1bdeedc8-ab5d-4d0e-ce89-72a8deb80b64","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"ss","name":"油管：最网最强白嫖_42","server":"cdn2.myuuusss.com","port":32022,"cipher":"aes-128-gcm","password":"b195963c-2631-442d-ab3a-6e78df25d904"}
+  - {"type":"ss","name":"油管：最网最强白嫖_43","server":"38.68.134.71","port":8000,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"油管：最网最强白嫖_44","server":"198.57.27.225","port":9102,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"type":"ss","name":"油管：最网最强白嫖_45","server":"169.197.142.39","port":8091,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+  - {"type":"ss","name":"油管：最网最强白嫖_46","server":"169.197.142.99","port":8882,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"type":"ss","name":"油管：最网最强白嫖_47","server":"38.68.134.71","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"type":"ss","name":"油管：最网最强白嫖_48","server":"167.88.61.50","port":9102,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"type":"ss","name":"油管：最网最强白嫖_49","server":"167.88.63.60","port":8091,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+  - {"type":"ss","name":"油管：最网最强白嫖_50","server":"198.57.27.225","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"type":"ss","name":"油管：最网最强白嫖_51","server":"167.88.61.50","port":7307,"cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
+  - {"type":"ss","name":"油管：最网最强白嫖_52","server":"198.57.27.225","port":8008,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"type":"ss","name":"油管：最网最强白嫖_53","server":"198.57.27.225","port":8881,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"type":"ss","name":"油管：最网最强白嫖_54","server":"167.88.63.60","port":3389,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"油管：最网最强白嫖_55","server":"38.68.135.18","port":5003,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"type":"ss","name":"油管：最网最强白嫖_56","server":"198.57.27.225","port":7001,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"type":"ss","name":"油管：最网最强白嫖_57","server":"198.57.27.225","port":3306,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"油管：最网最强白嫖_58","server":"169.197.142.99","port":2376,"cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+  - {"type":"ss","name":"油管：最网最强白嫖_59","server":"198.57.27.225","port":5600,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"油管：最网最强白嫖_60","server":"217.138.193.6","port":803,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"油管：最网最强白嫖_61","server":"169.197.142.99","port":8881,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"type":"ss","name":"油管：最网最强白嫖_62","server":"38.68.134.71","port":5600,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"油管：最网最强白嫖_63","server":"217.138.193.6","port":809,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"油管：最网最强白嫖_64","server":"38.68.134.71","port":2376,"cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+  - {"type":"ss","name":"油管：最网最强白嫖_65","server":"169.197.142.99","port":6697,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"type":"ss","name":"油管：最网最强白嫖_66","server":"169.197.142.99","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"type":"ss","name":"油管：最网最强白嫖_67","server":"169.197.142.99","port":8119,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"type":"ss","name":"油管：最网最强白嫖_68","server":"198.57.27.225","port":5004,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"type":"ss","name":"油管：最网最强白嫖_69","server":"169.197.142.99","port":8009,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"type":"ss","name":"油管：最网最强白嫖_70","server":"198.57.27.225","port":8009,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"type":"ss","name":"油管：最网最强白嫖_71","server":"38.68.135.18","port":9101,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"type":"ss","name":"油管：最网最强白嫖_72","server":"169.197.142.99","port":8888,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"油管：最网最强白嫖_73","server":"38.68.135.18","port":7306,"cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
+  - {"type":"ss","name":"油管：最网最强白嫖_74","server":"198.57.27.225","port":443,"cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"type":"ss","name":"油管：最网最强白嫖_75","server":"38.68.134.71","port":8080,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"油管：最网最强白嫖_76","server":"198.57.27.225","port":6697,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"type":"ss","name":"油管：最网最强白嫖_77","server":"38.114.114.69","port":8882,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"type":"ss","name":"油管：最网最强白嫖_78","server":"198.57.27.225","port":8118,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"type":"ss","name":"油管：最网最强白嫖_79","server":"38.68.134.71","port":443,"cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"type":"ss","name":"油管：最网最强白嫖_80","server":"38.114.114.69","port":443,"cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"type":"ss","name":"油管：最网最强白嫖_81","server":"38.68.135.19","port":9102,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"type":"ss","name":"油管：最网最强白嫖_82","server":"198.57.27.225","port":9101,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"type":"ss","name":"油管：最网最强白嫖_83","server":"38.68.135.19","port":443,"cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"type":"trojan","name":"油管：最网最强白嫖_84","server":"az.gunangzhui.cloud","port":12716,"password":"9e496875-e09c-451b-a99c-fe2f57e221c2","udp":true,"skip-cert-verify":true,"sni":"hgc.ddag.xyz"}
+  - {"type":"trojan","name":"油管：最网最强白嫖_85","server":"jgwld1.gaox.ml","port":443,"password":"02e653c9-7c93-46a9-999d-11834bd0c577","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"油管：最网最强白嫖_86","server":"au2-3.nigirocloud.com","port":443,"password":"3yFq7NCP53mVfpXJz3","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"油管：最网最强白嫖_87","server":"ss2.2046.gq","port":4443,"password":"71b0d94d-6c22-4354-b9f5-17e81831208e","udp":true,"skip-cert-verify":true,"sni":"ss2.2046.gq"}
+  - {"type":"trojan","name":"油管：最网最强白嫖_88","server":"au2-2.nigirocloud.com","port":443,"password":"3yFq7NCP53mVfpXJz3","udp":true,"skip-cert-verify":true,"sni":"au2-2.nigirocloud.com"}
+  - {"type":"trojan","name":"油管：最网最强白嫖_89","server":"jgwhdlb1.gaox.ml","port":443,"password":"e05c749b-7c6b-41b8-9c71-9dcf685edf4a","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"油管：最网最强白嫖_90","server":"jgwld3.gaox.ml","port":443,"password":"71b55a84-3fac-4458-abff-eaad79219c91","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"油管：最网最强白嫖_91","server":"sxdx-nf.jiashumao.net","port":35401,"password":"85c63b8c-8c01-3c72-9c97-60505efac224","udp":true,"skip-cert-verify":true,"sni":"nf.jiashumao.net"}
+  - {"type":"trojan","name":"油管：最网最强白嫖_92","server":"0319tw05.fans8.xyz","port":443,"password":"c6799a1d-4a74-4683-919f-98b0a5046591","udp":true,"skip-cert-verify":true,"sni":"0319tw05.fans8.xyz"}
+  - {"type":"trojan","name":"油管：最网最强白嫖_93","server":"jgwhdlb2.gaox.ml","port":443,"password":"54080134-2cba-4535-8599-95650bd9aa54","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"油管：最网最强白嫖_94","server":"jnd.jiashumao.net","port":30519,"password":"85c63b8c-8c01-3c72-9c97-60505efac224","udp":true,"skip-cert-verify":true,"sni":"jnd.jiashumao.net"}
+  - {"type":"trojan","name":"油管：最网最强白嫖_95","server":"storage.starspace.link","port":443,"password":"W8gVbKNAZlFzgGPn","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"油管：最网最强白嫖_96","server":"hgc.ddag.xyz","port":15225,"password":"9e496875-e09c-451b-a99c-fe2f57e221c2","udp":true,"skip-cert-verify":true,"sni":"hgc.ddag.xyz"}
+  - {"type":"trojan","name":"油管：最网最强白嫖_97","server":"az.gunangzhui.cloud","port":41534,"password":"9e496875-e09c-451b-a99c-fe2f57e221c2","udp":true,"skip-cert-verify":true,"sni":"hinet.ddag.xyz"}
+  - {"type":"trojan","name":"油管：最网最强白嫖_98","server":"cd.rutracker-cn.com","port":443,"password":"ukMzuFSmIXDvgW0h","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"油管：最网最强白嫖_99","server":"au2-4.nigirocloud.com","port":443,"password":"3yFq7NCP53mVfpXJz3","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"油管：最网最强白嫖_100","server":"ce.rutracker-cn.com","port":443,"password":"5y8y3CwxRVYhyfSY","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"油管：最网最强白嫖_101","server":"au2-1.nigirocloud.com","port":443,"password":"3yFq7NCP53mVfpXJz3","udp":true,"skip-cert-verify":true}
+  - {"type":"vmess","name":"🇭🇰_HK_香港->🇨🇿_CZ_捷克_1","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"jp05-tls-vm0.entry.vm-pass.org"}},"server":"jp05-vm0.entry.ikuuu.casa","port":"444","uuid":"8477764d-c618-3398-9d15-ee2b3becf2d0","alterId":"1","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇭🇰_HK_香港->🇨🇿_CZ_捷克_2","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"jp01-tls-vm0.entry.vm-pass.org"}},"server":"jp01-tls-vm0.entry.ikuuu.casa","port":"889","uuid":"8477764d-c618-3398-9d15-ee2b3becf2d0","alterId":"1","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇭🇰_HK_香港->🇨🇿_CZ_捷克_3","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"jp01-tls-vm0.entry.vm-pass.org"}},"server":"jp01-tls-vm0.entry.ikuuu.casa","port":"893","uuid":"e1241a61-e533-3aa0-a25e-ad86cf34cd64","alterId":"1","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇨🇳_CN_中国->🇯🇵_JP_日本","server":"jpgithub.edgehelper.com","port":"53900","uuid":"d8860258-4ce1-4412-9ede-ecfd8d827ca4","alterId":"2","cipher":"auto","network":"tcp","tls":true}
+  - {"type":"ss","name":"🇺🇸_US_美国_6","server":"38.114.114.69","port":5001,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇺🇸_US_美国_7","server":"38.114.114.69","port":8119,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"type":"ss","name":"🇺🇸_US_美国_8","server":"38.114.114.69","port":6697,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"type":"ss","name":"🇺🇸_US_美国_9","server":"169.197.142.99","port":9101,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"type":"ss","name":"🇺🇸_US_美国_10","server":"169.197.142.99","port":8000,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"🇺🇸_US_美国_11","server":"169.197.142.99","port":443,"cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"type":"ss","name":"🇺🇸_US_美国_12","server":"167.88.61.50","port":8119,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"type":"ss","name":"🇺🇸_US_美国_13","server":"169.197.142.99","port":8118,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"type":"ss","name":"🇺🇸_US_美国_14","server":"38.143.66.20","port":6679,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"type":"ss","name":"🇺🇸_US_美国_15","server":"167.88.61.50","port":3306,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇺🇸_US_美国_16","server":"38.114.114.69","port":3389,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇺🇸_US_美国_17","server":"38.114.114.69","port":8881,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"type":"ss","name":"🇺🇸_US_美国_18","server":"169.197.142.39","port":5004,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"type":"ss","name":"🇺🇸_US_美国_19","server":"169.197.142.39","port":6697,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"type":"ss","name":"🇺🇸_US_美国_20","server":"38.114.114.69","port":8008,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"type":"ss","name":"🇺🇸_US_美国_21","server":"38.143.66.20","port":9102,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"type":"ss","name":"🇺🇸_US_美国_22","server":"169.197.142.39","port":5000,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇺🇸_US_美国_23","server":"38.114.114.69","port":7002,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"type":"ss","name":"🇺🇸_US_美国_24","server":"38.143.66.20","port":5500,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"🇺🇸_US_美国_25","server":"169.197.142.99","port":5004,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"type":"ss","name":"🇺🇸_US_美国_26","server":"38.68.134.71","port":7307,"cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
+  - {"type":"ss","name":"🇺🇸_US_美国_27","server":"167.88.61.50","port":2376,"cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+  - {"type":"ss","name":"🇺🇸_US_美国_28","server":"169.197.142.99","port":5000,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇰🇷_KR_韩国","server":"awskr2.698436.xyz","port":54356,"cipher":"aes-256-gcm","password":"5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3"}
+  - {"type":"ss","name":"🇺🇸_US_美国_29","server":"38.68.134.71","port":8119,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"type":"ss","name":"🇺🇸_US_美国_30","server":"38.68.135.19","port":5001,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇺🇸_US_美国_31","server":"38.68.135.19","port":7002,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"type":"ss","name":"🇺🇸_US_美国_32","server":"38.114.114.69","port":3306,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇺🇸_US_美国_33","server":"167.88.61.50","port":8091,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+  - {"type":"ss","name":"🇺🇸_US_美国_34","server":"169.197.142.39","port":8118,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"type":"ss","name":"🇺🇸_US_美国_35","server":"167.88.61.50","port":5004,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"type":"ss","name":"🇺🇸_US_美国_36","server":"169.197.142.99","port":2375,"cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+  - {"type":"ss","name":"🇺🇸_US_美国_37","server":"169.197.142.39","port":8881,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"type":"ss","name":"🇺🇸_US_美国_38","server":"38.68.135.18","port":8009,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"type":"ss","name":"🇺🇸_US_美国_39","server":"38.114.114.69","port":8009,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"type":"ss","name":"🇺🇸_US_美国_40","server":"38.143.66.20","port":9101,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"type":"ss","name":"🇺🇸_US_美国_41","server":"169.197.142.39","port":3306,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇺🇸_US_美国_42","server":"169.197.142.99","port":9102,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"type":"ss","name":"🇨🇦_CA_加拿大_1","server":"134.195.196.128","port":3306,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇺🇸_US_美国_43","server":"38.68.135.18","port":5601,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇺🇸_US_美国_44","server":"167.88.61.50","port":7306,"cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
+  - {"type":"ss","name":"🇺🇸_US_美国_45","server":"38.114.114.69","port":9102,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"type":"ss","name":"🇨🇦_CA_加拿大_2","server":"134.195.196.227","port":6679,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"type":"ss","name":"🇺🇸_US_美国_46","server":"38.114.114.69","port":8000,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"🇺🇸_US_美国_47","server":"169.197.142.39","port":8119,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"type":"ss","name":"🇺🇸_US_美国_48","server":"169.197.142.39","port":5500,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"🇨🇦_CA_加拿大_3","server":"134.195.196.128","port":8009,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"type":"ss","name":"🇨🇦_CA_加拿大_4","server":"134.195.196.128","port":8091,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+  - {"type":"ss","name":"🇨🇦_CA_加拿大_5","server":"198.57.27.225","port":7002,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"type":"ss","name":"🇺🇸_US_美国_49","server":"167.88.61.50","port":2375,"cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+  - {"type":"ss","name":"🇺🇸_US_美国_50","server":"38.114.114.69","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"type":"ss","name":"🇺🇸_US_美国_51","server":"38.114.114.69","port":8080,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"🇺🇸_US_美国_52","server":"38.68.135.19","port":8118,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"type":"ss","name":"🇺🇸_US_美国_53","server":"38.143.66.20","port":5000,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇺🇸_US_美国_54","server":"167.88.61.50","port":5003,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"type":"ss","name":"🇺🇸_US_美国_55","server":"38.114.114.69","port":8118,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"type":"ss","name":"🇨🇦_CA_加拿大_6","server":"134.195.196.128","port":9102,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"type":"ss","name":"🇨🇦_CA_加拿大_7","server":"134.195.196.128","port":8080,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"🇺🇸_US_美国_56","server":"169.197.142.39","port":7002,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"type":"ss","name":"🇺🇸_US_美国_57","server":"169.197.142.99","port":6679,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"type":"ss","name":"🇨🇦_CA_加拿大_8","server":"134.195.196.128","port":5003,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"type":"vmess","name":"🇺🇸_US_美国_58","server":"u2.anmu.one","port":"16161","uuid":"919ac815-1776-47fe-8b54-508ef4f39421","alterId":"0","cipher":"auto","network":"tcp","tls":true}
+  - {"type":"ss","name":"🇨🇦_CA_加拿大_9","server":"134.195.196.149","port":5003,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"type":"ss","name":"🇺🇸_US_美国_59","server":"38.114.114.69","port":6679,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"type":"ss","name":"🇺🇸_US_美国_60","server":"169.197.142.39","port":6679,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"type":"ss","name":"🇺🇸_US_美国_61","server":"38.114.114.69","port":9101,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"type":"ss","name":"🇨🇦_CA_加拿大_10","server":"134.195.196.227","port":8119,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"type":"ss","name":"🇨🇦_CA_加拿大_11","server":"134.195.196.128","port":7307,"cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
+  - {"type":"ss","name":"🇨🇦_CA_加拿大_12","server":"134.195.196.227","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"type":"ss","name":"🇺🇸_US_美国_62","server":"169.197.142.39","port":8882,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"type":"ss","name":"🇨🇦_CA_加拿大_13","server":"134.195.196.128","port":6679,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"type":"ss","name":"🇨🇦_CA_加拿大_14","server":"198.57.27.225","port":8888,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇺🇸_US_美国_63","server":"38.68.135.19","port":5601,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇺🇸_US_美国_64","server":"38.68.135.19","port":5004,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"type":"ss","name":"🇺🇸_US_美国_65","server":"38.68.135.18","port":8090,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+  - {"type":"ss","name":"🇺🇸_US_美国_66","server":"38.68.135.19","port":7306,"cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
+  - {"type":"ss","name":"🇨🇦_CA_加拿大_15","server":"134.195.196.128","port":8118,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"type":"ss","name":"🇺🇸_US_美国_67","server":"169.197.142.39","port":5003,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"type":"ss","name":"🇺🇸_US_美国_68","server":"38.68.135.19","port":5003,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"type":"ss","name":"🇨🇦_CA_加拿大_16","server":"134.195.196.128","port":5500,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"🇺🇸_US_美国_69","server":"169.197.142.99","port":7001,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"type":"ss","name":"🇺🇸_US_美国_70","server":"169.197.142.99","port":5003,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"type":"ss","name":"🇨🇦_CA_加拿大_17","server":"134.195.196.128","port":9101,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"type":"ss","name":"🇨🇦_CA_加拿大_18","server":"198.57.27.225","port":6679,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"type":"ss","name":"🇨🇦_CA_加拿大_19","server":"134.195.196.227","port":443,"cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"type":"ss","name":"🇨🇦_CA_加拿大_20","server":"134.195.196.128","port":5600,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇺🇸_US_美国_71","server":"172.99.188.71","port":8888,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇺🇸_US_美国_72","server":"38.68.134.71","port":8009,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - '@SSRSUB-V19-付费推荐:suo.yt/ssrsub'
       - 🇺🇸_US_美国_1
-      - 🇷🇺_RU_俄罗斯联邦
+      - 🇺🇦_youtube：全网最强白嫖
+      - 🇯🇵_youtube：全网最强白嫖
+      - 🇷🇺_youtube：全网最强白嫖
+      - 🇹🇼_youtube：全网最强白嫖
+      - 🇨🇳_youtube：全网最强白嫖_1
+      - 🇨🇳_youtube：全网最强白嫖_2
+      - 关注tg频道:@mftizi
+      - 翻墙党fanqiangdang.com
+      - 冰河圈子（个人买的节点，无限流量）
+      - 🇨🇳_油管频道：全网最强白嫖
+      - 🇸🇬_油管：全网最强白嫖_1
+      - 🇸🇬_油管：全网最强白嫖_2
+      - 🇸🇬_油管：全网最强白嫖_3
+      - 🇯🇵_油管：全网最强白嫖_1
+      - 🇯🇵_JP_日本
       - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国_4
       - 🇺🇸_US_美国_5
+      - 油管：全网最强白嫖_1
+      - 油管：全网最强白嫖_2
+      - 油管：全网最强白嫖_3
+      - 油管：全网最强白嫖_4
+      - 油管：全网最强白嫖_5
+      - 🇨🇳_油管：全网最强白嫖_1
+      - 🇻🇳_油管：全网最强白嫖
+      - 油管：全网最强白嫖_6
+      - 🇯🇵_油管：全网最强白嫖_2
+      - 🇺🇸_油管：全网最强白嫖_1
+      - 🇸🇬_油管：全网最强白嫖_4
+      - 🇸🇬_油管：全网最强白嫖_5
+      - 🇺🇸_油管：全网最强白嫖_2
+      - 🇺🇸_油管：全网最强白嫖_3
+      - 🇸🇬_油管：全网最强白嫖_6
+      - 油管：全网最强白嫖_7
+      - 🇨🇳_油管：全网最强白嫖_2
+      - 🇨🇳_油管：全网最强白嫖_3
+      - 🇨🇳_油管：全网最强白嫖_4
+      - 🇺🇸_油管：全网最强白嫖_4
+      - 🇨🇳_油管：全网最强白嫖_5
+      - 🇺🇸_油管：全网最强白嫖_5
+      - 🇺🇸_油管：全网最强白嫖_6
+      - 🇺🇸_油管：全网最强白嫖_7
+      - 🇺🇸_油管：全网最强白嫖_8
+      - 🇺🇸_油管：全网最强白嫖_9
+      - 🇺🇸_油管：全网最强白嫖_10
+      - 🇺🇸_油管：全网最强白嫖_11
+      - 🇺🇸_油管：全网最强白嫖_12
+      - 🇯🇵_油管：全网最强白嫖_3
+      - 🇺🇸_油管：全网最强白嫖_13
+      - 🇺🇸_油管：全网最强白嫖_14
+      - 🇺🇸_油管：全网最强白嫖_15
+      - 🇺🇸_油管：全网最强白嫖_16
+      - 🇺🇸_油管：全网最强白嫖_17
+      - 🇨🇦_油管：全网最强白嫖
+      - 🇺🇸_油管：全网最强白嫖_18
+      - 🇨🇿_油管：全网最强白嫖_1
+      - 🇨🇿_油管：全网最强白嫖_2
+      - 🇨🇿_油管：全网最强白嫖_3
+      - 油管：最网最强白嫖_1
+      - 油管：最网最强白嫖_2
+      - 油管：最网最强白嫖_3
+      - 油管：最网最强白嫖_4
+      - 油管：最网最强白嫖_5
+      - 油管：最网最强白嫖_6
+      - 油管：最网最强白嫖_7
+      - 油管：最网最强白嫖_8
+      - 油管：最网最强白嫖_9
+      - 油管：最网最强白嫖_10
+      - 油管：最网最强白嫖_11
+      - 油管：最网最强白嫖_12
+      - 油管：最网最强白嫖_13
+      - 油管：最网最强白嫖_14
+      - 油管：最网最强白嫖_15
+      - 油管：最网最强白嫖_16
+      - 油管：最网最强白嫖_17
+      - 油管：最网最强白嫖_18
+      - 油管：最网最强白嫖_19
+      - 油管：最网最强白嫖_20
+      - 油管：最网最强白嫖_21
+      - 油管：最网最强白嫖_22
+      - 油管：最网最强白嫖_23
+      - 油管：最网最强白嫖_24
+      - 油管：最网最强白嫖_25
+      - 油管：最网最强白嫖_26
+      - 油管：最网最强白嫖_27
+      - 油管：最网最强白嫖_28
+      - 油管：最网最强白嫖_29
+      - 油管：最网最强白嫖_30
+      - 油管：最网最强白嫖_31
+      - 油管：最网最强白嫖_32
+      - 油管：最网最强白嫖_33
+      - 油管：最网最强白嫖_34
+      - 油管：最网最强白嫖_35
+      - 油管：最网最强白嫖_36
+      - 油管：最网最强白嫖_37
+      - 油管：最网最强白嫖_38
+      - 油管：最网最强白嫖_39
+      - 油管：最网最强白嫖_40
+      - 油管：最网最强白嫖_41
+      - 油管：最网最强白嫖_42
+      - 油管：最网最强白嫖_43
+      - 油管：最网最强白嫖_44
+      - 油管：最网最强白嫖_45
+      - 油管：最网最强白嫖_46
+      - 油管：最网最强白嫖_47
+      - 油管：最网最强白嫖_48
+      - 油管：最网最强白嫖_49
+      - 油管：最网最强白嫖_50
+      - 油管：最网最强白嫖_51
+      - 油管：最网最强白嫖_52
+      - 油管：最网最强白嫖_53
+      - 油管：最网最强白嫖_54
+      - 油管：最网最强白嫖_55
+      - 油管：最网最强白嫖_56
+      - 油管：最网最强白嫖_57
+      - 油管：最网最强白嫖_58
+      - 油管：最网最强白嫖_59
+      - 油管：最网最强白嫖_60
+      - 油管：最网最强白嫖_61
+      - 油管：最网最强白嫖_62
+      - 油管：最网最强白嫖_63
+      - 油管：最网最强白嫖_64
+      - 油管：最网最强白嫖_65
+      - 油管：最网最强白嫖_66
+      - 油管：最网最强白嫖_67
+      - 油管：最网最强白嫖_68
+      - 油管：最网最强白嫖_69
+      - 油管：最网最强白嫖_70
+      - 油管：最网最强白嫖_71
+      - 油管：最网最强白嫖_72
+      - 油管：最网最强白嫖_73
+      - 油管：最网最强白嫖_74
+      - 油管：最网最强白嫖_75
+      - 油管：最网最强白嫖_76
+      - 油管：最网最强白嫖_77
+      - 油管：最网最强白嫖_78
+      - 油管：最网最强白嫖_79
+      - 油管：最网最强白嫖_80
+      - 油管：最网最强白嫖_81
+      - 油管：最网最强白嫖_82
+      - 油管：最网最强白嫖_83
+      - 油管：最网最强白嫖_84
+      - 油管：最网最强白嫖_85
+      - 油管：最网最强白嫖_86
+      - 油管：最网最强白嫖_87
+      - 油管：最网最强白嫖_88
+      - 油管：最网最强白嫖_89
+      - 油管：最网最强白嫖_90
+      - 油管：最网最强白嫖_91
+      - 油管：最网最强白嫖_92
+      - 油管：最网最强白嫖_93
+      - 油管：最网最强白嫖_94
+      - 油管：最网最强白嫖_95
+      - 油管：最网最强白嫖_96
+      - 油管：最网最强白嫖_97
+      - 油管：最网最强白嫖_98
+      - 油管：最网最强白嫖_99
+      - 油管：最网最强白嫖_100
+      - 油管：最网最强白嫖_101
+      - 🇭🇰_HK_香港->🇨🇿_CZ_捷克_1
+      - 🇭🇰_HK_香港->🇨🇿_CZ_捷克_2
+      - 🇭🇰_HK_香港->🇨🇿_CZ_捷克_3
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
       - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_7
       - 🇺🇸_US_美国_8
       - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国_10
+      - 🇺🇸_US_美国_11
+      - 🇺🇸_US_美国_12
+      - 🇺🇸_US_美国_13
+      - 🇺🇸_US_美国_14
+      - 🇺🇸_US_美国_15
+      - 🇺🇸_US_美国_16
+      - 🇺🇸_US_美国_17
+      - 🇺🇸_US_美国_18
+      - 🇺🇸_US_美国_19
+      - 🇺🇸_US_美国_20
+      - 🇺🇸_US_美国_21
+      - 🇺🇸_US_美国_22
+      - 🇺🇸_US_美国_23
+      - 🇺🇸_US_美国_24
+      - 🇺🇸_US_美国_25
+      - 🇺🇸_US_美国_26
+      - 🇺🇸_US_美国_27
+      - 🇺🇸_US_美国_28
+      - 🇰🇷_KR_韩国
+      - 🇺🇸_US_美国_29
+      - 🇺🇸_US_美国_30
+      - 🇺🇸_US_美国_31
+      - 🇺🇸_US_美国_32
+      - 🇺🇸_US_美国_33
+      - 🇺🇸_US_美国_34
+      - 🇺🇸_US_美国_35
+      - 🇺🇸_US_美国_36
+      - 🇺🇸_US_美国_37
+      - 🇺🇸_US_美国_38
+      - 🇺🇸_US_美国_39
+      - 🇺🇸_US_美国_40
+      - 🇺🇸_US_美国_41
+      - 🇺🇸_US_美国_42
+      - 🇨🇦_CA_加拿大_1
+      - 🇺🇸_US_美国_43
+      - 🇺🇸_US_美国_44
+      - 🇺🇸_US_美国_45
+      - 🇨🇦_CA_加拿大_2
+      - 🇺🇸_US_美国_46
+      - 🇺🇸_US_美国_47
+      - 🇺🇸_US_美国_48
+      - 🇨🇦_CA_加拿大_3
+      - 🇨🇦_CA_加拿大_4
+      - 🇨🇦_CA_加拿大_5
+      - 🇺🇸_US_美国_49
+      - 🇺🇸_US_美国_50
+      - 🇺🇸_US_美国_51
+      - 🇺🇸_US_美国_52
+      - 🇺🇸_US_美国_53
+      - 🇺🇸_US_美国_54
+      - 🇺🇸_US_美国_55
+      - 🇨🇦_CA_加拿大_6
+      - 🇨🇦_CA_加拿大_7
+      - 🇺🇸_US_美国_56
+      - 🇺🇸_US_美国_57
+      - 🇨🇦_CA_加拿大_8
+      - 🇺🇸_US_美国_58
+      - 🇨🇦_CA_加拿大_9
+      - 🇺🇸_US_美国_59
+      - 🇺🇸_US_美国_60
+      - 🇺🇸_US_美国_61
+      - 🇨🇦_CA_加拿大_10
+      - 🇨🇦_CA_加拿大_11
+      - 🇨🇦_CA_加拿大_12
+      - 🇺🇸_US_美国_62
+      - 🇨🇦_CA_加拿大_13
+      - 🇨🇦_CA_加拿大_14
+      - 🇺🇸_US_美国_63
+      - 🇺🇸_US_美国_64
+      - 🇺🇸_US_美国_65
+      - 🇺🇸_US_美国_66
+      - 🇨🇦_CA_加拿大_15
+      - 🇺🇸_US_美国_67
+      - 🇺🇸_US_美国_68
+      - 🇨🇦_CA_加拿大_16
+      - 🇺🇸_US_美国_69
+      - 🇺🇸_US_美国_70
+      - 🇨🇦_CA_加拿大_17
+      - 🇨🇦_CA_加拿大_18
+      - 🇨🇦_CA_加拿大_19
+      - 🇨🇦_CA_加拿大_20
+      - 🇺🇸_US_美国_71
+      - 🇺🇸_US_美国_72
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - '@SSRSUB-V19-付费推荐:suo.yt/ssrsub'
       - 🇺🇸_US_美国_1
-      - 🇷🇺_RU_俄罗斯联邦
+      - 🇺🇦_youtube：全网最强白嫖
+      - 🇯🇵_youtube：全网最强白嫖
+      - 🇷🇺_youtube：全网最强白嫖
+      - 🇹🇼_youtube：全网最强白嫖
+      - 🇨🇳_youtube：全网最强白嫖_1
+      - 🇨🇳_youtube：全网最强白嫖_2
+      - 关注tg频道:@mftizi
+      - 翻墙党fanqiangdang.com
+      - 冰河圈子（个人买的节点，无限流量）
+      - 🇨🇳_油管频道：全网最强白嫖
+      - 🇸🇬_油管：全网最强白嫖_1
+      - 🇸🇬_油管：全网最强白嫖_2
+      - 🇸🇬_油管：全网最强白嫖_3
+      - 🇯🇵_油管：全网最强白嫖_1
+      - 🇯🇵_JP_日本
       - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国_4
       - 🇺🇸_US_美国_5
+      - 油管：全网最强白嫖_1
+      - 油管：全网最强白嫖_2
+      - 油管：全网最强白嫖_3
+      - 油管：全网最强白嫖_4
+      - 油管：全网最强白嫖_5
+      - 🇨🇳_油管：全网最强白嫖_1
+      - 🇻🇳_油管：全网最强白嫖
+      - 油管：全网最强白嫖_6
+      - 🇯🇵_油管：全网最强白嫖_2
+      - 🇺🇸_油管：全网最强白嫖_1
+      - 🇸🇬_油管：全网最强白嫖_4
+      - 🇸🇬_油管：全网最强白嫖_5
+      - 🇺🇸_油管：全网最强白嫖_2
+      - 🇺🇸_油管：全网最强白嫖_3
+      - 🇸🇬_油管：全网最强白嫖_6
+      - 油管：全网最强白嫖_7
+      - 🇨🇳_油管：全网最强白嫖_2
+      - 🇨🇳_油管：全网最强白嫖_3
+      - 🇨🇳_油管：全网最强白嫖_4
+      - 🇺🇸_油管：全网最强白嫖_4
+      - 🇨🇳_油管：全网最强白嫖_5
+      - 🇺🇸_油管：全网最强白嫖_5
+      - 🇺🇸_油管：全网最强白嫖_6
+      - 🇺🇸_油管：全网最强白嫖_7
+      - 🇺🇸_油管：全网最强白嫖_8
+      - 🇺🇸_油管：全网最强白嫖_9
+      - 🇺🇸_油管：全网最强白嫖_10
+      - 🇺🇸_油管：全网最强白嫖_11
+      - 🇺🇸_油管：全网最强白嫖_12
+      - 🇯🇵_油管：全网最强白嫖_3
+      - 🇺🇸_油管：全网最强白嫖_13
+      - 🇺🇸_油管：全网最强白嫖_14
+      - 🇺🇸_油管：全网最强白嫖_15
+      - 🇺🇸_油管：全网最强白嫖_16
+      - 🇺🇸_油管：全网最强白嫖_17
+      - 🇨🇦_油管：全网最强白嫖
+      - 🇺🇸_油管：全网最强白嫖_18
+      - 🇨🇿_油管：全网最强白嫖_1
+      - 🇨🇿_油管：全网最强白嫖_2
+      - 🇨🇿_油管：全网最强白嫖_3
+      - 油管：最网最强白嫖_1
+      - 油管：最网最强白嫖_2
+      - 油管：最网最强白嫖_3
+      - 油管：最网最强白嫖_4
+      - 油管：最网最强白嫖_5
+      - 油管：最网最强白嫖_6
+      - 油管：最网最强白嫖_7
+      - 油管：最网最强白嫖_8
+      - 油管：最网最强白嫖_9
+      - 油管：最网最强白嫖_10
+      - 油管：最网最强白嫖_11
+      - 油管：最网最强白嫖_12
+      - 油管：最网最强白嫖_13
+      - 油管：最网最强白嫖_14
+      - 油管：最网最强白嫖_15
+      - 油管：最网最强白嫖_16
+      - 油管：最网最强白嫖_17
+      - 油管：最网最强白嫖_18
+      - 油管：最网最强白嫖_19
+      - 油管：最网最强白嫖_20
+      - 油管：最网最强白嫖_21
+      - 油管：最网最强白嫖_22
+      - 油管：最网最强白嫖_23
+      - 油管：最网最强白嫖_24
+      - 油管：最网最强白嫖_25
+      - 油管：最网最强白嫖_26
+      - 油管：最网最强白嫖_27
+      - 油管：最网最强白嫖_28
+      - 油管：最网最强白嫖_29
+      - 油管：最网最强白嫖_30
+      - 油管：最网最强白嫖_31
+      - 油管：最网最强白嫖_32
+      - 油管：最网最强白嫖_33
+      - 油管：最网最强白嫖_34
+      - 油管：最网最强白嫖_35
+      - 油管：最网最强白嫖_36
+      - 油管：最网最强白嫖_37
+      - 油管：最网最强白嫖_38
+      - 油管：最网最强白嫖_39
+      - 油管：最网最强白嫖_40
+      - 油管：最网最强白嫖_41
+      - 油管：最网最强白嫖_42
+      - 油管：最网最强白嫖_43
+      - 油管：最网最强白嫖_44
+      - 油管：最网最强白嫖_45
+      - 油管：最网最强白嫖_46
+      - 油管：最网最强白嫖_47
+      - 油管：最网最强白嫖_48
+      - 油管：最网最强白嫖_49
+      - 油管：最网最强白嫖_50
+      - 油管：最网最强白嫖_51
+      - 油管：最网最强白嫖_52
+      - 油管：最网最强白嫖_53
+      - 油管：最网最强白嫖_54
+      - 油管：最网最强白嫖_55
+      - 油管：最网最强白嫖_56
+      - 油管：最网最强白嫖_57
+      - 油管：最网最强白嫖_58
+      - 油管：最网最强白嫖_59
+      - 油管：最网最强白嫖_60
+      - 油管：最网最强白嫖_61
+      - 油管：最网最强白嫖_62
+      - 油管：最网最强白嫖_63
+      - 油管：最网最强白嫖_64
+      - 油管：最网最强白嫖_65
+      - 油管：最网最强白嫖_66
+      - 油管：最网最强白嫖_67
+      - 油管：最网最强白嫖_68
+      - 油管：最网最强白嫖_69
+      - 油管：最网最强白嫖_70
+      - 油管：最网最强白嫖_71
+      - 油管：最网最强白嫖_72
+      - 油管：最网最强白嫖_73
+      - 油管：最网最强白嫖_74
+      - 油管：最网最强白嫖_75
+      - 油管：最网最强白嫖_76
+      - 油管：最网最强白嫖_77
+      - 油管：最网最强白嫖_78
+      - 油管：最网最强白嫖_79
+      - 油管：最网最强白嫖_80
+      - 油管：最网最强白嫖_81
+      - 油管：最网最强白嫖_82
+      - 油管：最网最强白嫖_83
+      - 油管：最网最强白嫖_84
+      - 油管：最网最强白嫖_85
+      - 油管：最网最强白嫖_86
+      - 油管：最网最强白嫖_87
+      - 油管：最网最强白嫖_88
+      - 油管：最网最强白嫖_89
+      - 油管：最网最强白嫖_90
+      - 油管：最网最强白嫖_91
+      - 油管：最网最强白嫖_92
+      - 油管：最网最强白嫖_93
+      - 油管：最网最强白嫖_94
+      - 油管：最网最强白嫖_95
+      - 油管：最网最强白嫖_96
+      - 油管：最网最强白嫖_97
+      - 油管：最网最强白嫖_98
+      - 油管：最网最强白嫖_99
+      - 油管：最网最强白嫖_100
+      - 油管：最网最强白嫖_101
+      - 🇭🇰_HK_香港->🇨🇿_CZ_捷克_1
+      - 🇭🇰_HK_香港->🇨🇿_CZ_捷克_2
+      - 🇭🇰_HK_香港->🇨🇿_CZ_捷克_3
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
       - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_7
       - 🇺🇸_US_美国_8
       - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国_10
+      - 🇺🇸_US_美国_11
+      - 🇺🇸_US_美国_12
+      - 🇺🇸_US_美国_13
+      - 🇺🇸_US_美国_14
+      - 🇺🇸_US_美国_15
+      - 🇺🇸_US_美国_16
+      - 🇺🇸_US_美国_17
+      - 🇺🇸_US_美国_18
+      - 🇺🇸_US_美国_19
+      - 🇺🇸_US_美国_20
+      - 🇺🇸_US_美国_21
+      - 🇺🇸_US_美国_22
+      - 🇺🇸_US_美国_23
+      - 🇺🇸_US_美国_24
+      - 🇺🇸_US_美国_25
+      - 🇺🇸_US_美国_26
+      - 🇺🇸_US_美国_27
+      - 🇺🇸_US_美国_28
+      - 🇰🇷_KR_韩国
+      - 🇺🇸_US_美国_29
+      - 🇺🇸_US_美国_30
+      - 🇺🇸_US_美国_31
+      - 🇺🇸_US_美国_32
+      - 🇺🇸_US_美国_33
+      - 🇺🇸_US_美国_34
+      - 🇺🇸_US_美国_35
+      - 🇺🇸_US_美国_36
+      - 🇺🇸_US_美国_37
+      - 🇺🇸_US_美国_38
+      - 🇺🇸_US_美国_39
+      - 🇺🇸_US_美国_40
+      - 🇺🇸_US_美国_41
+      - 🇺🇸_US_美国_42
+      - 🇨🇦_CA_加拿大_1
+      - 🇺🇸_US_美国_43
+      - 🇺🇸_US_美国_44
+      - 🇺🇸_US_美国_45
+      - 🇨🇦_CA_加拿大_2
+      - 🇺🇸_US_美国_46
+      - 🇺🇸_US_美国_47
+      - 🇺🇸_US_美国_48
+      - 🇨🇦_CA_加拿大_3
+      - 🇨🇦_CA_加拿大_4
+      - 🇨🇦_CA_加拿大_5
+      - 🇺🇸_US_美国_49
+      - 🇺🇸_US_美国_50
+      - 🇺🇸_US_美国_51
+      - 🇺🇸_US_美国_52
+      - 🇺🇸_US_美国_53
+      - 🇺🇸_US_美国_54
+      - 🇺🇸_US_美国_55
+      - 🇨🇦_CA_加拿大_6
+      - 🇨🇦_CA_加拿大_7
+      - 🇺🇸_US_美国_56
+      - 🇺🇸_US_美国_57
+      - 🇨🇦_CA_加拿大_8
+      - 🇺🇸_US_美国_58
+      - 🇨🇦_CA_加拿大_9
+      - 🇺🇸_US_美国_59
+      - 🇺🇸_US_美国_60
+      - 🇺🇸_US_美国_61
+      - 🇨🇦_CA_加拿大_10
+      - 🇨🇦_CA_加拿大_11
+      - 🇨🇦_CA_加拿大_12
+      - 🇺🇸_US_美国_62
+      - 🇨🇦_CA_加拿大_13
+      - 🇨🇦_CA_加拿大_14
+      - 🇺🇸_US_美国_63
+      - 🇺🇸_US_美国_64
+      - 🇺🇸_US_美国_65
+      - 🇺🇸_US_美国_66
+      - 🇨🇦_CA_加拿大_15
+      - 🇺🇸_US_美国_67
+      - 🇺🇸_US_美国_68
+      - 🇨🇦_CA_加拿大_16
+      - 🇺🇸_US_美国_69
+      - 🇺🇸_US_美国_70
+      - 🇨🇦_CA_加拿大_17
+      - 🇨🇦_CA_加拿大_18
+      - 🇨🇦_CA_加拿大_19
+      - 🇨🇦_CA_加拿大_20
+      - 🇺🇸_US_美国_71
+      - 🇺🇸_US_美国_72
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - '@SSRSUB-V19-付费推荐:suo.yt/ssrsub'
       - 🇺🇸_US_美国_1
-      - 🇷🇺_RU_俄罗斯联邦
+      - 🇺🇦_youtube：全网最强白嫖
+      - 🇯🇵_youtube：全网最强白嫖
+      - 🇷🇺_youtube：全网最强白嫖
+      - 🇹🇼_youtube：全网最强白嫖
+      - 🇨🇳_youtube：全网最强白嫖_1
+      - 🇨🇳_youtube：全网最强白嫖_2
+      - 关注tg频道:@mftizi
+      - 翻墙党fanqiangdang.com
+      - 冰河圈子（个人买的节点，无限流量）
+      - 🇨🇳_油管频道：全网最强白嫖
+      - 🇸🇬_油管：全网最强白嫖_1
+      - 🇸🇬_油管：全网最强白嫖_2
+      - 🇸🇬_油管：全网最强白嫖_3
+      - 🇯🇵_油管：全网最强白嫖_1
+      - 🇯🇵_JP_日本
       - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国_4
       - 🇺🇸_US_美国_5
+      - 油管：全网最强白嫖_1
+      - 油管：全网最强白嫖_2
+      - 油管：全网最强白嫖_3
+      - 油管：全网最强白嫖_4
+      - 油管：全网最强白嫖_5
+      - 🇨🇳_油管：全网最强白嫖_1
+      - 🇻🇳_油管：全网最强白嫖
+      - 油管：全网最强白嫖_6
+      - 🇯🇵_油管：全网最强白嫖_2
+      - 🇺🇸_油管：全网最强白嫖_1
+      - 🇸🇬_油管：全网最强白嫖_4
+      - 🇸🇬_油管：全网最强白嫖_5
+      - 🇺🇸_油管：全网最强白嫖_2
+      - 🇺🇸_油管：全网最强白嫖_3
+      - 🇸🇬_油管：全网最强白嫖_6
+      - 油管：全网最强白嫖_7
+      - 🇨🇳_油管：全网最强白嫖_2
+      - 🇨🇳_油管：全网最强白嫖_3
+      - 🇨🇳_油管：全网最强白嫖_4
+      - 🇺🇸_油管：全网最强白嫖_4
+      - 🇨🇳_油管：全网最强白嫖_5
+      - 🇺🇸_油管：全网最强白嫖_5
+      - 🇺🇸_油管：全网最强白嫖_6
+      - 🇺🇸_油管：全网最强白嫖_7
+      - 🇺🇸_油管：全网最强白嫖_8
+      - 🇺🇸_油管：全网最强白嫖_9
+      - 🇺🇸_油管：全网最强白嫖_10
+      - 🇺🇸_油管：全网最强白嫖_11
+      - 🇺🇸_油管：全网最强白嫖_12
+      - 🇯🇵_油管：全网最强白嫖_3
+      - 🇺🇸_油管：全网最强白嫖_13
+      - 🇺🇸_油管：全网最强白嫖_14
+      - 🇺🇸_油管：全网最强白嫖_15
+      - 🇺🇸_油管：全网最强白嫖_16
+      - 🇺🇸_油管：全网最强白嫖_17
+      - 🇨🇦_油管：全网最强白嫖
+      - 🇺🇸_油管：全网最强白嫖_18
+      - 🇨🇿_油管：全网最强白嫖_1
+      - 🇨🇿_油管：全网最强白嫖_2
+      - 🇨🇿_油管：全网最强白嫖_3
+      - 油管：最网最强白嫖_1
+      - 油管：最网最强白嫖_2
+      - 油管：最网最强白嫖_3
+      - 油管：最网最强白嫖_4
+      - 油管：最网最强白嫖_5
+      - 油管：最网最强白嫖_6
+      - 油管：最网最强白嫖_7
+      - 油管：最网最强白嫖_8
+      - 油管：最网最强白嫖_9
+      - 油管：最网最强白嫖_10
+      - 油管：最网最强白嫖_11
+      - 油管：最网最强白嫖_12
+      - 油管：最网最强白嫖_13
+      - 油管：最网最强白嫖_14
+      - 油管：最网最强白嫖_15
+      - 油管：最网最强白嫖_16
+      - 油管：最网最强白嫖_17
+      - 油管：最网最强白嫖_18
+      - 油管：最网最强白嫖_19
+      - 油管：最网最强白嫖_20
+      - 油管：最网最强白嫖_21
+      - 油管：最网最强白嫖_22
+      - 油管：最网最强白嫖_23
+      - 油管：最网最强白嫖_24
+      - 油管：最网最强白嫖_25
+      - 油管：最网最强白嫖_26
+      - 油管：最网最强白嫖_27
+      - 油管：最网最强白嫖_28
+      - 油管：最网最强白嫖_29
+      - 油管：最网最强白嫖_30
+      - 油管：最网最强白嫖_31
+      - 油管：最网最强白嫖_32
+      - 油管：最网最强白嫖_33
+      - 油管：最网最强白嫖_34
+      - 油管：最网最强白嫖_35
+      - 油管：最网最强白嫖_36
+      - 油管：最网最强白嫖_37
+      - 油管：最网最强白嫖_38
+      - 油管：最网最强白嫖_39
+      - 油管：最网最强白嫖_40
+      - 油管：最网最强白嫖_41
+      - 油管：最网最强白嫖_42
+      - 油管：最网最强白嫖_43
+      - 油管：最网最强白嫖_44
+      - 油管：最网最强白嫖_45
+      - 油管：最网最强白嫖_46
+      - 油管：最网最强白嫖_47
+      - 油管：最网最强白嫖_48
+      - 油管：最网最强白嫖_49
+      - 油管：最网最强白嫖_50
+      - 油管：最网最强白嫖_51
+      - 油管：最网最强白嫖_52
+      - 油管：最网最强白嫖_53
+      - 油管：最网最强白嫖_54
+      - 油管：最网最强白嫖_55
+      - 油管：最网最强白嫖_56
+      - 油管：最网最强白嫖_57
+      - 油管：最网最强白嫖_58
+      - 油管：最网最强白嫖_59
+      - 油管：最网最强白嫖_60
+      - 油管：最网最强白嫖_61
+      - 油管：最网最强白嫖_62
+      - 油管：最网最强白嫖_63
+      - 油管：最网最强白嫖_64
+      - 油管：最网最强白嫖_65
+      - 油管：最网最强白嫖_66
+      - 油管：最网最强白嫖_67
+      - 油管：最网最强白嫖_68
+      - 油管：最网最强白嫖_69
+      - 油管：最网最强白嫖_70
+      - 油管：最网最强白嫖_71
+      - 油管：最网最强白嫖_72
+      - 油管：最网最强白嫖_73
+      - 油管：最网最强白嫖_74
+      - 油管：最网最强白嫖_75
+      - 油管：最网最强白嫖_76
+      - 油管：最网最强白嫖_77
+      - 油管：最网最强白嫖_78
+      - 油管：最网最强白嫖_79
+      - 油管：最网最强白嫖_80
+      - 油管：最网最强白嫖_81
+      - 油管：最网最强白嫖_82
+      - 油管：最网最强白嫖_83
+      - 油管：最网最强白嫖_84
+      - 油管：最网最强白嫖_85
+      - 油管：最网最强白嫖_86
+      - 油管：最网最强白嫖_87
+      - 油管：最网最强白嫖_88
+      - 油管：最网最强白嫖_89
+      - 油管：最网最强白嫖_90
+      - 油管：最网最强白嫖_91
+      - 油管：最网最强白嫖_92
+      - 油管：最网最强白嫖_93
+      - 油管：最网最强白嫖_94
+      - 油管：最网最强白嫖_95
+      - 油管：最网最强白嫖_96
+      - 油管：最网最强白嫖_97
+      - 油管：最网最强白嫖_98
+      - 油管：最网最强白嫖_99
+      - 油管：最网最强白嫖_100
+      - 油管：最网最强白嫖_101
+      - 🇭🇰_HK_香港->🇨🇿_CZ_捷克_1
+      - 🇭🇰_HK_香港->🇨🇿_CZ_捷克_2
+      - 🇭🇰_HK_香港->🇨🇿_CZ_捷克_3
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
       - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_7
       - 🇺🇸_US_美国_8
       - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国_10
+      - 🇺🇸_US_美国_11
+      - 🇺🇸_US_美国_12
+      - 🇺🇸_US_美国_13
+      - 🇺🇸_US_美国_14
+      - 🇺🇸_US_美国_15
+      - 🇺🇸_US_美国_16
+      - 🇺🇸_US_美国_17
+      - 🇺🇸_US_美国_18
+      - 🇺🇸_US_美国_19
+      - 🇺🇸_US_美国_20
+      - 🇺🇸_US_美国_21
+      - 🇺🇸_US_美国_22
+      - 🇺🇸_US_美国_23
+      - 🇺🇸_US_美国_24
+      - 🇺🇸_US_美国_25
+      - 🇺🇸_US_美国_26
+      - 🇺🇸_US_美国_27
+      - 🇺🇸_US_美国_28
+      - 🇰🇷_KR_韩国
+      - 🇺🇸_US_美国_29
+      - 🇺🇸_US_美国_30
+      - 🇺🇸_US_美国_31
+      - 🇺🇸_US_美国_32
+      - 🇺🇸_US_美国_33
+      - 🇺🇸_US_美国_34
+      - 🇺🇸_US_美国_35
+      - 🇺🇸_US_美国_36
+      - 🇺🇸_US_美国_37
+      - 🇺🇸_US_美国_38
+      - 🇺🇸_US_美国_39
+      - 🇺🇸_US_美国_40
+      - 🇺🇸_US_美国_41
+      - 🇺🇸_US_美国_42
+      - 🇨🇦_CA_加拿大_1
+      - 🇺🇸_US_美国_43
+      - 🇺🇸_US_美国_44
+      - 🇺🇸_US_美国_45
+      - 🇨🇦_CA_加拿大_2
+      - 🇺🇸_US_美国_46
+      - 🇺🇸_US_美国_47
+      - 🇺🇸_US_美国_48
+      - 🇨🇦_CA_加拿大_3
+      - 🇨🇦_CA_加拿大_4
+      - 🇨🇦_CA_加拿大_5
+      - 🇺🇸_US_美国_49
+      - 🇺🇸_US_美国_50
+      - 🇺🇸_US_美国_51
+      - 🇺🇸_US_美国_52
+      - 🇺🇸_US_美国_53
+      - 🇺🇸_US_美国_54
+      - 🇺🇸_US_美国_55
+      - 🇨🇦_CA_加拿大_6
+      - 🇨🇦_CA_加拿大_7
+      - 🇺🇸_US_美国_56
+      - 🇺🇸_US_美国_57
+      - 🇨🇦_CA_加拿大_8
+      - 🇺🇸_US_美国_58
+      - 🇨🇦_CA_加拿大_9
+      - 🇺🇸_US_美国_59
+      - 🇺🇸_US_美国_60
+      - 🇺🇸_US_美国_61
+      - 🇨🇦_CA_加拿大_10
+      - 🇨🇦_CA_加拿大_11
+      - 🇨🇦_CA_加拿大_12
+      - 🇺🇸_US_美国_62
+      - 🇨🇦_CA_加拿大_13
+      - 🇨🇦_CA_加拿大_14
+      - 🇺🇸_US_美国_63
+      - 🇺🇸_US_美国_64
+      - 🇺🇸_US_美国_65
+      - 🇺🇸_US_美国_66
+      - 🇨🇦_CA_加拿大_15
+      - 🇺🇸_US_美国_67
+      - 🇺🇸_US_美国_68
+      - 🇨🇦_CA_加拿大_16
+      - 🇺🇸_US_美国_69
+      - 🇺🇸_US_美国_70
+      - 🇨🇦_CA_加拿大_17
+      - 🇨🇦_CA_加拿大_18
+      - 🇨🇦_CA_加拿大_19
+      - 🇨🇦_CA_加拿大_20
+      - 🇺🇸_US_美国_71
+      - 🇺🇸_US_美国_72
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - '@SSRSUB-V19-付费推荐:suo.yt/ssrsub'
       - 🇺🇸_US_美国_1
-      - 🇷🇺_RU_俄罗斯联邦
+      - 🇺🇦_youtube：全网最强白嫖
+      - 🇯🇵_youtube：全网最强白嫖
+      - 🇷🇺_youtube：全网最强白嫖
+      - 🇹🇼_youtube：全网最强白嫖
+      - 🇨🇳_youtube：全网最强白嫖_1
+      - 🇨🇳_youtube：全网最强白嫖_2
+      - 关注tg频道:@mftizi
+      - 翻墙党fanqiangdang.com
+      - 冰河圈子（个人买的节点，无限流量）
+      - 🇨🇳_油管频道：全网最强白嫖
+      - 🇸🇬_油管：全网最强白嫖_1
+      - 🇸🇬_油管：全网最强白嫖_2
+      - 🇸🇬_油管：全网最强白嫖_3
+      - 🇯🇵_油管：全网最强白嫖_1
+      - 🇯🇵_JP_日本
       - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国_4
       - 🇺🇸_US_美国_5
+      - 油管：全网最强白嫖_1
+      - 油管：全网最强白嫖_2
+      - 油管：全网最强白嫖_3
+      - 油管：全网最强白嫖_4
+      - 油管：全网最强白嫖_5
+      - 🇨🇳_油管：全网最强白嫖_1
+      - 🇻🇳_油管：全网最强白嫖
+      - 油管：全网最强白嫖_6
+      - 🇯🇵_油管：全网最强白嫖_2
+      - 🇺🇸_油管：全网最强白嫖_1
+      - 🇸🇬_油管：全网最强白嫖_4
+      - 🇸🇬_油管：全网最强白嫖_5
+      - 🇺🇸_油管：全网最强白嫖_2
+      - 🇺🇸_油管：全网最强白嫖_3
+      - 🇸🇬_油管：全网最强白嫖_6
+      - 油管：全网最强白嫖_7
+      - 🇨🇳_油管：全网最强白嫖_2
+      - 🇨🇳_油管：全网最强白嫖_3
+      - 🇨🇳_油管：全网最强白嫖_4
+      - 🇺🇸_油管：全网最强白嫖_4
+      - 🇨🇳_油管：全网最强白嫖_5
+      - 🇺🇸_油管：全网最强白嫖_5
+      - 🇺🇸_油管：全网最强白嫖_6
+      - 🇺🇸_油管：全网最强白嫖_7
+      - 🇺🇸_油管：全网最强白嫖_8
+      - 🇺🇸_油管：全网最强白嫖_9
+      - 🇺🇸_油管：全网最强白嫖_10
+      - 🇺🇸_油管：全网最强白嫖_11
+      - 🇺🇸_油管：全网最强白嫖_12
+      - 🇯🇵_油管：全网最强白嫖_3
+      - 🇺🇸_油管：全网最强白嫖_13
+      - 🇺🇸_油管：全网最强白嫖_14
+      - 🇺🇸_油管：全网最强白嫖_15
+      - 🇺🇸_油管：全网最强白嫖_16
+      - 🇺🇸_油管：全网最强白嫖_17
+      - 🇨🇦_油管：全网最强白嫖
+      - 🇺🇸_油管：全网最强白嫖_18
+      - 🇨🇿_油管：全网最强白嫖_1
+      - 🇨🇿_油管：全网最强白嫖_2
+      - 🇨🇿_油管：全网最强白嫖_3
+      - 油管：最网最强白嫖_1
+      - 油管：最网最强白嫖_2
+      - 油管：最网最强白嫖_3
+      - 油管：最网最强白嫖_4
+      - 油管：最网最强白嫖_5
+      - 油管：最网最强白嫖_6
+      - 油管：最网最强白嫖_7
+      - 油管：最网最强白嫖_8
+      - 油管：最网最强白嫖_9
+      - 油管：最网最强白嫖_10
+      - 油管：最网最强白嫖_11
+      - 油管：最网最强白嫖_12
+      - 油管：最网最强白嫖_13
+      - 油管：最网最强白嫖_14
+      - 油管：最网最强白嫖_15
+      - 油管：最网最强白嫖_16
+      - 油管：最网最强白嫖_17
+      - 油管：最网最强白嫖_18
+      - 油管：最网最强白嫖_19
+      - 油管：最网最强白嫖_20
+      - 油管：最网最强白嫖_21
+      - 油管：最网最强白嫖_22
+      - 油管：最网最强白嫖_23
+      - 油管：最网最强白嫖_24
+      - 油管：最网最强白嫖_25
+      - 油管：最网最强白嫖_26
+      - 油管：最网最强白嫖_27
+      - 油管：最网最强白嫖_28
+      - 油管：最网最强白嫖_29
+      - 油管：最网最强白嫖_30
+      - 油管：最网最强白嫖_31
+      - 油管：最网最强白嫖_32
+      - 油管：最网最强白嫖_33
+      - 油管：最网最强白嫖_34
+      - 油管：最网最强白嫖_35
+      - 油管：最网最强白嫖_36
+      - 油管：最网最强白嫖_37
+      - 油管：最网最强白嫖_38
+      - 油管：最网最强白嫖_39
+      - 油管：最网最强白嫖_40
+      - 油管：最网最强白嫖_41
+      - 油管：最网最强白嫖_42
+      - 油管：最网最强白嫖_43
+      - 油管：最网最强白嫖_44
+      - 油管：最网最强白嫖_45
+      - 油管：最网最强白嫖_46
+      - 油管：最网最强白嫖_47
+      - 油管：最网最强白嫖_48
+      - 油管：最网最强白嫖_49
+      - 油管：最网最强白嫖_50
+      - 油管：最网最强白嫖_51
+      - 油管：最网最强白嫖_52
+      - 油管：最网最强白嫖_53
+      - 油管：最网最强白嫖_54
+      - 油管：最网最强白嫖_55
+      - 油管：最网最强白嫖_56
+      - 油管：最网最强白嫖_57
+      - 油管：最网最强白嫖_58
+      - 油管：最网最强白嫖_59
+      - 油管：最网最强白嫖_60
+      - 油管：最网最强白嫖_61
+      - 油管：最网最强白嫖_62
+      - 油管：最网最强白嫖_63
+      - 油管：最网最强白嫖_64
+      - 油管：最网最强白嫖_65
+      - 油管：最网最强白嫖_66
+      - 油管：最网最强白嫖_67
+      - 油管：最网最强白嫖_68
+      - 油管：最网最强白嫖_69
+      - 油管：最网最强白嫖_70
+      - 油管：最网最强白嫖_71
+      - 油管：最网最强白嫖_72
+      - 油管：最网最强白嫖_73
+      - 油管：最网最强白嫖_74
+      - 油管：最网最强白嫖_75
+      - 油管：最网最强白嫖_76
+      - 油管：最网最强白嫖_77
+      - 油管：最网最强白嫖_78
+      - 油管：最网最强白嫖_79
+      - 油管：最网最强白嫖_80
+      - 油管：最网最强白嫖_81
+      - 油管：最网最强白嫖_82
+      - 油管：最网最强白嫖_83
+      - 油管：最网最强白嫖_84
+      - 油管：最网最强白嫖_85
+      - 油管：最网最强白嫖_86
+      - 油管：最网最强白嫖_87
+      - 油管：最网最强白嫖_88
+      - 油管：最网最强白嫖_89
+      - 油管：最网最强白嫖_90
+      - 油管：最网最强白嫖_91
+      - 油管：最网最强白嫖_92
+      - 油管：最网最强白嫖_93
+      - 油管：最网最强白嫖_94
+      - 油管：最网最强白嫖_95
+      - 油管：最网最强白嫖_96
+      - 油管：最网最强白嫖_97
+      - 油管：最网最强白嫖_98
+      - 油管：最网最强白嫖_99
+      - 油管：最网最强白嫖_100
+      - 油管：最网最强白嫖_101
+      - 🇭🇰_HK_香港->🇨🇿_CZ_捷克_1
+      - 🇭🇰_HK_香港->🇨🇿_CZ_捷克_2
+      - 🇭🇰_HK_香港->🇨🇿_CZ_捷克_3
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
       - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_7
       - 🇺🇸_US_美国_8
       - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国_10
+      - 🇺🇸_US_美国_11
+      - 🇺🇸_US_美国_12
+      - 🇺🇸_US_美国_13
+      - 🇺🇸_US_美国_14
+      - 🇺🇸_US_美国_15
+      - 🇺🇸_US_美国_16
+      - 🇺🇸_US_美国_17
+      - 🇺🇸_US_美国_18
+      - 🇺🇸_US_美国_19
+      - 🇺🇸_US_美国_20
+      - 🇺🇸_US_美国_21
+      - 🇺🇸_US_美国_22
+      - 🇺🇸_US_美国_23
+      - 🇺🇸_US_美国_24
+      - 🇺🇸_US_美国_25
+      - 🇺🇸_US_美国_26
+      - 🇺🇸_US_美国_27
+      - 🇺🇸_US_美国_28
+      - 🇰🇷_KR_韩国
+      - 🇺🇸_US_美国_29
+      - 🇺🇸_US_美国_30
+      - 🇺🇸_US_美国_31
+      - 🇺🇸_US_美国_32
+      - 🇺🇸_US_美国_33
+      - 🇺🇸_US_美国_34
+      - 🇺🇸_US_美国_35
+      - 🇺🇸_US_美国_36
+      - 🇺🇸_US_美国_37
+      - 🇺🇸_US_美国_38
+      - 🇺🇸_US_美国_39
+      - 🇺🇸_US_美国_40
+      - 🇺🇸_US_美国_41
+      - 🇺🇸_US_美国_42
+      - 🇨🇦_CA_加拿大_1
+      - 🇺🇸_US_美国_43
+      - 🇺🇸_US_美国_44
+      - 🇺🇸_US_美国_45
+      - 🇨🇦_CA_加拿大_2
+      - 🇺🇸_US_美国_46
+      - 🇺🇸_US_美国_47
+      - 🇺🇸_US_美国_48
+      - 🇨🇦_CA_加拿大_3
+      - 🇨🇦_CA_加拿大_4
+      - 🇨🇦_CA_加拿大_5
+      - 🇺🇸_US_美国_49
+      - 🇺🇸_US_美国_50
+      - 🇺🇸_US_美国_51
+      - 🇺🇸_US_美国_52
+      - 🇺🇸_US_美国_53
+      - 🇺🇸_US_美国_54
+      - 🇺🇸_US_美国_55
+      - 🇨🇦_CA_加拿大_6
+      - 🇨🇦_CA_加拿大_7
+      - 🇺🇸_US_美国_56
+      - 🇺🇸_US_美国_57
+      - 🇨🇦_CA_加拿大_8
+      - 🇺🇸_US_美国_58
+      - 🇨🇦_CA_加拿大_9
+      - 🇺🇸_US_美国_59
+      - 🇺🇸_US_美国_60
+      - 🇺🇸_US_美国_61
+      - 🇨🇦_CA_加拿大_10
+      - 🇨🇦_CA_加拿大_11
+      - 🇨🇦_CA_加拿大_12
+      - 🇺🇸_US_美国_62
+      - 🇨🇦_CA_加拿大_13
+      - 🇨🇦_CA_加拿大_14
+      - 🇺🇸_US_美国_63
+      - 🇺🇸_US_美国_64
+      - 🇺🇸_US_美国_65
+      - 🇺🇸_US_美国_66
+      - 🇨🇦_CA_加拿大_15
+      - 🇺🇸_US_美国_67
+      - 🇺🇸_US_美国_68
+      - 🇨🇦_CA_加拿大_16
+      - 🇺🇸_US_美国_69
+      - 🇺🇸_US_美国_70
+      - 🇨🇦_CA_加拿大_17
+      - 🇨🇦_CA_加拿大_18
+      - 🇨🇦_CA_加拿大_19
+      - 🇨🇦_CA_加拿大_20
+      - 🇺🇸_US_美国_71
+      - 🇺🇸_US_美国_72
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - '@SSRSUB-V19-付费推荐:suo.yt/ssrsub'
       - 🇺🇸_US_美国_1
-      - 🇷🇺_RU_俄罗斯联邦
+      - 🇺🇦_youtube：全网最强白嫖
+      - 🇯🇵_youtube：全网最强白嫖
+      - 🇷🇺_youtube：全网最强白嫖
+      - 🇹🇼_youtube：全网最强白嫖
+      - 🇨🇳_youtube：全网最强白嫖_1
+      - 🇨🇳_youtube：全网最强白嫖_2
+      - 关注tg频道:@mftizi
+      - 翻墙党fanqiangdang.com
+      - 冰河圈子（个人买的节点，无限流量）
+      - 🇨🇳_油管频道：全网最强白嫖
+      - 🇸🇬_油管：全网最强白嫖_1
+      - 🇸🇬_油管：全网最强白嫖_2
+      - 🇸🇬_油管：全网最强白嫖_3
+      - 🇯🇵_油管：全网最强白嫖_1
+      - 🇯🇵_JP_日本
       - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国_4
       - 🇺🇸_US_美国_5
+      - 油管：全网最强白嫖_1
+      - 油管：全网最强白嫖_2
+      - 油管：全网最强白嫖_3
+      - 油管：全网最强白嫖_4
+      - 油管：全网最强白嫖_5
+      - 🇨🇳_油管：全网最强白嫖_1
+      - 🇻🇳_油管：全网最强白嫖
+      - 油管：全网最强白嫖_6
+      - 🇯🇵_油管：全网最强白嫖_2
+      - 🇺🇸_油管：全网最强白嫖_1
+      - 🇸🇬_油管：全网最强白嫖_4
+      - 🇸🇬_油管：全网最强白嫖_5
+      - 🇺🇸_油管：全网最强白嫖_2
+      - 🇺🇸_油管：全网最强白嫖_3
+      - 🇸🇬_油管：全网最强白嫖_6
+      - 油管：全网最强白嫖_7
+      - 🇨🇳_油管：全网最强白嫖_2
+      - 🇨🇳_油管：全网最强白嫖_3
+      - 🇨🇳_油管：全网最强白嫖_4
+      - 🇺🇸_油管：全网最强白嫖_4
+      - 🇨🇳_油管：全网最强白嫖_5
+      - 🇺🇸_油管：全网最强白嫖_5
+      - 🇺🇸_油管：全网最强白嫖_6
+      - 🇺🇸_油管：全网最强白嫖_7
+      - 🇺🇸_油管：全网最强白嫖_8
+      - 🇺🇸_油管：全网最强白嫖_9
+      - 🇺🇸_油管：全网最强白嫖_10
+      - 🇺🇸_油管：全网最强白嫖_11
+      - 🇺🇸_油管：全网最强白嫖_12
+      - 🇯🇵_油管：全网最强白嫖_3
+      - 🇺🇸_油管：全网最强白嫖_13
+      - 🇺🇸_油管：全网最强白嫖_14
+      - 🇺🇸_油管：全网最强白嫖_15
+      - 🇺🇸_油管：全网最强白嫖_16
+      - 🇺🇸_油管：全网最强白嫖_17
+      - 🇨🇦_油管：全网最强白嫖
+      - 🇺🇸_油管：全网最强白嫖_18
+      - 🇨🇿_油管：全网最强白嫖_1
+      - 🇨🇿_油管：全网最强白嫖_2
+      - 🇨🇿_油管：全网最强白嫖_3
+      - 油管：最网最强白嫖_1
+      - 油管：最网最强白嫖_2
+      - 油管：最网最强白嫖_3
+      - 油管：最网最强白嫖_4
+      - 油管：最网最强白嫖_5
+      - 油管：最网最强白嫖_6
+      - 油管：最网最强白嫖_7
+      - 油管：最网最强白嫖_8
+      - 油管：最网最强白嫖_9
+      - 油管：最网最强白嫖_10
+      - 油管：最网最强白嫖_11
+      - 油管：最网最强白嫖_12
+      - 油管：最网最强白嫖_13
+      - 油管：最网最强白嫖_14
+      - 油管：最网最强白嫖_15
+      - 油管：最网最强白嫖_16
+      - 油管：最网最强白嫖_17
+      - 油管：最网最强白嫖_18
+      - 油管：最网最强白嫖_19
+      - 油管：最网最强白嫖_20
+      - 油管：最网最强白嫖_21
+      - 油管：最网最强白嫖_22
+      - 油管：最网最强白嫖_23
+      - 油管：最网最强白嫖_24
+      - 油管：最网最强白嫖_25
+      - 油管：最网最强白嫖_26
+      - 油管：最网最强白嫖_27
+      - 油管：最网最强白嫖_28
+      - 油管：最网最强白嫖_29
+      - 油管：最网最强白嫖_30
+      - 油管：最网最强白嫖_31
+      - 油管：最网最强白嫖_32
+      - 油管：最网最强白嫖_33
+      - 油管：最网最强白嫖_34
+      - 油管：最网最强白嫖_35
+      - 油管：最网最强白嫖_36
+      - 油管：最网最强白嫖_37
+      - 油管：最网最强白嫖_38
+      - 油管：最网最强白嫖_39
+      - 油管：最网最强白嫖_40
+      - 油管：最网最强白嫖_41
+      - 油管：最网最强白嫖_42
+      - 油管：最网最强白嫖_43
+      - 油管：最网最强白嫖_44
+      - 油管：最网最强白嫖_45
+      - 油管：最网最强白嫖_46
+      - 油管：最网最强白嫖_47
+      - 油管：最网最强白嫖_48
+      - 油管：最网最强白嫖_49
+      - 油管：最网最强白嫖_50
+      - 油管：最网最强白嫖_51
+      - 油管：最网最强白嫖_52
+      - 油管：最网最强白嫖_53
+      - 油管：最网最强白嫖_54
+      - 油管：最网最强白嫖_55
+      - 油管：最网最强白嫖_56
+      - 油管：最网最强白嫖_57
+      - 油管：最网最强白嫖_58
+      - 油管：最网最强白嫖_59
+      - 油管：最网最强白嫖_60
+      - 油管：最网最强白嫖_61
+      - 油管：最网最强白嫖_62
+      - 油管：最网最强白嫖_63
+      - 油管：最网最强白嫖_64
+      - 油管：最网最强白嫖_65
+      - 油管：最网最强白嫖_66
+      - 油管：最网最强白嫖_67
+      - 油管：最网最强白嫖_68
+      - 油管：最网最强白嫖_69
+      - 油管：最网最强白嫖_70
+      - 油管：最网最强白嫖_71
+      - 油管：最网最强白嫖_72
+      - 油管：最网最强白嫖_73
+      - 油管：最网最强白嫖_74
+      - 油管：最网最强白嫖_75
+      - 油管：最网最强白嫖_76
+      - 油管：最网最强白嫖_77
+      - 油管：最网最强白嫖_78
+      - 油管：最网最强白嫖_79
+      - 油管：最网最强白嫖_80
+      - 油管：最网最强白嫖_81
+      - 油管：最网最强白嫖_82
+      - 油管：最网最强白嫖_83
+      - 油管：最网最强白嫖_84
+      - 油管：最网最强白嫖_85
+      - 油管：最网最强白嫖_86
+      - 油管：最网最强白嫖_87
+      - 油管：最网最强白嫖_88
+      - 油管：最网最强白嫖_89
+      - 油管：最网最强白嫖_90
+      - 油管：最网最强白嫖_91
+      - 油管：最网最强白嫖_92
+      - 油管：最网最强白嫖_93
+      - 油管：最网最强白嫖_94
+      - 油管：最网最强白嫖_95
+      - 油管：最网最强白嫖_96
+      - 油管：最网最强白嫖_97
+      - 油管：最网最强白嫖_98
+      - 油管：最网最强白嫖_99
+      - 油管：最网最强白嫖_100
+      - 油管：最网最强白嫖_101
+      - 🇭🇰_HK_香港->🇨🇿_CZ_捷克_1
+      - 🇭🇰_HK_香港->🇨🇿_CZ_捷克_2
+      - 🇭🇰_HK_香港->🇨🇿_CZ_捷克_3
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
       - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_7
       - 🇺🇸_US_美国_8
       - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国_10
+      - 🇺🇸_US_美国_11
+      - 🇺🇸_US_美国_12
+      - 🇺🇸_US_美国_13
+      - 🇺🇸_US_美国_14
+      - 🇺🇸_US_美国_15
+      - 🇺🇸_US_美国_16
+      - 🇺🇸_US_美国_17
+      - 🇺🇸_US_美国_18
+      - 🇺🇸_US_美国_19
+      - 🇺🇸_US_美国_20
+      - 🇺🇸_US_美国_21
+      - 🇺🇸_US_美国_22
+      - 🇺🇸_US_美国_23
+      - 🇺🇸_US_美国_24
+      - 🇺🇸_US_美国_25
+      - 🇺🇸_US_美国_26
+      - 🇺🇸_US_美国_27
+      - 🇺🇸_US_美国_28
+      - 🇰🇷_KR_韩国
+      - 🇺🇸_US_美国_29
+      - 🇺🇸_US_美国_30
+      - 🇺🇸_US_美国_31
+      - 🇺🇸_US_美国_32
+      - 🇺🇸_US_美国_33
+      - 🇺🇸_US_美国_34
+      - 🇺🇸_US_美国_35
+      - 🇺🇸_US_美国_36
+      - 🇺🇸_US_美国_37
+      - 🇺🇸_US_美国_38
+      - 🇺🇸_US_美国_39
+      - 🇺🇸_US_美国_40
+      - 🇺🇸_US_美国_41
+      - 🇺🇸_US_美国_42
+      - 🇨🇦_CA_加拿大_1
+      - 🇺🇸_US_美国_43
+      - 🇺🇸_US_美国_44
+      - 🇺🇸_US_美国_45
+      - 🇨🇦_CA_加拿大_2
+      - 🇺🇸_US_美国_46
+      - 🇺🇸_US_美国_47
+      - 🇺🇸_US_美国_48
+      - 🇨🇦_CA_加拿大_3
+      - 🇨🇦_CA_加拿大_4
+      - 🇨🇦_CA_加拿大_5
+      - 🇺🇸_US_美国_49
+      - 🇺🇸_US_美国_50
+      - 🇺🇸_US_美国_51
+      - 🇺🇸_US_美国_52
+      - 🇺🇸_US_美国_53
+      - 🇺🇸_US_美国_54
+      - 🇺🇸_US_美国_55
+      - 🇨🇦_CA_加拿大_6
+      - 🇨🇦_CA_加拿大_7
+      - 🇺🇸_US_美国_56
+      - 🇺🇸_US_美国_57
+      - 🇨🇦_CA_加拿大_8
+      - 🇺🇸_US_美国_58
+      - 🇨🇦_CA_加拿大_9
+      - 🇺🇸_US_美国_59
+      - 🇺🇸_US_美国_60
+      - 🇺🇸_US_美国_61
+      - 🇨🇦_CA_加拿大_10
+      - 🇨🇦_CA_加拿大_11
+      - 🇨🇦_CA_加拿大_12
+      - 🇺🇸_US_美国_62
+      - 🇨🇦_CA_加拿大_13
+      - 🇨🇦_CA_加拿大_14
+      - 🇺🇸_US_美国_63
+      - 🇺🇸_US_美国_64
+      - 🇺🇸_US_美国_65
+      - 🇺🇸_US_美国_66
+      - 🇨🇦_CA_加拿大_15
+      - 🇺🇸_US_美国_67
+      - 🇺🇸_US_美国_68
+      - 🇨🇦_CA_加拿大_16
+      - 🇺🇸_US_美国_69
+      - 🇺🇸_US_美国_70
+      - 🇨🇦_CA_加拿大_17
+      - 🇨🇦_CA_加拿大_18
+      - 🇨🇦_CA_加拿大_19
+      - 🇨🇦_CA_加拿大_20
+      - 🇺🇸_US_美国_71
+      - 🇺🇸_US_美国_72
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - '@SSRSUB-V19-付费推荐:suo.yt/ssrsub'
       - 🇺🇸_US_美国_1
-      - 🇷🇺_RU_俄罗斯联邦
+      - 🇺🇦_youtube：全网最强白嫖
+      - 🇯🇵_youtube：全网最强白嫖
+      - 🇷🇺_youtube：全网最强白嫖
+      - 🇹🇼_youtube：全网最强白嫖
+      - 🇨🇳_youtube：全网最强白嫖_1
+      - 🇨🇳_youtube：全网最强白嫖_2
+      - 关注tg频道:@mftizi
+      - 翻墙党fanqiangdang.com
+      - 冰河圈子（个人买的节点，无限流量）
+      - 🇨🇳_油管频道：全网最强白嫖
+      - 🇸🇬_油管：全网最强白嫖_1
+      - 🇸🇬_油管：全网最强白嫖_2
+      - 🇸🇬_油管：全网最强白嫖_3
+      - 🇯🇵_油管：全网最强白嫖_1
+      - 🇯🇵_JP_日本
       - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国_4
       - 🇺🇸_US_美国_5
+      - 油管：全网最强白嫖_1
+      - 油管：全网最强白嫖_2
+      - 油管：全网最强白嫖_3
+      - 油管：全网最强白嫖_4
+      - 油管：全网最强白嫖_5
+      - 🇨🇳_油管：全网最强白嫖_1
+      - 🇻🇳_油管：全网最强白嫖
+      - 油管：全网最强白嫖_6
+      - 🇯🇵_油管：全网最强白嫖_2
+      - 🇺🇸_油管：全网最强白嫖_1
+      - 🇸🇬_油管：全网最强白嫖_4
+      - 🇸🇬_油管：全网最强白嫖_5
+      - 🇺🇸_油管：全网最强白嫖_2
+      - 🇺🇸_油管：全网最强白嫖_3
+      - 🇸🇬_油管：全网最强白嫖_6
+      - 油管：全网最强白嫖_7
+      - 🇨🇳_油管：全网最强白嫖_2
+      - 🇨🇳_油管：全网最强白嫖_3
+      - 🇨🇳_油管：全网最强白嫖_4
+      - 🇺🇸_油管：全网最强白嫖_4
+      - 🇨🇳_油管：全网最强白嫖_5
+      - 🇺🇸_油管：全网最强白嫖_5
+      - 🇺🇸_油管：全网最强白嫖_6
+      - 🇺🇸_油管：全网最强白嫖_7
+      - 🇺🇸_油管：全网最强白嫖_8
+      - 🇺🇸_油管：全网最强白嫖_9
+      - 🇺🇸_油管：全网最强白嫖_10
+      - 🇺🇸_油管：全网最强白嫖_11
+      - 🇺🇸_油管：全网最强白嫖_12
+      - 🇯🇵_油管：全网最强白嫖_3
+      - 🇺🇸_油管：全网最强白嫖_13
+      - 🇺🇸_油管：全网最强白嫖_14
+      - 🇺🇸_油管：全网最强白嫖_15
+      - 🇺🇸_油管：全网最强白嫖_16
+      - 🇺🇸_油管：全网最强白嫖_17
+      - 🇨🇦_油管：全网最强白嫖
+      - 🇺🇸_油管：全网最强白嫖_18
+      - 🇨🇿_油管：全网最强白嫖_1
+      - 🇨🇿_油管：全网最强白嫖_2
+      - 🇨🇿_油管：全网最强白嫖_3
+      - 油管：最网最强白嫖_1
+      - 油管：最网最强白嫖_2
+      - 油管：最网最强白嫖_3
+      - 油管：最网最强白嫖_4
+      - 油管：最网最强白嫖_5
+      - 油管：最网最强白嫖_6
+      - 油管：最网最强白嫖_7
+      - 油管：最网最强白嫖_8
+      - 油管：最网最强白嫖_9
+      - 油管：最网最强白嫖_10
+      - 油管：最网最强白嫖_11
+      - 油管：最网最强白嫖_12
+      - 油管：最网最强白嫖_13
+      - 油管：最网最强白嫖_14
+      - 油管：最网最强白嫖_15
+      - 油管：最网最强白嫖_16
+      - 油管：最网最强白嫖_17
+      - 油管：最网最强白嫖_18
+      - 油管：最网最强白嫖_19
+      - 油管：最网最强白嫖_20
+      - 油管：最网最强白嫖_21
+      - 油管：最网最强白嫖_22
+      - 油管：最网最强白嫖_23
+      - 油管：最网最强白嫖_24
+      - 油管：最网最强白嫖_25
+      - 油管：最网最强白嫖_26
+      - 油管：最网最强白嫖_27
+      - 油管：最网最强白嫖_28
+      - 油管：最网最强白嫖_29
+      - 油管：最网最强白嫖_30
+      - 油管：最网最强白嫖_31
+      - 油管：最网最强白嫖_32
+      - 油管：最网最强白嫖_33
+      - 油管：最网最强白嫖_34
+      - 油管：最网最强白嫖_35
+      - 油管：最网最强白嫖_36
+      - 油管：最网最强白嫖_37
+      - 油管：最网最强白嫖_38
+      - 油管：最网最强白嫖_39
+      - 油管：最网最强白嫖_40
+      - 油管：最网最强白嫖_41
+      - 油管：最网最强白嫖_42
+      - 油管：最网最强白嫖_43
+      - 油管：最网最强白嫖_44
+      - 油管：最网最强白嫖_45
+      - 油管：最网最强白嫖_46
+      - 油管：最网最强白嫖_47
+      - 油管：最网最强白嫖_48
+      - 油管：最网最强白嫖_49
+      - 油管：最网最强白嫖_50
+      - 油管：最网最强白嫖_51
+      - 油管：最网最强白嫖_52
+      - 油管：最网最强白嫖_53
+      - 油管：最网最强白嫖_54
+      - 油管：最网最强白嫖_55
+      - 油管：最网最强白嫖_56
+      - 油管：最网最强白嫖_57
+      - 油管：最网最强白嫖_58
+      - 油管：最网最强白嫖_59
+      - 油管：最网最强白嫖_60
+      - 油管：最网最强白嫖_61
+      - 油管：最网最强白嫖_62
+      - 油管：最网最强白嫖_63
+      - 油管：最网最强白嫖_64
+      - 油管：最网最强白嫖_65
+      - 油管：最网最强白嫖_66
+      - 油管：最网最强白嫖_67
+      - 油管：最网最强白嫖_68
+      - 油管：最网最强白嫖_69
+      - 油管：最网最强白嫖_70
+      - 油管：最网最强白嫖_71
+      - 油管：最网最强白嫖_72
+      - 油管：最网最强白嫖_73
+      - 油管：最网最强白嫖_74
+      - 油管：最网最强白嫖_75
+      - 油管：最网最强白嫖_76
+      - 油管：最网最强白嫖_77
+      - 油管：最网最强白嫖_78
+      - 油管：最网最强白嫖_79
+      - 油管：最网最强白嫖_80
+      - 油管：最网最强白嫖_81
+      - 油管：最网最强白嫖_82
+      - 油管：最网最强白嫖_83
+      - 油管：最网最强白嫖_84
+      - 油管：最网最强白嫖_85
+      - 油管：最网最强白嫖_86
+      - 油管：最网最强白嫖_87
+      - 油管：最网最强白嫖_88
+      - 油管：最网最强白嫖_89
+      - 油管：最网最强白嫖_90
+      - 油管：最网最强白嫖_91
+      - 油管：最网最强白嫖_92
+      - 油管：最网最强白嫖_93
+      - 油管：最网最强白嫖_94
+      - 油管：最网最强白嫖_95
+      - 油管：最网最强白嫖_96
+      - 油管：最网最强白嫖_97
+      - 油管：最网最强白嫖_98
+      - 油管：最网最强白嫖_99
+      - 油管：最网最强白嫖_100
+      - 油管：最网最强白嫖_101
+      - 🇭🇰_HK_香港->🇨🇿_CZ_捷克_1
+      - 🇭🇰_HK_香港->🇨🇿_CZ_捷克_2
+      - 🇭🇰_HK_香港->🇨🇿_CZ_捷克_3
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
       - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_7
       - 🇺🇸_US_美国_8
       - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国_10
+      - 🇺🇸_US_美国_11
+      - 🇺🇸_US_美国_12
+      - 🇺🇸_US_美国_13
+      - 🇺🇸_US_美国_14
+      - 🇺🇸_US_美国_15
+      - 🇺🇸_US_美国_16
+      - 🇺🇸_US_美国_17
+      - 🇺🇸_US_美国_18
+      - 🇺🇸_US_美国_19
+      - 🇺🇸_US_美国_20
+      - 🇺🇸_US_美国_21
+      - 🇺🇸_US_美国_22
+      - 🇺🇸_US_美国_23
+      - 🇺🇸_US_美国_24
+      - 🇺🇸_US_美国_25
+      - 🇺🇸_US_美国_26
+      - 🇺🇸_US_美国_27
+      - 🇺🇸_US_美国_28
+      - 🇰🇷_KR_韩国
+      - 🇺🇸_US_美国_29
+      - 🇺🇸_US_美国_30
+      - 🇺🇸_US_美国_31
+      - 🇺🇸_US_美国_32
+      - 🇺🇸_US_美国_33
+      - 🇺🇸_US_美国_34
+      - 🇺🇸_US_美国_35
+      - 🇺🇸_US_美国_36
+      - 🇺🇸_US_美国_37
+      - 🇺🇸_US_美国_38
+      - 🇺🇸_US_美国_39
+      - 🇺🇸_US_美国_40
+      - 🇺🇸_US_美国_41
+      - 🇺🇸_US_美国_42
+      - 🇨🇦_CA_加拿大_1
+      - 🇺🇸_US_美国_43
+      - 🇺🇸_US_美国_44
+      - 🇺🇸_US_美国_45
+      - 🇨🇦_CA_加拿大_2
+      - 🇺🇸_US_美国_46
+      - 🇺🇸_US_美国_47
+      - 🇺🇸_US_美国_48
+      - 🇨🇦_CA_加拿大_3
+      - 🇨🇦_CA_加拿大_4
+      - 🇨🇦_CA_加拿大_5
+      - 🇺🇸_US_美国_49
+      - 🇺🇸_US_美国_50
+      - 🇺🇸_US_美国_51
+      - 🇺🇸_US_美国_52
+      - 🇺🇸_US_美国_53
+      - 🇺🇸_US_美国_54
+      - 🇺🇸_US_美国_55
+      - 🇨🇦_CA_加拿大_6
+      - 🇨🇦_CA_加拿大_7
+      - 🇺🇸_US_美国_56
+      - 🇺🇸_US_美国_57
+      - 🇨🇦_CA_加拿大_8
+      - 🇺🇸_US_美国_58
+      - 🇨🇦_CA_加拿大_9
+      - 🇺🇸_US_美国_59
+      - 🇺🇸_US_美国_60
+      - 🇺🇸_US_美国_61
+      - 🇨🇦_CA_加拿大_10
+      - 🇨🇦_CA_加拿大_11
+      - 🇨🇦_CA_加拿大_12
+      - 🇺🇸_US_美国_62
+      - 🇨🇦_CA_加拿大_13
+      - 🇨🇦_CA_加拿大_14
+      - 🇺🇸_US_美国_63
+      - 🇺🇸_US_美国_64
+      - 🇺🇸_US_美国_65
+      - 🇺🇸_US_美国_66
+      - 🇨🇦_CA_加拿大_15
+      - 🇺🇸_US_美国_67
+      - 🇺🇸_US_美国_68
+      - 🇨🇦_CA_加拿大_16
+      - 🇺🇸_US_美国_69
+      - 🇺🇸_US_美国_70
+      - 🇨🇦_CA_加拿大_17
+      - 🇨🇦_CA_加拿大_18
+      - 🇨🇦_CA_加拿大_19
+      - 🇨🇦_CA_加拿大_20
+      - 🇺🇸_US_美国_71
+      - 🇺🇸_US_美国_72
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -130,16 +1838,260 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - '@SSRSUB-V19-付费推荐:suo.yt/ssrsub'
       - 🇺🇸_US_美国_1
-      - 🇷🇺_RU_俄罗斯联邦
+      - 🇺🇦_youtube：全网最强白嫖
+      - 🇯🇵_youtube：全网最强白嫖
+      - 🇷🇺_youtube：全网最强白嫖
+      - 🇹🇼_youtube：全网最强白嫖
+      - 🇨🇳_youtube：全网最强白嫖_1
+      - 🇨🇳_youtube：全网最强白嫖_2
+      - 关注tg频道:@mftizi
+      - 翻墙党fanqiangdang.com
+      - 冰河圈子（个人买的节点，无限流量）
+      - 🇨🇳_油管频道：全网最强白嫖
+      - 🇸🇬_油管：全网最强白嫖_1
+      - 🇸🇬_油管：全网最强白嫖_2
+      - 🇸🇬_油管：全网最强白嫖_3
+      - 🇯🇵_油管：全网最强白嫖_1
+      - 🇯🇵_JP_日本
       - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国_4
       - 🇺🇸_US_美国_5
+      - 油管：全网最强白嫖_1
+      - 油管：全网最强白嫖_2
+      - 油管：全网最强白嫖_3
+      - 油管：全网最强白嫖_4
+      - 油管：全网最强白嫖_5
+      - 🇨🇳_油管：全网最强白嫖_1
+      - 🇻🇳_油管：全网最强白嫖
+      - 油管：全网最强白嫖_6
+      - 🇯🇵_油管：全网最强白嫖_2
+      - 🇺🇸_油管：全网最强白嫖_1
+      - 🇸🇬_油管：全网最强白嫖_4
+      - 🇸🇬_油管：全网最强白嫖_5
+      - 🇺🇸_油管：全网最强白嫖_2
+      - 🇺🇸_油管：全网最强白嫖_3
+      - 🇸🇬_油管：全网最强白嫖_6
+      - 油管：全网最强白嫖_7
+      - 🇨🇳_油管：全网最强白嫖_2
+      - 🇨🇳_油管：全网最强白嫖_3
+      - 🇨🇳_油管：全网最强白嫖_4
+      - 🇺🇸_油管：全网最强白嫖_4
+      - 🇨🇳_油管：全网最强白嫖_5
+      - 🇺🇸_油管：全网最强白嫖_5
+      - 🇺🇸_油管：全网最强白嫖_6
+      - 🇺🇸_油管：全网最强白嫖_7
+      - 🇺🇸_油管：全网最强白嫖_8
+      - 🇺🇸_油管：全网最强白嫖_9
+      - 🇺🇸_油管：全网最强白嫖_10
+      - 🇺🇸_油管：全网最强白嫖_11
+      - 🇺🇸_油管：全网最强白嫖_12
+      - 🇯🇵_油管：全网最强白嫖_3
+      - 🇺🇸_油管：全网最强白嫖_13
+      - 🇺🇸_油管：全网最强白嫖_14
+      - 🇺🇸_油管：全网最强白嫖_15
+      - 🇺🇸_油管：全网最强白嫖_16
+      - 🇺🇸_油管：全网最强白嫖_17
+      - 🇨🇦_油管：全网最强白嫖
+      - 🇺🇸_油管：全网最强白嫖_18
+      - 🇨🇿_油管：全网最强白嫖_1
+      - 🇨🇿_油管：全网最强白嫖_2
+      - 🇨🇿_油管：全网最强白嫖_3
+      - 油管：最网最强白嫖_1
+      - 油管：最网最强白嫖_2
+      - 油管：最网最强白嫖_3
+      - 油管：最网最强白嫖_4
+      - 油管：最网最强白嫖_5
+      - 油管：最网最强白嫖_6
+      - 油管：最网最强白嫖_7
+      - 油管：最网最强白嫖_8
+      - 油管：最网最强白嫖_9
+      - 油管：最网最强白嫖_10
+      - 油管：最网最强白嫖_11
+      - 油管：最网最强白嫖_12
+      - 油管：最网最强白嫖_13
+      - 油管：最网最强白嫖_14
+      - 油管：最网最强白嫖_15
+      - 油管：最网最强白嫖_16
+      - 油管：最网最强白嫖_17
+      - 油管：最网最强白嫖_18
+      - 油管：最网最强白嫖_19
+      - 油管：最网最强白嫖_20
+      - 油管：最网最强白嫖_21
+      - 油管：最网最强白嫖_22
+      - 油管：最网最强白嫖_23
+      - 油管：最网最强白嫖_24
+      - 油管：最网最强白嫖_25
+      - 油管：最网最强白嫖_26
+      - 油管：最网最强白嫖_27
+      - 油管：最网最强白嫖_28
+      - 油管：最网最强白嫖_29
+      - 油管：最网最强白嫖_30
+      - 油管：最网最强白嫖_31
+      - 油管：最网最强白嫖_32
+      - 油管：最网最强白嫖_33
+      - 油管：最网最强白嫖_34
+      - 油管：最网最强白嫖_35
+      - 油管：最网最强白嫖_36
+      - 油管：最网最强白嫖_37
+      - 油管：最网最强白嫖_38
+      - 油管：最网最强白嫖_39
+      - 油管：最网最强白嫖_40
+      - 油管：最网最强白嫖_41
+      - 油管：最网最强白嫖_42
+      - 油管：最网最强白嫖_43
+      - 油管：最网最强白嫖_44
+      - 油管：最网最强白嫖_45
+      - 油管：最网最强白嫖_46
+      - 油管：最网最强白嫖_47
+      - 油管：最网最强白嫖_48
+      - 油管：最网最强白嫖_49
+      - 油管：最网最强白嫖_50
+      - 油管：最网最强白嫖_51
+      - 油管：最网最强白嫖_52
+      - 油管：最网最强白嫖_53
+      - 油管：最网最强白嫖_54
+      - 油管：最网最强白嫖_55
+      - 油管：最网最强白嫖_56
+      - 油管：最网最强白嫖_57
+      - 油管：最网最强白嫖_58
+      - 油管：最网最强白嫖_59
+      - 油管：最网最强白嫖_60
+      - 油管：最网最强白嫖_61
+      - 油管：最网最强白嫖_62
+      - 油管：最网最强白嫖_63
+      - 油管：最网最强白嫖_64
+      - 油管：最网最强白嫖_65
+      - 油管：最网最强白嫖_66
+      - 油管：最网最强白嫖_67
+      - 油管：最网最强白嫖_68
+      - 油管：最网最强白嫖_69
+      - 油管：最网最强白嫖_70
+      - 油管：最网最强白嫖_71
+      - 油管：最网最强白嫖_72
+      - 油管：最网最强白嫖_73
+      - 油管：最网最强白嫖_74
+      - 油管：最网最强白嫖_75
+      - 油管：最网最强白嫖_76
+      - 油管：最网最强白嫖_77
+      - 油管：最网最强白嫖_78
+      - 油管：最网最强白嫖_79
+      - 油管：最网最强白嫖_80
+      - 油管：最网最强白嫖_81
+      - 油管：最网最强白嫖_82
+      - 油管：最网最强白嫖_83
+      - 油管：最网最强白嫖_84
+      - 油管：最网最强白嫖_85
+      - 油管：最网最强白嫖_86
+      - 油管：最网最强白嫖_87
+      - 油管：最网最强白嫖_88
+      - 油管：最网最强白嫖_89
+      - 油管：最网最强白嫖_90
+      - 油管：最网最强白嫖_91
+      - 油管：最网最强白嫖_92
+      - 油管：最网最强白嫖_93
+      - 油管：最网最强白嫖_94
+      - 油管：最网最强白嫖_95
+      - 油管：最网最强白嫖_96
+      - 油管：最网最强白嫖_97
+      - 油管：最网最强白嫖_98
+      - 油管：最网最强白嫖_99
+      - 油管：最网最强白嫖_100
+      - 油管：最网最强白嫖_101
+      - 🇭🇰_HK_香港->🇨🇿_CZ_捷克_1
+      - 🇭🇰_HK_香港->🇨🇿_CZ_捷克_2
+      - 🇭🇰_HK_香港->🇨🇿_CZ_捷克_3
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
       - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_7
       - 🇺🇸_US_美国_8
       - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国_10
+      - 🇺🇸_US_美国_11
+      - 🇺🇸_US_美国_12
+      - 🇺🇸_US_美国_13
+      - 🇺🇸_US_美国_14
+      - 🇺🇸_US_美国_15
+      - 🇺🇸_US_美国_16
+      - 🇺🇸_US_美国_17
+      - 🇺🇸_US_美国_18
+      - 🇺🇸_US_美国_19
+      - 🇺🇸_US_美国_20
+      - 🇺🇸_US_美国_21
+      - 🇺🇸_US_美国_22
+      - 🇺🇸_US_美国_23
+      - 🇺🇸_US_美国_24
+      - 🇺🇸_US_美国_25
+      - 🇺🇸_US_美国_26
+      - 🇺🇸_US_美国_27
+      - 🇺🇸_US_美国_28
+      - 🇰🇷_KR_韩国
+      - 🇺🇸_US_美国_29
+      - 🇺🇸_US_美国_30
+      - 🇺🇸_US_美国_31
+      - 🇺🇸_US_美国_32
+      - 🇺🇸_US_美国_33
+      - 🇺🇸_US_美国_34
+      - 🇺🇸_US_美国_35
+      - 🇺🇸_US_美国_36
+      - 🇺🇸_US_美国_37
+      - 🇺🇸_US_美国_38
+      - 🇺🇸_US_美国_39
+      - 🇺🇸_US_美国_40
+      - 🇺🇸_US_美国_41
+      - 🇺🇸_US_美国_42
+      - 🇨🇦_CA_加拿大_1
+      - 🇺🇸_US_美国_43
+      - 🇺🇸_US_美国_44
+      - 🇺🇸_US_美国_45
+      - 🇨🇦_CA_加拿大_2
+      - 🇺🇸_US_美国_46
+      - 🇺🇸_US_美国_47
+      - 🇺🇸_US_美国_48
+      - 🇨🇦_CA_加拿大_3
+      - 🇨🇦_CA_加拿大_4
+      - 🇨🇦_CA_加拿大_5
+      - 🇺🇸_US_美国_49
+      - 🇺🇸_US_美国_50
+      - 🇺🇸_US_美国_51
+      - 🇺🇸_US_美国_52
+      - 🇺🇸_US_美国_53
+      - 🇺🇸_US_美国_54
+      - 🇺🇸_US_美国_55
+      - 🇨🇦_CA_加拿大_6
+      - 🇨🇦_CA_加拿大_7
+      - 🇺🇸_US_美国_56
+      - 🇺🇸_US_美国_57
+      - 🇨🇦_CA_加拿大_8
+      - 🇺🇸_US_美国_58
+      - 🇨🇦_CA_加拿大_9
+      - 🇺🇸_US_美国_59
+      - 🇺🇸_US_美国_60
+      - 🇺🇸_US_美国_61
+      - 🇨🇦_CA_加拿大_10
+      - 🇨🇦_CA_加拿大_11
+      - 🇨🇦_CA_加拿大_12
+      - 🇺🇸_US_美国_62
+      - 🇨🇦_CA_加拿大_13
+      - 🇨🇦_CA_加拿大_14
+      - 🇺🇸_US_美国_63
+      - 🇺🇸_US_美国_64
+      - 🇺🇸_US_美国_65
+      - 🇺🇸_US_美国_66
+      - 🇨🇦_CA_加拿大_15
+      - 🇺🇸_US_美国_67
+      - 🇺🇸_US_美国_68
+      - 🇨🇦_CA_加拿大_16
+      - 🇺🇸_US_美国_69
+      - 🇺🇸_US_美国_70
+      - 🇨🇦_CA_加拿大_17
+      - 🇨🇦_CA_加拿大_18
+      - 🇨🇦_CA_加拿大_19
+      - 🇨🇦_CA_加拿大_20
+      - 🇺🇸_US_美国_71
+      - 🇺🇸_US_美国_72
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
