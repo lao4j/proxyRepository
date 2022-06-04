@@ -5,60 +5,46 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"ssr","name":"🇨🇳_CN_中国->🇭🇰_HK_香港","server":"120.233.185.189","port":11845,"protocol":"auth_aes128_sha1","cipher":"chacha20-ietf","obfs":"tls1.2_ticket_auth","password":"Fhbe0z","protocol-param":"13370:DqGDfE"}
-  - {"type":"trojan","name":"🇺🇸_US_美国","server":"212.81.47.16","port":443,"password":"3yFq7NCP53mVfpXJz3","udp":true,"skip-cert-verify":true}
-  - {"type":"ssr","name":"🇨🇳_CN_中国->🇹🇼_TW_台湾","server":"120.233.185.189","port":11814,"protocol":"auth_aes128_sha1","cipher":"chacha20-ietf","obfs":"tls1.2_ticket_auth","password":"Fhbe0z","obfs-param":"ZEM1dFpTOTJjRzVvWVhR","protocol-param":"13370:DqGDfE"}
+  - {"type":"vmess","name":"🇺🇸_US_美国","server":"20.222.101.175","port":80,"uuid":"fa0702f4-8ec9-48e5-9b53-a0afb7c3717e","alterId":0,"cipher":"auto","network":"ws"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
       - 🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
       - 🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
       - 🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
       - 🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
       - 🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
       - 🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -81,9 +67,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
       - 🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
