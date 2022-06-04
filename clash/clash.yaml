@@ -5,60 +5,53 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"vmess","name":"中国-1.27MB/s(Youtube:不良林)","ws-opts":{"path":"/","headers":{"host":"159.27.115.21"}},"server":"159.27.115.21","port":64078,"uuid":"477fb2a0-daf4-3041-b6f6-5de3f42ecc69","alterId":0,"cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"台湾-1.09MB/s(Youtube:不良林)","ws-opts":{"path":"/ray","headers":{"host":"330tw.fans8.xyz"}},"server":"330tw.fans8.xyz","port":443,"uuid":"7f4ff2e1-c08f-35bd-afe7-4a6a386907aa","alterId":2,"cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"法国-488.2KB/s(Youtube:不良林)","ws-opts":{"path":"/path/120208301422","headers":{"host":"54.37.192.112"}},"server":"54.37.192.112","port":443,"uuid":"9f58234c-355b-4065-ae21-d4a63099aba5","alterId":64,"cipher":"auto","network":"ws","tls":true}
+  - {"type":"trojan","name":"🇺🇸_US_美国","server":"20.210.229.72","port":3389,"password":"ca4596fb9bc63cf2","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"🇹🇼_TW_台湾","server":"211.72.35.158","port":3389,"password":"9a27800ca7b52ee0","udp":true,"skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 中国-1.27MB/s(Youtube:不良林)
-      - 台湾-1.09MB/s(Youtube:不良林)
-      - 法国-488.2KB/s(Youtube:不良林)
+      - 🇺🇸_US_美国
+      - 🇹🇼_TW_台湾
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 中国-1.27MB/s(Youtube:不良林)
-      - 台湾-1.09MB/s(Youtube:不良林)
-      - 法国-488.2KB/s(Youtube:不良林)
+      - 🇺🇸_US_美国
+      - 🇹🇼_TW_台湾
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国-1.27MB/s(Youtube:不良林)
-      - 台湾-1.09MB/s(Youtube:不良林)
-      - 法国-488.2KB/s(Youtube:不良林)
+      - 🇺🇸_US_美国
+      - 🇹🇼_TW_台湾
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 中国-1.27MB/s(Youtube:不良林)
-      - 台湾-1.09MB/s(Youtube:不良林)
-      - 法国-488.2KB/s(Youtube:不良林)
+      - 🇺🇸_US_美国
+      - 🇹🇼_TW_台湾
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 中国-1.27MB/s(Youtube:不良林)
-      - 台湾-1.09MB/s(Youtube:不良林)
-      - 法国-488.2KB/s(Youtube:不良林)
+      - 🇺🇸_US_美国
+      - 🇹🇼_TW_台湾
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 中国-1.27MB/s(Youtube:不良林)
-      - 台湾-1.09MB/s(Youtube:不良林)
-      - 法国-488.2KB/s(Youtube:不良林)
+      - 🇺🇸_US_美国
+      - 🇹🇼_TW_台湾
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -81,9 +74,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国-1.27MB/s(Youtube:不良林)
-      - 台湾-1.09MB/s(Youtube:不良林)
-      - 法国-488.2KB/s(Youtube:不良林)
+      - 🇺🇸_US_美国
+      - 🇹🇼_TW_台湾
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
