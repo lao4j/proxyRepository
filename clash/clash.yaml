@@ -5,158 +5,53 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"vmess","name":"github.com/freefq-美国得克萨斯州4","server":"tw.arthas.cf","port":"443","uuid":"fc4ef5e0-38d3-4253-a855-6820169234cc","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"trojan","name":"bcoder.clbug.com+-+日本++5+++","server":"527hk5.fans8.xyz","port":443,"password":"3a908e99-897f-4434-99b4-7929fb798bc5","udp":true,"skip-cert-verify":true}
-  - {"type":"vmess","name":"github.com/freefq-广东省珠海市电信12","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"www.ivpnpro.net"}},"server":"ingress-i1.onebox6.org","port":"38201","uuid":"79386685-16da-327c-9e14-aa6d702d86bc","alterId":"1","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"github.com/freefq-法国OVH数据中心13","ws-opts":{"path":"/path/120208301422","headers":{"host":"54.37.192.112"}},"server":"54.37.192.112","port":"443","uuid":"9f58234c-355b-4065-ae21-d4a63099aba5","alterId":"64","cipher":"auto","network":"ws","tls":true}
-  - {"type":"trojan","name":"bcoder.clbug.com+-+美国加利福尼亚州洛杉矶市SharkTech数据中心+16+++","server":"usa004.369boy.com","port":14001,"password":"d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"bcoder.clbug.com+-+美国加利福尼亚州洛杉矶市SharkTech数据中心+17+++","server":"usa006.369boy.com","port":16001,"password":"d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6","udp":true,"skip-cert-verify":true}
-  - {"type":"vmess","name":"github.com/freefq-香港BGP.NET数据中心18","ws-opts":{"path":"/"},"server":"180.215.196.10","port":"39043","uuid":"1b2f44e4-a810-48a8-b620-a4567b46c9b7","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"github.com/freefq-美国20","ws-opts":{"path":"/","headers":{"host":"159.27.115.21"}},"server":"159.27.115.21","port":"64078","uuid":"477fb2a0-daf4-3041-b6f6-5de3f42ecc69","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"github.com/freefq-加拿大22","ws-opts":{"path":"/ray","headers":{"host":"331tw.fans8.xyz"}},"server":"331tw.fans8.xyz","port":"80","uuid":"7f4ff2e1-c08f-35bd-afe7-4a6a386907aa","alterId":"2","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"github.com/freefq-新加坡Linode数据中心26","ws-opts":{"path":"/howdy"},"server":"v2ray3.bonds.id","port":"443","uuid":"014291fb-3808-4ae8-9303-e1f40d58bb4f","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"github.com/freefq-亚太地区27","server":"103.172.116.87","port":"31244","uuid":"b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33","alterId":"0","cipher":"auto","network":"tcp","tls":true}
-  - {"type":"vmess","name":"github.com/freefq-英国社会保险安全部28","server":"51.210.179.47","port":"31225","uuid":"b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33","alterId":"0","cipher":"auto","network":"tcp","tls":true}
-  - {"type":"vmess","name":"github.com/freefq-美国Microsoft数据中心29","ws-opts":{"path":"/db","headers":{"host":"cm01.db-link.in"}},"server":"cm01.db-link.in","port":"13302","uuid":"c4fa06ca-c18f-37a4-ba0e-63537c0fb672","alterId":"1","cipher":"auto","network":"ws","tls":true}
-  - {"type":"trojan","name":"bcoder.clbug.com+-+印度++30+++","server":"2.tiantang.cf","port":59195,"password":"pA52tFTlGZ","udp":true,"skip-cert-verify":true}
-  - {"type":"vmess","name":"@SSRSUB-V02-付费推荐:suo.yt/ssrsub","ws-opts":{"path":"/ws","headers":{"host":"ahdaeph8.com"}},"server":"ahdaeph8.com","port":"443","uuid":"aba50dd4-5484-3b05-b14a-4661caf862d5","alterId":"4","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"@SSRSUB-V12-付费推荐:suo.yt/ssrsub","server":"bgpv2.ktyjsq.com","port":"12224","uuid":"9ea70d57-9cb6-3bd0-ae41-5601e516dcc6","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"vmess","name":"@SSRSUB-V19-付费推荐:suo.yt/ssrsub","server":"bgpv2.ktyjsq.com","port":"12005","uuid":"9ea70d57-9cb6-3bd0-ae41-5601e516dcc6","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇨🇳_CN_中国->🇭🇰_HK_香港","server":"159.27.115.21","port":64078,"uuid":"477fb2a0-daf4-3041-b6f6-5de3f42ecc69","alterId":0,"cipher":"auto","network":"ws","tls":true}
+  - {"type":"ss","name":"🇦🇪_AE_阿联酋","server":"217.138.193.6","port":803,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - github.com/freefq-美国得克萨斯州4
-      - bcoder.clbug.com+-+日本++5+++
-      - github.com/freefq-广东省珠海市电信12
-      - github.com/freefq-法国OVH数据中心13
-      - bcoder.clbug.com+-+美国加利福尼亚州洛杉矶市SharkTech数据中心+16+++
-      - bcoder.clbug.com+-+美国加利福尼亚州洛杉矶市SharkTech数据中心+17+++
-      - github.com/freefq-香港BGP.NET数据中心18
-      - github.com/freefq-美国20
-      - github.com/freefq-加拿大22
-      - github.com/freefq-新加坡Linode数据中心26
-      - github.com/freefq-亚太地区27
-      - github.com/freefq-英国社会保险安全部28
-      - github.com/freefq-美国Microsoft数据中心29
-      - bcoder.clbug.com+-+印度++30+++
-      - '@SSRSUB-V02-付费推荐:suo.yt/ssrsub'
-      - '@SSRSUB-V12-付费推荐:suo.yt/ssrsub'
-      - '@SSRSUB-V19-付费推荐:suo.yt/ssrsub'
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇦🇪_AE_阿联酋
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - github.com/freefq-美国得克萨斯州4
-      - bcoder.clbug.com+-+日本++5+++
-      - github.com/freefq-广东省珠海市电信12
-      - github.com/freefq-法国OVH数据中心13
-      - bcoder.clbug.com+-+美国加利福尼亚州洛杉矶市SharkTech数据中心+16+++
-      - bcoder.clbug.com+-+美国加利福尼亚州洛杉矶市SharkTech数据中心+17+++
-      - github.com/freefq-香港BGP.NET数据中心18
-      - github.com/freefq-美国20
-      - github.com/freefq-加拿大22
-      - github.com/freefq-新加坡Linode数据中心26
-      - github.com/freefq-亚太地区27
-      - github.com/freefq-英国社会保险安全部28
-      - github.com/freefq-美国Microsoft数据中心29
-      - bcoder.clbug.com+-+印度++30+++
-      - '@SSRSUB-V02-付费推荐:suo.yt/ssrsub'
-      - '@SSRSUB-V12-付费推荐:suo.yt/ssrsub'
-      - '@SSRSUB-V19-付费推荐:suo.yt/ssrsub'
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇦🇪_AE_阿联酋
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - github.com/freefq-美国得克萨斯州4
-      - bcoder.clbug.com+-+日本++5+++
-      - github.com/freefq-广东省珠海市电信12
-      - github.com/freefq-法国OVH数据中心13
-      - bcoder.clbug.com+-+美国加利福尼亚州洛杉矶市SharkTech数据中心+16+++
-      - bcoder.clbug.com+-+美国加利福尼亚州洛杉矶市SharkTech数据中心+17+++
-      - github.com/freefq-香港BGP.NET数据中心18
-      - github.com/freefq-美国20
-      - github.com/freefq-加拿大22
-      - github.com/freefq-新加坡Linode数据中心26
-      - github.com/freefq-亚太地区27
-      - github.com/freefq-英国社会保险安全部28
-      - github.com/freefq-美国Microsoft数据中心29
-      - bcoder.clbug.com+-+印度++30+++
-      - '@SSRSUB-V02-付费推荐:suo.yt/ssrsub'
-      - '@SSRSUB-V12-付费推荐:suo.yt/ssrsub'
-      - '@SSRSUB-V19-付费推荐:suo.yt/ssrsub'
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇦🇪_AE_阿联酋
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - github.com/freefq-美国得克萨斯州4
-      - bcoder.clbug.com+-+日本++5+++
-      - github.com/freefq-广东省珠海市电信12
-      - github.com/freefq-法国OVH数据中心13
-      - bcoder.clbug.com+-+美国加利福尼亚州洛杉矶市SharkTech数据中心+16+++
-      - bcoder.clbug.com+-+美国加利福尼亚州洛杉矶市SharkTech数据中心+17+++
-      - github.com/freefq-香港BGP.NET数据中心18
-      - github.com/freefq-美国20
-      - github.com/freefq-加拿大22
-      - github.com/freefq-新加坡Linode数据中心26
-      - github.com/freefq-亚太地区27
-      - github.com/freefq-英国社会保险安全部28
-      - github.com/freefq-美国Microsoft数据中心29
-      - bcoder.clbug.com+-+印度++30+++
-      - '@SSRSUB-V02-付费推荐:suo.yt/ssrsub'
-      - '@SSRSUB-V12-付费推荐:suo.yt/ssrsub'
-      - '@SSRSUB-V19-付费推荐:suo.yt/ssrsub'
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇦🇪_AE_阿联酋
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - github.com/freefq-美国得克萨斯州4
-      - bcoder.clbug.com+-+日本++5+++
-      - github.com/freefq-广东省珠海市电信12
-      - github.com/freefq-法国OVH数据中心13
-      - bcoder.clbug.com+-+美国加利福尼亚州洛杉矶市SharkTech数据中心+16+++
-      - bcoder.clbug.com+-+美国加利福尼亚州洛杉矶市SharkTech数据中心+17+++
-      - github.com/freefq-香港BGP.NET数据中心18
-      - github.com/freefq-美国20
-      - github.com/freefq-加拿大22
-      - github.com/freefq-新加坡Linode数据中心26
-      - github.com/freefq-亚太地区27
-      - github.com/freefq-英国社会保险安全部28
-      - github.com/freefq-美国Microsoft数据中心29
-      - bcoder.clbug.com+-+印度++30+++
-      - '@SSRSUB-V02-付费推荐:suo.yt/ssrsub'
-      - '@SSRSUB-V12-付费推荐:suo.yt/ssrsub'
-      - '@SSRSUB-V19-付费推荐:suo.yt/ssrsub'
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇦🇪_AE_阿联酋
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - github.com/freefq-美国得克萨斯州4
-      - bcoder.clbug.com+-+日本++5+++
-      - github.com/freefq-广东省珠海市电信12
-      - github.com/freefq-法国OVH数据中心13
-      - bcoder.clbug.com+-+美国加利福尼亚州洛杉矶市SharkTech数据中心+16+++
-      - bcoder.clbug.com+-+美国加利福尼亚州洛杉矶市SharkTech数据中心+17+++
-      - github.com/freefq-香港BGP.NET数据中心18
-      - github.com/freefq-美国20
-      - github.com/freefq-加拿大22
-      - github.com/freefq-新加坡Linode数据中心26
-      - github.com/freefq-亚太地区27
-      - github.com/freefq-英国社会保险安全部28
-      - github.com/freefq-美国Microsoft数据中心29
-      - bcoder.clbug.com+-+印度++30+++
-      - '@SSRSUB-V02-付费推荐:suo.yt/ssrsub'
-      - '@SSRSUB-V12-付费推荐:suo.yt/ssrsub'
-      - '@SSRSUB-V19-付费推荐:suo.yt/ssrsub'
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇦🇪_AE_阿联酋
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -179,23 +74,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - github.com/freefq-美国得克萨斯州4
-      - bcoder.clbug.com+-+日本++5+++
-      - github.com/freefq-广东省珠海市电信12
-      - github.com/freefq-法国OVH数据中心13
-      - bcoder.clbug.com+-+美国加利福尼亚州洛杉矶市SharkTech数据中心+16+++
-      - bcoder.clbug.com+-+美国加利福尼亚州洛杉矶市SharkTech数据中心+17+++
-      - github.com/freefq-香港BGP.NET数据中心18
-      - github.com/freefq-美国20
-      - github.com/freefq-加拿大22
-      - github.com/freefq-新加坡Linode数据中心26
-      - github.com/freefq-亚太地区27
-      - github.com/freefq-英国社会保险安全部28
-      - github.com/freefq-美国Microsoft数据中心29
-      - bcoder.clbug.com+-+印度++30+++
-      - '@SSRSUB-V02-付费推荐:suo.yt/ssrsub'
-      - '@SSRSUB-V12-付费推荐:suo.yt/ssrsub'
-      - '@SSRSUB-V19-付费推荐:suo.yt/ssrsub'
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇦🇪_AE_阿联酋
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
