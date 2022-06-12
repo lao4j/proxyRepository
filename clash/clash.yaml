@@ -15,8 +15,6 @@ proxies:
   - {"type":"vmess","name":"🇺🇸_US_美国_2","server":"93.179.112.142","port":54317,"uuid":"faeb79e5-6549-4b08-8e87-3d7c5457930d","alterId":0,"cipher":"auto","network":"tcp"}
   - {"type":"ss","name":"🇨🇳_CN_中国->🇰🇷_KR_韩国","server":"180.163.62.91","port":10064,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
   - {"type":"vmess","name":"🇨🇳_CN_中国->🇹🇼_TW_台湾","server":"jj01.nfeng6.pp.ua","port":39052,"uuid":"025f4054-7985-38c3-8f62-6e50f098ad3b","alterId":0,"cipher":"auto","network":"tcp"}
-  - {"type":"trojan","name":"🇨🇳_CN_中国->🇭🇰_HK_香港_3","server":"120.233.186.71","port":3384,"password":"d66013c645b93c5c","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇩🇪_DE_德国->🇸🇬_SG_新加坡","server":"s4.hazz.win","port":12340,"password":"dfbf0d67-f03d-4184-a224-c2d64a571f99","udp":true,"skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -33,8 +31,6 @@ proxy-groups:
       - 🇺🇸_US_美国_2
       - 🇨🇳_CN_中国->🇰🇷_KR_韩国
       - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_3
-      - 🇩🇪_DE_德国->🇸🇬_SG_新加坡
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -51,8 +47,6 @@ proxy-groups:
       - 🇺🇸_US_美国_2
       - 🇨🇳_CN_中国->🇰🇷_KR_韩国
       - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_3
-      - 🇩🇪_DE_德国->🇸🇬_SG_新加坡
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -69,8 +63,6 @@ proxy-groups:
       - 🇺🇸_US_美国_2
       - 🇨🇳_CN_中国->🇰🇷_KR_韩国
       - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_3
-      - 🇩🇪_DE_德国->🇸🇬_SG_新加坡
   - name: 📲 电报信息
     type: select
     proxies:
@@ -86,8 +78,6 @@ proxy-groups:
       - 🇺🇸_US_美国_2
       - 🇨🇳_CN_中国->🇰🇷_KR_韩国
       - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_3
-      - 🇩🇪_DE_德国->🇸🇬_SG_新加坡
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -103,8 +93,6 @@ proxy-groups:
       - 🇺🇸_US_美国_2
       - 🇨🇳_CN_中国->🇰🇷_KR_韩国
       - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_3
-      - 🇩🇪_DE_德国->🇸🇬_SG_新加坡
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -120,8 +108,6 @@ proxy-groups:
       - 🇺🇸_US_美国_2
       - 🇨🇳_CN_中国->🇰🇷_KR_韩国
       - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_3
-      - 🇩🇪_DE_德国->🇸🇬_SG_新加坡
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -154,8 +140,6 @@ proxy-groups:
       - 🇺🇸_US_美国_2
       - 🇨🇳_CN_中国->🇰🇷_KR_韩国
       - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_3
-      - 🇩🇪_DE_德国->🇸🇬_SG_新加坡
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
