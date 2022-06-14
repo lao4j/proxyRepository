@@ -5,375 +5,466 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"trojan","name":"🇺🇸_US_美国_1","server":"s1.hazz.win","port":12340,"password":"dfbf0d67-f03d-4184-a224-c2d64a571f99","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇺🇸_US_美国_2","server":"jgwdb2.gaox.ml","port":443,"password":"c19d1432-8b3e-4818-8837-3d160cf65908","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇭🇰_HK_香港->🇺🇸_US_美国_1","server":"azgy001.xiba1.xyz","port":20714,"password":"93768960-75fc-34e5-8025-7ff0cc5a0aa6","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇭🇰_HK_香港->🇺🇸_US_美国_2","server":"azgy001.xiba1.xyz","port":20711,"password":"93768960-75fc-34e5-8025-7ff0cc5a0aa6","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","name":"🇺🇸_US_美国_3","server":"167.88.61.2","port":812,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"type":"trojan","name":"🇺🇸_US_美国->🇸🇬_SG_新加坡_1","server":"AZQT001.xiba1.xyz","port":20740,"password":"93768960-75fc-34e5-8025-7ff0cc5a0aa6","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇩🇪_DE_德国->🇸🇬_SG_新加坡","server":"s4.hazz.win","port":12340,"password":"dfbf0d67-f03d-4184-a224-c2d64a571f99","udp":true,"skip-cert-verify":true}
-  - {"type":"vmess","name":"🇺🇸_US_美国_4","ws-opts":{"path":"/chat","headers":{"host":"vus3.0bad.com"}},"server":"vus3.0bad.com","port":443,"uuid":"927094d3-d678-4763-8591-e240d0bcae87","alterId":0,"cipher":"auto","network":"ws","tls":true}
-  - {"type":"trojan","name":"🇺🇸_US_美国_5","server":"212.81.47.12","port":443,"password":"3yFq7NCP53mVfpXJz3","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇺🇸_US_美国_6","server":"212.81.47.14","port":443,"password":"3yFq7NCP53mVfpXJz3","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇺🇸_US_美国->🇸🇬_SG_新加坡_2","server":"AZQT001.xiba1.xyz","port":20728,"password":"93768960-75fc-34e5-8025-7ff0cc5a0aa6","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇭🇰_HK_香港_1","server":"AZHJ001.xiba1.xyz","port":20725,"password":"93768960-75fc-34e5-8025-7ff0cc5a0aa6","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇭🇰_HK_香港->🇺🇸_US_美国_3","server":"azgy001.xiba1.xyz","port":20712,"password":"93768960-75fc-34e5-8025-7ff0cc5a0aa6","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇺🇸_US_美国_7","server":"212.81.47.13","port":443,"password":"3yFq7NCP53mVfpXJz3","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇭🇰_HK_香港->🇺🇸_US_美国_4","server":"azgy001.xiba1.xyz","port":20710,"password":"93768960-75fc-34e5-8025-7ff0cc5a0aa6","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇭🇰_HK_香港->🇺🇸_US_美国_5","server":"azgy001.xiba1.xyz","port":20713,"password":"93768960-75fc-34e5-8025-7ff0cc5a0aa6","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇺🇸_US_美国_8","server":"AZQT001.xiba1.xyz","port":20748,"password":"93768960-75fc-34e5-8025-7ff0cc5a0aa6","udp":true,"skip-cert-verify":true}
-  - {"type":"ssr","name":"🇨🇳_CN_中国->🇹🇼_TW_台湾","server":"116.129.254.212","port":48612,"protocol":"auth_aes128_sha1","cipher":"aes-256-cfb","obfs":"http_simple","password":"GjRQkK","protocol-param":"1062:tLkKEk"}
-  - {"type":"trojan","name":"🇨🇳_CN_中国->🇯🇵_JP_日本_1","server":"hn.zfnode.org","port":30217,"password":"63ec756d-1f6a-36c8-a9fd-025f4acfc74f","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇺🇸_US_美国->🇸🇬_SG_新加坡_3","server":"AZQT001.xiba1.xyz","port":20741,"password":"93768960-75fc-34e5-8025-7ff0cc5a0aa6","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇺🇸_US_美国_9","server":"AZQT001.xiba1.xyz","port":20730,"password":"93768960-75fc-34e5-8025-7ff0cc5a0aa6","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇰🇷_KR_韩国_1","server":"52.231.75.156","port":12580,"password":"1c994b60-3574-4135-81c7-84187668b30f","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇺🇸_US_美国->🇸🇬_SG_新加坡_4","server":"AZQT001.xiba1.xyz","port":20739,"password":"93768960-75fc-34e5-8025-7ff0cc5a0aa6","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","name":"🇺🇸_US_美国_10","server":"167.88.61.2","port":801,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"type":"ss","name":"🇺🇸_US_美国_11","server":"167.88.61.2","port":803,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"type":"vmess","name":"🇭🇺_HU_匈牙利","server":"185.225.69.134","port":45081,"uuid":"3c3bfd75-dc30-4e76-8940-47e1137e21f9","alterId":64,"cipher":"auto","network":"tcp"}
-  - {"type":"trojan","name":"🇺🇸_US_美国->🇸🇬_SG_新加坡_5","server":"AZQT001.xiba1.xyz","port":20733,"password":"93768960-75fc-34e5-8025-7ff0cc5a0aa6","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","name":"🇨🇳_CN_中国->🇯🇵_JP_日本_2","server":"120.233.185.59","port":20021,"cipher":"aes-128-gcm","password":"dbdc16e3-1f61-41bb-99a6-5f29d8b86f82"}
-  - {"type":"ss","name":"🇺🇸_US_美国_12","server":"167.88.61.2","port":808,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"type":"ssr","name":"🇨🇳_CN_中国->🇺🇸_US_美国","server":"116.129.254.212","port":48615,"protocol":"auth_aes128_sha1","cipher":"aes-256-cfb","obfs":"http_simple","password":"GjRQkK","protocol-param":"1062:tLkKEk"}
-  - {"type":"vmess","name":"🇺🇸_US_美国->🇬🇧_GB_英国","ws-opts":{"path":"/getweather"},"server":"app.ssfree.ru","port":443,"uuid":"773c2bba-eb96-11ec-8260-000017022008","alterId":64,"cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"🇰🇷_KR_韩国_2","server":"kr-07.freesocks5.tk","port":28996,"uuid":"97db7c58-0573-481a-c90c-bc8e41b6b89b","alterId":0,"cipher":"auto","network":"tcp"}
-  - {"type":"ss","name":"🇨🇳_CN_中国->🇯🇵_JP_日本_3","server":"cdn2.myuuusss.com","port":20021,"cipher":"aes-128-gcm","password":"dbdc16e3-1f61-41bb-99a6-5f29d8b86f82"}
-  - {"type":"trojan","name":"🇦🇺_AU_澳大利亚","server":"jgwxn4.gaox.ml","port":443,"password":"e8c1ab3c-89b3-4933-92df-682e6dce7819","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇭🇰_HK_香港_2","server":"AZHJ001.xiba1.xyz","port":20723,"password":"93768960-75fc-34e5-8025-7ff0cc5a0aa6","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇺🇸_US_美国_13","server":"au2-1.nigirocloud.com","port":443,"password":"3yFq7NCP53mVfpXJz3","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇺🇸_US_美国_14","server":"AZQT001.xiba1.xyz","port":20743,"password":"93768960-75fc-34e5-8025-7ff0cc5a0aa6","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","name":"🇺🇸_US_美国_15","server":"167.88.61.2","port":802,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"type":"trojan","name":"🇺🇸_US_美国_16","server":"au2-2.nigirocloud.com","port":443,"password":"3yFq7NCP53mVfpXJz3","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"default_name","server":"193.178.210.29","port":443,"password":"iKR3Ft","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇺🇸_US_美国->🇸🇬_SG_新加坡_6","server":"AZQT001.xiba1.xyz","port":20736,"password":"93768960-75fc-34e5-8025-7ff0cc5a0aa6","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇭🇰_HK_香港->🇲🇾_MY_马来西亚","server":"azgy001.xiba1.xyz","port":6004,"password":"93768960-75fc-34e5-8025-7ff0cc5a0aa6","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","name":"🇺🇸_US_美国_17","server":"167.88.61.2","port":807,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"type":"trojan","name":"🇺🇸_US_美国->🇸🇬_SG_新加坡_7","server":"AZQT001.xiba1.xyz","port":20734,"password":"93768960-75fc-34e5-8025-7ff0cc5a0aa6","udp":true,"skip-cert-verify":true}
-  - {"type":"ssr","name":"🇫🇷_FR_法国","server":"51.210.51.88","port":443,"protocol":"auth_chain_a","cipher":"aes-192-ctr","obfs":"tls1.2_ticket_auth","password":"sEscPBiAD9K$&@79"}
-  - {"type":"trojan","name":"🇨🇳_CN_中国->_null_null","server":"sg-cn.teacher2050.com","port":43508,"password":"E44523FE-B9E4-BD49-AEAF-DBABE701D016","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇺🇸_US_美国->🇨🇿_CZ_捷克","server":"HJ001.xiba1.xyz","port":20762,"password":"93768960-75fc-34e5-8025-7ff0cc5a0aa6","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇸🇬_SG_新加坡","server":"s2.hazz.win","port":12340,"password":"dfbf0d67-f03d-4184-a224-c2d64a571f99","udp":true,"skip-cert-verify":true}
+  - {"type":"ss","name":"OutlineKeys_GB_1","server":"172.99.190.61","port":5600,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"OutlineKeys_GB_2","server":"212.38.189.174","port":7306,"cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
+  - {"type":"ss","name":"OutlineKeys_US_3","server":"167.88.63.64","port":2375,"cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+  - {"type":"ss","name":"OutlineKeys_US_4","server":"167.88.63.64","port":443,"cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"type":"ss","name":"OutlineKeys_CA_5","server":"51.161.118.38","port":801,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"OutlineKeys_SE_6","server":"196.196.156.122","port":809,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"OutlineKeys_US_7","server":"167.88.63.21","port":5601,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"OutlineKeys_US_8","server":"142.202.48.114","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"type":"ss","name":"OutlineKeys_JP_9","server":"45.66.134.176","port":809,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"OutlineKeys_HK_10","server":"62.216.92.167","port":812,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"OutlineKeys_SG_11","server":"51.79.166.171","port":50004,"cipher":"aes-256-cfb","password":"4415934295"}
+  - {"type":"ss","name":"OutlineKeys_GB_12","server":"172.99.190.35","port":5601,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"OutlineKeys_US_13","server":"169.197.141.109","port":5001,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"OutlineKeys_GB_14","server":"212.38.189.174","port":8881,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"type":"ss","name":"OutlineKeys_CA_15","server":"134.195.196.24","port":8080,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"OutlineKeys_IN_16","server":"172.105.39.228","port":3306,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"OutlineKeys_KR_17","server":"141.164.42.236","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"type":"ss","name":"OutlineKeys_DE_18","server":"185.104.184.78","port":809,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"OutlineKeys_CA_19","server":"198.57.27.241","port":2376,"cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+  - {"type":"ss","name":"OutlineKeys_FR_20","server":"145.239.1.137","port":5004,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"type":"ss","name":"OutlineKeys_US_21","server":"142.202.48.77","port":8000,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"OutlineKeys_CA_22","server":"198.57.27.229","port":8080,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"OutlineKeys_CA_23","server":"198.57.27.191","port":6697,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"type":"ss","name":"OutlineKeys_DE_24","server":"85.114.138.92","port":809,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"OutlineKeys_BA_25","server":"185.212.111.59","port":49339,"cipher":"aes-256-gcm","password":"suucSeVLmt6PQKAP77NtGw9x"}
+  - {"type":"ss","name":"OutlineKeys_FR_26","server":"145.239.1.100","port":8090,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+  - {"type":"ss","name":"OutlineKeys_DE_27","server":"193.108.118.36","port":7002,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"type":"ss","name":"OutlineKeys_US_28","server":"142.202.48.55","port":7307,"cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
+  - {"type":"ss","name":"OutlineKeys_US_29","server":"142.202.48.7","port":8009,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"type":"ss","name":"OutlineKeys_US_30","server":"172.99.188.99","port":2376,"cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+  - {"type":"ss","name":"OutlineKeys_CA_31","server":"134.195.196.217","port":7002,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"type":"ss","name":"OutlineKeys_US_32","server":"172.99.188.99","port":8888,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"OutlineKeys_GB_33","server":"172.99.190.61","port":6697,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"type":"ss","name":"OutlineKeys_CA_34","server":"134.195.196.170","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"type":"ss","name":"OutlineKeys_US_35","server":"167.88.63.64","port":2375,"cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+  - {"type":"ss","name":"OutlineKeys_BA_36","server":"185.212.111.59","port":33992,"cipher":"aes-256-gcm","password":"8n6pwAcrrv2pj6tFY2p3TbQ6"}
+  - {"type":"ss","name":"OutlineKeys_CA_37","server":"198.57.27.172","port":8080,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"OutlineKeys_US_38","server":"142.202.48.7","port":3306,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"OutlineKeys_SE_39","server":"196.196.156.122","port":809,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"OutlineKeys_JP_40","server":"45.66.134.176","port":811,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"OutlineKeys_SG_41","server":"139.162.24.50","port":8009,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"type":"ss","name":"OutlineKeys_IN_42","server":"172.105.39.228","port":5601,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"OutlineKeys_JP_43","server":"45.66.134.176","port":807,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"OutlineKeys_US_44","server":"172.99.188.99","port":8119,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"type":"ss","name":"OutlineKeys_CA_45","server":"51.161.118.38","port":808,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"OutlineKeys_UA_46","server":"77.120.115.235","port":444,"cipher":"chacha20-ietf-poly1305","password":"Fowwipho"}
+  - {"type":"ss","name":"OutlineKeys_IT_47","server":"95.174.23.218","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
+  - {"type":"ss","name":"OutlineKeys_US_48","server":"172.99.188.99","port":8119,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"type":"ss","name":"OutlineKeys_FR_49","server":"145.239.1.100","port":8091,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+  - {"type":"ss","name":"OutlineKeys_FR_50","server":"195.154.200.150","port":2376,"cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+  - {"type":"ss","name":"OutlineKeys_GB_51","server":"51.89.164.86","port":50004,"cipher":"aes-256-cfb","password":"4415934295"}
+  - {"type":"ss","name":"OutlineKeys_IT_52","server":"95.174.23.218","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
+  - {"type":"ss","name":"OutlineKeys_RU_53","server":"83.217.9.76","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
+  - {"type":"ss","name":"OutlineKeys_CA_54","server":"134.195.198.95","port":5004,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"type":"ss","name":"OutlineKeys_DE_55","server":"85.114.138.92","port":809,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"OutlineKeys_RU_56","server":"213.183.53.202","port":9059,"cipher":"aes-256-cfb","password":"9XwYyZsK8SNzQDtY"}
+  - {"type":"ss","name":"OutlineKeys_US_57","server":"172.99.188.99","port":5601,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"OutlineKeys_FR_58","server":"145.239.1.100","port":8000,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"OutlineKeys_CA_59","server":"198.57.27.184","port":2375,"cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+  - {"type":"ss","name":"OutlineKeys_RU_60","server":"213.183.53.177","port":9027,"cipher":"aes-256-cfb","password":"EXN3S3eQpjE7EJu8"}
+  - {"type":"ss","name":"OutlineKeys_IT_61","server":"158.58.173.240","port":812,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_1
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_1
-      - 🇩🇪_DE_德国->🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_2
-      - 🇭🇰_HK_香港_1
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_7
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_4
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_8
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_3
-      - 🇺🇸_US_美国_9
-      - 🇰🇷_KR_韩国_1
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_4
-      - 🇺🇸_US_美国_10
-      - 🇺🇸_US_美国_11
-      - 🇭🇺_HU_匈牙利
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_5
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
-      - 🇺🇸_US_美国_12
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇰🇷_KR_韩国_2
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_3
-      - 🇦🇺_AU_澳大利亚
-      - 🇭🇰_HK_香港_2
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇺🇸_US_美国_15
-      - 🇺🇸_US_美国_16
-      - default_name
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_6
-      - 🇭🇰_HK_香港->🇲🇾_MY_马来西亚
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_7
-      - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->_null_null
-      - 🇺🇸_US_美国->🇨🇿_CZ_捷克
-      - 🇸🇬_SG_新加坡
+      - OutlineKeys_GB_1
+      - OutlineKeys_GB_2
+      - OutlineKeys_US_3
+      - OutlineKeys_US_4
+      - OutlineKeys_CA_5
+      - OutlineKeys_SE_6
+      - OutlineKeys_US_7
+      - OutlineKeys_US_8
+      - OutlineKeys_JP_9
+      - OutlineKeys_HK_10
+      - OutlineKeys_SG_11
+      - OutlineKeys_GB_12
+      - OutlineKeys_US_13
+      - OutlineKeys_GB_14
+      - OutlineKeys_CA_15
+      - OutlineKeys_IN_16
+      - OutlineKeys_KR_17
+      - OutlineKeys_DE_18
+      - OutlineKeys_CA_19
+      - OutlineKeys_FR_20
+      - OutlineKeys_US_21
+      - OutlineKeys_CA_22
+      - OutlineKeys_CA_23
+      - OutlineKeys_DE_24
+      - OutlineKeys_BA_25
+      - OutlineKeys_FR_26
+      - OutlineKeys_DE_27
+      - OutlineKeys_US_28
+      - OutlineKeys_US_29
+      - OutlineKeys_US_30
+      - OutlineKeys_CA_31
+      - OutlineKeys_US_32
+      - OutlineKeys_GB_33
+      - OutlineKeys_CA_34
+      - OutlineKeys_US_35
+      - OutlineKeys_BA_36
+      - OutlineKeys_CA_37
+      - OutlineKeys_US_38
+      - OutlineKeys_SE_39
+      - OutlineKeys_JP_40
+      - OutlineKeys_SG_41
+      - OutlineKeys_IN_42
+      - OutlineKeys_JP_43
+      - OutlineKeys_US_44
+      - OutlineKeys_CA_45
+      - OutlineKeys_UA_46
+      - OutlineKeys_IT_47
+      - OutlineKeys_US_48
+      - OutlineKeys_FR_49
+      - OutlineKeys_FR_50
+      - OutlineKeys_GB_51
+      - OutlineKeys_IT_52
+      - OutlineKeys_RU_53
+      - OutlineKeys_CA_54
+      - OutlineKeys_DE_55
+      - OutlineKeys_RU_56
+      - OutlineKeys_US_57
+      - OutlineKeys_FR_58
+      - OutlineKeys_CA_59
+      - OutlineKeys_RU_60
+      - OutlineKeys_IT_61
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_1
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_1
-      - 🇩🇪_DE_德国->🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_2
-      - 🇭🇰_HK_香港_1
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_7
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_4
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_8
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_3
-      - 🇺🇸_US_美国_9
-      - 🇰🇷_KR_韩国_1
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_4
-      - 🇺🇸_US_美国_10
-      - 🇺🇸_US_美国_11
-      - 🇭🇺_HU_匈牙利
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_5
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
-      - 🇺🇸_US_美国_12
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇰🇷_KR_韩国_2
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_3
-      - 🇦🇺_AU_澳大利亚
-      - 🇭🇰_HK_香港_2
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇺🇸_US_美国_15
-      - 🇺🇸_US_美国_16
-      - default_name
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_6
-      - 🇭🇰_HK_香港->🇲🇾_MY_马来西亚
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_7
-      - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->_null_null
-      - 🇺🇸_US_美国->🇨🇿_CZ_捷克
-      - 🇸🇬_SG_新加坡
+      - OutlineKeys_GB_1
+      - OutlineKeys_GB_2
+      - OutlineKeys_US_3
+      - OutlineKeys_US_4
+      - OutlineKeys_CA_5
+      - OutlineKeys_SE_6
+      - OutlineKeys_US_7
+      - OutlineKeys_US_8
+      - OutlineKeys_JP_9
+      - OutlineKeys_HK_10
+      - OutlineKeys_SG_11
+      - OutlineKeys_GB_12
+      - OutlineKeys_US_13
+      - OutlineKeys_GB_14
+      - OutlineKeys_CA_15
+      - OutlineKeys_IN_16
+      - OutlineKeys_KR_17
+      - OutlineKeys_DE_18
+      - OutlineKeys_CA_19
+      - OutlineKeys_FR_20
+      - OutlineKeys_US_21
+      - OutlineKeys_CA_22
+      - OutlineKeys_CA_23
+      - OutlineKeys_DE_24
+      - OutlineKeys_BA_25
+      - OutlineKeys_FR_26
+      - OutlineKeys_DE_27
+      - OutlineKeys_US_28
+      - OutlineKeys_US_29
+      - OutlineKeys_US_30
+      - OutlineKeys_CA_31
+      - OutlineKeys_US_32
+      - OutlineKeys_GB_33
+      - OutlineKeys_CA_34
+      - OutlineKeys_US_35
+      - OutlineKeys_BA_36
+      - OutlineKeys_CA_37
+      - OutlineKeys_US_38
+      - OutlineKeys_SE_39
+      - OutlineKeys_JP_40
+      - OutlineKeys_SG_41
+      - OutlineKeys_IN_42
+      - OutlineKeys_JP_43
+      - OutlineKeys_US_44
+      - OutlineKeys_CA_45
+      - OutlineKeys_UA_46
+      - OutlineKeys_IT_47
+      - OutlineKeys_US_48
+      - OutlineKeys_FR_49
+      - OutlineKeys_FR_50
+      - OutlineKeys_GB_51
+      - OutlineKeys_IT_52
+      - OutlineKeys_RU_53
+      - OutlineKeys_CA_54
+      - OutlineKeys_DE_55
+      - OutlineKeys_RU_56
+      - OutlineKeys_US_57
+      - OutlineKeys_FR_58
+      - OutlineKeys_CA_59
+      - OutlineKeys_RU_60
+      - OutlineKeys_IT_61
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_1
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_1
-      - 🇩🇪_DE_德国->🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_2
-      - 🇭🇰_HK_香港_1
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_7
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_4
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_8
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_3
-      - 🇺🇸_US_美国_9
-      - 🇰🇷_KR_韩国_1
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_4
-      - 🇺🇸_US_美国_10
-      - 🇺🇸_US_美国_11
-      - 🇭🇺_HU_匈牙利
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_5
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
-      - 🇺🇸_US_美国_12
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇰🇷_KR_韩国_2
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_3
-      - 🇦🇺_AU_澳大利亚
-      - 🇭🇰_HK_香港_2
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇺🇸_US_美国_15
-      - 🇺🇸_US_美国_16
-      - default_name
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_6
-      - 🇭🇰_HK_香港->🇲🇾_MY_马来西亚
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_7
-      - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->_null_null
-      - 🇺🇸_US_美国->🇨🇿_CZ_捷克
-      - 🇸🇬_SG_新加坡
+      - OutlineKeys_GB_1
+      - OutlineKeys_GB_2
+      - OutlineKeys_US_3
+      - OutlineKeys_US_4
+      - OutlineKeys_CA_5
+      - OutlineKeys_SE_6
+      - OutlineKeys_US_7
+      - OutlineKeys_US_8
+      - OutlineKeys_JP_9
+      - OutlineKeys_HK_10
+      - OutlineKeys_SG_11
+      - OutlineKeys_GB_12
+      - OutlineKeys_US_13
+      - OutlineKeys_GB_14
+      - OutlineKeys_CA_15
+      - OutlineKeys_IN_16
+      - OutlineKeys_KR_17
+      - OutlineKeys_DE_18
+      - OutlineKeys_CA_19
+      - OutlineKeys_FR_20
+      - OutlineKeys_US_21
+      - OutlineKeys_CA_22
+      - OutlineKeys_CA_23
+      - OutlineKeys_DE_24
+      - OutlineKeys_BA_25
+      - OutlineKeys_FR_26
+      - OutlineKeys_DE_27
+      - OutlineKeys_US_28
+      - OutlineKeys_US_29
+      - OutlineKeys_US_30
+      - OutlineKeys_CA_31
+      - OutlineKeys_US_32
+      - OutlineKeys_GB_33
+      - OutlineKeys_CA_34
+      - OutlineKeys_US_35
+      - OutlineKeys_BA_36
+      - OutlineKeys_CA_37
+      - OutlineKeys_US_38
+      - OutlineKeys_SE_39
+      - OutlineKeys_JP_40
+      - OutlineKeys_SG_41
+      - OutlineKeys_IN_42
+      - OutlineKeys_JP_43
+      - OutlineKeys_US_44
+      - OutlineKeys_CA_45
+      - OutlineKeys_UA_46
+      - OutlineKeys_IT_47
+      - OutlineKeys_US_48
+      - OutlineKeys_FR_49
+      - OutlineKeys_FR_50
+      - OutlineKeys_GB_51
+      - OutlineKeys_IT_52
+      - OutlineKeys_RU_53
+      - OutlineKeys_CA_54
+      - OutlineKeys_DE_55
+      - OutlineKeys_RU_56
+      - OutlineKeys_US_57
+      - OutlineKeys_FR_58
+      - OutlineKeys_CA_59
+      - OutlineKeys_RU_60
+      - OutlineKeys_IT_61
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_1
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_1
-      - 🇩🇪_DE_德国->🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_2
-      - 🇭🇰_HK_香港_1
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_7
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_4
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_8
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_3
-      - 🇺🇸_US_美国_9
-      - 🇰🇷_KR_韩国_1
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_4
-      - 🇺🇸_US_美国_10
-      - 🇺🇸_US_美国_11
-      - 🇭🇺_HU_匈牙利
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_5
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
-      - 🇺🇸_US_美国_12
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇰🇷_KR_韩国_2
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_3
-      - 🇦🇺_AU_澳大利亚
-      - 🇭🇰_HK_香港_2
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇺🇸_US_美国_15
-      - 🇺🇸_US_美国_16
-      - default_name
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_6
-      - 🇭🇰_HK_香港->🇲🇾_MY_马来西亚
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_7
-      - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->_null_null
-      - 🇺🇸_US_美国->🇨🇿_CZ_捷克
-      - 🇸🇬_SG_新加坡
+      - OutlineKeys_GB_1
+      - OutlineKeys_GB_2
+      - OutlineKeys_US_3
+      - OutlineKeys_US_4
+      - OutlineKeys_CA_5
+      - OutlineKeys_SE_6
+      - OutlineKeys_US_7
+      - OutlineKeys_US_8
+      - OutlineKeys_JP_9
+      - OutlineKeys_HK_10
+      - OutlineKeys_SG_11
+      - OutlineKeys_GB_12
+      - OutlineKeys_US_13
+      - OutlineKeys_GB_14
+      - OutlineKeys_CA_15
+      - OutlineKeys_IN_16
+      - OutlineKeys_KR_17
+      - OutlineKeys_DE_18
+      - OutlineKeys_CA_19
+      - OutlineKeys_FR_20
+      - OutlineKeys_US_21
+      - OutlineKeys_CA_22
+      - OutlineKeys_CA_23
+      - OutlineKeys_DE_24
+      - OutlineKeys_BA_25
+      - OutlineKeys_FR_26
+      - OutlineKeys_DE_27
+      - OutlineKeys_US_28
+      - OutlineKeys_US_29
+      - OutlineKeys_US_30
+      - OutlineKeys_CA_31
+      - OutlineKeys_US_32
+      - OutlineKeys_GB_33
+      - OutlineKeys_CA_34
+      - OutlineKeys_US_35
+      - OutlineKeys_BA_36
+      - OutlineKeys_CA_37
+      - OutlineKeys_US_38
+      - OutlineKeys_SE_39
+      - OutlineKeys_JP_40
+      - OutlineKeys_SG_41
+      - OutlineKeys_IN_42
+      - OutlineKeys_JP_43
+      - OutlineKeys_US_44
+      - OutlineKeys_CA_45
+      - OutlineKeys_UA_46
+      - OutlineKeys_IT_47
+      - OutlineKeys_US_48
+      - OutlineKeys_FR_49
+      - OutlineKeys_FR_50
+      - OutlineKeys_GB_51
+      - OutlineKeys_IT_52
+      - OutlineKeys_RU_53
+      - OutlineKeys_CA_54
+      - OutlineKeys_DE_55
+      - OutlineKeys_RU_56
+      - OutlineKeys_US_57
+      - OutlineKeys_FR_58
+      - OutlineKeys_CA_59
+      - OutlineKeys_RU_60
+      - OutlineKeys_IT_61
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_1
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_1
-      - 🇩🇪_DE_德国->🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_2
-      - 🇭🇰_HK_香港_1
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_7
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_4
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_8
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_3
-      - 🇺🇸_US_美国_9
-      - 🇰🇷_KR_韩国_1
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_4
-      - 🇺🇸_US_美国_10
-      - 🇺🇸_US_美国_11
-      - 🇭🇺_HU_匈牙利
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_5
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
-      - 🇺🇸_US_美国_12
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇰🇷_KR_韩国_2
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_3
-      - 🇦🇺_AU_澳大利亚
-      - 🇭🇰_HK_香港_2
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇺🇸_US_美国_15
-      - 🇺🇸_US_美国_16
-      - default_name
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_6
-      - 🇭🇰_HK_香港->🇲🇾_MY_马来西亚
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_7
-      - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->_null_null
-      - 🇺🇸_US_美国->🇨🇿_CZ_捷克
-      - 🇸🇬_SG_新加坡
+      - OutlineKeys_GB_1
+      - OutlineKeys_GB_2
+      - OutlineKeys_US_3
+      - OutlineKeys_US_4
+      - OutlineKeys_CA_5
+      - OutlineKeys_SE_6
+      - OutlineKeys_US_7
+      - OutlineKeys_US_8
+      - OutlineKeys_JP_9
+      - OutlineKeys_HK_10
+      - OutlineKeys_SG_11
+      - OutlineKeys_GB_12
+      - OutlineKeys_US_13
+      - OutlineKeys_GB_14
+      - OutlineKeys_CA_15
+      - OutlineKeys_IN_16
+      - OutlineKeys_KR_17
+      - OutlineKeys_DE_18
+      - OutlineKeys_CA_19
+      - OutlineKeys_FR_20
+      - OutlineKeys_US_21
+      - OutlineKeys_CA_22
+      - OutlineKeys_CA_23
+      - OutlineKeys_DE_24
+      - OutlineKeys_BA_25
+      - OutlineKeys_FR_26
+      - OutlineKeys_DE_27
+      - OutlineKeys_US_28
+      - OutlineKeys_US_29
+      - OutlineKeys_US_30
+      - OutlineKeys_CA_31
+      - OutlineKeys_US_32
+      - OutlineKeys_GB_33
+      - OutlineKeys_CA_34
+      - OutlineKeys_US_35
+      - OutlineKeys_BA_36
+      - OutlineKeys_CA_37
+      - OutlineKeys_US_38
+      - OutlineKeys_SE_39
+      - OutlineKeys_JP_40
+      - OutlineKeys_SG_41
+      - OutlineKeys_IN_42
+      - OutlineKeys_JP_43
+      - OutlineKeys_US_44
+      - OutlineKeys_CA_45
+      - OutlineKeys_UA_46
+      - OutlineKeys_IT_47
+      - OutlineKeys_US_48
+      - OutlineKeys_FR_49
+      - OutlineKeys_FR_50
+      - OutlineKeys_GB_51
+      - OutlineKeys_IT_52
+      - OutlineKeys_RU_53
+      - OutlineKeys_CA_54
+      - OutlineKeys_DE_55
+      - OutlineKeys_RU_56
+      - OutlineKeys_US_57
+      - OutlineKeys_FR_58
+      - OutlineKeys_CA_59
+      - OutlineKeys_RU_60
+      - OutlineKeys_IT_61
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_1
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_1
-      - 🇩🇪_DE_德国->🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_2
-      - 🇭🇰_HK_香港_1
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_7
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_4
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_8
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_3
-      - 🇺🇸_US_美国_9
-      - 🇰🇷_KR_韩国_1
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_4
-      - 🇺🇸_US_美国_10
-      - 🇺🇸_US_美国_11
-      - 🇭🇺_HU_匈牙利
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_5
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
-      - 🇺🇸_US_美国_12
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇰🇷_KR_韩国_2
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_3
-      - 🇦🇺_AU_澳大利亚
-      - 🇭🇰_HK_香港_2
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇺🇸_US_美国_15
-      - 🇺🇸_US_美国_16
-      - default_name
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_6
-      - 🇭🇰_HK_香港->🇲🇾_MY_马来西亚
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_7
-      - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->_null_null
-      - 🇺🇸_US_美国->🇨🇿_CZ_捷克
-      - 🇸🇬_SG_新加坡
+      - OutlineKeys_GB_1
+      - OutlineKeys_GB_2
+      - OutlineKeys_US_3
+      - OutlineKeys_US_4
+      - OutlineKeys_CA_5
+      - OutlineKeys_SE_6
+      - OutlineKeys_US_7
+      - OutlineKeys_US_8
+      - OutlineKeys_JP_9
+      - OutlineKeys_HK_10
+      - OutlineKeys_SG_11
+      - OutlineKeys_GB_12
+      - OutlineKeys_US_13
+      - OutlineKeys_GB_14
+      - OutlineKeys_CA_15
+      - OutlineKeys_IN_16
+      - OutlineKeys_KR_17
+      - OutlineKeys_DE_18
+      - OutlineKeys_CA_19
+      - OutlineKeys_FR_20
+      - OutlineKeys_US_21
+      - OutlineKeys_CA_22
+      - OutlineKeys_CA_23
+      - OutlineKeys_DE_24
+      - OutlineKeys_BA_25
+      - OutlineKeys_FR_26
+      - OutlineKeys_DE_27
+      - OutlineKeys_US_28
+      - OutlineKeys_US_29
+      - OutlineKeys_US_30
+      - OutlineKeys_CA_31
+      - OutlineKeys_US_32
+      - OutlineKeys_GB_33
+      - OutlineKeys_CA_34
+      - OutlineKeys_US_35
+      - OutlineKeys_BA_36
+      - OutlineKeys_CA_37
+      - OutlineKeys_US_38
+      - OutlineKeys_SE_39
+      - OutlineKeys_JP_40
+      - OutlineKeys_SG_41
+      - OutlineKeys_IN_42
+      - OutlineKeys_JP_43
+      - OutlineKeys_US_44
+      - OutlineKeys_CA_45
+      - OutlineKeys_UA_46
+      - OutlineKeys_IT_47
+      - OutlineKeys_US_48
+      - OutlineKeys_FR_49
+      - OutlineKeys_FR_50
+      - OutlineKeys_GB_51
+      - OutlineKeys_IT_52
+      - OutlineKeys_RU_53
+      - OutlineKeys_CA_54
+      - OutlineKeys_DE_55
+      - OutlineKeys_RU_56
+      - OutlineKeys_US_57
+      - OutlineKeys_FR_58
+      - OutlineKeys_CA_59
+      - OutlineKeys_RU_60
+      - OutlineKeys_IT_61
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -396,54 +487,67 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_1
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_1
-      - 🇩🇪_DE_德国->🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_2
-      - 🇭🇰_HK_香港_1
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_7
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_4
-      - 🇭🇰_HK_香港->🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_8
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_3
-      - 🇺🇸_US_美国_9
-      - 🇰🇷_KR_韩国_1
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_4
-      - 🇺🇸_US_美国_10
-      - 🇺🇸_US_美国_11
-      - 🇭🇺_HU_匈牙利
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_5
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
-      - 🇺🇸_US_美国_12
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇰🇷_KR_韩国_2
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_3
-      - 🇦🇺_AU_澳大利亚
-      - 🇭🇰_HK_香港_2
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇺🇸_US_美国_15
-      - 🇺🇸_US_美国_16
-      - default_name
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_6
-      - 🇭🇰_HK_香港->🇲🇾_MY_马来西亚
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_7
-      - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->_null_null
-      - 🇺🇸_US_美国->🇨🇿_CZ_捷克
-      - 🇸🇬_SG_新加坡
+      - OutlineKeys_GB_1
+      - OutlineKeys_GB_2
+      - OutlineKeys_US_3
+      - OutlineKeys_US_4
+      - OutlineKeys_CA_5
+      - OutlineKeys_SE_6
+      - OutlineKeys_US_7
+      - OutlineKeys_US_8
+      - OutlineKeys_JP_9
+      - OutlineKeys_HK_10
+      - OutlineKeys_SG_11
+      - OutlineKeys_GB_12
+      - OutlineKeys_US_13
+      - OutlineKeys_GB_14
+      - OutlineKeys_CA_15
+      - OutlineKeys_IN_16
+      - OutlineKeys_KR_17
+      - OutlineKeys_DE_18
+      - OutlineKeys_CA_19
+      - OutlineKeys_FR_20
+      - OutlineKeys_US_21
+      - OutlineKeys_CA_22
+      - OutlineKeys_CA_23
+      - OutlineKeys_DE_24
+      - OutlineKeys_BA_25
+      - OutlineKeys_FR_26
+      - OutlineKeys_DE_27
+      - OutlineKeys_US_28
+      - OutlineKeys_US_29
+      - OutlineKeys_US_30
+      - OutlineKeys_CA_31
+      - OutlineKeys_US_32
+      - OutlineKeys_GB_33
+      - OutlineKeys_CA_34
+      - OutlineKeys_US_35
+      - OutlineKeys_BA_36
+      - OutlineKeys_CA_37
+      - OutlineKeys_US_38
+      - OutlineKeys_SE_39
+      - OutlineKeys_JP_40
+      - OutlineKeys_SG_41
+      - OutlineKeys_IN_42
+      - OutlineKeys_JP_43
+      - OutlineKeys_US_44
+      - OutlineKeys_CA_45
+      - OutlineKeys_UA_46
+      - OutlineKeys_IT_47
+      - OutlineKeys_US_48
+      - OutlineKeys_FR_49
+      - OutlineKeys_FR_50
+      - OutlineKeys_GB_51
+      - OutlineKeys_IT_52
+      - OutlineKeys_RU_53
+      - OutlineKeys_CA_54
+      - OutlineKeys_DE_55
+      - OutlineKeys_RU_56
+      - OutlineKeys_US_57
+      - OutlineKeys_FR_58
+      - OutlineKeys_CA_59
+      - OutlineKeys_RU_60
+      - OutlineKeys_IT_61
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
