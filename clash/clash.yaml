@@ -1,9 +1,9 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2022-07-03 17:50:09
+#  创建时间：2022-07-03 23:49:35
 #  模版：v2rayse默认模版
-#  节点数量：10
+#  节点数量：6
 #-------------------------------------------------------------#
 #
 port: 7890
@@ -13,109 +13,81 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"trojan","name":"🇺🇸_US_美国_1","server":"fhcamd2.gaox.ml","port":443,"password":"dbf9bf9c-2c3f-474a-8031-d4c00666a989","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇨🇳_CN_中国->🇺🇸_US_美国_1","server":"103.56.60.235","port":3381,"password":"d66013c645b93c5c","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","name":"🇺🇸_US_美国_2","server":"138.68.248.130","port":811,"cipher":"chacha20-ietf-poly1305","password":"Ultr@r00t_2017"}
-  - {"type":"trojan","name":"🇺🇸_US_美国_3","server":"s3.hazz.win","port":12340,"password":"dfbf0d67-f03d-4184-a224-c2d64a571f99","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇺🇸_US_美国_4","server":"134.195.101.32","port":3389,"password":"d66013c645b93c5c","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","name":"🇬🇧_GB_英国","server":"178.62.16.161","port":811,"cipher":"chacha20-ietf-poly1305","password":"Ultr@r00t_2017"}
-  - {"type":"ss","name":"🇨🇦_CA_加拿大","server":"138.197.166.205","port":811,"cipher":"chacha20-ietf-poly1305","password":"Ultr@r00t_2017"}
-  - {"type":"trojan","name":"🇦🇺_AU_澳大利亚","server":"jgwxn3.gaox.ml","port":443,"password":"cb43b7c2-b744-41c5-bcc2-fd7467b332cf","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","name":"🇫🇷_FR_法国","server":"51.38.118.42","port":811,"cipher":"chacha20-ietf-poly1305","password":"Ultr@r00t_2017"}
-  - {"type":"trojan","name":"🇨🇳_CN_中国->🇺🇸_US_美国_2","server":"103.56.62.145","port":3381,"password":"d66013c645b93c5c","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"🇨🇳_CN_中国->🇺🇸_US_美国","server":"103.56.60.235","port":3381,"password":"d66013c645b93c5c","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"🇭🇰_HK_香港","server":"626sg.ok365.cyou","port":80,"password":"30ff4b59-cf4a-4e44-9677-88a823434cd7","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"🇺🇸_US_美国_1","server":"usfree2.jiantian.xyz","port":32462,"password":"cb5e2135-4d64-4454-be98-5bae4f2618d1","udp":true,"skip-cert-verify":true}
+  - {"type":"ss","name":"🇯🇵_JP_日本","server":"52.253.106.228","port":8313,"cipher":"chacha20-ietf-poly1305","password":"ljqdalu13.."}
+  - {"type":"trojan","name":"🇺🇸_US_美国_2","server":"jgwdj3.gaox.ml","port":443,"password":"da777aae-defb-41d0-a183-2c27da2b4677","udp":true,"skip-cert-verify":true}
+  - {"type":"ss","name":"🇺🇸_US_美国_3","server":"138.68.248.130","port":811,"cipher":"chacha20-ietf-poly1305","password":"Ultr@r00t_2017"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇭🇰_HK_香港
       - 🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇯🇵_JP_日本
       - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇬🇧_GB_英国
-      - 🇨🇦_CA_加拿大
-      - 🇦🇺_AU_澳大利亚
-      - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇭🇰_HK_香港
       - 🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇯🇵_JP_日本
       - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇬🇧_GB_英国
-      - 🇨🇦_CA_加拿大
-      - 🇦🇺_AU_澳大利亚
-      - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇭🇰_HK_香港
       - 🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇯🇵_JP_日本
       - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇬🇧_GB_英国
-      - 🇨🇦_CA_加拿大
-      - 🇦🇺_AU_澳大利亚
-      - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇭🇰_HK_香港
       - 🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇯🇵_JP_日本
       - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇬🇧_GB_英国
-      - 🇨🇦_CA_加拿大
-      - 🇦🇺_AU_澳大利亚
-      - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇭🇰_HK_香港
       - 🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇯🇵_JP_日本
       - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇬🇧_GB_英国
-      - 🇨🇦_CA_加拿大
-      - 🇦🇺_AU_澳大利亚
-      - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇭🇰_HK_香港
       - 🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇯🇵_JP_日本
       - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇬🇧_GB_英国
-      - 🇨🇦_CA_加拿大
-      - 🇦🇺_AU_澳大利亚
-      - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -138,16 +110,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇭🇰_HK_香港
       - 🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇯🇵_JP_日本
       - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇬🇧_GB_英国
-      - 🇨🇦_CA_加拿大
-      - 🇦🇺_AU_澳大利亚
-      - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
