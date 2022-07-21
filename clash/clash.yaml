@@ -1,401 +1,531 @@
-#
-#-------------------------------------------------------------#
-#  创建者：https://v2rayse.com
-#  创建时间：2022-07-20 21:01:34
-#  模版：v2rayse默认模版
-#  节点数量：50
-#-------------------------------------------------------------#
-#
 port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
-log-level: info
 external-controller: 0.0.0.0:9090
+log-level: info
 proxies:
-  - {"type":"vmess","name":"🇨🇳_CN_中国->🇺🇸_US_美国_1","server":"svip01.01download.xyz","port":35118,"uuid":"70b16905-4706-3b4a-8f27-bdd2a74bf432","alterId":0,"cipher":"auto","network":"tcp"}
-  - {"type":"ss","name":"🇺🇸_US_美国_1","server":"167.88.62.68","port":7307,"cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
-  - {"type":"ss","name":"🇨🇦_CA_加拿大_1","server":"138.197.166.205","port":811,"cipher":"chacha20-ietf-poly1305","password":"Ultr@r00t_2017"}
-  - {"type":"ss","name":"🇺🇸_US_美国_2","server":"167.88.61.175","port":2375,"cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
-  - {"type":"vmess","name":"🇨🇳_CN_中国->🇩🇪_DE_德国","server":"svip02.01download.xyz","port":35131,"uuid":"70b16905-4706-3b4a-8f27-bdd2a74bf432","alterId":0,"cipher":"auto","network":"tcp"}
-  - {"type":"ss","name":"🇺🇸_US_美国_3","server":"167.88.61.213","port":6679,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
-  - {"type":"ss","name":"🇺🇸_US_美国_4","server":"167.88.61.213","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
-  - {"type":"ss","name":"🇺🇸_US_美国_5","server":"167.88.63.79","port":8118,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
-  - {"type":"ss","name":"🇺🇸_US_美国_6","server":"167.88.61.175","port":8881,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
-  - {"type":"ss","name":"🇺🇸_US_美国_7","server":"167.88.63.59","port":8882,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
-  - {"type":"vmess","name":"🇨🇳_CN_中国->🇦🇿_AZ_阿塞拜疆","server":"svip02.01download.xyz","port":35128,"uuid":"70b16905-4706-3b4a-8f27-bdd2a74bf432","alterId":0,"cipher":"auto","network":"tcp"}
-  - {"type":"trojan","name":"🇸🇬_SG_新加坡","server":"s4.hazz.win","port":12340,"password":"dfbf0d67-f03d-4184-a224-c2d64a571f99","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","name":"🇺🇸_US_美国_8","server":"167.88.61.213","port":8118,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
-  - {"type":"ss","name":"🇺🇸_US_美国_9","server":"167.88.61.213","port":5003,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
-  - {"type":"ss","name":"🇺🇸_US_美国_10","server":"167.88.61.213","port":8882,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
-  - {"type":"ss","name":"🇨🇦_CA_加拿大_2","server":"134.195.196.149","port":8090,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
-  - {"type":"ss","name":"🇺🇸_US_美国_11","server":"167.88.62.68","port":3389,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"type":"ss","name":"🇺🇸_US_美国_12","server":"172.99.188.71","port":3389,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"type":"ss","name":"🇺🇸_US_美国_13","server":"167.88.61.213","port":2376,"cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
-  - {"type":"ss","name":"🇨🇦_CA_加拿大_3","server":"51.161.118.38","port":805,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"type":"ss","name":"🇺🇸_US_美国_14","server":"167.88.61.175","port":8090,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
-  - {"type":"ss","name":"🇨🇦_CA_加拿大_4","server":"134.195.196.149","port":8119,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
-  - {"type":"ss","name":"🇺🇸_US_美国_15","server":"172.99.188.71","port":5001,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"type":"ss","name":"🇺🇸_US_美国_16","server":"167.88.63.79","port":8080,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
-  - {"type":"trojan","name":"🇺🇸_US_美国_17","server":"s2.hazz.win","port":12340,"password":"dfbf0d67-f03d-4184-a224-c2d64a571f99","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","name":"🇺🇸_US_美国_18","server":"167.88.62.68","port":8091,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
-  - {"type":"ss","name":"🇺🇸_US_美国_19","server":"167.88.63.79","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
-  - {"type":"vmess","name":"🇨🇳_CN_中国->🇨🇿_CZ_捷克","server":"svip01.01download.xyz","port":35101,"uuid":"70b16905-4706-3b4a-8f27-bdd2a74bf432","alterId":0,"cipher":"auto","network":"tcp"}
-  - {"type":"ss","name":"🇺🇸_US_美国_20","server":"167.88.63.79","port":8009,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
-  - {"type":"ss","name":"🇺🇸_US_美国_21","server":"167.88.62.68","port":8009,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
-  - {"type":"ss","name":"🇺🇸_US_美国_22","server":"172.99.188.71","port":8000,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
-  - {"type":"vmess","name":"🇨🇳_CN_中国->🇺🇸_US_美国_2","server":"svip01.01download.xyz","port":35116,"uuid":"70b16905-4706-3b4a-8f27-bdd2a74bf432","alterId":0,"cipher":"auto","network":"tcp"}
-  - {"type":"vmess","name":"🇭🇰_HK_香港","http-opts":{"path":["/"],"headers":{"Host":["47.243.31.8"]}},"server":"47.243.31.8","port":51657,"uuid":"f0eb8855-d3a4-4fc4-98b6-711681c756b8","alterId":0,"cipher":"auto","network":"http"}
-  - {"type":"vmess","name":"🇨🇳_CN_中国->🇮🇳_IN_印度","server":"svip02.01download.xyz","port":35127,"uuid":"70b16905-4706-3b4a-8f27-bdd2a74bf432","alterId":0,"cipher":"auto","network":"tcp"}
-  - {"type":"ss","name":"🇺🇸_US_美国_23","server":"167.88.63.79","port":2375,"cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
-  - {"type":"ss","name":"🇺🇸_US_美国_24","server":"167.88.63.79","port":7306,"cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
-  - {"type":"trojan","name":"🇫🇷_FR_法国->🇺🇸_US_美国","server":"us-05.licom.ml","port":12501,"password":"ce433528-39fa-4711-bc0d-25a5b1579574","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇯🇵_JP_日本","server":"jp-03.licom.ml","port":8443,"password":"ce433528-39fa-4711-bc0d-25a5b1579574","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","name":"🇺🇸_US_美国_25","server":"167.88.61.213","port":8888,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"type":"ss","name":"🇺🇸_US_美国_26","server":"167.88.61.175","port":8119,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
-  - {"type":"ss","name":"🇺🇸_US_美国_27","server":"172.99.188.71","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
-  - {"type":"ss","name":"🇺🇸_US_美国_28","server":"167.88.61.175","port":8118,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
-  - {"type":"vmess","name":"🇨🇳_CN_中国->🇺🇸_US_美国_3","server":"svip02.01download.xyz","port":35118,"uuid":"70b16905-4706-3b4a-8f27-bdd2a74bf432","alterId":0,"cipher":"auto","network":"tcp"}
-  - {"type":"ss","name":"🇺🇸_US_美国_29","server":"167.88.61.2","port":807,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"type":"ss","name":"🇺🇸_US_美国_30","server":"172.99.188.71","port":8090,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
-  - {"type":"trojan","name":"🇺🇸_US_美国_31","server":"s1.hazz.win","port":12340,"password":"dfbf0d67-f03d-4184-a224-c2d64a571f99","udp":true,"skip-cert-verify":true}
-  - {"type":"vmess","name":"🇨🇳_CN_中国->🇮🇱_IL_以色列","server":"svip02.01download.xyz","port":35132,"uuid":"70b16905-4706-3b4a-8f27-bdd2a74bf432","alterId":0,"cipher":"auto","network":"tcp"}
-  - {"type":"ss","name":"🇺🇸_US_美国_32","server":"172.99.188.71","port":8882,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
-  - {"type":"ss","name":"🇩🇪_DE_德国","server":"52.58.249.78","port":57824,"cipher":"chacha20-ietf-poly1305","password":"pryhyxya"}
-  - {"type":"ss","name":"🇺🇸_US_美国_33","server":"167.88.61.213","port":8008,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"name":"🇸🇬
+    日本(v2rayshare.com每日节点更新)","server":"gzyd2.52147.top","port":30130,"type":"trojan","password":"09553aee-5191-4870-a312-51d053ea668b","sni":"download.windowsupdate1.com","skip-cert-verify":false}
+  - {"name":"🇸🇬
+    欧洲(v2rayshare.com每日节点更新)","server":"104.16.199.1","port":443,"type":"vmess","uuid":"c83d9439-9392-4c26-a10c-a223b2e8768d","alterId":0,"cipher":"auto","tls":true,"skip-cert-verify":false,"network":"ws","ws-opts":{"path":"/pngvws","headers":{"Host":"guil.tk"}}}
+  - {"name":"🇸🇬
+    新加坡(v2rayshare.com每日节点更新)","server":"trojan3.udpgw.com","port":443,"type":"trojan","password":"8db1b560-019d-11ed-8bdf-1239d0255272","sni":"trojan3.udpgw.com","skip-cert-verify":false}
+  - {"name":"🇸🇬 日本(v2rayshare.com每日节点更新)
+    2","server":"203.138.98.199","port":443,"type":"trojan","password":"7da84a56-a1e2-48f3-a690-374a3973d7e8","sni":"www.download.windowsupdate1.com","skip-cert-verify":false}
+  - {"name":"🇸🇬 日本(v2rayshare.com每日节点更新)
+    3","server":"157.120.35.234","port":443,"type":"trojan","password":"03ed3a34-6e07-4e96-b37a-ecf7ecc1c50c","sni":"download.windowsupdate.lol","skip-cert-verify":false}
+  - {"name":"🇺🇸
+    _US_美国","server":"167.88.61.175","port":8090,"type":"ss","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+  - {"name":"🇸🇬
+    亚洲(v2rayshare.com每日节点更新)","server":"sg-03.licom.ml","port":8443,"type":"trojan","password":"ce433528-39fa-4711-bc0d-25a5b1579574","sni":"sg-03.licom.ml","skip-cert-verify":false}
+  - {"name":"🇺🇸 _US_美国
+    2","server":"167.88.61.213","port":5003,"type":"ss","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"name":"🇸🇬
+    美国(v2rayshare.com每日节点更新)","server":"cf.fullcloud.tk","port":2053,"type":"vmess","uuid":"bf67437e-6c90-45ca-abc2-c7240a5ce2aa","alterId":0,"cipher":"auto","tls":true,"skip-cert-verify":false,"network":"ws","ws-opts":{"path":"/eisasqa","headers":{"Host":"foxusa.fovi.tk"}}}
+  - {"name":"🇸🇬
+    韩国(v2rayshare.com每日节点更新)","server":"152.67.218.38","port":443,"type":"vmess","uuid":"b5e9480a-b7aa-40a4-f9a7-5299b5e363b4","alterId":0,"cipher":"auto","tls":false,"skip-cert-verify":false,"network":"ws","ws-opts":{"path":"/","headers":{"Host":"YouTube-aweikeji"}}}
+  - {"name":"🇸🇬 美国(v2rayshare.com每日节点更新)
+    2","server":"192.210.231.59","port":58164,"type":"vmess","uuid":"39a1dff4-9c7d-487b-9917-2f2c8e9572f2","alterId":0,"cipher":"auto","tls":false,"skip-cert-verify":false}
+  - {"name":"🇸🇬
+    德国(v2rayshare.com每日节点更新)","server":"51.195.35.134","port":443,"type":"vmess","uuid":"9f58234c-355b-4065-ae21-d4a63099aba5","alterId":64,"cipher":"auto","tls":true,"skip-cert-verify":false,"network":"ws","ws-opts":{"path":"/path/273213070933","headers":{"Host":"www.98272029.xyz"}}}
+  - {"name":"🇺🇸 _US_美国
+    3","server":"167.88.61.175","port":5004,"type":"ss","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"name":"🇺🇸 _US_美国
+    4","server":"167.88.61.213","port":3389,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"🇺🇸 _US_美国
+    5","server":"167.88.61.175","port":2376,"type":"ss","cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+  - {"name":"🇺🇸 _US_美国
+    6","server":"167.88.61.175","port":8118,"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"name":"🇺🇸 _US_美国
+    7","server":"167.88.61.175","port":5003,"type":"ss","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"name":"🇸🇬 美国(v2rayshare.com每日节点更新)
+    3","server":"192.210.231.59","port":58164,"type":"vmess","uuid":"39a1dff4-9c7d-487b-9917-2f2c8e9572f2","alterId":0,"cipher":"auto","tls":false,"skip-cert-verify":false}
+  - {"name":"🇺🇸 _US_美国
+    8","server":"167.88.61.175","port":8119,"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"name":"🇺🇸 _US_美国
+    9","server":"167.88.61.213","port":8008,"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"name":"🇺🇸 _US_美国
+    10","server":"167.88.61.213","port":8881,"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"name":"🇺🇸 _US_美国
+    11","server":"167.88.61.213","port":7307,"type":"ss","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
+  - {"name":"🇺🇸 _US_美国
+    12","server":"167.88.61.213","port":8888,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"🇺🇸 _US_美国
+    13","server":"167.88.61.175","port":443,"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"name":"🇺🇸 _US_美国
+    14","server":"167.88.61.213","port":8119,"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"name":"🇺🇸 _US_美国
+    15","server":"167.88.61.175","port":2375,"type":"ss","cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+  - {"name":"🇨🇦
+    _CA_加拿大","server":"134.195.196.89","port":8008,"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"name":"🇺🇸 _US_美国
+    16","server":"167.88.61.175","port":5500,"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"name":"🇺🇸 _US_美国
+    17","server":"167.88.61.175","port":7307,"type":"ss","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
+  - {"name":"🇺🇸 _US_美国
+    18","server":"167.88.61.175","port":8888,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"🇸🇬 美国(v2rayshare.com每日节点更新)
+    4","server":"in-us-1.onebox6.org","port":38401,"type":"vmess","uuid":"79386685-16da-327c-9e14-aa6d702d86bc","alterId":0,"cipher":"auto","tls":false,"skip-cert-verify":false,"network":"ws","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"Host":"YouTube-aweikeji"}}}
+  - {"name":"🇸🇬 美国(v2rayshare.com每日节点更新)
+    5","server":"192.210.231.59","port":58164,"type":"vmess","uuid":"39a1dff4-9c7d-487b-9917-2f2c8e9572f2","alterId":0,"cipher":"auto","tls":false,"skip-cert-verify":false}
+  - {"name":"🇺🇸 _US_美国
+    19","server":"167.88.61.175","port":5000,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"🇺🇸 _US_美国
+    20","server":"167.88.61.175","port":5001,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"🇺🇸 _US_美国
+    21","server":"167.88.61.175","port":8080,"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"name":"🇺🇸 _US_美国
+    22","server":"167.88.61.213","port":8118,"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"name":"🇺🇸 _US_美国
+    23","server":"167.88.61.175","port":8008,"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"name":"🇺🇸 _US_美国
+    24","server":"167.88.61.175","port":6679,"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"name":"🇺🇸 _US_美国
+    25","server":"167.88.61.175","port":7002,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"name":"🇺🇸 _US_美国
+    26","server":"167.88.61.175","port":8009,"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"name":"🇺🇸 _US_美国
+    27","server":"167.88.61.175","port":8881,"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"name":"🇨🇦 _CA_加拿大
+    2","server":"134.195.196.89","port":8091,"type":"ss","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+  - {"name":"🇨🇦 _CA_加拿大
+    3","server":"134.195.196.89","port":8090,"type":"ss","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+  - {"name":"🇸🇬 美国(v2rayshare.com每日节点更新)
+    6","server":"us07.xiaoqi99.cf","port":10229,"type":"vmess","uuid":"fbf813bf-8df7-4729-8e94-667b17544e0f","alterId":0,"cipher":"auto","tls":false,"skip-cert-verify":false,"network":"ws","ws-opts":{"path":"/","headers":{"Host":"YouTube-aweikeji"}}}
+  - {"name":"🇸🇬 美国(v2rayshare.com每日节点更新)
+    7","server":"v116.v2dns.bar","port":80,"type":"vmess","uuid":"c97cf46e-1554-36cb-8b36-c3556b883dc4","alterId":0,"cipher":"auto","tls":false,"skip-cert-verify":false,"network":"ws","ws-opts":{"path":"/v116-DtoEwAEX","headers":{"Host":"v116.v2dns.bar"}}}
+  - {"name":"🇨🇦 _CA_加拿大
+    4","server":"134.195.196.89","port":9102,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"🇨🇦 _CA_加拿大
+    5","server":"134.195.196.89","port":5000,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"🇸🇬
+    _FR_法国(v2rayshare.com每日节点更新)","server":"195.154.200.150","port":2376,"type":"ss","cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+  - {"name":"🇺🇸 _US_美国
+    28","server":"167.88.63.79","port":443,"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"name":"🇺🇸 _US_美国
+    29","server":"167.88.63.59","port":8881,"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"name":"🇸🇬
+    法国(v2rayshare.com每日节点更新)","server":"195.154.200.150","port":3306,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"🇹🇼
+    台湾(v2rayshare.com每日节点更新)","server":"111.45.29.75","port":30003,"type":"trojan","password":"c9a3a61d-5d49-4158-9e60-6fa32684b122","sni":"tw.speedasia.xyz","skip-cert-verify":false}
+  - {"name":"🇺🇸 _US_美国
+    30","server":"167.88.61.175","port":9102,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"name":"🇸🇬
+    俄罗斯(v2rayshare.com每日节点更新)","server":"v116.v2dns.bar","port":80,"type":"vmess","uuid":"c97cf46e-1554-36cb-8b36-c3556b883dc4","alterId":0,"cipher":"auto","tls":false,"skip-cert-verify":false,"network":"ws","ws-opts":{"path":"/v116-DtoEwAEX","headers":{"Host":"v116.v2dns.bar"}}}
+  - {"name":"🇺🇸 _US_美国
+    31","server":"167.88.63.59","port":6697,"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"name":"🇺🇸 _US_美国
+    32","server":"167.88.63.79","port":8118,"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"name":"🇺🇸 _US_美国
+    33","server":"167.88.63.59","port":443,"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"name":"🇺🇸 _US_美国
+    34","server":"167.88.63.79","port":3389,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"🇸🇬 俄罗斯(v2rayshare.com每日节点更新)
+    2","server":"cdn3.doxalife.ru","port":1024,"type":"ss","cipher":"aes-128-gcm","password":"1024LAUSA"}
+  - {"name":"🇸🇬 美国(v2rayshare.com每日节点更新)
+    8","server":"152.67.223.187","port":13774,"type":"vmess","uuid":"5da35e16-0af7-47cc-ed73-269824ccb1a2","alterId":0,"cipher":"auto","tls":false,"skip-cert-verify":false}
+  - {"name":"🇸🇬 美国(v2rayshare.com每日节点更新)
+    9","server":"167.88.61.2","port":808,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_1
-      - 🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇨🇳_CN_中国->🇦🇿_AZ_阿塞拜疆
-      - 🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国_10
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_12
-      - 🇺🇸_US_美国_13
-      - 🇨🇦_CA_加拿大_3
-      - 🇺🇸_US_美国_14
-      - 🇨🇦_CA_加拿大_4
-      - 🇺🇸_US_美国_15
-      - 🇺🇸_US_美国_16
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇺🇸_US_美国_19
-      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克
-      - 🇺🇸_US_美国_20
-      - 🇺🇸_US_美国_21
-      - 🇺🇸_US_美国_22
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇺🇸_US_美国_23
-      - 🇺🇸_US_美国_24
-      - 🇫🇷_FR_法国->🇺🇸_US_美国
-      - 🇯🇵_JP_日本
-      - 🇺🇸_US_美国_25
-      - 🇺🇸_US_美国_26
-      - 🇺🇸_US_美国_27
-      - 🇺🇸_US_美国_28
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_29
-      - 🇺🇸_US_美国_30
-      - 🇺🇸_US_美国_31
-      - 🇨🇳_CN_中国->🇮🇱_IL_以色列
-      - 🇺🇸_US_美国_32
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国_33
+      - 🇸🇬 日本(v2rayshare.com每日节点更新)
+      - 🇸🇬 欧洲(v2rayshare.com每日节点更新)
+      - 🇸🇬 新加坡(v2rayshare.com每日节点更新)
+      - 🇸🇬 日本(v2rayshare.com每日节点更新) 2
+      - 🇸🇬 日本(v2rayshare.com每日节点更新) 3
+      - 🇺🇸 _US_美国
+      - 🇸🇬 亚洲(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 2
+      - 🇸🇬 美国(v2rayshare.com每日节点更新)
+      - 🇸🇬 韩国(v2rayshare.com每日节点更新)
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 2
+      - 🇸🇬 德国(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 _US_美国 4
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 _US_美国 7
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 3
+      - 🇺🇸 _US_美国 8
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 _US_美国 10
+      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 12
+      - 🇺🇸 _US_美国 13
+      - 🇺🇸 _US_美国 14
+      - 🇺🇸 _US_美国 15
+      - 🇨🇦 _CA_加拿大
+      - 🇺🇸 _US_美国 16
+      - 🇺🇸 _US_美国 17
+      - 🇺🇸 _US_美国 18
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 4
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 5
+      - 🇺🇸 _US_美国 19
+      - 🇺🇸 _US_美国 20
+      - 🇺🇸 _US_美国 21
+      - 🇺🇸 _US_美国 22
+      - 🇺🇸 _US_美国 23
+      - 🇺🇸 _US_美国 24
+      - 🇺🇸 _US_美国 25
+      - 🇺🇸 _US_美国 26
+      - 🇺🇸 _US_美国 27
+      - 🇨🇦 _CA_加拿大 2
+      - 🇨🇦 _CA_加拿大 3
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 6
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 7
+      - 🇨🇦 _CA_加拿大 4
+      - 🇨🇦 _CA_加拿大 5
+      - 🇸🇬 _FR_法国(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 28
+      - 🇺🇸 _US_美国 29
+      - 🇸🇬 法国(v2rayshare.com每日节点更新)
+      - 🇹🇼 台湾(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 30
+      - 🇸🇬 俄罗斯(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 31
+      - 🇺🇸 _US_美国 32
+      - 🇺🇸 _US_美国 33
+      - 🇺🇸 _US_美国 34
+      - 🇸🇬 俄罗斯(v2rayshare.com每日节点更新) 2
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 8
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 9
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_1
-      - 🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇨🇳_CN_中国->🇦🇿_AZ_阿塞拜疆
-      - 🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国_10
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_12
-      - 🇺🇸_US_美国_13
-      - 🇨🇦_CA_加拿大_3
-      - 🇺🇸_US_美国_14
-      - 🇨🇦_CA_加拿大_4
-      - 🇺🇸_US_美国_15
-      - 🇺🇸_US_美国_16
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇺🇸_US_美国_19
-      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克
-      - 🇺🇸_US_美国_20
-      - 🇺🇸_US_美国_21
-      - 🇺🇸_US_美国_22
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇺🇸_US_美国_23
-      - 🇺🇸_US_美国_24
-      - 🇫🇷_FR_法国->🇺🇸_US_美国
-      - 🇯🇵_JP_日本
-      - 🇺🇸_US_美国_25
-      - 🇺🇸_US_美国_26
-      - 🇺🇸_US_美国_27
-      - 🇺🇸_US_美国_28
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_29
-      - 🇺🇸_US_美国_30
-      - 🇺🇸_US_美国_31
-      - 🇨🇳_CN_中国->🇮🇱_IL_以色列
-      - 🇺🇸_US_美国_32
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国_33
+      - 🇸🇬 日本(v2rayshare.com每日节点更新)
+      - 🇸🇬 欧洲(v2rayshare.com每日节点更新)
+      - 🇸🇬 新加坡(v2rayshare.com每日节点更新)
+      - 🇸🇬 日本(v2rayshare.com每日节点更新) 2
+      - 🇸🇬 日本(v2rayshare.com每日节点更新) 3
+      - 🇺🇸 _US_美国
+      - 🇸🇬 亚洲(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 2
+      - 🇸🇬 美国(v2rayshare.com每日节点更新)
+      - 🇸🇬 韩国(v2rayshare.com每日节点更新)
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 2
+      - 🇸🇬 德国(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 _US_美国 4
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 _US_美国 7
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 3
+      - 🇺🇸 _US_美国 8
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 _US_美国 10
+      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 12
+      - 🇺🇸 _US_美国 13
+      - 🇺🇸 _US_美国 14
+      - 🇺🇸 _US_美国 15
+      - 🇨🇦 _CA_加拿大
+      - 🇺🇸 _US_美国 16
+      - 🇺🇸 _US_美国 17
+      - 🇺🇸 _US_美国 18
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 4
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 5
+      - 🇺🇸 _US_美国 19
+      - 🇺🇸 _US_美国 20
+      - 🇺🇸 _US_美国 21
+      - 🇺🇸 _US_美国 22
+      - 🇺🇸 _US_美国 23
+      - 🇺🇸 _US_美国 24
+      - 🇺🇸 _US_美国 25
+      - 🇺🇸 _US_美国 26
+      - 🇺🇸 _US_美国 27
+      - 🇨🇦 _CA_加拿大 2
+      - 🇨🇦 _CA_加拿大 3
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 6
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 7
+      - 🇨🇦 _CA_加拿大 4
+      - 🇨🇦 _CA_加拿大 5
+      - 🇸🇬 _FR_法国(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 28
+      - 🇺🇸 _US_美国 29
+      - 🇸🇬 法国(v2rayshare.com每日节点更新)
+      - 🇹🇼 台湾(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 30
+      - 🇸🇬 俄罗斯(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 31
+      - 🇺🇸 _US_美国 32
+      - 🇺🇸 _US_美国 33
+      - 🇺🇸 _US_美国 34
+      - 🇸🇬 俄罗斯(v2rayshare.com每日节点更新) 2
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 8
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 9
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_1
-      - 🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇨🇳_CN_中国->🇦🇿_AZ_阿塞拜疆
-      - 🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国_10
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_12
-      - 🇺🇸_US_美国_13
-      - 🇨🇦_CA_加拿大_3
-      - 🇺🇸_US_美国_14
-      - 🇨🇦_CA_加拿大_4
-      - 🇺🇸_US_美国_15
-      - 🇺🇸_US_美国_16
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇺🇸_US_美国_19
-      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克
-      - 🇺🇸_US_美国_20
-      - 🇺🇸_US_美国_21
-      - 🇺🇸_US_美国_22
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇺🇸_US_美国_23
-      - 🇺🇸_US_美国_24
-      - 🇫🇷_FR_法国->🇺🇸_US_美国
-      - 🇯🇵_JP_日本
-      - 🇺🇸_US_美国_25
-      - 🇺🇸_US_美国_26
-      - 🇺🇸_US_美国_27
-      - 🇺🇸_US_美国_28
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_29
-      - 🇺🇸_US_美国_30
-      - 🇺🇸_US_美国_31
-      - 🇨🇳_CN_中国->🇮🇱_IL_以色列
-      - 🇺🇸_US_美国_32
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国_33
+      - 🇸🇬 日本(v2rayshare.com每日节点更新)
+      - 🇸🇬 欧洲(v2rayshare.com每日节点更新)
+      - 🇸🇬 新加坡(v2rayshare.com每日节点更新)
+      - 🇸🇬 日本(v2rayshare.com每日节点更新) 2
+      - 🇸🇬 日本(v2rayshare.com每日节点更新) 3
+      - 🇺🇸 _US_美国
+      - 🇸🇬 亚洲(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 2
+      - 🇸🇬 美国(v2rayshare.com每日节点更新)
+      - 🇸🇬 韩国(v2rayshare.com每日节点更新)
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 2
+      - 🇸🇬 德国(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 _US_美国 4
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 _US_美国 7
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 3
+      - 🇺🇸 _US_美国 8
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 _US_美国 10
+      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 12
+      - 🇺🇸 _US_美国 13
+      - 🇺🇸 _US_美国 14
+      - 🇺🇸 _US_美国 15
+      - 🇨🇦 _CA_加拿大
+      - 🇺🇸 _US_美国 16
+      - 🇺🇸 _US_美国 17
+      - 🇺🇸 _US_美国 18
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 4
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 5
+      - 🇺🇸 _US_美国 19
+      - 🇺🇸 _US_美国 20
+      - 🇺🇸 _US_美国 21
+      - 🇺🇸 _US_美国 22
+      - 🇺🇸 _US_美国 23
+      - 🇺🇸 _US_美国 24
+      - 🇺🇸 _US_美国 25
+      - 🇺🇸 _US_美国 26
+      - 🇺🇸 _US_美国 27
+      - 🇨🇦 _CA_加拿大 2
+      - 🇨🇦 _CA_加拿大 3
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 6
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 7
+      - 🇨🇦 _CA_加拿大 4
+      - 🇨🇦 _CA_加拿大 5
+      - 🇸🇬 _FR_法国(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 28
+      - 🇺🇸 _US_美国 29
+      - 🇸🇬 法国(v2rayshare.com每日节点更新)
+      - 🇹🇼 台湾(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 30
+      - 🇸🇬 俄罗斯(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 31
+      - 🇺🇸 _US_美国 32
+      - 🇺🇸 _US_美国 33
+      - 🇺🇸 _US_美国 34
+      - 🇸🇬 俄罗斯(v2rayshare.com每日节点更新) 2
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 8
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 9
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_1
-      - 🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇨🇳_CN_中国->🇦🇿_AZ_阿塞拜疆
-      - 🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国_10
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_12
-      - 🇺🇸_US_美国_13
-      - 🇨🇦_CA_加拿大_3
-      - 🇺🇸_US_美国_14
-      - 🇨🇦_CA_加拿大_4
-      - 🇺🇸_US_美国_15
-      - 🇺🇸_US_美国_16
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇺🇸_US_美国_19
-      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克
-      - 🇺🇸_US_美国_20
-      - 🇺🇸_US_美国_21
-      - 🇺🇸_US_美国_22
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇺🇸_US_美国_23
-      - 🇺🇸_US_美国_24
-      - 🇫🇷_FR_法国->🇺🇸_US_美国
-      - 🇯🇵_JP_日本
-      - 🇺🇸_US_美国_25
-      - 🇺🇸_US_美国_26
-      - 🇺🇸_US_美国_27
-      - 🇺🇸_US_美国_28
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_29
-      - 🇺🇸_US_美国_30
-      - 🇺🇸_US_美国_31
-      - 🇨🇳_CN_中国->🇮🇱_IL_以色列
-      - 🇺🇸_US_美国_32
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国_33
+      - 🇸🇬 日本(v2rayshare.com每日节点更新)
+      - 🇸🇬 欧洲(v2rayshare.com每日节点更新)
+      - 🇸🇬 新加坡(v2rayshare.com每日节点更新)
+      - 🇸🇬 日本(v2rayshare.com每日节点更新) 2
+      - 🇸🇬 日本(v2rayshare.com每日节点更新) 3
+      - 🇺🇸 _US_美国
+      - 🇸🇬 亚洲(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 2
+      - 🇸🇬 美国(v2rayshare.com每日节点更新)
+      - 🇸🇬 韩国(v2rayshare.com每日节点更新)
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 2
+      - 🇸🇬 德国(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 _US_美国 4
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 _US_美国 7
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 3
+      - 🇺🇸 _US_美国 8
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 _US_美国 10
+      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 12
+      - 🇺🇸 _US_美国 13
+      - 🇺🇸 _US_美国 14
+      - 🇺🇸 _US_美国 15
+      - 🇨🇦 _CA_加拿大
+      - 🇺🇸 _US_美国 16
+      - 🇺🇸 _US_美国 17
+      - 🇺🇸 _US_美国 18
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 4
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 5
+      - 🇺🇸 _US_美国 19
+      - 🇺🇸 _US_美国 20
+      - 🇺🇸 _US_美国 21
+      - 🇺🇸 _US_美国 22
+      - 🇺🇸 _US_美国 23
+      - 🇺🇸 _US_美国 24
+      - 🇺🇸 _US_美国 25
+      - 🇺🇸 _US_美国 26
+      - 🇺🇸 _US_美国 27
+      - 🇨🇦 _CA_加拿大 2
+      - 🇨🇦 _CA_加拿大 3
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 6
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 7
+      - 🇨🇦 _CA_加拿大 4
+      - 🇨🇦 _CA_加拿大 5
+      - 🇸🇬 _FR_法国(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 28
+      - 🇺🇸 _US_美国 29
+      - 🇸🇬 法国(v2rayshare.com每日节点更新)
+      - 🇹🇼 台湾(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 30
+      - 🇸🇬 俄罗斯(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 31
+      - 🇺🇸 _US_美国 32
+      - 🇺🇸 _US_美国 33
+      - 🇺🇸 _US_美国 34
+      - 🇸🇬 俄罗斯(v2rayshare.com每日节点更新) 2
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 8
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 9
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_1
-      - 🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇨🇳_CN_中国->🇦🇿_AZ_阿塞拜疆
-      - 🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国_10
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_12
-      - 🇺🇸_US_美国_13
-      - 🇨🇦_CA_加拿大_3
-      - 🇺🇸_US_美国_14
-      - 🇨🇦_CA_加拿大_4
-      - 🇺🇸_US_美国_15
-      - 🇺🇸_US_美国_16
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇺🇸_US_美国_19
-      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克
-      - 🇺🇸_US_美国_20
-      - 🇺🇸_US_美国_21
-      - 🇺🇸_US_美国_22
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇺🇸_US_美国_23
-      - 🇺🇸_US_美国_24
-      - 🇫🇷_FR_法国->🇺🇸_US_美国
-      - 🇯🇵_JP_日本
-      - 🇺🇸_US_美国_25
-      - 🇺🇸_US_美国_26
-      - 🇺🇸_US_美国_27
-      - 🇺🇸_US_美国_28
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_29
-      - 🇺🇸_US_美国_30
-      - 🇺🇸_US_美国_31
-      - 🇨🇳_CN_中国->🇮🇱_IL_以色列
-      - 🇺🇸_US_美国_32
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国_33
+      - 🇸🇬 日本(v2rayshare.com每日节点更新)
+      - 🇸🇬 欧洲(v2rayshare.com每日节点更新)
+      - 🇸🇬 新加坡(v2rayshare.com每日节点更新)
+      - 🇸🇬 日本(v2rayshare.com每日节点更新) 2
+      - 🇸🇬 日本(v2rayshare.com每日节点更新) 3
+      - 🇺🇸 _US_美国
+      - 🇸🇬 亚洲(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 2
+      - 🇸🇬 美国(v2rayshare.com每日节点更新)
+      - 🇸🇬 韩国(v2rayshare.com每日节点更新)
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 2
+      - 🇸🇬 德国(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 _US_美国 4
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 _US_美国 7
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 3
+      - 🇺🇸 _US_美国 8
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 _US_美国 10
+      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 12
+      - 🇺🇸 _US_美国 13
+      - 🇺🇸 _US_美国 14
+      - 🇺🇸 _US_美国 15
+      - 🇨🇦 _CA_加拿大
+      - 🇺🇸 _US_美国 16
+      - 🇺🇸 _US_美国 17
+      - 🇺🇸 _US_美国 18
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 4
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 5
+      - 🇺🇸 _US_美国 19
+      - 🇺🇸 _US_美国 20
+      - 🇺🇸 _US_美国 21
+      - 🇺🇸 _US_美国 22
+      - 🇺🇸 _US_美国 23
+      - 🇺🇸 _US_美国 24
+      - 🇺🇸 _US_美国 25
+      - 🇺🇸 _US_美国 26
+      - 🇺🇸 _US_美国 27
+      - 🇨🇦 _CA_加拿大 2
+      - 🇨🇦 _CA_加拿大 3
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 6
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 7
+      - 🇨🇦 _CA_加拿大 4
+      - 🇨🇦 _CA_加拿大 5
+      - 🇸🇬 _FR_法国(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 28
+      - 🇺🇸 _US_美国 29
+      - 🇸🇬 法国(v2rayshare.com每日节点更新)
+      - 🇹🇼 台湾(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 30
+      - 🇸🇬 俄罗斯(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 31
+      - 🇺🇸 _US_美国 32
+      - 🇺🇸 _US_美国 33
+      - 🇺🇸 _US_美国 34
+      - 🇸🇬 俄罗斯(v2rayshare.com每日节点更新) 2
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 8
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 9
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_1
-      - 🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇨🇳_CN_中国->🇦🇿_AZ_阿塞拜疆
-      - 🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国_10
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_12
-      - 🇺🇸_US_美国_13
-      - 🇨🇦_CA_加拿大_3
-      - 🇺🇸_US_美国_14
-      - 🇨🇦_CA_加拿大_4
-      - 🇺🇸_US_美国_15
-      - 🇺🇸_US_美国_16
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇺🇸_US_美国_19
-      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克
-      - 🇺🇸_US_美国_20
-      - 🇺🇸_US_美国_21
-      - 🇺🇸_US_美国_22
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇺🇸_US_美国_23
-      - 🇺🇸_US_美国_24
-      - 🇫🇷_FR_法国->🇺🇸_US_美国
-      - 🇯🇵_JP_日本
-      - 🇺🇸_US_美国_25
-      - 🇺🇸_US_美国_26
-      - 🇺🇸_US_美国_27
-      - 🇺🇸_US_美国_28
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_29
-      - 🇺🇸_US_美国_30
-      - 🇺🇸_US_美国_31
-      - 🇨🇳_CN_中国->🇮🇱_IL_以色列
-      - 🇺🇸_US_美国_32
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国_33
+      - 🇸🇬 日本(v2rayshare.com每日节点更新)
+      - 🇸🇬 欧洲(v2rayshare.com每日节点更新)
+      - 🇸🇬 新加坡(v2rayshare.com每日节点更新)
+      - 🇸🇬 日本(v2rayshare.com每日节点更新) 2
+      - 🇸🇬 日本(v2rayshare.com每日节点更新) 3
+      - 🇺🇸 _US_美国
+      - 🇸🇬 亚洲(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 2
+      - 🇸🇬 美国(v2rayshare.com每日节点更新)
+      - 🇸🇬 韩国(v2rayshare.com每日节点更新)
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 2
+      - 🇸🇬 德国(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 _US_美国 4
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 _US_美国 7
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 3
+      - 🇺🇸 _US_美国 8
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 _US_美国 10
+      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 12
+      - 🇺🇸 _US_美国 13
+      - 🇺🇸 _US_美国 14
+      - 🇺🇸 _US_美国 15
+      - 🇨🇦 _CA_加拿大
+      - 🇺🇸 _US_美国 16
+      - 🇺🇸 _US_美国 17
+      - 🇺🇸 _US_美国 18
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 4
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 5
+      - 🇺🇸 _US_美国 19
+      - 🇺🇸 _US_美国 20
+      - 🇺🇸 _US_美国 21
+      - 🇺🇸 _US_美国 22
+      - 🇺🇸 _US_美国 23
+      - 🇺🇸 _US_美国 24
+      - 🇺🇸 _US_美国 25
+      - 🇺🇸 _US_美国 26
+      - 🇺🇸 _US_美国 27
+      - 🇨🇦 _CA_加拿大 2
+      - 🇨🇦 _CA_加拿大 3
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 6
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 7
+      - 🇨🇦 _CA_加拿大 4
+      - 🇨🇦 _CA_加拿大 5
+      - 🇸🇬 _FR_法国(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 28
+      - 🇺🇸 _US_美国 29
+      - 🇸🇬 法国(v2rayshare.com每日节点更新)
+      - 🇹🇼 台湾(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 30
+      - 🇸🇬 俄罗斯(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 31
+      - 🇺🇸 _US_美国 32
+      - 🇺🇸 _US_美国 33
+      - 🇺🇸 _US_美国 34
+      - 🇸🇬 俄罗斯(v2rayshare.com每日节点更新) 2
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 8
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 9
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -418,56 +548,67 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_1
-      - 🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇨🇳_CN_中国->🇦🇿_AZ_阿塞拜疆
-      - 🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国_10
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_12
-      - 🇺🇸_US_美国_13
-      - 🇨🇦_CA_加拿大_3
-      - 🇺🇸_US_美国_14
-      - 🇨🇦_CA_加拿大_4
-      - 🇺🇸_US_美国_15
-      - 🇺🇸_US_美国_16
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇺🇸_US_美国_19
-      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克
-      - 🇺🇸_US_美国_20
-      - 🇺🇸_US_美国_21
-      - 🇺🇸_US_美国_22
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇺🇸_US_美国_23
-      - 🇺🇸_US_美国_24
-      - 🇫🇷_FR_法国->🇺🇸_US_美国
-      - 🇯🇵_JP_日本
-      - 🇺🇸_US_美国_25
-      - 🇺🇸_US_美国_26
-      - 🇺🇸_US_美国_27
-      - 🇺🇸_US_美国_28
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_29
-      - 🇺🇸_US_美国_30
-      - 🇺🇸_US_美国_31
-      - 🇨🇳_CN_中国->🇮🇱_IL_以色列
-      - 🇺🇸_US_美国_32
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国_33
+      - 🇸🇬 日本(v2rayshare.com每日节点更新)
+      - 🇸🇬 欧洲(v2rayshare.com每日节点更新)
+      - 🇸🇬 新加坡(v2rayshare.com每日节点更新)
+      - 🇸🇬 日本(v2rayshare.com每日节点更新) 2
+      - 🇸🇬 日本(v2rayshare.com每日节点更新) 3
+      - 🇺🇸 _US_美国
+      - 🇸🇬 亚洲(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 2
+      - 🇸🇬 美国(v2rayshare.com每日节点更新)
+      - 🇸🇬 韩国(v2rayshare.com每日节点更新)
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 2
+      - 🇸🇬 德国(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 _US_美国 4
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 _US_美国 7
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 3
+      - 🇺🇸 _US_美国 8
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 _US_美国 10
+      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 12
+      - 🇺🇸 _US_美国 13
+      - 🇺🇸 _US_美国 14
+      - 🇺🇸 _US_美国 15
+      - 🇨🇦 _CA_加拿大
+      - 🇺🇸 _US_美国 16
+      - 🇺🇸 _US_美国 17
+      - 🇺🇸 _US_美国 18
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 4
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 5
+      - 🇺🇸 _US_美国 19
+      - 🇺🇸 _US_美国 20
+      - 🇺🇸 _US_美国 21
+      - 🇺🇸 _US_美国 22
+      - 🇺🇸 _US_美国 23
+      - 🇺🇸 _US_美国 24
+      - 🇺🇸 _US_美国 25
+      - 🇺🇸 _US_美国 26
+      - 🇺🇸 _US_美国 27
+      - 🇨🇦 _CA_加拿大 2
+      - 🇨🇦 _CA_加拿大 3
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 6
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 7
+      - 🇨🇦 _CA_加拿大 4
+      - 🇨🇦 _CA_加拿大 5
+      - 🇸🇬 _FR_法国(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 28
+      - 🇺🇸 _US_美国 29
+      - 🇸🇬 法国(v2rayshare.com每日节点更新)
+      - 🇹🇼 台湾(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 30
+      - 🇸🇬 俄罗斯(v2rayshare.com每日节点更新)
+      - 🇺🇸 _US_美国 31
+      - 🇺🇸 _US_美国 32
+      - 🇺🇸 _US_美国 33
+      - 🇺🇸 _US_美国 34
+      - 🇸🇬 俄罗斯(v2rayshare.com每日节点更新) 2
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 8
+      - 🇸🇬 美国(v2rayshare.com每日节点更新) 9
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
