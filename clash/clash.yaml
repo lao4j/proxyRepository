@@ -1,1185 +1,841 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2022-07-27 22:03:47
-#  模版：v2rayse默认模版
-#  节点数量：162
+#  创建时间：2022-07-27 23:03:35
+#  模版：ACL4SSR
+#  节点数量：113
 #-------------------------------------------------------------#
 #
-port: 7890
-socks-port: 7891
+mixed-port: 7890
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"ss","name":"🇺🇸_US_美国_1","server":"38.114.114.67","port":8882,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
-  - {"type":"ss","name":"🇵🇱_PL_波兰_1","server":"217.30.10.67","port":9056,"cipher":"aes-256-cfb","password":"rNBfNuuANFCAk7KB"}
-  - {"type":"ss","name":"🇺🇸_US_美国_2","server":"38.64.138.145","port":443,"cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
-  - {"type":"ss","name":"🇺🇸_US_美国_3","server":"38.114.114.67","port":5001,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"type":"ss","name":"🇺🇸_US_美国_4","server":"38.68.135.18","port":6697,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
-  - {"type":"ss","name":"🇧🇬_BG_保加利亚_1","server":"213.183.63.218","port":9000,"cipher":"aes-256-cfb","password":"a3GFYt36Sm82Vys9"}
-  - {"type":"ss","name":"🇺🇸_US_美国_5","server":"38.64.138.145","port":8090,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
-  - {"type":"ss","name":"🇵🇱_PL_波兰_2","server":"217.30.10.68","port":9025,"cipher":"aes-256-cfb","password":"XPtzA9sCug3SPR4c"}
-  - {"type":"trojan","name":"🇨🇳_CN_中国","server":"cm.spacez.cloud","port":30003,"password":"c9a3a61d-5d49-4158-9e60-6fa32684b122","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","name":"🇺🇸_US_美国_6","server":"38.114.114.67","port":443,"cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
-  - {"type":"ssr","name":"🇷🇺_RU_俄罗斯联邦_1","server":"213.183.53.200","port":9001,"protocol":"origin","cipher":"aes-256-cfb","obfs":"plain","password":"UkXRsXvR6buDMG2Y"}
-  - {"type":"ss","name":"🇺🇸_US_美国_7","server":"38.64.138.145","port":5003,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
-  - {"type":"ss","name":"🇵🇱_PL_波兰_3","server":"217.30.10.65","port":9088,"cipher":"aes-256-cfb","password":"f8npKgNzdkss2ytn"}
-  - {"type":"ss","name":"🇺🇸_US_美国_8","server":"38.68.134.85","port":8008,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
-  - {"type":"ss","name":"🇺🇸_US_美国_9","server":"38.86.135.27","port":8881,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
-  - {"type":"ss","name":"🇺🇸_US_美国_10","server":"38.68.135.18","port":4444,"cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
-  - {"type":"ssr","name":"🇷🇺_RU_俄罗斯联邦_2","server":"213.183.53.200","port":9046,"protocol":"origin","cipher":"aes-256-cfb","obfs":"plain","password":"NvS8N4Vf8qAGPSCL"}
-  - {"type":"ss","name":"🇺🇸_US_美国_11","server":"38.114.114.69","port":8008,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
-  - {"type":"ssr","name":"🇷🇺_RU_俄罗斯联邦_3","server":"213.183.53.177","port":9059,"protocol":"origin","cipher":"aes-256-cfb","obfs":"plain","password":"9XwYyZsK8SNzQDtY"}
-  - {"type":"ss","name":"🇳🇱_NL_荷兰_1","server":"185.246.155.23","port":9007,"cipher":"aes-256-cfb","password":"kSPmvwdFzGMMW5pY"}
-  - {"type":"ss","name":"🇵🇱_PL_波兰_4","server":"217.30.10.65","port":9018,"cipher":"aes-256-cfb","password":"fG2artUmHfNT2cX7"}
-  - {"type":"ss","name":"🇺🇸_US_美国_12","server":"38.75.136.102","port":443,"cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
-  - {"type":"ss","name":"🇳🇱_NL_荷兰_2","server":"213.183.59.185","port":9031,"cipher":"aes-256-cfb","password":"BwcAUZk8hUFAkDGN"}
-  - {"type":"ss","name":"🇺🇸_US_美国_13","server":"38.75.136.21","port":8881,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
-  - {"type":"ss","name":"🇺🇸_US_美国_14","server":"38.114.114.69","port":5500,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
-  - {"type":"ss","name":"🇺🇸_US_美国_15","server":"38.75.136.102","port":8090,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
-  - {"type":"ssr","name":"🇷🇺_RU_俄罗斯联邦_4","server":"213.183.53.177","port":9033,"protocol":"origin","cipher":"aes-256-cfb","obfs":"plain","password":"UTJA57ypk2XKQpnm"}
-  - {"type":"ss","name":"🇳🇱_NL_荷兰_3","server":"213.183.51.172","port":9020,"cipher":"aes-256-cfb","password":"BNmAXXxAHYpTRdzu"}
-  - {"type":"vmess","name":"🇰🇷_KR_韩国","server":"146.56.110.129","port":26396,"uuid":"f4baed1c-ab86-4b70-caa3-df853467e1bd","alterId":0,"cipher":"auto","network":"tcp"}
-  - {"type":"ss","name":"🇵🇱_PL_波兰_5","server":"217.30.10.68","port":9031,"cipher":"aes-256-cfb","password":"BwcAUZk8hUFAkDGN"}
-  - {"type":"ss","name":"🇵🇱_PL_波兰_6","server":"217.30.10.67","port":9042,"cipher":"aes-256-cfb","password":"S7KwUu7yBy58S3Ga"}
-  - {"type":"ss","name":"🇺🇸_US_美国_16","server":"38.68.134.85","port":8118,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
-  - {"type":"ss","name":"🇦🇺_AU_澳大利亚","server":"185.167.116.253","port":9064,"cipher":"aes-256-cfb","password":"cp8pRSUAyLhTfVWH"}
-  - {"type":"ss","name":"🇳🇱_NL_荷兰_4","server":"213.183.59.229","port":9014,"cipher":"aes-256-cfb","password":"KnJGad3FqTvjqbaX"}
-  - {"type":"ss","name":"🇵🇱_PL_波兰_7","server":"217.30.10.66","port":9093,"cipher":"aes-256-cfb","password":"wfLC2y7rzZyCmuyt"}
-  - {"type":"ss","name":"🇷🇺_RU_俄罗斯联邦_5","server":"213.183.53.208","port":9030,"cipher":"aes-256-cfb","password":"GeregetR8cvQHzYr"}
-  - {"type":"ss","name":"🇵🇱_PL_波兰_8","server":"217.30.10.65","port":9038,"cipher":"aes-256-cfb","password":"gYCYXfkUQEs2TaJQ"}
-  - {"type":"ss","name":"🇵🇱_PL_波兰_9","server":"217.30.10.66","port":9094,"cipher":"aes-256-cfb","password":"rpgbNnU9rDDU4aWZ"}
-  - {"type":"ss","name":"🇺🇸_US_美国_17","server":"38.114.114.67","port":6697,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
-  - {"type":"ss","name":"🇧🇬_BG_保加利亚_2","server":"213.183.63.221","port":9050,"cipher":"aes-256-cfb","password":"FG5ddLsMPbV5CutE"}
-  - {"type":"ss","name":"🇧🇬_BG_保加利亚_3","server":"213.183.63.218","port":9025,"cipher":"aes-256-cfb","password":"XPtzA9sCug3SPR4c"}
-  - {"type":"ss","name":"🇷🇺_RU_俄罗斯联邦_6","server":"213.183.53.212","port":9073,"cipher":"aes-256-cfb","password":"daFYagqDdBdA6VTX"}
-  - {"type":"ss","name":"🇺🇸_US_美国_18","server":"38.114.114.69","port":8080,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
-  - {"type":"ssr","name":"🇷🇺_RU_俄罗斯联邦_7","server":"213.183.53.200","port":9003,"protocol":"origin","cipher":"aes-256-cfb","obfs":"plain","password":"JdmRK9gMEqFgs8nP"}
-  - {"type":"ss","name":"🇳🇱_NL_荷兰_5","server":"213.183.51.171","port":9041,"cipher":"aes-256-cfb","password":"U6qnYRhfyDmn8sgn"}
-  - {"type":"ss","name":"🇧🇬_BG_保加利亚_4","server":"213.183.63.221","port":9020,"cipher":"aes-256-cfb","password":"BNmAXXxAHYpTRdzu"}
-  - {"type":"ss","name":"🇵🇱_PL_波兰_10","server":"217.30.10.65","port":9061,"cipher":"aes-256-cfb","password":"4R3hUfZ2FHhDmNcP"}
-  - {"type":"ss","name":"🇺🇸_US_美国_19","server":"38.114.114.67","port":9101,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
-  - {"type":"ss","name":"🇨🇦_CA_加拿大_1","server":"196.247.59.154","port":805,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"type":"ss","name":"🇳🇱_NL_荷兰_6","server":"213.183.51.172","port":9033,"cipher":"aes-256-cfb","password":"UTJA57ypk2XKQpnm"}
-  - {"type":"ssr","name":"🇷🇺_RU_俄罗斯联邦_8","server":"213.183.53.200","port":9088,"protocol":"origin","cipher":"aes-256-cfb","obfs":"plain","password":"f8npKgNzdkss2ytn"}
-  - {"type":"ss","name":"🇺🇸_US_美国_20","server":"38.114.114.19","port":2376,"cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
-  - {"type":"ss","name":"🇳🇱_NL_荷兰_7","server":"213.183.59.229","port":9064,"cipher":"aes-256-cfb","password":"cp8pRSUAyLhTfVWH"}
-  - {"type":"ss","name":"🇺🇸_US_美国_21","server":"38.75.136.21","port":2375,"cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
-  - {"type":"ss","name":"🇺🇸_US_美国_22","server":"38.75.136.102","port":7306,"cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
-  - {"type":"ss","name":"🇧🇬_BG_保加利亚_5","server":"213.183.63.221","port":9060,"cipher":"aes-256-cfb","password":"ueLXVkvh4hckhErQ"}
-  - {"type":"ss","name":"🇺🇸_US_美国_23","server":"38.68.135.18","port":5003,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
-  - {"type":"ss","name":"🇺🇸_US_美国_24","server":"38.75.136.21","port":3306,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"type":"ss","name":"🇺🇸_US_美国_25","server":"38.114.114.69","port":5001,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"type":"ss","name":"🇺🇸_US_美国_26","server":"38.68.135.19","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
-  - {"type":"ssr","name":"🇷🇺_RU_俄罗斯联邦_9","server":"213.183.53.200","port":9073,"protocol":"origin","cipher":"aes-256-cfb","obfs":"plain","password":"daFYagqDdBdA6VTX"}
-  - {"type":"ss","name":"🇺🇸_US_美国_27","server":"38.75.136.21","port":5001,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"type":"ss","name":"🇨🇦_CA_加拿大_2","server":"196.247.59.154","port":800,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"type":"ssr","name":"🇨🇳_CN_中国->🇭🇰_HK_香港","server":"183.232.141.117","port":559,"protocol":"auth_aes128_md5","cipher":"chacha20-ietf","obfs":"plain","password":"mblank1port","obfs-param":"ZEM1dFpTOTJjRzVvWVhR","protocol-param":"30999:LLLLiikk988iu"}
-  - {"type":"ss","name":"🇷🇺_RU_俄罗斯联邦_10","server":"213.183.53.222","port":9058,"cipher":"aes-256-cfb","password":"dML2sfhbVwvtfNPe"}
-  - {"type":"ss","name":"🇵🇱_PL_波兰_11","server":"217.30.10.65","port":9070,"cipher":"aes-256-cfb","password":"bf7v334KKDV3YDhH"}
-  - {"type":"ss","name":"🇳🇱_NL_荷兰_8","server":"213.183.59.218","port":9040,"cipher":"aes-256-cfb","password":"p9z5BVADH2YFs3MN"}
-  - {"type":"ssr","name":"🇷🇺_RU_俄罗斯联邦_11","server":"213.183.53.200","port":9050,"protocol":"origin","cipher":"aes-256-cfb","obfs":"plain","password":"FG5ddLsMPbV5CutE"}
-  - {"type":"ss","name":"🇺🇸_US_美国_28","server":"38.86.135.27","port":8118,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
-  - {"type":"ssr","name":"🇷🇺_RU_俄罗斯联邦_12","server":"213.183.53.177","port":9003,"protocol":"origin","cipher":"aes-256-cfb","obfs":"plain","password":"JdmRK9gMEqFgs8nP"}
-  - {"type":"ss","name":"🇺🇸_US_美国_29","server":"38.86.135.27","port":8009,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
-  - {"type":"ss","name":"🇺🇸_US_美国_30","server":"38.114.114.19","port":8008,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
-  - {"type":"ss","name":"🇺🇸_US_美国_31","server":"38.75.136.21","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
-  - {"type":"ss","name":"🇷🇺_RU_俄罗斯联邦_13","server":"213.183.53.214","port":9032,"cipher":"aes-256-cfb","password":"UWZQeLRWnkqgkseq"}
-  - {"type":"ss","name":"🇵🇱_PL_波兰_12","server":"217.30.10.67","port":9008,"cipher":"aes-256-cfb","password":"y9VURyNzJWNRYEGQ"}
-  - {"type":"ss","name":"🇯🇵_JP_日本_1","server":"85.208.108.58","port":8080,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
-  - {"type":"ss","name":"🇺🇸_US_美国_32","server":"38.68.135.18","port":5500,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
-  - {"type":"ssr","name":"🇷🇺_RU_俄罗斯联邦_14","server":"213.183.53.177","port":9094,"protocol":"origin","cipher":"aes-256-cfb","obfs":"plain","password":"rpgbNnU9rDDU4aWZ"}
-  - {"type":"ss","name":"🇺🇸_US_美国_33","server":"38.75.136.21","port":8090,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
-  - {"type":"ss","name":"🇺🇸_US_美国_34","server":"38.68.135.19","port":5004,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
-  - {"type":"ssr","name":"🇷🇺_RU_俄罗斯联邦_15","server":"213.183.53.200","port":9020,"protocol":"origin","cipher":"aes-256-cfb","obfs":"plain","password":"BNmAXXxAHYpTRdzu"}
-  - {"type":"ss","name":"🇺🇸_US_美国_35","server":"38.75.136.102","port":6697,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
-  - {"type":"ss","name":"🇳🇱_NL_荷兰_9","server":"185.246.155.23","port":9038,"cipher":"aes-256-cfb","password":"gYCYXfkUQEs2TaJQ"}
-  - {"type":"ss","name":"🇺🇸_US_美国_36","server":"38.114.114.49","port":3306,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"type":"ss","name":"🇺🇸_US_美国_37","server":"38.114.114.19","port":5003,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
-  - {"type":"ss","name":"🇺🇸_US_美国_38","server":"38.114.114.19","port":8000,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
-  - {"type":"ss","name":"🇷🇺_RU_俄罗斯联邦_16","server":"213.183.53.208","port":9018,"cipher":"aes-256-cfb","password":"fG2artUmHfNT2cX7"}
-  - {"type":"ss","name":"🇷🇺_RU_俄罗斯联邦_17","server":"213.183.53.207","port":9056,"cipher":"aes-256-cfb","password":"rNBfNuuANFCAk7KB"}
-  - {"type":"ss","name":"🇺🇸_US_美国_39","server":"38.64.138.145","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
-  - {"type":"ss","name":"🇺🇸_US_美国_40","server":"38.68.134.85","port":3306,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"type":"ss","name":"🇺🇸_US_美国_41","server":"38.143.66.55","port":8091,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
-  - {"type":"ss","name":"🇺🇸_US_美国_42","server":"38.114.114.69","port":8118,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
-  - {"type":"ss","name":"🇳🇱_NL_荷兰_10","server":"213.183.59.229","port":9007,"cipher":"aes-256-cfb","password":"kSPmvwdFzGMMW5pY"}
-  - {"type":"ss","name":"🇺🇸_US_美国_43","server":"38.114.114.69","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
-  - {"type":"ssr","name":"🇷🇺_RU_俄罗斯联邦_18","server":"213.183.53.177","port":9060,"protocol":"origin","cipher":"aes-256-cfb","obfs":"plain","password":"ueLXVkvh4hckhErQ"}
-  - {"type":"ss","name":"🇳🇱_NL_荷兰_11","server":"213.183.59.229","port":9018,"cipher":"aes-256-cfb","password":"fG2artUmHfNT2cX7"}
-  - {"type":"ssr","name":"🇷🇺_RU_俄罗斯联邦_19","server":"213.183.53.200","port":9026,"protocol":"origin","cipher":"aes-256-cfb","obfs":"plain","password":"QWDDvVE9npNurQfA"}
-  - {"type":"ss","name":"🇺🇸_US_美国_44","server":"38.114.114.67","port":7001,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
-  - {"type":"ss","name":"🇧🇬_BG_保加利亚_6","server":"213.183.63.221","port":9073,"cipher":"aes-256-cfb","password":"daFYagqDdBdA6VTX"}
-  - {"type":"ss","name":"🇺🇸_US_美国_45","server":"38.68.134.85","port":8118,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
-  - {"type":"ss","name":"🇺🇸_US_美国_46","server":"38.64.138.145","port":8091,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
-  - {"type":"ss","name":"🇺🇸_US_美国_47","server":"38.114.114.49","port":7306,"cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
-  - {"type":"ss","name":"🇺🇸_US_美国_48","server":"38.86.135.27","port":8000,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
-  - {"type":"ss","name":"🇷🇺_RU_俄罗斯联邦_20","server":"213.183.53.221","port":9005,"cipher":"aes-256-cfb","password":"ZET59LF6DvCC8KVt"}
-  - {"type":"ss","name":"🇳🇱_NL_荷兰_12","server":"185.246.155.29","port":9000,"cipher":"aes-256-cfb","password":"a3GFYt36Sm82Vys9"}
-  - {"type":"ss","name":"🇺🇸_US_美国_49","server":"38.68.134.85","port":443,"cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
-  - {"type":"ssr","name":"🇷🇺_RU_俄罗斯联邦_21","server":"213.183.53.200","port":9084,"protocol":"origin","cipher":"aes-256-cfb","obfs":"plain","password":"c3NtHJ5ujV2tGDfj"}
-  - {"type":"ssr","name":"🇷🇺_RU_俄罗斯联邦_22","server":"213.183.53.200","port":9015,"protocol":"origin","cipher":"aes-256-cfb","obfs":"plain","password":"ZpNDDKRu9MagNvaf"}
-  - {"type":"ss","name":"🇺🇸_US_美国_50","server":"38.114.114.19","port":5500,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
-  - {"type":"ss","name":"🇵🇱_PL_波兰_13","server":"217.30.10.67","port":9056,"cipher":"aes-256-cfb","password":"rNBfNuuANFCAk7KB"}
-  - {"type":"ss","name":"🇵🇱_PL_波兰_14","server":"217.30.10.65","port":9010,"cipher":"aes-256-cfb","password":"f63gg8EruDnUrmz4"}
-  - {"type":"ss","name":"🇺🇸_US_美国_51","server":"38.114.114.69","port":9102,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
-  - {"type":"ss","name":"🇵🇱_PL_波兰_15","server":"217.30.10.65","port":9060,"cipher":"aes-256-cfb","password":"ueLXVkvh4hckhErQ"}
-  - {"type":"ss","name":"🇷🇺_RU_俄罗斯联邦_23","server":"213.183.53.222","port":9059,"cipher":"aes-256-cfb","password":"9XwYyZsK8SNzQDtY"}
-  - {"type":"ss","name":"🇺🇸_US_美国_52","server":"38.143.66.99","port":5001,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"type":"ss","name":"🇺🇸_US_美国_53","server":"38.114.114.69","port":6697,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
-  - {"type":"ss","name":"🇵🇱_PL_波兰_16","server":"217.30.10.67","port":9097,"cipher":"aes-256-cfb","password":"Sn5B7jTqr76aCJT8"}
-  - {"type":"ss","name":"🇧🇬_BG_保加利亚_7","server":"213.183.63.221","port":9042,"cipher":"aes-256-cfb","password":"S7KwUu7yBy58S3Ga"}
-  - {"type":"ss","name":"🇬🇧_GB_英国","server":"54.36.174.181","port":8119,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
-  - {"type":"ss","name":"🇷🇺_RU_俄罗斯联邦_24","server":"213.183.53.198","port":9025,"cipher":"aes-256-cfb","password":"XPtzA9sCug3SPR4c"}
-  - {"type":"ssr","name":"🇷🇺_RU_俄罗斯联邦_25","server":"213.183.53.177","port":9093,"protocol":"origin","cipher":"aes-256-cfb","obfs":"plain","password":"wfLC2y7rzZyCmuyt"}
-  - {"type":"ss","name":"🇯🇵_JP_日本_2","server":"85.208.108.18","port":5001,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"type":"ss","name":"🇺🇸_US_美国_54","server":"38.75.136.102","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
-  - {"type":"ss","name":"🇺🇸_US_美国_55","server":"38.64.138.145","port":7002,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
-  - {"type":"ss","name":"🇺🇸_US_美国_56","server":"38.143.66.20","port":9102,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
-  - {"type":"ss","name":"🇺🇸_US_美国_57","server":"38.114.114.19","port":7002,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
-  - {"type":"trojan","name":"🇨🇳_CN_中国->🇹🇼_TW_台湾","server":"111.45.29.75","port":30003,"password":"c9a3a61d-5d49-4158-9e60-6fa32684b122","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","name":"🇺🇸_US_美国_58","server":"169.197.141.5","port":3306,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"type":"ss","name":"🇳🇱_NL_荷兰_13","server":"213.183.51.171","port":9064,"cipher":"aes-256-cfb","password":"cp8pRSUAyLhTfVWH"}
-  - {"type":"ss","name":"🇺🇸_US_美国_59","server":"38.114.114.69","port":8881,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
-  - {"type":"trojan","name":"🇺🇸_US_美国_60","server":"azgy001.xiba1.xyz","port":20712,"password":"7497242f-3044-3c77-bf48-14bb26c92a83","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","name":"🇺🇸_US_美国_61","server":"38.64.138.145","port":5500,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
-  - {"type":"ss","name":"🇷🇺_RU_俄罗斯联邦_26","server":"213.183.53.222","port":9019,"cipher":"aes-256-cfb","password":"GA9KzeEgvfxNrgmM"}
-  - {"type":"ss","name":"🇧🇬_BG_保加利亚_8","server":"213.183.63.221","port":9094,"cipher":"aes-256-cfb","password":"rpgbNnU9rDDU4aWZ"}
-  - {"type":"trojan","name":"🇺🇸_US_美国_62","server":"azgy001.xiba1.xyz","port":20710,"password":"7497242f-3044-3c77-bf48-14bb26c92a83","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇺🇸_US_美国_63","server":"s2.hazz.win","port":12340,"password":"dfbf0d67-f03d-4184-a224-c2d64a571f99","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","name":"🇺🇸_US_美国_64","server":"38.114.114.19","port":7306,"cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
-  - {"type":"ss","name":"🇺🇸_US_美国_65","server":"38.75.136.21","port":5004,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
-  - {"type":"ss","name":"🇺🇸_US_美国_66","server":"38.114.114.69","port":6679,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
-  - {"type":"ss","name":"🇺🇸_US_美国_67","server":"38.114.114.19","port":6697,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
-  - {"type":"ss","name":"🇵🇱_PL_波兰_17","server":"217.30.10.65","port":9040,"cipher":"aes-256-cfb","password":"p9z5BVADH2YFs3MN"}
-  - {"type":"ss","name":"🇵🇱_PL_波兰_18","server":"217.30.10.63","port":9020,"cipher":"aes-256-cfb","password":"BNmAXXxAHYpTRdzu"}
-  - {"type":"trojan","name":"🇺🇸_US_美国_68","server":"104.129.63.65","port":8443,"password":"cUDgjDkSfn","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","name":"🇷🇺_RU_俄罗斯联邦_27","server":"213.183.53.214","port":9020,"cipher":"aes-256-cfb","password":"BNmAXXxAHYpTRdzu"}
-  - {"type":"ssr","name":"🇷🇺_RU_俄罗斯联邦_28","server":"213.183.53.200","port":9027,"protocol":"origin","cipher":"aes-256-cfb","obfs":"plain","password":"EXN3S3eQpjE7EJu8"}
-  - {"type":"ss","name":"🇳🇱_NL_荷兰_14","server":"213.183.51.172","port":9064,"cipher":"aes-256-cfb","password":"cp8pRSUAyLhTfVWH"}
-  - {"type":"ss","name":"🇺🇸_US_美国_69","server":"38.114.114.19","port":8091,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
-  - {"type":"ss","name":"🇵🇱_PL_波兰_19","server":"217.30.10.67","port":9041,"cipher":"aes-256-cfb","password":"U6qnYRhfyDmn8sgn"}
-  - {"type":"ss","name":"🇺🇸_US_美国_70","server":"38.75.136.21","port":6679,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
-  - {"type":"trojan","name":"🇺🇸_US_美国_71","server":"azgy001.xiba1.xyz","port":20711,"password":"7497242f-3044-3c77-bf48-14bb26c92a83","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","name":"🇺🇸_US_美国_72","server":"38.75.136.21","port":443,"cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
-  - {"type":"ss","name":"🇺🇸_US_美国_73","server":"38.75.136.21","port":7306,"cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
-  - {"type":"ss","name":"🇷🇺_RU_俄罗斯联邦_29","server":"213.183.53.208","port":9088,"cipher":"aes-256-cfb","password":"f8npKgNzdkss2ytn"}
-  - {"type":"ss","name":"🇷🇺_RU_俄罗斯联邦_30","server":"213.183.53.207","port":9056,"cipher":"aes-256-cfb","password":"rNBfNuuANFCAk7KB"}
-  - {"type":"ss","name":"🇵🇱_PL_波兰_20","server":"217.30.10.67","port":9025,"cipher":"aes-256-cfb","password":"XPtzA9sCug3SPR4c"}
-  - {"type":"ss","name":"🇵🇱_PL_波兰_21","server":"217.30.10.65","port":9025,"cipher":"aes-256-cfb","password":"XPtzA9sCug3SPR4c"}
-  - {"type":"ss","name":"🇺🇸_US_美国_74","server":"38.114.114.49","port":7001,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
-  - {"type":"ss","name":"🇺🇸_US_美国_75","server":"38.114.114.69","port":8882,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
-  - {"type":"ss","name":"🇺🇸_US_美国_76","server":"38.64.138.145","port":8091,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
-  - {"type":"ss","name":"🇵🇱_PL_波兰_22","server":"217.30.10.67","port":9008,"cipher":"aes-256-cfb","password":"y9VURyNzJWNRYEGQ"}
-  - {"type":"ss","name":"🇵🇱_PL_波兰_23","server":"217.30.10.65","port":9038,"cipher":"aes-256-cfb","password":"gYCYXfkUQEs2TaJQ"}
-  - {"type":"ss","name":"🇺🇸_US_美国_77","server":"38.143.66.20","port":5500,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"🇰🇷_KR_欢迎订阅yui科技_1","server":"3.36.149.10","port":56763,"cipher":"chacha20-ietf-poly1305","password":"nofifUphu"}
+  - {"type":"vmess","name":"🇸🇬_SG_欢迎订阅yui科技_1","ws-opts":{"path":"/we"},"server":"168.138.161.22","port":"26039","uuid":"2b353530-fd72-4079-9a73-e50842f8b39d","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"🇸🇬_SG_欢迎订阅yui科技_2","ws-opts":{"path":"/we","headers":{"host":"168.138.161.22"}},"server":"168.138.161.22","port":"26039","uuid":"2b353530-fd72-4079-9a73-e50842f8b39d","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"🇸🇬_SG_欢迎订阅yui科技_3","ws-opts":{"path":"/chat"},"server":"vsg1.0bad.com","port":"443","uuid":"927094d3-d678-4763-8591-e240d0bcae87","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇯🇵_JP_欢迎订阅yui科技_1","ws-opts":{"path":"/hello","headers":{"host":"140.238.42.147"}},"server":"140.238.42.147","port":"11188","uuid":"798550eb-c374-4113-b0d5-530e7d4ddedc","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"ss","name":"🇯🇵_JP_欢迎订阅yui科技_2","server":"85.208.108.93","port":8881,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_1","server":"38.114.114.49","port":9101,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_2","server":"38.75.136.102","port":9102,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_3","server":"38.75.136.102","port":8881,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_4","server":"38.114.114.69","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_5","server":"38.75.136.21","port":443,"cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_6","server":"38.75.136.102","port":7001,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_7","server":"38.114.114.67","port":5500,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_8","server":"38.64.138.145","port":5500,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_9","server":"38.114.114.69","port":443,"cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_10","server":"38.75.136.102","port":8080,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_11","server":"38.114.114.19","port":8091,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+  - {"type":"vmess","name":"🇺🇸_US_欢迎订阅yui科技_12","server":"51.81.223.21","port":"443","uuid":"c0156451-4efb-45e2-84fc-8d315c4650db","alterId":"32","cipher":"auto","network":"tcp"}
+  - {"type":"ss","name":"🇯🇵_JP_欢迎订阅yui科技_3","server":"85.208.108.20","port":5601,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇯🇵_JP_欢迎订阅yui科技_4","server":"85.208.108.20","port":7002,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_13","server":"38.114.114.19","port":3389,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_14","server":"52.13.166.179","port":59369,"cipher":"chacha20-ietf-poly1305","password":"fijboorrom"}
+  - {"type":"ss","name":"🇯🇵_JP_欢迎订阅yui科技_5","server":"85.208.108.93","port":5001,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_15","server":"38.114.114.19","port":8009,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_16","server":"38.114.114.19","port":7002,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_17","server":"38.114.114.19","port":5500,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_18","server":"38.68.135.19","port":7306,"cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_19","server":"38.75.136.21","port":8009,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_20","server":"38.114.114.69","port":6697,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_21","server":"38.75.136.102","port":9101,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_22","server":"38.114.114.19","port":8090,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_23","server":"38.114.114.67","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_24","server":"38.143.66.99","port":5001,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_25","server":"38.114.114.19","port":6679,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_26","server":"38.114.114.67","port":5001,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"vless","name":"🇺🇸_US_欢迎订阅yui科技_27","server":"www.xinyi369.tk","port":888,"uuid":"146190d9-926a-4dd9-9e03-7316d5d36da3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/lf4ycu","servername":"www.xinyi369.tk"}}
+  - {"type":"vless","name":"🇺🇸_US_欢迎订阅yui科技_28","server":"xiaocaitou.eu.org","port":443,"uuid":"6af54f19-9168-4ca5-b042-5b354048faf3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/1dbd5a5314/","servername":"xiaocaitou.eu.org"}}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_29","server":"38.75.136.21","port":8881,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_30","server":"38.75.136.21","port":8080,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"vless","name":"🇺🇸_US_欢迎订阅yui科技_31","server":"xiaocaitou.eu.org","port":443,"uuid":"6af54f19-9168-4ca5-b042-5b354048faf3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/1dbd5a5314/","servername":"xiaocaitou.eu.org"}}
+  - {"type":"vless","name":"🇺🇸_US_欢迎订阅yui科技_32","server":"xiaocaitou.eu.org","port":443,"uuid":"6af54f19-9168-4ca5-b042-5b354048faf3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/1dbd5a5314/","servername":"xiaocaitou.eu.org"}}
+  - {"type":"ss","name":"🇯🇵_JP_欢迎订阅yui科技_6","server":"85.208.108.93","port":7306,"cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_33","server":"38.68.135.19","port":5003,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_34","server":"38.114.114.67","port":6697,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_35","server":"38.114.114.19","port":8008,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_36","server":"38.75.136.102","port":5601,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_37","server":"38.68.134.85","port":5004,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_38","server":"38.114.114.67","port":9101,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_39","server":"38.75.136.21","port":8882,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_40","server":"38.68.135.19","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_41","server":"38.114.114.49","port":7001,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_42","server":"38.114.114.19","port":443,"cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_43","server":"38.114.114.67","port":5000,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"vmess","name":"🇺🇸_US_欢迎订阅yui科技_44","server":"20.28.209.177","port":"30002","uuid":"6bbf8be0-c2f8-4ecb-d70d-e9c2e261817d","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"ss","name":"🇯🇵_JP_欢迎订阅yui科技_7","server":"85.208.108.20","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"type":"ss","name":"🇯🇵_JP_欢迎订阅yui科技_8","server":"85.208.108.18","port":7001,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"type":"vmess","name":"🇰🇷_KR_欢迎订阅yui科技_2","server":"146.56.103.73","port":"14003","uuid":"b294b95e-71cc-4cbb-cf4b-6b6ad8fb3d00","alterId":"64","cipher":"auto","network":"tcp"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_45","server":"38.75.136.21","port":5001,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_46","server":"38.75.136.102","port":5500,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_47","server":"38.114.114.67","port":7001,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_48","server":"38.64.138.145","port":6679,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_49","server":"38.75.136.21","port":8888,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_50","server":"38.75.136.135","port":5500,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_51","server":"38.114.114.19","port":8000,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"vmess","name":"🇺🇸_US_欢迎订阅yui科技_52","ws-opts":{"path":"/v116-DtoEwAEX","headers":{"host":"v116.v2dns.bar"}},"server":"v116.v2dns.bar","port":"80","uuid":"c97cf46e-1554-36cb-8b36-c3556b883dc4","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"🇺🇸_US_欢迎订阅yui科技_53","server":"23.230.146.254","port":"1258","uuid":"edeb41cc-a76a-47f2-fa96-b9141e66a2b0","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"ss","name":"🇨🇦_CA_欢迎订阅yui科技_1","server":"38.111.114.246","port":8882,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"type":"ss","name":"🇮🇳_IN_欢迎订阅yui科技_1","server":"3.111.242.2","port":51846,"cipher":"chacha20-ietf-poly1305","password":"RekWopdog8"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_54","server":"38.114.114.69","port":8090,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_55","server":"38.64.138.145","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_56","server":"38.86.135.36","port":8118,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_57","server":"38.114.114.19","port":5003,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_58","server":"38.86.135.27","port":8000,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"🇯🇵_JP_欢迎订阅yui科技_9","server":"85.208.108.58","port":8080,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"vmess","name":"🇺🇸_US_欢迎订阅yui科技_59","ws-opts":{"path":"/v116-DtoEwAEX"},"server":"v116.v2dns.bar","port":"80","uuid":"c97cf46e-1554-36cb-8b36-c3556b883dc4","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_60","server":"38.86.135.27","port":8009,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_61","server":"38.64.138.145","port":443,"cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"type":"ss","name":"🇨🇦_CA_欢迎订阅yui科技_2","server":"134.195.196.85","port":5001,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇯🇵_JP_欢迎订阅yui科技_10","server":"85.208.108.18","port":5001,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇯🇵_JP_欢迎订阅yui科技_11","server":"85.208.108.93","port":7002,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_62","server":"38.75.136.21","port":3306,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_63","server":"38.75.136.21","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_64","server":"38.114.114.69","port":5001,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"vmess","name":"🇺🇸_US_欢迎订阅yui科技_65","server":"107.173.250.94","port":"25318","uuid":"ed293411-ab53-4ebc-f0ab-34d78fa1f5ce","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"ss","name":"🇯🇵_JP_欢迎订阅yui科技_12","server":"85.208.108.93","port":5601,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"trojan","name":"🇮🇳_IN_欢迎订阅yui科技_2","server":"in-02.licom.ml","port":8443,"password":"ce433528-39fa-4711-bc0d-25a5b1579574","udp":true,"skip-cert-verify":true,"sni":"in-02.licom.ml"}
+  - {"type":"vmess","name":"🇺🇸_US_欢迎订阅yui科技_66","server":"51.81.223.6","port":"443","uuid":"c0156451-4efb-45e2-84fc-8d315c4650db","alterId":"32","cipher":"auto","network":"tcp"}
+  - {"type":"vless","name":"🇺🇸_US_欢迎订阅yui科技_67","server":"xiaocaitou.eu.org","port":443,"uuid":"6af54f19-9168-4ca5-b042-5b354048faf3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/1dbd5a5314/","servername":"xiaocaitou.eu.org"}}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_68","server":"38.114.114.69","port":8881,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"type":"ss","name":"🇨🇦_CA_欢迎订阅yui科技_3","server":"196.247.59.154","port":805,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_69","server":"38.143.66.20","port":5000,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_70","server":"38.143.66.20","port":5500,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_71","server":"38.143.66.20","port":9102,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"type":"ss","name":"🇨🇦_CA_欢迎订阅yui科技_4","server":"196.247.59.154","port":803,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"trojan","name":"🇨🇳_CN_欢迎订阅yui科技_1","server":"111.45.29.75","port":30003,"password":"c9a3a61d-5d49-4158-9e60-6fa32684b122","udp":true,"skip-cert-verify":true,"sni":"tw.speedasia.xyz"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_72","server":"38.68.135.18","port":8009,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"type":"ss","name":"🇨🇦_CA_欢迎订阅yui科技_5","server":"196.247.59.154","port":801,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"🇨🇦_CA_欢迎订阅yui科技_6","server":"196.247.59.154","port":806,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"🇨🇦_CA_欢迎订阅yui科技_7","server":"196.247.59.154","port":809,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"🇮🇹_IT_欢迎订阅yui科技","server":"92.223.93.233","port":1035,"cipher":"chacha20-ietf-poly1305","password":")1N1E6v0SU_rGTpg"}
+  - {"type":"ss","name":"🇨🇦_CA_欢迎订阅yui科技_8","server":"196.247.59.154","port":802,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"vmess","name":"🇰🇷_KR_欢迎订阅yui科技_3","server":"chess.magicefire.com","port":"443","uuid":"9aa80017-3427-4165-a522-f5f9a11330d0","alterId":"0","cipher":"auto","network":"tcp","tls":true}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_73","server":"38.143.66.20","port":7002,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_74","server":"38.143.66.20","port":5004,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"type":"vmess","name":"🇨🇳_CN_欢迎订阅yui科技_2","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"YouTube-aweikeji"}},"server":"in-sg-1.onebox6.org","port":"38701","uuid":"79386685-16da-327c-9e14-aa6d702d86bc","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_75","server":"38.143.66.20","port":2375,"cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+  - {"type":"ss","name":"🇨🇦_CA_欢迎订阅yui科技_9","server":"138.197.166.205","port":811,"cipher":"chacha20-ietf-poly1305","password":"Ultr@r00t_2017"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_76","server":"38.143.66.20","port":6697,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"type":"ss","name":"🇸🇬_SG_欢迎订阅yui科技_4","server":"217.197.160.117","port":805,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"🇸🇬_SG_欢迎订阅yui科技_5","server":"217.197.160.117","port":803,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"🇸🇬_SG_欢迎订阅yui科技_6","server":"217.197.160.117","port":800,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"🇸🇬_SG_欢迎订阅yui科技_7","server":"217.197.160.117","port":809,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"🇺🇸_US_欢迎订阅yui科技_77","server":"38.143.66.20","port":9101,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸_US_美国_1
-      - 🇵🇱_PL_波兰_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇧🇬_BG_保加利亚_1
-      - 🇺🇸_US_美国_5
-      - 🇵🇱_PL_波兰_2
-      - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国_6
-      - 🇷🇺_RU_俄罗斯联邦_1
-      - 🇺🇸_US_美国_7
-      - 🇵🇱_PL_波兰_3
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国_10
-      - 🇷🇺_RU_俄罗斯联邦_2
-      - 🇺🇸_US_美国_11
-      - 🇷🇺_RU_俄罗斯联邦_3
-      - 🇳🇱_NL_荷兰_1
-      - 🇵🇱_PL_波兰_4
-      - 🇺🇸_US_美国_12
-      - 🇳🇱_NL_荷兰_2
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇺🇸_US_美国_15
-      - 🇷🇺_RU_俄罗斯联邦_4
-      - 🇳🇱_NL_荷兰_3
-      - 🇰🇷_KR_韩国
-      - 🇵🇱_PL_波兰_5
-      - 🇵🇱_PL_波兰_6
-      - 🇺🇸_US_美国_16
-      - 🇦🇺_AU_澳大利亚
-      - 🇳🇱_NL_荷兰_4
-      - 🇵🇱_PL_波兰_7
-      - 🇷🇺_RU_俄罗斯联邦_5
-      - 🇵🇱_PL_波兰_8
-      - 🇵🇱_PL_波兰_9
-      - 🇺🇸_US_美国_17
-      - 🇧🇬_BG_保加利亚_2
-      - 🇧🇬_BG_保加利亚_3
-      - 🇷🇺_RU_俄罗斯联邦_6
-      - 🇺🇸_US_美国_18
-      - 🇷🇺_RU_俄罗斯联邦_7
-      - 🇳🇱_NL_荷兰_5
-      - 🇧🇬_BG_保加利亚_4
-      - 🇵🇱_PL_波兰_10
-      - 🇺🇸_US_美国_19
-      - 🇨🇦_CA_加拿大_1
-      - 🇳🇱_NL_荷兰_6
-      - 🇷🇺_RU_俄罗斯联邦_8
-      - 🇺🇸_US_美国_20
-      - 🇳🇱_NL_荷兰_7
-      - 🇺🇸_US_美国_21
-      - 🇺🇸_US_美国_22
-      - 🇧🇬_BG_保加利亚_5
-      - 🇺🇸_US_美国_23
-      - 🇺🇸_US_美国_24
-      - 🇺🇸_US_美国_25
-      - 🇺🇸_US_美国_26
-      - 🇷🇺_RU_俄罗斯联邦_9
-      - 🇺🇸_US_美国_27
-      - 🇨🇦_CA_加拿大_2
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
-      - 🇷🇺_RU_俄罗斯联邦_10
-      - 🇵🇱_PL_波兰_11
-      - 🇳🇱_NL_荷兰_8
-      - 🇷🇺_RU_俄罗斯联邦_11
-      - 🇺🇸_US_美国_28
-      - 🇷🇺_RU_俄罗斯联邦_12
-      - 🇺🇸_US_美国_29
-      - 🇺🇸_US_美国_30
-      - 🇺🇸_US_美国_31
-      - 🇷🇺_RU_俄罗斯联邦_13
-      - 🇵🇱_PL_波兰_12
-      - 🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国_32
-      - 🇷🇺_RU_俄罗斯联邦_14
-      - 🇺🇸_US_美国_33
-      - 🇺🇸_US_美国_34
-      - 🇷🇺_RU_俄罗斯联邦_15
-      - 🇺🇸_US_美国_35
-      - 🇳🇱_NL_荷兰_9
-      - 🇺🇸_US_美国_36
-      - 🇺🇸_US_美国_37
-      - 🇺🇸_US_美国_38
-      - 🇷🇺_RU_俄罗斯联邦_16
-      - 🇷🇺_RU_俄罗斯联邦_17
-      - 🇺🇸_US_美国_39
-      - 🇺🇸_US_美国_40
-      - 🇺🇸_US_美国_41
-      - 🇺🇸_US_美国_42
-      - 🇳🇱_NL_荷兰_10
-      - 🇺🇸_US_美国_43
-      - 🇷🇺_RU_俄罗斯联邦_18
-      - 🇳🇱_NL_荷兰_11
-      - 🇷🇺_RU_俄罗斯联邦_19
-      - 🇺🇸_US_美国_44
-      - 🇧🇬_BG_保加利亚_6
-      - 🇺🇸_US_美国_45
-      - 🇺🇸_US_美国_46
-      - 🇺🇸_US_美国_47
-      - 🇺🇸_US_美国_48
-      - 🇷🇺_RU_俄罗斯联邦_20
-      - 🇳🇱_NL_荷兰_12
-      - 🇺🇸_US_美国_49
-      - 🇷🇺_RU_俄罗斯联邦_21
-      - 🇷🇺_RU_俄罗斯联邦_22
-      - 🇺🇸_US_美国_50
-      - 🇵🇱_PL_波兰_13
-      - 🇵🇱_PL_波兰_14
-      - 🇺🇸_US_美国_51
-      - 🇵🇱_PL_波兰_15
-      - 🇷🇺_RU_俄罗斯联邦_23
-      - 🇺🇸_US_美国_52
-      - 🇺🇸_US_美国_53
-      - 🇵🇱_PL_波兰_16
-      - 🇧🇬_BG_保加利亚_7
-      - 🇬🇧_GB_英国
-      - 🇷🇺_RU_俄罗斯联邦_24
-      - 🇷🇺_RU_俄罗斯联邦_25
-      - 🇯🇵_JP_日本_2
-      - 🇺🇸_US_美国_54
-      - 🇺🇸_US_美国_55
-      - 🇺🇸_US_美国_56
-      - 🇺🇸_US_美国_57
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇺🇸_US_美国_58
-      - 🇳🇱_NL_荷兰_13
-      - 🇺🇸_US_美国_59
-      - 🇺🇸_US_美国_60
-      - 🇺🇸_US_美国_61
-      - 🇷🇺_RU_俄罗斯联邦_26
-      - 🇧🇬_BG_保加利亚_8
-      - 🇺🇸_US_美国_62
-      - 🇺🇸_US_美国_63
-      - 🇺🇸_US_美国_64
-      - 🇺🇸_US_美国_65
-      - 🇺🇸_US_美国_66
-      - 🇺🇸_US_美国_67
-      - 🇵🇱_PL_波兰_17
-      - 🇵🇱_PL_波兰_18
-      - 🇺🇸_US_美国_68
-      - 🇷🇺_RU_俄罗斯联邦_27
-      - 🇷🇺_RU_俄罗斯联邦_28
-      - 🇳🇱_NL_荷兰_14
-      - 🇺🇸_US_美国_69
-      - 🇵🇱_PL_波兰_19
-      - 🇺🇸_US_美国_70
-      - 🇺🇸_US_美国_71
-      - 🇺🇸_US_美国_72
-      - 🇺🇸_US_美国_73
-      - 🇷🇺_RU_俄罗斯联邦_29
-      - 🇷🇺_RU_俄罗斯联邦_30
-      - 🇵🇱_PL_波兰_20
-      - 🇵🇱_PL_波兰_21
-      - 🇺🇸_US_美国_74
-      - 🇺🇸_US_美国_75
-      - 🇺🇸_US_美国_76
-      - 🇵🇱_PL_波兰_22
-      - 🇵🇱_PL_波兰_23
-      - 🇺🇸_US_美国_77
+      - 🇰🇷_KR_欢迎订阅yui科技_1
+      - 🇸🇬_SG_欢迎订阅yui科技_1
+      - 🇸🇬_SG_欢迎订阅yui科技_2
+      - 🇸🇬_SG_欢迎订阅yui科技_3
+      - 🇯🇵_JP_欢迎订阅yui科技_1
+      - 🇯🇵_JP_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_1
+      - 🇺🇸_US_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_3
+      - 🇺🇸_US_欢迎订阅yui科技_4
+      - 🇺🇸_US_欢迎订阅yui科技_5
+      - 🇺🇸_US_欢迎订阅yui科技_6
+      - 🇺🇸_US_欢迎订阅yui科技_7
+      - 🇺🇸_US_欢迎订阅yui科技_8
+      - 🇺🇸_US_欢迎订阅yui科技_9
+      - 🇺🇸_US_欢迎订阅yui科技_10
+      - 🇺🇸_US_欢迎订阅yui科技_11
+      - 🇺🇸_US_欢迎订阅yui科技_12
+      - 🇯🇵_JP_欢迎订阅yui科技_3
+      - 🇯🇵_JP_欢迎订阅yui科技_4
+      - 🇺🇸_US_欢迎订阅yui科技_13
+      - 🇺🇸_US_欢迎订阅yui科技_14
+      - 🇯🇵_JP_欢迎订阅yui科技_5
+      - 🇺🇸_US_欢迎订阅yui科技_15
+      - 🇺🇸_US_欢迎订阅yui科技_16
+      - 🇺🇸_US_欢迎订阅yui科技_17
+      - 🇺🇸_US_欢迎订阅yui科技_18
+      - 🇺🇸_US_欢迎订阅yui科技_19
+      - 🇺🇸_US_欢迎订阅yui科技_20
+      - 🇺🇸_US_欢迎订阅yui科技_21
+      - 🇺🇸_US_欢迎订阅yui科技_22
+      - 🇺🇸_US_欢迎订阅yui科技_23
+      - 🇺🇸_US_欢迎订阅yui科技_24
+      - 🇺🇸_US_欢迎订阅yui科技_25
+      - 🇺🇸_US_欢迎订阅yui科技_26
+      - 🇺🇸_US_欢迎订阅yui科技_27
+      - 🇺🇸_US_欢迎订阅yui科技_28
+      - 🇺🇸_US_欢迎订阅yui科技_29
+      - 🇺🇸_US_欢迎订阅yui科技_30
+      - 🇺🇸_US_欢迎订阅yui科技_31
+      - 🇺🇸_US_欢迎订阅yui科技_32
+      - 🇯🇵_JP_欢迎订阅yui科技_6
+      - 🇺🇸_US_欢迎订阅yui科技_33
+      - 🇺🇸_US_欢迎订阅yui科技_34
+      - 🇺🇸_US_欢迎订阅yui科技_35
+      - 🇺🇸_US_欢迎订阅yui科技_36
+      - 🇺🇸_US_欢迎订阅yui科技_37
+      - 🇺🇸_US_欢迎订阅yui科技_38
+      - 🇺🇸_US_欢迎订阅yui科技_39
+      - 🇺🇸_US_欢迎订阅yui科技_40
+      - 🇺🇸_US_欢迎订阅yui科技_41
+      - 🇺🇸_US_欢迎订阅yui科技_42
+      - 🇺🇸_US_欢迎订阅yui科技_43
+      - 🇺🇸_US_欢迎订阅yui科技_44
+      - 🇯🇵_JP_欢迎订阅yui科技_7
+      - 🇯🇵_JP_欢迎订阅yui科技_8
+      - 🇰🇷_KR_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_45
+      - 🇺🇸_US_欢迎订阅yui科技_46
+      - 🇺🇸_US_欢迎订阅yui科技_47
+      - 🇺🇸_US_欢迎订阅yui科技_48
+      - 🇺🇸_US_欢迎订阅yui科技_49
+      - 🇺🇸_US_欢迎订阅yui科技_50
+      - 🇺🇸_US_欢迎订阅yui科技_51
+      - 🇺🇸_US_欢迎订阅yui科技_52
+      - 🇺🇸_US_欢迎订阅yui科技_53
+      - 🇨🇦_CA_欢迎订阅yui科技_1
+      - 🇮🇳_IN_欢迎订阅yui科技_1
+      - 🇺🇸_US_欢迎订阅yui科技_54
+      - 🇺🇸_US_欢迎订阅yui科技_55
+      - 🇺🇸_US_欢迎订阅yui科技_56
+      - 🇺🇸_US_欢迎订阅yui科技_57
+      - 🇺🇸_US_欢迎订阅yui科技_58
+      - 🇯🇵_JP_欢迎订阅yui科技_9
+      - 🇺🇸_US_欢迎订阅yui科技_59
+      - 🇺🇸_US_欢迎订阅yui科技_60
+      - 🇺🇸_US_欢迎订阅yui科技_61
+      - 🇨🇦_CA_欢迎订阅yui科技_2
+      - 🇯🇵_JP_欢迎订阅yui科技_10
+      - 🇯🇵_JP_欢迎订阅yui科技_11
+      - 🇺🇸_US_欢迎订阅yui科技_62
+      - 🇺🇸_US_欢迎订阅yui科技_63
+      - 🇺🇸_US_欢迎订阅yui科技_64
+      - 🇺🇸_US_欢迎订阅yui科技_65
+      - 🇯🇵_JP_欢迎订阅yui科技_12
+      - 🇮🇳_IN_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_66
+      - 🇺🇸_US_欢迎订阅yui科技_67
+      - 🇺🇸_US_欢迎订阅yui科技_68
+      - 🇨🇦_CA_欢迎订阅yui科技_3
+      - 🇺🇸_US_欢迎订阅yui科技_69
+      - 🇺🇸_US_欢迎订阅yui科技_70
+      - 🇺🇸_US_欢迎订阅yui科技_71
+      - 🇨🇦_CA_欢迎订阅yui科技_4
+      - 🇨🇳_CN_欢迎订阅yui科技_1
+      - 🇺🇸_US_欢迎订阅yui科技_72
+      - 🇨🇦_CA_欢迎订阅yui科技_5
+      - 🇨🇦_CA_欢迎订阅yui科技_6
+      - 🇨🇦_CA_欢迎订阅yui科技_7
+      - 🇮🇹_IT_欢迎订阅yui科技
+      - 🇨🇦_CA_欢迎订阅yui科技_8
+      - 🇰🇷_KR_欢迎订阅yui科技_3
+      - 🇺🇸_US_欢迎订阅yui科技_73
+      - 🇺🇸_US_欢迎订阅yui科技_74
+      - 🇨🇳_CN_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_75
+      - 🇨🇦_CA_欢迎订阅yui科技_9
+      - 🇺🇸_US_欢迎订阅yui科技_76
+      - 🇸🇬_SG_欢迎订阅yui科技_4
+      - 🇸🇬_SG_欢迎订阅yui科技_5
+      - 🇸🇬_SG_欢迎订阅yui科技_6
+      - 🇸🇬_SG_欢迎订阅yui科技_7
+      - 🇺🇸_US_欢迎订阅yui科技_77
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸_US_美国_1
-      - 🇵🇱_PL_波兰_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇧🇬_BG_保加利亚_1
-      - 🇺🇸_US_美国_5
-      - 🇵🇱_PL_波兰_2
-      - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国_6
-      - 🇷🇺_RU_俄罗斯联邦_1
-      - 🇺🇸_US_美国_7
-      - 🇵🇱_PL_波兰_3
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国_10
-      - 🇷🇺_RU_俄罗斯联邦_2
-      - 🇺🇸_US_美国_11
-      - 🇷🇺_RU_俄罗斯联邦_3
-      - 🇳🇱_NL_荷兰_1
-      - 🇵🇱_PL_波兰_4
-      - 🇺🇸_US_美国_12
-      - 🇳🇱_NL_荷兰_2
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇺🇸_US_美国_15
-      - 🇷🇺_RU_俄罗斯联邦_4
-      - 🇳🇱_NL_荷兰_3
-      - 🇰🇷_KR_韩国
-      - 🇵🇱_PL_波兰_5
-      - 🇵🇱_PL_波兰_6
-      - 🇺🇸_US_美国_16
-      - 🇦🇺_AU_澳大利亚
-      - 🇳🇱_NL_荷兰_4
-      - 🇵🇱_PL_波兰_7
-      - 🇷🇺_RU_俄罗斯联邦_5
-      - 🇵🇱_PL_波兰_8
-      - 🇵🇱_PL_波兰_9
-      - 🇺🇸_US_美国_17
-      - 🇧🇬_BG_保加利亚_2
-      - 🇧🇬_BG_保加利亚_3
-      - 🇷🇺_RU_俄罗斯联邦_6
-      - 🇺🇸_US_美国_18
-      - 🇷🇺_RU_俄罗斯联邦_7
-      - 🇳🇱_NL_荷兰_5
-      - 🇧🇬_BG_保加利亚_4
-      - 🇵🇱_PL_波兰_10
-      - 🇺🇸_US_美国_19
-      - 🇨🇦_CA_加拿大_1
-      - 🇳🇱_NL_荷兰_6
-      - 🇷🇺_RU_俄罗斯联邦_8
-      - 🇺🇸_US_美国_20
-      - 🇳🇱_NL_荷兰_7
-      - 🇺🇸_US_美国_21
-      - 🇺🇸_US_美国_22
-      - 🇧🇬_BG_保加利亚_5
-      - 🇺🇸_US_美国_23
-      - 🇺🇸_US_美国_24
-      - 🇺🇸_US_美国_25
-      - 🇺🇸_US_美国_26
-      - 🇷🇺_RU_俄罗斯联邦_9
-      - 🇺🇸_US_美国_27
-      - 🇨🇦_CA_加拿大_2
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
-      - 🇷🇺_RU_俄罗斯联邦_10
-      - 🇵🇱_PL_波兰_11
-      - 🇳🇱_NL_荷兰_8
-      - 🇷🇺_RU_俄罗斯联邦_11
-      - 🇺🇸_US_美国_28
-      - 🇷🇺_RU_俄罗斯联邦_12
-      - 🇺🇸_US_美国_29
-      - 🇺🇸_US_美国_30
-      - 🇺🇸_US_美国_31
-      - 🇷🇺_RU_俄罗斯联邦_13
-      - 🇵🇱_PL_波兰_12
-      - 🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国_32
-      - 🇷🇺_RU_俄罗斯联邦_14
-      - 🇺🇸_US_美国_33
-      - 🇺🇸_US_美国_34
-      - 🇷🇺_RU_俄罗斯联邦_15
-      - 🇺🇸_US_美国_35
-      - 🇳🇱_NL_荷兰_9
-      - 🇺🇸_US_美国_36
-      - 🇺🇸_US_美国_37
-      - 🇺🇸_US_美国_38
-      - 🇷🇺_RU_俄罗斯联邦_16
-      - 🇷🇺_RU_俄罗斯联邦_17
-      - 🇺🇸_US_美国_39
-      - 🇺🇸_US_美国_40
-      - 🇺🇸_US_美国_41
-      - 🇺🇸_US_美国_42
-      - 🇳🇱_NL_荷兰_10
-      - 🇺🇸_US_美国_43
-      - 🇷🇺_RU_俄罗斯联邦_18
-      - 🇳🇱_NL_荷兰_11
-      - 🇷🇺_RU_俄罗斯联邦_19
-      - 🇺🇸_US_美国_44
-      - 🇧🇬_BG_保加利亚_6
-      - 🇺🇸_US_美国_45
-      - 🇺🇸_US_美国_46
-      - 🇺🇸_US_美国_47
-      - 🇺🇸_US_美国_48
-      - 🇷🇺_RU_俄罗斯联邦_20
-      - 🇳🇱_NL_荷兰_12
-      - 🇺🇸_US_美国_49
-      - 🇷🇺_RU_俄罗斯联邦_21
-      - 🇷🇺_RU_俄罗斯联邦_22
-      - 🇺🇸_US_美国_50
-      - 🇵🇱_PL_波兰_13
-      - 🇵🇱_PL_波兰_14
-      - 🇺🇸_US_美国_51
-      - 🇵🇱_PL_波兰_15
-      - 🇷🇺_RU_俄罗斯联邦_23
-      - 🇺🇸_US_美国_52
-      - 🇺🇸_US_美国_53
-      - 🇵🇱_PL_波兰_16
-      - 🇧🇬_BG_保加利亚_7
-      - 🇬🇧_GB_英国
-      - 🇷🇺_RU_俄罗斯联邦_24
-      - 🇷🇺_RU_俄罗斯联邦_25
-      - 🇯🇵_JP_日本_2
-      - 🇺🇸_US_美国_54
-      - 🇺🇸_US_美国_55
-      - 🇺🇸_US_美国_56
-      - 🇺🇸_US_美国_57
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇺🇸_US_美国_58
-      - 🇳🇱_NL_荷兰_13
-      - 🇺🇸_US_美国_59
-      - 🇺🇸_US_美国_60
-      - 🇺🇸_US_美国_61
-      - 🇷🇺_RU_俄罗斯联邦_26
-      - 🇧🇬_BG_保加利亚_8
-      - 🇺🇸_US_美国_62
-      - 🇺🇸_US_美国_63
-      - 🇺🇸_US_美国_64
-      - 🇺🇸_US_美国_65
-      - 🇺🇸_US_美国_66
-      - 🇺🇸_US_美国_67
-      - 🇵🇱_PL_波兰_17
-      - 🇵🇱_PL_波兰_18
-      - 🇺🇸_US_美国_68
-      - 🇷🇺_RU_俄罗斯联邦_27
-      - 🇷🇺_RU_俄罗斯联邦_28
-      - 🇳🇱_NL_荷兰_14
-      - 🇺🇸_US_美国_69
-      - 🇵🇱_PL_波兰_19
-      - 🇺🇸_US_美国_70
-      - 🇺🇸_US_美国_71
-      - 🇺🇸_US_美国_72
-      - 🇺🇸_US_美国_73
-      - 🇷🇺_RU_俄罗斯联邦_29
-      - 🇷🇺_RU_俄罗斯联邦_30
-      - 🇵🇱_PL_波兰_20
-      - 🇵🇱_PL_波兰_21
-      - 🇺🇸_US_美国_74
-      - 🇺🇸_US_美国_75
-      - 🇺🇸_US_美国_76
-      - 🇵🇱_PL_波兰_22
-      - 🇵🇱_PL_波兰_23
-      - 🇺🇸_US_美国_77
+      - 🇰🇷_KR_欢迎订阅yui科技_1
+      - 🇸🇬_SG_欢迎订阅yui科技_1
+      - 🇸🇬_SG_欢迎订阅yui科技_2
+      - 🇸🇬_SG_欢迎订阅yui科技_3
+      - 🇯🇵_JP_欢迎订阅yui科技_1
+      - 🇯🇵_JP_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_1
+      - 🇺🇸_US_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_3
+      - 🇺🇸_US_欢迎订阅yui科技_4
+      - 🇺🇸_US_欢迎订阅yui科技_5
+      - 🇺🇸_US_欢迎订阅yui科技_6
+      - 🇺🇸_US_欢迎订阅yui科技_7
+      - 🇺🇸_US_欢迎订阅yui科技_8
+      - 🇺🇸_US_欢迎订阅yui科技_9
+      - 🇺🇸_US_欢迎订阅yui科技_10
+      - 🇺🇸_US_欢迎订阅yui科技_11
+      - 🇺🇸_US_欢迎订阅yui科技_12
+      - 🇯🇵_JP_欢迎订阅yui科技_3
+      - 🇯🇵_JP_欢迎订阅yui科技_4
+      - 🇺🇸_US_欢迎订阅yui科技_13
+      - 🇺🇸_US_欢迎订阅yui科技_14
+      - 🇯🇵_JP_欢迎订阅yui科技_5
+      - 🇺🇸_US_欢迎订阅yui科技_15
+      - 🇺🇸_US_欢迎订阅yui科技_16
+      - 🇺🇸_US_欢迎订阅yui科技_17
+      - 🇺🇸_US_欢迎订阅yui科技_18
+      - 🇺🇸_US_欢迎订阅yui科技_19
+      - 🇺🇸_US_欢迎订阅yui科技_20
+      - 🇺🇸_US_欢迎订阅yui科技_21
+      - 🇺🇸_US_欢迎订阅yui科技_22
+      - 🇺🇸_US_欢迎订阅yui科技_23
+      - 🇺🇸_US_欢迎订阅yui科技_24
+      - 🇺🇸_US_欢迎订阅yui科技_25
+      - 🇺🇸_US_欢迎订阅yui科技_26
+      - 🇺🇸_US_欢迎订阅yui科技_27
+      - 🇺🇸_US_欢迎订阅yui科技_28
+      - 🇺🇸_US_欢迎订阅yui科技_29
+      - 🇺🇸_US_欢迎订阅yui科技_30
+      - 🇺🇸_US_欢迎订阅yui科技_31
+      - 🇺🇸_US_欢迎订阅yui科技_32
+      - 🇯🇵_JP_欢迎订阅yui科技_6
+      - 🇺🇸_US_欢迎订阅yui科技_33
+      - 🇺🇸_US_欢迎订阅yui科技_34
+      - 🇺🇸_US_欢迎订阅yui科技_35
+      - 🇺🇸_US_欢迎订阅yui科技_36
+      - 🇺🇸_US_欢迎订阅yui科技_37
+      - 🇺🇸_US_欢迎订阅yui科技_38
+      - 🇺🇸_US_欢迎订阅yui科技_39
+      - 🇺🇸_US_欢迎订阅yui科技_40
+      - 🇺🇸_US_欢迎订阅yui科技_41
+      - 🇺🇸_US_欢迎订阅yui科技_42
+      - 🇺🇸_US_欢迎订阅yui科技_43
+      - 🇺🇸_US_欢迎订阅yui科技_44
+      - 🇯🇵_JP_欢迎订阅yui科技_7
+      - 🇯🇵_JP_欢迎订阅yui科技_8
+      - 🇰🇷_KR_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_45
+      - 🇺🇸_US_欢迎订阅yui科技_46
+      - 🇺🇸_US_欢迎订阅yui科技_47
+      - 🇺🇸_US_欢迎订阅yui科技_48
+      - 🇺🇸_US_欢迎订阅yui科技_49
+      - 🇺🇸_US_欢迎订阅yui科技_50
+      - 🇺🇸_US_欢迎订阅yui科技_51
+      - 🇺🇸_US_欢迎订阅yui科技_52
+      - 🇺🇸_US_欢迎订阅yui科技_53
+      - 🇨🇦_CA_欢迎订阅yui科技_1
+      - 🇮🇳_IN_欢迎订阅yui科技_1
+      - 🇺🇸_US_欢迎订阅yui科技_54
+      - 🇺🇸_US_欢迎订阅yui科技_55
+      - 🇺🇸_US_欢迎订阅yui科技_56
+      - 🇺🇸_US_欢迎订阅yui科技_57
+      - 🇺🇸_US_欢迎订阅yui科技_58
+      - 🇯🇵_JP_欢迎订阅yui科技_9
+      - 🇺🇸_US_欢迎订阅yui科技_59
+      - 🇺🇸_US_欢迎订阅yui科技_60
+      - 🇺🇸_US_欢迎订阅yui科技_61
+      - 🇨🇦_CA_欢迎订阅yui科技_2
+      - 🇯🇵_JP_欢迎订阅yui科技_10
+      - 🇯🇵_JP_欢迎订阅yui科技_11
+      - 🇺🇸_US_欢迎订阅yui科技_62
+      - 🇺🇸_US_欢迎订阅yui科技_63
+      - 🇺🇸_US_欢迎订阅yui科技_64
+      - 🇺🇸_US_欢迎订阅yui科技_65
+      - 🇯🇵_JP_欢迎订阅yui科技_12
+      - 🇮🇳_IN_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_66
+      - 🇺🇸_US_欢迎订阅yui科技_67
+      - 🇺🇸_US_欢迎订阅yui科技_68
+      - 🇨🇦_CA_欢迎订阅yui科技_3
+      - 🇺🇸_US_欢迎订阅yui科技_69
+      - 🇺🇸_US_欢迎订阅yui科技_70
+      - 🇺🇸_US_欢迎订阅yui科技_71
+      - 🇨🇦_CA_欢迎订阅yui科技_4
+      - 🇨🇳_CN_欢迎订阅yui科技_1
+      - 🇺🇸_US_欢迎订阅yui科技_72
+      - 🇨🇦_CA_欢迎订阅yui科技_5
+      - 🇨🇦_CA_欢迎订阅yui科技_6
+      - 🇨🇦_CA_欢迎订阅yui科技_7
+      - 🇮🇹_IT_欢迎订阅yui科技
+      - 🇨🇦_CA_欢迎订阅yui科技_8
+      - 🇰🇷_KR_欢迎订阅yui科技_3
+      - 🇺🇸_US_欢迎订阅yui科技_73
+      - 🇺🇸_US_欢迎订阅yui科技_74
+      - 🇨🇳_CN_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_75
+      - 🇨🇦_CA_欢迎订阅yui科技_9
+      - 🇺🇸_US_欢迎订阅yui科技_76
+      - 🇸🇬_SG_欢迎订阅yui科技_4
+      - 🇸🇬_SG_欢迎订阅yui科技_5
+      - 🇸🇬_SG_欢迎订阅yui科技_6
+      - 🇸🇬_SG_欢迎订阅yui科技_7
+      - 🇺🇸_US_欢迎订阅yui科技_77
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国_1
-      - 🇵🇱_PL_波兰_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇧🇬_BG_保加利亚_1
-      - 🇺🇸_US_美国_5
-      - 🇵🇱_PL_波兰_2
-      - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国_6
-      - 🇷🇺_RU_俄罗斯联邦_1
-      - 🇺🇸_US_美国_7
-      - 🇵🇱_PL_波兰_3
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国_10
-      - 🇷🇺_RU_俄罗斯联邦_2
-      - 🇺🇸_US_美国_11
-      - 🇷🇺_RU_俄罗斯联邦_3
-      - 🇳🇱_NL_荷兰_1
-      - 🇵🇱_PL_波兰_4
-      - 🇺🇸_US_美国_12
-      - 🇳🇱_NL_荷兰_2
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇺🇸_US_美国_15
-      - 🇷🇺_RU_俄罗斯联邦_4
-      - 🇳🇱_NL_荷兰_3
-      - 🇰🇷_KR_韩国
-      - 🇵🇱_PL_波兰_5
-      - 🇵🇱_PL_波兰_6
-      - 🇺🇸_US_美国_16
-      - 🇦🇺_AU_澳大利亚
-      - 🇳🇱_NL_荷兰_4
-      - 🇵🇱_PL_波兰_7
-      - 🇷🇺_RU_俄罗斯联邦_5
-      - 🇵🇱_PL_波兰_8
-      - 🇵🇱_PL_波兰_9
-      - 🇺🇸_US_美国_17
-      - 🇧🇬_BG_保加利亚_2
-      - 🇧🇬_BG_保加利亚_3
-      - 🇷🇺_RU_俄罗斯联邦_6
-      - 🇺🇸_US_美国_18
-      - 🇷🇺_RU_俄罗斯联邦_7
-      - 🇳🇱_NL_荷兰_5
-      - 🇧🇬_BG_保加利亚_4
-      - 🇵🇱_PL_波兰_10
-      - 🇺🇸_US_美国_19
-      - 🇨🇦_CA_加拿大_1
-      - 🇳🇱_NL_荷兰_6
-      - 🇷🇺_RU_俄罗斯联邦_8
-      - 🇺🇸_US_美国_20
-      - 🇳🇱_NL_荷兰_7
-      - 🇺🇸_US_美国_21
-      - 🇺🇸_US_美国_22
-      - 🇧🇬_BG_保加利亚_5
-      - 🇺🇸_US_美国_23
-      - 🇺🇸_US_美国_24
-      - 🇺🇸_US_美国_25
-      - 🇺🇸_US_美国_26
-      - 🇷🇺_RU_俄罗斯联邦_9
-      - 🇺🇸_US_美国_27
-      - 🇨🇦_CA_加拿大_2
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
-      - 🇷🇺_RU_俄罗斯联邦_10
-      - 🇵🇱_PL_波兰_11
-      - 🇳🇱_NL_荷兰_8
-      - 🇷🇺_RU_俄罗斯联邦_11
-      - 🇺🇸_US_美国_28
-      - 🇷🇺_RU_俄罗斯联邦_12
-      - 🇺🇸_US_美国_29
-      - 🇺🇸_US_美国_30
-      - 🇺🇸_US_美国_31
-      - 🇷🇺_RU_俄罗斯联邦_13
-      - 🇵🇱_PL_波兰_12
-      - 🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国_32
-      - 🇷🇺_RU_俄罗斯联邦_14
-      - 🇺🇸_US_美国_33
-      - 🇺🇸_US_美国_34
-      - 🇷🇺_RU_俄罗斯联邦_15
-      - 🇺🇸_US_美国_35
-      - 🇳🇱_NL_荷兰_9
-      - 🇺🇸_US_美国_36
-      - 🇺🇸_US_美国_37
-      - 🇺🇸_US_美国_38
-      - 🇷🇺_RU_俄罗斯联邦_16
-      - 🇷🇺_RU_俄罗斯联邦_17
-      - 🇺🇸_US_美国_39
-      - 🇺🇸_US_美国_40
-      - 🇺🇸_US_美国_41
-      - 🇺🇸_US_美国_42
-      - 🇳🇱_NL_荷兰_10
-      - 🇺🇸_US_美国_43
-      - 🇷🇺_RU_俄罗斯联邦_18
-      - 🇳🇱_NL_荷兰_11
-      - 🇷🇺_RU_俄罗斯联邦_19
-      - 🇺🇸_US_美国_44
-      - 🇧🇬_BG_保加利亚_6
-      - 🇺🇸_US_美国_45
-      - 🇺🇸_US_美国_46
-      - 🇺🇸_US_美国_47
-      - 🇺🇸_US_美国_48
-      - 🇷🇺_RU_俄罗斯联邦_20
-      - 🇳🇱_NL_荷兰_12
-      - 🇺🇸_US_美国_49
-      - 🇷🇺_RU_俄罗斯联邦_21
-      - 🇷🇺_RU_俄罗斯联邦_22
-      - 🇺🇸_US_美国_50
-      - 🇵🇱_PL_波兰_13
-      - 🇵🇱_PL_波兰_14
-      - 🇺🇸_US_美国_51
-      - 🇵🇱_PL_波兰_15
-      - 🇷🇺_RU_俄罗斯联邦_23
-      - 🇺🇸_US_美国_52
-      - 🇺🇸_US_美国_53
-      - 🇵🇱_PL_波兰_16
-      - 🇧🇬_BG_保加利亚_7
-      - 🇬🇧_GB_英国
-      - 🇷🇺_RU_俄罗斯联邦_24
-      - 🇷🇺_RU_俄罗斯联邦_25
-      - 🇯🇵_JP_日本_2
-      - 🇺🇸_US_美国_54
-      - 🇺🇸_US_美国_55
-      - 🇺🇸_US_美国_56
-      - 🇺🇸_US_美国_57
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇺🇸_US_美国_58
-      - 🇳🇱_NL_荷兰_13
-      - 🇺🇸_US_美国_59
-      - 🇺🇸_US_美国_60
-      - 🇺🇸_US_美国_61
-      - 🇷🇺_RU_俄罗斯联邦_26
-      - 🇧🇬_BG_保加利亚_8
-      - 🇺🇸_US_美国_62
-      - 🇺🇸_US_美国_63
-      - 🇺🇸_US_美国_64
-      - 🇺🇸_US_美国_65
-      - 🇺🇸_US_美国_66
-      - 🇺🇸_US_美国_67
-      - 🇵🇱_PL_波兰_17
-      - 🇵🇱_PL_波兰_18
-      - 🇺🇸_US_美国_68
-      - 🇷🇺_RU_俄罗斯联邦_27
-      - 🇷🇺_RU_俄罗斯联邦_28
-      - 🇳🇱_NL_荷兰_14
-      - 🇺🇸_US_美国_69
-      - 🇵🇱_PL_波兰_19
-      - 🇺🇸_US_美国_70
-      - 🇺🇸_US_美国_71
-      - 🇺🇸_US_美国_72
-      - 🇺🇸_US_美国_73
-      - 🇷🇺_RU_俄罗斯联邦_29
-      - 🇷🇺_RU_俄罗斯联邦_30
-      - 🇵🇱_PL_波兰_20
-      - 🇵🇱_PL_波兰_21
-      - 🇺🇸_US_美国_74
-      - 🇺🇸_US_美国_75
-      - 🇺🇸_US_美国_76
-      - 🇵🇱_PL_波兰_22
-      - 🇵🇱_PL_波兰_23
-      - 🇺🇸_US_美国_77
+      - 🇰🇷_KR_欢迎订阅yui科技_1
+      - 🇸🇬_SG_欢迎订阅yui科技_1
+      - 🇸🇬_SG_欢迎订阅yui科技_2
+      - 🇸🇬_SG_欢迎订阅yui科技_3
+      - 🇯🇵_JP_欢迎订阅yui科技_1
+      - 🇯🇵_JP_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_1
+      - 🇺🇸_US_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_3
+      - 🇺🇸_US_欢迎订阅yui科技_4
+      - 🇺🇸_US_欢迎订阅yui科技_5
+      - 🇺🇸_US_欢迎订阅yui科技_6
+      - 🇺🇸_US_欢迎订阅yui科技_7
+      - 🇺🇸_US_欢迎订阅yui科技_8
+      - 🇺🇸_US_欢迎订阅yui科技_9
+      - 🇺🇸_US_欢迎订阅yui科技_10
+      - 🇺🇸_US_欢迎订阅yui科技_11
+      - 🇺🇸_US_欢迎订阅yui科技_12
+      - 🇯🇵_JP_欢迎订阅yui科技_3
+      - 🇯🇵_JP_欢迎订阅yui科技_4
+      - 🇺🇸_US_欢迎订阅yui科技_13
+      - 🇺🇸_US_欢迎订阅yui科技_14
+      - 🇯🇵_JP_欢迎订阅yui科技_5
+      - 🇺🇸_US_欢迎订阅yui科技_15
+      - 🇺🇸_US_欢迎订阅yui科技_16
+      - 🇺🇸_US_欢迎订阅yui科技_17
+      - 🇺🇸_US_欢迎订阅yui科技_18
+      - 🇺🇸_US_欢迎订阅yui科技_19
+      - 🇺🇸_US_欢迎订阅yui科技_20
+      - 🇺🇸_US_欢迎订阅yui科技_21
+      - 🇺🇸_US_欢迎订阅yui科技_22
+      - 🇺🇸_US_欢迎订阅yui科技_23
+      - 🇺🇸_US_欢迎订阅yui科技_24
+      - 🇺🇸_US_欢迎订阅yui科技_25
+      - 🇺🇸_US_欢迎订阅yui科技_26
+      - 🇺🇸_US_欢迎订阅yui科技_27
+      - 🇺🇸_US_欢迎订阅yui科技_28
+      - 🇺🇸_US_欢迎订阅yui科技_29
+      - 🇺🇸_US_欢迎订阅yui科技_30
+      - 🇺🇸_US_欢迎订阅yui科技_31
+      - 🇺🇸_US_欢迎订阅yui科技_32
+      - 🇯🇵_JP_欢迎订阅yui科技_6
+      - 🇺🇸_US_欢迎订阅yui科技_33
+      - 🇺🇸_US_欢迎订阅yui科技_34
+      - 🇺🇸_US_欢迎订阅yui科技_35
+      - 🇺🇸_US_欢迎订阅yui科技_36
+      - 🇺🇸_US_欢迎订阅yui科技_37
+      - 🇺🇸_US_欢迎订阅yui科技_38
+      - 🇺🇸_US_欢迎订阅yui科技_39
+      - 🇺🇸_US_欢迎订阅yui科技_40
+      - 🇺🇸_US_欢迎订阅yui科技_41
+      - 🇺🇸_US_欢迎订阅yui科技_42
+      - 🇺🇸_US_欢迎订阅yui科技_43
+      - 🇺🇸_US_欢迎订阅yui科技_44
+      - 🇯🇵_JP_欢迎订阅yui科技_7
+      - 🇯🇵_JP_欢迎订阅yui科技_8
+      - 🇰🇷_KR_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_45
+      - 🇺🇸_US_欢迎订阅yui科技_46
+      - 🇺🇸_US_欢迎订阅yui科技_47
+      - 🇺🇸_US_欢迎订阅yui科技_48
+      - 🇺🇸_US_欢迎订阅yui科技_49
+      - 🇺🇸_US_欢迎订阅yui科技_50
+      - 🇺🇸_US_欢迎订阅yui科技_51
+      - 🇺🇸_US_欢迎订阅yui科技_52
+      - 🇺🇸_US_欢迎订阅yui科技_53
+      - 🇨🇦_CA_欢迎订阅yui科技_1
+      - 🇮🇳_IN_欢迎订阅yui科技_1
+      - 🇺🇸_US_欢迎订阅yui科技_54
+      - 🇺🇸_US_欢迎订阅yui科技_55
+      - 🇺🇸_US_欢迎订阅yui科技_56
+      - 🇺🇸_US_欢迎订阅yui科技_57
+      - 🇺🇸_US_欢迎订阅yui科技_58
+      - 🇯🇵_JP_欢迎订阅yui科技_9
+      - 🇺🇸_US_欢迎订阅yui科技_59
+      - 🇺🇸_US_欢迎订阅yui科技_60
+      - 🇺🇸_US_欢迎订阅yui科技_61
+      - 🇨🇦_CA_欢迎订阅yui科技_2
+      - 🇯🇵_JP_欢迎订阅yui科技_10
+      - 🇯🇵_JP_欢迎订阅yui科技_11
+      - 🇺🇸_US_欢迎订阅yui科技_62
+      - 🇺🇸_US_欢迎订阅yui科技_63
+      - 🇺🇸_US_欢迎订阅yui科技_64
+      - 🇺🇸_US_欢迎订阅yui科技_65
+      - 🇯🇵_JP_欢迎订阅yui科技_12
+      - 🇮🇳_IN_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_66
+      - 🇺🇸_US_欢迎订阅yui科技_67
+      - 🇺🇸_US_欢迎订阅yui科技_68
+      - 🇨🇦_CA_欢迎订阅yui科技_3
+      - 🇺🇸_US_欢迎订阅yui科技_69
+      - 🇺🇸_US_欢迎订阅yui科技_70
+      - 🇺🇸_US_欢迎订阅yui科技_71
+      - 🇨🇦_CA_欢迎订阅yui科技_4
+      - 🇨🇳_CN_欢迎订阅yui科技_1
+      - 🇺🇸_US_欢迎订阅yui科技_72
+      - 🇨🇦_CA_欢迎订阅yui科技_5
+      - 🇨🇦_CA_欢迎订阅yui科技_6
+      - 🇨🇦_CA_欢迎订阅yui科技_7
+      - 🇮🇹_IT_欢迎订阅yui科技
+      - 🇨🇦_CA_欢迎订阅yui科技_8
+      - 🇰🇷_KR_欢迎订阅yui科技_3
+      - 🇺🇸_US_欢迎订阅yui科技_73
+      - 🇺🇸_US_欢迎订阅yui科技_74
+      - 🇨🇳_CN_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_75
+      - 🇨🇦_CA_欢迎订阅yui科技_9
+      - 🇺🇸_US_欢迎订阅yui科技_76
+      - 🇸🇬_SG_欢迎订阅yui科技_4
+      - 🇸🇬_SG_欢迎订阅yui科技_5
+      - 🇸🇬_SG_欢迎订阅yui科技_6
+      - 🇸🇬_SG_欢迎订阅yui科技_7
+      - 🇺🇸_US_欢迎订阅yui科技_77
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国_1
-      - 🇵🇱_PL_波兰_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇧🇬_BG_保加利亚_1
-      - 🇺🇸_US_美国_5
-      - 🇵🇱_PL_波兰_2
-      - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国_6
-      - 🇷🇺_RU_俄罗斯联邦_1
-      - 🇺🇸_US_美国_7
-      - 🇵🇱_PL_波兰_3
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国_10
-      - 🇷🇺_RU_俄罗斯联邦_2
-      - 🇺🇸_US_美国_11
-      - 🇷🇺_RU_俄罗斯联邦_3
-      - 🇳🇱_NL_荷兰_1
-      - 🇵🇱_PL_波兰_4
-      - 🇺🇸_US_美国_12
-      - 🇳🇱_NL_荷兰_2
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇺🇸_US_美国_15
-      - 🇷🇺_RU_俄罗斯联邦_4
-      - 🇳🇱_NL_荷兰_3
-      - 🇰🇷_KR_韩国
-      - 🇵🇱_PL_波兰_5
-      - 🇵🇱_PL_波兰_6
-      - 🇺🇸_US_美国_16
-      - 🇦🇺_AU_澳大利亚
-      - 🇳🇱_NL_荷兰_4
-      - 🇵🇱_PL_波兰_7
-      - 🇷🇺_RU_俄罗斯联邦_5
-      - 🇵🇱_PL_波兰_8
-      - 🇵🇱_PL_波兰_9
-      - 🇺🇸_US_美国_17
-      - 🇧🇬_BG_保加利亚_2
-      - 🇧🇬_BG_保加利亚_3
-      - 🇷🇺_RU_俄罗斯联邦_6
-      - 🇺🇸_US_美国_18
-      - 🇷🇺_RU_俄罗斯联邦_7
-      - 🇳🇱_NL_荷兰_5
-      - 🇧🇬_BG_保加利亚_4
-      - 🇵🇱_PL_波兰_10
-      - 🇺🇸_US_美国_19
-      - 🇨🇦_CA_加拿大_1
-      - 🇳🇱_NL_荷兰_6
-      - 🇷🇺_RU_俄罗斯联邦_8
-      - 🇺🇸_US_美国_20
-      - 🇳🇱_NL_荷兰_7
-      - 🇺🇸_US_美国_21
-      - 🇺🇸_US_美国_22
-      - 🇧🇬_BG_保加利亚_5
-      - 🇺🇸_US_美国_23
-      - 🇺🇸_US_美国_24
-      - 🇺🇸_US_美国_25
-      - 🇺🇸_US_美国_26
-      - 🇷🇺_RU_俄罗斯联邦_9
-      - 🇺🇸_US_美国_27
-      - 🇨🇦_CA_加拿大_2
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
-      - 🇷🇺_RU_俄罗斯联邦_10
-      - 🇵🇱_PL_波兰_11
-      - 🇳🇱_NL_荷兰_8
-      - 🇷🇺_RU_俄罗斯联邦_11
-      - 🇺🇸_US_美国_28
-      - 🇷🇺_RU_俄罗斯联邦_12
-      - 🇺🇸_US_美国_29
-      - 🇺🇸_US_美国_30
-      - 🇺🇸_US_美国_31
-      - 🇷🇺_RU_俄罗斯联邦_13
-      - 🇵🇱_PL_波兰_12
-      - 🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国_32
-      - 🇷🇺_RU_俄罗斯联邦_14
-      - 🇺🇸_US_美国_33
-      - 🇺🇸_US_美国_34
-      - 🇷🇺_RU_俄罗斯联邦_15
-      - 🇺🇸_US_美国_35
-      - 🇳🇱_NL_荷兰_9
-      - 🇺🇸_US_美国_36
-      - 🇺🇸_US_美国_37
-      - 🇺🇸_US_美国_38
-      - 🇷🇺_RU_俄罗斯联邦_16
-      - 🇷🇺_RU_俄罗斯联邦_17
-      - 🇺🇸_US_美国_39
-      - 🇺🇸_US_美国_40
-      - 🇺🇸_US_美国_41
-      - 🇺🇸_US_美国_42
-      - 🇳🇱_NL_荷兰_10
-      - 🇺🇸_US_美国_43
-      - 🇷🇺_RU_俄罗斯联邦_18
-      - 🇳🇱_NL_荷兰_11
-      - 🇷🇺_RU_俄罗斯联邦_19
-      - 🇺🇸_US_美国_44
-      - 🇧🇬_BG_保加利亚_6
-      - 🇺🇸_US_美国_45
-      - 🇺🇸_US_美国_46
-      - 🇺🇸_US_美国_47
-      - 🇺🇸_US_美国_48
-      - 🇷🇺_RU_俄罗斯联邦_20
-      - 🇳🇱_NL_荷兰_12
-      - 🇺🇸_US_美国_49
-      - 🇷🇺_RU_俄罗斯联邦_21
-      - 🇷🇺_RU_俄罗斯联邦_22
-      - 🇺🇸_US_美国_50
-      - 🇵🇱_PL_波兰_13
-      - 🇵🇱_PL_波兰_14
-      - 🇺🇸_US_美国_51
-      - 🇵🇱_PL_波兰_15
-      - 🇷🇺_RU_俄罗斯联邦_23
-      - 🇺🇸_US_美国_52
-      - 🇺🇸_US_美国_53
-      - 🇵🇱_PL_波兰_16
-      - 🇧🇬_BG_保加利亚_7
-      - 🇬🇧_GB_英国
-      - 🇷🇺_RU_俄罗斯联邦_24
-      - 🇷🇺_RU_俄罗斯联邦_25
-      - 🇯🇵_JP_日本_2
-      - 🇺🇸_US_美国_54
-      - 🇺🇸_US_美国_55
-      - 🇺🇸_US_美国_56
-      - 🇺🇸_US_美国_57
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇺🇸_US_美国_58
-      - 🇳🇱_NL_荷兰_13
-      - 🇺🇸_US_美国_59
-      - 🇺🇸_US_美国_60
-      - 🇺🇸_US_美国_61
-      - 🇷🇺_RU_俄罗斯联邦_26
-      - 🇧🇬_BG_保加利亚_8
-      - 🇺🇸_US_美国_62
-      - 🇺🇸_US_美国_63
-      - 🇺🇸_US_美国_64
-      - 🇺🇸_US_美国_65
-      - 🇺🇸_US_美国_66
-      - 🇺🇸_US_美国_67
-      - 🇵🇱_PL_波兰_17
-      - 🇵🇱_PL_波兰_18
-      - 🇺🇸_US_美国_68
-      - 🇷🇺_RU_俄罗斯联邦_27
-      - 🇷🇺_RU_俄罗斯联邦_28
-      - 🇳🇱_NL_荷兰_14
-      - 🇺🇸_US_美国_69
-      - 🇵🇱_PL_波兰_19
-      - 🇺🇸_US_美国_70
-      - 🇺🇸_US_美国_71
-      - 🇺🇸_US_美国_72
-      - 🇺🇸_US_美国_73
-      - 🇷🇺_RU_俄罗斯联邦_29
-      - 🇷🇺_RU_俄罗斯联邦_30
-      - 🇵🇱_PL_波兰_20
-      - 🇵🇱_PL_波兰_21
-      - 🇺🇸_US_美国_74
-      - 🇺🇸_US_美国_75
-      - 🇺🇸_US_美国_76
-      - 🇵🇱_PL_波兰_22
-      - 🇵🇱_PL_波兰_23
-      - 🇺🇸_US_美国_77
+      - 🇰🇷_KR_欢迎订阅yui科技_1
+      - 🇸🇬_SG_欢迎订阅yui科技_1
+      - 🇸🇬_SG_欢迎订阅yui科技_2
+      - 🇸🇬_SG_欢迎订阅yui科技_3
+      - 🇯🇵_JP_欢迎订阅yui科技_1
+      - 🇯🇵_JP_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_1
+      - 🇺🇸_US_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_3
+      - 🇺🇸_US_欢迎订阅yui科技_4
+      - 🇺🇸_US_欢迎订阅yui科技_5
+      - 🇺🇸_US_欢迎订阅yui科技_6
+      - 🇺🇸_US_欢迎订阅yui科技_7
+      - 🇺🇸_US_欢迎订阅yui科技_8
+      - 🇺🇸_US_欢迎订阅yui科技_9
+      - 🇺🇸_US_欢迎订阅yui科技_10
+      - 🇺🇸_US_欢迎订阅yui科技_11
+      - 🇺🇸_US_欢迎订阅yui科技_12
+      - 🇯🇵_JP_欢迎订阅yui科技_3
+      - 🇯🇵_JP_欢迎订阅yui科技_4
+      - 🇺🇸_US_欢迎订阅yui科技_13
+      - 🇺🇸_US_欢迎订阅yui科技_14
+      - 🇯🇵_JP_欢迎订阅yui科技_5
+      - 🇺🇸_US_欢迎订阅yui科技_15
+      - 🇺🇸_US_欢迎订阅yui科技_16
+      - 🇺🇸_US_欢迎订阅yui科技_17
+      - 🇺🇸_US_欢迎订阅yui科技_18
+      - 🇺🇸_US_欢迎订阅yui科技_19
+      - 🇺🇸_US_欢迎订阅yui科技_20
+      - 🇺🇸_US_欢迎订阅yui科技_21
+      - 🇺🇸_US_欢迎订阅yui科技_22
+      - 🇺🇸_US_欢迎订阅yui科技_23
+      - 🇺🇸_US_欢迎订阅yui科技_24
+      - 🇺🇸_US_欢迎订阅yui科技_25
+      - 🇺🇸_US_欢迎订阅yui科技_26
+      - 🇺🇸_US_欢迎订阅yui科技_27
+      - 🇺🇸_US_欢迎订阅yui科技_28
+      - 🇺🇸_US_欢迎订阅yui科技_29
+      - 🇺🇸_US_欢迎订阅yui科技_30
+      - 🇺🇸_US_欢迎订阅yui科技_31
+      - 🇺🇸_US_欢迎订阅yui科技_32
+      - 🇯🇵_JP_欢迎订阅yui科技_6
+      - 🇺🇸_US_欢迎订阅yui科技_33
+      - 🇺🇸_US_欢迎订阅yui科技_34
+      - 🇺🇸_US_欢迎订阅yui科技_35
+      - 🇺🇸_US_欢迎订阅yui科技_36
+      - 🇺🇸_US_欢迎订阅yui科技_37
+      - 🇺🇸_US_欢迎订阅yui科技_38
+      - 🇺🇸_US_欢迎订阅yui科技_39
+      - 🇺🇸_US_欢迎订阅yui科技_40
+      - 🇺🇸_US_欢迎订阅yui科技_41
+      - 🇺🇸_US_欢迎订阅yui科技_42
+      - 🇺🇸_US_欢迎订阅yui科技_43
+      - 🇺🇸_US_欢迎订阅yui科技_44
+      - 🇯🇵_JP_欢迎订阅yui科技_7
+      - 🇯🇵_JP_欢迎订阅yui科技_8
+      - 🇰🇷_KR_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_45
+      - 🇺🇸_US_欢迎订阅yui科技_46
+      - 🇺🇸_US_欢迎订阅yui科技_47
+      - 🇺🇸_US_欢迎订阅yui科技_48
+      - 🇺🇸_US_欢迎订阅yui科技_49
+      - 🇺🇸_US_欢迎订阅yui科技_50
+      - 🇺🇸_US_欢迎订阅yui科技_51
+      - 🇺🇸_US_欢迎订阅yui科技_52
+      - 🇺🇸_US_欢迎订阅yui科技_53
+      - 🇨🇦_CA_欢迎订阅yui科技_1
+      - 🇮🇳_IN_欢迎订阅yui科技_1
+      - 🇺🇸_US_欢迎订阅yui科技_54
+      - 🇺🇸_US_欢迎订阅yui科技_55
+      - 🇺🇸_US_欢迎订阅yui科技_56
+      - 🇺🇸_US_欢迎订阅yui科技_57
+      - 🇺🇸_US_欢迎订阅yui科技_58
+      - 🇯🇵_JP_欢迎订阅yui科技_9
+      - 🇺🇸_US_欢迎订阅yui科技_59
+      - 🇺🇸_US_欢迎订阅yui科技_60
+      - 🇺🇸_US_欢迎订阅yui科技_61
+      - 🇨🇦_CA_欢迎订阅yui科技_2
+      - 🇯🇵_JP_欢迎订阅yui科技_10
+      - 🇯🇵_JP_欢迎订阅yui科技_11
+      - 🇺🇸_US_欢迎订阅yui科技_62
+      - 🇺🇸_US_欢迎订阅yui科技_63
+      - 🇺🇸_US_欢迎订阅yui科技_64
+      - 🇺🇸_US_欢迎订阅yui科技_65
+      - 🇯🇵_JP_欢迎订阅yui科技_12
+      - 🇮🇳_IN_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_66
+      - 🇺🇸_US_欢迎订阅yui科技_67
+      - 🇺🇸_US_欢迎订阅yui科技_68
+      - 🇨🇦_CA_欢迎订阅yui科技_3
+      - 🇺🇸_US_欢迎订阅yui科技_69
+      - 🇺🇸_US_欢迎订阅yui科技_70
+      - 🇺🇸_US_欢迎订阅yui科技_71
+      - 🇨🇦_CA_欢迎订阅yui科技_4
+      - 🇨🇳_CN_欢迎订阅yui科技_1
+      - 🇺🇸_US_欢迎订阅yui科技_72
+      - 🇨🇦_CA_欢迎订阅yui科技_5
+      - 🇨🇦_CA_欢迎订阅yui科技_6
+      - 🇨🇦_CA_欢迎订阅yui科技_7
+      - 🇮🇹_IT_欢迎订阅yui科技
+      - 🇨🇦_CA_欢迎订阅yui科技_8
+      - 🇰🇷_KR_欢迎订阅yui科技_3
+      - 🇺🇸_US_欢迎订阅yui科技_73
+      - 🇺🇸_US_欢迎订阅yui科技_74
+      - 🇨🇳_CN_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_75
+      - 🇨🇦_CA_欢迎订阅yui科技_9
+      - 🇺🇸_US_欢迎订阅yui科技_76
+      - 🇸🇬_SG_欢迎订阅yui科技_4
+      - 🇸🇬_SG_欢迎订阅yui科技_5
+      - 🇸🇬_SG_欢迎订阅yui科技_6
+      - 🇸🇬_SG_欢迎订阅yui科技_7
+      - 🇺🇸_US_欢迎订阅yui科技_77
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸_US_美国_1
-      - 🇵🇱_PL_波兰_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇧🇬_BG_保加利亚_1
-      - 🇺🇸_US_美国_5
-      - 🇵🇱_PL_波兰_2
-      - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国_6
-      - 🇷🇺_RU_俄罗斯联邦_1
-      - 🇺🇸_US_美国_7
-      - 🇵🇱_PL_波兰_3
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国_10
-      - 🇷🇺_RU_俄罗斯联邦_2
-      - 🇺🇸_US_美国_11
-      - 🇷🇺_RU_俄罗斯联邦_3
-      - 🇳🇱_NL_荷兰_1
-      - 🇵🇱_PL_波兰_4
-      - 🇺🇸_US_美国_12
-      - 🇳🇱_NL_荷兰_2
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇺🇸_US_美国_15
-      - 🇷🇺_RU_俄罗斯联邦_4
-      - 🇳🇱_NL_荷兰_3
-      - 🇰🇷_KR_韩国
-      - 🇵🇱_PL_波兰_5
-      - 🇵🇱_PL_波兰_6
-      - 🇺🇸_US_美国_16
-      - 🇦🇺_AU_澳大利亚
-      - 🇳🇱_NL_荷兰_4
-      - 🇵🇱_PL_波兰_7
-      - 🇷🇺_RU_俄罗斯联邦_5
-      - 🇵🇱_PL_波兰_8
-      - 🇵🇱_PL_波兰_9
-      - 🇺🇸_US_美国_17
-      - 🇧🇬_BG_保加利亚_2
-      - 🇧🇬_BG_保加利亚_3
-      - 🇷🇺_RU_俄罗斯联邦_6
-      - 🇺🇸_US_美国_18
-      - 🇷🇺_RU_俄罗斯联邦_7
-      - 🇳🇱_NL_荷兰_5
-      - 🇧🇬_BG_保加利亚_4
-      - 🇵🇱_PL_波兰_10
-      - 🇺🇸_US_美国_19
-      - 🇨🇦_CA_加拿大_1
-      - 🇳🇱_NL_荷兰_6
-      - 🇷🇺_RU_俄罗斯联邦_8
-      - 🇺🇸_US_美国_20
-      - 🇳🇱_NL_荷兰_7
-      - 🇺🇸_US_美国_21
-      - 🇺🇸_US_美国_22
-      - 🇧🇬_BG_保加利亚_5
-      - 🇺🇸_US_美国_23
-      - 🇺🇸_US_美国_24
-      - 🇺🇸_US_美国_25
-      - 🇺🇸_US_美国_26
-      - 🇷🇺_RU_俄罗斯联邦_9
-      - 🇺🇸_US_美国_27
-      - 🇨🇦_CA_加拿大_2
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
-      - 🇷🇺_RU_俄罗斯联邦_10
-      - 🇵🇱_PL_波兰_11
-      - 🇳🇱_NL_荷兰_8
-      - 🇷🇺_RU_俄罗斯联邦_11
-      - 🇺🇸_US_美国_28
-      - 🇷🇺_RU_俄罗斯联邦_12
-      - 🇺🇸_US_美国_29
-      - 🇺🇸_US_美国_30
-      - 🇺🇸_US_美国_31
-      - 🇷🇺_RU_俄罗斯联邦_13
-      - 🇵🇱_PL_波兰_12
-      - 🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国_32
-      - 🇷🇺_RU_俄罗斯联邦_14
-      - 🇺🇸_US_美国_33
-      - 🇺🇸_US_美国_34
-      - 🇷🇺_RU_俄罗斯联邦_15
-      - 🇺🇸_US_美国_35
-      - 🇳🇱_NL_荷兰_9
-      - 🇺🇸_US_美国_36
-      - 🇺🇸_US_美国_37
-      - 🇺🇸_US_美国_38
-      - 🇷🇺_RU_俄罗斯联邦_16
-      - 🇷🇺_RU_俄罗斯联邦_17
-      - 🇺🇸_US_美国_39
-      - 🇺🇸_US_美国_40
-      - 🇺🇸_US_美国_41
-      - 🇺🇸_US_美国_42
-      - 🇳🇱_NL_荷兰_10
-      - 🇺🇸_US_美国_43
-      - 🇷🇺_RU_俄罗斯联邦_18
-      - 🇳🇱_NL_荷兰_11
-      - 🇷🇺_RU_俄罗斯联邦_19
-      - 🇺🇸_US_美国_44
-      - 🇧🇬_BG_保加利亚_6
-      - 🇺🇸_US_美国_45
-      - 🇺🇸_US_美国_46
-      - 🇺🇸_US_美国_47
-      - 🇺🇸_US_美国_48
-      - 🇷🇺_RU_俄罗斯联邦_20
-      - 🇳🇱_NL_荷兰_12
-      - 🇺🇸_US_美国_49
-      - 🇷🇺_RU_俄罗斯联邦_21
-      - 🇷🇺_RU_俄罗斯联邦_22
-      - 🇺🇸_US_美国_50
-      - 🇵🇱_PL_波兰_13
-      - 🇵🇱_PL_波兰_14
-      - 🇺🇸_US_美国_51
-      - 🇵🇱_PL_波兰_15
-      - 🇷🇺_RU_俄罗斯联邦_23
-      - 🇺🇸_US_美国_52
-      - 🇺🇸_US_美国_53
-      - 🇵🇱_PL_波兰_16
-      - 🇧🇬_BG_保加利亚_7
-      - 🇬🇧_GB_英国
-      - 🇷🇺_RU_俄罗斯联邦_24
-      - 🇷🇺_RU_俄罗斯联邦_25
-      - 🇯🇵_JP_日本_2
-      - 🇺🇸_US_美国_54
-      - 🇺🇸_US_美国_55
-      - 🇺🇸_US_美国_56
-      - 🇺🇸_US_美国_57
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇺🇸_US_美国_58
-      - 🇳🇱_NL_荷兰_13
-      - 🇺🇸_US_美国_59
-      - 🇺🇸_US_美国_60
-      - 🇺🇸_US_美国_61
-      - 🇷🇺_RU_俄罗斯联邦_26
-      - 🇧🇬_BG_保加利亚_8
-      - 🇺🇸_US_美国_62
-      - 🇺🇸_US_美国_63
-      - 🇺🇸_US_美国_64
-      - 🇺🇸_US_美国_65
-      - 🇺🇸_US_美国_66
-      - 🇺🇸_US_美国_67
-      - 🇵🇱_PL_波兰_17
-      - 🇵🇱_PL_波兰_18
-      - 🇺🇸_US_美国_68
-      - 🇷🇺_RU_俄罗斯联邦_27
-      - 🇷🇺_RU_俄罗斯联邦_28
-      - 🇳🇱_NL_荷兰_14
-      - 🇺🇸_US_美国_69
-      - 🇵🇱_PL_波兰_19
-      - 🇺🇸_US_美国_70
-      - 🇺🇸_US_美国_71
-      - 🇺🇸_US_美国_72
-      - 🇺🇸_US_美国_73
-      - 🇷🇺_RU_俄罗斯联邦_29
-      - 🇷🇺_RU_俄罗斯联邦_30
-      - 🇵🇱_PL_波兰_20
-      - 🇵🇱_PL_波兰_21
-      - 🇺🇸_US_美国_74
-      - 🇺🇸_US_美国_75
-      - 🇺🇸_US_美国_76
-      - 🇵🇱_PL_波兰_22
-      - 🇵🇱_PL_波兰_23
-      - 🇺🇸_US_美国_77
+      - 🇰🇷_KR_欢迎订阅yui科技_1
+      - 🇸🇬_SG_欢迎订阅yui科技_1
+      - 🇸🇬_SG_欢迎订阅yui科技_2
+      - 🇸🇬_SG_欢迎订阅yui科技_3
+      - 🇯🇵_JP_欢迎订阅yui科技_1
+      - 🇯🇵_JP_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_1
+      - 🇺🇸_US_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_3
+      - 🇺🇸_US_欢迎订阅yui科技_4
+      - 🇺🇸_US_欢迎订阅yui科技_5
+      - 🇺🇸_US_欢迎订阅yui科技_6
+      - 🇺🇸_US_欢迎订阅yui科技_7
+      - 🇺🇸_US_欢迎订阅yui科技_8
+      - 🇺🇸_US_欢迎订阅yui科技_9
+      - 🇺🇸_US_欢迎订阅yui科技_10
+      - 🇺🇸_US_欢迎订阅yui科技_11
+      - 🇺🇸_US_欢迎订阅yui科技_12
+      - 🇯🇵_JP_欢迎订阅yui科技_3
+      - 🇯🇵_JP_欢迎订阅yui科技_4
+      - 🇺🇸_US_欢迎订阅yui科技_13
+      - 🇺🇸_US_欢迎订阅yui科技_14
+      - 🇯🇵_JP_欢迎订阅yui科技_5
+      - 🇺🇸_US_欢迎订阅yui科技_15
+      - 🇺🇸_US_欢迎订阅yui科技_16
+      - 🇺🇸_US_欢迎订阅yui科技_17
+      - 🇺🇸_US_欢迎订阅yui科技_18
+      - 🇺🇸_US_欢迎订阅yui科技_19
+      - 🇺🇸_US_欢迎订阅yui科技_20
+      - 🇺🇸_US_欢迎订阅yui科技_21
+      - 🇺🇸_US_欢迎订阅yui科技_22
+      - 🇺🇸_US_欢迎订阅yui科技_23
+      - 🇺🇸_US_欢迎订阅yui科技_24
+      - 🇺🇸_US_欢迎订阅yui科技_25
+      - 🇺🇸_US_欢迎订阅yui科技_26
+      - 🇺🇸_US_欢迎订阅yui科技_27
+      - 🇺🇸_US_欢迎订阅yui科技_28
+      - 🇺🇸_US_欢迎订阅yui科技_29
+      - 🇺🇸_US_欢迎订阅yui科技_30
+      - 🇺🇸_US_欢迎订阅yui科技_31
+      - 🇺🇸_US_欢迎订阅yui科技_32
+      - 🇯🇵_JP_欢迎订阅yui科技_6
+      - 🇺🇸_US_欢迎订阅yui科技_33
+      - 🇺🇸_US_欢迎订阅yui科技_34
+      - 🇺🇸_US_欢迎订阅yui科技_35
+      - 🇺🇸_US_欢迎订阅yui科技_36
+      - 🇺🇸_US_欢迎订阅yui科技_37
+      - 🇺🇸_US_欢迎订阅yui科技_38
+      - 🇺🇸_US_欢迎订阅yui科技_39
+      - 🇺🇸_US_欢迎订阅yui科技_40
+      - 🇺🇸_US_欢迎订阅yui科技_41
+      - 🇺🇸_US_欢迎订阅yui科技_42
+      - 🇺🇸_US_欢迎订阅yui科技_43
+      - 🇺🇸_US_欢迎订阅yui科技_44
+      - 🇯🇵_JP_欢迎订阅yui科技_7
+      - 🇯🇵_JP_欢迎订阅yui科技_8
+      - 🇰🇷_KR_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_45
+      - 🇺🇸_US_欢迎订阅yui科技_46
+      - 🇺🇸_US_欢迎订阅yui科技_47
+      - 🇺🇸_US_欢迎订阅yui科技_48
+      - 🇺🇸_US_欢迎订阅yui科技_49
+      - 🇺🇸_US_欢迎订阅yui科技_50
+      - 🇺🇸_US_欢迎订阅yui科技_51
+      - 🇺🇸_US_欢迎订阅yui科技_52
+      - 🇺🇸_US_欢迎订阅yui科技_53
+      - 🇨🇦_CA_欢迎订阅yui科技_1
+      - 🇮🇳_IN_欢迎订阅yui科技_1
+      - 🇺🇸_US_欢迎订阅yui科技_54
+      - 🇺🇸_US_欢迎订阅yui科技_55
+      - 🇺🇸_US_欢迎订阅yui科技_56
+      - 🇺🇸_US_欢迎订阅yui科技_57
+      - 🇺🇸_US_欢迎订阅yui科技_58
+      - 🇯🇵_JP_欢迎订阅yui科技_9
+      - 🇺🇸_US_欢迎订阅yui科技_59
+      - 🇺🇸_US_欢迎订阅yui科技_60
+      - 🇺🇸_US_欢迎订阅yui科技_61
+      - 🇨🇦_CA_欢迎订阅yui科技_2
+      - 🇯🇵_JP_欢迎订阅yui科技_10
+      - 🇯🇵_JP_欢迎订阅yui科技_11
+      - 🇺🇸_US_欢迎订阅yui科技_62
+      - 🇺🇸_US_欢迎订阅yui科技_63
+      - 🇺🇸_US_欢迎订阅yui科技_64
+      - 🇺🇸_US_欢迎订阅yui科技_65
+      - 🇯🇵_JP_欢迎订阅yui科技_12
+      - 🇮🇳_IN_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_66
+      - 🇺🇸_US_欢迎订阅yui科技_67
+      - 🇺🇸_US_欢迎订阅yui科技_68
+      - 🇨🇦_CA_欢迎订阅yui科技_3
+      - 🇺🇸_US_欢迎订阅yui科技_69
+      - 🇺🇸_US_欢迎订阅yui科技_70
+      - 🇺🇸_US_欢迎订阅yui科技_71
+      - 🇨🇦_CA_欢迎订阅yui科技_4
+      - 🇨🇳_CN_欢迎订阅yui科技_1
+      - 🇺🇸_US_欢迎订阅yui科技_72
+      - 🇨🇦_CA_欢迎订阅yui科技_5
+      - 🇨🇦_CA_欢迎订阅yui科技_6
+      - 🇨🇦_CA_欢迎订阅yui科技_7
+      - 🇮🇹_IT_欢迎订阅yui科技
+      - 🇨🇦_CA_欢迎订阅yui科技_8
+      - 🇰🇷_KR_欢迎订阅yui科技_3
+      - 🇺🇸_US_欢迎订阅yui科技_73
+      - 🇺🇸_US_欢迎订阅yui科技_74
+      - 🇨🇳_CN_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_75
+      - 🇨🇦_CA_欢迎订阅yui科技_9
+      - 🇺🇸_US_欢迎订阅yui科技_76
+      - 🇸🇬_SG_欢迎订阅yui科技_4
+      - 🇸🇬_SG_欢迎订阅yui科技_5
+      - 🇸🇬_SG_欢迎订阅yui科技_6
+      - 🇸🇬_SG_欢迎订阅yui科技_7
+      - 🇺🇸_US_欢迎订阅yui科技_77
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国_1
-      - 🇵🇱_PL_波兰_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇧🇬_BG_保加利亚_1
-      - 🇺🇸_US_美国_5
-      - 🇵🇱_PL_波兰_2
-      - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国_6
-      - 🇷🇺_RU_俄罗斯联邦_1
-      - 🇺🇸_US_美国_7
-      - 🇵🇱_PL_波兰_3
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国_10
-      - 🇷🇺_RU_俄罗斯联邦_2
-      - 🇺🇸_US_美国_11
-      - 🇷🇺_RU_俄罗斯联邦_3
-      - 🇳🇱_NL_荷兰_1
-      - 🇵🇱_PL_波兰_4
-      - 🇺🇸_US_美国_12
-      - 🇳🇱_NL_荷兰_2
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇺🇸_US_美国_15
-      - 🇷🇺_RU_俄罗斯联邦_4
-      - 🇳🇱_NL_荷兰_3
-      - 🇰🇷_KR_韩国
-      - 🇵🇱_PL_波兰_5
-      - 🇵🇱_PL_波兰_6
-      - 🇺🇸_US_美国_16
-      - 🇦🇺_AU_澳大利亚
-      - 🇳🇱_NL_荷兰_4
-      - 🇵🇱_PL_波兰_7
-      - 🇷🇺_RU_俄罗斯联邦_5
-      - 🇵🇱_PL_波兰_8
-      - 🇵🇱_PL_波兰_9
-      - 🇺🇸_US_美国_17
-      - 🇧🇬_BG_保加利亚_2
-      - 🇧🇬_BG_保加利亚_3
-      - 🇷🇺_RU_俄罗斯联邦_6
-      - 🇺🇸_US_美国_18
-      - 🇷🇺_RU_俄罗斯联邦_7
-      - 🇳🇱_NL_荷兰_5
-      - 🇧🇬_BG_保加利亚_4
-      - 🇵🇱_PL_波兰_10
-      - 🇺🇸_US_美国_19
-      - 🇨🇦_CA_加拿大_1
-      - 🇳🇱_NL_荷兰_6
-      - 🇷🇺_RU_俄罗斯联邦_8
-      - 🇺🇸_US_美国_20
-      - 🇳🇱_NL_荷兰_7
-      - 🇺🇸_US_美国_21
-      - 🇺🇸_US_美国_22
-      - 🇧🇬_BG_保加利亚_5
-      - 🇺🇸_US_美国_23
-      - 🇺🇸_US_美国_24
-      - 🇺🇸_US_美国_25
-      - 🇺🇸_US_美国_26
-      - 🇷🇺_RU_俄罗斯联邦_9
-      - 🇺🇸_US_美国_27
-      - 🇨🇦_CA_加拿大_2
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
-      - 🇷🇺_RU_俄罗斯联邦_10
-      - 🇵🇱_PL_波兰_11
-      - 🇳🇱_NL_荷兰_8
-      - 🇷🇺_RU_俄罗斯联邦_11
-      - 🇺🇸_US_美国_28
-      - 🇷🇺_RU_俄罗斯联邦_12
-      - 🇺🇸_US_美国_29
-      - 🇺🇸_US_美国_30
-      - 🇺🇸_US_美国_31
-      - 🇷🇺_RU_俄罗斯联邦_13
-      - 🇵🇱_PL_波兰_12
-      - 🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国_32
-      - 🇷🇺_RU_俄罗斯联邦_14
-      - 🇺🇸_US_美国_33
-      - 🇺🇸_US_美国_34
-      - 🇷🇺_RU_俄罗斯联邦_15
-      - 🇺🇸_US_美国_35
-      - 🇳🇱_NL_荷兰_9
-      - 🇺🇸_US_美国_36
-      - 🇺🇸_US_美国_37
-      - 🇺🇸_US_美国_38
-      - 🇷🇺_RU_俄罗斯联邦_16
-      - 🇷🇺_RU_俄罗斯联邦_17
-      - 🇺🇸_US_美国_39
-      - 🇺🇸_US_美国_40
-      - 🇺🇸_US_美国_41
-      - 🇺🇸_US_美国_42
-      - 🇳🇱_NL_荷兰_10
-      - 🇺🇸_US_美国_43
-      - 🇷🇺_RU_俄罗斯联邦_18
-      - 🇳🇱_NL_荷兰_11
-      - 🇷🇺_RU_俄罗斯联邦_19
-      - 🇺🇸_US_美国_44
-      - 🇧🇬_BG_保加利亚_6
-      - 🇺🇸_US_美国_45
-      - 🇺🇸_US_美国_46
-      - 🇺🇸_US_美国_47
-      - 🇺🇸_US_美国_48
-      - 🇷🇺_RU_俄罗斯联邦_20
-      - 🇳🇱_NL_荷兰_12
-      - 🇺🇸_US_美国_49
-      - 🇷🇺_RU_俄罗斯联邦_21
-      - 🇷🇺_RU_俄罗斯联邦_22
-      - 🇺🇸_US_美国_50
-      - 🇵🇱_PL_波兰_13
-      - 🇵🇱_PL_波兰_14
-      - 🇺🇸_US_美国_51
-      - 🇵🇱_PL_波兰_15
-      - 🇷🇺_RU_俄罗斯联邦_23
-      - 🇺🇸_US_美国_52
-      - 🇺🇸_US_美国_53
-      - 🇵🇱_PL_波兰_16
-      - 🇧🇬_BG_保加利亚_7
-      - 🇬🇧_GB_英国
-      - 🇷🇺_RU_俄罗斯联邦_24
-      - 🇷🇺_RU_俄罗斯联邦_25
-      - 🇯🇵_JP_日本_2
-      - 🇺🇸_US_美国_54
-      - 🇺🇸_US_美国_55
-      - 🇺🇸_US_美国_56
-      - 🇺🇸_US_美国_57
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇺🇸_US_美国_58
-      - 🇳🇱_NL_荷兰_13
-      - 🇺🇸_US_美国_59
-      - 🇺🇸_US_美国_60
-      - 🇺🇸_US_美国_61
-      - 🇷🇺_RU_俄罗斯联邦_26
-      - 🇧🇬_BG_保加利亚_8
-      - 🇺🇸_US_美国_62
-      - 🇺🇸_US_美国_63
-      - 🇺🇸_US_美国_64
-      - 🇺🇸_US_美国_65
-      - 🇺🇸_US_美国_66
-      - 🇺🇸_US_美国_67
-      - 🇵🇱_PL_波兰_17
-      - 🇵🇱_PL_波兰_18
-      - 🇺🇸_US_美国_68
-      - 🇷🇺_RU_俄罗斯联邦_27
-      - 🇷🇺_RU_俄罗斯联邦_28
-      - 🇳🇱_NL_荷兰_14
-      - 🇺🇸_US_美国_69
-      - 🇵🇱_PL_波兰_19
-      - 🇺🇸_US_美国_70
-      - 🇺🇸_US_美国_71
-      - 🇺🇸_US_美国_72
-      - 🇺🇸_US_美国_73
-      - 🇷🇺_RU_俄罗斯联邦_29
-      - 🇷🇺_RU_俄罗斯联邦_30
-      - 🇵🇱_PL_波兰_20
-      - 🇵🇱_PL_波兰_21
-      - 🇺🇸_US_美国_74
-      - 🇺🇸_US_美国_75
-      - 🇺🇸_US_美国_76
-      - 🇵🇱_PL_波兰_22
-      - 🇵🇱_PL_波兰_23
-      - 🇺🇸_US_美国_77
+      - 🇰🇷_KR_欢迎订阅yui科技_1
+      - 🇸🇬_SG_欢迎订阅yui科技_1
+      - 🇸🇬_SG_欢迎订阅yui科技_2
+      - 🇸🇬_SG_欢迎订阅yui科技_3
+      - 🇯🇵_JP_欢迎订阅yui科技_1
+      - 🇯🇵_JP_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_1
+      - 🇺🇸_US_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_3
+      - 🇺🇸_US_欢迎订阅yui科技_4
+      - 🇺🇸_US_欢迎订阅yui科技_5
+      - 🇺🇸_US_欢迎订阅yui科技_6
+      - 🇺🇸_US_欢迎订阅yui科技_7
+      - 🇺🇸_US_欢迎订阅yui科技_8
+      - 🇺🇸_US_欢迎订阅yui科技_9
+      - 🇺🇸_US_欢迎订阅yui科技_10
+      - 🇺🇸_US_欢迎订阅yui科技_11
+      - 🇺🇸_US_欢迎订阅yui科技_12
+      - 🇯🇵_JP_欢迎订阅yui科技_3
+      - 🇯🇵_JP_欢迎订阅yui科技_4
+      - 🇺🇸_US_欢迎订阅yui科技_13
+      - 🇺🇸_US_欢迎订阅yui科技_14
+      - 🇯🇵_JP_欢迎订阅yui科技_5
+      - 🇺🇸_US_欢迎订阅yui科技_15
+      - 🇺🇸_US_欢迎订阅yui科技_16
+      - 🇺🇸_US_欢迎订阅yui科技_17
+      - 🇺🇸_US_欢迎订阅yui科技_18
+      - 🇺🇸_US_欢迎订阅yui科技_19
+      - 🇺🇸_US_欢迎订阅yui科技_20
+      - 🇺🇸_US_欢迎订阅yui科技_21
+      - 🇺🇸_US_欢迎订阅yui科技_22
+      - 🇺🇸_US_欢迎订阅yui科技_23
+      - 🇺🇸_US_欢迎订阅yui科技_24
+      - 🇺🇸_US_欢迎订阅yui科技_25
+      - 🇺🇸_US_欢迎订阅yui科技_26
+      - 🇺🇸_US_欢迎订阅yui科技_27
+      - 🇺🇸_US_欢迎订阅yui科技_28
+      - 🇺🇸_US_欢迎订阅yui科技_29
+      - 🇺🇸_US_欢迎订阅yui科技_30
+      - 🇺🇸_US_欢迎订阅yui科技_31
+      - 🇺🇸_US_欢迎订阅yui科技_32
+      - 🇯🇵_JP_欢迎订阅yui科技_6
+      - 🇺🇸_US_欢迎订阅yui科技_33
+      - 🇺🇸_US_欢迎订阅yui科技_34
+      - 🇺🇸_US_欢迎订阅yui科技_35
+      - 🇺🇸_US_欢迎订阅yui科技_36
+      - 🇺🇸_US_欢迎订阅yui科技_37
+      - 🇺🇸_US_欢迎订阅yui科技_38
+      - 🇺🇸_US_欢迎订阅yui科技_39
+      - 🇺🇸_US_欢迎订阅yui科技_40
+      - 🇺🇸_US_欢迎订阅yui科技_41
+      - 🇺🇸_US_欢迎订阅yui科技_42
+      - 🇺🇸_US_欢迎订阅yui科技_43
+      - 🇺🇸_US_欢迎订阅yui科技_44
+      - 🇯🇵_JP_欢迎订阅yui科技_7
+      - 🇯🇵_JP_欢迎订阅yui科技_8
+      - 🇰🇷_KR_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_45
+      - 🇺🇸_US_欢迎订阅yui科技_46
+      - 🇺🇸_US_欢迎订阅yui科技_47
+      - 🇺🇸_US_欢迎订阅yui科技_48
+      - 🇺🇸_US_欢迎订阅yui科技_49
+      - 🇺🇸_US_欢迎订阅yui科技_50
+      - 🇺🇸_US_欢迎订阅yui科技_51
+      - 🇺🇸_US_欢迎订阅yui科技_52
+      - 🇺🇸_US_欢迎订阅yui科技_53
+      - 🇨🇦_CA_欢迎订阅yui科技_1
+      - 🇮🇳_IN_欢迎订阅yui科技_1
+      - 🇺🇸_US_欢迎订阅yui科技_54
+      - 🇺🇸_US_欢迎订阅yui科技_55
+      - 🇺🇸_US_欢迎订阅yui科技_56
+      - 🇺🇸_US_欢迎订阅yui科技_57
+      - 🇺🇸_US_欢迎订阅yui科技_58
+      - 🇯🇵_JP_欢迎订阅yui科技_9
+      - 🇺🇸_US_欢迎订阅yui科技_59
+      - 🇺🇸_US_欢迎订阅yui科技_60
+      - 🇺🇸_US_欢迎订阅yui科技_61
+      - 🇨🇦_CA_欢迎订阅yui科技_2
+      - 🇯🇵_JP_欢迎订阅yui科技_10
+      - 🇯🇵_JP_欢迎订阅yui科技_11
+      - 🇺🇸_US_欢迎订阅yui科技_62
+      - 🇺🇸_US_欢迎订阅yui科技_63
+      - 🇺🇸_US_欢迎订阅yui科技_64
+      - 🇺🇸_US_欢迎订阅yui科技_65
+      - 🇯🇵_JP_欢迎订阅yui科技_12
+      - 🇮🇳_IN_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_66
+      - 🇺🇸_US_欢迎订阅yui科技_67
+      - 🇺🇸_US_欢迎订阅yui科技_68
+      - 🇨🇦_CA_欢迎订阅yui科技_3
+      - 🇺🇸_US_欢迎订阅yui科技_69
+      - 🇺🇸_US_欢迎订阅yui科技_70
+      - 🇺🇸_US_欢迎订阅yui科技_71
+      - 🇨🇦_CA_欢迎订阅yui科技_4
+      - 🇨🇳_CN_欢迎订阅yui科技_1
+      - 🇺🇸_US_欢迎订阅yui科技_72
+      - 🇨🇦_CA_欢迎订阅yui科技_5
+      - 🇨🇦_CA_欢迎订阅yui科技_6
+      - 🇨🇦_CA_欢迎订阅yui科技_7
+      - 🇮🇹_IT_欢迎订阅yui科技
+      - 🇨🇦_CA_欢迎订阅yui科技_8
+      - 🇰🇷_KR_欢迎订阅yui科技_3
+      - 🇺🇸_US_欢迎订阅yui科技_73
+      - 🇺🇸_US_欢迎订阅yui科技_74
+      - 🇨🇳_CN_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_75
+      - 🇨🇦_CA_欢迎订阅yui科技_9
+      - 🇺🇸_US_欢迎订阅yui科技_76
+      - 🇸🇬_SG_欢迎订阅yui科技_4
+      - 🇸🇬_SG_欢迎订阅yui科技_5
+      - 🇸🇬_SG_欢迎订阅yui科技_6
+      - 🇸🇬_SG_欢迎订阅yui科技_7
+      - 🇺🇸_US_欢迎订阅yui科技_77
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1202,172 +858,124 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸_US_美国_1
-      - 🇵🇱_PL_波兰_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇧🇬_BG_保加利亚_1
-      - 🇺🇸_US_美国_5
-      - 🇵🇱_PL_波兰_2
-      - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国_6
-      - 🇷🇺_RU_俄罗斯联邦_1
-      - 🇺🇸_US_美国_7
-      - 🇵🇱_PL_波兰_3
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国_10
-      - 🇷🇺_RU_俄罗斯联邦_2
-      - 🇺🇸_US_美国_11
-      - 🇷🇺_RU_俄罗斯联邦_3
-      - 🇳🇱_NL_荷兰_1
-      - 🇵🇱_PL_波兰_4
-      - 🇺🇸_US_美国_12
-      - 🇳🇱_NL_荷兰_2
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇺🇸_US_美国_15
-      - 🇷🇺_RU_俄罗斯联邦_4
-      - 🇳🇱_NL_荷兰_3
-      - 🇰🇷_KR_韩国
-      - 🇵🇱_PL_波兰_5
-      - 🇵🇱_PL_波兰_6
-      - 🇺🇸_US_美国_16
-      - 🇦🇺_AU_澳大利亚
-      - 🇳🇱_NL_荷兰_4
-      - 🇵🇱_PL_波兰_7
-      - 🇷🇺_RU_俄罗斯联邦_5
-      - 🇵🇱_PL_波兰_8
-      - 🇵🇱_PL_波兰_9
-      - 🇺🇸_US_美国_17
-      - 🇧🇬_BG_保加利亚_2
-      - 🇧🇬_BG_保加利亚_3
-      - 🇷🇺_RU_俄罗斯联邦_6
-      - 🇺🇸_US_美国_18
-      - 🇷🇺_RU_俄罗斯联邦_7
-      - 🇳🇱_NL_荷兰_5
-      - 🇧🇬_BG_保加利亚_4
-      - 🇵🇱_PL_波兰_10
-      - 🇺🇸_US_美国_19
-      - 🇨🇦_CA_加拿大_1
-      - 🇳🇱_NL_荷兰_6
-      - 🇷🇺_RU_俄罗斯联邦_8
-      - 🇺🇸_US_美国_20
-      - 🇳🇱_NL_荷兰_7
-      - 🇺🇸_US_美国_21
-      - 🇺🇸_US_美国_22
-      - 🇧🇬_BG_保加利亚_5
-      - 🇺🇸_US_美国_23
-      - 🇺🇸_US_美国_24
-      - 🇺🇸_US_美国_25
-      - 🇺🇸_US_美国_26
-      - 🇷🇺_RU_俄罗斯联邦_9
-      - 🇺🇸_US_美国_27
-      - 🇨🇦_CA_加拿大_2
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
-      - 🇷🇺_RU_俄罗斯联邦_10
-      - 🇵🇱_PL_波兰_11
-      - 🇳🇱_NL_荷兰_8
-      - 🇷🇺_RU_俄罗斯联邦_11
-      - 🇺🇸_US_美国_28
-      - 🇷🇺_RU_俄罗斯联邦_12
-      - 🇺🇸_US_美国_29
-      - 🇺🇸_US_美国_30
-      - 🇺🇸_US_美国_31
-      - 🇷🇺_RU_俄罗斯联邦_13
-      - 🇵🇱_PL_波兰_12
-      - 🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国_32
-      - 🇷🇺_RU_俄罗斯联邦_14
-      - 🇺🇸_US_美国_33
-      - 🇺🇸_US_美国_34
-      - 🇷🇺_RU_俄罗斯联邦_15
-      - 🇺🇸_US_美国_35
-      - 🇳🇱_NL_荷兰_9
-      - 🇺🇸_US_美国_36
-      - 🇺🇸_US_美国_37
-      - 🇺🇸_US_美国_38
-      - 🇷🇺_RU_俄罗斯联邦_16
-      - 🇷🇺_RU_俄罗斯联邦_17
-      - 🇺🇸_US_美国_39
-      - 🇺🇸_US_美国_40
-      - 🇺🇸_US_美国_41
-      - 🇺🇸_US_美国_42
-      - 🇳🇱_NL_荷兰_10
-      - 🇺🇸_US_美国_43
-      - 🇷🇺_RU_俄罗斯联邦_18
-      - 🇳🇱_NL_荷兰_11
-      - 🇷🇺_RU_俄罗斯联邦_19
-      - 🇺🇸_US_美国_44
-      - 🇧🇬_BG_保加利亚_6
-      - 🇺🇸_US_美国_45
-      - 🇺🇸_US_美国_46
-      - 🇺🇸_US_美国_47
-      - 🇺🇸_US_美国_48
-      - 🇷🇺_RU_俄罗斯联邦_20
-      - 🇳🇱_NL_荷兰_12
-      - 🇺🇸_US_美国_49
-      - 🇷🇺_RU_俄罗斯联邦_21
-      - 🇷🇺_RU_俄罗斯联邦_22
-      - 🇺🇸_US_美国_50
-      - 🇵🇱_PL_波兰_13
-      - 🇵🇱_PL_波兰_14
-      - 🇺🇸_US_美国_51
-      - 🇵🇱_PL_波兰_15
-      - 🇷🇺_RU_俄罗斯联邦_23
-      - 🇺🇸_US_美国_52
-      - 🇺🇸_US_美国_53
-      - 🇵🇱_PL_波兰_16
-      - 🇧🇬_BG_保加利亚_7
-      - 🇬🇧_GB_英国
-      - 🇷🇺_RU_俄罗斯联邦_24
-      - 🇷🇺_RU_俄罗斯联邦_25
-      - 🇯🇵_JP_日本_2
-      - 🇺🇸_US_美国_54
-      - 🇺🇸_US_美国_55
-      - 🇺🇸_US_美国_56
-      - 🇺🇸_US_美国_57
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇺🇸_US_美国_58
-      - 🇳🇱_NL_荷兰_13
-      - 🇺🇸_US_美国_59
-      - 🇺🇸_US_美国_60
-      - 🇺🇸_US_美国_61
-      - 🇷🇺_RU_俄罗斯联邦_26
-      - 🇧🇬_BG_保加利亚_8
-      - 🇺🇸_US_美国_62
-      - 🇺🇸_US_美国_63
-      - 🇺🇸_US_美国_64
-      - 🇺🇸_US_美国_65
-      - 🇺🇸_US_美国_66
-      - 🇺🇸_US_美国_67
-      - 🇵🇱_PL_波兰_17
-      - 🇵🇱_PL_波兰_18
-      - 🇺🇸_US_美国_68
-      - 🇷🇺_RU_俄罗斯联邦_27
-      - 🇷🇺_RU_俄罗斯联邦_28
-      - 🇳🇱_NL_荷兰_14
-      - 🇺🇸_US_美国_69
-      - 🇵🇱_PL_波兰_19
-      - 🇺🇸_US_美国_70
-      - 🇺🇸_US_美国_71
-      - 🇺🇸_US_美国_72
-      - 🇺🇸_US_美国_73
-      - 🇷🇺_RU_俄罗斯联邦_29
-      - 🇷🇺_RU_俄罗斯联邦_30
-      - 🇵🇱_PL_波兰_20
-      - 🇵🇱_PL_波兰_21
-      - 🇺🇸_US_美国_74
-      - 🇺🇸_US_美国_75
-      - 🇺🇸_US_美国_76
-      - 🇵🇱_PL_波兰_22
-      - 🇵🇱_PL_波兰_23
-      - 🇺🇸_US_美国_77
+      - 🇰🇷_KR_欢迎订阅yui科技_1
+      - 🇸🇬_SG_欢迎订阅yui科技_1
+      - 🇸🇬_SG_欢迎订阅yui科技_2
+      - 🇸🇬_SG_欢迎订阅yui科技_3
+      - 🇯🇵_JP_欢迎订阅yui科技_1
+      - 🇯🇵_JP_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_1
+      - 🇺🇸_US_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_3
+      - 🇺🇸_US_欢迎订阅yui科技_4
+      - 🇺🇸_US_欢迎订阅yui科技_5
+      - 🇺🇸_US_欢迎订阅yui科技_6
+      - 🇺🇸_US_欢迎订阅yui科技_7
+      - 🇺🇸_US_欢迎订阅yui科技_8
+      - 🇺🇸_US_欢迎订阅yui科技_9
+      - 🇺🇸_US_欢迎订阅yui科技_10
+      - 🇺🇸_US_欢迎订阅yui科技_11
+      - 🇺🇸_US_欢迎订阅yui科技_12
+      - 🇯🇵_JP_欢迎订阅yui科技_3
+      - 🇯🇵_JP_欢迎订阅yui科技_4
+      - 🇺🇸_US_欢迎订阅yui科技_13
+      - 🇺🇸_US_欢迎订阅yui科技_14
+      - 🇯🇵_JP_欢迎订阅yui科技_5
+      - 🇺🇸_US_欢迎订阅yui科技_15
+      - 🇺🇸_US_欢迎订阅yui科技_16
+      - 🇺🇸_US_欢迎订阅yui科技_17
+      - 🇺🇸_US_欢迎订阅yui科技_18
+      - 🇺🇸_US_欢迎订阅yui科技_19
+      - 🇺🇸_US_欢迎订阅yui科技_20
+      - 🇺🇸_US_欢迎订阅yui科技_21
+      - 🇺🇸_US_欢迎订阅yui科技_22
+      - 🇺🇸_US_欢迎订阅yui科技_23
+      - 🇺🇸_US_欢迎订阅yui科技_24
+      - 🇺🇸_US_欢迎订阅yui科技_25
+      - 🇺🇸_US_欢迎订阅yui科技_26
+      - 🇺🇸_US_欢迎订阅yui科技_27
+      - 🇺🇸_US_欢迎订阅yui科技_28
+      - 🇺🇸_US_欢迎订阅yui科技_29
+      - 🇺🇸_US_欢迎订阅yui科技_30
+      - 🇺🇸_US_欢迎订阅yui科技_31
+      - 🇺🇸_US_欢迎订阅yui科技_32
+      - 🇯🇵_JP_欢迎订阅yui科技_6
+      - 🇺🇸_US_欢迎订阅yui科技_33
+      - 🇺🇸_US_欢迎订阅yui科技_34
+      - 🇺🇸_US_欢迎订阅yui科技_35
+      - 🇺🇸_US_欢迎订阅yui科技_36
+      - 🇺🇸_US_欢迎订阅yui科技_37
+      - 🇺🇸_US_欢迎订阅yui科技_38
+      - 🇺🇸_US_欢迎订阅yui科技_39
+      - 🇺🇸_US_欢迎订阅yui科技_40
+      - 🇺🇸_US_欢迎订阅yui科技_41
+      - 🇺🇸_US_欢迎订阅yui科技_42
+      - 🇺🇸_US_欢迎订阅yui科技_43
+      - 🇺🇸_US_欢迎订阅yui科技_44
+      - 🇯🇵_JP_欢迎订阅yui科技_7
+      - 🇯🇵_JP_欢迎订阅yui科技_8
+      - 🇰🇷_KR_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_45
+      - 🇺🇸_US_欢迎订阅yui科技_46
+      - 🇺🇸_US_欢迎订阅yui科技_47
+      - 🇺🇸_US_欢迎订阅yui科技_48
+      - 🇺🇸_US_欢迎订阅yui科技_49
+      - 🇺🇸_US_欢迎订阅yui科技_50
+      - 🇺🇸_US_欢迎订阅yui科技_51
+      - 🇺🇸_US_欢迎订阅yui科技_52
+      - 🇺🇸_US_欢迎订阅yui科技_53
+      - 🇨🇦_CA_欢迎订阅yui科技_1
+      - 🇮🇳_IN_欢迎订阅yui科技_1
+      - 🇺🇸_US_欢迎订阅yui科技_54
+      - 🇺🇸_US_欢迎订阅yui科技_55
+      - 🇺🇸_US_欢迎订阅yui科技_56
+      - 🇺🇸_US_欢迎订阅yui科技_57
+      - 🇺🇸_US_欢迎订阅yui科技_58
+      - 🇯🇵_JP_欢迎订阅yui科技_9
+      - 🇺🇸_US_欢迎订阅yui科技_59
+      - 🇺🇸_US_欢迎订阅yui科技_60
+      - 🇺🇸_US_欢迎订阅yui科技_61
+      - 🇨🇦_CA_欢迎订阅yui科技_2
+      - 🇯🇵_JP_欢迎订阅yui科技_10
+      - 🇯🇵_JP_欢迎订阅yui科技_11
+      - 🇺🇸_US_欢迎订阅yui科技_62
+      - 🇺🇸_US_欢迎订阅yui科技_63
+      - 🇺🇸_US_欢迎订阅yui科技_64
+      - 🇺🇸_US_欢迎订阅yui科技_65
+      - 🇯🇵_JP_欢迎订阅yui科技_12
+      - 🇮🇳_IN_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_66
+      - 🇺🇸_US_欢迎订阅yui科技_67
+      - 🇺🇸_US_欢迎订阅yui科技_68
+      - 🇨🇦_CA_欢迎订阅yui科技_3
+      - 🇺🇸_US_欢迎订阅yui科技_69
+      - 🇺🇸_US_欢迎订阅yui科技_70
+      - 🇺🇸_US_欢迎订阅yui科技_71
+      - 🇨🇦_CA_欢迎订阅yui科技_4
+      - 🇨🇳_CN_欢迎订阅yui科技_1
+      - 🇺🇸_US_欢迎订阅yui科技_72
+      - 🇨🇦_CA_欢迎订阅yui科技_5
+      - 🇨🇦_CA_欢迎订阅yui科技_6
+      - 🇨🇦_CA_欢迎订阅yui科技_7
+      - 🇮🇹_IT_欢迎订阅yui科技
+      - 🇨🇦_CA_欢迎订阅yui科技_8
+      - 🇰🇷_KR_欢迎订阅yui科技_3
+      - 🇺🇸_US_欢迎订阅yui科技_73
+      - 🇺🇸_US_欢迎订阅yui科技_74
+      - 🇨🇳_CN_欢迎订阅yui科技_2
+      - 🇺🇸_US_欢迎订阅yui科技_75
+      - 🇨🇦_CA_欢迎订阅yui科技_9
+      - 🇺🇸_US_欢迎订阅yui科技_76
+      - 🇸🇬_SG_欢迎订阅yui科技_4
+      - 🇸🇬_SG_欢迎订阅yui科技_5
+      - 🇸🇬_SG_欢迎订阅yui科技_6
+      - 🇸🇬_SG_欢迎订阅yui科技_7
+      - 🇺🇸_US_欢迎订阅yui科技_77
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
+  - DOMAIN-SUFFIX,lan,🎯 全球直连
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - DOMAIN-SUFFIX,localhost,🎯 全球直连
   - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
@@ -1380,6 +988,8 @@ rules:
   - IP-CIDR6,fc00::/7,🎯 全球直连,no-resolve
   - IP-CIDR6,fe80::/10,🎯 全球直连,no-resolve
   - IP-CIDR6,fd00::/8,🎯 全球直连,no-resolve
+  - DOMAIN,instant.arubanetworks.com,🎯 全球直连
+  - DOMAIN,setmeup.arubanetworks.com,🎯 全球直连
   - DOMAIN,router.asus.com,🎯 全球直连
   - DOMAIN-SUFFIX,hiwifi.com,🎯 全球直连
   - DOMAIN-SUFFIX,leike.cc,🎯 全球直连
@@ -1388,6 +998,7 @@ rules:
   - DOMAIN-SUFFIX,p.to,🎯 全球直连
   - DOMAIN-SUFFIX,peiluyou.com,🎯 全球直连
   - DOMAIN-SUFFIX,phicomm.me,🎯 全球直连
+  - DOMAIN-SUFFIX,router.ctc,🎯 全球直连
   - DOMAIN-SUFFIX,routerlogin.com,🎯 全球直连
   - DOMAIN-SUFFIX,tendawifi.com,🎯 全球直连
   - DOMAIN-SUFFIX,zte.home,🎯 全球直连
@@ -1418,25 +1029,6 @@ rules:
   - DOMAIN-KEYWORD,usage,🛑 全球拦截
   - DOMAIN-KEYWORD,wlmonitor,🛑 全球拦截
   - DOMAIN-KEYWORD,zjtoolbar,🛑 全球拦截
-  - DOMAIN-SUFFIX,admob.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ads.gmodules.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ads.google.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adservice.google.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,afd.l.google.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,badad.googleplex.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,csi.gstatic.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,doubleclick.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,doubleclick.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,google-analytics.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,googleadservices.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,googleadsserving.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,googlecommerce.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,googlesyndication.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,mobileads.google.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,pagead-tpc.l.google.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,pagead.google.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,pagead.l.google.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,service.urchin.com,🛑 全球拦截
   - DOMAIN-SUFFIX,09mk.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,100peng.com,🛑 全球拦截
   - DOMAIN-SUFFIX,114la.com,🛑 全球拦截
@@ -1596,7 +1188,6 @@ rules:
   - DOMAIN-SUFFIX,edigitalsurvey.com,🛑 全球拦截
   - DOMAIN-SUFFIX,eduancm.com,🛑 全球拦截
   - DOMAIN-SUFFIX,emarbox.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,epsilon.com,🛑 全球拦截
   - DOMAIN-SUFFIX,exosrv.com,🛑 全球拦截
   - DOMAIN-SUFFIX,fancyapi.com,🛑 全球拦截
   - DOMAIN-SUFFIX,feitian001.com,🛑 全球拦截
@@ -1672,7 +1263,6 @@ rules:
   - DOMAIN-SUFFIX,mediaplex.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mediav.com,🛑 全球拦截
   - DOMAIN-SUFFIX,megajoy.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,meiqia.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mgogo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,miaozhen.com,🛑 全球拦截
   - DOMAIN-SUFFIX,microad-cn.com,🛑 全球拦截
@@ -1688,6 +1278,7 @@ rules:
   - DOMAIN-SUFFIX,mobgi.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mobisage.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,mobvista.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,moogos.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mopub.com,🛑 全球拦截
   - DOMAIN-SUFFIX,moquanad.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mpush.cn,🛑 全球拦截
@@ -1782,6 +1373,7 @@ rules:
   - DOMAIN-SUFFIX,uuzu.com,🛑 全球拦截
   - DOMAIN-SUFFIX,uyunad.com,🛑 全球拦截
   - DOMAIN-SUFFIX,vamaker.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,vlion.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,voiceads.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,voiceads.com,🛑 全球拦截
   - DOMAIN-SUFFIX,vpon.com,🛑 全球拦截
@@ -2114,12 +1706,10 @@ rules:
   - DOMAIN-SUFFIX,activate-sea.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,activate-sjc0.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,activate.adobe.com,🍃 应用净化
-  - DOMAIN-SUFFIX,activate.wip3.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,adobe-dns-2.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,adobe-dns-3.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,adobe-dns.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,ereg.adobe.com,🍃 应用净化
-  - DOMAIN-SUFFIX,ereg.wip3.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,geo2.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,hl2rcv.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,hlrcv.stage.adobe.com,🍃 应用净化
@@ -2174,7 +1764,6 @@ rules:
   - DOMAIN-SUFFIX,baikebcs.bdimg.com,🍃 应用净化
   - DOMAIN-SUFFIX,banlv.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,bar.baidu.com,🍃 应用净化
-  - DOMAIN-SUFFIX,bdimg.share.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,bdplus.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,btlaunch.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,c.baidu.cn,🍃 应用净化
@@ -2192,7 +1781,6 @@ rules:
   - DOMAIN-SUFFIX,click.hm.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,click.qianqian.com,🍃 应用净化
   - DOMAIN-SUFFIX,cm.baidu.com,🍃 应用净化
-  - DOMAIN-SUFFIX,cm.pos.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,cpro.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,cpro.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,cpro.baidustatic.com,🍃 应用净化
@@ -2295,13 +1883,10 @@ rules:
   - DOMAIN-SUFFIX,rp.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,rplog.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,s.baidu.com,🍃 应用净化
-  - DOMAIN-SUFFIX,s.cpro.baidu.com,🍃 应用净化
-  - DOMAIN-SUFFIX,sa.tuisong.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,sclick.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,sestat.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,shadu.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,share.baidu.com,🍃 应用净化
-  - DOMAIN-SUFFIX,snippet.pos.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,sobar.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,sobartop.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,spcode.baidu.cn,🍃 应用净化
@@ -2318,7 +1903,6 @@ rules:
   - DOMAIN-SUFFIX,tuijian.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,tuisong.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,tuisong.baidu.com,🍃 应用净化
-  - DOMAIN-SUFFIX,uat1.bfsspadserver.8le8le.com,🍃 应用净化
   - DOMAIN-SUFFIX,ubmcmm.baidustatic.com,🍃 应用净化
   - DOMAIN-SUFFIX,ucstat.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,ucstat.baidu.com,🍃 应用净化
@@ -2343,7 +1927,6 @@ rules:
   - DOMAIN-SUFFIX,wisepush.video.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,wm.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,wm.baidu.com,🍃 应用净化
-  - DOMAIN-SUFFIX,wn.pos.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,znsv.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,znsv.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,zz.bdstatic.com,🍃 应用净化
@@ -2394,7 +1977,11 @@ rules:
   - DOMAIN-SUFFIX,ic.snssdk.com,🍃 应用净化
   - DOMAIN-SUFFIX,log.snssdk.com,🍃 应用净化
   - DOMAIN-SUFFIX,nativeapp.toutiao.com,🍃 应用净化
+  - DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,🍃 应用净化
+  - DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,🍃 应用净化
+  - DOMAIN-SUFFIX,pangolin.snssdk.com,🍃 应用净化
   - DOMAIN-SUFFIX,partner.toutiao.com,🍃 应用净化
+  - DOMAIN-SUFFIX,pglstatp-toutiao.com,🍃 应用净化
   - DOMAIN-SUFFIX,sm.toutiao.com,🍃 应用净化
   - DOMAIN-SUFFIX,a.dangdang.com,🍃 应用净化
   - DOMAIN-SUFFIX,click.dangdang.com,🍃 应用净化
@@ -2524,7 +2111,6 @@ rules:
   - DOMAIN-SUFFIX,jellyfish.pandora.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,migc.g.mi.com,🍃 应用净化
   - DOMAIN-SUFFIX,migcreport.g.mi.com,🍃 应用净化
-  - DOMAIN-SUFFIX,mis.g.mi.com,🍃 应用净化
   - DOMAIN-SUFFIX,notice.game.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,ppurifier.game.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,r.browser.miui.com,🍃 应用净化
@@ -2728,7 +2314,6 @@ rules:
   - DOMAIN-SUFFIX,ws.progrss.yahoo.com,🍃 应用净化
   - DOMAIN-SUFFIX,yads.yahoo.co.jp,🍃 应用净化
   - DOMAIN-SUFFIX,ybp.yahoo.com,🍃 应用净化
-  - DOMAIN-SUFFIX,sugar.zhihu.com,🍃 应用净化
   - DOMAIN-SUFFIX,zhihu-web-analytics.zhihu.com,🍃 应用净化
   - DOMAIN-SUFFIX,shrek.6.cn,🍃 应用净化
   - DOMAIN-SUFFIX,simba.6.cn,🍃 应用净化
@@ -2917,7 +2502,6 @@ rules:
   - DOMAIN-SUFFIX,couchcoaster.jp,🍃 应用净化
   - DOMAIN-SUFFIX,delivery.dmkt-sp.jp,🍃 应用净化
   - DOMAIN-SUFFIX,ehg-youtube.hitbox.com,🍃 应用净化
-  - DOMAIN-SUFFIX,m-78.jp,🍃 应用净化
   - DOMAIN-SUFFIX,nichibenren.or.jp,🍃 应用净化
   - DOMAIN-SUFFIX,nicorette.co.kr,🍃 应用净化
   - DOMAIN-SUFFIX,ssl-youtube.2cnt.net,🍃 应用净化
@@ -2928,8 +2512,6 @@ rules:
   - DOMAIN-SUFFIX,ads.wasu.tv,🍃 应用净化
   - DOMAIN-SUFFIX,afp.wasu.tv,🍃 应用净化
   - DOMAIN-SUFFIX,c.algovid.com,🍃 应用净化
-  - DOMAIN-SUFFIX,cc.xtgreat.com,🍃 应用净化
-  - DOMAIN-SUFFIX,d.dsp.imageter.com,🍃 应用净化
   - DOMAIN-SUFFIX,gg.jtertp.com,🍃 应用净化
   - DOMAIN-SUFFIX,gridsum-vd.cntv.cn,🍃 应用净化
   - DOMAIN-SUFFIX,kwflvcdn.000dn.com,🍃 应用净化
@@ -3079,6 +2661,21 @@ rules:
   - DOMAIN-SUFFIX,update.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,www-googletagmanager.l.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,www.gstatic.com,🎯 全球直连
+  - DOMAIN,csgo.wmsj.cn,🎯 全球直连
+  - DOMAIN,dl.steam.clngaa.com,🎯 全球直连
+  - DOMAIN,dl.steam.ksyna.com,🎯 全球直连
+  - DOMAIN,dota2.wmsj.cn,🎯 全球直连
+  - DOMAIN,st.dl.bscstorage.net,🎯 全球直连
+  - DOMAIN,st.dl.eccdnx.com,🎯 全球直连
+  - DOMAIN,st.dl.pinyuncloud.com,🎯 全球直连
+  - DOMAIN,steampipe.steamcontent.tnkjmec.com,🎯 全球直连
+  - DOMAIN,steampowered.com.8686c.com,🎯 全球直连
+  - DOMAIN,steamstatic.com.8686c.com,🎯 全球直连
+  - DOMAIN,wmsjsteam.com,🎯 全球直连
+  - DOMAIN-SUFFIX,cm.steampowered.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steamchina.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steamcontent.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steamusercontent.com,🎯 全球直连
   - DOMAIN-KEYWORD,1drv,Ⓜ️ 微软服务
   - DOMAIN-KEYWORD,microsoft,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,aadrm.com,Ⓜ️ 微软服务
@@ -3159,6 +2756,7 @@ rules:
   - DOMAIN-SUFFIX,aaplimg.com,🍎 苹果服务
   - DOMAIN-SUFFIX,akadns.net,🍎 苹果服务
   - DOMAIN-SUFFIX,apple-cloudkit.com,🍎 苹果服务
+  - DOMAIN-SUFFIX,apple-mapkit.com,🍎 苹果服务
   - DOMAIN-SUFFIX,apple.co,🍎 苹果服务
   - DOMAIN-SUFFIX,apple.com,🍎 苹果服务
   - DOMAIN-SUFFIX,apple.com.cn,🍎 苹果服务
@@ -3191,15 +2789,24 @@ rules:
   - DOMAIN-SUFFIX,hayabusa.io,🌍 国外媒体
   - DOMAIN-SUFFIX,c4assets.com,🌍 国外媒体
   - DOMAIN-SUFFIX,channel4.com,🌍 国外媒体
-  - DOMAIN, atv-ps.amazon.com,🌍 国外媒体
-  - DOMAIN, fls-na.amazon.com,🌍 国外媒体
-  - DOMAIN-SUFFIX, media-amazon.com,🌍 国外媒体
+  - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
+  - DOMAIN,atv-ps.amazon.com,🌍 国外媒体
+  - DOMAIN,avodmp4s3ww-a.akamaihd.net,🌍 国外媒体
+  - DOMAIN,d1v5ir2lpwr8os.cloudfront.net,🌍 国外媒体
+  - DOMAIN,d1xfray82862hr.cloudfront.net,🌍 国外媒体
+  - DOMAIN,d22qjgkvxw22r6.cloudfront.net,🌍 国外媒体
+  - DOMAIN,d25xi40x97liuc.cloudfront.net,🌍 国外媒体
+  - DOMAIN,d27xxe7juh1us6.cloudfront.net,🌍 国外媒体
+  - DOMAIN,d3196yreox78o9.cloudfront.net,🌍 国外媒体
+  - DOMAIN,dmqdd6hw24ucf.cloudfront.net,🌍 国外媒体
+  - DOMAIN,ktpx.amazon.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,aboutamazon.com,🌍 国外媒体
   - DOMAIN-SUFFIX,aiv-cdn.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,amazonaws.co.uk,🌍 国外媒体
-  - DOMAIN-SUFFIX,amazonaws.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,aiv-delivery.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,amazon.jobs,🌍 国外媒体
   - DOMAIN-SUFFIX,amazonvideo.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,llnwd.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,primevideo.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,media-amazon.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,pv-cdn.net,🌍 国外媒体
   - DOMAIN,gspe1-ssl.ls.apple.com,🌍 国外媒体
   - DOMAIN,np-edge.itunes.apple.com,🌍 国外媒体
   - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
@@ -3218,51 +2825,27 @@ rules:
   - DOMAIN-SUFFIX,bbci.co,🌍 国外媒体
   - DOMAIN-SUFFIX,bbci.co.uk,🌍 国外媒体
   - DOMAIN-SUFFIX,bidi.net.uk,🌍 国外媒体
+  - DOMAIN,bahamut.akamaized.net,🌍 国外媒体
   - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
   - DOMAIN,gamer2-cds.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
-  - DOMAIN-SUFFIX,hinet.net,🌍 国外媒体
-  - DOMAIN-KEYWORD,livedazn,🌍 国外媒体
-  - DOMAIN-KEYWORD,vod2dazn,🌍 国外媒体
   - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
   - DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
-  - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
-  - DOMAIN,players.brightcove.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,amplify.outbrain.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,bluekai.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,control.kochava.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,cws.conviva.com,🌍 国外媒体
   - DOMAIN-SUFFIX,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,d1sgwhnao7452x.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,dazn-api.com,🌍 国外媒体
   - DOMAIN-SUFFIX,dazn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,dazndn.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,dc1-voddash-perform.secure.footprint.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,dc1live21715dazn.akamaized.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,dc2-live2dash-perform.secure.footprint.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,dc2-live2hls-perform.secure.footprint.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,dc2-vodhls-perform.secure.footprint.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,dca-livedash-perform.secure.footprint.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,dca-voddash-perform.secure.footprint.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,dca-vodhls-perform.secure.footprint.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,dcb-livedash-perform.secure.footprint.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,dcb-voddash-perform.secure.footprint.net,🌍 国外媒体
   - DOMAIN-SUFFIX,dcblivedazn.akamaized.net,🌍 国外媒体
   - DOMAIN-SUFFIX,indazn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,indaznlab.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,perfops.doracdn.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,s.llnwi.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,s.yimg.jp,🌍 国外媒体
-  - DOMAIN-SUFFIX,secure.footprint.net,🌍 国外媒体
   - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,urbanairship.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,vjs.zencdn.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,widevine.entitlement.us.theplatform.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,yahoo.co.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
   - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,disco-api.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,discovery.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
   - DOMAIN,cdn.registerdisney.go.com,🌍 国外媒体
   - DOMAIN-SUFFIX,adobedtm.com,🌍 国外媒体
   - DOMAIN-SUFFIX,bam.nr-data.net,🌍 国外媒体
@@ -3291,25 +2874,13 @@ rules:
   - DOMAIN-SUFFIX,fox.com,🌍 国外媒体
   - DOMAIN-SUFFIX,foxdcg.com,🌍 国外媒体
   - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
-  - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
-  - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
-  - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🌍 国外媒体
-  - DOMAIN,dai3fd1oh325y.cloudfront.net,🌍 国外媒体
-  - DOMAIN,hboasia1-i.akamaihd.net,🌍 国外媒体
-  - DOMAIN,hboasia2-i.akamaihd.net,🌍 国外媒体
-  - DOMAIN,hboasia3-i.akamaihd.net,🌍 国外媒体
-  - DOMAIN,hboasia4-i.akamaihd.net,🌍 国外媒体
-  - DOMAIN,hboasia5-i.akamaihd.net,🌍 国外媒体
-  - DOMAIN,players.brightcove.net,🌍 国外媒体
-  - DOMAIN,s3-ap-southeast-1.amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogo.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,hbogoasia.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,hbogoasia.hk,🌍 国外媒体
   - DOMAIN-SUFFIX,hbomax.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbomaxcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbonow.com,🌍 国外媒体
   - DOMAIN-KEYWORD,.hbogoasia.,🌍 国外媒体
+  - DOMAIN-KEYWORD,hbogoasia,🌍 国外媒体
   - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
   - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
   - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🌍 国外媒体
@@ -3325,6 +2896,7 @@ rules:
   - DOMAIN,hbounify-prod.evergent.com,🌍 国外媒体
   - DOMAIN,players.brightcove.net,🌍 国外媒体
   - DOMAIN,s3-ap-southeast-1.amazonaws.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,hboasia.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogoasia.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogoasia.hk,🌍 国外媒体
   - DOMAIN-SUFFIX,5itv.tv,🌍 国外媒体
@@ -3361,6 +2933,7 @@ rules:
   - DOMAIN-SUFFIX,kkbox.com,🌍 国外媒体
   - DOMAIN-SUFFIX,kkbox.com.tw,🌍 国外媒体
   - DOMAIN,kktv-theater.kk.stream,🌍 国外媒体
+  - DOMAIN,theater-kktv.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,kktv.com.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,kktv.me,🌍 国外媒体
   - DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,🌍 国外媒体
@@ -3372,12 +2945,15 @@ rules:
   - DOMAIN,d349g9zuie06uo.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,channel5.com,🌍 国外媒体
   - DOMAIN-SUFFIX,my5.tv,🌍 国外媒体
+  - DOMAIN-KEYWORD,nowtv100,🌍 国外媒体
+  - DOMAIN-KEYWORD,rthklive,🌍 国外媒体
   - DOMAIN,mytvsuperlimited.hb.omtrdc.net,🌍 国外媒体
   - DOMAIN,mytvsuperlimited.sc.omtrdc.net,🌍 国外媒体
   - DOMAIN-SUFFIX,mytvsuper.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tvb.com,🌍 国外媒体
+  - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,🌍 国外媒体
   - DOMAIN-KEYWORD,dualstack.apiproxy-,🌍 国外媒体
-  - DOMAIN-KEYWORD,dualstack.ichnaea-web-,🌍 国外媒体
+  - DOMAIN-KEYWORD,netflixdnstest,🌍 国外媒体
   - DOMAIN,netflix.com.edgesuite.net,🌍 国外媒体
   - DOMAIN-SUFFIX,fast.com,🌍 国外媒体
   - DOMAIN-SUFFIX,netflix.com,🌍 国外媒体
@@ -3399,12 +2975,9 @@ rules:
   - DOMAIN-SUFFIX,nflxvideo.net,🌍 国外媒体
   - IP-CIDR,8.41.4.0/24,🌍 国外媒体,no-resolve
   - IP-CIDR,23.246.0.0/18,🌍 国外媒体,no-resolve
-  - IP-CIDR,34.210.42.111/32,🌍 国外媒体,no-resolve
   - IP-CIDR,37.77.184.0/21,🌍 国外媒体,no-resolve
   - IP-CIDR,38.72.126.0/24,🌍 国外媒体,no-resolve
   - IP-CIDR,45.57.0.0/17,🌍 国外媒体,no-resolve
-  - IP-CIDR,52.89.124.203/32,🌍 国外媒体,no-resolve
-  - IP-CIDR,54.148.37.5/32,🌍 国外媒体,no-resolve
   - IP-CIDR,64.120.128.0/17,🌍 国外媒体,no-resolve
   - IP-CIDR,66.197.128.0/17,🌍 国外媒体,no-resolve
   - IP-CIDR,69.53.224.0/19,🌍 国外媒体,no-resolve
@@ -3443,7 +3016,7 @@ rules:
   - DOMAIN-SUFFIX,tidalhifi.com,🌍 国外媒体
   - DOMAIN,hamifans.emome.net,🌍 国外媒体
   - DOMAIN-SUFFIX,skyking.com.tw,🌍 国外媒体
-  - DOMAIN-KEYWORD,-tiktokcdn-com,🌍 国外媒体
+  - DOMAIN-KEYWORD,tiktokcdn-,🌍 国外媒体
   - DOMAIN-SUFFIX,byteoversea.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ibytedtos.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ipstatp.com,🌍 国外媒体
@@ -3454,8 +3027,10 @@ rules:
   - DOMAIN-SUFFIX,tiktokcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tiktokv.com,🌍 国外媒体
   - DOMAIN-KEYWORD,ttvnw,🌍 国外媒体
+  - DOMAIN-SUFFIX,ext-twitch.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,jtvnw.net,🌍 国外媒体
   - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,twitch-ext.rootonline.de,🌍 国外媒体
   - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
   - DOMAIN,api.viu.now.com,🌍 国外媒体
@@ -3478,9 +3053,16 @@ rules:
   - DOMAIN,yt3.ggpht.com,🌍 国外媒体
   - DOMAIN-SUFFIX,googlevideo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,gvt2.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,withyoutube.com,🌍 国外媒体
   - DOMAIN-SUFFIX,youtu.be,🌍 国外媒体
+  - DOMAIN-SUFFIX,youtube-nocookie.com,🌍 国外媒体
   - DOMAIN-SUFFIX,youtube.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,youtubeeducation.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,youtubegaming.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,youtubekids.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,yt.be,🌍 国外媒体
   - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
+  - DOMAIN,music.youtube.com,🌍 国外媒体
   - DOMAIN-SUFFIX,t.me,📲 电报信息
   - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
   - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
@@ -3493,9 +3075,11 @@ rules:
   - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
   - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
   - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
-  - DOMAIN-SUFFIX,1password.com,🚀 节点选择
   - DOMAIN-SUFFIX,v2rayse.com,🚀 节点选择
   - DOMAIN-SUFFIX,vpnse.org,🚀 节点选择
+  - DOMAIN-SUFFIX,cff.pw,🚀 节点选择
+  - DOMAIN-SUFFIX,cfmem.com,🚀 节点选择
+  - DOMAIN-SUFFIX,1password.com,🚀 节点选择
   - DOMAIN-SUFFIX,adguard.org,🚀 节点选择
   - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
   - DOMAIN-SUFFIX,btlibrary.me,🚀 节点选择
@@ -3507,6 +3091,7 @@ rules:
   - DOMAIN-SUFFIX,hoyolab.com,🚀 节点选择
   - DOMAIN-SUFFIX,inoreader.com,🚀 节点选择
   - DOMAIN-SUFFIX,ip138.com,🚀 节点选择
+  - DOMAIN-SUFFIX,linkedin.com,🚀 节点选择
   - DOMAIN-SUFFIX,myteamspeak.com,🚀 节点选择
   - DOMAIN-SUFFIX,notion.so,🚀 节点选择
   - DOMAIN-SUFFIX,ping.pe,🚀 节点选择
@@ -3515,8 +3100,6 @@ rules:
   - DOMAIN-SUFFIX,tumbex.com,🚀 节点选择
   - DOMAIN-SUFFIX,twdvd.com,🚀 节点选择
   - DOMAIN-SUFFIX,unsplash.com,🚀 节点选择
-  - DOMAIN-SUFFIX,xn--i2ru8q2qg.com,🚀 节点选择
-  - DOMAIN-SUFFIX,yunpanjingling.com,🚀 节点选择
   - DOMAIN-SUFFIX,eu,🚀 节点选择
   - DOMAIN-SUFFIX,hk,🚀 节点选择
   - DOMAIN-SUFFIX,jp,🚀 节点选择
@@ -3836,7 +3419,22 @@ rules:
   - DOMAIN-SUFFIX,smartmailcloud.com,🚀 节点选择
   - DOMAIN-SUFFIX,fanatical.com,🚀 节点选择
   - DOMAIN-SUFFIX,humblebundle.com,🚀 节点选择
+  - DOMAIN-SUFFIX,underlords.com,🚀 节点选择
+  - DOMAIN-SUFFIX,valvesoftware.com,🚀 节点选择
+  - DOMAIN-SUFFIX,playartifact.com,🚀 节点选择
+  - DOMAIN-SUFFIX,steam-chat.com,🚀 节点选择
   - DOMAIN-SUFFIX,steamcommunity.com,🚀 节点选择
+  - DOMAIN-SUFFIX,steamgames.com,🚀 节点选择
+  - DOMAIN-SUFFIX,steampowered.com,🚀 节点选择
+  - DOMAIN-SUFFIX,steamstatic.com,🚀 节点选择
+  - DOMAIN-SUFFIX,steamstat.us,🚀 节点选择
+  - DOMAIN,steambroadcast.akamaized.net,🚀 节点选择
+  - DOMAIN,steamcdn-a.akamaihd.net,🚀 节点选择
+  - DOMAIN,steamcommunity-a.akamaihd.net,🚀 节点选择
+  - DOMAIN,steamstore-a.akamaihd.net,🚀 节点选择
+  - DOMAIN,steamusercontent-a.akamaihd.net,🚀 节点选择
+  - DOMAIN,steamuserimages-a.akamaihd.net,🚀 节点选择
+  - DOMAIN,steampipe.akamaized.net,🚀 节点选择
   - DOMAIN-SUFFIX,tap.io,🚀 节点选择
   - DOMAIN-SUFFIX,taptap.tw,🚀 节点选择
   - DOMAIN-SUFFIX,twitch.tv,🚀 节点选择
@@ -3904,10 +3502,13 @@ rules:
   - DOMAIN-SUFFIX,msftconnecttest.com,🎯 全球直连
   - DOMAIN-SUFFIX,msftncsi.com,🎯 全球直连
   - DOMAIN-SUFFIX,qupu123.com,🎯 全球直连
+  - DOMAIN-SUFFIX,pdfwifi.com,🎯 全球直连
+  - DOMAIN-SUFFIX,zhenguanyu.biz,🎯 全球直连
+  - DOMAIN-SUFFIX,zhenguanyu.com,🎯 全球直连
   - DOMAIN-SUFFIX,cn,🎯 全球直连
-  - DOMAIN-SUFFIX,中国,🎯 全球直连
-  - DOMAIN-SUFFIX,公司,🎯 全球直连
-  - DOMAIN-SUFFIX,网络,🎯 全球直连
+  - DOMAIN-SUFFIX,xn--fiqs8s,🎯 全球直连
+  - DOMAIN-SUFFIX,xn--55qx5d,🎯 全球直连
+  - DOMAIN-SUFFIX,xn--io0a7i,🎯 全球直连
   - DOMAIN-KEYWORD,-cn,🎯 全球直连
   - DOMAIN-KEYWORD,360buy,🎯 全球直连
   - DOMAIN-KEYWORD,alicdn,🎯 全球直连
@@ -3995,7 +3596,6 @@ rules:
   - DOMAIN-SUFFIX,biliapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,biliapi.net,🎯 全球直连
   - DOMAIN-SUFFIX,bilibili.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bilibili.tv,🎯 全球直连
   - DOMAIN-SUFFIX,biligame.com,🎯 全球直连
   - DOMAIN-SUFFIX,biligame.net,🎯 全球直连
   - DOMAIN-SUFFIX,bilivideo.com,🎯 全球直连
@@ -4006,13 +3606,29 @@ rules:
   - DOMAIN-SUFFIX,battle.net,🎯 全球直连
   - DOMAIN-SUFFIX,battlenet.com,🎯 全球直连
   - DOMAIN-SUFFIX,blizzard.com,🎯 全球直连
+  - DOMAIN-SUFFIX,amemv.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bdxiguaimg.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bdxiguastatic.com,🎯 全球直连
+  - DOMAIN-SUFFIX,byted-static.com,🎯 全球直连
   - DOMAIN-SUFFIX,bytedance.com,🎯 全球直连
   - DOMAIN-SUFFIX,bytedance.net,🎯 全球直连
   - DOMAIN-SUFFIX,bytedns.net,🎯 全球直连
+  - DOMAIN-SUFFIX,bytednsdoc.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bytegoofy.com,🎯 全球直连
   - DOMAIN-SUFFIX,byteimg.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bytescm.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bytetos.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bytexservice.com,🎯 全球直连
+  - DOMAIN-SUFFIX,douyin.com,🎯 全球直连
+  - DOMAIN-SUFFIX,douyinpic.com,🎯 全球直连
+  - DOMAIN-SUFFIX,douyinstatic.com,🎯 全球直连
+  - DOMAIN-SUFFIX,douyinvod.com,🎯 全球直连
+  - DOMAIN-SUFFIX,feelgood.cn,🎯 全球直连
   - DOMAIN-SUFFIX,feiliao.com,🎯 全球直连
   - DOMAIN-SUFFIX,gifshow.com,🎯 全球直连
   - DOMAIN-SUFFIX,huoshan.com,🎯 全球直连
+  - DOMAIN-SUFFIX,huoshanzhibo.com,🎯 全球直连
+  - DOMAIN-SUFFIX,ibytedapm.com,🎯 全球直连
   - DOMAIN-SUFFIX,iesdouyin.com,🎯 全球直连
   - DOMAIN-SUFFIX,ixigua.com,🎯 全球直连
   - DOMAIN-SUFFIX,kspkg.com,🎯 全球直连
@@ -4020,6 +3636,7 @@ rules:
   - DOMAIN-SUFFIX,snssdk.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiao.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiao13.com,🎯 全球直连
+  - DOMAIN-SUFFIX,toutiaoapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiaocdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiaocdn.net,🎯 全球直连
   - DOMAIN-SUFFIX,toutiaocloud.com,🎯 全球直连
@@ -4028,6 +3645,7 @@ rules:
   - DOMAIN-SUFFIX,toutiaoimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiaopage.com,🎯 全球直连
   - DOMAIN-SUFFIX,wukong.com,🎯 全球直连
+  - DOMAIN-SUFFIX,zijieapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,zijieimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,zjbyte.com,🎯 全球直连
   - DOMAIN-SUFFIX,zjcdn.com,🎯 全球直连
@@ -4116,10 +3734,16 @@ rules:
   - DOMAIN-SUFFIX,leju.com,🎯 全球直连
   - DOMAIN-SUFFIX,miaopai.com,🎯 全球直连
   - DOMAIN-SUFFIX,sina.com,🎯 全球直连
+  - DOMAIN-SUFFIX,sina.com.cn,🎯 全球直连
+  - DOMAIN-SUFFIX,sina.cn,🎯 全球直连
   - DOMAIN-SUFFIX,sinaapp.com,🎯 全球直连
+  - DOMAIN-SUFFIX,sinaapp.cn,🎯 全球直连
   - DOMAIN-SUFFIX,sinaimg.com,🎯 全球直连
+  - DOMAIN-SUFFIX,sinaimg.cn,🎯 全球直连
   - DOMAIN-SUFFIX,weibo.com,🎯 全球直连
+  - DOMAIN-SUFFIX,weibo.cn,🎯 全球直连
   - DOMAIN-SUFFIX,weibocdn.com,🎯 全球直连
+  - DOMAIN-SUFFIX,weibocdn.cn,🎯 全球直连
   - DOMAIN-SUFFIX,xiaoka.tv,🎯 全球直连
   - DOMAIN-SUFFIX,go2map.com,🎯 全球直连
   - DOMAIN-SUFFIX,sogo.com,🎯 全球直连
@@ -4136,20 +3760,21 @@ rules:
   - DOMAIN-SUFFIX,playstationnetwork.com,🎯 全球直连
   - DOMAIN-SUFFIX,sony.com,🎯 全球直连
   - DOMAIN-SUFFIX,sonyentertainmentnetwork.com,🎯 全球直连
-  - DOMAIN-SUFFIX,csgo.wmsj.cn,🎯 全球直连
-  - DOMAIN-SUFFIX,dl.steam.ksyna.com,🎯 全球直连
-  - DOMAIN-SUFFIX,dota2.wmsj.cn,🎯 全球直连
-  - DOMAIN-SUFFIX,st.dl.bscstorage.net,🎯 全球直连
-  - DOMAIN-SUFFIX,st.dl.eccdnx.com,🎯 全球直连
-  - DOMAIN-SUFFIX,st.dl.pinyuncloud.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net,🎯 全球直连
+  - DOMAIN-SUFFIX,cm.steampowered.com,🎯 全球直连
   - DOMAIN-SUFFIX,steamcontent.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamgames.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steampowered.com.8686c.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamstat.us,🎯 全球直连
-  - DOMAIN-SUFFIX,steamstatic.com,🎯 全球直连
   - DOMAIN-SUFFIX,steamusercontent.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net,🎯 全球直连
+  - DOMAIN-SUFFIX,steamchina.com,🎯 全球直连
+  - DOMAIN,csgo.wmsj.cn,🎯 全球直连
+  - DOMAIN,dota2.wmsj.cn,🎯 全球直连
+  - DOMAIN,wmsjsteam.com,🎯 全球直连
+  - DOMAIN,dl.steam.clngaa.com,🎯 全球直连
+  - DOMAIN,dl.steam.ksyna.com,🎯 全球直连
+  - DOMAIN,st.dl.bscstorage.net,🎯 全球直连
+  - DOMAIN,st.dl.eccdnx.com,🎯 全球直连
+  - DOMAIN,st.dl.pinyuncloud.com,🎯 全球直连
+  - DOMAIN,steampipe.steamcontent.tnkjmec.com,🎯 全球直连
+  - DOMAIN,steampowered.com.8686c.com,🎯 全球直连
+  - DOMAIN,steamstatic.com.8686c.com,🎯 全球直连
   - DOMAIN-SUFFIX,foxmail.com,🎯 全球直连
   - DOMAIN-SUFFIX,gtimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,idqqimg.com,🎯 全球直连
@@ -4249,7 +3874,6 @@ rules:
   - DOMAIN-SUFFIX,baomitu.com,🎯 全球直连
   - DOMAIN-SUFFIX,bootcss.com,🎯 全球直连
   - DOMAIN-SUFFIX,jiasule.com,🎯 全球直连
-  - DOMAIN-SUFFIX,jsdelivr.net,🎯 全球直连
   - DOMAIN-SUFFIX,staticfile.org,🎯 全球直连
   - DOMAIN-SUFFIX,upaiyun.com,🎯 全球直连
   - DOMAIN-SUFFIX,10010.com,🎯 全球直连
@@ -4371,11 +3995,9 @@ rules:
   - DOMAIN-SUFFIX,lanzoux.com,🎯 全球直连
   - DOMAIN-SUFFIX,lemicp.com,🎯 全球直连
   - DOMAIN-SUFFIX,letitfly.me,🎯 全球直连
-  - DOMAIN-SUFFIX,linkedin.com,🎯 全球直连
   - DOMAIN-SUFFIX,lizhi.fm,🎯 全球直连
   - DOMAIN-SUFFIX,lizhi.io,🎯 全球直连
   - DOMAIN-SUFFIX,lizhifm.com,🎯 全球直连
-  - DOMAIN-SUFFIX,loli.net,🎯 全球直连
   - DOMAIN-SUFFIX,luoo.net,🎯 全球直连
   - DOMAIN-SUFFIX,lvmama.com,🎯 全球直连
   - DOMAIN-SUFFIX,lxdns.com,🎯 全球直连
@@ -4402,7 +4024,6 @@ rules:
   - DOMAIN-SUFFIX,oracle.com,🎯 全球直连
   - DOMAIN-SUFFIX,oschina.net,🎯 全球直连
   - DOMAIN-SUFFIX,ourdvs.com,🎯 全球直连
-  - DOMAIN-SUFFIX,paypal.com,🎯 全球直连
   - DOMAIN-SUFFIX,polyv.net,🎯 全球直连
   - DOMAIN-SUFFIX,qbox.me,🎯 全球直连
   - DOMAIN-SUFFIX,qcloud.com,🎯 全球直连
@@ -4421,9 +4042,7 @@ rules:
   - DOMAIN-SUFFIX,quanmin.tv,🎯 全球直连
   - DOMAIN-SUFFIX,qunar.com,🎯 全球直连
   - DOMAIN-SUFFIX,qunarzz.com,🎯 全球直连
-  - DOMAIN-SUFFIX,rarbg.to,🎯 全球直连
   - DOMAIN-SUFFIX,repaik.com,🎯 全球直连
-  - DOMAIN-SUFFIX,rrmj.tv,🎯 全球直连
   - DOMAIN-SUFFIX,ruguoapp.com,🎯 全球直连
   - DOMAIN-SUFFIX,runoob.com,🎯 全球直连
   - DOMAIN-SUFFIX,sankuai.com,🎯 全球直连
@@ -4431,7 +4050,6 @@ rules:
   - DOMAIN-SUFFIX,sf-express.com,🎯 全球直连
   - DOMAIN-SUFFIX,shumilou.net,🎯 全球直连
   - DOMAIN-SUFFIX,simplecd.me,🎯 全球直连
-  - DOMAIN-SUFFIX,sm.ms,🎯 全球直连
   - DOMAIN-SUFFIX,smzdm.com,🎯 全球直连
   - DOMAIN-SUFFIX,snwx.com,🎯 全球直连
   - DOMAIN-SUFFIX,soufunimg.com,🎯 全球直连
