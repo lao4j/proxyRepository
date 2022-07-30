@@ -1,9 +1,9 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2022-07-30 16:14:32
+#  创建时间：2022-07-30 18:43:05
 #  模版：v2rayse默认模版
-#  节点数量：10
+#  节点数量：11
 #-------------------------------------------------------------#
 #
 port: 7890
@@ -23,6 +23,7 @@ proxies:
   - {"type":"trojan","name":"🇨🇳_CN_中国","server":"pp1.zhengzhongfeizhu.xyz","port":32000,"password":"eb2f8154-ff58-3b99-b393-28c8eecdbe64","udp":true,"skip-cert-verify":true}
   - {"type":"vmess","name":"🇺🇸_US_美国_2","server":"m.25az.top","port":19951,"uuid":"ac2d4876-07e3-4e9d-ee3f-fa593d91f505","alterId":0,"cipher":"auto","network":"tcp"}
   - {"type":"trojan","name":"🇨🇳_CN_中国->🇭🇰_HK_香港_5","server":"pp1.zhengzhongfeizhu.xyz","port":32001,"password":"7688df6f-bf65-3368-b55e-d78efea6a582","udp":true,"skip-cert-verify":true}
+  - {"type":"vmess","name":"🇯🇵_JP_日本","server":"yhkt2.154cc.xyz","port":12588,"uuid":"883a829f-64ba-372e-8a9c-4a9bf5367697","alterId":0,"cipher":"auto","network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -39,6 +40,7 @@ proxy-groups:
       - 🇨🇳_CN_中国
       - 🇺🇸_US_美国_2
       - 🇨🇳_CN_中国->🇭🇰_HK_香港_5
+      - 🇯🇵_JP_日本
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -55,6 +57,7 @@ proxy-groups:
       - 🇨🇳_CN_中国
       - 🇺🇸_US_美国_2
       - 🇨🇳_CN_中国->🇭🇰_HK_香港_5
+      - 🇯🇵_JP_日本
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -71,6 +74,7 @@ proxy-groups:
       - 🇨🇳_CN_中国
       - 🇺🇸_US_美国_2
       - 🇨🇳_CN_中国->🇭🇰_HK_香港_5
+      - 🇯🇵_JP_日本
   - name: 📲 电报信息
     type: select
     proxies:
@@ -86,6 +90,7 @@ proxy-groups:
       - 🇨🇳_CN_中国
       - 🇺🇸_US_美国_2
       - 🇨🇳_CN_中国->🇭🇰_HK_香港_5
+      - 🇯🇵_JP_日本
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -101,6 +106,7 @@ proxy-groups:
       - 🇨🇳_CN_中国
       - 🇺🇸_US_美国_2
       - 🇨🇳_CN_中国->🇭🇰_HK_香港_5
+      - 🇯🇵_JP_日本
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -116,6 +122,7 @@ proxy-groups:
       - 🇨🇳_CN_中国
       - 🇺🇸_US_美国_2
       - 🇨🇳_CN_中国->🇭🇰_HK_香港_5
+      - 🇯🇵_JP_日本
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -148,6 +155,7 @@ proxy-groups:
       - 🇨🇳_CN_中国
       - 🇺🇸_US_美国_2
       - 🇨🇳_CN_中国->🇭🇰_HK_香港_5
+      - 🇯🇵_JP_日本
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
