@@ -1,9 +1,9 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2022-09-04 18:27:24
+#  创建时间：2022-09-04 22:02:44
 #  模版：v2rayse默认模版
-#  节点数量：1
+#  节点数量：47
 #-------------------------------------------------------------#
 #
 port: 7890
@@ -13,46 +13,368 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"vmess","name":"mac","server":"144.168.59.201","port":21426,"uuid":"1724c37a-bce2-40e8-977f-858fd18013f9","alterId":0,"cipher":"auto","network":"tcp"}
+  - {"type":"ss","name":"TG频道:@hkaa0|加拿大|自建_1","server":"ca01.proxysocks.xyz","port":8388,"cipher":"chacha20-ietf-poly1305","password":"YTdiM"}
+  - {"type":"ss","name":"TG频道:@hkaa0|加拿大|自建_2","server":"ca02.proxysocks.xyz","port":8388,"cipher":"chacha20-ietf-poly1305","password":"Y2RkM"}
+  - {"type":"vmess","name":"🇸🇬新加坡A组|01|0.15","server":"node01.myyus.xyz","port":"47228","uuid":"72b01b9c-be65-45a5-b5de-8fed3c4c9fa4","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"BuyVM|ShareCentrePro","ws-opts":{"path":"/qvFvfAfHvz","headers":{"host":"bvm.naixii.top"}},"server":"cf.naixii.top","port":"443","uuid":"5e6f7d1f-ae22-48b4-9d73-88314de4d4a7","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"官方电报群:https://t.me/herhr6","server":"倒卖狗:https://t.me/juzi1234/34237","port":"1","uuid":"盗版:https://t.me/juzi1234","alterId":"666","cipher":"chacha20-poly1305","network":"tcp"}
+  - {"type":"vmess","name":"正版爱发电→https://afdian.net/@heroh","server":"盗版随时和谐，无任何保障","port":"2","uuid":"倒卖狗:https://t.me/juzi1234/34237","alterId":"0","cipher":"chacha20-poly1305","network":"tcp"}
+  - {"type":"vmess","name":"盗版爱发电https://afdian.net/@juziyo","server":"内容已经和谐，拒绝购买","port":"443","uuid":"看到的记得给他点举报","alterId":"0","cipher":"chacha20-poly1305","network":"tcp"}
+  - {"type":"vmess","name":"Linode｜新加坡80-1｜联通","server":"172.104.190.80","port":"80","uuid":"ce6d9988-1265-4dc9-aa88-c8f0e526a971","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"Linode｜新加坡tcp-1｜联通","server":"172.104.190.80","port":"1080","uuid":"3e267897-bf74-4532-aff3-8920e71141a1","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"Linode｜新加坡80-2｜联通","server":"103.3.61.141","port":"80","uuid":"a3bc91a3-336d-42db-e1dd-ec72c171fe91","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"Linode｜新加坡tcp-2｜联通","server":"103.3.61.141","port":"32223","uuid":"b11eec7a-cdc4-4e6c-a14a-0b0316eefa21","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"Linode｜新加坡80-3｜联通","server":"170.187.231.171","port":"80","uuid":"14435f4f-2a3d-47cb-adbf-a08376c0f621","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"Linode｜新加坡ws-3｜联通","ws-opts":{"path":"/"},"server":"170.187.231.171","port":"53174","uuid":"4139d072-8037-48d9-fe2f-4f85a5a5e421","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vless","name":"DO｜新加坡tcp｜移动","server":"188.166.252.162","port":46422,"uuid":"aa6fa8d4-fc6b-4f77-e241-304e0c629b31","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
+  - {"type":"vmess","name":"DO｜新加坡ws｜移动","ws-opts":{"path":"/"},"server":"188.166.252.162","port":"57505","uuid":"772a20d4-2aab-47d9-da1c-b3b92e33b2f1","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"DO｜旧金山tcp｜移动","server":"144.126.223.250","port":"18057","uuid":"e178cdaa-9dfb-4350-d235-a1edb18e9bd1","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"AWS｜香港80-1｜三网","server":"16.163.129.226","port":"80","uuid":"c31665cb-e40a-4106-b580-af55384615d1","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"AWS｜香港tcp-1｜三网","server":"16.163.129.226","port":"48153","uuid":"25dadc09-f9f7-491a-a324-6b5c4f15f151","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"AWS｜香港2-80｜三网","server":"18.163.182.206","port":"80","uuid":"fca2674e-5367-469b-8d1b-add24d30d4b1","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"AWS｜香港2-tcp｜三网","server":"18.163.182.206","port":"9663","uuid":"2ef5a318-68ff-43df-c3e7-01f7249fd881","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"AWS｜香港3-80｜三网","server":"43.198.18.38","port":"80","uuid":"7e909f5f-a54b-42ce-93a1-27c004bb8291","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"AWS｜香港3-tcp｜三网","server":"43.198.18.38","port":"48908","uuid":"ba4b9312-88ed-44de-d973-e185723c72a1","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"AWS｜东京80｜三网_1","server":"13.113.250.124","port":"80","uuid":"44f326cd-1fef-45f8-84d7-973413f77171","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"AWS｜东京80｜三网_2","server":"13.113.250.124","port":"27111","uuid":"d468c30d-9279-40e1-ece0-4c201d65b451","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"AWS｜新加坡80｜三网","server":"13.212.225.207","port":"80","uuid":"760f3258-300e-4d14-822a-8dc771184201","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"AWS｜新加坡tcp｜三网","server":"13.212.225.207","port":"28380","uuid":"48ac8a74-eb9b-443b-b967-a165167e6b21","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"AWS｜大阪80｜三网","server":"13.208.185.169","port":"80","uuid":"11dc2abb-97d6-4313-df36-9d57b135e481","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"微软｜香港80-1｜电信","server":"20.205.137.188","port":"80","uuid":"226af1f9-478c-4f94-fcc3-68c72d2632b1","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"微软｜香港tcp-1｜电信","server":"20.205.137.188","port":"37606","uuid":"0315134b-f4c0-4bf1-e8a4-42db3665a101","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"微软｜香港80-2｜电信","server":"20.205.142.180","port":"80","uuid":"b73d5e48-6799-45ef-8a17-e95daf8438e2","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"微软｜香港tcp-2｜电信","server":"20.205.142.180","port":"26772","uuid":"4072048a-0423-4550-9a8c-3d74d90b2df1","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"Oracle｜韩国80｜cn2","server":"193.122.117.52","port":"80","uuid":"8478fdb2-e155-4830-dfc5-b1c8548fb6b7","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"Oracle｜韩国tcp｜cn2","server":"193.122.117.52","port":"36309","uuid":"b92b4069-566d-41b5-e561-7ff824429a62","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"trojan","name":"🇩🇪法兰克福-MyTrojan2-解锁DE区NETFLIX非自制剧","server":"ae.755657.xyz","port":2053,"password":"fb19aac3-b532-4f60-a97f-ec5de0fbbf6b","udp":true,"skip-cert-verify":true,"sni":"ae.755657.xyz"}
+  - {"type":"trojan","name":"🇳🇱荷兰-MyTrojan7-解锁DE区NETFLIX非自制剧","server":"nexo.755657.xyz","port":443,"password":"fb19aac3-b532-4f60-a97f-ec5de0fbbf6b","udp":true,"skip-cert-verify":true,"sni":"nexo.755657.xyz"}
+  - {"type":"trojan","name":"🇺🇲洛杉矶-MyTrojan8-解锁美区NETFLIX非自制剧","server":"cc.755657.xyz","port":443,"password":"fb19aac3-b532-4f60-a97f-ec5de0fbbf6b","udp":true,"skip-cert-verify":true,"sni":"cc.755657.xyz"}
+  - {"type":"trojan","name":"🇺🇲橙市-MyTrojan9","server":"ion.755657.xyz","port":443,"password":"fb19aac3-b532-4f60-a97f-ec5de0fbbf6b","udp":true,"skip-cert-verify":true,"sni":"ion.755657.xyz"}
+  - {"type":"trojan","name":"🇭🇰香港-MyTrojan13-解锁港区NETFLIX非自制剧","server":"nc.755657.xyz","port":443,"password":"fb19aac3-b532-4f60-a97f-ec5de0fbbf6b","udp":true,"skip-cert-verify":true,"sni":"nc.755657.xyz"}
+  - {"type":"trojan","name":"🇬🇧英国-MyTrojan14-解锁英区NETFLIX非自制剧","server":"sp.755657.xyz","port":443,"password":"fb19aac3-b532-4f60-a97f-ec5de0fbbf6b","udp":true,"skip-cert-verify":true,"sni":"sp.755657.xyz"}
+  - {"type":"vmess","name":"🇯🇵东京-MyVmess1","grpc-opts":{"grpc-service-name":"www.oracle.com"},"server":"vultr1.755657.xyz","port":"8443","uuid":"fb19aac3-b532-4f60-a97f-ec5de0fbbf6b","alterId":"0","cipher":"auto","network":"grpc","tls":true}
+  - {"type":"vmess","name":"🇩🇪法兰克福-MyVmess2-解锁DE区NETFLIX非自制剧","ws-opts":{"path":"/java/18/latest/"},"server":"ae.755657.xyz","port":"8443","uuid":"fb19aac3-b532-4f60-a97f-ec5de0fbbf6b","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇺🇲迈阿密-MyVmess4-解锁美区NETFLIX非自制剧","ws-opts":{"path":"/java/18/latest/"},"server":"ex.755657.xyz","port":"8443","uuid":"fb19aac3-b532-4f60-a97f-ec5de0fbbf6b","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇳🇱荷兰-MyVmess7-解锁DE区NETFLIX非自制剧","ws-opts":{"path":"/"},"server":"nexo.755657.xyz","port":"8443","uuid":"fb19aac3-b532-4f60-a97f-ec5de0fbbf6b","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇺🇲洛杉矶-MyVmess8-解锁美区NETFLIX非自制剧","ws-opts":{"path":"/java/18/latest/"},"server":"cc.755657.xyz","port":"8443","uuid":"fb19aac3-b532-4f60-a97f-ec5de0fbbf6b","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇺🇲橙市-MyVmess9","ws-opts":{"path":"/java/18/latest/"},"server":"ion.755657.xyz","port":"8443","uuid":"fb19aac3-b532-4f60-a97f-ec5de0fbbf6b","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇭🇰香港-MyVmess13-解锁港区NETFLIX非自制剧","ws-opts":{"path":"/java/18/latest/"},"server":"nc.755657.xyz","port":"8443","uuid":"fb19aac3-b532-4f60-a97f-ec5de0fbbf6b","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇬🇧英国-MyVmess15-解锁GB区NETFLIX非自制剧","ws-opts":{"path":"/java/18/latest/"},"server":"sp.755657.xyz","port":"8443","uuid":"fb19aac3-b532-4f60-a97f-ec5de0fbbf6b","alterId":"0","cipher":"auto","network":"ws","tls":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - mac
+      - TG频道:@hkaa0|加拿大|自建_1
+      - TG频道:@hkaa0|加拿大|自建_2
+      - 🇸🇬新加坡A组|01|0.15
+      - BuyVM|ShareCentrePro
+      - 官方电报群:https://t.me/herhr6
+      - 正版爱发电→https://afdian.net/@heroh
+      - 盗版爱发电https://afdian.net/@juziyo
+      - Linode｜新加坡80-1｜联通
+      - Linode｜新加坡tcp-1｜联通
+      - Linode｜新加坡80-2｜联通
+      - Linode｜新加坡tcp-2｜联通
+      - Linode｜新加坡80-3｜联通
+      - Linode｜新加坡ws-3｜联通
+      - DO｜新加坡tcp｜移动
+      - DO｜新加坡ws｜移动
+      - DO｜旧金山tcp｜移动
+      - AWS｜香港80-1｜三网
+      - AWS｜香港tcp-1｜三网
+      - AWS｜香港2-80｜三网
+      - AWS｜香港2-tcp｜三网
+      - AWS｜香港3-80｜三网
+      - AWS｜香港3-tcp｜三网
+      - AWS｜东京80｜三网_1
+      - AWS｜东京80｜三网_2
+      - AWS｜新加坡80｜三网
+      - AWS｜新加坡tcp｜三网
+      - AWS｜大阪80｜三网
+      - 微软｜香港80-1｜电信
+      - 微软｜香港tcp-1｜电信
+      - 微软｜香港80-2｜电信
+      - 微软｜香港tcp-2｜电信
+      - Oracle｜韩国80｜cn2
+      - Oracle｜韩国tcp｜cn2
+      - 🇩🇪法兰克福-MyTrojan2-解锁DE区NETFLIX非自制剧
+      - 🇳🇱荷兰-MyTrojan7-解锁DE区NETFLIX非自制剧
+      - 🇺🇲洛杉矶-MyTrojan8-解锁美区NETFLIX非自制剧
+      - 🇺🇲橙市-MyTrojan9
+      - 🇭🇰香港-MyTrojan13-解锁港区NETFLIX非自制剧
+      - 🇬🇧英国-MyTrojan14-解锁英区NETFLIX非自制剧
+      - 🇯🇵东京-MyVmess1
+      - 🇩🇪法兰克福-MyVmess2-解锁DE区NETFLIX非自制剧
+      - 🇺🇲迈阿密-MyVmess4-解锁美区NETFLIX非自制剧
+      - 🇳🇱荷兰-MyVmess7-解锁DE区NETFLIX非自制剧
+      - 🇺🇲洛杉矶-MyVmess8-解锁美区NETFLIX非自制剧
+      - 🇺🇲橙市-MyVmess9
+      - 🇭🇰香港-MyVmess13-解锁港区NETFLIX非自制剧
+      - 🇬🇧英国-MyVmess15-解锁GB区NETFLIX非自制剧
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - mac
+      - TG频道:@hkaa0|加拿大|自建_1
+      - TG频道:@hkaa0|加拿大|自建_2
+      - 🇸🇬新加坡A组|01|0.15
+      - BuyVM|ShareCentrePro
+      - 官方电报群:https://t.me/herhr6
+      - 正版爱发电→https://afdian.net/@heroh
+      - 盗版爱发电https://afdian.net/@juziyo
+      - Linode｜新加坡80-1｜联通
+      - Linode｜新加坡tcp-1｜联通
+      - Linode｜新加坡80-2｜联通
+      - Linode｜新加坡tcp-2｜联通
+      - Linode｜新加坡80-3｜联通
+      - Linode｜新加坡ws-3｜联通
+      - DO｜新加坡tcp｜移动
+      - DO｜新加坡ws｜移动
+      - DO｜旧金山tcp｜移动
+      - AWS｜香港80-1｜三网
+      - AWS｜香港tcp-1｜三网
+      - AWS｜香港2-80｜三网
+      - AWS｜香港2-tcp｜三网
+      - AWS｜香港3-80｜三网
+      - AWS｜香港3-tcp｜三网
+      - AWS｜东京80｜三网_1
+      - AWS｜东京80｜三网_2
+      - AWS｜新加坡80｜三网
+      - AWS｜新加坡tcp｜三网
+      - AWS｜大阪80｜三网
+      - 微软｜香港80-1｜电信
+      - 微软｜香港tcp-1｜电信
+      - 微软｜香港80-2｜电信
+      - 微软｜香港tcp-2｜电信
+      - Oracle｜韩国80｜cn2
+      - Oracle｜韩国tcp｜cn2
+      - 🇩🇪法兰克福-MyTrojan2-解锁DE区NETFLIX非自制剧
+      - 🇳🇱荷兰-MyTrojan7-解锁DE区NETFLIX非自制剧
+      - 🇺🇲洛杉矶-MyTrojan8-解锁美区NETFLIX非自制剧
+      - 🇺🇲橙市-MyTrojan9
+      - 🇭🇰香港-MyTrojan13-解锁港区NETFLIX非自制剧
+      - 🇬🇧英国-MyTrojan14-解锁英区NETFLIX非自制剧
+      - 🇯🇵东京-MyVmess1
+      - 🇩🇪法兰克福-MyVmess2-解锁DE区NETFLIX非自制剧
+      - 🇺🇲迈阿密-MyVmess4-解锁美区NETFLIX非自制剧
+      - 🇳🇱荷兰-MyVmess7-解锁DE区NETFLIX非自制剧
+      - 🇺🇲洛杉矶-MyVmess8-解锁美区NETFLIX非自制剧
+      - 🇺🇲橙市-MyVmess9
+      - 🇭🇰香港-MyVmess13-解锁港区NETFLIX非自制剧
+      - 🇬🇧英国-MyVmess15-解锁GB区NETFLIX非自制剧
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - mac
+      - TG频道:@hkaa0|加拿大|自建_1
+      - TG频道:@hkaa0|加拿大|自建_2
+      - 🇸🇬新加坡A组|01|0.15
+      - BuyVM|ShareCentrePro
+      - 官方电报群:https://t.me/herhr6
+      - 正版爱发电→https://afdian.net/@heroh
+      - 盗版爱发电https://afdian.net/@juziyo
+      - Linode｜新加坡80-1｜联通
+      - Linode｜新加坡tcp-1｜联通
+      - Linode｜新加坡80-2｜联通
+      - Linode｜新加坡tcp-2｜联通
+      - Linode｜新加坡80-3｜联通
+      - Linode｜新加坡ws-3｜联通
+      - DO｜新加坡tcp｜移动
+      - DO｜新加坡ws｜移动
+      - DO｜旧金山tcp｜移动
+      - AWS｜香港80-1｜三网
+      - AWS｜香港tcp-1｜三网
+      - AWS｜香港2-80｜三网
+      - AWS｜香港2-tcp｜三网
+      - AWS｜香港3-80｜三网
+      - AWS｜香港3-tcp｜三网
+      - AWS｜东京80｜三网_1
+      - AWS｜东京80｜三网_2
+      - AWS｜新加坡80｜三网
+      - AWS｜新加坡tcp｜三网
+      - AWS｜大阪80｜三网
+      - 微软｜香港80-1｜电信
+      - 微软｜香港tcp-1｜电信
+      - 微软｜香港80-2｜电信
+      - 微软｜香港tcp-2｜电信
+      - Oracle｜韩国80｜cn2
+      - Oracle｜韩国tcp｜cn2
+      - 🇩🇪法兰克福-MyTrojan2-解锁DE区NETFLIX非自制剧
+      - 🇳🇱荷兰-MyTrojan7-解锁DE区NETFLIX非自制剧
+      - 🇺🇲洛杉矶-MyTrojan8-解锁美区NETFLIX非自制剧
+      - 🇺🇲橙市-MyTrojan9
+      - 🇭🇰香港-MyTrojan13-解锁港区NETFLIX非自制剧
+      - 🇬🇧英国-MyTrojan14-解锁英区NETFLIX非自制剧
+      - 🇯🇵东京-MyVmess1
+      - 🇩🇪法兰克福-MyVmess2-解锁DE区NETFLIX非自制剧
+      - 🇺🇲迈阿密-MyVmess4-解锁美区NETFLIX非自制剧
+      - 🇳🇱荷兰-MyVmess7-解锁DE区NETFLIX非自制剧
+      - 🇺🇲洛杉矶-MyVmess8-解锁美区NETFLIX非自制剧
+      - 🇺🇲橙市-MyVmess9
+      - 🇭🇰香港-MyVmess13-解锁港区NETFLIX非自制剧
+      - 🇬🇧英国-MyVmess15-解锁GB区NETFLIX非自制剧
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - mac
+      - TG频道:@hkaa0|加拿大|自建_1
+      - TG频道:@hkaa0|加拿大|自建_2
+      - 🇸🇬新加坡A组|01|0.15
+      - BuyVM|ShareCentrePro
+      - 官方电报群:https://t.me/herhr6
+      - 正版爱发电→https://afdian.net/@heroh
+      - 盗版爱发电https://afdian.net/@juziyo
+      - Linode｜新加坡80-1｜联通
+      - Linode｜新加坡tcp-1｜联通
+      - Linode｜新加坡80-2｜联通
+      - Linode｜新加坡tcp-2｜联通
+      - Linode｜新加坡80-3｜联通
+      - Linode｜新加坡ws-3｜联通
+      - DO｜新加坡tcp｜移动
+      - DO｜新加坡ws｜移动
+      - DO｜旧金山tcp｜移动
+      - AWS｜香港80-1｜三网
+      - AWS｜香港tcp-1｜三网
+      - AWS｜香港2-80｜三网
+      - AWS｜香港2-tcp｜三网
+      - AWS｜香港3-80｜三网
+      - AWS｜香港3-tcp｜三网
+      - AWS｜东京80｜三网_1
+      - AWS｜东京80｜三网_2
+      - AWS｜新加坡80｜三网
+      - AWS｜新加坡tcp｜三网
+      - AWS｜大阪80｜三网
+      - 微软｜香港80-1｜电信
+      - 微软｜香港tcp-1｜电信
+      - 微软｜香港80-2｜电信
+      - 微软｜香港tcp-2｜电信
+      - Oracle｜韩国80｜cn2
+      - Oracle｜韩国tcp｜cn2
+      - 🇩🇪法兰克福-MyTrojan2-解锁DE区NETFLIX非自制剧
+      - 🇳🇱荷兰-MyTrojan7-解锁DE区NETFLIX非自制剧
+      - 🇺🇲洛杉矶-MyTrojan8-解锁美区NETFLIX非自制剧
+      - 🇺🇲橙市-MyTrojan9
+      - 🇭🇰香港-MyTrojan13-解锁港区NETFLIX非自制剧
+      - 🇬🇧英国-MyTrojan14-解锁英区NETFLIX非自制剧
+      - 🇯🇵东京-MyVmess1
+      - 🇩🇪法兰克福-MyVmess2-解锁DE区NETFLIX非自制剧
+      - 🇺🇲迈阿密-MyVmess4-解锁美区NETFLIX非自制剧
+      - 🇳🇱荷兰-MyVmess7-解锁DE区NETFLIX非自制剧
+      - 🇺🇲洛杉矶-MyVmess8-解锁美区NETFLIX非自制剧
+      - 🇺🇲橙市-MyVmess9
+      - 🇭🇰香港-MyVmess13-解锁港区NETFLIX非自制剧
+      - 🇬🇧英国-MyVmess15-解锁GB区NETFLIX非自制剧
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - mac
+      - TG频道:@hkaa0|加拿大|自建_1
+      - TG频道:@hkaa0|加拿大|自建_2
+      - 🇸🇬新加坡A组|01|0.15
+      - BuyVM|ShareCentrePro
+      - 官方电报群:https://t.me/herhr6
+      - 正版爱发电→https://afdian.net/@heroh
+      - 盗版爱发电https://afdian.net/@juziyo
+      - Linode｜新加坡80-1｜联通
+      - Linode｜新加坡tcp-1｜联通
+      - Linode｜新加坡80-2｜联通
+      - Linode｜新加坡tcp-2｜联通
+      - Linode｜新加坡80-3｜联通
+      - Linode｜新加坡ws-3｜联通
+      - DO｜新加坡tcp｜移动
+      - DO｜新加坡ws｜移动
+      - DO｜旧金山tcp｜移动
+      - AWS｜香港80-1｜三网
+      - AWS｜香港tcp-1｜三网
+      - AWS｜香港2-80｜三网
+      - AWS｜香港2-tcp｜三网
+      - AWS｜香港3-80｜三网
+      - AWS｜香港3-tcp｜三网
+      - AWS｜东京80｜三网_1
+      - AWS｜东京80｜三网_2
+      - AWS｜新加坡80｜三网
+      - AWS｜新加坡tcp｜三网
+      - AWS｜大阪80｜三网
+      - 微软｜香港80-1｜电信
+      - 微软｜香港tcp-1｜电信
+      - 微软｜香港80-2｜电信
+      - 微软｜香港tcp-2｜电信
+      - Oracle｜韩国80｜cn2
+      - Oracle｜韩国tcp｜cn2
+      - 🇩🇪法兰克福-MyTrojan2-解锁DE区NETFLIX非自制剧
+      - 🇳🇱荷兰-MyTrojan7-解锁DE区NETFLIX非自制剧
+      - 🇺🇲洛杉矶-MyTrojan8-解锁美区NETFLIX非自制剧
+      - 🇺🇲橙市-MyTrojan9
+      - 🇭🇰香港-MyTrojan13-解锁港区NETFLIX非自制剧
+      - 🇬🇧英国-MyTrojan14-解锁英区NETFLIX非自制剧
+      - 🇯🇵东京-MyVmess1
+      - 🇩🇪法兰克福-MyVmess2-解锁DE区NETFLIX非自制剧
+      - 🇺🇲迈阿密-MyVmess4-解锁美区NETFLIX非自制剧
+      - 🇳🇱荷兰-MyVmess7-解锁DE区NETFLIX非自制剧
+      - 🇺🇲洛杉矶-MyVmess8-解锁美区NETFLIX非自制剧
+      - 🇺🇲橙市-MyVmess9
+      - 🇭🇰香港-MyVmess13-解锁港区NETFLIX非自制剧
+      - 🇬🇧英国-MyVmess15-解锁GB区NETFLIX非自制剧
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - mac
+      - TG频道:@hkaa0|加拿大|自建_1
+      - TG频道:@hkaa0|加拿大|自建_2
+      - 🇸🇬新加坡A组|01|0.15
+      - BuyVM|ShareCentrePro
+      - 官方电报群:https://t.me/herhr6
+      - 正版爱发电→https://afdian.net/@heroh
+      - 盗版爱发电https://afdian.net/@juziyo
+      - Linode｜新加坡80-1｜联通
+      - Linode｜新加坡tcp-1｜联通
+      - Linode｜新加坡80-2｜联通
+      - Linode｜新加坡tcp-2｜联通
+      - Linode｜新加坡80-3｜联通
+      - Linode｜新加坡ws-3｜联通
+      - DO｜新加坡tcp｜移动
+      - DO｜新加坡ws｜移动
+      - DO｜旧金山tcp｜移动
+      - AWS｜香港80-1｜三网
+      - AWS｜香港tcp-1｜三网
+      - AWS｜香港2-80｜三网
+      - AWS｜香港2-tcp｜三网
+      - AWS｜香港3-80｜三网
+      - AWS｜香港3-tcp｜三网
+      - AWS｜东京80｜三网_1
+      - AWS｜东京80｜三网_2
+      - AWS｜新加坡80｜三网
+      - AWS｜新加坡tcp｜三网
+      - AWS｜大阪80｜三网
+      - 微软｜香港80-1｜电信
+      - 微软｜香港tcp-1｜电信
+      - 微软｜香港80-2｜电信
+      - 微软｜香港tcp-2｜电信
+      - Oracle｜韩国80｜cn2
+      - Oracle｜韩国tcp｜cn2
+      - 🇩🇪法兰克福-MyTrojan2-解锁DE区NETFLIX非自制剧
+      - 🇳🇱荷兰-MyTrojan7-解锁DE区NETFLIX非自制剧
+      - 🇺🇲洛杉矶-MyTrojan8-解锁美区NETFLIX非自制剧
+      - 🇺🇲橙市-MyTrojan9
+      - 🇭🇰香港-MyTrojan13-解锁港区NETFLIX非自制剧
+      - 🇬🇧英国-MyTrojan14-解锁英区NETFLIX非自制剧
+      - 🇯🇵东京-MyVmess1
+      - 🇩🇪法兰克福-MyVmess2-解锁DE区NETFLIX非自制剧
+      - 🇺🇲迈阿密-MyVmess4-解锁美区NETFLIX非自制剧
+      - 🇳🇱荷兰-MyVmess7-解锁DE区NETFLIX非自制剧
+      - 🇺🇲洛杉矶-MyVmess8-解锁美区NETFLIX非自制剧
+      - 🇺🇲橙市-MyVmess9
+      - 🇭🇰香港-MyVmess13-解锁港区NETFLIX非自制剧
+      - 🇬🇧英国-MyVmess15-解锁GB区NETFLIX非自制剧
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -75,7 +397,53 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - mac
+      - TG频道:@hkaa0|加拿大|自建_1
+      - TG频道:@hkaa0|加拿大|自建_2
+      - 🇸🇬新加坡A组|01|0.15
+      - BuyVM|ShareCentrePro
+      - 官方电报群:https://t.me/herhr6
+      - 正版爱发电→https://afdian.net/@heroh
+      - 盗版爱发电https://afdian.net/@juziyo
+      - Linode｜新加坡80-1｜联通
+      - Linode｜新加坡tcp-1｜联通
+      - Linode｜新加坡80-2｜联通
+      - Linode｜新加坡tcp-2｜联通
+      - Linode｜新加坡80-3｜联通
+      - Linode｜新加坡ws-3｜联通
+      - DO｜新加坡tcp｜移动
+      - DO｜新加坡ws｜移动
+      - DO｜旧金山tcp｜移动
+      - AWS｜香港80-1｜三网
+      - AWS｜香港tcp-1｜三网
+      - AWS｜香港2-80｜三网
+      - AWS｜香港2-tcp｜三网
+      - AWS｜香港3-80｜三网
+      - AWS｜香港3-tcp｜三网
+      - AWS｜东京80｜三网_1
+      - AWS｜东京80｜三网_2
+      - AWS｜新加坡80｜三网
+      - AWS｜新加坡tcp｜三网
+      - AWS｜大阪80｜三网
+      - 微软｜香港80-1｜电信
+      - 微软｜香港tcp-1｜电信
+      - 微软｜香港80-2｜电信
+      - 微软｜香港tcp-2｜电信
+      - Oracle｜韩国80｜cn2
+      - Oracle｜韩国tcp｜cn2
+      - 🇩🇪法兰克福-MyTrojan2-解锁DE区NETFLIX非自制剧
+      - 🇳🇱荷兰-MyTrojan7-解锁DE区NETFLIX非自制剧
+      - 🇺🇲洛杉矶-MyTrojan8-解锁美区NETFLIX非自制剧
+      - 🇺🇲橙市-MyTrojan9
+      - 🇭🇰香港-MyTrojan13-解锁港区NETFLIX非自制剧
+      - 🇬🇧英国-MyTrojan14-解锁英区NETFLIX非自制剧
+      - 🇯🇵东京-MyVmess1
+      - 🇩🇪法兰克福-MyVmess2-解锁DE区NETFLIX非自制剧
+      - 🇺🇲迈阿密-MyVmess4-解锁美区NETFLIX非自制剧
+      - 🇳🇱荷兰-MyVmess7-解锁DE区NETFLIX非自制剧
+      - 🇺🇲洛杉矶-MyVmess8-解锁美区NETFLIX非自制剧
+      - 🇺🇲橙市-MyVmess9
+      - 🇭🇰香港-MyVmess13-解锁港区NETFLIX非自制剧
+      - 🇬🇧英国-MyVmess15-解锁GB区NETFLIX非自制剧
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
