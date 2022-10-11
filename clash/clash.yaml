@@ -1,9 +1,9 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2022-10-11 18:04:56
+#  创建时间：2022-10-11 18:41:07
 #  模版：v2rayse默认模版
-#  节点数量：12
+#  节点数量：10
 #-------------------------------------------------------------#
 #
 port: 7890
@@ -23,8 +23,6 @@ proxies:
   - {"type":"vmess","name":"🇺🇸_US_美国_5","server":"hk1vdf-node.aiqiche123.com","port":8189,"uuid":"a90597c1-bab3-4217-ad6f-0838675c8638","alterId":10,"cipher":"auto","network":"tcp","tls":true}
   - {"type":"vmess","name":"🇺🇸_US_美国_6","server":"c10s801.jamjams3.net","port":16522,"uuid":"eea5d212-ebc9-4d5e-850c-4d0d08786cdc","alterId":0,"cipher":"auto","network":"tcp"}
   - {"type":"vmess","name":"🇸🇬_SG_新加坡","server":"168.138.171.65","port":443,"uuid":"4af6fd9a-e8b4-46f2-da3a-207f4577656c","alterId":0,"cipher":"auto","network":"tcp","tls":true}
-  - {"type":"vmess","name":"🇷🇺_RU_俄罗斯联邦->🇳🇱_NL_荷兰","server":"91.243.82.187","port":20005,"uuid":"2F094845-E2BD-EBF7-DEB7-995992436FAF","alterId":0,"cipher":"auto","network":"tcp","tls":true}
-  - {"type":"vmess","name":"🇳🇱_NL_荷兰","server":"c10s5.jamjams3.net","port":16522,"uuid":"eea5d212-ebc9-4d5e-850c-4d0d08786cdc","alterId":0,"cipher":"auto","network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -41,8 +39,6 @@ proxy-groups:
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
       - 🇸🇬_SG_新加坡
-      - 🇷🇺_RU_俄罗斯联邦->🇳🇱_NL_荷兰
-      - 🇳🇱_NL_荷兰
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -59,8 +55,6 @@ proxy-groups:
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
       - 🇸🇬_SG_新加坡
-      - 🇷🇺_RU_俄罗斯联邦->🇳🇱_NL_荷兰
-      - 🇳🇱_NL_荷兰
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -77,8 +71,6 @@ proxy-groups:
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
       - 🇸🇬_SG_新加坡
-      - 🇷🇺_RU_俄罗斯联邦->🇳🇱_NL_荷兰
-      - 🇳🇱_NL_荷兰
   - name: 📲 电报信息
     type: select
     proxies:
@@ -94,8 +86,6 @@ proxy-groups:
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
       - 🇸🇬_SG_新加坡
-      - 🇷🇺_RU_俄罗斯联邦->🇳🇱_NL_荷兰
-      - 🇳🇱_NL_荷兰
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -111,8 +101,6 @@ proxy-groups:
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
       - 🇸🇬_SG_新加坡
-      - 🇷🇺_RU_俄罗斯联邦->🇳🇱_NL_荷兰
-      - 🇳🇱_NL_荷兰
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -128,8 +116,6 @@ proxy-groups:
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
       - 🇸🇬_SG_新加坡
-      - 🇷🇺_RU_俄罗斯联邦->🇳🇱_NL_荷兰
-      - 🇳🇱_NL_荷兰
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -162,8 +148,6 @@ proxy-groups:
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
       - 🇸🇬_SG_新加坡
-      - 🇷🇺_RU_俄罗斯联邦->🇳🇱_NL_荷兰
-      - 🇳🇱_NL_荷兰
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
