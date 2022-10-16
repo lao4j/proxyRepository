@@ -1,9 +1,9 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2022-10-16 12:23:17
+#  创建时间：2022-10-16 15:58:23
 #  模版：v2rayse默认模版
-#  节点数量：26
+#  节点数量：5
 #-------------------------------------------------------------#
 #
 port: 7890
@@ -13,221 +13,74 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"ss","name":"🇺🇸_US_美国","server":"xmssmf02.xmss.vip","port":17777,"cipher":"chacha20-ietf-poly1305","password":"10657658-502a-42fd-97fd-1e08f538e13d"}
-  - {"type":"vmess","name":"🇨🇳_CN_中国->🇺🇸_US_美国","server":"us6b31-node.aiqiche123.com","port":"8190","uuid":"a90597c1-bab3-4217-ad6f-0838675c8653","alterId":"10","cipher":"auto","network":"tcp","tls":true}
-  - {"type":"vmess","name":"@VMESSIRANسرورفرانسه14مهر💥","ws-opts":{"path":"/graphql"},"server":"api.way-of-freedom.com","port":"80","uuid":"b831381d-6324-4d53-ad4f-8cda48b30811","alterId":"0","cipher":"chacha20-poly1305","network":"ws"}
-  - {"type":"vmess","name":"@VMESSIRANسرورآمریکا14مهر💥","http-opts":{"path":["/"],"headers":{"Host":["47.243.247.109"]}},"server":"47.243.247.109","port":"53314","uuid":"8c232a9e-6760-43b5-851e-a65b9965b5ee","alterId":"0","cipher":"auto","network":"http"}
-  - {"type":"vmess","name":"@VMESSIRANسرورکانادا14مهر","ws-opts":{"path":"/aries","headers":{"host":"ee.cloudflare.quest"}},"server":"ee.cloudflare.quest","port":"80","uuid":"f9247df4-02d5-4b31-acc5-4022652c5953","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"@VMESSIRANسرورفنلاند14مهر💥","ws-opts":{"path":"/graphql"},"server":"65.108.147.172","port":"80","uuid":"d3e8a80b-8d6b-4cfa-b878-743aac51af40","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"@VMESSIRANسرورانگلستان14مهر💥🇬🇧","ws-opts":{"path":"/"},"server":"64.227.43.168","port":"80","uuid":"07d3c132-e8b6-4685-b436-ffa3a8e2e82b","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"@VMESSIRANسرورآلمان15مهر_1","ws-opts":{"path":"/graphql"},"server":"195.201.135.168","port":"80","uuid":"d0711412-584d-4678-aa26-52f9c2e02479","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"@VMESSIRANسرورآلمان15مهر_2","ws-opts":{"path":"/"},"server":"80.91.223.106","port":"8080","uuid":"e71a5e3a-88f0-161c-5902-d43c607eaaed","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"@VMESSIRANسرورآلمان16مهر","ws-opts":{"path":"/graphql"},"server":"mahsaproxy.way-of-freedom.com","port":"80","uuid":"b831381d-6324-4d53-ad4f-8cda48b30811","alterId":"0","cipher":"chacha20-poly1305","network":"ws"}
-  - {"type":"vmess","name":"@VMESSIRANسرورامریکا16مهر","http-opts":{"path":["/"]},"server":"47.243.248.22","port":"38120","uuid":"29d435a4-b7fb-44db-9119-4ede4e22c250","alterId":"0","cipher":"auto","network":"http"}
-  - {"type":"vmess","name":"@VMESSIRANسرورهند16مهر","ws-opts":{"path":"/graphql"},"server":"139.59.83.228","port":"80","uuid":"28bd5246-f23f-44fc-a458-dd37f2dcc6e2","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"@VMESSIRANسرورفنلاند17مهر","ws-opts":{"path":"/graphql"},"server":"95.217.128.160","port":"80","uuid":"c07383fe-55b2-4f1c-876a-9aceba384853","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"@VMESSIRANسرورامریکا17مهر","ws-opts":{"path":"/graphql"},"server":"5.161.92.41","port":"80","uuid":"e1f26911-3dee-420d-9d14-2203d64710f0","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"@VMESSIRANسرورهلند17مهر","ws-opts":{"path":"/fastssh/sezarhacks/633be1a74319b/"},"server":"163.172.213.74","port":"80","uuid":"45d0eb68-955c-4760-91cd-fa6bf07b693f","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"@VMESSIRANسرورفرانسه17مهر","ws-opts":{"path":"/graphql"},"server":"mahsaproxychannel.way-of-freedom.com","port":"80","uuid":"b831381d-6324-4d53-ad4f-8cda48b30811","alterId":"0","cipher":"chacha20-poly1305","network":"ws"}
-  - {"type":"vmess","name":"@VMESSIRANسرورچین18مهر","ws-opts":{"path":"/liulisuansuan","headers":{"host":"foreverA.liusucfwstlsnode.xyz"}},"server":"foreverA.liusucfwstlsnode.xyz","port":"5212","uuid":"b39468bd-1563-41c0-bf52-7434742130a2","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"@VMESSIRANسرورامریکا18مهر","ws-opts":{"path":"/vmess","headers":{"host":"us-v.sshmax.xyz"}},"server":"us-v.sshmax.xyz","port":"80","uuid":"aefcee3b-6a38-4376-9568-6e5664cd7556","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"@VMESSIRANسرورایران19مهر","ws-opts":{"path":"/graphql","headers":{"host":"mahsaproxy.way-of-freedom.com"}},"server":"185.143.233.120","port":"80","uuid":"b831381d-6324-4d53-ad4f-8cda48b30811","alterId":"0","cipher":"chacha20-poly1305","network":"ws"}
-  - {"type":"vmess","name":"@VMESSIRANسرورفرانسه19مهر","ws-opts":{"path":"/graphql","headers":{"host":"mqtt.snappcloud.com"}},"server":"arvancloud.com","port":"80","uuid":"b831381d-6324-4d53-ad4f-8cda48b30811","alterId":"0","cipher":"chacha20-poly1305","network":"ws"}
-  - {"type":"vmess","name":"@VMESSIRANسرورفرانسه20مهر","ws-opts":{"path":"/sshocean","headers":{"host":"fr2.v2rayserv.com"}},"server":"fr2.v2rayserv.com","port":"80","uuid":"720e5c4e-4e44-40f6-8e73-7c32e18b61d0","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"@VMESSIRANسرورایران20مهر🌐","ws-opts":{"path":"/graphql"},"server":"MahsaProxyTelegramChannel.way-of-freedom.com","port":"80","uuid":"b831381d-6324-4d53-ad4f-8cda48b30811","alterId":"0","cipher":"chacha20-poly1305","network":"ws"}
-  - {"type":"vmess","name":"@VMESSIRANسرورایران21مهر💫","ws-opts":{"path":"/user"},"server":"stream.azadrah22.com","port":"80","uuid":"76e151a7-9980-4077-bd52-07ef4e9cb496","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"@VMESSIRANسرورفنلاند21مهر","ws-opts":{"path":"/connect"},"server":"xy.freeiran.de","port":"80","uuid":"f57fddc5-a7c6-4c03-92f4-df5a02baf5d9","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"@VMESSIRANسرورهلند23مهر","ws-opts":{"path":"/fastssh/vghrayang/634931ec14667/"},"server":"nl.v2-ray.com","port":"80","uuid":"341ceac8-4d54-4b4c-ac1b-88d7615b10b6","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"@VMESSIRANسرورسنگاپور23مهر","ws-opts":{"path":"/sshocean","headers":{"host":"sgovh1.v2rayserv.com"}},"server":"sgovh1.v2rayserv.com","port":"80","uuid":"78f936d1-8a72-4b7c-aafa-c8284e15ccaa","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"@VMESSIRANسرورهلند24مهر_1","ws-opts":{"path":"/kingis0000"},"server":"95.211.148.5","port":"36318","uuid":"318c4650-f649-448e-ceda-0aa589ac5e87","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"@VMESSIRANسرورهلند24مهر_2","ws-opts":{"path":"/asAJED564"},"server":"95.211.148.9","port":"39332","uuid":"ce88842c-59e5-486e-bac3-22c157ea753e","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"@VMESSIRANسرورهلند24مهر_3","ws-opts":{"path":"/Af5645tr"},"server":"85.17.5.150","port":"36306","uuid":"4070fdde-43d5-4b3f-dbcf-7751c77e4bf6","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"@VMESSIRANسرورهلند24مهر_4","ws-opts":{"path":"/abzero2424521"},"server":"212.32.248.38","port":"45754","uuid":"d46fd92b-a9db-41f3-c0dd-6ba95cee8252","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"@VMESSIRANسرورهلند24مهر_5","ws-opts":{"path":"/Shata78t6u"},"server":"95.211.148.85","port":"45613","uuid":"8a63ad3d-32bd-4f71-f278-a97653482f94","alterId":"0","cipher":"auto","network":"ws"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - '@VMESSIRANسرورفرانسه14مهر💥'
-      - '@VMESSIRANسرورآمریکا14مهر💥'
-      - '@VMESSIRANسرورکانادا14مهر'
-      - '@VMESSIRANسرورفنلاند14مهر💥'
-      - '@VMESSIRANسرورانگلستان14مهر💥🇬🇧'
-      - '@VMESSIRANسرورآلمان15مهر_1'
-      - '@VMESSIRANسرورآلمان15مهر_2'
-      - '@VMESSIRANسرورآلمان16مهر'
-      - '@VMESSIRANسرورامریکا16مهر'
-      - '@VMESSIRANسرورهند16مهر'
-      - '@VMESSIRANسرورفنلاند17مهر'
-      - '@VMESSIRANسرورامریکا17مهر'
-      - '@VMESSIRANسرورهلند17مهر'
-      - '@VMESSIRANسرورفرانسه17مهر'
-      - '@VMESSIRANسرورچین18مهر'
-      - '@VMESSIRANسرورامریکا18مهر'
-      - '@VMESSIRANسرورایران19مهر'
-      - '@VMESSIRANسرورفرانسه19مهر'
-      - '@VMESSIRANسرورفرانسه20مهر'
-      - '@VMESSIRANسرورایران20مهر🌐'
-      - '@VMESSIRANسرورایران21مهر💫'
-      - '@VMESSIRANسرورفنلاند21مهر'
-      - '@VMESSIRANسرورهلند23مهر'
-      - '@VMESSIRANسرورسنگاپور23مهر'
+      - '@VMESSIRANسرورهلند24مهر_1'
+      - '@VMESSIRANسرورهلند24مهر_2'
+      - '@VMESSIRANسرورهلند24مهر_3'
+      - '@VMESSIRANسرورهلند24مهر_4'
+      - '@VMESSIRANسرورهلند24مهر_5'
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - '@VMESSIRANسرورفرانسه14مهر💥'
-      - '@VMESSIRANسرورآمریکا14مهر💥'
-      - '@VMESSIRANسرورکانادا14مهر'
-      - '@VMESSIRANسرورفنلاند14مهر💥'
-      - '@VMESSIRANسرورانگلستان14مهر💥🇬🇧'
-      - '@VMESSIRANسرورآلمان15مهر_1'
-      - '@VMESSIRANسرورآلمان15مهر_2'
-      - '@VMESSIRANسرورآلمان16مهر'
-      - '@VMESSIRANسرورامریکا16مهر'
-      - '@VMESSIRANسرورهند16مهر'
-      - '@VMESSIRANسرورفنلاند17مهر'
-      - '@VMESSIRANسرورامریکا17مهر'
-      - '@VMESSIRANسرورهلند17مهر'
-      - '@VMESSIRANسرورفرانسه17مهر'
-      - '@VMESSIRANسرورچین18مهر'
-      - '@VMESSIRANسرورامریکا18مهر'
-      - '@VMESSIRANسرورایران19مهر'
-      - '@VMESSIRANسرورفرانسه19مهر'
-      - '@VMESSIRANسرورفرانسه20مهر'
-      - '@VMESSIRANسرورایران20مهر🌐'
-      - '@VMESSIRANسرورایران21مهر💫'
-      - '@VMESSIRANسرورفنلاند21مهر'
-      - '@VMESSIRANسرورهلند23مهر'
-      - '@VMESSIRANسرورسنگاپور23مهر'
+      - '@VMESSIRANسرورهلند24مهر_1'
+      - '@VMESSIRANسرورهلند24مهر_2'
+      - '@VMESSIRANسرورهلند24مهر_3'
+      - '@VMESSIRANسرورهلند24مهر_4'
+      - '@VMESSIRANسرورهلند24مهر_5'
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - '@VMESSIRANسرورفرانسه14مهر💥'
-      - '@VMESSIRANسرورآمریکا14مهر💥'
-      - '@VMESSIRANسرورکانادا14مهر'
-      - '@VMESSIRANسرورفنلاند14مهر💥'
-      - '@VMESSIRANسرورانگلستان14مهر💥🇬🇧'
-      - '@VMESSIRANسرورآلمان15مهر_1'
-      - '@VMESSIRANسرورآلمان15مهر_2'
-      - '@VMESSIRANسرورآلمان16مهر'
-      - '@VMESSIRANسرورامریکا16مهر'
-      - '@VMESSIRANسرورهند16مهر'
-      - '@VMESSIRANسرورفنلاند17مهر'
-      - '@VMESSIRANسرورامریکا17مهر'
-      - '@VMESSIRANسرورهلند17مهر'
-      - '@VMESSIRANسرورفرانسه17مهر'
-      - '@VMESSIRANسرورچین18مهر'
-      - '@VMESSIRANسرورامریکا18مهر'
-      - '@VMESSIRANسرورایران19مهر'
-      - '@VMESSIRANسرورفرانسه19مهر'
-      - '@VMESSIRANسرورفرانسه20مهر'
-      - '@VMESSIRANسرورایران20مهر🌐'
-      - '@VMESSIRANسرورایران21مهر💫'
-      - '@VMESSIRANسرورفنلاند21مهر'
-      - '@VMESSIRANسرورهلند23مهر'
-      - '@VMESSIRANسرورسنگاپور23مهر'
+      - '@VMESSIRANسرورهلند24مهر_1'
+      - '@VMESSIRANسرورهلند24مهر_2'
+      - '@VMESSIRANسرورهلند24مهر_3'
+      - '@VMESSIRANسرورهلند24مهر_4'
+      - '@VMESSIRANسرورهلند24مهر_5'
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - '@VMESSIRANسرورفرانسه14مهر💥'
-      - '@VMESSIRANسرورآمریکا14مهر💥'
-      - '@VMESSIRANسرورکانادا14مهر'
-      - '@VMESSIRANسرورفنلاند14مهر💥'
-      - '@VMESSIRANسرورانگلستان14مهر💥🇬🇧'
-      - '@VMESSIRANسرورآلمان15مهر_1'
-      - '@VMESSIRANسرورآلمان15مهر_2'
-      - '@VMESSIRANسرورآلمان16مهر'
-      - '@VMESSIRANسرورامریکا16مهر'
-      - '@VMESSIRANسرورهند16مهر'
-      - '@VMESSIRANسرورفنلاند17مهر'
-      - '@VMESSIRANسرورامریکا17مهر'
-      - '@VMESSIRANسرورهلند17مهر'
-      - '@VMESSIRANسرورفرانسه17مهر'
-      - '@VMESSIRANسرورچین18مهر'
-      - '@VMESSIRANسرورامریکا18مهر'
-      - '@VMESSIRANسرورایران19مهر'
-      - '@VMESSIRANسرورفرانسه19مهر'
-      - '@VMESSIRANسرورفرانسه20مهر'
-      - '@VMESSIRANسرورایران20مهر🌐'
-      - '@VMESSIRANسرورایران21مهر💫'
-      - '@VMESSIRANسرورفنلاند21مهر'
-      - '@VMESSIRANسرورهلند23مهر'
-      - '@VMESSIRANسرورسنگاپور23مهر'
+      - '@VMESSIRANسرورهلند24مهر_1'
+      - '@VMESSIRANسرورهلند24مهر_2'
+      - '@VMESSIRANسرورهلند24مهر_3'
+      - '@VMESSIRANسرورهلند24مهر_4'
+      - '@VMESSIRANسرورهلند24مهر_5'
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - '@VMESSIRANسرورفرانسه14مهر💥'
-      - '@VMESSIRANسرورآمریکا14مهر💥'
-      - '@VMESSIRANسرورکانادا14مهر'
-      - '@VMESSIRANسرورفنلاند14مهر💥'
-      - '@VMESSIRANسرورانگلستان14مهر💥🇬🇧'
-      - '@VMESSIRANسرورآلمان15مهر_1'
-      - '@VMESSIRANسرورآلمان15مهر_2'
-      - '@VMESSIRANسرورآلمان16مهر'
-      - '@VMESSIRANسرورامریکا16مهر'
-      - '@VMESSIRANسرورهند16مهر'
-      - '@VMESSIRANسرورفنلاند17مهر'
-      - '@VMESSIRANسرورامریکا17مهر'
-      - '@VMESSIRANسرورهلند17مهر'
-      - '@VMESSIRANسرورفرانسه17مهر'
-      - '@VMESSIRANسرورچین18مهر'
-      - '@VMESSIRANسرورامریکا18مهر'
-      - '@VMESSIRANسرورایران19مهر'
-      - '@VMESSIRANسرورفرانسه19مهر'
-      - '@VMESSIRANسرورفرانسه20مهر'
-      - '@VMESSIRANسرورایران20مهر🌐'
-      - '@VMESSIRANسرورایران21مهر💫'
-      - '@VMESSIRANسرورفنلاند21مهر'
-      - '@VMESSIRANسرورهلند23مهر'
-      - '@VMESSIRANسرورسنگاپور23مهر'
+      - '@VMESSIRANسرورهلند24مهر_1'
+      - '@VMESSIRANسرورهلند24مهر_2'
+      - '@VMESSIRANسرورهلند24مهر_3'
+      - '@VMESSIRANسرورهلند24مهر_4'
+      - '@VMESSIRANسرورهلند24مهر_5'
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - '@VMESSIRANسرورفرانسه14مهر💥'
-      - '@VMESSIRANسرورآمریکا14مهر💥'
-      - '@VMESSIRANسرورکانادا14مهر'
-      - '@VMESSIRANسرورفنلاند14مهر💥'
-      - '@VMESSIRANسرورانگلستان14مهر💥🇬🇧'
-      - '@VMESSIRANسرورآلمان15مهر_1'
-      - '@VMESSIRANسرورآلمان15مهر_2'
-      - '@VMESSIRANسرورآلمان16مهر'
-      - '@VMESSIRANسرورامریکا16مهر'
-      - '@VMESSIRANسرورهند16مهر'
-      - '@VMESSIRANسرورفنلاند17مهر'
-      - '@VMESSIRANسرورامریکا17مهر'
-      - '@VMESSIRANسرورهلند17مهر'
-      - '@VMESSIRANسرورفرانسه17مهر'
-      - '@VMESSIRANسرورچین18مهر'
-      - '@VMESSIRANسرورامریکا18مهر'
-      - '@VMESSIRANسرورایران19مهر'
-      - '@VMESSIRANسرورفرانسه19مهر'
-      - '@VMESSIRANسرورفرانسه20مهر'
-      - '@VMESSIRANسرورایران20مهر🌐'
-      - '@VMESSIRANسرورایران21مهر💫'
-      - '@VMESSIRANسرورفنلاند21مهر'
-      - '@VMESSIRANسرورهلند23مهر'
-      - '@VMESSIRANسرورسنگاپور23مهر'
+      - '@VMESSIRANسرورهلند24مهر_1'
+      - '@VMESSIRANسرورهلند24مهر_2'
+      - '@VMESSIRANسرورهلند24مهر_3'
+      - '@VMESSIRANسرورهلند24مهر_4'
+      - '@VMESSIRANسرورهلند24مهر_5'
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -250,32 +103,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - '@VMESSIRANسرورفرانسه14مهر💥'
-      - '@VMESSIRANسرورآمریکا14مهر💥'
-      - '@VMESSIRANسرورکانادا14مهر'
-      - '@VMESSIRANسرورفنلاند14مهر💥'
-      - '@VMESSIRANسرورانگلستان14مهر💥🇬🇧'
-      - '@VMESSIRANسرورآلمان15مهر_1'
-      - '@VMESSIRANسرورآلمان15مهر_2'
-      - '@VMESSIRANسرورآلمان16مهر'
-      - '@VMESSIRANسرورامریکا16مهر'
-      - '@VMESSIRANسرورهند16مهر'
-      - '@VMESSIRANسرورفنلاند17مهر'
-      - '@VMESSIRANسرورامریکا17مهر'
-      - '@VMESSIRANسرورهلند17مهر'
-      - '@VMESSIRANسرورفرانسه17مهر'
-      - '@VMESSIRANسرورچین18مهر'
-      - '@VMESSIRANسرورامریکا18مهر'
-      - '@VMESSIRANسرورایران19مهر'
-      - '@VMESSIRANسرورفرانسه19مهر'
-      - '@VMESSIRANسرورفرانسه20مهر'
-      - '@VMESSIRANسرورایران20مهر🌐'
-      - '@VMESSIRANسرورایران21مهر💫'
-      - '@VMESSIRANسرورفنلاند21مهر'
-      - '@VMESSIRANسرورهلند23مهر'
-      - '@VMESSIRANسرورسنگاپور23مهر'
+      - '@VMESSIRANسرورهلند24مهر_1'
+      - '@VMESSIRANسرورهلند24مهر_2'
+      - '@VMESSIRANسرورهلند24مهر_3'
+      - '@VMESSIRANسرورهلند24مهر_4'
+      - '@VMESSIRANسرورهلند24مهر_5'
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
