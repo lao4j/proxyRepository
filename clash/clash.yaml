@@ -1,9 +1,9 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2022-10-24 21:34:48
+#  创建时间：2022-10-24 22:58:40
 #  模版：v2rayse默认模版
-#  节点数量：10
+#  节点数量：12
 #-------------------------------------------------------------#
 #
 port: 7890
@@ -22,7 +22,9 @@ proxies:
   - {"type":"trojan","name":"🇭🇰_HK_香港->🇯🇵_JP_日本","server":"219.76.13.180","port":443,"password":"F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0","udp":true,"skip-cert-verify":true,"sni":"stutter.freetrade.link"}
   - {"type":"trojan","name":"🇭🇰_HK_香港->🇸🇬_SG_新加坡","server":"219.76.13.175","port":443,"password":"ZlYZ0KxC8uxngp736aR34y3TaFwFOC95DO2XR8yeeAD3cESNDSCBqAYIjpaSlz","udp":true,"skip-cert-verify":true,"sni":"python.protocolbuffer.com"}
   - {"type":"vmess","name":"🇭🇰_HK_香港->🇺🇸_US_美国_2","server":"awshk.hoot.cf","port":10001,"uuid":"e1f80416-5394-4fcd-af80-12ef9799a92c","alterId":0,"cipher":"auto","network":"tcp"}
-  - {"type":"vmess","name":"🇺🇸_US_美国","ws-opts":{"path":"/"},"server":"129.150.47.142","port":22624,"uuid":"e9b33627-c7b7-4bbf-a6f6-2fa50c0d7bf0","alterId":0,"cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"🇺🇸_US_美国_1","ws-opts":{"path":"/"},"server":"129.150.47.142","port":22624,"uuid":"e9b33627-c7b7-4bbf-a6f6-2fa50c0d7bf0","alterId":0,"cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"🇺🇸_US_美国_2","ws-opts":{"path":"/"},"server":"138.2.66.153","port":10011,"uuid":"04235a12-7668-46f0-c9f1-def54682c8ef","alterId":0,"cipher":"auto","network":"ws"}
+  - {"type":"trojan","name":"🇯🇵_JP_日本->🇺🇸_US_美国","server":"usa.liangyuandian.top","port":443,"password":"176196e4-7cf7-4561-87a9-21a1b4e344be","udp":true,"skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -38,7 +40,9 @@ proxy-groups:
       - 🇭🇰_HK_香港->🇯🇵_JP_日本
       - 🇭🇰_HK_香港->🇸🇬_SG_新加坡
       - 🇭🇰_HK_香港->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇯🇵_JP_日本->🇺🇸_US_美国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -54,7 +58,9 @@ proxy-groups:
       - 🇭🇰_HK_香港->🇯🇵_JP_日本
       - 🇭🇰_HK_香港->🇸🇬_SG_新加坡
       - 🇭🇰_HK_香港->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇯🇵_JP_日本->🇺🇸_US_美国
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -70,7 +76,9 @@ proxy-groups:
       - 🇭🇰_HK_香港->🇯🇵_JP_日本
       - 🇭🇰_HK_香港->🇸🇬_SG_新加坡
       - 🇭🇰_HK_香港->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇯🇵_JP_日本->🇺🇸_US_美国
   - name: 📲 电报信息
     type: select
     proxies:
@@ -85,7 +93,9 @@ proxy-groups:
       - 🇭🇰_HK_香港->🇯🇵_JP_日本
       - 🇭🇰_HK_香港->🇸🇬_SG_新加坡
       - 🇭🇰_HK_香港->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇯🇵_JP_日本->🇺🇸_US_美国
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -100,7 +110,9 @@ proxy-groups:
       - 🇭🇰_HK_香港->🇯🇵_JP_日本
       - 🇭🇰_HK_香港->🇸🇬_SG_新加坡
       - 🇭🇰_HK_香港->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇯🇵_JP_日本->🇺🇸_US_美国
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -115,7 +127,9 @@ proxy-groups:
       - 🇭🇰_HK_香港->🇯🇵_JP_日本
       - 🇭🇰_HK_香港->🇸🇬_SG_新加坡
       - 🇭🇰_HK_香港->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇯🇵_JP_日本->🇺🇸_US_美国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -147,7 +161,9 @@ proxy-groups:
       - 🇭🇰_HK_香港->🇯🇵_JP_日本
       - 🇭🇰_HK_香港->🇸🇬_SG_新加坡
       - 🇭🇰_HK_香港->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇯🇵_JP_日本->🇺🇸_US_美国
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
