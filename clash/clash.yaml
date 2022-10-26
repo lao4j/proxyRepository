@@ -1,9 +1,9 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2022-10-26 11:24:04
+#  创建时间：2022-10-26 13:41:08
 #  模版：v2rayse默认模版
-#  节点数量：7
+#  节点数量：3
 #-------------------------------------------------------------#
 #
 port: 7890
@@ -13,88 +13,60 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"vmess","name":"🇺🇸_US_美国_1","ws-opts":{"path":"/chat","headers":{"host":"vde2.0bad.com"}},"server":"vde2.0bad.com","port":443,"uuid":"927094d3-d678-4763-8591-e240d0bcae87","alterId":0,"cipher":"auto","network":"ws","tls":true}
-  - {"type":"trojan","name":"🇱🇺_LU_卢森堡","server":"107.189.28.229","port":20470,"password":"d4aac5d7-d17a-3ad0-9068-ac555f750b6d","udp":true,"skip-cert-verify":true,"sni":"ip153740813.mobgslb.tbcache.com"}
-  - {"type":"trojan","name":"🇭🇰_HK_香港->🇯🇵_JP_日本","server":"219.76.13.180","port":443,"password":"F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0","udp":true,"skip-cert-verify":true,"sni":"stutter.freetrade.link"}
-  - {"type":"vmess","name":"default_name_1","ws-opts":{"path":"/dongtaiwang.com","headers":{"host":"clash1.trump2023.net"}},"server":"141.101.114.20","port":443,"uuid":"176b598f-445b-41ac-9d2a-430c5c4df26a","alterId":0,"cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"default_name_2","ws-opts":{"path":"/dongtaiwang.com","headers":{"host":"lg1.cfcdn3.xyz"}},"server":"141.101.115.120","port":443,"uuid":"33aa57df-1c93-4318-9fce-e850437ee781","alterId":0,"cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"🇺🇸_US_美国_2","ws-opts":{"path":"/chat","headers":{"host":"vuk2.0bad.com"}},"server":"vuk2.0bad.com","port":443,"uuid":"927094d3-d678-4763-8591-e240d0bcae87","alterId":0,"cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"default_name_3","ws-opts":{"path":"/dongtaiwang.com","headers":{"host":"lg1.cfcdn3.xyz"}},"server":"141.101.114.120","port":443,"uuid":"33aa57df-1c93-4318-9fce-e850437ee781","alterId":0,"cipher":"auto","network":"ws","tls":true}
+  - {"type":"trojan","name":"🇺🇸_US_美国","server":"27fr.networklinkpro.net","port":443,"password":"e392bfdd-d4ce-4df2-9534-fef23f037121","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"🇮🇩_ID_印度尼西亚","server":"idc1.vpn-akcelluler.my.id","port":443,"password":"idc117okt","udp":true,"skip-cert-verify":true,"sni":"idc1.vpn-akcelluler.my.id"}
+  - {"type":"trojan","name":"🇮🇳_IN_印度","server":"13in.networklinkpro.net","port":443,"password":"e392bfdd-d4ce-4df2-9534-fef23f037121","udp":true,"skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸_US_美国_1
-      - 🇱🇺_LU_卢森堡
-      - 🇭🇰_HK_香港->🇯🇵_JP_日本
-      - default_name_1
-      - default_name_2
-      - 🇺🇸_US_美国_2
-      - default_name_3
+      - 🇺🇸_US_美国
+      - 🇮🇩_ID_印度尼西亚
+      - 🇮🇳_IN_印度
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸_US_美国_1
-      - 🇱🇺_LU_卢森堡
-      - 🇭🇰_HK_香港->🇯🇵_JP_日本
-      - default_name_1
-      - default_name_2
-      - 🇺🇸_US_美国_2
-      - default_name_3
+      - 🇺🇸_US_美国
+      - 🇮🇩_ID_印度尼西亚
+      - 🇮🇳_IN_印度
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国_1
-      - 🇱🇺_LU_卢森堡
-      - 🇭🇰_HK_香港->🇯🇵_JP_日本
-      - default_name_1
-      - default_name_2
-      - 🇺🇸_US_美国_2
-      - default_name_3
+      - 🇺🇸_US_美国
+      - 🇮🇩_ID_印度尼西亚
+      - 🇮🇳_IN_印度
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国_1
-      - 🇱🇺_LU_卢森堡
-      - 🇭🇰_HK_香港->🇯🇵_JP_日本
-      - default_name_1
-      - default_name_2
-      - 🇺🇸_US_美国_2
-      - default_name_3
+      - 🇺🇸_US_美国
+      - 🇮🇩_ID_印度尼西亚
+      - 🇮🇳_IN_印度
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸_US_美国_1
-      - 🇱🇺_LU_卢森堡
-      - 🇭🇰_HK_香港->🇯🇵_JP_日本
-      - default_name_1
-      - default_name_2
-      - 🇺🇸_US_美国_2
-      - default_name_3
+      - 🇺🇸_US_美国
+      - 🇮🇩_ID_印度尼西亚
+      - 🇮🇳_IN_印度
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国_1
-      - 🇱🇺_LU_卢森堡
-      - 🇭🇰_HK_香港->🇯🇵_JP_日本
-      - default_name_1
-      - default_name_2
-      - 🇺🇸_US_美国_2
-      - default_name_3
+      - 🇺🇸_US_美国
+      - 🇮🇩_ID_印度尼西亚
+      - 🇮🇳_IN_印度
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -117,13 +89,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸_US_美国_1
-      - 🇱🇺_LU_卢森堡
-      - 🇭🇰_HK_香港->🇯🇵_JP_日本
-      - default_name_1
-      - default_name_2
-      - 🇺🇸_US_美国_2
-      - default_name_3
+      - 🇺🇸_US_美国
+      - 🇮🇩_ID_印度尼西亚
+      - 🇮🇳_IN_印度
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
