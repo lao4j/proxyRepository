@@ -1,7 +1,7 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2022-10-29 16:38:22
+#  创建时间：2022-10-30 01:52:40
 #  模版：v2rayse默认模版
 #  节点数量：2
 #-------------------------------------------------------------#
@@ -14,7 +14,7 @@ log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
   - {"type":"trojan","name":"🇲🇴_MO_澳门","server":"45.64.22.55","port":443,"password":"Me650d5Uec2c3iwJ","udp":true,"skip-cert-verify":true,"sni":"service.fireplay.io"}
-  - {"type":"trojan","name":"🇮🇩_ID_印度尼西亚","server":"idc1.vpn-akcelluler.my.id","port":443,"password":"idc117okt","udp":true,"skip-cert-verify":true,"sni":"idc1.vpn-akcelluler.my.id"}
+  - {"type":"vmess","name":"🇷🇺_RU_俄罗斯联邦","server":"pf.napsternetv.com","port":34146,"uuid":"2F094845-E2BD-EBF7-DEB7-995992436FAF","alterId":0,"cipher":"auto","network":"tcp","tls":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -22,7 +22,7 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 🇲🇴_MO_澳门
-      - 🇮🇩_ID_印度尼西亚
+      - 🇷🇺_RU_俄罗斯联邦
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -30,7 +30,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇲🇴_MO_澳门
-      - 🇮🇩_ID_印度尼西亚
+      - 🇷🇺_RU_俄罗斯联邦
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -38,28 +38,28 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🇲🇴_MO_澳门
-      - 🇮🇩_ID_印度尼西亚
+      - 🇷🇺_RU_俄罗斯联邦
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇲🇴_MO_澳门
-      - 🇮🇩_ID_印度尼西亚
+      - 🇷🇺_RU_俄罗斯联邦
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - 🇲🇴_MO_澳门
-      - 🇮🇩_ID_印度尼西亚
+      - 🇷🇺_RU_俄罗斯联邦
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇲🇴_MO_澳门
-      - 🇮🇩_ID_印度尼西亚
+      - 🇷🇺_RU_俄罗斯联邦
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -83,7 +83,7 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇲🇴_MO_澳门
-      - 🇮🇩_ID_印度尼西亚
+      - 🇷🇺_RU_俄罗斯联邦
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
