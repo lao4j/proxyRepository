@@ -1,5 +1,11 @@
-#创建时间：2022-11-25 18:30:26
-#创建人：worldwang
+#
+#-------------------------------------------------------------#
+#  创建者：https://v2rayse.com
+#  创建时间：2022-11-25 23:42:49
+#  模版：ACL4SSR
+#  节点数量：3
+#-------------------------------------------------------------#
+#
 mixed-port: 7890
 allow-lan: true
 mode: Rule
@@ -16,116 +22,60 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"type":"ss","name":"🇨🇳_CN_中国->🇬🇧_GB_英国_1","server":"kqs-moble.gatknqh.cn","port":23166,"cipher":"aes-256-gcm","password":"717e4533-dc2f-4978-848b-cab323a4da86"}
-  - {"type":"trojan","name":"🇫🇷_FR_法国_1","server":"content-provider12.cdn-delivery.akamaicd.com","port":443,"password":"origin","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇰🇷_KR_韩国","server":"kr1.api-aws.com","port":443,"password":"98a68cfb-42c6-4498-ac6e-7e5c203924a7","udp":true,"skip-cert-verify":true}
-  - {"type":"vmess","name":"default_name","ws-opts":{"path":"/dongtaiwang.com","headers":{"host":"lg1.cfcdn3.xyz"}},"server":"198.41.203.3","port":443,"uuid":"33aa57df-1c93-4318-9fce-e850437ee781","alterId":0,"cipher":"auto","network":"ws","tls":true}
-  - {"type":"trojan","name":"🇫🇷_FR_法国_2","server":"51.77.71.134","port":443,"password":"origin","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇺🇸_US_美国_1","server":"129.146.190.42","port":443,"password":"dbf9bf9c-2c3f-474a-8031-d4c00666a989","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇬🇧_GB_英国","server":"132.145.51.172","port":443,"password":"02e653c9-7c93-46a9-999d-11834bd0c577","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","name":"🇨🇳_CN_中国->🇬🇧_GB_英国_2","server":"kqs-moble.gatknqh.cn","port":49971,"cipher":"aes-256-gcm","password":"717e4533-dc2f-4978-848b-cab323a4da86"}
-  - {"type":"trojan","name":"🇺🇸_US_美国_2","server":"129.146.135.157","port":443,"password":"e23f408a-012e-4030-8b31-02022031cb50","udp":true,"skip-cert-verify":true}
-  - {"type":"ssr","name":"🇸🇬_SG_新加坡","server":"sg-am3.eqsunshine.com","port":32001,"protocol":"origin","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","password":"3g0dHlKME"}
-  - {"type":"trojan","name":"🇺🇸_US_美国_3","server":"148.113.141.99","port":443,"password":"HdsUZmsHQW","udp":true,"skip-cert-verify":true}
+  - {"type":"vmess","name":"香港~新加坡~1","ws-opts":{"path":"/GenshinMinecraft","headers":{"host":"xingzidashabimeiyoumuqin.gmlovebaipiao.tech"}},"server":"47.242.184.128","port":"2083","uuid":"9ed79552-08cf-402f-e190-91f24eda1681","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"香港~新加坡~2","ws-opts":{"path":"/GenshinMinecraft","headers":{"host":"xingzidashabimeiyoumuqin.gmlovebaipiao.tech"}},"server":"47.242.174.27","port":"2083","uuid":"9ed79552-08cf-402f-e190-91f24eda1681","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"新加坡~新加坡~3","ws-opts":{"path":"/GenshinMinecraft","headers":{"host":"xingzidashabimeiyoumuqin.gmlovebaipiao.tech"}},"server":"8.218.136.25","port":"2083","uuid":"9ed79552-08cf-402f-e190-91f24eda1681","alterId":"0","cipher":"auto","network":"ws","tls":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
-      - 🇫🇷_FR_法国_1
-      - 🇰🇷_KR_韩国
-      - default_name
-      - 🇫🇷_FR_法国_2
-      - 🇺🇸_US_美国_1
-      - 🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国_2
-      - 🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_3
+      - 香港~新加坡~1
+      - 香港~新加坡~2
+      - 新加坡~新加坡~3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
-      - 🇫🇷_FR_法国_1
-      - 🇰🇷_KR_韩国
-      - default_name
-      - 🇫🇷_FR_法国_2
-      - 🇺🇸_US_美国_1
-      - 🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国_2
-      - 🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_3
+      - 香港~新加坡~1
+      - 香港~新加坡~2
+      - 新加坡~新加坡~3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
-      - 🇫🇷_FR_法国_1
-      - 🇰🇷_KR_韩国
-      - default_name
-      - 🇫🇷_FR_法国_2
-      - 🇺🇸_US_美国_1
-      - 🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国_2
-      - 🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_3
+      - 香港~新加坡~1
+      - 香港~新加坡~2
+      - 新加坡~新加坡~3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
-      - 🇫🇷_FR_法国_1
-      - 🇰🇷_KR_韩国
-      - default_name
-      - 🇫🇷_FR_法国_2
-      - 🇺🇸_US_美国_1
-      - 🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国_2
-      - 🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_3
+      - 香港~新加坡~1
+      - 香港~新加坡~2
+      - 新加坡~新加坡~3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
-      - 🇫🇷_FR_法国_1
-      - 🇰🇷_KR_韩国
-      - default_name
-      - 🇫🇷_FR_法国_2
-      - 🇺🇸_US_美国_1
-      - 🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国_2
-      - 🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_3
+      - 香港~新加坡~1
+      - 香港~新加坡~2
+      - 新加坡~新加坡~3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
-      - 🇫🇷_FR_法国_1
-      - 🇰🇷_KR_韩国
-      - default_name
-      - 🇫🇷_FR_法国_2
-      - 🇺🇸_US_美国_1
-      - 🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国_2
-      - 🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_3
+      - 香港~新加坡~1
+      - 香港~新加坡~2
+      - 新加坡~新加坡~3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -148,17 +98,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
-      - 🇫🇷_FR_法国_1
-      - 🇰🇷_KR_韩国
-      - default_name
-      - 🇫🇷_FR_法国_2
-      - 🇺🇸_US_美国_1
-      - 🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国_2
-      - 🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_3
+      - 香港~新加坡~1
+      - 香港~新加坡~2
+      - 新加坡~新加坡~3
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
