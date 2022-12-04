@@ -1,71 +1,61 @@
-#
-#-------------------------------------------------------------#
-#  创建者：https://v2rayse.com
-#  创建时间：2022-12-04 12:15:15
-#  模版：ACL4SSR
-#  节点数量：3
-#-------------------------------------------------------------#
-#
+#创建时间：2022-12-04 18:32:57
+#创建人：worldwang
 mixed-port: 7890
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
+dns:
+  enabled: true
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
 proxies:
-  - {"type":"vmess","name":"🇦🇲_AM_亚美尼亚","ws-opts":{"path":"/A2DJOPFT","headers":{"host":"lg10.cfcdn1.xyz"}},"server":"185.162.228.230","port":443,"uuid":"17b2a313-37a0-4945-a8e4-e63375506b4a","alterId":0,"cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"default_name","ws-opts":{"path":"/sshkit/fdfadsfa/63848bfe228fd/","headers":{"host":"us-lb.sshkit.org"}},"server":"uicdn.cf","port":80,"uuid":"6fea1649-425b-4092-bf53-29792152c925","alterId":0,"cipher":"auto","network":"ws"}
-  - {"type":"ss","name":"🇮🇷_IR_伊朗->🇺🇸_US_美国","server":"samanehha.co","port":443,"cipher":"chacha20-ietf-poly1305","password":"jinajina123"}
+  - {"type":"vless","name":"us","server":"vpn.worldwang.top","port":443,"uuid":"046f0dfb-77f8-4b83-8992-fd1f592d6947","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"vpn.worldwang.top","ws-opts":{"path":"/worldwang","headers":{"host":"vpn.worldwang.top"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇦🇲_AM_亚美尼亚
-      - default_name
-      - 🇮🇷_IR_伊朗->🇺🇸_US_美国
+      - us
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇦🇲_AM_亚美尼亚
-      - default_name
-      - 🇮🇷_IR_伊朗->🇺🇸_US_美国
+      - us
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇦🇲_AM_亚美尼亚
-      - default_name
-      - 🇮🇷_IR_伊朗->🇺🇸_US_美国
+      - us
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇦🇲_AM_亚美尼亚
-      - default_name
-      - 🇮🇷_IR_伊朗->🇺🇸_US_美国
+      - us
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇦🇲_AM_亚美尼亚
-      - default_name
-      - 🇮🇷_IR_伊朗->🇺🇸_US_美国
+      - us
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇦🇲_AM_亚美尼亚
-      - default_name
-      - 🇮🇷_IR_伊朗->🇺🇸_US_美国
+      - us
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -88,9 +78,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇦🇲_AM_亚美尼亚
-      - default_name
-      - 🇮🇷_IR_伊朗->🇺🇸_US_美国
+      - us
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -123,6 +111,7 @@ rules:
   - DOMAIN-SUFFIX,routerlogin.com,🎯 全球直连
   - DOMAIN-SUFFIX,tendawifi.com,🎯 全球直连
   - DOMAIN-SUFFIX,zte.home,🎯 全球直连
+  - DOMAIN-SUFFIX,tplogin.cn,🎯 全球直连
   - DOMAIN-KEYWORD,admarvel,🛑 全球拦截
   - DOMAIN-KEYWORD,admaster,🛑 全球拦截
   - DOMAIN-KEYWORD,adsage,🛑 全球拦截
@@ -1924,6 +1913,7 @@ rules:
   - DOMAIN-SUFFIX,aiv-cdn.net,🌍 国外媒体
   - DOMAIN-SUFFIX,aiv-delivery.net,🌍 国外媒体
   - DOMAIN-SUFFIX,amazon.jobs,🌍 国外媒体
+  - DOMAIN-SUFFIX,amazonuniversity.jobs,🌍 国外媒体
   - DOMAIN-SUFFIX,amazonvideo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,media-amazon.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pv-cdn.net,🌍 国外媒体
@@ -2153,18 +2143,18 @@ rules:
   - DOMAIN-SUFFIX,twitch-ext.rootonline.de,🌍 国外媒体
   - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
+  - PROCESS-NAME,com.viu.pad,🌍 国外媒体
+  - PROCESS-NAME,com.viu.phone,🌍 国外媒体
+  - PROCESS-NAME,com.vuclip.viu,🌍 国外媒体
   - DOMAIN,api.viu.now.com,🌍 国外媒体
   - DOMAIN,d1k2us671qcoau.cloudfront.net,🌍 国外媒体
   - DOMAIN,d2anahhhmp1ffz.cloudfront.net,🌍 国外媒体
   - DOMAIN,dfp6rglgjqszk.cloudfront.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,bootstrapcdn.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,cognito-identity.us-east-1.amazonaws.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,firebaseio.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,jwpcdn.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,jwplayer.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,d1k2us671qcoau.cloudfront.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,d2anahhhmp1ffz.cloudfront.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dfp6rglgjqszk.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,mobileanalytics.us-east-1.amazonaws.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,nowe.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.now.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.tv,🌍 国外媒体
@@ -2610,6 +2600,8 @@ rules:
   - DOMAIN-SUFFIX,icntv.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,flzbcdn.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,ocnttv.com,🚀 节点选择
+  - DOMAIN-SUFFIX,vikacg.com,🚀 节点选择
+  - DOMAIN-SUFFIX,picjs.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,13th.tech,🎯 全球直连
   - DOMAIN-SUFFIX,423down.com,🎯 全球直连
   - DOMAIN-SUFFIX,bokecc.com,🎯 全球直连
