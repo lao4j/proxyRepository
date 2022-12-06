@@ -1,9 +1,9 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2022-12-06 04:34:46
+#  创建时间：2022-12-06 11:08:26
 #  模版：v2rayse默认模版
-#  节点数量：6
+#  节点数量：10
 #-------------------------------------------------------------#
 #
 port: 7890
@@ -13,81 +13,109 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"trojan","name":"🇹🇼_TW_台湾_1","server":"211.72.35.155","port":3389,"password":"b84d16a244460e09","udp":true,"skip-cert-verify":true}
-  - {"type":"ssr","name":"🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_1","server":"116.162.120.23","port":561,"protocol":"auth_aes128_md5","cipher":"chacha20-ietf","obfs":"plain","password":"mblank1port","obfs-param":"dC5tZS92cG5oYXQ=","protocol-param":"27445:jgjgjgjgjgjg"}
-  - {"type":"trojan","name":"🇹🇼_TW_台湾_2","server":"211.72.35.152","port":3389,"password":"b84d16a244460e09","udp":true,"skip-cert-verify":true}
-  - {"type":"ssr","name":"🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_2","server":"116.162.120.30","port":561,"protocol":"auth_aes128_md5","cipher":"chacha20-ietf","obfs":"plain","password":"mblank1port","obfs-param":"dC5tZS92cG5oYXQ=","protocol-param":"27445:jgjgjgjgjgjg"}
-  - {"type":"trojan","name":"🇹🇼_TW_台湾_3","server":"211.72.35.157","port":3389,"password":"0cc6b4268dea0ba8","udp":true,"skip-cert-verify":true}
   - {"type":"ssr","name":"🇯🇵_JP_日本","server":"jp-am48-6.eqnode.net","port":8081,"protocol":"origin","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","password":"eAokbaDN6"}
+  - {"type":"ssr","name":"🇸🇬_SG_新加坡","server":"sg-am3.eqsunshine.com","port":32001,"protocol":"origin","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","password":"3g0dHlKME"}
+  - {"type":"ssr","name":"🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_1","server":"116.162.120.23","port":561,"protocol":"auth_aes128_md5","cipher":"chacha20-ietf","obfs":"plain","password":"mblank1port","obfs-param":"dC5tZS92cG5oYXQ=","protocol-param":"27445:jgjgjgjgjgjg"}
+  - {"type":"trojan","name":"🇹🇼_TW_台湾_1","server":"211.72.35.152","port":3389,"password":"b84d16a244460e09","udp":true,"skip-cert-verify":true}
+  - {"type":"ssr","name":"🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_2","server":"116.162.120.30","port":561,"protocol":"auth_aes128_md5","cipher":"chacha20-ietf","obfs":"plain","password":"mblank1port","obfs-param":"dC5tZS92cG5oYXQ=","protocol-param":"27445:jgjgjgjgjgjg"}
+  - {"type":"vmess","name":"🇧🇿_BZ_伯利兹->🇺🇸_US_美国","ws-opts":{"path":"/5QNROSRV","headers":{"host":"oplg1.zhujicn2.com"}},"server":"203.30.188.189","port":443,"uuid":"56a2188b-2ab7-402c-b9b8-34847fdf0958","alterId":0,"cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇧🇿_BZ_伯利兹->🇫🇷_FR_法国","ws-opts":{"path":"/IYKLD53M","headers":{"host":"opfr1.v2rayfree1.xyz"}},"server":"203.30.188.120","port":443,"uuid":"4612618c-24cd-4379-9924-cfdf3d61fa5a","alterId":0,"cipher":"auto","network":"ws","tls":true}
+  - {"type":"trojan","name":"🇹🇼_TW_台湾_2","server":"211.72.35.157","port":3389,"password":"0cc6b4268dea0ba8","udp":true,"skip-cert-verify":true}
+  - {"type":"vmess","name":"default_name","ws-opts":{"path":"/sshkit/fdfadsfa/63848bfe228fd/","headers":{"host":"us-lb.sshkit.org"}},"server":"uicdn.cf","port":80,"uuid":"6fea1649-425b-4092-bf53-29792152c925","alterId":0,"cipher":"auto","network":"ws"}
+  - {"type":"trojan","name":"🇹🇼_TW_台湾_3","server":"211.72.35.155","port":3389,"password":"b84d16a244460e09","udp":true,"skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇹🇼_TW_台湾_1
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_1
-      - 🇹🇼_TW_台湾_2
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_2
-      - 🇹🇼_TW_台湾_3
       - 🇯🇵_JP_日本
+      - 🇸🇬_SG_新加坡
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_1
+      - 🇹🇼_TW_台湾_1
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_2
+      - 🇧🇿_BZ_伯利兹->🇺🇸_US_美国
+      - 🇧🇿_BZ_伯利兹->🇫🇷_FR_法国
+      - 🇹🇼_TW_台湾_2
+      - default_name
+      - 🇹🇼_TW_台湾_3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇹🇼_TW_台湾_1
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_1
-      - 🇹🇼_TW_台湾_2
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_2
-      - 🇹🇼_TW_台湾_3
       - 🇯🇵_JP_日本
+      - 🇸🇬_SG_新加坡
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_1
+      - 🇹🇼_TW_台湾_1
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_2
+      - 🇧🇿_BZ_伯利兹->🇺🇸_US_美国
+      - 🇧🇿_BZ_伯利兹->🇫🇷_FR_法国
+      - 🇹🇼_TW_台湾_2
+      - default_name
+      - 🇹🇼_TW_台湾_3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇹🇼_TW_台湾_1
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_1
-      - 🇹🇼_TW_台湾_2
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_2
-      - 🇹🇼_TW_台湾_3
       - 🇯🇵_JP_日本
+      - 🇸🇬_SG_新加坡
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_1
+      - 🇹🇼_TW_台湾_1
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_2
+      - 🇧🇿_BZ_伯利兹->🇺🇸_US_美国
+      - 🇧🇿_BZ_伯利兹->🇫🇷_FR_法国
+      - 🇹🇼_TW_台湾_2
+      - default_name
+      - 🇹🇼_TW_台湾_3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇹🇼_TW_台湾_1
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_1
-      - 🇹🇼_TW_台湾_2
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_2
-      - 🇹🇼_TW_台湾_3
       - 🇯🇵_JP_日本
+      - 🇸🇬_SG_新加坡
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_1
+      - 🇹🇼_TW_台湾_1
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_2
+      - 🇧🇿_BZ_伯利兹->🇺🇸_US_美国
+      - 🇧🇿_BZ_伯利兹->🇫🇷_FR_法国
+      - 🇹🇼_TW_台湾_2
+      - default_name
+      - 🇹🇼_TW_台湾_3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇹🇼_TW_台湾_1
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_1
-      - 🇹🇼_TW_台湾_2
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_2
-      - 🇹🇼_TW_台湾_3
       - 🇯🇵_JP_日本
+      - 🇸🇬_SG_新加坡
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_1
+      - 🇹🇼_TW_台湾_1
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_2
+      - 🇧🇿_BZ_伯利兹->🇺🇸_US_美国
+      - 🇧🇿_BZ_伯利兹->🇫🇷_FR_法国
+      - 🇹🇼_TW_台湾_2
+      - default_name
+      - 🇹🇼_TW_台湾_3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇹🇼_TW_台湾_1
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_1
-      - 🇹🇼_TW_台湾_2
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_2
-      - 🇹🇼_TW_台湾_3
       - 🇯🇵_JP_日本
+      - 🇸🇬_SG_新加坡
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_1
+      - 🇹🇼_TW_台湾_1
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_2
+      - 🇧🇿_BZ_伯利兹->🇺🇸_US_美国
+      - 🇧🇿_BZ_伯利兹->🇫🇷_FR_法国
+      - 🇹🇼_TW_台湾_2
+      - default_name
+      - 🇹🇼_TW_台湾_3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -110,12 +138,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇹🇼_TW_台湾_1
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_1
-      - 🇹🇼_TW_台湾_2
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_2
-      - 🇹🇼_TW_台湾_3
       - 🇯🇵_JP_日本
+      - 🇸🇬_SG_新加坡
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_1
+      - 🇹🇼_TW_台湾_1
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦_2
+      - 🇧🇿_BZ_伯利兹->🇺🇸_US_美国
+      - 🇧🇿_BZ_伯利兹->🇫🇷_FR_法国
+      - 🇹🇼_TW_台湾_2
+      - default_name
+      - 🇹🇼_TW_台湾_3
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
