@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-02-06 19:24:24
+# 创建时间：2023-02-06 20:09:19
 # 使用模版：ACL4SSR_AdblockPlus.ini
-# 节点数量：3
+# 节点数量：17
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,60 +21,158 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"新加坡01","type":"trojan","server":"120.240.45.159","port":10092,"udp":true,"password":"59a599b2-a052-4a82-87a6-e9251b52bb09","skip-cert-verify":true}
-  - {"name":"🇯🇵JP-Linode","type":"ss","server":"113.56.214.53","port":44301,"password":"59a599b2-a052-4a82-87a6-e9251b52bb09","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇸🇬SG-Catixs","type":"ss","server":"123.6.102.115","port":45206,"password":"4d5a811b-2289-43c3-a042-abd484e7505b","cipher":"aes-256-gcm"}
+  - {"name":"更多节点关注@ShareCentrePro","type":"vmess","server":"127.0.0.1","port":443,"cipher":"auto","uuid":"20e92881-5fb4-4b05-bc77-57929476dc69","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"sharecentre.online","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"sharecentre.online"}}}
+  - {"name":"「SCP」US-CF1","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"20e92881-5fb4-4b05-bc77-57929476dc69","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"us-st-1.sharecentre.online","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"us-st-1.sharecentre.online"}}}
+  - {"name":"「SCP」JP-蛋糕并不是谎言","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"20e92881-5fb4-4b05-bc77-57929476dc69","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"opc-jp.sharecentre.online","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"opc-jp.sharecentre.online"}}}
+  - {"name":"「SCP」SG-Gcore","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"20e92881-5fb4-4b05-bc77-57929476dc69","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"sg-gcore.sharecentre.online","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"sg-gcore.sharecentre.online"}}}
+  - {"name":"「SCP」US-DP2","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"20e92881-5fb4-4b05-bc77-57929476dc69","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"us-dp2.sharecentre.online","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"us-dp2.sharecentre.online"}}}
+  - {"name":"「SCP」NL-CF","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"20e92881-5fb4-4b05-bc77-57929476dc69","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"nl.sharecentre.online","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"nl.sharecentre.online"}}}
+  - {"name":"「SCP」HK-CF-Gcore","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"20e92881-5fb4-4b05-bc77-57929476dc69","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"hk-gcore.sharecentre.online","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"hk-gcore.sharecentre.online"}}}
+  - {"name":"「SCP」LU-CF","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"20e92881-5fb4-4b05-bc77-57929476dc69","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"lu.sharecentre.online","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"lu.sharecentre.online"}}}
+  - {"name":"「SCP」US-DP","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"20e92881-5fb4-4b05-bc77-57929476dc69","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"us-dp.sharecentre.online","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"us-dp.sharecentre.online"}}}
+  - {"name":"「SCP」US-BuyVM","type":"vmess","server":"mncc.cf","port":443,"cipher":"auto","uuid":"20e92881-5fb4-4b05-bc77-57929476dc69","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"mncc.cf","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"mncc.cf"}}}
+  - {"name":"「SCP」DE-CF1","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"20e92881-5fb4-4b05-bc77-57929476dc69","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"de-1.sharecentre.online","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"de-1.sharecentre.online"}}}
+  - {"name":"「SCP」DE-CF2","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"20e92881-5fb4-4b05-bc77-57929476dc69","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"de-2.sharecentre.online","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"de-2.sharecentre.online"}}}
+  - {"name":"「SCP」UK-CF1","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"20e92881-5fb4-4b05-bc77-57929476dc69","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"uk-1.sharecentre.online","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"uk-1.sharecentre.online"}}}
+  - {"name":"「SCP」UK-CF2","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"20e92881-5fb4-4b05-bc77-57929476dc69","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"uk-2.sharecentre.online","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"uk-2.sharecentre.online"}}}
+  - {"name":"「SCP」SG-CF","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"20e92881-5fb4-4b05-bc77-57929476dc69","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"sg-1.sharecentre.online","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"sg-1.sharecentre.online"}}}
+  - {"name":"「SCP」KR-CF","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"20e92881-5fb4-4b05-bc77-57929476dc69","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"kr.sharecentre.online","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"kr.sharecentre.online"}}}
+  - {"name":"「SCP」KH-CF","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"20e92881-5fb4-4b05-bc77-57929476dc69","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"kh.sharecentre.online","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"kh.sharecentre.online"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 新加坡01
-      - 🇯🇵JP-Linode
-      - 🇸🇬SG-Catixs
+      - 更多节点关注@ShareCentrePro
+      - 「SCP」US-CF1
+      - 「SCP」JP-蛋糕并不是谎言
+      - 「SCP」SG-Gcore
+      - 「SCP」US-DP2
+      - 「SCP」NL-CF
+      - 「SCP」HK-CF-Gcore
+      - 「SCP」LU-CF
+      - 「SCP」US-DP
+      - 「SCP」US-BuyVM
+      - 「SCP」DE-CF1
+      - 「SCP」DE-CF2
+      - 「SCP」UK-CF1
+      - 「SCP」UK-CF2
+      - 「SCP」SG-CF
+      - 「SCP」KR-CF
+      - 「SCP」KH-CF
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 新加坡01
-      - 🇯🇵JP-Linode
-      - 🇸🇬SG-Catixs
+      - 更多节点关注@ShareCentrePro
+      - 「SCP」US-CF1
+      - 「SCP」JP-蛋糕并不是谎言
+      - 「SCP」SG-Gcore
+      - 「SCP」US-DP2
+      - 「SCP」NL-CF
+      - 「SCP」HK-CF-Gcore
+      - 「SCP」LU-CF
+      - 「SCP」US-DP
+      - 「SCP」US-BuyVM
+      - 「SCP」DE-CF1
+      - 「SCP」DE-CF2
+      - 「SCP」UK-CF1
+      - 「SCP」UK-CF2
+      - 「SCP」SG-CF
+      - 「SCP」KR-CF
+      - 「SCP」KH-CF
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡01
-      - 🇯🇵JP-Linode
-      - 🇸🇬SG-Catixs
+      - 更多节点关注@ShareCentrePro
+      - 「SCP」US-CF1
+      - 「SCP」JP-蛋糕并不是谎言
+      - 「SCP」SG-Gcore
+      - 「SCP」US-DP2
+      - 「SCP」NL-CF
+      - 「SCP」HK-CF-Gcore
+      - 「SCP」LU-CF
+      - 「SCP」US-DP
+      - 「SCP」US-BuyVM
+      - 「SCP」DE-CF1
+      - 「SCP」DE-CF2
+      - 「SCP」UK-CF1
+      - 「SCP」UK-CF2
+      - 「SCP」SG-CF
+      - 「SCP」KR-CF
+      - 「SCP」KH-CF
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 新加坡01
-      - 🇯🇵JP-Linode
-      - 🇸🇬SG-Catixs
+      - 更多节点关注@ShareCentrePro
+      - 「SCP」US-CF1
+      - 「SCP」JP-蛋糕并不是谎言
+      - 「SCP」SG-Gcore
+      - 「SCP」US-DP2
+      - 「SCP」NL-CF
+      - 「SCP」HK-CF-Gcore
+      - 「SCP」LU-CF
+      - 「SCP」US-DP
+      - 「SCP」US-BuyVM
+      - 「SCP」DE-CF1
+      - 「SCP」DE-CF2
+      - 「SCP」UK-CF1
+      - 「SCP」UK-CF2
+      - 「SCP」SG-CF
+      - 「SCP」KR-CF
+      - 「SCP」KH-CF
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 新加坡01
-      - 🇯🇵JP-Linode
-      - 🇸🇬SG-Catixs
+      - 更多节点关注@ShareCentrePro
+      - 「SCP」US-CF1
+      - 「SCP」JP-蛋糕并不是谎言
+      - 「SCP」SG-Gcore
+      - 「SCP」US-DP2
+      - 「SCP」NL-CF
+      - 「SCP」HK-CF-Gcore
+      - 「SCP」LU-CF
+      - 「SCP」US-DP
+      - 「SCP」US-BuyVM
+      - 「SCP」DE-CF1
+      - 「SCP」DE-CF2
+      - 「SCP」UK-CF1
+      - 「SCP」UK-CF2
+      - 「SCP」SG-CF
+      - 「SCP」KR-CF
+      - 「SCP」KH-CF
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 新加坡01
-      - 🇯🇵JP-Linode
-      - 🇸🇬SG-Catixs
+      - 更多节点关注@ShareCentrePro
+      - 「SCP」US-CF1
+      - 「SCP」JP-蛋糕并不是谎言
+      - 「SCP」SG-Gcore
+      - 「SCP」US-DP2
+      - 「SCP」NL-CF
+      - 「SCP」HK-CF-Gcore
+      - 「SCP」LU-CF
+      - 「SCP」US-DP
+      - 「SCP」US-BuyVM
+      - 「SCP」DE-CF1
+      - 「SCP」DE-CF2
+      - 「SCP」UK-CF1
+      - 「SCP」UK-CF2
+      - 「SCP」SG-CF
+      - 「SCP」KR-CF
+      - 「SCP」KH-CF
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -102,9 +200,23 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡01
-      - 🇯🇵JP-Linode
-      - 🇸🇬SG-Catixs
+      - 更多节点关注@ShareCentrePro
+      - 「SCP」US-CF1
+      - 「SCP」JP-蛋糕并不是谎言
+      - 「SCP」SG-Gcore
+      - 「SCP」US-DP2
+      - 「SCP」NL-CF
+      - 「SCP」HK-CF-Gcore
+      - 「SCP」LU-CF
+      - 「SCP」US-DP
+      - 「SCP」US-BuyVM
+      - 「SCP」DE-CF1
+      - 「SCP」DE-CF2
+      - 「SCP」UK-CF1
+      - 「SCP」UK-CF2
+      - 「SCP」SG-CF
+      - 「SCP」KR-CF
+      - 「SCP」KH-CF
 
 rules:
 # 本地/局域网地址
