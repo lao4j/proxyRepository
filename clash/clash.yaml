@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-02-08 17:02:24
+# 创建时间：2023-02-08 18:04:32
 # 使用模版：ACL4SSR_AdblockPlus.ini
-# 节点数量：1
+# 节点数量：2
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,7 +21,8 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"cf","type":"vmess","server":"icook.tw","port":443,"cipher":"auto","uuid":"b15e1376-f1fd-40da-a6e6-998a34afff71","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"kyokusanagiyou.739256.xyz"}},"origin":"vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogImNmIiwNCiAgImFkZCI6ICJpY29vay50dyIsDQogICJwb3J0IjogIjQ0MyIsDQogICJpZCI6ICJiMTVlMTM3Ni1mMWZkLTQwZGEtYTZlNi05OThhMzRhZmZmNzEiLA0KICAiYWlkIjogIjAiLA0KICAic2N5IjogImF1dG8iLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogImt5b2t1c2FuYWdpeW91LjczOTI1Ni54eXoiLA0KICAicGF0aCI6ICIvIiwNCiAgInRscyI6ICJ0bHMiLA0KICAic25pIjogIiIsDQogICJhbHBuIjogIiINCn0="}
+  - {"name":"cf","type":"vmess","server":"ip.skk.moe","port":443,"cipher":"auto","uuid":"3a578e93-bce9-49d1-ebcd-901107f52739","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"justhost.739256.xyz"}},"origin":"vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogImNmIiwNCiAgImFkZCI6ICJpcC5za2subW9lIiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgImlkIjogIjNhNTc4ZTkzLWJjZTktNDlkMS1lYmNkLTkwMTEwN2Y1MjczOSIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAianVzdGhvc3QuNzM5MjU2Lnh5eiIsDQogICJwYXRoIjogIi8iLA0KICAidGxzIjogInRscyIsDQogICJzbmkiOiAiIiwNCiAgImFscG4iOiAiIg0KfQ=="}
+  - {"name":"ws","type":"vmess","server":"45.129.2.237","port":10258,"cipher":"auto","uuid":"add194d6-192c-4ea3-a5af-eea994390831","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/"},"origin":"vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIndzIiwNCiAgImFkZCI6ICI0NS4xMjkuMi4yMzciLA0KICAicG9ydCI6ICIxMDI1OCIsDQogICJpZCI6ICJhZGQxOTRkNi0xOTJjLTRlYTMtYTVhZi1lZWE5OTQzOTA4MzEiLA0KICAiYWlkIjogIjAiLA0KICAic2N5IjogImF1dG8iLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogIiIsDQogICJwYXRoIjogIi8iLA0KICAidGxzIjogIm5vbmUiLA0KICAic25pIjogIiIsDQogICJhbHBuIjogIiINCn0="}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -29,6 +30,7 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - cf
+      - ws
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -36,6 +38,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - cf
+      - ws
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -43,24 +46,28 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - cf
+      - ws
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - cf
+      - ws
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - cf
+      - ws
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - cf
+      - ws
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -89,6 +96,7 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - cf
+      - ws
 
 rules:
 # 本地/局域网地址
