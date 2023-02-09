@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-02-09 10:23:12
+# 创建时间：2023-02-09 10:33:51
 # 使用模版：V2RaySE 默认模版
-# 节点数量：10
+# 节点数量：1
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,109 +21,46 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇸🇬_SG_新加坡_1","type":"trojan","server":"ofsg.bwh088.xyz","port":62011,"udp":true,"password":"14c0784b-827a-40c9-a530-99097619916a","sni":"$ofsg.bwh088.xyz","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇨🇳_CN_中国_1","type":"ss","server":"14.29.124.168","port":25219,"password":"QazEdcTgb159@$*","cipher":"aes-128-cfb"}
-  - {"name":"🇸🇬_SG_新加坡_2","type":"ss","server":"54.169.145.188","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇨🇳_CN_中国_2","type":"ss","server":"14.29.124.168","port":25296,"password":"QazEdcTgb159@$*","cipher":"aes-128-cfb"}
   - {"name":"🇺🇸_US_美国","type":"vmess","server":"172.67.135.57","port":443,"cipher":"auto","uuid":"c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/AUIKN8AU","headers":{"host":"oplg1.cfcdn2.xyz"}}}
-  - {"name":"🇨🇦_CA_加拿大->🇺🇸_US_美国","type":"vmess","server":"23.227.38.39","port":443,"cipher":"auto","uuid":"56a2188b-2ab7-402c-b9b8-34847fdf0958","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/5QNROSRV","headers":{"host":"oplg1.zhujicn2.com"}}}
-  - {"name":"🇩🇪_DE_德国","type":"vmess","server":"us02.wxfz.ml","port":11903,"cipher":"auto","uuid":"197b49d8-5d07-49e6-8944-68afa81a5fe5","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
-  - {"name":"🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦","type":"vmess","server":"els200.jslist.tk","port":8443,"cipher":"auto","uuid":"e30cfa80-bc2c-43df-e808-97876aee77e2","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/wo.php","headers":{"host":"els200.jslist.tk"}}}
-  - {"name":"🇨🇳_CN_中国_3","type":"ss","server":"14.29.124.168","port":25230,"password":"QazEdcTgb159@$*","cipher":"aes-128-cfb"}
-  - {"name":"🇸🇬_SG_新加坡_3","type":"trojan","server":"dl-sg4.steamdownload.top","port":443,"udp":true,"password":"616d6a8a-1fd9-431f-8b7b-bfc9bf27e8c1","sni":"$data-sg.efyunpan.com","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇸🇬_SG_新加坡_1
-      - 🇨🇳_CN_中国_1
-      - 🇸🇬_SG_新加坡_2
-      - 🇨🇳_CN_中国_2
       - 🇺🇸_US_美国
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇨🇳_CN_中国_3
-      - 🇸🇬_SG_新加坡_3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬_SG_新加坡_1
-      - 🇨🇳_CN_中国_1
-      - 🇸🇬_SG_新加坡_2
-      - 🇨🇳_CN_中国_2
       - 🇺🇸_US_美国
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇨🇳_CN_中国_3
-      - 🇸🇬_SG_新加坡_3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇸🇬_SG_新加坡_1
-      - 🇨🇳_CN_中国_1
-      - 🇸🇬_SG_新加坡_2
-      - 🇨🇳_CN_中国_2
       - 🇺🇸_US_美国
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇨🇳_CN_中国_3
-      - 🇸🇬_SG_新加坡_3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇬_SG_新加坡_1
-      - 🇨🇳_CN_中国_1
-      - 🇸🇬_SG_新加坡_2
-      - 🇨🇳_CN_中国_2
       - 🇺🇸_US_美国
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇨🇳_CN_中国_3
-      - 🇸🇬_SG_新加坡_3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇸🇬_SG_新加坡_1
-      - 🇨🇳_CN_中国_1
-      - 🇸🇬_SG_新加坡_2
-      - 🇨🇳_CN_中国_2
       - 🇺🇸_US_美国
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇨🇳_CN_中国_3
-      - 🇸🇬_SG_新加坡_3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇬_SG_新加坡_1
-      - 🇨🇳_CN_中国_1
-      - 🇸🇬_SG_新加坡_2
-      - 🇨🇳_CN_中国_2
       - 🇺🇸_US_美国
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇨🇳_CN_中国_3
-      - 🇸🇬_SG_新加坡_3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -146,16 +83,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬_SG_新加坡_1
-      - 🇨🇳_CN_中国_1
-      - 🇸🇬_SG_新加坡_2
-      - 🇨🇳_CN_中国_2
       - 🇺🇸_US_美国
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇨🇳_CN_中国_3
-      - 🇸🇬_SG_新加坡_3
 
 rules:
 # 本地/局域网地址
