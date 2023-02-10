@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-02-10 10:02:57
-# 使用模版：ACL4SSR.ini
-# 节点数量：10
+# 创建时间：2023-02-10 11:09:06
+# 使用模版：V2RaySE 默认模版
+# 节点数量：1
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,109 +21,46 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇨🇷_CR_哥斯达黎加->🇺🇸_US_美国_1","type":"vmess","server":"190.93.245.2","port":443,"cipher":"auto","uuid":"40d496a6-ceeb-4096-baeb-4cc52b205621","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ECTCJ0DF","headers":{"host":"lg1.trump2023.us"}}}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国","type":"vmess","server":"117.164.185.222","port":16317,"cipher":"auto","uuid":"e62c703f-6910-3858-9228-da30a3e51225","alterId":0,"tls":false,"skip-cert-verify":true,"network":"none"}
-  - {"name":"🇭🇰_HK_香港_1","type":"vmess","server":"47.243.230.222","port":35668,"cipher":"auto","uuid":"ab4df3ef-e77f-4f2a-bfb8-63604412f73b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
-  - {"name":"🇫🇷_FR_法国","type":"ss","server":"149.202.82.172","port":8118,"password":"cdBIDV42DCwnfIN","cipher":"aes-256-gcm"}
-  - {"name":"🇨🇳_CN_中国","type":"ss","server":"14.29.124.168","port":25231,"password":"QazEdcTgb159@$*","cipher":"aes-128-cfb"}
-  - {"name":"🇨🇷_CR_哥斯达黎加->🇺🇸_US_美国_2","type":"vmess","server":"190.93.246.3","port":443,"cipher":"auto","uuid":"56a2188b-2ab7-402c-b9b8-34847fdf0958","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/5QNROSRV","headers":{"host":"oplg1.zhujicn2.com"}}}
-  - {"name":"🇸🇬_SG_新加坡","type":"ss","server":"13.215.178.190","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇨🇳_CN_中国->🇹🇭_TH_泰国","type":"trojan","server":"hnm.xiaohouzi.club","port":47651,"udp":true,"password":"21e10785-99c6-316e-a184-a03384ee06e5","sni":"$$$taiguo.xiaohouzi.club","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国","type":"vmess","server":"141.101.114.150","port":443,"cipher":"auto","uuid":"5f64fa65-7b14-49c5-954d-aa15c6bfcacd","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dongtaiwang.com","headers":{"host":"clash6.ssr-free.xyz"}}}
-  - {"name":"🇭🇰_HK_香港_2","type":"vmess","server":"8.210.236.45","port":61228,"cipher":"auto","uuid":"7e0ee5c7-46ff-42f8-ab7c-06d8227da454","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
+  - {"name":"🇰🇷_KR_韩国","type":"vmess","server":"146.56.40.195","port":21875,"cipher":"auto","uuid":"3462409a-61c9-4fd2-ed4b-fa929217b282","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇷_CR_哥斯达黎加->🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇭🇰_HK_香港_1
-      - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国
-      - 🇨🇷_CR_哥斯达黎加->🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇹🇭_TH_泰国
-      - 🇺🇸_US_美国
-      - 🇭🇰_HK_香港_2
+      - 🇰🇷_KR_韩国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇷_CR_哥斯达黎加->🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇭🇰_HK_香港_1
-      - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国
-      - 🇨🇷_CR_哥斯达黎加->🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇹🇭_TH_泰国
-      - 🇺🇸_US_美国
-      - 🇭🇰_HK_香港_2
+      - 🇰🇷_KR_韩国
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇷_CR_哥斯达黎加->🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇭🇰_HK_香港_1
-      - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国
-      - 🇨🇷_CR_哥斯达黎加->🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇹🇭_TH_泰国
-      - 🇺🇸_US_美国
-      - 🇭🇰_HK_香港_2
+      - 🇰🇷_KR_韩国
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇷_CR_哥斯达黎加->🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇭🇰_HK_香港_1
-      - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国
-      - 🇨🇷_CR_哥斯达黎加->🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇹🇭_TH_泰国
-      - 🇺🇸_US_美国
-      - 🇭🇰_HK_香港_2
+      - 🇰🇷_KR_韩国
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇷_CR_哥斯达黎加->🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇭🇰_HK_香港_1
-      - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国
-      - 🇨🇷_CR_哥斯达黎加->🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇹🇭_TH_泰国
-      - 🇺🇸_US_美国
-      - 🇭🇰_HK_香港_2
+      - 🇰🇷_KR_韩国
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇷_CR_哥斯达黎加->🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇭🇰_HK_香港_1
-      - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国
-      - 🇨🇷_CR_哥斯达黎加->🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇹🇭_TH_泰国
-      - 🇺🇸_US_美国
-      - 🇭🇰_HK_香港_2
+      - 🇰🇷_KR_韩国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -146,16 +83,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇷_CR_哥斯达黎加->🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇭🇰_HK_香港_1
-      - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国
-      - 🇨🇷_CR_哥斯达黎加->🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇹🇭_TH_泰国
-      - 🇺🇸_US_美国
-      - 🇭🇰_HK_香港_2
+      - 🇰🇷_KR_韩国
 
 rules:
 # 本地/局域网地址
