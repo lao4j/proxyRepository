@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-03-04 21:00:49
+# 创建时间：2023-03-04 23:16:58
 # 使用模版：V2RaySE 默认模版
-# 节点数量：1
+# 节点数量：10
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,46 +21,109 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"defaultName","type":"socks5","server":"159.89.90.162","port":59166}
+  - {"name":"🇰🇷_KR_韩国","type":"ss","server":"43.201.70.114","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇦🇺_AU_澳大利亚_1","type":"ss","server":"185.167.116.38","port":9084,"password":"c3NtHJ5ujV2tGDfj","cipher":"aes-256-cfb"}
+  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国","type":"vmess","server":"103.45.78.185","port":10001,"cipher":"auto","uuid":"cb7001c7-e495-41ac-b942-f25f60523414","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵_JP_日本_1","type":"trojan","server":"150.66.13.75","port":443,"udp":true,"password":"df283334-6f6e-4efb-9a8a-b8ecf3040924","sni":"tk15.1coinvp.vip","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇦🇺_AU_澳大利亚_2","type":"ss","server":"185.167.116.253","port":9019,"password":"GA9KzeEgvfxNrgmM","cipher":"aes-256-cfb"}
+  - {"name":"🇳🇱_NL_荷兰","type":"ss","server":"172.99.188.99","port":5003,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
+  - {"name":"🇯🇵_JP_日本_2","type":"ss","server":"43.207.109.176","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇦🇺_AU_澳大利亚_3","type":"ss","server":"185.167.116.38","port":9026,"password":"QWDDvVE9npNurQfA","cipher":"aes-256-cfb"}
+  - {"name":"🇦🇺_AU_澳大利亚_4","type":"ss","server":"185.167.116.38","port":9046,"password":"NvS8N4Vf8qAGPSCL","cipher":"aes-256-cfb"}
+  - {"name":"🇮🇪_IE_爱尔兰","type":"ssr","server":"z0116.security-cloudfront-cdn.com","port":42833,"password":"YpX2opBbrfqJzzMs","cipher":"aes-256-cfb","obfs":"http_simple","protocol":"origin","obfs-param":"d3d3Lm1pY3Jvc29mdC5jb20jVXNlci1BZ2VudDpNb3ppbGxhLzUuMChpUGhvbmU7Q1BVaVBob25lT1MxMV80XzFsaWtlTWFjT1NYKUFwcGxlV2ViS2l0LzYwMi40LjYoS0hUTUwsbGlrZUdlY2tvKVZlcnNpb24vMTAuME1vYmlsZS8xNEQyN01pY3JvTWVzc2VuZ2VyLzYuNS4xM0FjY2VwdDovQ29ubmVjdGlvbjprZWVwLWFsaXZl====","protocol-param":"d3d3Lm1pY3Jvc29mdC5jb20jVXNlci1BZ2VudDpNb3ppbGxhLzUuMChpUGhvbmU7Q1BVaVBob25lT1MxMV80XzFsaWtlTWFjT1NYKUFwcGxlV2ViS2l0LzYwMi40LjYoS0hUTUwsbGlrZUdlY2tvKVZlcnNpb24vMTAuME1vYmlsZS8xNEQyN01pY3JvTWVzc2VuZ2VyLzYuNS4xM0FjY2VwdDovQ29ubmVjdGlvbjprZWVwLWFsaXZl===="}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - defaultName
+      - 🇰🇷_KR_韩国
+      - 🇦🇺_AU_澳大利亚_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇯🇵_JP_日本_1
+      - 🇦🇺_AU_澳大利亚_2
+      - 🇳🇱_NL_荷兰
+      - 🇯🇵_JP_日本_2
+      - 🇦🇺_AU_澳大利亚_3
+      - 🇦🇺_AU_澳大利亚_4
+      - 🇮🇪_IE_爱尔兰
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - defaultName
+      - 🇰🇷_KR_韩国
+      - 🇦🇺_AU_澳大利亚_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇯🇵_JP_日本_1
+      - 🇦🇺_AU_澳大利亚_2
+      - 🇳🇱_NL_荷兰
+      - 🇯🇵_JP_日本_2
+      - 🇦🇺_AU_澳大利亚_3
+      - 🇦🇺_AU_澳大利亚_4
+      - 🇮🇪_IE_爱尔兰
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - defaultName
+      - 🇰🇷_KR_韩国
+      - 🇦🇺_AU_澳大利亚_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇯🇵_JP_日本_1
+      - 🇦🇺_AU_澳大利亚_2
+      - 🇳🇱_NL_荷兰
+      - 🇯🇵_JP_日本_2
+      - 🇦🇺_AU_澳大利亚_3
+      - 🇦🇺_AU_澳大利亚_4
+      - 🇮🇪_IE_爱尔兰
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - defaultName
+      - 🇰🇷_KR_韩国
+      - 🇦🇺_AU_澳大利亚_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇯🇵_JP_日本_1
+      - 🇦🇺_AU_澳大利亚_2
+      - 🇳🇱_NL_荷兰
+      - 🇯🇵_JP_日本_2
+      - 🇦🇺_AU_澳大利亚_3
+      - 🇦🇺_AU_澳大利亚_4
+      - 🇮🇪_IE_爱尔兰
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - defaultName
+      - 🇰🇷_KR_韩国
+      - 🇦🇺_AU_澳大利亚_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇯🇵_JP_日本_1
+      - 🇦🇺_AU_澳大利亚_2
+      - 🇳🇱_NL_荷兰
+      - 🇯🇵_JP_日本_2
+      - 🇦🇺_AU_澳大利亚_3
+      - 🇦🇺_AU_澳大利亚_4
+      - 🇮🇪_IE_爱尔兰
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - defaultName
+      - 🇰🇷_KR_韩国
+      - 🇦🇺_AU_澳大利亚_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇯🇵_JP_日本_1
+      - 🇦🇺_AU_澳大利亚_2
+      - 🇳🇱_NL_荷兰
+      - 🇯🇵_JP_日本_2
+      - 🇦🇺_AU_澳大利亚_3
+      - 🇦🇺_AU_澳大利亚_4
+      - 🇮🇪_IE_爱尔兰
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -83,7 +146,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - defaultName
+      - 🇰🇷_KR_韩国
+      - 🇦🇺_AU_澳大利亚_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇯🇵_JP_日本_1
+      - 🇦🇺_AU_澳大利亚_2
+      - 🇳🇱_NL_荷兰
+      - 🇯🇵_JP_日本_2
+      - 🇦🇺_AU_澳大利亚_3
+      - 🇦🇺_AU_澳大利亚_4
+      - 🇮🇪_IE_爱尔兰
 
 rules:
 # 本地/局域网地址
