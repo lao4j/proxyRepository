@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-03-08 02:59:42
+# 创建时间：2023-03-08 11:17:53
 # 使用模版：V2RaySE 默认模版
-# 节点数量：9
+# 节点数量：1
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,102 +21,46 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇨🇦_CA_加拿大->🇺🇸_US_美国","type":"vmess","server":"shopify.com","port":443,"cipher":"auto","uuid":"c2f0e79f-7e81-4f87-a2da-25f8d6263ff9","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/sbga?ed=2048","headers":{"host":"hax-usovz3.misakano.ml"}}}
-  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"173.245.59.168","port":8080,"cipher":"auto","uuid":"27848739-7e62-4138-9fd3-938a63964b6b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/KTR","headers":{"host":"4.arvanktbr.store"}}}
-  - {"name":"🇨🇳_CN_中国->🇸🇬_SG_新加坡","type":"trojan","server":"hn.xiaohouzi.club","port":19023,"udp":true,"password":"21e10785-99c6-316e-a184-a03384ee06e5","sni":"hn.xiaohouzi.club","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"hucloud.tk","port":443,"cipher":"auto","uuid":"2df3ed4a-4313-45f9-b742-2f02ce593a6e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"🇦🇪_AE_阿联酋","type":"trojan","server":"dubai-m.4422331.xyz","port":10086,"udp":true,"password":"4134219f-2384-449c-92e9-50fe8474c30a","sni":"https://mofa.4422331.xyz","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇭🇰_HK_香港","type":"vmess","server":"8.218.182.129","port":27191,"cipher":"auto","uuid":"a7be7873-3f6f-4aec-a24d-dba051e3283a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
-  - {"name":"🇨🇳_CN_中国->🇹🇼_TW_台湾","type":"ss","server":"14.29.124.168","port":24003,"password":"QazEdcTgb159@$*","cipher":"aes-128-cfb"}
-  - {"name":"🇺🇸_US_美国_3","type":"vmess","server":"172.67.169.131","port":443,"cipher":"auto","uuid":"c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/AUIKN8AU","headers":{"host":"oplg1.cfcdn2.xyz"}}}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国","type":"ss","server":"out.jijifun.com","port":30065,"password":"114514","cipher":"aes-256-gcm"}
+  - {"name":"🇧🇿_BZ_伯利兹","type":"vmess","server":"203.30.191.20","port":443,"cipher":"auto","uuid":"5f64fa65-7b14-49c5-954d-aa15c6bfcacd","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dongtaiwang.com","headers":{"host":"clash6.ssr-free.xyz"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_2
-      - 🇦🇪_AE_阿联酋
-      - 🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇺🇸_US_美国_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇧🇿_BZ_伯利兹
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_2
-      - 🇦🇪_AE_阿联酋
-      - 🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇺🇸_US_美国_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇧🇿_BZ_伯利兹
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_2
-      - 🇦🇪_AE_阿联酋
-      - 🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇺🇸_US_美国_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇧🇿_BZ_伯利兹
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_2
-      - 🇦🇪_AE_阿联酋
-      - 🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇺🇸_US_美国_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇧🇿_BZ_伯利兹
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_2
-      - 🇦🇪_AE_阿联酋
-      - 🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇺🇸_US_美国_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇧🇿_BZ_伯利兹
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_2
-      - 🇦🇪_AE_阿联酋
-      - 🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇺🇸_US_美国_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇧🇿_BZ_伯利兹
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -139,15 +83,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_2
-      - 🇦🇪_AE_阿联酋
-      - 🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇺🇸_US_美国_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇧🇿_BZ_伯利兹
 
 rules:
 # 本地/局域网地址
