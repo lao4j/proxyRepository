@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：27-03-2023 00:16:05
+# 创建时间：2023-03-27 11:38:08
 # 使用模版：V2RaySE 默认模版
-# 节点数量：6
+# 节点数量：5
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,81 +21,74 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"GetAFreeNode.com-Amsterdam","type":"vmess","server":"sht.eqjgkx.xyz","port":443,"cipher":"auto","uuid":"334E6B98-CC1E-4A81-9241-05DA57DF6CE5","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"Amsterdam.kotick.site"}}}
-  - {"name":"GetAFreeNode.com-Social-Media","type":"vmess","server":"sht.eqjgkx.xyz","port":443,"cipher":"auto","uuid":"334E6B98-CC1E-4A81-9241-05DA57DF6CE5","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"Tokyo.kotick.site"}}}
-  - {"name":"GetAFreeNode.com-Seattle","type":"vmess","server":"sht.eqjgkx.xyz","port":443,"cipher":"auto","uuid":"334E6B98-CC1E-4A81-9241-05DA57DF6CE5","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"Seattle.kotick.site"}}}
-  - {"name":"GetAFreeNode.com-Lille","type":"vmess","server":"sht.eqjgkx.xyz","port":443,"cipher":"auto","uuid":"334E6B98-CC1E-4A81-9241-05DA57DF6CE5","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"Lille.kotick.site"}}}
-  - {"name":"GetAFreeNode.com-Kansas","type":"vmess","server":"sht.eqjgkx.xyz","port":443,"cipher":"auto","uuid":"334E6B98-CC1E-4A81-9241-05DA57DF6CE5","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"Kansas.kotick.site"}}}
-  - {"name":"GetAFreeNode.com-Dusseldorf","type":"vmess","server":"sht.eqjgkx.xyz","port":443,"cipher":"auto","uuid":"334E6B98-CC1E-4A81-9241-05DA57DF6CE5","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"Dusseldorf.kotick.site"}}}
+  - {"name":"defaultName_1","type":"ss","server":"54.255.128.51","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"defaultName_2","type":"ss","server":"54.65.160.21","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"defaultName_3","type":"ss","server":"18.142.46.198","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"HW","type":"ss","server":"hzdx.pangupy.com","port":56820,"password":"4d5a811b-2289-43c3-a042-abd484e7505b","cipher":"aes-256-gcm"}
+  - {"name":"HK","type":"vmess","server":"16.162.86.58","port":80,"cipher":"auto","uuid":"4cf4a04d-9118-4e32-a986-52adcc1b55f0","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - GetAFreeNode.com-Amsterdam
-      - GetAFreeNode.com-Social-Media
-      - GetAFreeNode.com-Seattle
-      - GetAFreeNode.com-Lille
-      - GetAFreeNode.com-Kansas
-      - GetAFreeNode.com-Dusseldorf
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - HW
+      - HK
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - GetAFreeNode.com-Amsterdam
-      - GetAFreeNode.com-Social-Media
-      - GetAFreeNode.com-Seattle
-      - GetAFreeNode.com-Lille
-      - GetAFreeNode.com-Kansas
-      - GetAFreeNode.com-Dusseldorf
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - HW
+      - HK
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - GetAFreeNode.com-Amsterdam
-      - GetAFreeNode.com-Social-Media
-      - GetAFreeNode.com-Seattle
-      - GetAFreeNode.com-Lille
-      - GetAFreeNode.com-Kansas
-      - GetAFreeNode.com-Dusseldorf
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - HW
+      - HK
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - GetAFreeNode.com-Amsterdam
-      - GetAFreeNode.com-Social-Media
-      - GetAFreeNode.com-Seattle
-      - GetAFreeNode.com-Lille
-      - GetAFreeNode.com-Kansas
-      - GetAFreeNode.com-Dusseldorf
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - HW
+      - HK
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - GetAFreeNode.com-Amsterdam
-      - GetAFreeNode.com-Social-Media
-      - GetAFreeNode.com-Seattle
-      - GetAFreeNode.com-Lille
-      - GetAFreeNode.com-Kansas
-      - GetAFreeNode.com-Dusseldorf
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - HW
+      - HK
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - GetAFreeNode.com-Amsterdam
-      - GetAFreeNode.com-Social-Media
-      - GetAFreeNode.com-Seattle
-      - GetAFreeNode.com-Lille
-      - GetAFreeNode.com-Kansas
-      - GetAFreeNode.com-Dusseldorf
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - HW
+      - HK
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -118,12 +111,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - GetAFreeNode.com-Amsterdam
-      - GetAFreeNode.com-Social-Media
-      - GetAFreeNode.com-Seattle
-      - GetAFreeNode.com-Lille
-      - GetAFreeNode.com-Kansas
-      - GetAFreeNode.com-Dusseldorf
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - HW
+      - HK
 
 rules:
 # 本地/局域网地址
