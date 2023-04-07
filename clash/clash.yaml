@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-04-07 19:36:40
+# 创建时间：2023-04-07 21:06:54
 # 使用模版：V2RaySE 默认模版
-# 节点数量：1
+# 节点数量：41
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,46 +21,326 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"中转节点-2.94MB/s(Youtube:不良林)","type":"trojan","server":"official.taipeicitygovernment.kiev.ua","port":8443,"udp":true,"password":"5505f6ba-cd37-30ce-8f92-be4120c83d7f","sni":"66.42.40.132","skip-cert-verify":true}
+  - {"name":"JP","type":"vmess","server":"192.203.230.65","port":443,"cipher":"auto","uuid":"c22a5ea3-c9f2-4b16-8f65-827aa25cdcfd","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/kbjc/jp1","headers":{"host":"jp1.hnokkdf.top"}}}
+  - {"name":"defaultName_1","type":"ss","server":"34.213.92.178","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"defaultName_2","type":"ss","server":"43.207.108.0","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"defaultName_3","type":"ss","server":"34.221.94.18","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"defaultName_4","type":"ss","server":"13.250.47.180","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"defaultName_5","type":"ss","server":"54.250.243.47","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"defaultName_6","type":"ss","server":"18.139.85.200","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"备用地址：dh.timeswath.uk","type":"vmess","server":"1.1.1.1","port":80,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"SG-专-1|1x\r","type":"ss","server":"pop.z.xgp.gfwcaonimanmsl.cf","port":33322,"password":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"SG-专-2|1x\r","type":"ss","server":"pop.z.xgp.gfwcaonimanmsl.cf","port":33345,"password":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"SG-游戏专-3|1x\r","type":"ss","server":"pop.z.xgp.gfwcaonimanmsl.cf","port":33344,"password":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"US-高速游戏电信-1|1x","type":"vmess","server":"pop.usa.gfwcaonimanmsl.ml","port":8964,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/name"}}
+  - {"name":"US-电信-2|1x","type":"vmess","server":"pop.usa.gfwcaonimanmsl.ml","port":8965,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/name"}}
+  - {"name":"US-电信-3|1x","type":"vmess","server":"pop.usa.gfwcaonimanmsl.ml","port":8966,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/name"}}
+  - {"name":"US-电信-4|1x","type":"vmess","server":"pop.usa.gfwcaonimanmsl.ml","port":8967,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/name"}}
+  - {"name":"HK-1|倍率:1","type":"vmess","server":"pop.china.hk.3.gfwcaonimanmsl.ml","port":43953,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"HK-2|倍率:1","type":"vmess","server":"pop.shanghai.gfwcaonimanmsl.ml","port":43954,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"HK-3|倍率:1","type":"vmess","server":"pop.shanghai2hk.gfwcaonimanmsl.cf","port":43955,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"特-香港-2|倍率:5","type":"vmess","server":"pop.zhejiang2hk1.gfwcaonimanmsl.cf","port":17000,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"特-香港|倍率:5","type":"vmess","server":"pop.hkg.gfwcaonimanmsl.ml","port":44551,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"Lr-以色列-1|倍率:1","type":"vmess","server":"pop.lr.gfwcaonimanmsl.ml","port":44551,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/1111e"}}
+  - {"name":"Lr-以色列-2|倍率:1","type":"vmess","server":"pop.lr.gfwcaonimanmsl.ml","port":44552,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/1111e"}}
+  - {"name":"DE-联通-1|倍率0.7","type":"vmess","server":"pop.dew.gfwcaonimanmsl.ml","port":8964,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"DE-联通-2|倍率0.7","type":"vmess","server":"pop.dew.gfwcaonimanmsl.ml","port":8965,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"DE-联通-3|倍率0.7","type":"vmess","server":"pop.dew.gfwcaonimanmsl.ml","port":8966,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"DE-联通-4|倍率0.7","type":"vmess","server":"pop.dew.gfwcaonimanmsl.ml","port":8967,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"JP-T-1|倍率:1","type":"vmess","server":"lop.janp2.gfwcaonimanmsl.ml","port":21980,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"JP-T-2|倍率:1","type":"vmess","server":"lop.jp2.gfwcaonimanmsl.ml","port":34456,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"JP-T-3|倍率:1","type":"vmess","server":"lop.hk3.gfwcaonimanmsl.ml","port":12800,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"JP-T-4|倍率:1","type":"vmess","server":"lop.tw1.gfwcaonimanmsl.ml","port":18055,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"韩国-1|倍率:1","type":"vmess","server":"pop.kr.gfwcaonimanmsl.cf","port":10086,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/name"}}
+  - {"name":"韩国-2|倍率:1","type":"vmess","server":"pop.kr.gfwcaonimanmsl.cf","port":10087,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/name"}}
+  - {"name":"韩国-3|倍率:1","type":"vmess","server":"pop.kr.gfwcaonimanmsl.cf","port":10088,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/name"}}
+  - {"name":"韩国-4|倍率:1","type":"vmess","server":"pop.kr.gfwcaonimanmsl.cf","port":10089,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/name"}}
+  - {"name":"US-LAX-1|倍率:0.8","type":"vmess","server":"pop.lax.1.gfwcaonimanmsl.ml","port":25111,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/n445e"}}
+  - {"name":"US-FRU|倍率:0.8","type":"vmess","server":"pop.china.free1.gfwcaonimanmsl.ml","port":15645,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/n445e"}}
+  - {"name":"US-FRU-2|倍率:0.8","type":"vmess","server":"pop.fru.gfwcaonimanmsl.ml","port":45611,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/name"}}
+  - {"name":"US-SFO-1|倍率:0.8","type":"vmess","server":"pop.china.gfwcaonimanmsl.ml","port":10010,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/name"}}
+  - {"name":"NL-AMS|倍率:0.8","type":"vmess","server":"pop.ams.1.gfwcaonimanmsl.ml","port":24414,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/n445e"}}
+  - {"name":"DO-FRA-1|倍率:0.8","type":"vmess","server":"pop.fra.gfwcaonimanmsl.ml","port":25411,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dwawwwa","headers":{"host":"pop.fra.gfwcaonimanmsl.ml"}}}
+  - {"name":"AUS-SNY-1|倍率:0.8","type":"vmess","server":"pop.xini.gfwcaonimanmsl.ml","port":25511,"cipher":"auto","uuid":"03ff74d0-474e-4645-9ef5-7e04b4dc6c94","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/34342me"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 中转节点-2.94MB/s(Youtube:不良林)
+      - JP
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - defaultName_4
+      - defaultName_5
+      - defaultName_6
+      - 备用地址：dh.timeswath.uk
+      - "SG-专-1|1x\r"
+      - "SG-专-2|1x\r"
+      - "SG-游戏专-3|1x\r"
+      - US-高速游戏电信-1|1x
+      - US-电信-2|1x
+      - US-电信-3|1x
+      - US-电信-4|1x
+      - HK-1|倍率:1
+      - HK-2|倍率:1
+      - HK-3|倍率:1
+      - 特-香港-2|倍率:5
+      - 特-香港|倍率:5
+      - Lr-以色列-1|倍率:1
+      - Lr-以色列-2|倍率:1
+      - DE-联通-1|倍率0.7
+      - DE-联通-2|倍率0.7
+      - DE-联通-3|倍率0.7
+      - DE-联通-4|倍率0.7
+      - JP-T-1|倍率:1
+      - JP-T-2|倍率:1
+      - JP-T-3|倍率:1
+      - JP-T-4|倍率:1
+      - 韩国-1|倍率:1
+      - 韩国-2|倍率:1
+      - 韩国-3|倍率:1
+      - 韩国-4|倍率:1
+      - US-LAX-1|倍率:0.8
+      - US-FRU|倍率:0.8
+      - US-FRU-2|倍率:0.8
+      - US-SFO-1|倍率:0.8
+      - NL-AMS|倍率:0.8
+      - DO-FRA-1|倍率:0.8
+      - AUS-SNY-1|倍率:0.8
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 中转节点-2.94MB/s(Youtube:不良林)
+      - JP
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - defaultName_4
+      - defaultName_5
+      - defaultName_6
+      - 备用地址：dh.timeswath.uk
+      - "SG-专-1|1x\r"
+      - "SG-专-2|1x\r"
+      - "SG-游戏专-3|1x\r"
+      - US-高速游戏电信-1|1x
+      - US-电信-2|1x
+      - US-电信-3|1x
+      - US-电信-4|1x
+      - HK-1|倍率:1
+      - HK-2|倍率:1
+      - HK-3|倍率:1
+      - 特-香港-2|倍率:5
+      - 特-香港|倍率:5
+      - Lr-以色列-1|倍率:1
+      - Lr-以色列-2|倍率:1
+      - DE-联通-1|倍率0.7
+      - DE-联通-2|倍率0.7
+      - DE-联通-3|倍率0.7
+      - DE-联通-4|倍率0.7
+      - JP-T-1|倍率:1
+      - JP-T-2|倍率:1
+      - JP-T-3|倍率:1
+      - JP-T-4|倍率:1
+      - 韩国-1|倍率:1
+      - 韩国-2|倍率:1
+      - 韩国-3|倍率:1
+      - 韩国-4|倍率:1
+      - US-LAX-1|倍率:0.8
+      - US-FRU|倍率:0.8
+      - US-FRU-2|倍率:0.8
+      - US-SFO-1|倍率:0.8
+      - NL-AMS|倍率:0.8
+      - DO-FRA-1|倍率:0.8
+      - AUS-SNY-1|倍率:0.8
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中转节点-2.94MB/s(Youtube:不良林)
+      - JP
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - defaultName_4
+      - defaultName_5
+      - defaultName_6
+      - 备用地址：dh.timeswath.uk
+      - "SG-专-1|1x\r"
+      - "SG-专-2|1x\r"
+      - "SG-游戏专-3|1x\r"
+      - US-高速游戏电信-1|1x
+      - US-电信-2|1x
+      - US-电信-3|1x
+      - US-电信-4|1x
+      - HK-1|倍率:1
+      - HK-2|倍率:1
+      - HK-3|倍率:1
+      - 特-香港-2|倍率:5
+      - 特-香港|倍率:5
+      - Lr-以色列-1|倍率:1
+      - Lr-以色列-2|倍率:1
+      - DE-联通-1|倍率0.7
+      - DE-联通-2|倍率0.7
+      - DE-联通-3|倍率0.7
+      - DE-联通-4|倍率0.7
+      - JP-T-1|倍率:1
+      - JP-T-2|倍率:1
+      - JP-T-3|倍率:1
+      - JP-T-4|倍率:1
+      - 韩国-1|倍率:1
+      - 韩国-2|倍率:1
+      - 韩国-3|倍率:1
+      - 韩国-4|倍率:1
+      - US-LAX-1|倍率:0.8
+      - US-FRU|倍率:0.8
+      - US-FRU-2|倍率:0.8
+      - US-SFO-1|倍率:0.8
+      - NL-AMS|倍率:0.8
+      - DO-FRA-1|倍率:0.8
+      - AUS-SNY-1|倍率:0.8
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 中转节点-2.94MB/s(Youtube:不良林)
+      - JP
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - defaultName_4
+      - defaultName_5
+      - defaultName_6
+      - 备用地址：dh.timeswath.uk
+      - "SG-专-1|1x\r"
+      - "SG-专-2|1x\r"
+      - "SG-游戏专-3|1x\r"
+      - US-高速游戏电信-1|1x
+      - US-电信-2|1x
+      - US-电信-3|1x
+      - US-电信-4|1x
+      - HK-1|倍率:1
+      - HK-2|倍率:1
+      - HK-3|倍率:1
+      - 特-香港-2|倍率:5
+      - 特-香港|倍率:5
+      - Lr-以色列-1|倍率:1
+      - Lr-以色列-2|倍率:1
+      - DE-联通-1|倍率0.7
+      - DE-联通-2|倍率0.7
+      - DE-联通-3|倍率0.7
+      - DE-联通-4|倍率0.7
+      - JP-T-1|倍率:1
+      - JP-T-2|倍率:1
+      - JP-T-3|倍率:1
+      - JP-T-4|倍率:1
+      - 韩国-1|倍率:1
+      - 韩国-2|倍率:1
+      - 韩国-3|倍率:1
+      - 韩国-4|倍率:1
+      - US-LAX-1|倍率:0.8
+      - US-FRU|倍率:0.8
+      - US-FRU-2|倍率:0.8
+      - US-SFO-1|倍率:0.8
+      - NL-AMS|倍率:0.8
+      - DO-FRA-1|倍率:0.8
+      - AUS-SNY-1|倍率:0.8
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 中转节点-2.94MB/s(Youtube:不良林)
+      - JP
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - defaultName_4
+      - defaultName_5
+      - defaultName_6
+      - 备用地址：dh.timeswath.uk
+      - "SG-专-1|1x\r"
+      - "SG-专-2|1x\r"
+      - "SG-游戏专-3|1x\r"
+      - US-高速游戏电信-1|1x
+      - US-电信-2|1x
+      - US-电信-3|1x
+      - US-电信-4|1x
+      - HK-1|倍率:1
+      - HK-2|倍率:1
+      - HK-3|倍率:1
+      - 特-香港-2|倍率:5
+      - 特-香港|倍率:5
+      - Lr-以色列-1|倍率:1
+      - Lr-以色列-2|倍率:1
+      - DE-联通-1|倍率0.7
+      - DE-联通-2|倍率0.7
+      - DE-联通-3|倍率0.7
+      - DE-联通-4|倍率0.7
+      - JP-T-1|倍率:1
+      - JP-T-2|倍率:1
+      - JP-T-3|倍率:1
+      - JP-T-4|倍率:1
+      - 韩国-1|倍率:1
+      - 韩国-2|倍率:1
+      - 韩国-3|倍率:1
+      - 韩国-4|倍率:1
+      - US-LAX-1|倍率:0.8
+      - US-FRU|倍率:0.8
+      - US-FRU-2|倍率:0.8
+      - US-SFO-1|倍率:0.8
+      - NL-AMS|倍率:0.8
+      - DO-FRA-1|倍率:0.8
+      - AUS-SNY-1|倍率:0.8
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 中转节点-2.94MB/s(Youtube:不良林)
+      - JP
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - defaultName_4
+      - defaultName_5
+      - defaultName_6
+      - 备用地址：dh.timeswath.uk
+      - "SG-专-1|1x\r"
+      - "SG-专-2|1x\r"
+      - "SG-游戏专-3|1x\r"
+      - US-高速游戏电信-1|1x
+      - US-电信-2|1x
+      - US-电信-3|1x
+      - US-电信-4|1x
+      - HK-1|倍率:1
+      - HK-2|倍率:1
+      - HK-3|倍率:1
+      - 特-香港-2|倍率:5
+      - 特-香港|倍率:5
+      - Lr-以色列-1|倍率:1
+      - Lr-以色列-2|倍率:1
+      - DE-联通-1|倍率0.7
+      - DE-联通-2|倍率0.7
+      - DE-联通-3|倍率0.7
+      - DE-联通-4|倍率0.7
+      - JP-T-1|倍率:1
+      - JP-T-2|倍率:1
+      - JP-T-3|倍率:1
+      - JP-T-4|倍率:1
+      - 韩国-1|倍率:1
+      - 韩国-2|倍率:1
+      - 韩国-3|倍率:1
+      - 韩国-4|倍率:1
+      - US-LAX-1|倍率:0.8
+      - US-FRU|倍率:0.8
+      - US-FRU-2|倍率:0.8
+      - US-SFO-1|倍率:0.8
+      - NL-AMS|倍率:0.8
+      - DO-FRA-1|倍率:0.8
+      - AUS-SNY-1|倍率:0.8
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -83,7 +363,47 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中转节点-2.94MB/s(Youtube:不良林)
+      - JP
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - defaultName_4
+      - defaultName_5
+      - defaultName_6
+      - 备用地址：dh.timeswath.uk
+      - "SG-专-1|1x\r"
+      - "SG-专-2|1x\r"
+      - "SG-游戏专-3|1x\r"
+      - US-高速游戏电信-1|1x
+      - US-电信-2|1x
+      - US-电信-3|1x
+      - US-电信-4|1x
+      - HK-1|倍率:1
+      - HK-2|倍率:1
+      - HK-3|倍率:1
+      - 特-香港-2|倍率:5
+      - 特-香港|倍率:5
+      - Lr-以色列-1|倍率:1
+      - Lr-以色列-2|倍率:1
+      - DE-联通-1|倍率0.7
+      - DE-联通-2|倍率0.7
+      - DE-联通-3|倍率0.7
+      - DE-联通-4|倍率0.7
+      - JP-T-1|倍率:1
+      - JP-T-2|倍率:1
+      - JP-T-3|倍率:1
+      - JP-T-4|倍率:1
+      - 韩国-1|倍率:1
+      - 韩国-2|倍率:1
+      - 韩国-3|倍率:1
+      - 韩国-4|倍率:1
+      - US-LAX-1|倍率:0.8
+      - US-FRU|倍率:0.8
+      - US-FRU-2|倍率:0.8
+      - US-SFO-1|倍率:0.8
+      - NL-AMS|倍率:0.8
+      - DO-FRA-1|倍率:0.8
+      - AUS-SNY-1|倍率:0.8
 
 rules:
 # 本地/局域网地址
