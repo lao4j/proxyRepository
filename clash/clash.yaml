@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-04-10 10:09:02
+# 创建时间：2023-04-10 12:24:27
 # 使用模版：V2RaySE 默认模版
-# 节点数量：1
+# 节点数量：7
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,46 +21,94 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"%25E4%25B8%25AD%25E5%258D%2597%25E6%25B5%25B7","type":"hysteria","server":"62.210.253.147","port":11120,"sni":"www.bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"4c6723","up":300,"down":300}
+  - {"name":"HK","type":"vmess","server":"43.154.250.159","port":30719,"cipher":"auto","uuid":"9dc18843-47c7-4ea2-a8b9-0625a9595efa","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/hk14/getData","headers":{"host":"hk14.linkeden.co"}}}
+  - {"name":"US","type":"vmess","server":"38.60.208.145","port":22753,"cipher":"auto","uuid":"a529cf39-d753-41e5-a72a-64cf8d48f469","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/tk2/getData","headers":{"host":"tk2.verichains.co"}}}
+  - {"name":"KR","type":"vmess","server":"210.87.202.195","port":54236,"cipher":"auto","uuid":"0e99b3e2-576b-490b-879e-fab56be36cd9","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/kor1/getData","headers":{"host":"kor1.verichains.co"}}}
+  - {"name":"SG","type":"vmess","server":"43.156.98.74","port":40516,"cipher":"auto","uuid":"ffd17b65-3ea1-42e6-a75a-9c90caebb530","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/sg5/getData","headers":{"host":"sg5.linkeden.co"}}}
+  - {"name":"JP\r","type":"ss","server":"shcm.donghui.tech","port":10068,"password":"3f95217f-ad8c-4b30-a53e-1f60530c96d9","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"TW\r","type":"ss","server":"shcm.donghui.tech","port":10342,"password":"3f95217f-ad8c-4b30-a53e-1f60530c96d9","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"%25F0%259F%2587%25A8%25F0%259F%2587%25B3%25E4%25B8%25AD%25E5%258D%2597%25E6%25B5%25B7-%25F0%259F%2587%25AB%25F0%259F%2587%25B7%25E5%2587%25A1%25E5%25B0%2594%25E8%25B5%259B%25E5%25AE%25AB%25E4%25B8%2593%25E7%25BA%25BF","type":"hysteria","server":"62.210.253.147","port":11120,"sni":"www.bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"4c6723","up":300,"down":300}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - '%25E4%25B8%25AD%25E5%258D%2597%25E6%25B5%25B7'
+      - HK
+      - US
+      - KR
+      - SG
+      - "JP\r"
+      - "TW\r"
+      - >-
+        %25F0%259F%2587%25A8%25F0%259F%2587%25B3%25E4%25B8%25AD%25E5%258D%2597%25E6%25B5%25B7-%25F0%259F%2587%25AB%25F0%259F%2587%25B7%25E5%2587%25A1%25E5%25B0%2594%25E8%25B5%259B%25E5%25AE%25AB%25E4%25B8%2593%25E7%25BA%25BF
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - '%25E4%25B8%25AD%25E5%258D%2597%25E6%25B5%25B7'
+      - HK
+      - US
+      - KR
+      - SG
+      - "JP\r"
+      - "TW\r"
+      - >-
+        %25F0%259F%2587%25A8%25F0%259F%2587%25B3%25E4%25B8%25AD%25E5%258D%2597%25E6%25B5%25B7-%25F0%259F%2587%25AB%25F0%259F%2587%25B7%25E5%2587%25A1%25E5%25B0%2594%25E8%25B5%259B%25E5%25AE%25AB%25E4%25B8%2593%25E7%25BA%25BF
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - '%25E4%25B8%25AD%25E5%258D%2597%25E6%25B5%25B7'
+      - HK
+      - US
+      - KR
+      - SG
+      - "JP\r"
+      - "TW\r"
+      - >-
+        %25F0%259F%2587%25A8%25F0%259F%2587%25B3%25E4%25B8%25AD%25E5%258D%2597%25E6%25B5%25B7-%25F0%259F%2587%25AB%25F0%259F%2587%25B7%25E5%2587%25A1%25E5%25B0%2594%25E8%25B5%259B%25E5%25AE%25AB%25E4%25B8%2593%25E7%25BA%25BF
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - '%25E4%25B8%25AD%25E5%258D%2597%25E6%25B5%25B7'
+      - HK
+      - US
+      - KR
+      - SG
+      - "JP\r"
+      - "TW\r"
+      - >-
+        %25F0%259F%2587%25A8%25F0%259F%2587%25B3%25E4%25B8%25AD%25E5%258D%2597%25E6%25B5%25B7-%25F0%259F%2587%25AB%25F0%259F%2587%25B7%25E5%2587%25A1%25E5%25B0%2594%25E8%25B5%259B%25E5%25AE%25AB%25E4%25B8%2593%25E7%25BA%25BF
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - '%25E4%25B8%25AD%25E5%258D%2597%25E6%25B5%25B7'
+      - HK
+      - US
+      - KR
+      - SG
+      - "JP\r"
+      - "TW\r"
+      - >-
+        %25F0%259F%2587%25A8%25F0%259F%2587%25B3%25E4%25B8%25AD%25E5%258D%2597%25E6%25B5%25B7-%25F0%259F%2587%25AB%25F0%259F%2587%25B7%25E5%2587%25A1%25E5%25B0%2594%25E8%25B5%259B%25E5%25AE%25AB%25E4%25B8%2593%25E7%25BA%25BF
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - '%25E4%25B8%25AD%25E5%258D%2597%25E6%25B5%25B7'
+      - HK
+      - US
+      - KR
+      - SG
+      - "JP\r"
+      - "TW\r"
+      - >-
+        %25F0%259F%2587%25A8%25F0%259F%2587%25B3%25E4%25B8%25AD%25E5%258D%2597%25E6%25B5%25B7-%25F0%259F%2587%25AB%25F0%259F%2587%25B7%25E5%2587%25A1%25E5%25B0%2594%25E8%25B5%259B%25E5%25AE%25AB%25E4%25B8%2593%25E7%25BA%25BF
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -83,7 +131,14 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - '%25E4%25B8%25AD%25E5%258D%2597%25E6%25B5%25B7'
+      - HK
+      - US
+      - KR
+      - SG
+      - "JP\r"
+      - "TW\r"
+      - >-
+        %25F0%259F%2587%25A8%25F0%259F%2587%25B3%25E4%25B8%25AD%25E5%258D%2597%25E6%25B5%25B7-%25F0%259F%2587%25AB%25F0%259F%2587%25B7%25E5%2587%25A1%25E5%25B0%2594%25E8%25B5%259B%25E5%25AE%25AB%25E4%25B8%2593%25E7%25BA%25BF
 
 rules:
 # 本地/局域网地址
