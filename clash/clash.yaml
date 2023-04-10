@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-04-10 08:23:28
+# 创建时间：2023-04-10 08:35:34
 # 使用模版：V2RaySE 默认模版
-# 节点数量：20
+# 节点数量：26
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -41,6 +41,12 @@ proxies:
   - {"name":"SJ2","type":"vmess","server":"172.67.140.193","port":80,"cipher":"auto","uuid":"2e496758-950e-4549-8842-d5eec98d9fde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"uk1.scproxy.top"}}}
   - {"name":"SJ3","type":"vmess","server":"172.67.57.22","port":80,"cipher":"auto","uuid":"2e496758-950e-4549-8842-d5eec98d9fde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"uk1.scproxy.top"}}}
   - {"name":"ping_pe","type":"vmess","server":"ping.pe","port":80,"cipher":"auto","uuid":"2e496758-950e-4549-8842-d5eec98d9fde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"uk1.scproxy.top"}}}
+  - {"name":"UK","type":"vmess","server":"2606:4700:9b02:acea:108e:3c4:7496:c948","port":80,"cipher":"auto","uuid":"2e496758-950e-4549-8842-d5eec98d9fde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"uk1.scproxy.top"}}}
+  - {"name":"UK1","type":"vmess","server":"2606:4700:9b02:acea:108e:3c4:7496:c948","port":80,"cipher":"auto","uuid":"2e496758-950e-4549-8842-d5eec98d9fde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"uk1.scproxy.top"}}}
+  - {"name":"UK2","type":"vmess","server":"2606:4700:9b02:6822:65ee:6995:deb5:90e","port":80,"cipher":"auto","uuid":"2e496758-950e-4549-8842-d5eec98d9fde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"uk1.scproxy.top"}}}
+  - {"name":"UK3","type":"vmess","server":"2606:4700:9b02:1500:cba8:c8b6:14f8:fcf","port":80,"cipher":"auto","uuid":"2e496758-950e-4549-8842-d5eec98d9fde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"uk1.scproxy.top"}}}
+  - {"name":"UK4","type":"vmess","server":"2606:4700:9b02:face:da4a:38c2:a498:8661","port":80,"cipher":"auto","uuid":"2e496758-950e-4549-8842-d5eec98d9fde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"uk1.scproxy.top"}}}
+  - {"name":"UK5","type":"vmess","server":"2606:4700:9b02:fcaf:91eb:b278:ca8f:f621","port":80,"cipher":"auto","uuid":"2e496758-950e-4549-8842-d5eec98d9fde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"uk1.scproxy.top"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -67,6 +73,12 @@ proxy-groups:
       - SJ2
       - SJ3
       - ping_pe
+      - UK
+      - UK1
+      - UK2
+      - UK3
+      - UK4
+      - UK5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -93,6 +105,12 @@ proxy-groups:
       - SJ2
       - SJ3
       - ping_pe
+      - UK
+      - UK1
+      - UK2
+      - UK3
+      - UK4
+      - UK5
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -119,6 +137,12 @@ proxy-groups:
       - SJ2
       - SJ3
       - ping_pe
+      - UK
+      - UK1
+      - UK2
+      - UK3
+      - UK4
+      - UK5
   - name: 📲 电报信息
     type: select
     proxies:
@@ -144,6 +168,12 @@ proxy-groups:
       - SJ2
       - SJ3
       - ping_pe
+      - UK
+      - UK1
+      - UK2
+      - UK3
+      - UK4
+      - UK5
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -169,6 +199,12 @@ proxy-groups:
       - SJ2
       - SJ3
       - ping_pe
+      - UK
+      - UK1
+      - UK2
+      - UK3
+      - UK4
+      - UK5
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -194,6 +230,12 @@ proxy-groups:
       - SJ2
       - SJ3
       - ping_pe
+      - UK
+      - UK1
+      - UK2
+      - UK3
+      - UK4
+      - UK5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -236,6 +278,12 @@ proxy-groups:
       - SJ2
       - SJ3
       - ping_pe
+      - UK
+      - UK1
+      - UK2
+      - UK3
+      - UK4
+      - UK5
 
 rules:
 # 本地/局域网地址
