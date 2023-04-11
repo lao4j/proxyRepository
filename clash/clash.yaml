@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-04-11 19:39:17
+# 创建时间：2023-04-11 21:52:36
 # 使用模版：V2RaySE 默认模版
-# 节点数量：1
+# 节点数量：4
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,46 +21,67 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"defaultName","type":"http","server":"sub.id9.cc/sub?target=clash&url=https://ghproxy.com/https","port":null,"tls":true,"skip-cert-verify":true}
+  - {"name":"github.com/freefq - 亚太地区  5  ","type":"trojan","server":"us226.ljydw.top","port":443,"udp":true,"password":"c89f1371-e52f-4e6d-85f4-a62df0c7416b","skip-cert-verify":true}
+  - {"name":"github.com/freefq - 美国  15  ","type":"ss","server":"172.99.188.99","port":5003,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
+  - {"name":"github.com/freefq - 美国  22  ","type":"ss","server":"172.99.188.99","port":6379,"password":"zDNVedRFPQexG9v","cipher":"aes-256-gcm"}
+  - {"name":"github.com/freefq - 美国  28  ","type":"ss","server":"172.99.188.99","port":8882,"password":"kDWvXYZoTBcGkC4","cipher":"aes-256-gcm"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - defaultName
+      - 'github.com/freefq - 亚太地区  5  '
+      - 'github.com/freefq - 美国  15  '
+      - 'github.com/freefq - 美国  22  '
+      - 'github.com/freefq - 美国  28  '
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - defaultName
+      - 'github.com/freefq - 亚太地区  5  '
+      - 'github.com/freefq - 美国  15  '
+      - 'github.com/freefq - 美国  22  '
+      - 'github.com/freefq - 美国  28  '
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - defaultName
+      - 'github.com/freefq - 亚太地区  5  '
+      - 'github.com/freefq - 美国  15  '
+      - 'github.com/freefq - 美国  22  '
+      - 'github.com/freefq - 美国  28  '
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - defaultName
+      - 'github.com/freefq - 亚太地区  5  '
+      - 'github.com/freefq - 美国  15  '
+      - 'github.com/freefq - 美国  22  '
+      - 'github.com/freefq - 美国  28  '
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - defaultName
+      - 'github.com/freefq - 亚太地区  5  '
+      - 'github.com/freefq - 美国  15  '
+      - 'github.com/freefq - 美国  22  '
+      - 'github.com/freefq - 美国  28  '
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - defaultName
+      - 'github.com/freefq - 亚太地区  5  '
+      - 'github.com/freefq - 美国  15  '
+      - 'github.com/freefq - 美国  22  '
+      - 'github.com/freefq - 美国  28  '
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -83,7 +104,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - defaultName
+      - 'github.com/freefq - 亚太地区  5  '
+      - 'github.com/freefq - 美国  15  '
+      - 'github.com/freefq - 美国  22  '
+      - 'github.com/freefq - 美国  28  '
 
 rules:
 # 本地/局域网地址
