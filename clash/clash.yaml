@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-04-11 18:02:59
+# 创建时间：2023-04-11 19:39:17
 # 使用模版：V2RaySE 默认模版
-# 节点数量：14
+# 节点数量：1
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,137 +21,46 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"bu_cf","type":"vmess","server":"172.64.93.65","port":8080,"cipher":"auto","uuid":"9e609b63-8694-410a-c1ca-3d452889744d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"longdiyyds.eu.org"}}}
-  - {"name":"hk13","type":"vmess","server":"43.154.189.252","port":41589,"cipher":"auto","uuid":"bc32a4cb-734d-4f55-888b-704ca4950ce9","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/hk13/getData","headers":{"host":"hk13.linkeden.co"}}}
-  - {"name":"hk15","type":"vmess","server":"43.154.76.92","port":25034,"cipher":"auto","uuid":"784272d2-bd2d-438a-bbd4-1271bb1f1b0d","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/hk15/getData","headers":{"host":"hk15.verichains.co"}}}
-  - {"name":"tk2","type":"vmess","server":"38.60.208.145","port":26639,"cipher":"auto","uuid":"a529cf39-d753-41e5-a72a-64cf8d48f469","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/tk2/getData","headers":{"host":"tk2.verichains.co"}}}
-  - {"name":"usa1","type":"vmess","server":"98.126.18.116","port":46506,"cipher":"auto","uuid":"21ebf5af-8383-46ec-a9b8-8ad2e9a7d477","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/usa1/getData","headers":{"host":"usa1.verichains.co"}}}
-  - {"name":"SG_1","type":"ssr","server":"csg03.sglink.store","port":20289,"password":"Jy9iu3","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5","obfs-param":"c29e730795.microsoft.com","protocol-param":"120677:09NPOy"}
-  - {"name":"SG_2","type":"ssr","server":"csg02.sglink.store","port":20285,"password":"Jy9iu3","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5","obfs-param":"c29e730795.microsoft.com","protocol-param":"120677:09NPOy"}
-  - {"name":"defaultName_1","type":"socks5","server":"138.2.50.155","port":54519,"username":"TG","password":"@shadownrocket:TG:@shadownrocket"}
-  - {"name":"defaultName_2","type":"socks5","server":"155.248.194.239","port":48669,"username":"alueeeeee","password":"alueeeeee"}
-  - {"name":"defaultName_3","type":"socks5","server":"172.104.170.64","port":43892,"username":"alueeeeee","password":"alueeeeee"}
-  - {"name":"defaultName_4","type":"socks5","server":"20.243.255.134","port":1080}
-  - {"name":"🇸🇬新加坡 cloudflare节点  @herhero6","type":"vmess","server":"herofree66.tk","port":443,"cipher":"auto","uuid":"1c51101f-7de1-494b-a06e-c86a8fea97e1","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/电报群@herhero6","headers":{"host":"herofree66.tk"}}}
-  - {"name":"defaultName_5","type":"socks5","server":"20.243.255.134","port":1080}
-  - {"name":"defaultName_6","type":"socks5","server":"20.243.255.134","port":1080}
+  - {"name":"defaultName","type":"http","server":"sub.id9.cc/sub?target=clash&url=https://ghproxy.com/https","port":null,"tls":true,"skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - bu_cf
-      - hk13
-      - hk15
-      - tk2
-      - usa1
-      - SG_1
-      - SG_2
-      - defaultName_1
-      - defaultName_2
-      - defaultName_3
-      - defaultName_4
-      - 🇸🇬新加坡 cloudflare节点  @herhero6
-      - defaultName_5
-      - defaultName_6
+      - defaultName
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - bu_cf
-      - hk13
-      - hk15
-      - tk2
-      - usa1
-      - SG_1
-      - SG_2
-      - defaultName_1
-      - defaultName_2
-      - defaultName_3
-      - defaultName_4
-      - 🇸🇬新加坡 cloudflare节点  @herhero6
-      - defaultName_5
-      - defaultName_6
+      - defaultName
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - bu_cf
-      - hk13
-      - hk15
-      - tk2
-      - usa1
-      - SG_1
-      - SG_2
-      - defaultName_1
-      - defaultName_2
-      - defaultName_3
-      - defaultName_4
-      - 🇸🇬新加坡 cloudflare节点  @herhero6
-      - defaultName_5
-      - defaultName_6
+      - defaultName
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - bu_cf
-      - hk13
-      - hk15
-      - tk2
-      - usa1
-      - SG_1
-      - SG_2
-      - defaultName_1
-      - defaultName_2
-      - defaultName_3
-      - defaultName_4
-      - 🇸🇬新加坡 cloudflare节点  @herhero6
-      - defaultName_5
-      - defaultName_6
+      - defaultName
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - bu_cf
-      - hk13
-      - hk15
-      - tk2
-      - usa1
-      - SG_1
-      - SG_2
-      - defaultName_1
-      - defaultName_2
-      - defaultName_3
-      - defaultName_4
-      - 🇸🇬新加坡 cloudflare节点  @herhero6
-      - defaultName_5
-      - defaultName_6
+      - defaultName
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - bu_cf
-      - hk13
-      - hk15
-      - tk2
-      - usa1
-      - SG_1
-      - SG_2
-      - defaultName_1
-      - defaultName_2
-      - defaultName_3
-      - defaultName_4
-      - 🇸🇬新加坡 cloudflare节点  @herhero6
-      - defaultName_5
-      - defaultName_6
+      - defaultName
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -174,20 +83,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - bu_cf
-      - hk13
-      - hk15
-      - tk2
-      - usa1
-      - SG_1
-      - SG_2
-      - defaultName_1
-      - defaultName_2
-      - defaultName_3
-      - defaultName_4
-      - 🇸🇬新加坡 cloudflare节点  @herhero6
-      - defaultName_5
-      - defaultName_6
+      - defaultName
 
 rules:
 # 本地/局域网地址
