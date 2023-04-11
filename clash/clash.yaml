@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-04-11 17:23:36
+# 创建时间：2023-04-11 18:02:59
 # 使用模版：V2RaySE 默认模版
-# 节点数量：12
+# 节点数量：14
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -28,11 +28,13 @@ proxies:
   - {"name":"usa1","type":"vmess","server":"98.126.18.116","port":46506,"cipher":"auto","uuid":"21ebf5af-8383-46ec-a9b8-8ad2e9a7d477","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/usa1/getData","headers":{"host":"usa1.verichains.co"}}}
   - {"name":"SG_1","type":"ssr","server":"csg03.sglink.store","port":20289,"password":"Jy9iu3","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5","obfs-param":"c29e730795.microsoft.com","protocol-param":"120677:09NPOy"}
   - {"name":"SG_2","type":"ssr","server":"csg02.sglink.store","port":20285,"password":"Jy9iu3","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5","obfs-param":"c29e730795.microsoft.com","protocol-param":"120677:09NPOy"}
-  - {"name":"defaultName_1","type":"socks5","server":"138.2.50.155","port":54519,"username":"TG:@shadownrocket","password":"TG:@shadownrocket"}
+  - {"name":"defaultName_1","type":"socks5","server":"138.2.50.155","port":54519,"username":"TG","password":"@shadownrocket:TG:@shadownrocket"}
   - {"name":"defaultName_2","type":"socks5","server":"155.248.194.239","port":48669,"username":"alueeeeee","password":"alueeeeee"}
   - {"name":"defaultName_3","type":"socks5","server":"172.104.170.64","port":43892,"username":"alueeeeee","password":"alueeeeee"}
   - {"name":"defaultName_4","type":"socks5","server":"20.243.255.134","port":1080}
-  - {"name":"🇸🇬新加坡 cloudflare节点  @herhero6","type":"vmess","server":"herofree66.tk","port":443,"cipher":"auto","uuid":"1c51101f-7de1-494b-a06e-c86a8fea97e1","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"herofree66.tk","network":"ws","ws-opts":{"path":"/电报群@herhero6","headers":{"host":"herofree66.tk"}}}
+  - {"name":"🇸🇬新加坡 cloudflare节点  @herhero6","type":"vmess","server":"herofree66.tk","port":443,"cipher":"auto","uuid":"1c51101f-7de1-494b-a06e-c86a8fea97e1","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/电报群@herhero6","headers":{"host":"herofree66.tk"}}}
+  - {"name":"defaultName_5","type":"socks5","server":"20.243.255.134","port":1080}
+  - {"name":"defaultName_6","type":"socks5","server":"20.243.255.134","port":1080}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -51,6 +53,8 @@ proxy-groups:
       - defaultName_3
       - defaultName_4
       - 🇸🇬新加坡 cloudflare节点  @herhero6
+      - defaultName_5
+      - defaultName_6
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -69,6 +73,8 @@ proxy-groups:
       - defaultName_3
       - defaultName_4
       - 🇸🇬新加坡 cloudflare节点  @herhero6
+      - defaultName_5
+      - defaultName_6
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -87,6 +93,8 @@ proxy-groups:
       - defaultName_3
       - defaultName_4
       - 🇸🇬新加坡 cloudflare节点  @herhero6
+      - defaultName_5
+      - defaultName_6
   - name: 📲 电报信息
     type: select
     proxies:
@@ -104,6 +112,8 @@ proxy-groups:
       - defaultName_3
       - defaultName_4
       - 🇸🇬新加坡 cloudflare节点  @herhero6
+      - defaultName_5
+      - defaultName_6
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -121,6 +131,8 @@ proxy-groups:
       - defaultName_3
       - defaultName_4
       - 🇸🇬新加坡 cloudflare节点  @herhero6
+      - defaultName_5
+      - defaultName_6
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -138,6 +150,8 @@ proxy-groups:
       - defaultName_3
       - defaultName_4
       - 🇸🇬新加坡 cloudflare节点  @herhero6
+      - defaultName_5
+      - defaultName_6
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -172,6 +186,8 @@ proxy-groups:
       - defaultName_3
       - defaultName_4
       - 🇸🇬新加坡 cloudflare节点  @herhero6
+      - defaultName_5
+      - defaultName_6
 
 rules:
 # 本地/局域网地址
