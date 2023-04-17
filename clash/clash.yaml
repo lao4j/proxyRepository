@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-04-17 13:09:00
+# 创建时间：2023-04-17 15:11:01
 # 使用模版：V2RaySE 默认模版
-# 节点数量：9
+# 节点数量：18
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,102 +21,165 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"US1","type":"vmess","server":"174.139.126.251","port":36311,"cipher":"auto","uuid":"51695a30-3915-4b9e-9a7f-bc10b5033a41","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/us15/getData","headers":{"host":"us15.verichains.co"}}}
-  - {"name":"US2","type":"vmess","server":"67.229.243.65","port":23738,"cipher":"auto","uuid":"a52907d9-9b68-4d4e-8f1f-2d5e18c98c45","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/us13/getData","headers":{"host":"us13.verichains.co"}}}
-  - {"name":"JP","type":"vmess","server":"38.47.96.59","port":20785,"cipher":"auto","uuid":"38a0b74e-e4df-41ba-bcec-e3c047dc19f1","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/jp1/getData","headers":{"host":"jp1.nb123.info"}}}
-  - {"name":"HK1","type":"vmess","server":"43.154.189.252","port":27137,"cipher":"auto","uuid":"bc32a4cb-734d-4f55-888b-704ca4950ce9","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/hk13/getData","headers":{"host":"hk13.linkeden.co"}}}
-  - {"name":"HK2","type":"vmess","server":"43.154.76.92","port":43631,"cipher":"auto","uuid":"784272d2-bd2d-438a-bbd4-1271bb1f1b0d","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/hk15/getData","headers":{"host":"hk15.verichains.co"}}}
-  - {"name":"HK3","type":"vmess","server":"43.154.185.49","port":41402,"cipher":"auto","uuid":"b74f0019-b839-421f-add8-ffaf94fc3139","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/hk7/getData","headers":{"host":"hk7.verichains.co"}}}
-  - {"name":"SG1","type":"vmess","server":"43.159.53.33","port":33709,"cipher":"auto","uuid":"98821111-93ab-4562-946a-61ba95f472f1","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/sg8/getData","headers":{"host":"sg8.verichains.co"}}}
-  - {"name":"SG2","type":"vmess","server":"43.134.161.69","port":31101,"cipher":"auto","uuid":"d50a35ce-08a4-47d2-8c42-65be8f5cb7c6","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/sgx/getData","headers":{"host":"sgx.verichains.co"}}}
-  - {"name":"SG3","type":"vmess","server":"43.153.222.128","port":54879,"cipher":"auto","uuid":"de482393-068d-4cb1-986e-680ff86d5d7d","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/sg9/getData","headers":{"host":"sg9.verichains.co"}}}
+  - {"name":"俄罗斯E","type":"ssr","server":"45.130.146.158","port":19765,"password":"lncn.org vc9","cipher":"dummy","obfs":"plain","protocol":"origin","group":"Lncn.org"}
+  - {"name":"俄罗斯F","type":"ssr","server":"45.8.158.245","port":19765,"password":"lncn.org vc9","cipher":"dummy","obfs":"plain","protocol":"origin","group":"Lncn.org"}
+  - {"name":"俄罗斯G","type":"ssr","server":"45.130.146.243","port":19765,"password":"lncn.org vc9","cipher":"dummy","obfs":"plain","protocol":"origin","group":"Lncn.org"}
+  - {"name":"俄罗斯H","type":"ssr","server":"91.206.93.170","port":19765,"password":"lncn.org vc9","cipher":"dummy","obfs":"plain","protocol":"origin","group":"Lncn.org"}
+  - {"name":"俄罗斯I","type":"ssr","server":"45.8.159.178","port":19765,"password":"lncn.org vc9","cipher":"dummy","obfs":"plain","protocol":"origin","group":"Lncn.org"}
+  - {"name":"俄罗斯J","type":"ssr","server":"45.89.228.224","port":19765,"password":"lncn.org vc9","cipher":"dummy","obfs":"plain","protocol":"origin","group":"Lncn.org"}
+  - {"name":"俄罗斯K","type":"ssr","server":"45.89.229.165","port":19765,"password":"lncn.org vc9","cipher":"dummy","obfs":"plain","protocol":"origin","group":"Lncn.org"}
+  - {"name":"俄罗斯L","type":"ssr","server":"45.130.146.133","port":19765,"password":"lncn.org vc9","cipher":"dummy","obfs":"plain","protocol":"origin","group":"Lncn.org"}
+  - {"name":"俄罗斯M","type":"ssr","server":"45.8.158.131","port":19765,"password":"lncn.org vc9","cipher":"dummy","obfs":"plain","protocol":"origin","group":"Lncn.org"}
+  - {"name":"俄罗斯N","type":"ssr","server":"45.89.229.124","port":19765,"password":"lncn.org vc9","cipher":"dummy","obfs":"plain","protocol":"origin","group":"Lncn.org"}
+  - {"name":"俄罗斯O","type":"ssr","server":"188.119.65.143","port":19765,"password":"lncn.org vc9","cipher":"dummy","obfs":"plain","protocol":"origin","group":"Lncn.org"}
+  - {"name":"俄罗斯P","type":"ssr","server":"91.206.92.227","port":19765,"password":"lncn.org vc9","cipher":"dummy","obfs":"plain","protocol":"origin","group":"Lncn.org"}
+  - {"name":"江苏省扬州市 移动","type":"vmess","server":"data-hk-v1.shwjfkw.cn","port":50207,"cipher":"auto","uuid":"b1478e24-4916-3abe-8f17-15931012ecbe","alterId":1,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"YTB-awkj"}}}
+  - {"name":"广东省佛山市 移动","type":"vmess","server":"25.v2-ray.cyou","port":23625,"cipher":"auto","uuid":"0dd19d20-ec86-3680-b256-87237bafa89e","alterId":2,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"25.v2-ray.cyou"}}}
+  - {"name":"沙特阿拉伯+Arabic+Computer+System+Co.","type":"ss","server":"85.208.108.94","port":5004,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
+  - {"name":"越南 V2CROSS.COM","type":"vmess","server":"f-as1.wvvvv.eu.org","port":20,"cipher":"auto","uuid":"0da1d372-ec60-4b89-8a3f-79159438c6f0","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"美国 加利福尼亚州圣何塞PEG TECH数据中心","type":"vmess","server":"192.74.228.172","port":42857,"cipher":"auto","uuid":"051b844f-efe3-4847-92aa-66b5de0b6d4e","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点","type":"vmess","server":"172.67.217.222","port":80,"cipher":"auto","uuid":"2e496758-950e-4549-8842-d5eec98d9fde","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"dp3.scproxy.top"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - US1
-      - US2
-      - JP
-      - HK1
-      - HK2
-      - HK3
-      - SG1
-      - SG2
-      - SG3
+      - 俄罗斯E
+      - 俄罗斯F
+      - 俄罗斯G
+      - 俄罗斯H
+      - 俄罗斯I
+      - 俄罗斯J
+      - 俄罗斯K
+      - 俄罗斯L
+      - 俄罗斯M
+      - 俄罗斯N
+      - 俄罗斯O
+      - 俄罗斯P
+      - 江苏省扬州市 移动
+      - 广东省佛山市 移动
+      - 沙特阿拉伯+Arabic+Computer+System+Co.
+      - 越南 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - US1
-      - US2
-      - JP
-      - HK1
-      - HK2
-      - HK3
-      - SG1
-      - SG2
-      - SG3
+      - 俄罗斯E
+      - 俄罗斯F
+      - 俄罗斯G
+      - 俄罗斯H
+      - 俄罗斯I
+      - 俄罗斯J
+      - 俄罗斯K
+      - 俄罗斯L
+      - 俄罗斯M
+      - 俄罗斯N
+      - 俄罗斯O
+      - 俄罗斯P
+      - 江苏省扬州市 移动
+      - 广东省佛山市 移动
+      - 沙特阿拉伯+Arabic+Computer+System+Co.
+      - 越南 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 CloudFlare节点
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US1
-      - US2
-      - JP
-      - HK1
-      - HK2
-      - HK3
-      - SG1
-      - SG2
-      - SG3
+      - 俄罗斯E
+      - 俄罗斯F
+      - 俄罗斯G
+      - 俄罗斯H
+      - 俄罗斯I
+      - 俄罗斯J
+      - 俄罗斯K
+      - 俄罗斯L
+      - 俄罗斯M
+      - 俄罗斯N
+      - 俄罗斯O
+      - 俄罗斯P
+      - 江苏省扬州市 移动
+      - 广东省佛山市 移动
+      - 沙特阿拉伯+Arabic+Computer+System+Co.
+      - 越南 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 CloudFlare节点
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - US1
-      - US2
-      - JP
-      - HK1
-      - HK2
-      - HK3
-      - SG1
-      - SG2
-      - SG3
+      - 俄罗斯E
+      - 俄罗斯F
+      - 俄罗斯G
+      - 俄罗斯H
+      - 俄罗斯I
+      - 俄罗斯J
+      - 俄罗斯K
+      - 俄罗斯L
+      - 俄罗斯M
+      - 俄罗斯N
+      - 俄罗斯O
+      - 俄罗斯P
+      - 江苏省扬州市 移动
+      - 广东省佛山市 移动
+      - 沙特阿拉伯+Arabic+Computer+System+Co.
+      - 越南 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 CloudFlare节点
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - US1
-      - US2
-      - JP
-      - HK1
-      - HK2
-      - HK3
-      - SG1
-      - SG2
-      - SG3
+      - 俄罗斯E
+      - 俄罗斯F
+      - 俄罗斯G
+      - 俄罗斯H
+      - 俄罗斯I
+      - 俄罗斯J
+      - 俄罗斯K
+      - 俄罗斯L
+      - 俄罗斯M
+      - 俄罗斯N
+      - 俄罗斯O
+      - 俄罗斯P
+      - 江苏省扬州市 移动
+      - 广东省佛山市 移动
+      - 沙特阿拉伯+Arabic+Computer+System+Co.
+      - 越南 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 CloudFlare节点
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - US1
-      - US2
-      - JP
-      - HK1
-      - HK2
-      - HK3
-      - SG1
-      - SG2
-      - SG3
+      - 俄罗斯E
+      - 俄罗斯F
+      - 俄罗斯G
+      - 俄罗斯H
+      - 俄罗斯I
+      - 俄罗斯J
+      - 俄罗斯K
+      - 俄罗斯L
+      - 俄罗斯M
+      - 俄罗斯N
+      - 俄罗斯O
+      - 俄罗斯P
+      - 江苏省扬州市 移动
+      - 广东省佛山市 移动
+      - 沙特阿拉伯+Arabic+Computer+System+Co.
+      - 越南 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 CloudFlare节点
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -139,15 +202,24 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US1
-      - US2
-      - JP
-      - HK1
-      - HK2
-      - HK3
-      - SG1
-      - SG2
-      - SG3
+      - 俄罗斯E
+      - 俄罗斯F
+      - 俄罗斯G
+      - 俄罗斯H
+      - 俄罗斯I
+      - 俄罗斯J
+      - 俄罗斯K
+      - 俄罗斯L
+      - 俄罗斯M
+      - 俄罗斯N
+      - 俄罗斯O
+      - 俄罗斯P
+      - 江苏省扬州市 移动
+      - 广东省佛山市 移动
+      - 沙特阿拉伯+Arabic+Computer+System+Co.
+      - 越南 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 CloudFlare节点
 
 rules:
 # 本地/局域网地址
