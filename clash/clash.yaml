@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-04-19 13:01:08
+# 创建时间：2023-04-19 14:54:01
 # 使用模版：V2RaySE 默认模版
-# 节点数量：26
+# 节点数量：10
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,221 +21,109 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"美国 备用防失联","type":"vmess","server":"cf-cdn.syjd.xyz","port":443,"cipher":"auto","uuid":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/cdn","headers":{"host":"los-cdn.syjd.xyz"}}}
-  - {"name":"香港 01\r","type":"trojan","server":"microsoft-hk01.syjd.xyz","port":443,"udp":true,"password":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","sni":"microsoft-hk01.syjd.xyz","skip-cert-verify":true}
-  - {"name":"香港 02\r","type":"trojan","server":"microsoft-hk02.syjd.xyz","port":443,"udp":true,"password":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","sni":"microsoft-hk02.syjd.xyz","skip-cert-verify":true}
-  - {"name":"香港 03\r","type":"trojan","server":"microsoft-hk03.syjd.xyz","port":443,"udp":true,"password":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","sni":"microsoft-hk03.syjd.xyz","skip-cert-verify":true}
-  - {"name":"香港 04（移动优化）\r","type":"trojan","server":"aws-hk01.syjd.xyz","port":7047,"udp":true,"password":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","sni":"aws-hk01.syjd.xyz","skip-cert-verify":true}
-  - {"name":"台湾 流媒体\r","type":"trojan","server":"cdn.twnct.6641634715834932.me","port":7047,"udp":true,"password":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","sni":"cdn.twnct.6641634715834932.me","skip-cert-verify":true}
-  - {"name":"美国 原生ip\r","type":"trojan","server":"microsoft-us.syjd.xyz","port":7777,"udp":true,"password":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","sni":"jp-zs01.78321.xyz","skip-cert-verify":true}
-  - {"name":"美国 1（0.1倍率）\r","type":"trojan","server":"ex-us.syjd.xyz","port":443,"udp":true,"password":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","sni":"jp-zs01.78321.xyz","skip-cert-verify":true}
-  - {"name":"日本 1\r","type":"trojan","server":"jp-csjc.syjd.xyz","port":443,"udp":true,"password":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","sni":"jp-csjc.syjd.xyz","skip-cert-verify":true}
-  - {"name":"日本 2\r","type":"trojan","server":"jp-csjc.syjd.xyz","port":443,"udp":true,"password":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","sni":"jp-csjc.syjd.xyz","skip-cert-verify":true}
-  - {"name":"日本 3\r","type":"trojan","server":"jp-csjc.syjd.xyz","port":443,"udp":true,"password":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","sni":"jp-csjc.syjd.xyz","skip-cert-verify":true}
-  - {"name":"日本 4\r","type":"trojan","server":"jp-csjc.syjd.xyz","port":443,"udp":true,"password":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","sni":"jp-csjc.syjd.xyz","skip-cert-verify":true}
-  - {"name":"日本 5\r","type":"trojan","server":"jp-csjc.syjd.xyz","port":443,"udp":true,"password":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","sni":"jp-csjc.syjd.xyz","skip-cert-verify":true}
-  - {"name":"新加坡 01\r","type":"trojan","server":"sg-csjc.syjd.xyz","port":443,"udp":true,"password":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","sni":"sg-csjc.syjd.xyz","skip-cert-verify":true}
-  - {"name":"新加坡 02\r","type":"trojan","server":"sg-csjc.syjd.xyz","port":443,"udp":true,"password":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","sni":"sg-csjc.syjd.xyz","skip-cert-verify":true}
-  - {"name":"新加坡 03\r","type":"trojan","server":"sg-csjc.syjd.xyz","port":443,"udp":true,"password":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","sni":"sg-csjc.syjd.xyz","skip-cert-verify":true}
-  - {"name":"新加坡 04\r","type":"trojan","server":"sg-csjc.syjd.xyz","port":443,"udp":true,"password":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","sni":"sg-csjc.syjd.xyz","skip-cert-verify":true}
-  - {"name":"新加坡 05\r","type":"trojan","server":"sg-csjc.syjd.xyz","port":443,"udp":true,"password":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","sni":"sg-csjc.syjd.xyz","skip-cert-verify":true}
-  - {"name":"美国 01\r","type":"trojan","server":"microsoft-us.syjd.xyz","port":30006,"udp":true,"password":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","sni":"jp-zs01.78321.xyz","skip-cert-verify":true}
-  - {"name":"美国 02\r","type":"trojan","server":"microsoft-us.syjd.xyz","port":30006,"udp":true,"password":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","sni":"jp-zs01.78321.xyz","skip-cert-verify":true}
-  - {"name":"美国 03\r","type":"trojan","server":"microsoft-us.syjd.xyz","port":30006,"udp":true,"password":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","sni":"jp-zs01.78321.xyz","skip-cert-verify":true}
-  - {"name":"美国 04\r","type":"trojan","server":"microsoft-us.syjd.xyz","port":30006,"udp":true,"password":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","sni":"jp-zs01.78321.xyz","skip-cert-verify":true}
-  - {"name":"美国 05\r","type":"trojan","server":"microsoft-us.syjd.xyz","port":30006,"udp":true,"password":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","sni":"jp-zs01.78321.xyz","skip-cert-verify":true}
-  - {"name":"japan 01\r","type":"ss","server":"zf-shdx.syjd.xyz","port":34500,"password":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","cipher":"aes-128-gcm"}
-  - {"name":"japan 02\r","type":"ss","server":"zf-shdx.syjd.xyz","port":34500,"password":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","cipher":"aes-128-gcm"}
-  - {"name":"japan 03\r","type":"ss","server":"zf-shdx.syjd.xyz","port":34500,"password":"e222ea82-6ce2-4efd-9caa-9d48dd712e64","cipher":"aes-128-gcm"}
+  - {"name":"🇹🇼_TW_台湾","type":"trojan","server":"stw6-tg-data.amazonwebservicess.com","port":443,"udp":true,"password":"05e34875-a77c-4156-8bc8-f815f235905a","sni":"data.amazonwebservicess.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬_SG_新加坡_1","type":"trojan","server":"awssg13-tg-data.amazonwebservicess.com","port":443,"udp":true,"password":"05e34875-a77c-4156-8bc8-f815f235905a","sni":"data.amazonwebservicess.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵_JP_日本","type":"trojan","server":"awsjp1.untilmu.com","port":443,"udp":true,"password":"e94901ec-3572-469b-8bd6-44b57e37852d","sni":"awsjp1.untilmu.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国","type":"vmess","server":"142.4.126.56","port":33302,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬_SG_新加坡_2","type":"trojan","server":"awssg14-data.amazon-azure.com","port":443,"udp":true,"password":"05e34875-a77c-4156-8bc8-f815f235905a","sni":"data.amazon-azure.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬_SG_新加坡_3","type":"trojan","server":"awssg18-data.amazon-azure.com","port":443,"udp":true,"password":"05e34875-a77c-4156-8bc8-f815f235905a","sni":"data.amazon-azure.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国->🇬🇧_GB_英国","type":"vmess","server":"172.67.84.93","port":80,"cipher":"auto","uuid":"2e496758-950e-4549-8842-d5eec98d9fde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"uk1.scproxy.top"}}}
+  - {"name":"🇭🇰_HK_香港->🇳🇱_NL_荷兰_1","type":"vmess","server":"156.245.8.25","port":49920,"cipher":"auto","uuid":"f9fa3a9c-f7d5-414f-88e6-6970585d9949","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇸🇬_SG_新加坡_4","type":"trojan","server":"13.215.209.200","port":443,"udp":true,"password":"05e34875-a77c-4156-8bc8-f815f235905a","sni":"data.amazon-azure.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇭🇰_HK_香港->🇳🇱_NL_荷兰_2","type":"vmess","server":"156.245.8.105","port":30779,"cipher":"auto","uuid":"fe5f69e7-e183-439b-950b-9661ef0651f2","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 美国 备用防失联
-      - "香港 01\r"
-      - "香港 02\r"
-      - "香港 03\r"
-      - "香港 04（移动优化）\r"
-      - "台湾 流媒体\r"
-      - "美国 原生ip\r"
-      - "美国 1（0.1倍率）\r"
-      - "日本 1\r"
-      - "日本 2\r"
-      - "日本 3\r"
-      - "日本 4\r"
-      - "日本 5\r"
-      - "新加坡 01\r"
-      - "新加坡 02\r"
-      - "新加坡 03\r"
-      - "新加坡 04\r"
-      - "新加坡 05\r"
-      - "美国 01\r"
-      - "美国 02\r"
-      - "美国 03\r"
-      - "美国 04\r"
-      - "美国 05\r"
-      - "japan 01\r"
-      - "japan 02\r"
-      - "japan 03\r"
+      - 🇹🇼_TW_台湾
+      - 🇸🇬_SG_新加坡_1
+      - 🇯🇵_JP_日本
+      - 🇺🇸_US_美国
+      - 🇸🇬_SG_新加坡_2
+      - 🇸🇬_SG_新加坡_3
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
+      - 🇭🇰_HK_香港->🇳🇱_NL_荷兰_1
+      - 🇸🇬_SG_新加坡_4
+      - 🇭🇰_HK_香港->🇳🇱_NL_荷兰_2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 美国 备用防失联
-      - "香港 01\r"
-      - "香港 02\r"
-      - "香港 03\r"
-      - "香港 04（移动优化）\r"
-      - "台湾 流媒体\r"
-      - "美国 原生ip\r"
-      - "美国 1（0.1倍率）\r"
-      - "日本 1\r"
-      - "日本 2\r"
-      - "日本 3\r"
-      - "日本 4\r"
-      - "日本 5\r"
-      - "新加坡 01\r"
-      - "新加坡 02\r"
-      - "新加坡 03\r"
-      - "新加坡 04\r"
-      - "新加坡 05\r"
-      - "美国 01\r"
-      - "美国 02\r"
-      - "美国 03\r"
-      - "美国 04\r"
-      - "美国 05\r"
-      - "japan 01\r"
-      - "japan 02\r"
-      - "japan 03\r"
+      - 🇹🇼_TW_台湾
+      - 🇸🇬_SG_新加坡_1
+      - 🇯🇵_JP_日本
+      - 🇺🇸_US_美国
+      - 🇸🇬_SG_新加坡_2
+      - 🇸🇬_SG_新加坡_3
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
+      - 🇭🇰_HK_香港->🇳🇱_NL_荷兰_1
+      - 🇸🇬_SG_新加坡_4
+      - 🇭🇰_HK_香港->🇳🇱_NL_荷兰_2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 备用防失联
-      - "香港 01\r"
-      - "香港 02\r"
-      - "香港 03\r"
-      - "香港 04（移动优化）\r"
-      - "台湾 流媒体\r"
-      - "美国 原生ip\r"
-      - "美国 1（0.1倍率）\r"
-      - "日本 1\r"
-      - "日本 2\r"
-      - "日本 3\r"
-      - "日本 4\r"
-      - "日本 5\r"
-      - "新加坡 01\r"
-      - "新加坡 02\r"
-      - "新加坡 03\r"
-      - "新加坡 04\r"
-      - "新加坡 05\r"
-      - "美国 01\r"
-      - "美国 02\r"
-      - "美国 03\r"
-      - "美国 04\r"
-      - "美国 05\r"
-      - "japan 01\r"
-      - "japan 02\r"
-      - "japan 03\r"
+      - 🇹🇼_TW_台湾
+      - 🇸🇬_SG_新加坡_1
+      - 🇯🇵_JP_日本
+      - 🇺🇸_US_美国
+      - 🇸🇬_SG_新加坡_2
+      - 🇸🇬_SG_新加坡_3
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
+      - 🇭🇰_HK_香港->🇳🇱_NL_荷兰_1
+      - 🇸🇬_SG_新加坡_4
+      - 🇭🇰_HK_香港->🇳🇱_NL_荷兰_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 美国 备用防失联
-      - "香港 01\r"
-      - "香港 02\r"
-      - "香港 03\r"
-      - "香港 04（移动优化）\r"
-      - "台湾 流媒体\r"
-      - "美国 原生ip\r"
-      - "美国 1（0.1倍率）\r"
-      - "日本 1\r"
-      - "日本 2\r"
-      - "日本 3\r"
-      - "日本 4\r"
-      - "日本 5\r"
-      - "新加坡 01\r"
-      - "新加坡 02\r"
-      - "新加坡 03\r"
-      - "新加坡 04\r"
-      - "新加坡 05\r"
-      - "美国 01\r"
-      - "美国 02\r"
-      - "美国 03\r"
-      - "美国 04\r"
-      - "美国 05\r"
-      - "japan 01\r"
-      - "japan 02\r"
-      - "japan 03\r"
+      - 🇹🇼_TW_台湾
+      - 🇸🇬_SG_新加坡_1
+      - 🇯🇵_JP_日本
+      - 🇺🇸_US_美国
+      - 🇸🇬_SG_新加坡_2
+      - 🇸🇬_SG_新加坡_3
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
+      - 🇭🇰_HK_香港->🇳🇱_NL_荷兰_1
+      - 🇸🇬_SG_新加坡_4
+      - 🇭🇰_HK_香港->🇳🇱_NL_荷兰_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 美国 备用防失联
-      - "香港 01\r"
-      - "香港 02\r"
-      - "香港 03\r"
-      - "香港 04（移动优化）\r"
-      - "台湾 流媒体\r"
-      - "美国 原生ip\r"
-      - "美国 1（0.1倍率）\r"
-      - "日本 1\r"
-      - "日本 2\r"
-      - "日本 3\r"
-      - "日本 4\r"
-      - "日本 5\r"
-      - "新加坡 01\r"
-      - "新加坡 02\r"
-      - "新加坡 03\r"
-      - "新加坡 04\r"
-      - "新加坡 05\r"
-      - "美国 01\r"
-      - "美国 02\r"
-      - "美国 03\r"
-      - "美国 04\r"
-      - "美国 05\r"
-      - "japan 01\r"
-      - "japan 02\r"
-      - "japan 03\r"
+      - 🇹🇼_TW_台湾
+      - 🇸🇬_SG_新加坡_1
+      - 🇯🇵_JP_日本
+      - 🇺🇸_US_美国
+      - 🇸🇬_SG_新加坡_2
+      - 🇸🇬_SG_新加坡_3
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
+      - 🇭🇰_HK_香港->🇳🇱_NL_荷兰_1
+      - 🇸🇬_SG_新加坡_4
+      - 🇭🇰_HK_香港->🇳🇱_NL_荷兰_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 美国 备用防失联
-      - "香港 01\r"
-      - "香港 02\r"
-      - "香港 03\r"
-      - "香港 04（移动优化）\r"
-      - "台湾 流媒体\r"
-      - "美国 原生ip\r"
-      - "美国 1（0.1倍率）\r"
-      - "日本 1\r"
-      - "日本 2\r"
-      - "日本 3\r"
-      - "日本 4\r"
-      - "日本 5\r"
-      - "新加坡 01\r"
-      - "新加坡 02\r"
-      - "新加坡 03\r"
-      - "新加坡 04\r"
-      - "新加坡 05\r"
-      - "美国 01\r"
-      - "美国 02\r"
-      - "美国 03\r"
-      - "美国 04\r"
-      - "美国 05\r"
-      - "japan 01\r"
-      - "japan 02\r"
-      - "japan 03\r"
+      - 🇹🇼_TW_台湾
+      - 🇸🇬_SG_新加坡_1
+      - 🇯🇵_JP_日本
+      - 🇺🇸_US_美国
+      - 🇸🇬_SG_新加坡_2
+      - 🇸🇬_SG_新加坡_3
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
+      - 🇭🇰_HK_香港->🇳🇱_NL_荷兰_1
+      - 🇸🇬_SG_新加坡_4
+      - 🇭🇰_HK_香港->🇳🇱_NL_荷兰_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -258,32 +146,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 备用防失联
-      - "香港 01\r"
-      - "香港 02\r"
-      - "香港 03\r"
-      - "香港 04（移动优化）\r"
-      - "台湾 流媒体\r"
-      - "美国 原生ip\r"
-      - "美国 1（0.1倍率）\r"
-      - "日本 1\r"
-      - "日本 2\r"
-      - "日本 3\r"
-      - "日本 4\r"
-      - "日本 5\r"
-      - "新加坡 01\r"
-      - "新加坡 02\r"
-      - "新加坡 03\r"
-      - "新加坡 04\r"
-      - "新加坡 05\r"
-      - "美国 01\r"
-      - "美国 02\r"
-      - "美国 03\r"
-      - "美国 04\r"
-      - "美国 05\r"
-      - "japan 01\r"
-      - "japan 02\r"
-      - "japan 03\r"
+      - 🇹🇼_TW_台湾
+      - 🇸🇬_SG_新加坡_1
+      - 🇯🇵_JP_日本
+      - 🇺🇸_US_美国
+      - 🇸🇬_SG_新加坡_2
+      - 🇸🇬_SG_新加坡_3
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
+      - 🇭🇰_HK_香港->🇳🇱_NL_荷兰_1
+      - 🇸🇬_SG_新加坡_4
+      - 🇭🇰_HK_香港->🇳🇱_NL_荷兰_2
 
 rules:
 # 本地/局域网地址
