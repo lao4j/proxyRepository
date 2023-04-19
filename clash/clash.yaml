@@ -15,6 +15,15 @@ dns:
 
 proxies:
   - {"name":"1","type":"ss","server":"fn600mlines021.svcline.com","port":995,"password":"507364fb791e","cipher":"aes-256-gcm","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","host":"fn600mlines021.svcline.com","path":"/kpnzyxsj","mux":true}}
+  - {"name":"2","type":"ss","server":"216.52.183.242","port":80,"password":"83XvX4Vo%*3a","cipher":"aes-128-gcm","plugin":"obfs","plugin-opts":{"mode":"http","mux":false}}
+  - {"name":"3","type":"ssr","server":"bgphk7.vip.conectinnode.info","port":580,"password":"mtbv8n","cipher":"chacha20-ietf","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"38858148280.wns.windows.com","protocol-param":"148280:bOJyUJSs3ve"}
+  - {"name":"4","type":"trojan","server":"tr.dns.tlz.asia","port":1231,"udp":true,"password":"bHlD0P4J1B","sni":"tr.dns.tlz.asia","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"5","type":"vmess","server":"n1680936772.edpmvga.cn","port":443,"cipher":"auto","uuid":"a8054320-efe0-4ce0-a1a6-7d616105f354","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"6","type":"vmess","server":"n1681621066.aqdisrv.cn","port":443,"cipher":"auto","uuid":"53db1eec-c00c-4d4e-9967-df0241c8ba00","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"7","type":"ss","server":"shankh.772xx.cn","port":17117,"password":"70f5ec3d-16e2-4347-be1d-69b914331651","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"8","type":"vmess","server":"sg5.lianpi.xyz","port":54126,"cipher":"auto","uuid":"eb227553-c47b-4c55-bbf7-c745311c8718","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"9","type":"vmess","server":"hk80.8b750e3e20aa.sanfen004.me","port":80,"cipher":"auto","uuid":"1172d7fe-4a5d-4d07-92f6-aefa4212347f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/zh-cn/"}}
+  - {"name":"10","type":"vmess","server":"38.6.224.13","port":59130,"cipher":"auto","uuid":"cb33912f-155f-4c91-d509-75e760999ea5","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -22,6 +31,15 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '8'
+      - '9'
+      - '10'
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -29,6 +47,15 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '8'
+      - '9'
+      - '10'
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -36,24 +63,60 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '8'
+      - '9'
+      - '10'
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '8'
+      - '9'
+      - '10'
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '8'
+      - '9'
+      - '10'
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '8'
+      - '9'
+      - '10'
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -77,6 +140,15 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '8'
+      - '9'
+      - '10'
 
 rules:
 # 本地/局域网地址
