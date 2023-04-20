@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-04-20 11:27:39
+# 创建时间：20-04-2023 11:15:02
 # 使用模版：V2RaySE 默认模版
-# 节点数量：3
+# 节点数量：1
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,60 +21,46 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"台湾专线","type":"ss","server":"139.226.136.165","port":35509,"password":"4d5a811b-2289-43c3-a042-abd484e7505b","cipher":"aes-256-gcm"}
-  - {"name":"HK","type":"vmess","server":"hzcm.mm2022.top","port":11425,"cipher":"auto","uuid":"b1be378b-86c3-3c0a-babb-d2911b6f910c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/lisa","headers":{"host":"{\"Host\":\"ipip.net\"}"}}}
-  - {"name":"TW","type":"vmess","server":"hncu1.mm2022.top","port":16032,"cipher":"auto","uuid":"b1be378b-86c3-3c0a-babb-d2911b6f910c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"lisa","headers":{"host":"{\"Host\":\"ipip.net\"}"}}}
+  - {"name":"defaultName","type":"http","server":"tk.secureconnect.me","port":465,"username":"tor11","password":"Lvl9h5pZr5","tls":true,"skip-cert-verify":true,"udp":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 台湾专线
-      - HK
-      - TW
+      - defaultName
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 台湾专线
-      - HK
-      - TW
+      - defaultName
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾专线
-      - HK
-      - TW
+      - defaultName
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 台湾专线
-      - HK
-      - TW
+      - defaultName
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 台湾专线
-      - HK
-      - TW
+      - defaultName
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 台湾专线
-      - HK
-      - TW
+      - defaultName
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -97,9 +83,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾专线
-      - HK
-      - TW
+      - defaultName
 
 rules:
 # 本地/局域网地址
