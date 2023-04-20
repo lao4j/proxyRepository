@@ -1,3 +1,10 @@
+####################################
+# 创建者：v2rayse.com
+# 客户端：Clash
+# 创建时间：20-04-2023 15:44:54
+# 使用模版：V2RaySE 默认模版
+# 节点数量：1
+####################################
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -14,67 +21,46 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"2","type":"ss","server":"216.52.183.242","port":80,"password":"83XvX4Vo%*3a","cipher":"aes-128-gcm","plugin":"obfs","plugin-opts":{"mode":"http","mux":false}}
-  - {"name":"3","type":"ss","server":"13.213.74.250","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"8","type":"ss","server":"18.176.56.246","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"10","type":"vmess","server":"27.50.63.78","port":50002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"defaultName","type":"http","server":"dn.secureconnect.me","port":465,"username":"tor11","password":"Lvl9h5pZr5","tls":true,"skip-cert-verify":true,"udp":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - '2'
-      - '3'
-      - '8'
-      - '10'
+      - defaultName
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - '2'
-      - '3'
-      - '8'
-      - '10'
+      - defaultName
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - '2'
-      - '3'
-      - '8'
-      - '10'
+      - defaultName
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - '2'
-      - '3'
-      - '8'
-      - '10'
+      - defaultName
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - '2'
-      - '3'
-      - '8'
-      - '10'
+      - defaultName
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - '2'
-      - '3'
-      - '8'
-      - '10'
+      - defaultName
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -97,10 +83,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - '2'
-      - '3'
-      - '8'
-      - '10'
+      - defaultName
 
 rules:
 # 本地/局域网地址
