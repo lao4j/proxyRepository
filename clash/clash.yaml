@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-04-22 08:49:59
+# 创建时间：2023-04-22 12:15:30
 # 使用模版：V2RaySE 默认模版
-# 节点数量：5
+# 节点数量：16
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,74 +21,151 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"defaultName_1","type":"socks5","server":"34.142.228.128","port":58472,"username":"YUqPb68U7B","password":"LqXneWRFvs"}
-  - {"name":"defaultName_2","type":"socks5","server":"34.87.148.56","port":58159,"username":"KCz51YyxoL","password":"3pCNixpK2Y"}
-  - {"name":"defaultName_3","type":"socks5","server":"34.143.151.173","port":16561,"username":"BGi4oiMeP9","password":"XomxXMIMng"}
-  - {"name":"「SCP」NL-CF","type":"vmess","server":"cf-lt.sharecentre.online","port":80,"cipher":"auto","uuid":"2e496758-950e-4549-8842-d5eec98d9fde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"nl.sharecentrepro.com"}}}
-  - {"name":"defaultName_4","type":"socks5","server":"120.79.49.38","port":443}
+  - {"name":"香港|03|HGC|Tunnel","type":"ss","server":"zjcu.lele233.top","port":26111,"password":"fd6b031e-7b35-4716-8e53-060c755b5259","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"fscloud 香港 - 005\r","type":"trojan","server":"fschk.fscloud123456789.com","port":443,"udp":true,"password":"777cf57a-7d46-49a6-95a8-128b722abcd2","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"fscloud 日本 - 005\r","type":"trojan","server":"fscjp.fscloud123456789.com","port":443,"udp":true,"password":"777cf57a-7d46-49a6-95a8-128b722abcd2","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"fscloud 新加坡 - 005\r","type":"trojan","server":"fscsg.fscloud123456789.com","port":443,"udp":true,"password":"777cf57a-7d46-49a6-95a8-128b722abcd2","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"fscloud 美国 - 003\r","type":"trojan","server":"fscus.fscloud123456789.com","port":443,"udp":true,"password":"777cf57a-7d46-49a6-95a8-128b722abcd2","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"fscloud 英国 - 003\r","type":"trojan","server":"fscuk.fscloud123456789.com","port":443,"udp":true,"password":"777cf57a-7d46-49a6-95a8-128b722abcd2","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"fscloud 德国 - 003\r","type":"trojan","server":"fscde.fscloud123456789.com","port":443,"udp":true,"password":"777cf57a-7d46-49a6-95a8-128b722abcd2","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"fscloud 印度 - 003\r","type":"trojan","server":"fscin.fscloud123456789.com","port":443,"udp":true,"password":"777cf57a-7d46-49a6-95a8-128b722abcd2","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"fscloud 加拿大 - 003\r","type":"trojan","server":"fscca.fscloud123456789.com","port":443,"udp":true,"password":"777cf57a-7d46-49a6-95a8-128b722abcd2","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"001","type":"ss","server":"34.222.118.200","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"002","type":"ss","server":"54.169.68.211","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"003","type":"ss","server":"3.35.235.247","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"004","type":"ss","server":"52.79.173.199","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"005","type":"ss","server":"52.34.127.164","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"「SCP」FR-Ferdinand-HTTP|赞助商 @KinhChannel","type":"vmess","server":"cf-lt.sharecentre.online","port":80,"cipher":"auto","uuid":"2e496758-950e-4549-8842-d5eec98d9fde","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"fr.scproxy.top"}}}
+  - {"name":"「SCP」NL-CF","type":"vmess","server":"cf-lt.sharecentre.online","port":80,"cipher":"auto","uuid":"2e496758-950e-4549-8842-d5eec98d9fde","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"nl.sharecentrepro.com"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - defaultName_1
-      - defaultName_2
-      - defaultName_3
+      - 香港|03|HGC|Tunnel
+      - "fscloud 香港 - 005\r"
+      - "fscloud 日本 - 005\r"
+      - "fscloud 新加坡 - 005\r"
+      - "fscloud 美国 - 003\r"
+      - "fscloud 英国 - 003\r"
+      - "fscloud 德国 - 003\r"
+      - "fscloud 印度 - 003\r"
+      - "fscloud 加拿大 - 003\r"
+      - '001'
+      - '002'
+      - '003'
+      - '004'
+      - '005'
+      - 「SCP」FR-Ferdinand-HTTP|赞助商 @KinhChannel
       - 「SCP」NL-CF
-      - defaultName_4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - defaultName_1
-      - defaultName_2
-      - defaultName_3
+      - 香港|03|HGC|Tunnel
+      - "fscloud 香港 - 005\r"
+      - "fscloud 日本 - 005\r"
+      - "fscloud 新加坡 - 005\r"
+      - "fscloud 美国 - 003\r"
+      - "fscloud 英国 - 003\r"
+      - "fscloud 德国 - 003\r"
+      - "fscloud 印度 - 003\r"
+      - "fscloud 加拿大 - 003\r"
+      - '001'
+      - '002'
+      - '003'
+      - '004'
+      - '005'
+      - 「SCP」FR-Ferdinand-HTTP|赞助商 @KinhChannel
       - 「SCP」NL-CF
-      - defaultName_4
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - defaultName_1
-      - defaultName_2
-      - defaultName_3
+      - 香港|03|HGC|Tunnel
+      - "fscloud 香港 - 005\r"
+      - "fscloud 日本 - 005\r"
+      - "fscloud 新加坡 - 005\r"
+      - "fscloud 美国 - 003\r"
+      - "fscloud 英国 - 003\r"
+      - "fscloud 德国 - 003\r"
+      - "fscloud 印度 - 003\r"
+      - "fscloud 加拿大 - 003\r"
+      - '001'
+      - '002'
+      - '003'
+      - '004'
+      - '005'
+      - 「SCP」FR-Ferdinand-HTTP|赞助商 @KinhChannel
       - 「SCP」NL-CF
-      - defaultName_4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - defaultName_1
-      - defaultName_2
-      - defaultName_3
+      - 香港|03|HGC|Tunnel
+      - "fscloud 香港 - 005\r"
+      - "fscloud 日本 - 005\r"
+      - "fscloud 新加坡 - 005\r"
+      - "fscloud 美国 - 003\r"
+      - "fscloud 英国 - 003\r"
+      - "fscloud 德国 - 003\r"
+      - "fscloud 印度 - 003\r"
+      - "fscloud 加拿大 - 003\r"
+      - '001'
+      - '002'
+      - '003'
+      - '004'
+      - '005'
+      - 「SCP」FR-Ferdinand-HTTP|赞助商 @KinhChannel
       - 「SCP」NL-CF
-      - defaultName_4
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - defaultName_1
-      - defaultName_2
-      - defaultName_3
+      - 香港|03|HGC|Tunnel
+      - "fscloud 香港 - 005\r"
+      - "fscloud 日本 - 005\r"
+      - "fscloud 新加坡 - 005\r"
+      - "fscloud 美国 - 003\r"
+      - "fscloud 英国 - 003\r"
+      - "fscloud 德国 - 003\r"
+      - "fscloud 印度 - 003\r"
+      - "fscloud 加拿大 - 003\r"
+      - '001'
+      - '002'
+      - '003'
+      - '004'
+      - '005'
+      - 「SCP」FR-Ferdinand-HTTP|赞助商 @KinhChannel
       - 「SCP」NL-CF
-      - defaultName_4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - defaultName_1
-      - defaultName_2
-      - defaultName_3
+      - 香港|03|HGC|Tunnel
+      - "fscloud 香港 - 005\r"
+      - "fscloud 日本 - 005\r"
+      - "fscloud 新加坡 - 005\r"
+      - "fscloud 美国 - 003\r"
+      - "fscloud 英国 - 003\r"
+      - "fscloud 德国 - 003\r"
+      - "fscloud 印度 - 003\r"
+      - "fscloud 加拿大 - 003\r"
+      - '001'
+      - '002'
+      - '003'
+      - '004'
+      - '005'
+      - 「SCP」FR-Ferdinand-HTTP|赞助商 @KinhChannel
       - 「SCP」NL-CF
-      - defaultName_4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -111,11 +188,22 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - defaultName_1
-      - defaultName_2
-      - defaultName_3
+      - 香港|03|HGC|Tunnel
+      - "fscloud 香港 - 005\r"
+      - "fscloud 日本 - 005\r"
+      - "fscloud 新加坡 - 005\r"
+      - "fscloud 美国 - 003\r"
+      - "fscloud 英国 - 003\r"
+      - "fscloud 德国 - 003\r"
+      - "fscloud 印度 - 003\r"
+      - "fscloud 加拿大 - 003\r"
+      - '001'
+      - '002'
+      - '003'
+      - '004'
+      - '005'
+      - 「SCP」FR-Ferdinand-HTTP|赞助商 @KinhChannel
       - 「SCP」NL-CF
-      - defaultName_4
 
 rules:
 # 本地/局域网地址
