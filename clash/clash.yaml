@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-04-23 16:21:36
+# 创建时间：2023-04-23 20:50:39
 # 使用模版：V2RaySE 默认模版
-# 节点数量：19
+# 节点数量：10
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,172 +21,109 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"HK","type":"ss","server":"zjcu.lele233.top","port":26111,"password":"fda518e1-76f3-4dbd-8f46-e31a0d351571","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"香港专线","type":"vmess","server":"38.6.226.251","port":16101,"cipher":"auto","uuid":"b52f647d-fc8a-4c50-9655-68649d6400fd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"01\r","type":"ss","server":"18.136.205.181","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"02\r","type":"ss","server":"54.169.206.218","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"03\r","type":"ss","server":"13.230.148.231","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"04\r","type":"ss","server":"52.69.145.191","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"05\r","type":"ss","server":"34.209.123.93","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"俄罗斯A","type":"vmess","server":"185.133.40.192","port":30059,"cipher":"auto","uuid":"8d78c2a8-acaa-467d-9234-d2606624506d","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"泰国01","type":"vmess","server":"119.59.98.107","port":40957,"cipher":"auto","uuid":"400553bc-7eb0-4c65-a507-50809c2bf20e","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"移动专线B","type":"vmess","server":"120.240.163.119","port":48465,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"中国安徽A","type":"vmess","server":"112.132.212.112","port":50002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"电信一区(广东)","type":"vmess","server":"111.230.252.149","port":50002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"联通一区(山东)","type":"vmess","server":"47.104.237.32","port":50002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"电信二区(四川)","type":"vmess","server":"114.117.234.12","port":50002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"联通二区(北京)","type":"vmess","server":"120.53.4.122","port":50002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"教育网专区(安徽)","type":"vmess","server":"112.132.215.189","port":50002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"联通四区(上海)","type":"vmess","server":"42.192.17.34","port":50002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"联通一区(北京)","type":"vmess","server":"39.103.165.178","port":56002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"电信一区(南京)","type":"vmess","server":"175.27.154.61","port":50002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵_JP_日本_1","type":"trojan","server":"agroup.node1.t.nodelist-gfwairport1.download","port":50001,"udp":true,"password":"3f319a18-1d20-4475-b775-f5c98a52ba18","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"142.4.125.53","port":50044,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵_JP_日本_2","type":"ssr","server":"jp2.vfun.icu","port":443,"password":"vyunme","cipher":"aes-256-cfb","obfs":"plain","protocol":"auth_aes128_sha1","obfs-param":"ab93117422.jd.hk","protocol-param":"17422:TTp0SX"}
+  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"192.74.228.174","port":42857,"cipher":"auto","uuid":"051b844f-efe3-4847-92aa-66b5de0b6d4e","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_3","type":"vmess","server":"64.32.20.34","port":54042,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_4","type":"vmess","server":"104.194.224.93","port":50912,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_CN_中国->🇭🇰_HK_香港","type":"ss","server":"14.29.124.168","port":31046,"password":"QazEdcTgb159@$*","cipher":"aes-128-cfb"}
+  - {"name":"🇰🇷_KR_韩国","type":"ss","server":"43.200.6.15","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇫🇷_FR_法国->🇸🇪_SE_瑞典","type":"ss","server":"135.125.244.103","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"🇺🇸_US_美国->🇬🇧_GB_英国","type":"vmess","server":"172.67.84.93","port":80,"cipher":"auto","uuid":"2e496758-950e-4549-8842-d5eec98d9fde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"uk1.scproxy.top"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - HK
-      - 香港专线
-      - "01\r"
-      - "02\r"
-      - "03\r"
-      - "04\r"
-      - "05\r"
-      - 俄罗斯A
-      - 泰国01
-      - 移动专线B
-      - 中国安徽A
-      - 电信一区(广东)
-      - 联通一区(山东)
-      - 电信二区(四川)
-      - 联通二区(北京)
-      - 教育网专区(安徽)
-      - 联通四区(上海)
-      - 联通一区(北京)
-      - 电信一区(南京)
+      - 🇯🇵_JP_日本_1
+      - 🇺🇸_US_美国_1
+      - 🇯🇵_JP_日本_2
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇰🇷_KR_韩国
+      - 🇫🇷_FR_法国->🇸🇪_SE_瑞典
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - HK
-      - 香港专线
-      - "01\r"
-      - "02\r"
-      - "03\r"
-      - "04\r"
-      - "05\r"
-      - 俄罗斯A
-      - 泰国01
-      - 移动专线B
-      - 中国安徽A
-      - 电信一区(广东)
-      - 联通一区(山东)
-      - 电信二区(四川)
-      - 联通二区(北京)
-      - 教育网专区(安徽)
-      - 联通四区(上海)
-      - 联通一区(北京)
-      - 电信一区(南京)
+      - 🇯🇵_JP_日本_1
+      - 🇺🇸_US_美国_1
+      - 🇯🇵_JP_日本_2
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇰🇷_KR_韩国
+      - 🇫🇷_FR_法国->🇸🇪_SE_瑞典
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK
-      - 香港专线
-      - "01\r"
-      - "02\r"
-      - "03\r"
-      - "04\r"
-      - "05\r"
-      - 俄罗斯A
-      - 泰国01
-      - 移动专线B
-      - 中国安徽A
-      - 电信一区(广东)
-      - 联通一区(山东)
-      - 电信二区(四川)
-      - 联通二区(北京)
-      - 教育网专区(安徽)
-      - 联通四区(上海)
-      - 联通一区(北京)
-      - 电信一区(南京)
+      - 🇯🇵_JP_日本_1
+      - 🇺🇸_US_美国_1
+      - 🇯🇵_JP_日本_2
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇰🇷_KR_韩国
+      - 🇫🇷_FR_法国->🇸🇪_SE_瑞典
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - HK
-      - 香港专线
-      - "01\r"
-      - "02\r"
-      - "03\r"
-      - "04\r"
-      - "05\r"
-      - 俄罗斯A
-      - 泰国01
-      - 移动专线B
-      - 中国安徽A
-      - 电信一区(广东)
-      - 联通一区(山东)
-      - 电信二区(四川)
-      - 联通二区(北京)
-      - 教育网专区(安徽)
-      - 联通四区(上海)
-      - 联通一区(北京)
-      - 电信一区(南京)
+      - 🇯🇵_JP_日本_1
+      - 🇺🇸_US_美国_1
+      - 🇯🇵_JP_日本_2
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇰🇷_KR_韩国
+      - 🇫🇷_FR_法国->🇸🇪_SE_瑞典
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - HK
-      - 香港专线
-      - "01\r"
-      - "02\r"
-      - "03\r"
-      - "04\r"
-      - "05\r"
-      - 俄罗斯A
-      - 泰国01
-      - 移动专线B
-      - 中国安徽A
-      - 电信一区(广东)
-      - 联通一区(山东)
-      - 电信二区(四川)
-      - 联通二区(北京)
-      - 教育网专区(安徽)
-      - 联通四区(上海)
-      - 联通一区(北京)
-      - 电信一区(南京)
+      - 🇯🇵_JP_日本_1
+      - 🇺🇸_US_美国_1
+      - 🇯🇵_JP_日本_2
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇰🇷_KR_韩国
+      - 🇫🇷_FR_法国->🇸🇪_SE_瑞典
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - HK
-      - 香港专线
-      - "01\r"
-      - "02\r"
-      - "03\r"
-      - "04\r"
-      - "05\r"
-      - 俄罗斯A
-      - 泰国01
-      - 移动专线B
-      - 中国安徽A
-      - 电信一区(广东)
-      - 联通一区(山东)
-      - 电信二区(四川)
-      - 联通二区(北京)
-      - 教育网专区(安徽)
-      - 联通四区(上海)
-      - 联通一区(北京)
-      - 电信一区(南京)
+      - 🇯🇵_JP_日本_1
+      - 🇺🇸_US_美国_1
+      - 🇯🇵_JP_日本_2
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇰🇷_KR_韩国
+      - 🇫🇷_FR_法国->🇸🇪_SE_瑞典
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -209,25 +146,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK
-      - 香港专线
-      - "01\r"
-      - "02\r"
-      - "03\r"
-      - "04\r"
-      - "05\r"
-      - 俄罗斯A
-      - 泰国01
-      - 移动专线B
-      - 中国安徽A
-      - 电信一区(广东)
-      - 联通一区(山东)
-      - 电信二区(四川)
-      - 联通二区(北京)
-      - 教育网专区(安徽)
-      - 联通四区(上海)
-      - 联通一区(北京)
-      - 电信一区(南京)
+      - 🇯🇵_JP_日本_1
+      - 🇺🇸_US_美国_1
+      - 🇯🇵_JP_日本_2
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇰🇷_KR_韩国
+      - 🇫🇷_FR_法国->🇸🇪_SE_瑞典
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
 
 rules:
 # 本地/局域网地址
