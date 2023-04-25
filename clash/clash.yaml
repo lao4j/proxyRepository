@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-04-25 21:27:28
+# 创建时间：25-04-2023 17:15:35
 # 使用模版：V2RaySE 默认模版
-# 节点数量：6
+# 节点数量：1
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,81 +21,46 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"","type":"vmess","server":"38.6.226.232","port":16732,"cipher":"auto","uuid":"1c50a277-45ab-488d-fa02-925c814a7a0f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"|ZTqu.love@xray.com","type":"vmess","server":"38.55.98.252","port":45350,"cipher":"auto","uuid":"5dd40212-9194-437a-e163-47c94bb0b7f5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"US","type":"vmess","server":"98.126.18.67","port":24197,"cipher":"auto","uuid":"55ce2849-ce39-482a-b9be-4e2fc7f164fc","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/us16/getData","headers":{"host":"us16.verichains.co"}}}
-  - {"name":"US2","type":"vmess","server":"67.229.29.134","port":27646,"cipher":"auto","uuid":"099ca97b-0a40-4e71-93b8-90e7b01cdb7b","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/us1/getData","headers":{"host":"us1.nb123.info"}}}
-  - {"name":"KR","type":"vmess","server":"210.87.202.87","port":23274,"cipher":"auto","uuid":"b953baa1-88c3-4073-b777-1192deadfb97","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/kor2/getData","headers":{"host":"kor2.nb123.info"}}}
-  - {"name":"as","type":"vmess","server":"47.74.89.109","port":28056,"cipher":"auto","uuid":"e2111758-b370-4c0e-8061-0269741a39ef","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/aus/getData","headers":{"host":"aus.verichains.co"}}}
+  - {"name":"Argoon7153","type":"vmess","server":"143.42.230.99","port":8881,"cipher":"auto","uuid":"db5afae4-ac23-41a6-8378-f307a9a47436","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - ''
-      - '|ZTqu.love@xray.com'
-      - US
-      - US2
-      - KR
-      - as
+      - Argoon7153
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - ''
-      - '|ZTqu.love@xray.com'
-      - US
-      - US2
-      - KR
-      - as
+      - Argoon7153
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ''
-      - '|ZTqu.love@xray.com'
-      - US
-      - US2
-      - KR
-      - as
+      - Argoon7153
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ''
-      - '|ZTqu.love@xray.com'
-      - US
-      - US2
-      - KR
-      - as
+      - Argoon7153
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - ''
-      - '|ZTqu.love@xray.com'
-      - US
-      - US2
-      - KR
-      - as
+      - Argoon7153
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ''
-      - '|ZTqu.love@xray.com'
-      - US
-      - US2
-      - KR
-      - as
+      - Argoon7153
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -118,12 +83,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ''
-      - '|ZTqu.love@xray.com'
-      - US
-      - US2
-      - KR
-      - as
+      - Argoon7153
 
 rules:
 # 本地/局域网地址
