@@ -1,821 +1,227 @@
-#
-#-------------------------------------------------------------#
-#  创建者：https://v2rayse.com
-#  创建时间：2023-04-26 19:21:25
-#  模版：v2rayse默认模版
-#  节点数量：110
-#-------------------------------------------------------------#
-#
-port: 7890
-socks-port: 7891
+####################################
+# 创建者：v2rayse.com
+# 客户端：Clash
+# 创建时间：2023-04-27 12:19:46
+# 使用模版：V2RaySE 默认模版
+# 节点数量：24
+####################################
+mixed-port: 7890
 allow-lan: true
-mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
+dns:
+  enabled: true
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
+
 proxies:
-  - {"type":"ss","name":"@Vpn_Filternet_🇺🇸_US_1","server":"172.96.204.170","port":254,"cipher":"aes-256-cfb","password":"bwhskrskr05"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇪🇨_EC","server":"179.49.5.114","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇺🇸_US_2","server":"45.131.248.209","port":29532,"cipher":"aes-256-gcm","password":"dNZj5JoDc9"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇸🇬_SG_1","server":"54.169.160.39","port":801,"cipher":"chacha20-ietf-poly1305","password":"tvX1v#NSFP_LG_bJ"}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇯🇵_JP_1","http-opts":{"path":["/"]},"server":"141.147.149.186","port":"10344","uuid":"479972b1-e60d-4985-9a7f-dfee6498adb1","alterId":"0","cipher":"auto","network":"http"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇫🇷_FR_1","server":"217.70.188.60","port":855,"cipher":"chacha20-ietf-poly1305","password":"gyXDW22Dbcfyqpl1qJDC7o"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇨🇦_CA_1","server":"158.51.121.154","port":2376,"cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
-  - {"type":"trojan","name":"@Vpn_Filternet_🇮🇳_IN","server":"152.67.160.174","port":443,"password":"54080134-2cba-4535-8599-95650bd9aa54","udp":true,"skip-cert-verify":true,"sni":"jgwhdlb2.gaox.ml"}
-  - {"type":"trojan","name":"@Vpn_Filternet_🇫🇷_FR_2","server":"195.154.118.180","port":443,"password":"7c9b7560-b0f7-11eb-a397-1239d0255272","udp":true,"skip-cert-verify":true,"sni":"fr-trojan.bonds.id"}
-  - {"type":"trojan","name":"@Vpn_Filternet_🇨🇳_CN","server":"zz6.91js.pw","port":10051,"password":"a13820c547fa34c5c45515c12f0cd576","udp":true,"skip-cert-verify":true}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇺🇸_US_3","http-opts":{"path":["/"]},"server":"96.43.86.4","port":"443","uuid":"6b8bacb5-75b2-4a17-9d32-3d75b100e61e","alterId":"0","cipher":"auto","network":"http"}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇯🇵_JP_2","http-opts":{"path":["/"]},"server":"168.138.206.141","port":"80","uuid":"ad05e01f-c2c0-41da-e79c-ff68237317f7","alterId":"0","cipher":"auto","network":"http"}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇺🇸_US_4","ws-opts":{"path":"/?ed=2048","headers":{"host":"b5.iraniancp.autos"}},"server":"104.16.109.244","port":"2053","uuid":"72f76c36-3e3c-45b3-a61f-d8f017345958","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"ss","name":"@Vpn_Filternet_🇨🇦_CA_2","server":"134.195.198.106","port":8009,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇨🇦_CA_3","server":"ak1658.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":8009,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇬🇧_GB_1","server":"ak1661.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":8080,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇪🇬_EG","server":"41.215.242.179","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
-  - {"type":"trojan","name":"@Vpn_Filternet_🇺🇸_US_5","server":"192.9.130.66","port":443,"password":"7c7e0edb-c45a-4c07-b66a-69b191179349","udp":true,"skip-cert-verify":true,"sni":"us.disnet.gq"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇫🇷_FR_3","server":"217.70.189.155","port":443,"cipher":"chacha20-ietf-poly1305","password":"eJZJAeK3S9st"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇨🇦_CA_4","server":"134.195.196.143","port":802,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇫🇮_FI","server":"135.181.172.225","port":30705,"cipher":"aes-256-gcm","password":"R2Lp3a4tgj"}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇺🇸_US_6","ws-opts":{"path":"/","headers":{"host":"ir2.nmsl.ninja"}},"server":"172.67.250.201","port":"2082","uuid":"314c1387-618c-4689-97fc-4bc9a1ae5e05","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇲🇾_MY","server":"123.253.34.235","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇭🇷_HR","server":"46.183.184.61","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
-  - {"type":"trojan","name":"@Vpn_Filternet_🇯🇵_JP_3","server":"jp3.421421.xyz","port":20230,"password":"717c3a16-6871-425c-a158-40cc37ff3543","udp":true,"skip-cert-verify":true,"sni":"421421.xyz"}
-  - {"type":"trojan","name":"@Vpn_Filternet_🇺🇸_US_7","server":"mci.necrocdn.mom","port":443,"password":"PDomE47dow91jyl3sVC8yT","udp":true,"skip-cert-verify":true,"sni":"trkg.nmare20106460.workers.dev"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇰🇷_KR_1","server":"43.200.6.15","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
-  - {"type":"trojan","name":"@Vpn_Filternet_🇯🇵_JP_4","server":"185.212.56.168","port":443,"password":"share.mjj-home.com","udp":true,"skip-cert-verify":true,"sni":"share.softbank.mjj-home.com"}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇺🇸_US_8","ws-opts":{"path":"/?ed=2048","headers":{"host":"b5.iraniancp.autos"}},"server":"104.16.32.82","port":"2053","uuid":"72f76c36-3e3c-45b3-a61f-d8f017345958","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇸🇬_SG_2","http-opts":{"path":["/"]},"server":"152.69.211.235","port":"80","uuid":"d345916f-1673-4a98-f37d-49357c84ce03","alterId":"0","cipher":"auto","network":"http"}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇳🇱_NL_1","ws-opts":{"path":"/ArsalanTauBot","headers":{"host":"4.mamadcucu.com"}},"server":"188.114.97.2","port":"8880","uuid":"51ba5a9a-4b7c-4c62-b4ae-0e53ec8d3024","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇺🇸_US_9","ws-opts":{"path":"/?ed=2048","headers":{"host":"b1.iraniancp.autos"}},"server":"104.20.122.119","port":"8880","uuid":"0c664f44-9f69-454f-841a-4616715df26f","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇺🇸_US_10","http-opts":{"path":["/"]},"server":"96.43.86.4","port":"17129","uuid":"e67d0104-9de3-4a5a-9141-be673fbf094e","alterId":"0","cipher":"auto","network":"http"}
-  - {"type":"trojan","name":"@Vpn_Filternet_🇯🇵_JP_5","server":"jp.stablize.top","port":443,"password":"3ae74123-53b2-48fe-9677-09fcf8520ca7","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"@Vpn_Filternet_🇯🇵_JP_6","server":"aujs.stablize.top","port":443,"password":"26775186-bb86-4db0-a650-ceec31095b68","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"@Vpn_Filternet_🇯🇵_JP_7","server":"jp-tk-31.fuckjdieng.uk","port":50126,"password":"db75cc15-17fc-480c-af6f-773169fc93f4","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"@Vpn_Filternet_🇸🇬_SG_3","server":"fscus.fscloud123456789.com","port":443,"password":"adbeb3f5-693f-47d0-aec7-07a90c2095c7","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"@Vpn_Filternet_🇺🇸_US_11","server":"35.81.246.46","port":443,"password":"8f70fde3-a04c-4f6a-b705-aef7406f6ac1","udp":true,"skip-cert-verify":true,"sni":"tj2.dalazhi.cyou"}
-  - {"type":"trojan","name":"@Vpn_Filternet_🇺🇸_US_12","server":"172.64.145.223","port":443,"password":"c4b5b500-d9f2-11ed-aa52-1239d0255272","udp":true,"skip-cert-verify":true,"sni":"tr.test3.net"}
-  - {"type":"trojan","name":"@Vpn_Filternet_🇺🇸_US_13","server":"cc.755657.xyz","port":443,"password":"fb19aac3-b532-4f60-a97f-ec5de0fbbf6b","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"@Vpn_Filternet_🇸🇬_SG_4","server":"sg5.421421.xyz","port":20230,"password":"717c3a16-6871-425c-a158-40cc37ff3543","udp":true,"skip-cert-verify":true,"sni":"421421.xyz"}
-  - {"type":"trojan","name":"@Vpn_Filternet_🇯🇵_JP_8","server":"ru.mjt001.com","port":443,"password":"5a035db3-34ea-48ca-9aa2-72c8229e1532","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"@Vpn_Filternet_🇯🇵_JP_9","server":"hinet.mjt001.com","port":443,"password":"74400921-f59f-4009-b52a-c2789b49fab6","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"@Vpn_Filternet_🇯🇵_JP_10","server":"pt.mjt001.com","port":443,"password":"b00ac480-3e34-4ca9-8b3b-0b4515e4b75d","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"@Vpn_Filternet_🇯🇵_JP_11","server":"jp.mjt001.com","port":443,"password":"b00ac480-3e34-4ca9-8b3b-0b4515e4b75d","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"@Vpn_Filternet_🇯🇵_JP_12","server":"share.softbank.mjj-home.com","port":443,"password":"share.mjj-home.com","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"@Vpn_Filternet_🇯🇵_JP_13","server":"tw.softbank.mjj-home.com","port":443,"password":"share.mjj-home.com","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"@Vpn_Filternet_🇭🇰_HK_1","server":"my01.trojanyyds.xyz","port":443,"password":"cd41b9d7-df15-46ad-a778-257b0851525a","udp":true,"skip-cert-verify":true}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇯🇵_JP_14","server":"132.226.5.189","port":"26369","uuid":"f5934f6a-6a07-4c7c-bb0f-3af328ea6897","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇭🇰_HK_2","server":"43.154.34.49","port":"23183","uuid":"b402a4af-285a-463e-c3a7-53f91efdec78","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇺🇸_US_14","server":"129.159.41.233","port":"32586","uuid":"341a9182-c423-499c-c46e-d17838b29037","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"vless","name":"@Vpn_Filternet_🇺🇸_US_15","server":"198.41.208.200","port":443,"uuid":"9579b99b-0f13-4871-8ef0-404b5c2bc8f4","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"hk21.v2raytw.cf","ws-opts":{"path":"/463b3ff15/","headers":{"host":"hk21.v2raytw.cf"}}}
-  - {"type":"trojan","name":"@Vpn_Filternet_🇲🇴_MO","server":"45.64.22.56","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"trojan-ctb-sg02.globalssh.xyz"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇳🇱_NL_2","server":"172.99.188.99","port":8091,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
-  - {"type":"trojan","name":"@Vpn_Filternet_🇺🇸_US_16","server":"ayus6.mysvip.online","port":443,"password":"128d4b58-6713-4051-831e-fe79a67ccee2","udp":true,"skip-cert-verify":true}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇰🇷_KR_2","ws-opts":{"path":"/","headers":{"host":"152.67.218.38"}},"server":"152.67.218.38","port":"443","uuid":"b5e9480a-b7aa-40a4-f9a7-5299b5e363b4","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇺🇸_US_17","ws-opts":{"path":"/vmess","headers":{"host":"de-v.sshmax.xyz"}},"server":"www.codepen.io","port":"443","uuid":"c002de50-e64e-4328-b98a-fae82bdcafa4","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇰🇷_KR_3","ws-opts":{"path":"/4gmp"},"server":"140.238.1.117","port":"80","uuid":"c4a6952e-138a-3fe9-803b-8f2d2dd0254b","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇳🇱_NL_3","server":"ak1622.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":5601,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇺🇸_US_18","server":"37.218.241.130","port":443,"cipher":"chacha20-ietf-poly1305","password":"j4wkIrreHEdC"}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇺🇸_US_19","ws-opts":{"path":"/play1","headers":{"host":"uk.minl.me"}},"server":"uk.minl.me","port":"8080","uuid":"aa98f87c-36da-4cda-917b-4f05533e0460","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇺🇸_US_20","server":"52.34.127.164","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇬🇧_GB_2","ws-opts":{"path":"/chat","headers":{"host":"vuk1.0bad.com"}},"server":"vuk1.0bad.com","port":"443","uuid":"927094d3-d678-4763-8591-e240d0bcae87","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇺🇸_US_21","ws-opts":{"path":"/game","headers":{"host":"fr.opencc.eu.org"}},"server":"fr.opencc.eu.org","port":"443","uuid":"00ff0579-52ec-474e-bb35-4d639769460e","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇺🇸_US_22","ws-opts":{"path":"/","headers":{"host":"dallas.starsea.vip"}},"server":"dallas.starsea.vip","port":"443","uuid":"10735fe6-6c8f-498b-b22e-8e98a57e033d","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"ss","name":"@Vpn_Filternet_🇯🇵_JP_15","server":"18.179.15.166","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇯🇵_JP_16","server":"43.206.210.193","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇺🇸_US_23","ws-opts":{"path":"/cctv13.m3u8","headers":{"host":"us06.cctvvip.ml"}},"server":"us06.cctvvip.ml","port":"80","uuid":"11117089-0502-48ab-f493-5e0f663a700c","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇺🇸_US_24","ws-opts":{"path":"/us","headers":{"host":"us.noml.app"}},"server":"us.noml.app","port":"80","uuid":"aa98f87c-36da-4cda-917b-4f05533e0460","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇺🇸_US_25","ws-opts":{"path":"/hax02eu","headers":{"host":"woiden-eu2.moop.wiki"}},"server":"woiden-eu2.moop.wiki","port":"443","uuid":"aa98f87c-36da-4cda-917b-4f05533e0460","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"ss","name":"@Vpn_Filternet_🇳🇱_NL_4","server":"176.126.113.151","port":26623,"cipher":"chacha20-ietf-poly1305","password":"pVTWnDrxRjpiGabFDupRJq"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇰🇷_KR_4","server":"playweb.ml","port":6983,"cipher":"chacha20-ietf","password":"Hucloud12"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇫🇷_FR_4","server":"46.226.111.148","port":443,"cipher":"chacha20-ietf-poly1305","password":"D9rakkd9NJyWhTrSrM6Rbe"}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇺🇸_US_26","ws-opts":{"path":"/admin","headers":{"host":"arm.gofun.today"}},"server":"arm.gofun.today","port":"443","uuid":"f8064c03-ebbb-48e9-b873-c6ac8893e980","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"ss","name":"@Vpn_Filternet_🇸🇬_SG_5","server":"18.141.175.31","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇸🇬_SG_6","server":"54.179.120.125","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇸🇬_SG_7","server":"13.215.183.79","port":443,"cipher":"aes-256-cfb","password":"doub.io"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇸🇬_SG_8","server":"54.169.206.218","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇸🇬_SG_9","server":"3.1.81.176","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇺🇸_US_27","ws-opts":{"path":"/filetransfer","headers":{"host":"ap-jp-west-1.292228.xyz"}},"server":"ap-jp-west-1.292228.xyz","port":"80","uuid":"12b1bed9-1534-41db-a530-a1dbf6c2a7c6","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇻🇳_VN","ws-opts":{"path":"/nrowibu.site"},"server":"103.179.189.89","port":"80","uuid":"37b5e4ac-2b89-4ae6-82d0-63e884c72a8a","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇷🇺_RU","server":"yyds01.haovpn.xyz","port":9426,"cipher":"chacha20-ietf-poly1305","password":"ced1f46e-64a3-411e-9bb5-a9270de17239"}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇺🇸_US_28","ws-opts":{"path":"/filetransfer","headers":{"host":"ap-sg-central-1.292228.xyz"}},"server":"ap-sg-central-1.292228.xyz","port":"80","uuid":"12b1bed9-1534-41db-a530-a1dbf6c2a7c6","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇰🇷_KR_5","server":"144.24.88.101","port":"16833","uuid":"f5425ccf-3946-4fb4-eb24-5393d78a392f","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇮🇱_IL","server":"193.182.144.183","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇨🇴_CO","server":"190.120.231.45","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇳🇱_NL_5","ws-opts":{"path":"/speedtest/Kansas.kotick.site","headers":{"host":"yellow-cherry-92c0.walidfree12.workers.dev"}},"server":"188.114.96.3","port":"443","uuid":"DCE76061-EE65-49DB-997C-A6A880DADE3A","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇺🇸_US_29","ws-opts":{"path":"/chat","headers":{"host":"vin1.0bad.com"}},"server":"172.232.74.179","port":"443","uuid":"927094d3-d678-4763-8591-e240d0bcae87","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇺🇸_US_30","ws-opts":{"path":"/speedtest/Amsterdam.kotick.site","headers":{"host":"cold-night-9009.walidfree21.workers.dev"}},"server":"104.17.234.87","port":"443","uuid":"DCE76061-EE65-49DB-997C-A6A880DADE3A","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"ss","name":"@Vpn_Filternet_🇬🇹_GT","server":"170.80.111.6","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇸🇮_SI","server":"192.71.244.150","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇲🇩_MD","server":"192.121.87.147","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇵🇦_PA","server":"138.186.142.4","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇺🇾_UY","server":"179.27.200.28","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇲🇰_MK","server":"46.183.185.37","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇮🇸_IS","server":"37.235.49.152","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇬🇷_GR","server":"192.71.166.102","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇯🇵_JP_17","server":"85.208.108.93","port":7002,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇯🇵_JP_18","server":"85.208.108.93","port":8119,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇯🇵_JP_19","server":"85.208.108.93","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇺🇸_US_31","server":"34.222.118.200","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇺🇸_US_32","server":"34.209.123.93","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇺🇸_US_33","server":"52.32.130.136","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇺🇸_US_34","ws-opts":{"path":"/chat","headers":{"host":"vc3.noml.app"}},"server":"vc3.noml.app","port":"8080","uuid":"aa98f87c-36da-4cda-917b-4f05533e0460","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇺🇸_US_35","ws-opts":{"path":"/catre2","headers":{"host":"ca.moop.wiki"}},"server":"ca.moop.wiki","port":"80","uuid":"aa98f87c-36da-4cda-917b-4f05533e0460","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"@Vpn_Filternet_🇺🇸_US_36","ws-opts":{"path":"/c986","headers":{"host":"poland.seeworld.pro"}},"server":"poland.seeworld.pro","port":"8880","uuid":"aa98f87c-36da-4cda-917b-4f05533e0460","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇯🇵_JP_20","server":"54.64.196.45","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇯🇵_JP_21","server":"13.231.173.180","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇰🇷_KR_6","server":"3.35.235.247","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
-  - {"type":"ss","name":"@Vpn_Filternet_🇸🇬_SG_10","server":"18.141.225.91","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
+  - {"name":"HW_1","type":"vmess","server":"67.229.29.134","port":29683,"cipher":"auto","uuid":"099ca97b-0a40-4e71-93b8-90e7b01cdb7b","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/us1/getData","headers":{"host":"us1.nb123.info"}}}
+  - {"name":"HW_2","type":"vmess","server":"67.229.243.65","port":20683,"cipher":"auto","uuid":"a52907d9-9b68-4d4e-8f1f-2d5e18c98c45","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/us13/getData","headers":{"host":"us13.verichains.co"}}}
+  - {"name":"HW_3","type":"vmess","server":"174.139.126.251","port":59803,"cipher":"auto","uuid":"51695a30-3915-4b9e-9a7f-bc10b5033a41","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/us15/getData","headers":{"host":"us15.verichains.co"}}}
+  - {"name":"HW_4","type":"vmess","server":"100.43.163.40","port":51832,"cipher":"auto","uuid":"704f5220-4a23-4a4d-9166-e29f3d138313","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/us14/getData","headers":{"host":"us14.linkeden.co"}}}
+  - {"name":"HW_5","type":"vmess","server":"38.47.96.59","port":33964,"cipher":"auto","uuid":"38a0b74e-e4df-41ba-bcec-e3c047dc19f1","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/jp1/getData","headers":{"host":"jp1.nb123.info"}}}
+  - {"name":"HW_6","type":"vmess","server":"38.47.110.212","port":43050,"cipher":"auto","uuid":"f5b19092-44aa-408f-8148-f11b9ddc04d8","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/jp2/getData","headers":{"host":"jp2.linkeden.co"}}}
+  - {"name":"HW_7","type":"vmess","server":"192.243.126.118","port":17027,"cipher":"auto","uuid":"763f3c6d-0994-417d-8773-d892b04d81c7","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"HW_8","type":"vmess","server":"210.87.202.202","port":42893,"cipher":"auto","uuid":"cab236d8-6683-477c-be69-931e598e329a","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/kor1/getData","headers":{"host":"kor1.nb123.info"}}}
+  - {"name":"HW_9","type":"vmess","server":"210.87.202.87","port":20319,"cipher":"auto","uuid":"b953baa1-88c3-4073-b777-1192deadfb97","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/kor2/getData","headers":{"host":"kor2.nb123.info"}}}
+  - {"name":"HW_10","type":"vmess","server":"87.254.31.229","port":30075,"cipher":"auto","uuid":"9a765244-583e-44c7-810a-ed011c98abaa","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/uk1/getData","headers":{"host":"uk1.verichains.co"}}}
+  - {"name":"HW_11","type":"vmess","server":"47.74.89.109","port":25953,"cipher":"auto","uuid":"e2111758-b370-4c0e-8061-0269741a39ef","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/aus/getData","headers":{"host":"aus.verichains.co"}}}
+  - {"name":"HW_12","type":"vmess","server":"43.154.215.108","port":25242,"cipher":"auto","uuid":"82adc998-88ab-4c87-8b86-5bc39e80f5b2","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/hk1/getData","headers":{"host":"hk1.nb123.info"}}}
+  - {"name":"HW_13","type":"vmess","server":"43.154.185.49","port":22509,"cipher":"auto","uuid":"b74f0019-b839-421f-add8-ffaf94fc3139","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/hk7/getData","headers":{"host":"hk7.verichains.co"}}}
+  - {"name":"HW_14","type":"vmess","server":"43.134.208.74","port":51957,"cipher":"auto","uuid":"9dc18843-47c7-4ea2-a8b9-0625a9595efa","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/hk14/getData","headers":{"host":"hk14.nb123.info"}}}
+  - {"name":"HW_15","type":"vmess","server":"43.154.238.2","port":42809,"cipher":"auto","uuid":"ce387c33-6d75-4722-95dd-b265657f2802","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/hk8/getData","headers":{"host":"hk8.linkeden.co"}}}
+  - {"name":"HW_16","type":"vmess","server":"43.154.76.92","port":28980,"cipher":"auto","uuid":"784272d2-bd2d-438a-bbd4-1271bb1f1b0d","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/hk15/getData","headers":{"host":"hk15.verichains.co"}}}
+  - {"name":"HW_17","type":"vmess","server":"43.154.233.89","port":24783,"cipher":"auto","uuid":"2264f24e-d814-4aa6-98c0-ed5a8322a0eb","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/hk12/getData","headers":{"host":"hk12.verichains.co"}}}
+  - {"name":"HW_18","type":"vmess","server":"43.153.222.128","port":32544,"cipher":"auto","uuid":"de482393-068d-4cb1-986e-680ff86d5d7d","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/sg9/getData","headers":{"host":"sg9.verichains.co"}}}
+  - {"name":"HW_19","type":"vmess","server":"43.134.161.69","port":57182,"cipher":"auto","uuid":"d50a35ce-08a4-47d2-8c42-65be8f5cb7c6","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/sgx/getData","headers":{"host":"sgx.verichains.co"}}}
+  - {"name":"HW_20","type":"vmess","server":"43.159.53.33","port":54892,"cipher":"auto","uuid":"98821111-93ab-4562-946a-61ba95f472f1","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/sg8/getData","headers":{"host":"sg8.verichains.co"}}}
+  - {"name":"HW_21","type":"vmess","server":"43.156.58.10","port":52004,"cipher":"auto","uuid":"e1e1241a-6617-4f33-be96-8d15f9c82ca7","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/sg4/getData","headers":{"host":"sg4.nb123.info"}}}
+  - {"name":"HW_22","type":"vmess","server":"43.134.227.81","port":25659,"cipher":"auto","uuid":"f21f434d-8097-4302-9c0c-0b0c7dffcfcb","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/sg6/getData","headers":{"host":"sg6.verichains.co"}}}
+  - {"name":"HW_23","type":"vmess","server":"38.54.107.169","port":55255,"cipher":"auto","uuid":"6e28708e-60b5-4fda-aaa7-51940d3cc55b","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/tw2/getData","headers":{"host":"tw2.linkeden.co"}}}
+  - {"name":"HW_24","type":"vmess","server":"38.60.208.145","port":41397,"cipher":"auto","uuid":"a529cf39-d753-41e5-a72a-64cf8d48f469","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/tk2/getData","headers":{"host":"tk2.verichains.co"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - '@Vpn_Filternet_🇺🇸_US_1'
-      - '@Vpn_Filternet_🇪🇨_EC'
-      - '@Vpn_Filternet_🇺🇸_US_2'
-      - '@Vpn_Filternet_🇸🇬_SG_1'
-      - '@Vpn_Filternet_🇯🇵_JP_1'
-      - '@Vpn_Filternet_🇫🇷_FR_1'
-      - '@Vpn_Filternet_🇨🇦_CA_1'
-      - '@Vpn_Filternet_🇮🇳_IN'
-      - '@Vpn_Filternet_🇫🇷_FR_2'
-      - '@Vpn_Filternet_🇨🇳_CN'
-      - '@Vpn_Filternet_🇺🇸_US_3'
-      - '@Vpn_Filternet_🇯🇵_JP_2'
-      - '@Vpn_Filternet_🇺🇸_US_4'
-      - '@Vpn_Filternet_🇨🇦_CA_2'
-      - '@Vpn_Filternet_🇨🇦_CA_3'
-      - '@Vpn_Filternet_🇬🇧_GB_1'
-      - '@Vpn_Filternet_🇪🇬_EG'
-      - '@Vpn_Filternet_🇺🇸_US_5'
-      - '@Vpn_Filternet_🇫🇷_FR_3'
-      - '@Vpn_Filternet_🇨🇦_CA_4'
-      - '@Vpn_Filternet_🇫🇮_FI'
-      - '@Vpn_Filternet_🇺🇸_US_6'
-      - '@Vpn_Filternet_🇲🇾_MY'
-      - '@Vpn_Filternet_🇭🇷_HR'
-      - '@Vpn_Filternet_🇯🇵_JP_3'
-      - '@Vpn_Filternet_🇺🇸_US_7'
-      - '@Vpn_Filternet_🇰🇷_KR_1'
-      - '@Vpn_Filternet_🇯🇵_JP_4'
-      - '@Vpn_Filternet_🇺🇸_US_8'
-      - '@Vpn_Filternet_🇸🇬_SG_2'
-      - '@Vpn_Filternet_🇳🇱_NL_1'
-      - '@Vpn_Filternet_🇺🇸_US_9'
-      - '@Vpn_Filternet_🇺🇸_US_10'
-      - '@Vpn_Filternet_🇯🇵_JP_5'
-      - '@Vpn_Filternet_🇯🇵_JP_6'
-      - '@Vpn_Filternet_🇯🇵_JP_7'
-      - '@Vpn_Filternet_🇸🇬_SG_3'
-      - '@Vpn_Filternet_🇺🇸_US_11'
-      - '@Vpn_Filternet_🇺🇸_US_12'
-      - '@Vpn_Filternet_🇺🇸_US_13'
-      - '@Vpn_Filternet_🇸🇬_SG_4'
-      - '@Vpn_Filternet_🇯🇵_JP_8'
-      - '@Vpn_Filternet_🇯🇵_JP_9'
-      - '@Vpn_Filternet_🇯🇵_JP_10'
-      - '@Vpn_Filternet_🇯🇵_JP_11'
-      - '@Vpn_Filternet_🇯🇵_JP_12'
-      - '@Vpn_Filternet_🇯🇵_JP_13'
-      - '@Vpn_Filternet_🇭🇰_HK_1'
-      - '@Vpn_Filternet_🇯🇵_JP_14'
-      - '@Vpn_Filternet_🇭🇰_HK_2'
-      - '@Vpn_Filternet_🇺🇸_US_14'
-      - '@Vpn_Filternet_🇺🇸_US_15'
-      - '@Vpn_Filternet_🇲🇴_MO'
-      - '@Vpn_Filternet_🇳🇱_NL_2'
-      - '@Vpn_Filternet_🇺🇸_US_16'
-      - '@Vpn_Filternet_🇰🇷_KR_2'
-      - '@Vpn_Filternet_🇺🇸_US_17'
-      - '@Vpn_Filternet_🇰🇷_KR_3'
-      - '@Vpn_Filternet_🇳🇱_NL_3'
-      - '@Vpn_Filternet_🇺🇸_US_18'
-      - '@Vpn_Filternet_🇺🇸_US_19'
-      - '@Vpn_Filternet_🇺🇸_US_20'
-      - '@Vpn_Filternet_🇬🇧_GB_2'
-      - '@Vpn_Filternet_🇺🇸_US_21'
-      - '@Vpn_Filternet_🇺🇸_US_22'
-      - '@Vpn_Filternet_🇯🇵_JP_15'
-      - '@Vpn_Filternet_🇯🇵_JP_16'
-      - '@Vpn_Filternet_🇺🇸_US_23'
-      - '@Vpn_Filternet_🇺🇸_US_24'
-      - '@Vpn_Filternet_🇺🇸_US_25'
-      - '@Vpn_Filternet_🇳🇱_NL_4'
-      - '@Vpn_Filternet_🇰🇷_KR_4'
-      - '@Vpn_Filternet_🇫🇷_FR_4'
-      - '@Vpn_Filternet_🇺🇸_US_26'
-      - '@Vpn_Filternet_🇸🇬_SG_5'
-      - '@Vpn_Filternet_🇸🇬_SG_6'
-      - '@Vpn_Filternet_🇸🇬_SG_7'
-      - '@Vpn_Filternet_🇸🇬_SG_8'
-      - '@Vpn_Filternet_🇸🇬_SG_9'
-      - '@Vpn_Filternet_🇺🇸_US_27'
-      - '@Vpn_Filternet_🇻🇳_VN'
-      - '@Vpn_Filternet_🇷🇺_RU'
-      - '@Vpn_Filternet_🇺🇸_US_28'
-      - '@Vpn_Filternet_🇰🇷_KR_5'
-      - '@Vpn_Filternet_🇮🇱_IL'
-      - '@Vpn_Filternet_🇨🇴_CO'
-      - '@Vpn_Filternet_🇳🇱_NL_5'
-      - '@Vpn_Filternet_🇺🇸_US_29'
-      - '@Vpn_Filternet_🇺🇸_US_30'
-      - '@Vpn_Filternet_🇬🇹_GT'
-      - '@Vpn_Filternet_🇸🇮_SI'
-      - '@Vpn_Filternet_🇲🇩_MD'
-      - '@Vpn_Filternet_🇵🇦_PA'
-      - '@Vpn_Filternet_🇺🇾_UY'
-      - '@Vpn_Filternet_🇲🇰_MK'
-      - '@Vpn_Filternet_🇮🇸_IS'
-      - '@Vpn_Filternet_🇬🇷_GR'
-      - '@Vpn_Filternet_🇯🇵_JP_17'
-      - '@Vpn_Filternet_🇯🇵_JP_18'
-      - '@Vpn_Filternet_🇯🇵_JP_19'
-      - '@Vpn_Filternet_🇺🇸_US_31'
-      - '@Vpn_Filternet_🇺🇸_US_32'
-      - '@Vpn_Filternet_🇺🇸_US_33'
-      - '@Vpn_Filternet_🇺🇸_US_34'
-      - '@Vpn_Filternet_🇺🇸_US_35'
-      - '@Vpn_Filternet_🇺🇸_US_36'
-      - '@Vpn_Filternet_🇯🇵_JP_20'
-      - '@Vpn_Filternet_🇯🇵_JP_21'
-      - '@Vpn_Filternet_🇰🇷_KR_6'
-      - '@Vpn_Filternet_🇸🇬_SG_10'
+      - HW_1
+      - HW_2
+      - HW_3
+      - HW_4
+      - HW_5
+      - HW_6
+      - HW_7
+      - HW_8
+      - HW_9
+      - HW_10
+      - HW_11
+      - HW_12
+      - HW_13
+      - HW_14
+      - HW_15
+      - HW_16
+      - HW_17
+      - HW_18
+      - HW_19
+      - HW_20
+      - HW_21
+      - HW_22
+      - HW_23
+      - HW_24
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - '@Vpn_Filternet_🇺🇸_US_1'
-      - '@Vpn_Filternet_🇪🇨_EC'
-      - '@Vpn_Filternet_🇺🇸_US_2'
-      - '@Vpn_Filternet_🇸🇬_SG_1'
-      - '@Vpn_Filternet_🇯🇵_JP_1'
-      - '@Vpn_Filternet_🇫🇷_FR_1'
-      - '@Vpn_Filternet_🇨🇦_CA_1'
-      - '@Vpn_Filternet_🇮🇳_IN'
-      - '@Vpn_Filternet_🇫🇷_FR_2'
-      - '@Vpn_Filternet_🇨🇳_CN'
-      - '@Vpn_Filternet_🇺🇸_US_3'
-      - '@Vpn_Filternet_🇯🇵_JP_2'
-      - '@Vpn_Filternet_🇺🇸_US_4'
-      - '@Vpn_Filternet_🇨🇦_CA_2'
-      - '@Vpn_Filternet_🇨🇦_CA_3'
-      - '@Vpn_Filternet_🇬🇧_GB_1'
-      - '@Vpn_Filternet_🇪🇬_EG'
-      - '@Vpn_Filternet_🇺🇸_US_5'
-      - '@Vpn_Filternet_🇫🇷_FR_3'
-      - '@Vpn_Filternet_🇨🇦_CA_4'
-      - '@Vpn_Filternet_🇫🇮_FI'
-      - '@Vpn_Filternet_🇺🇸_US_6'
-      - '@Vpn_Filternet_🇲🇾_MY'
-      - '@Vpn_Filternet_🇭🇷_HR'
-      - '@Vpn_Filternet_🇯🇵_JP_3'
-      - '@Vpn_Filternet_🇺🇸_US_7'
-      - '@Vpn_Filternet_🇰🇷_KR_1'
-      - '@Vpn_Filternet_🇯🇵_JP_4'
-      - '@Vpn_Filternet_🇺🇸_US_8'
-      - '@Vpn_Filternet_🇸🇬_SG_2'
-      - '@Vpn_Filternet_🇳🇱_NL_1'
-      - '@Vpn_Filternet_🇺🇸_US_9'
-      - '@Vpn_Filternet_🇺🇸_US_10'
-      - '@Vpn_Filternet_🇯🇵_JP_5'
-      - '@Vpn_Filternet_🇯🇵_JP_6'
-      - '@Vpn_Filternet_🇯🇵_JP_7'
-      - '@Vpn_Filternet_🇸🇬_SG_3'
-      - '@Vpn_Filternet_🇺🇸_US_11'
-      - '@Vpn_Filternet_🇺🇸_US_12'
-      - '@Vpn_Filternet_🇺🇸_US_13'
-      - '@Vpn_Filternet_🇸🇬_SG_4'
-      - '@Vpn_Filternet_🇯🇵_JP_8'
-      - '@Vpn_Filternet_🇯🇵_JP_9'
-      - '@Vpn_Filternet_🇯🇵_JP_10'
-      - '@Vpn_Filternet_🇯🇵_JP_11'
-      - '@Vpn_Filternet_🇯🇵_JP_12'
-      - '@Vpn_Filternet_🇯🇵_JP_13'
-      - '@Vpn_Filternet_🇭🇰_HK_1'
-      - '@Vpn_Filternet_🇯🇵_JP_14'
-      - '@Vpn_Filternet_🇭🇰_HK_2'
-      - '@Vpn_Filternet_🇺🇸_US_14'
-      - '@Vpn_Filternet_🇺🇸_US_15'
-      - '@Vpn_Filternet_🇲🇴_MO'
-      - '@Vpn_Filternet_🇳🇱_NL_2'
-      - '@Vpn_Filternet_🇺🇸_US_16'
-      - '@Vpn_Filternet_🇰🇷_KR_2'
-      - '@Vpn_Filternet_🇺🇸_US_17'
-      - '@Vpn_Filternet_🇰🇷_KR_3'
-      - '@Vpn_Filternet_🇳🇱_NL_3'
-      - '@Vpn_Filternet_🇺🇸_US_18'
-      - '@Vpn_Filternet_🇺🇸_US_19'
-      - '@Vpn_Filternet_🇺🇸_US_20'
-      - '@Vpn_Filternet_🇬🇧_GB_2'
-      - '@Vpn_Filternet_🇺🇸_US_21'
-      - '@Vpn_Filternet_🇺🇸_US_22'
-      - '@Vpn_Filternet_🇯🇵_JP_15'
-      - '@Vpn_Filternet_🇯🇵_JP_16'
-      - '@Vpn_Filternet_🇺🇸_US_23'
-      - '@Vpn_Filternet_🇺🇸_US_24'
-      - '@Vpn_Filternet_🇺🇸_US_25'
-      - '@Vpn_Filternet_🇳🇱_NL_4'
-      - '@Vpn_Filternet_🇰🇷_KR_4'
-      - '@Vpn_Filternet_🇫🇷_FR_4'
-      - '@Vpn_Filternet_🇺🇸_US_26'
-      - '@Vpn_Filternet_🇸🇬_SG_5'
-      - '@Vpn_Filternet_🇸🇬_SG_6'
-      - '@Vpn_Filternet_🇸🇬_SG_7'
-      - '@Vpn_Filternet_🇸🇬_SG_8'
-      - '@Vpn_Filternet_🇸🇬_SG_9'
-      - '@Vpn_Filternet_🇺🇸_US_27'
-      - '@Vpn_Filternet_🇻🇳_VN'
-      - '@Vpn_Filternet_🇷🇺_RU'
-      - '@Vpn_Filternet_🇺🇸_US_28'
-      - '@Vpn_Filternet_🇰🇷_KR_5'
-      - '@Vpn_Filternet_🇮🇱_IL'
-      - '@Vpn_Filternet_🇨🇴_CO'
-      - '@Vpn_Filternet_🇳🇱_NL_5'
-      - '@Vpn_Filternet_🇺🇸_US_29'
-      - '@Vpn_Filternet_🇺🇸_US_30'
-      - '@Vpn_Filternet_🇬🇹_GT'
-      - '@Vpn_Filternet_🇸🇮_SI'
-      - '@Vpn_Filternet_🇲🇩_MD'
-      - '@Vpn_Filternet_🇵🇦_PA'
-      - '@Vpn_Filternet_🇺🇾_UY'
-      - '@Vpn_Filternet_🇲🇰_MK'
-      - '@Vpn_Filternet_🇮🇸_IS'
-      - '@Vpn_Filternet_🇬🇷_GR'
-      - '@Vpn_Filternet_🇯🇵_JP_17'
-      - '@Vpn_Filternet_🇯🇵_JP_18'
-      - '@Vpn_Filternet_🇯🇵_JP_19'
-      - '@Vpn_Filternet_🇺🇸_US_31'
-      - '@Vpn_Filternet_🇺🇸_US_32'
-      - '@Vpn_Filternet_🇺🇸_US_33'
-      - '@Vpn_Filternet_🇺🇸_US_34'
-      - '@Vpn_Filternet_🇺🇸_US_35'
-      - '@Vpn_Filternet_🇺🇸_US_36'
-      - '@Vpn_Filternet_🇯🇵_JP_20'
-      - '@Vpn_Filternet_🇯🇵_JP_21'
-      - '@Vpn_Filternet_🇰🇷_KR_6'
-      - '@Vpn_Filternet_🇸🇬_SG_10'
+      - HW_1
+      - HW_2
+      - HW_3
+      - HW_4
+      - HW_5
+      - HW_6
+      - HW_7
+      - HW_8
+      - HW_9
+      - HW_10
+      - HW_11
+      - HW_12
+      - HW_13
+      - HW_14
+      - HW_15
+      - HW_16
+      - HW_17
+      - HW_18
+      - HW_19
+      - HW_20
+      - HW_21
+      - HW_22
+      - HW_23
+      - HW_24
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - '@Vpn_Filternet_🇺🇸_US_1'
-      - '@Vpn_Filternet_🇪🇨_EC'
-      - '@Vpn_Filternet_🇺🇸_US_2'
-      - '@Vpn_Filternet_🇸🇬_SG_1'
-      - '@Vpn_Filternet_🇯🇵_JP_1'
-      - '@Vpn_Filternet_🇫🇷_FR_1'
-      - '@Vpn_Filternet_🇨🇦_CA_1'
-      - '@Vpn_Filternet_🇮🇳_IN'
-      - '@Vpn_Filternet_🇫🇷_FR_2'
-      - '@Vpn_Filternet_🇨🇳_CN'
-      - '@Vpn_Filternet_🇺🇸_US_3'
-      - '@Vpn_Filternet_🇯🇵_JP_2'
-      - '@Vpn_Filternet_🇺🇸_US_4'
-      - '@Vpn_Filternet_🇨🇦_CA_2'
-      - '@Vpn_Filternet_🇨🇦_CA_3'
-      - '@Vpn_Filternet_🇬🇧_GB_1'
-      - '@Vpn_Filternet_🇪🇬_EG'
-      - '@Vpn_Filternet_🇺🇸_US_5'
-      - '@Vpn_Filternet_🇫🇷_FR_3'
-      - '@Vpn_Filternet_🇨🇦_CA_4'
-      - '@Vpn_Filternet_🇫🇮_FI'
-      - '@Vpn_Filternet_🇺🇸_US_6'
-      - '@Vpn_Filternet_🇲🇾_MY'
-      - '@Vpn_Filternet_🇭🇷_HR'
-      - '@Vpn_Filternet_🇯🇵_JP_3'
-      - '@Vpn_Filternet_🇺🇸_US_7'
-      - '@Vpn_Filternet_🇰🇷_KR_1'
-      - '@Vpn_Filternet_🇯🇵_JP_4'
-      - '@Vpn_Filternet_🇺🇸_US_8'
-      - '@Vpn_Filternet_🇸🇬_SG_2'
-      - '@Vpn_Filternet_🇳🇱_NL_1'
-      - '@Vpn_Filternet_🇺🇸_US_9'
-      - '@Vpn_Filternet_🇺🇸_US_10'
-      - '@Vpn_Filternet_🇯🇵_JP_5'
-      - '@Vpn_Filternet_🇯🇵_JP_6'
-      - '@Vpn_Filternet_🇯🇵_JP_7'
-      - '@Vpn_Filternet_🇸🇬_SG_3'
-      - '@Vpn_Filternet_🇺🇸_US_11'
-      - '@Vpn_Filternet_🇺🇸_US_12'
-      - '@Vpn_Filternet_🇺🇸_US_13'
-      - '@Vpn_Filternet_🇸🇬_SG_4'
-      - '@Vpn_Filternet_🇯🇵_JP_8'
-      - '@Vpn_Filternet_🇯🇵_JP_9'
-      - '@Vpn_Filternet_🇯🇵_JP_10'
-      - '@Vpn_Filternet_🇯🇵_JP_11'
-      - '@Vpn_Filternet_🇯🇵_JP_12'
-      - '@Vpn_Filternet_🇯🇵_JP_13'
-      - '@Vpn_Filternet_🇭🇰_HK_1'
-      - '@Vpn_Filternet_🇯🇵_JP_14'
-      - '@Vpn_Filternet_🇭🇰_HK_2'
-      - '@Vpn_Filternet_🇺🇸_US_14'
-      - '@Vpn_Filternet_🇺🇸_US_15'
-      - '@Vpn_Filternet_🇲🇴_MO'
-      - '@Vpn_Filternet_🇳🇱_NL_2'
-      - '@Vpn_Filternet_🇺🇸_US_16'
-      - '@Vpn_Filternet_🇰🇷_KR_2'
-      - '@Vpn_Filternet_🇺🇸_US_17'
-      - '@Vpn_Filternet_🇰🇷_KR_3'
-      - '@Vpn_Filternet_🇳🇱_NL_3'
-      - '@Vpn_Filternet_🇺🇸_US_18'
-      - '@Vpn_Filternet_🇺🇸_US_19'
-      - '@Vpn_Filternet_🇺🇸_US_20'
-      - '@Vpn_Filternet_🇬🇧_GB_2'
-      - '@Vpn_Filternet_🇺🇸_US_21'
-      - '@Vpn_Filternet_🇺🇸_US_22'
-      - '@Vpn_Filternet_🇯🇵_JP_15'
-      - '@Vpn_Filternet_🇯🇵_JP_16'
-      - '@Vpn_Filternet_🇺🇸_US_23'
-      - '@Vpn_Filternet_🇺🇸_US_24'
-      - '@Vpn_Filternet_🇺🇸_US_25'
-      - '@Vpn_Filternet_🇳🇱_NL_4'
-      - '@Vpn_Filternet_🇰🇷_KR_4'
-      - '@Vpn_Filternet_🇫🇷_FR_4'
-      - '@Vpn_Filternet_🇺🇸_US_26'
-      - '@Vpn_Filternet_🇸🇬_SG_5'
-      - '@Vpn_Filternet_🇸🇬_SG_6'
-      - '@Vpn_Filternet_🇸🇬_SG_7'
-      - '@Vpn_Filternet_🇸🇬_SG_8'
-      - '@Vpn_Filternet_🇸🇬_SG_9'
-      - '@Vpn_Filternet_🇺🇸_US_27'
-      - '@Vpn_Filternet_🇻🇳_VN'
-      - '@Vpn_Filternet_🇷🇺_RU'
-      - '@Vpn_Filternet_🇺🇸_US_28'
-      - '@Vpn_Filternet_🇰🇷_KR_5'
-      - '@Vpn_Filternet_🇮🇱_IL'
-      - '@Vpn_Filternet_🇨🇴_CO'
-      - '@Vpn_Filternet_🇳🇱_NL_5'
-      - '@Vpn_Filternet_🇺🇸_US_29'
-      - '@Vpn_Filternet_🇺🇸_US_30'
-      - '@Vpn_Filternet_🇬🇹_GT'
-      - '@Vpn_Filternet_🇸🇮_SI'
-      - '@Vpn_Filternet_🇲🇩_MD'
-      - '@Vpn_Filternet_🇵🇦_PA'
-      - '@Vpn_Filternet_🇺🇾_UY'
-      - '@Vpn_Filternet_🇲🇰_MK'
-      - '@Vpn_Filternet_🇮🇸_IS'
-      - '@Vpn_Filternet_🇬🇷_GR'
-      - '@Vpn_Filternet_🇯🇵_JP_17'
-      - '@Vpn_Filternet_🇯🇵_JP_18'
-      - '@Vpn_Filternet_🇯🇵_JP_19'
-      - '@Vpn_Filternet_🇺🇸_US_31'
-      - '@Vpn_Filternet_🇺🇸_US_32'
-      - '@Vpn_Filternet_🇺🇸_US_33'
-      - '@Vpn_Filternet_🇺🇸_US_34'
-      - '@Vpn_Filternet_🇺🇸_US_35'
-      - '@Vpn_Filternet_🇺🇸_US_36'
-      - '@Vpn_Filternet_🇯🇵_JP_20'
-      - '@Vpn_Filternet_🇯🇵_JP_21'
-      - '@Vpn_Filternet_🇰🇷_KR_6'
-      - '@Vpn_Filternet_🇸🇬_SG_10'
+      - HW_1
+      - HW_2
+      - HW_3
+      - HW_4
+      - HW_5
+      - HW_6
+      - HW_7
+      - HW_8
+      - HW_9
+      - HW_10
+      - HW_11
+      - HW_12
+      - HW_13
+      - HW_14
+      - HW_15
+      - HW_16
+      - HW_17
+      - HW_18
+      - HW_19
+      - HW_20
+      - HW_21
+      - HW_22
+      - HW_23
+      - HW_24
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - '@Vpn_Filternet_🇺🇸_US_1'
-      - '@Vpn_Filternet_🇪🇨_EC'
-      - '@Vpn_Filternet_🇺🇸_US_2'
-      - '@Vpn_Filternet_🇸🇬_SG_1'
-      - '@Vpn_Filternet_🇯🇵_JP_1'
-      - '@Vpn_Filternet_🇫🇷_FR_1'
-      - '@Vpn_Filternet_🇨🇦_CA_1'
-      - '@Vpn_Filternet_🇮🇳_IN'
-      - '@Vpn_Filternet_🇫🇷_FR_2'
-      - '@Vpn_Filternet_🇨🇳_CN'
-      - '@Vpn_Filternet_🇺🇸_US_3'
-      - '@Vpn_Filternet_🇯🇵_JP_2'
-      - '@Vpn_Filternet_🇺🇸_US_4'
-      - '@Vpn_Filternet_🇨🇦_CA_2'
-      - '@Vpn_Filternet_🇨🇦_CA_3'
-      - '@Vpn_Filternet_🇬🇧_GB_1'
-      - '@Vpn_Filternet_🇪🇬_EG'
-      - '@Vpn_Filternet_🇺🇸_US_5'
-      - '@Vpn_Filternet_🇫🇷_FR_3'
-      - '@Vpn_Filternet_🇨🇦_CA_4'
-      - '@Vpn_Filternet_🇫🇮_FI'
-      - '@Vpn_Filternet_🇺🇸_US_6'
-      - '@Vpn_Filternet_🇲🇾_MY'
-      - '@Vpn_Filternet_🇭🇷_HR'
-      - '@Vpn_Filternet_🇯🇵_JP_3'
-      - '@Vpn_Filternet_🇺🇸_US_7'
-      - '@Vpn_Filternet_🇰🇷_KR_1'
-      - '@Vpn_Filternet_🇯🇵_JP_4'
-      - '@Vpn_Filternet_🇺🇸_US_8'
-      - '@Vpn_Filternet_🇸🇬_SG_2'
-      - '@Vpn_Filternet_🇳🇱_NL_1'
-      - '@Vpn_Filternet_🇺🇸_US_9'
-      - '@Vpn_Filternet_🇺🇸_US_10'
-      - '@Vpn_Filternet_🇯🇵_JP_5'
-      - '@Vpn_Filternet_🇯🇵_JP_6'
-      - '@Vpn_Filternet_🇯🇵_JP_7'
-      - '@Vpn_Filternet_🇸🇬_SG_3'
-      - '@Vpn_Filternet_🇺🇸_US_11'
-      - '@Vpn_Filternet_🇺🇸_US_12'
-      - '@Vpn_Filternet_🇺🇸_US_13'
-      - '@Vpn_Filternet_🇸🇬_SG_4'
-      - '@Vpn_Filternet_🇯🇵_JP_8'
-      - '@Vpn_Filternet_🇯🇵_JP_9'
-      - '@Vpn_Filternet_🇯🇵_JP_10'
-      - '@Vpn_Filternet_🇯🇵_JP_11'
-      - '@Vpn_Filternet_🇯🇵_JP_12'
-      - '@Vpn_Filternet_🇯🇵_JP_13'
-      - '@Vpn_Filternet_🇭🇰_HK_1'
-      - '@Vpn_Filternet_🇯🇵_JP_14'
-      - '@Vpn_Filternet_🇭🇰_HK_2'
-      - '@Vpn_Filternet_🇺🇸_US_14'
-      - '@Vpn_Filternet_🇺🇸_US_15'
-      - '@Vpn_Filternet_🇲🇴_MO'
-      - '@Vpn_Filternet_🇳🇱_NL_2'
-      - '@Vpn_Filternet_🇺🇸_US_16'
-      - '@Vpn_Filternet_🇰🇷_KR_2'
-      - '@Vpn_Filternet_🇺🇸_US_17'
-      - '@Vpn_Filternet_🇰🇷_KR_3'
-      - '@Vpn_Filternet_🇳🇱_NL_3'
-      - '@Vpn_Filternet_🇺🇸_US_18'
-      - '@Vpn_Filternet_🇺🇸_US_19'
-      - '@Vpn_Filternet_🇺🇸_US_20'
-      - '@Vpn_Filternet_🇬🇧_GB_2'
-      - '@Vpn_Filternet_🇺🇸_US_21'
-      - '@Vpn_Filternet_🇺🇸_US_22'
-      - '@Vpn_Filternet_🇯🇵_JP_15'
-      - '@Vpn_Filternet_🇯🇵_JP_16'
-      - '@Vpn_Filternet_🇺🇸_US_23'
-      - '@Vpn_Filternet_🇺🇸_US_24'
-      - '@Vpn_Filternet_🇺🇸_US_25'
-      - '@Vpn_Filternet_🇳🇱_NL_4'
-      - '@Vpn_Filternet_🇰🇷_KR_4'
-      - '@Vpn_Filternet_🇫🇷_FR_4'
-      - '@Vpn_Filternet_🇺🇸_US_26'
-      - '@Vpn_Filternet_🇸🇬_SG_5'
-      - '@Vpn_Filternet_🇸🇬_SG_6'
-      - '@Vpn_Filternet_🇸🇬_SG_7'
-      - '@Vpn_Filternet_🇸🇬_SG_8'
-      - '@Vpn_Filternet_🇸🇬_SG_9'
-      - '@Vpn_Filternet_🇺🇸_US_27'
-      - '@Vpn_Filternet_🇻🇳_VN'
-      - '@Vpn_Filternet_🇷🇺_RU'
-      - '@Vpn_Filternet_🇺🇸_US_28'
-      - '@Vpn_Filternet_🇰🇷_KR_5'
-      - '@Vpn_Filternet_🇮🇱_IL'
-      - '@Vpn_Filternet_🇨🇴_CO'
-      - '@Vpn_Filternet_🇳🇱_NL_5'
-      - '@Vpn_Filternet_🇺🇸_US_29'
-      - '@Vpn_Filternet_🇺🇸_US_30'
-      - '@Vpn_Filternet_🇬🇹_GT'
-      - '@Vpn_Filternet_🇸🇮_SI'
-      - '@Vpn_Filternet_🇲🇩_MD'
-      - '@Vpn_Filternet_🇵🇦_PA'
-      - '@Vpn_Filternet_🇺🇾_UY'
-      - '@Vpn_Filternet_🇲🇰_MK'
-      - '@Vpn_Filternet_🇮🇸_IS'
-      - '@Vpn_Filternet_🇬🇷_GR'
-      - '@Vpn_Filternet_🇯🇵_JP_17'
-      - '@Vpn_Filternet_🇯🇵_JP_18'
-      - '@Vpn_Filternet_🇯🇵_JP_19'
-      - '@Vpn_Filternet_🇺🇸_US_31'
-      - '@Vpn_Filternet_🇺🇸_US_32'
-      - '@Vpn_Filternet_🇺🇸_US_33'
-      - '@Vpn_Filternet_🇺🇸_US_34'
-      - '@Vpn_Filternet_🇺🇸_US_35'
-      - '@Vpn_Filternet_🇺🇸_US_36'
-      - '@Vpn_Filternet_🇯🇵_JP_20'
-      - '@Vpn_Filternet_🇯🇵_JP_21'
-      - '@Vpn_Filternet_🇰🇷_KR_6'
-      - '@Vpn_Filternet_🇸🇬_SG_10'
+      - HW_1
+      - HW_2
+      - HW_3
+      - HW_4
+      - HW_5
+      - HW_6
+      - HW_7
+      - HW_8
+      - HW_9
+      - HW_10
+      - HW_11
+      - HW_12
+      - HW_13
+      - HW_14
+      - HW_15
+      - HW_16
+      - HW_17
+      - HW_18
+      - HW_19
+      - HW_20
+      - HW_21
+      - HW_22
+      - HW_23
+      - HW_24
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - '@Vpn_Filternet_🇺🇸_US_1'
-      - '@Vpn_Filternet_🇪🇨_EC'
-      - '@Vpn_Filternet_🇺🇸_US_2'
-      - '@Vpn_Filternet_🇸🇬_SG_1'
-      - '@Vpn_Filternet_🇯🇵_JP_1'
-      - '@Vpn_Filternet_🇫🇷_FR_1'
-      - '@Vpn_Filternet_🇨🇦_CA_1'
-      - '@Vpn_Filternet_🇮🇳_IN'
-      - '@Vpn_Filternet_🇫🇷_FR_2'
-      - '@Vpn_Filternet_🇨🇳_CN'
-      - '@Vpn_Filternet_🇺🇸_US_3'
-      - '@Vpn_Filternet_🇯🇵_JP_2'
-      - '@Vpn_Filternet_🇺🇸_US_4'
-      - '@Vpn_Filternet_🇨🇦_CA_2'
-      - '@Vpn_Filternet_🇨🇦_CA_3'
-      - '@Vpn_Filternet_🇬🇧_GB_1'
-      - '@Vpn_Filternet_🇪🇬_EG'
-      - '@Vpn_Filternet_🇺🇸_US_5'
-      - '@Vpn_Filternet_🇫🇷_FR_3'
-      - '@Vpn_Filternet_🇨🇦_CA_4'
-      - '@Vpn_Filternet_🇫🇮_FI'
-      - '@Vpn_Filternet_🇺🇸_US_6'
-      - '@Vpn_Filternet_🇲🇾_MY'
-      - '@Vpn_Filternet_🇭🇷_HR'
-      - '@Vpn_Filternet_🇯🇵_JP_3'
-      - '@Vpn_Filternet_🇺🇸_US_7'
-      - '@Vpn_Filternet_🇰🇷_KR_1'
-      - '@Vpn_Filternet_🇯🇵_JP_4'
-      - '@Vpn_Filternet_🇺🇸_US_8'
-      - '@Vpn_Filternet_🇸🇬_SG_2'
-      - '@Vpn_Filternet_🇳🇱_NL_1'
-      - '@Vpn_Filternet_🇺🇸_US_9'
-      - '@Vpn_Filternet_🇺🇸_US_10'
-      - '@Vpn_Filternet_🇯🇵_JP_5'
-      - '@Vpn_Filternet_🇯🇵_JP_6'
-      - '@Vpn_Filternet_🇯🇵_JP_7'
-      - '@Vpn_Filternet_🇸🇬_SG_3'
-      - '@Vpn_Filternet_🇺🇸_US_11'
-      - '@Vpn_Filternet_🇺🇸_US_12'
-      - '@Vpn_Filternet_🇺🇸_US_13'
-      - '@Vpn_Filternet_🇸🇬_SG_4'
-      - '@Vpn_Filternet_🇯🇵_JP_8'
-      - '@Vpn_Filternet_🇯🇵_JP_9'
-      - '@Vpn_Filternet_🇯🇵_JP_10'
-      - '@Vpn_Filternet_🇯🇵_JP_11'
-      - '@Vpn_Filternet_🇯🇵_JP_12'
-      - '@Vpn_Filternet_🇯🇵_JP_13'
-      - '@Vpn_Filternet_🇭🇰_HK_1'
-      - '@Vpn_Filternet_🇯🇵_JP_14'
-      - '@Vpn_Filternet_🇭🇰_HK_2'
-      - '@Vpn_Filternet_🇺🇸_US_14'
-      - '@Vpn_Filternet_🇺🇸_US_15'
-      - '@Vpn_Filternet_🇲🇴_MO'
-      - '@Vpn_Filternet_🇳🇱_NL_2'
-      - '@Vpn_Filternet_🇺🇸_US_16'
-      - '@Vpn_Filternet_🇰🇷_KR_2'
-      - '@Vpn_Filternet_🇺🇸_US_17'
-      - '@Vpn_Filternet_🇰🇷_KR_3'
-      - '@Vpn_Filternet_🇳🇱_NL_3'
-      - '@Vpn_Filternet_🇺🇸_US_18'
-      - '@Vpn_Filternet_🇺🇸_US_19'
-      - '@Vpn_Filternet_🇺🇸_US_20'
-      - '@Vpn_Filternet_🇬🇧_GB_2'
-      - '@Vpn_Filternet_🇺🇸_US_21'
-      - '@Vpn_Filternet_🇺🇸_US_22'
-      - '@Vpn_Filternet_🇯🇵_JP_15'
-      - '@Vpn_Filternet_🇯🇵_JP_16'
-      - '@Vpn_Filternet_🇺🇸_US_23'
-      - '@Vpn_Filternet_🇺🇸_US_24'
-      - '@Vpn_Filternet_🇺🇸_US_25'
-      - '@Vpn_Filternet_🇳🇱_NL_4'
-      - '@Vpn_Filternet_🇰🇷_KR_4'
-      - '@Vpn_Filternet_🇫🇷_FR_4'
-      - '@Vpn_Filternet_🇺🇸_US_26'
-      - '@Vpn_Filternet_🇸🇬_SG_5'
-      - '@Vpn_Filternet_🇸🇬_SG_6'
-      - '@Vpn_Filternet_🇸🇬_SG_7'
-      - '@Vpn_Filternet_🇸🇬_SG_8'
-      - '@Vpn_Filternet_🇸🇬_SG_9'
-      - '@Vpn_Filternet_🇺🇸_US_27'
-      - '@Vpn_Filternet_🇻🇳_VN'
-      - '@Vpn_Filternet_🇷🇺_RU'
-      - '@Vpn_Filternet_🇺🇸_US_28'
-      - '@Vpn_Filternet_🇰🇷_KR_5'
-      - '@Vpn_Filternet_🇮🇱_IL'
-      - '@Vpn_Filternet_🇨🇴_CO'
-      - '@Vpn_Filternet_🇳🇱_NL_5'
-      - '@Vpn_Filternet_🇺🇸_US_29'
-      - '@Vpn_Filternet_🇺🇸_US_30'
-      - '@Vpn_Filternet_🇬🇹_GT'
-      - '@Vpn_Filternet_🇸🇮_SI'
-      - '@Vpn_Filternet_🇲🇩_MD'
-      - '@Vpn_Filternet_🇵🇦_PA'
-      - '@Vpn_Filternet_🇺🇾_UY'
-      - '@Vpn_Filternet_🇲🇰_MK'
-      - '@Vpn_Filternet_🇮🇸_IS'
-      - '@Vpn_Filternet_🇬🇷_GR'
-      - '@Vpn_Filternet_🇯🇵_JP_17'
-      - '@Vpn_Filternet_🇯🇵_JP_18'
-      - '@Vpn_Filternet_🇯🇵_JP_19'
-      - '@Vpn_Filternet_🇺🇸_US_31'
-      - '@Vpn_Filternet_🇺🇸_US_32'
-      - '@Vpn_Filternet_🇺🇸_US_33'
-      - '@Vpn_Filternet_🇺🇸_US_34'
-      - '@Vpn_Filternet_🇺🇸_US_35'
-      - '@Vpn_Filternet_🇺🇸_US_36'
-      - '@Vpn_Filternet_🇯🇵_JP_20'
-      - '@Vpn_Filternet_🇯🇵_JP_21'
-      - '@Vpn_Filternet_🇰🇷_KR_6'
-      - '@Vpn_Filternet_🇸🇬_SG_10'
+      - HW_1
+      - HW_2
+      - HW_3
+      - HW_4
+      - HW_5
+      - HW_6
+      - HW_7
+      - HW_8
+      - HW_9
+      - HW_10
+      - HW_11
+      - HW_12
+      - HW_13
+      - HW_14
+      - HW_15
+      - HW_16
+      - HW_17
+      - HW_18
+      - HW_19
+      - HW_20
+      - HW_21
+      - HW_22
+      - HW_23
+      - HW_24
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - '@Vpn_Filternet_🇺🇸_US_1'
-      - '@Vpn_Filternet_🇪🇨_EC'
-      - '@Vpn_Filternet_🇺🇸_US_2'
-      - '@Vpn_Filternet_🇸🇬_SG_1'
-      - '@Vpn_Filternet_🇯🇵_JP_1'
-      - '@Vpn_Filternet_🇫🇷_FR_1'
-      - '@Vpn_Filternet_🇨🇦_CA_1'
-      - '@Vpn_Filternet_🇮🇳_IN'
-      - '@Vpn_Filternet_🇫🇷_FR_2'
-      - '@Vpn_Filternet_🇨🇳_CN'
-      - '@Vpn_Filternet_🇺🇸_US_3'
-      - '@Vpn_Filternet_🇯🇵_JP_2'
-      - '@Vpn_Filternet_🇺🇸_US_4'
-      - '@Vpn_Filternet_🇨🇦_CA_2'
-      - '@Vpn_Filternet_🇨🇦_CA_3'
-      - '@Vpn_Filternet_🇬🇧_GB_1'
-      - '@Vpn_Filternet_🇪🇬_EG'
-      - '@Vpn_Filternet_🇺🇸_US_5'
-      - '@Vpn_Filternet_🇫🇷_FR_3'
-      - '@Vpn_Filternet_🇨🇦_CA_4'
-      - '@Vpn_Filternet_🇫🇮_FI'
-      - '@Vpn_Filternet_🇺🇸_US_6'
-      - '@Vpn_Filternet_🇲🇾_MY'
-      - '@Vpn_Filternet_🇭🇷_HR'
-      - '@Vpn_Filternet_🇯🇵_JP_3'
-      - '@Vpn_Filternet_🇺🇸_US_7'
-      - '@Vpn_Filternet_🇰🇷_KR_1'
-      - '@Vpn_Filternet_🇯🇵_JP_4'
-      - '@Vpn_Filternet_🇺🇸_US_8'
-      - '@Vpn_Filternet_🇸🇬_SG_2'
-      - '@Vpn_Filternet_🇳🇱_NL_1'
-      - '@Vpn_Filternet_🇺🇸_US_9'
-      - '@Vpn_Filternet_🇺🇸_US_10'
-      - '@Vpn_Filternet_🇯🇵_JP_5'
-      - '@Vpn_Filternet_🇯🇵_JP_6'
-      - '@Vpn_Filternet_🇯🇵_JP_7'
-      - '@Vpn_Filternet_🇸🇬_SG_3'
-      - '@Vpn_Filternet_🇺🇸_US_11'
-      - '@Vpn_Filternet_🇺🇸_US_12'
-      - '@Vpn_Filternet_🇺🇸_US_13'
-      - '@Vpn_Filternet_🇸🇬_SG_4'
-      - '@Vpn_Filternet_🇯🇵_JP_8'
-      - '@Vpn_Filternet_🇯🇵_JP_9'
-      - '@Vpn_Filternet_🇯🇵_JP_10'
-      - '@Vpn_Filternet_🇯🇵_JP_11'
-      - '@Vpn_Filternet_🇯🇵_JP_12'
-      - '@Vpn_Filternet_🇯🇵_JP_13'
-      - '@Vpn_Filternet_🇭🇰_HK_1'
-      - '@Vpn_Filternet_🇯🇵_JP_14'
-      - '@Vpn_Filternet_🇭🇰_HK_2'
-      - '@Vpn_Filternet_🇺🇸_US_14'
-      - '@Vpn_Filternet_🇺🇸_US_15'
-      - '@Vpn_Filternet_🇲🇴_MO'
-      - '@Vpn_Filternet_🇳🇱_NL_2'
-      - '@Vpn_Filternet_🇺🇸_US_16'
-      - '@Vpn_Filternet_🇰🇷_KR_2'
-      - '@Vpn_Filternet_🇺🇸_US_17'
-      - '@Vpn_Filternet_🇰🇷_KR_3'
-      - '@Vpn_Filternet_🇳🇱_NL_3'
-      - '@Vpn_Filternet_🇺🇸_US_18'
-      - '@Vpn_Filternet_🇺🇸_US_19'
-      - '@Vpn_Filternet_🇺🇸_US_20'
-      - '@Vpn_Filternet_🇬🇧_GB_2'
-      - '@Vpn_Filternet_🇺🇸_US_21'
-      - '@Vpn_Filternet_🇺🇸_US_22'
-      - '@Vpn_Filternet_🇯🇵_JP_15'
-      - '@Vpn_Filternet_🇯🇵_JP_16'
-      - '@Vpn_Filternet_🇺🇸_US_23'
-      - '@Vpn_Filternet_🇺🇸_US_24'
-      - '@Vpn_Filternet_🇺🇸_US_25'
-      - '@Vpn_Filternet_🇳🇱_NL_4'
-      - '@Vpn_Filternet_🇰🇷_KR_4'
-      - '@Vpn_Filternet_🇫🇷_FR_4'
-      - '@Vpn_Filternet_🇺🇸_US_26'
-      - '@Vpn_Filternet_🇸🇬_SG_5'
-      - '@Vpn_Filternet_🇸🇬_SG_6'
-      - '@Vpn_Filternet_🇸🇬_SG_7'
-      - '@Vpn_Filternet_🇸🇬_SG_8'
-      - '@Vpn_Filternet_🇸🇬_SG_9'
-      - '@Vpn_Filternet_🇺🇸_US_27'
-      - '@Vpn_Filternet_🇻🇳_VN'
-      - '@Vpn_Filternet_🇷🇺_RU'
-      - '@Vpn_Filternet_🇺🇸_US_28'
-      - '@Vpn_Filternet_🇰🇷_KR_5'
-      - '@Vpn_Filternet_🇮🇱_IL'
-      - '@Vpn_Filternet_🇨🇴_CO'
-      - '@Vpn_Filternet_🇳🇱_NL_5'
-      - '@Vpn_Filternet_🇺🇸_US_29'
-      - '@Vpn_Filternet_🇺🇸_US_30'
-      - '@Vpn_Filternet_🇬🇹_GT'
-      - '@Vpn_Filternet_🇸🇮_SI'
-      - '@Vpn_Filternet_🇲🇩_MD'
-      - '@Vpn_Filternet_🇵🇦_PA'
-      - '@Vpn_Filternet_🇺🇾_UY'
-      - '@Vpn_Filternet_🇲🇰_MK'
-      - '@Vpn_Filternet_🇮🇸_IS'
-      - '@Vpn_Filternet_🇬🇷_GR'
-      - '@Vpn_Filternet_🇯🇵_JP_17'
-      - '@Vpn_Filternet_🇯🇵_JP_18'
-      - '@Vpn_Filternet_🇯🇵_JP_19'
-      - '@Vpn_Filternet_🇺🇸_US_31'
-      - '@Vpn_Filternet_🇺🇸_US_32'
-      - '@Vpn_Filternet_🇺🇸_US_33'
-      - '@Vpn_Filternet_🇺🇸_US_34'
-      - '@Vpn_Filternet_🇺🇸_US_35'
-      - '@Vpn_Filternet_🇺🇸_US_36'
-      - '@Vpn_Filternet_🇯🇵_JP_20'
-      - '@Vpn_Filternet_🇯🇵_JP_21'
-      - '@Vpn_Filternet_🇰🇷_KR_6'
-      - '@Vpn_Filternet_🇸🇬_SG_10'
+      - HW_1
+      - HW_2
+      - HW_3
+      - HW_4
+      - HW_5
+      - HW_6
+      - HW_7
+      - HW_8
+      - HW_9
+      - HW_10
+      - HW_11
+      - HW_12
+      - HW_13
+      - HW_14
+      - HW_15
+      - HW_16
+      - HW_17
+      - HW_18
+      - HW_19
+      - HW_20
+      - HW_21
+      - HW_22
+      - HW_23
+      - HW_24
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -838,120 +244,41 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - '@Vpn_Filternet_🇺🇸_US_1'
-      - '@Vpn_Filternet_🇪🇨_EC'
-      - '@Vpn_Filternet_🇺🇸_US_2'
-      - '@Vpn_Filternet_🇸🇬_SG_1'
-      - '@Vpn_Filternet_🇯🇵_JP_1'
-      - '@Vpn_Filternet_🇫🇷_FR_1'
-      - '@Vpn_Filternet_🇨🇦_CA_1'
-      - '@Vpn_Filternet_🇮🇳_IN'
-      - '@Vpn_Filternet_🇫🇷_FR_2'
-      - '@Vpn_Filternet_🇨🇳_CN'
-      - '@Vpn_Filternet_🇺🇸_US_3'
-      - '@Vpn_Filternet_🇯🇵_JP_2'
-      - '@Vpn_Filternet_🇺🇸_US_4'
-      - '@Vpn_Filternet_🇨🇦_CA_2'
-      - '@Vpn_Filternet_🇨🇦_CA_3'
-      - '@Vpn_Filternet_🇬🇧_GB_1'
-      - '@Vpn_Filternet_🇪🇬_EG'
-      - '@Vpn_Filternet_🇺🇸_US_5'
-      - '@Vpn_Filternet_🇫🇷_FR_3'
-      - '@Vpn_Filternet_🇨🇦_CA_4'
-      - '@Vpn_Filternet_🇫🇮_FI'
-      - '@Vpn_Filternet_🇺🇸_US_6'
-      - '@Vpn_Filternet_🇲🇾_MY'
-      - '@Vpn_Filternet_🇭🇷_HR'
-      - '@Vpn_Filternet_🇯🇵_JP_3'
-      - '@Vpn_Filternet_🇺🇸_US_7'
-      - '@Vpn_Filternet_🇰🇷_KR_1'
-      - '@Vpn_Filternet_🇯🇵_JP_4'
-      - '@Vpn_Filternet_🇺🇸_US_8'
-      - '@Vpn_Filternet_🇸🇬_SG_2'
-      - '@Vpn_Filternet_🇳🇱_NL_1'
-      - '@Vpn_Filternet_🇺🇸_US_9'
-      - '@Vpn_Filternet_🇺🇸_US_10'
-      - '@Vpn_Filternet_🇯🇵_JP_5'
-      - '@Vpn_Filternet_🇯🇵_JP_6'
-      - '@Vpn_Filternet_🇯🇵_JP_7'
-      - '@Vpn_Filternet_🇸🇬_SG_3'
-      - '@Vpn_Filternet_🇺🇸_US_11'
-      - '@Vpn_Filternet_🇺🇸_US_12'
-      - '@Vpn_Filternet_🇺🇸_US_13'
-      - '@Vpn_Filternet_🇸🇬_SG_4'
-      - '@Vpn_Filternet_🇯🇵_JP_8'
-      - '@Vpn_Filternet_🇯🇵_JP_9'
-      - '@Vpn_Filternet_🇯🇵_JP_10'
-      - '@Vpn_Filternet_🇯🇵_JP_11'
-      - '@Vpn_Filternet_🇯🇵_JP_12'
-      - '@Vpn_Filternet_🇯🇵_JP_13'
-      - '@Vpn_Filternet_🇭🇰_HK_1'
-      - '@Vpn_Filternet_🇯🇵_JP_14'
-      - '@Vpn_Filternet_🇭🇰_HK_2'
-      - '@Vpn_Filternet_🇺🇸_US_14'
-      - '@Vpn_Filternet_🇺🇸_US_15'
-      - '@Vpn_Filternet_🇲🇴_MO'
-      - '@Vpn_Filternet_🇳🇱_NL_2'
-      - '@Vpn_Filternet_🇺🇸_US_16'
-      - '@Vpn_Filternet_🇰🇷_KR_2'
-      - '@Vpn_Filternet_🇺🇸_US_17'
-      - '@Vpn_Filternet_🇰🇷_KR_3'
-      - '@Vpn_Filternet_🇳🇱_NL_3'
-      - '@Vpn_Filternet_🇺🇸_US_18'
-      - '@Vpn_Filternet_🇺🇸_US_19'
-      - '@Vpn_Filternet_🇺🇸_US_20'
-      - '@Vpn_Filternet_🇬🇧_GB_2'
-      - '@Vpn_Filternet_🇺🇸_US_21'
-      - '@Vpn_Filternet_🇺🇸_US_22'
-      - '@Vpn_Filternet_🇯🇵_JP_15'
-      - '@Vpn_Filternet_🇯🇵_JP_16'
-      - '@Vpn_Filternet_🇺🇸_US_23'
-      - '@Vpn_Filternet_🇺🇸_US_24'
-      - '@Vpn_Filternet_🇺🇸_US_25'
-      - '@Vpn_Filternet_🇳🇱_NL_4'
-      - '@Vpn_Filternet_🇰🇷_KR_4'
-      - '@Vpn_Filternet_🇫🇷_FR_4'
-      - '@Vpn_Filternet_🇺🇸_US_26'
-      - '@Vpn_Filternet_🇸🇬_SG_5'
-      - '@Vpn_Filternet_🇸🇬_SG_6'
-      - '@Vpn_Filternet_🇸🇬_SG_7'
-      - '@Vpn_Filternet_🇸🇬_SG_8'
-      - '@Vpn_Filternet_🇸🇬_SG_9'
-      - '@Vpn_Filternet_🇺🇸_US_27'
-      - '@Vpn_Filternet_🇻🇳_VN'
-      - '@Vpn_Filternet_🇷🇺_RU'
-      - '@Vpn_Filternet_🇺🇸_US_28'
-      - '@Vpn_Filternet_🇰🇷_KR_5'
-      - '@Vpn_Filternet_🇮🇱_IL'
-      - '@Vpn_Filternet_🇨🇴_CO'
-      - '@Vpn_Filternet_🇳🇱_NL_5'
-      - '@Vpn_Filternet_🇺🇸_US_29'
-      - '@Vpn_Filternet_🇺🇸_US_30'
-      - '@Vpn_Filternet_🇬🇹_GT'
-      - '@Vpn_Filternet_🇸🇮_SI'
-      - '@Vpn_Filternet_🇲🇩_MD'
-      - '@Vpn_Filternet_🇵🇦_PA'
-      - '@Vpn_Filternet_🇺🇾_UY'
-      - '@Vpn_Filternet_🇲🇰_MK'
-      - '@Vpn_Filternet_🇮🇸_IS'
-      - '@Vpn_Filternet_🇬🇷_GR'
-      - '@Vpn_Filternet_🇯🇵_JP_17'
-      - '@Vpn_Filternet_🇯🇵_JP_18'
-      - '@Vpn_Filternet_🇯🇵_JP_19'
-      - '@Vpn_Filternet_🇺🇸_US_31'
-      - '@Vpn_Filternet_🇺🇸_US_32'
-      - '@Vpn_Filternet_🇺🇸_US_33'
-      - '@Vpn_Filternet_🇺🇸_US_34'
-      - '@Vpn_Filternet_🇺🇸_US_35'
-      - '@Vpn_Filternet_🇺🇸_US_36'
-      - '@Vpn_Filternet_🇯🇵_JP_20'
-      - '@Vpn_Filternet_🇯🇵_JP_21'
-      - '@Vpn_Filternet_🇰🇷_KR_6'
-      - '@Vpn_Filternet_🇸🇬_SG_10'
+      - HW_1
+      - HW_2
+      - HW_3
+      - HW_4
+      - HW_5
+      - HW_6
+      - HW_7
+      - HW_8
+      - HW_9
+      - HW_10
+      - HW_11
+      - HW_12
+      - HW_13
+      - HW_14
+      - HW_15
+      - HW_16
+      - HW_17
+      - HW_18
+      - HW_19
+      - HW_20
+      - HW_21
+      - HW_22
+      - HW_23
+      - HW_24
+
 rules:
+# 本地/局域网地址
+# 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
+# ACL4SSR标志 如没有，代表不是用ACL4SSR规则
+# 本地/局域网地址
+# Router managed 路由器管理域名
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
+  - DOMAIN-SUFFIX,lan,🎯 全球直连
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - DOMAIN-SUFFIX,localhost,🎯 全球直连
   - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
@@ -960,10 +287,13 @@ rules:
   - IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,198.18.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,224.0.0.0/4,🎯 全球直连,no-resolve
   - IP-CIDR6,::1/128,🎯 全球直连,no-resolve
   - IP-CIDR6,fc00::/7,🎯 全球直连,no-resolve
   - IP-CIDR6,fe80::/10,🎯 全球直连,no-resolve
   - IP-CIDR6,fd00::/8,🎯 全球直连,no-resolve
+  - DOMAIN,instant.arubanetworks.com,🎯 全球直连
+  - DOMAIN,setmeup.arubanetworks.com,🎯 全球直连
   - DOMAIN,router.asus.com,🎯 全球直连
   - DOMAIN-SUFFIX,hiwifi.com,🎯 全球直连
   - DOMAIN-SUFFIX,leike.cc,🎯 全球直连
@@ -972,9 +302,17 @@ rules:
   - DOMAIN-SUFFIX,p.to,🎯 全球直连
   - DOMAIN-SUFFIX,peiluyou.com,🎯 全球直连
   - DOMAIN-SUFFIX,phicomm.me,🎯 全球直连
+  - DOMAIN-SUFFIX,router.ctc,🎯 全球直连
   - DOMAIN-SUFFIX,routerlogin.com,🎯 全球直连
   - DOMAIN-SUFFIX,tendawifi.com,🎯 全球直连
   - DOMAIN-SUFFIX,zte.home,🎯 全球直连
+  - DOMAIN-SUFFIX,tplogin.cn,🎯 全球直连
+# 本碎片只包含常见广告关键字、广告联盟。无副作用，放心使用
+# 广告关键词
+# 广告联盟-国内****************
+# 广告联盟-国外****************
+# 垃圾站点****************
+# 运营商广告****************
   - DOMAIN-KEYWORD,admarvel,🛑 全球拦截
   - DOMAIN-KEYWORD,admaster,🛑 全球拦截
   - DOMAIN-KEYWORD,adsage,🛑 全球拦截
@@ -1002,25 +340,6 @@ rules:
   - DOMAIN-KEYWORD,usage,🛑 全球拦截
   - DOMAIN-KEYWORD,wlmonitor,🛑 全球拦截
   - DOMAIN-KEYWORD,zjtoolbar,🛑 全球拦截
-  - DOMAIN-SUFFIX,admob.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ads.gmodules.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ads.google.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adservice.google.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,afd.l.google.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,badad.googleplex.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,csi.gstatic.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,doubleclick.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,doubleclick.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,google-analytics.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,googleadservices.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,googleadsserving.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,googlecommerce.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,googlesyndication.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,mobileads.google.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,pagead-tpc.l.google.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,pagead.google.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,pagead.l.google.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,service.urchin.com,🛑 全球拦截
   - DOMAIN-SUFFIX,09mk.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,100peng.com,🛑 全球拦截
   - DOMAIN-SUFFIX,114la.com,🛑 全球拦截
@@ -1180,7 +499,6 @@ rules:
   - DOMAIN-SUFFIX,edigitalsurvey.com,🛑 全球拦截
   - DOMAIN-SUFFIX,eduancm.com,🛑 全球拦截
   - DOMAIN-SUFFIX,emarbox.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,epsilon.com,🛑 全球拦截
   - DOMAIN-SUFFIX,exosrv.com,🛑 全球拦截
   - DOMAIN-SUFFIX,fancyapi.com,🛑 全球拦截
   - DOMAIN-SUFFIX,feitian001.com,🛑 全球拦截
@@ -1256,7 +574,6 @@ rules:
   - DOMAIN-SUFFIX,mediaplex.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mediav.com,🛑 全球拦截
   - DOMAIN-SUFFIX,megajoy.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,meiqia.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mgogo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,miaozhen.com,🛑 全球拦截
   - DOMAIN-SUFFIX,microad-cn.com,🛑 全球拦截
@@ -1272,6 +589,7 @@ rules:
   - DOMAIN-SUFFIX,mobgi.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mobisage.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,mobvista.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,moogos.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mopub.com,🛑 全球拦截
   - DOMAIN-SUFFIX,moquanad.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mpush.cn,🛑 全球拦截
@@ -1366,6 +684,7 @@ rules:
   - DOMAIN-SUFFIX,uuzu.com,🛑 全球拦截
   - DOMAIN-SUFFIX,uyunad.com,🛑 全球拦截
   - DOMAIN-SUFFIX,vamaker.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,vlion.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,voiceads.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,voiceads.com,🛑 全球拦截
   - DOMAIN-SUFFIX,vpon.com,🛑 全球拦截
@@ -1467,7 +786,6 @@ rules:
   - DOMAIN-SUFFIX,criteo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,criteo.net,🛑 全球拦截
   - DOMAIN-SUFFIX,csbew.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,demdex.net,🛑 全球拦截
   - DOMAIN-SUFFIX,directrev.com,🛑 全球拦截
   - DOMAIN-SUFFIX,dumedia.ru,🛑 全球拦截
   - DOMAIN-SUFFIX,effectivemeasure.com,🛑 全球拦截
@@ -1589,6 +907,66 @@ rules:
   - DOMAIN-SUFFIX,go.10086.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,hivedata.cc,🛑 全球拦截
   - DOMAIN-SUFFIX,navi.gd.chinamobile.com,🛑 全球拦截
+# 包含常用应用的各种去广告规则。
+# 可能有轻微副作用，可放心使用。（如果网站功能和广告冲突，会删掉去广告规则）
+# 163
+# 17173
+# 178
+# 2345
+# 360
+# 58
+# Alibaba
+# Adobe
+# Apple
+# AutoHome
+# Baidu
+# Book-app 起点 掌阅 书旗 宜搜
+# ByteDance 头条抖音
+# Dangdang
+# Duomi
+# Facebook
+# Fang
+# Google
+# JD
+# Kugou
+# Kuwo
+# Meizu flyme 魅族
+# Meitu
+# Miui 小米
+# Moji
+# Qingting.fm
+# QQ
+# RenRen
+# Sina
+# Sougou
+# Teleplus
+# Twitter
+# UC ali
+# Weifeng
+# WPS Office
+# Wi-Fi key
+# Ximalaya 喜马拉雅
+# Xunlei 迅雷app&看看
+# Yahoo
+# Zhihu
+# Ads in Video apps 下面都是 ********************
+# 6间房
+# Baofeng 暴风影音
+# Douyu
+# Fenghuang 凤凰TV
+# Funshion 风行
+# iqiyi PPS 爱奇艺
+# Ku6 酷6
+# LeTV 乐视
+# MGTV 芒果TV
+# Sohu 搜狐
+# PPTV、PPLive
+# QQ Live
+# Youku & Tudou
+# Youtube
+# Others ads in Video apps
+# Ads in Video apps end 上面都是 ********************
+# 常用网站广告
   - DOMAIN-SUFFIX,a.youdao.com,🍃 应用净化
   - DOMAIN-SUFFIX,adgeo.corp.163.com,🍃 应用净化
   - DOMAIN-SUFFIX,analytics.126.net,🍃 应用净化
@@ -1698,12 +1076,10 @@ rules:
   - DOMAIN-SUFFIX,activate-sea.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,activate-sjc0.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,activate.adobe.com,🍃 应用净化
-  - DOMAIN-SUFFIX,activate.wip3.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,adobe-dns-2.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,adobe-dns-3.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,adobe-dns.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,ereg.adobe.com,🍃 应用净化
-  - DOMAIN-SUFFIX,ereg.wip3.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,geo2.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,hl2rcv.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,hlrcv.stage.adobe.com,🍃 应用净化
@@ -1758,7 +1134,6 @@ rules:
   - DOMAIN-SUFFIX,baikebcs.bdimg.com,🍃 应用净化
   - DOMAIN-SUFFIX,banlv.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,bar.baidu.com,🍃 应用净化
-  - DOMAIN-SUFFIX,bdimg.share.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,bdplus.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,btlaunch.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,c.baidu.cn,🍃 应用净化
@@ -1776,7 +1151,6 @@ rules:
   - DOMAIN-SUFFIX,click.hm.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,click.qianqian.com,🍃 应用净化
   - DOMAIN-SUFFIX,cm.baidu.com,🍃 应用净化
-  - DOMAIN-SUFFIX,cm.pos.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,cpro.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,cpro.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,cpro.baidustatic.com,🍃 应用净化
@@ -1879,13 +1253,10 @@ rules:
   - DOMAIN-SUFFIX,rp.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,rplog.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,s.baidu.com,🍃 应用净化
-  - DOMAIN-SUFFIX,s.cpro.baidu.com,🍃 应用净化
-  - DOMAIN-SUFFIX,sa.tuisong.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,sclick.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,sestat.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,shadu.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,share.baidu.com,🍃 应用净化
-  - DOMAIN-SUFFIX,snippet.pos.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,sobar.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,sobartop.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,spcode.baidu.cn,🍃 应用净化
@@ -1902,7 +1273,6 @@ rules:
   - DOMAIN-SUFFIX,tuijian.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,tuisong.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,tuisong.baidu.com,🍃 应用净化
-  - DOMAIN-SUFFIX,uat1.bfsspadserver.8le8le.com,🍃 应用净化
   - DOMAIN-SUFFIX,ubmcmm.baidustatic.com,🍃 应用净化
   - DOMAIN-SUFFIX,ucstat.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,ucstat.baidu.com,🍃 应用净化
@@ -1927,7 +1297,6 @@ rules:
   - DOMAIN-SUFFIX,wisepush.video.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,wm.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,wm.baidu.com,🍃 应用净化
-  - DOMAIN-SUFFIX,wn.pos.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,znsv.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,znsv.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,zz.bdstatic.com,🍃 应用净化
@@ -1978,7 +1347,11 @@ rules:
   - DOMAIN-SUFFIX,ic.snssdk.com,🍃 应用净化
   - DOMAIN-SUFFIX,log.snssdk.com,🍃 应用净化
   - DOMAIN-SUFFIX,nativeapp.toutiao.com,🍃 应用净化
+  - DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,🍃 应用净化
+  - DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,🍃 应用净化
+  - DOMAIN-SUFFIX,pangolin.snssdk.com,🍃 应用净化
   - DOMAIN-SUFFIX,partner.toutiao.com,🍃 应用净化
+  - DOMAIN-SUFFIX,pglstatp-toutiao.com,🍃 应用净化
   - DOMAIN-SUFFIX,sm.toutiao.com,🍃 应用净化
   - DOMAIN-SUFFIX,a.dangdang.com,🍃 应用净化
   - DOMAIN-SUFFIX,click.dangdang.com,🍃 应用净化
@@ -2108,7 +1481,6 @@ rules:
   - DOMAIN-SUFFIX,jellyfish.pandora.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,migc.g.mi.com,🍃 应用净化
   - DOMAIN-SUFFIX,migcreport.g.mi.com,🍃 应用净化
-  - DOMAIN-SUFFIX,mis.g.mi.com,🍃 应用净化
   - DOMAIN-SUFFIX,notice.game.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,ppurifier.game.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,r.browser.miui.com,🍃 应用净化
@@ -2312,7 +1684,6 @@ rules:
   - DOMAIN-SUFFIX,ws.progrss.yahoo.com,🍃 应用净化
   - DOMAIN-SUFFIX,yads.yahoo.co.jp,🍃 应用净化
   - DOMAIN-SUFFIX,ybp.yahoo.com,🍃 应用净化
-  - DOMAIN-SUFFIX,sugar.zhihu.com,🍃 应用净化
   - DOMAIN-SUFFIX,zhihu-web-analytics.zhihu.com,🍃 应用净化
   - DOMAIN-SUFFIX,shrek.6.cn,🍃 应用净化
   - DOMAIN-SUFFIX,simba.6.cn,🍃 应用净化
@@ -2501,7 +1872,6 @@ rules:
   - DOMAIN-SUFFIX,couchcoaster.jp,🍃 应用净化
   - DOMAIN-SUFFIX,delivery.dmkt-sp.jp,🍃 应用净化
   - DOMAIN-SUFFIX,ehg-youtube.hitbox.com,🍃 应用净化
-  - DOMAIN-SUFFIX,m-78.jp,🍃 应用净化
   - DOMAIN-SUFFIX,nichibenren.or.jp,🍃 应用净化
   - DOMAIN-SUFFIX,nicorette.co.kr,🍃 应用净化
   - DOMAIN-SUFFIX,ssl-youtube.2cnt.net,🍃 应用净化
@@ -2512,8 +1882,6 @@ rules:
   - DOMAIN-SUFFIX,ads.wasu.tv,🍃 应用净化
   - DOMAIN-SUFFIX,afp.wasu.tv,🍃 应用净化
   - DOMAIN-SUFFIX,c.algovid.com,🍃 应用净化
-  - DOMAIN-SUFFIX,cc.xtgreat.com,🍃 应用净化
-  - DOMAIN-SUFFIX,d.dsp.imageter.com,🍃 应用净化
   - DOMAIN-SUFFIX,gg.jtertp.com,🍃 应用净化
   - DOMAIN-SUFFIX,gridsum-vd.cntv.cn,🍃 应用净化
   - DOMAIN-SUFFIX,kwflvcdn.000dn.com,🍃 应用净化
@@ -2625,6 +1993,8 @@ rules:
   - DOMAIN-SUFFIX,tralog.ganji.com,🍃 应用净化
   - DOMAIN-SUFFIX,up.qingdaonews.com,🍃 应用净化
   - DOMAIN-SUFFIX,vaserviece.10jqka.com.cn,🍃 应用净化
+# Google China
+#DOMAIN-SUFFIX,translate.googleapis.com
   - DOMAIN-SUFFIX,265.com,🎯 全球直连
   - DOMAIN-SUFFIX,2mdn.net,🎯 全球直连
   - DOMAIN-SUFFIX,alt1-mtalk.google.com,🎯 全球直连
@@ -2656,13 +2026,32 @@ rules:
   - DOMAIN-SUFFIX,safebrowsing.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,settings.crashlytics.com,🎯 全球直连
   - DOMAIN-SUFFIX,ssl-google-analytics.l.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,ssl.gstatic.com,🎯 全球直连
   - DOMAIN-SUFFIX,toolbarqueries.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,tools.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,tools.l.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,update.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,www-googletagmanager.l.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,www.gstatic.com,🎯 全球直连
+# 内容：SteamCN
+# 数量：15条
+  - DOMAIN,csgo.wmsj.cn,🎯 全球直连
+  - DOMAIN,dl.steam.clngaa.com,🎯 全球直连
+  - DOMAIN,dl.steam.ksyna.com,🎯 全球直连
+  - DOMAIN,dota2.wmsj.cn,🎯 全球直连
+  - DOMAIN,st.dl.bscstorage.net,🎯 全球直连
+  - DOMAIN,st.dl.eccdnx.com,🎯 全球直连
+  - DOMAIN,st.dl.pinyuncloud.com,🎯 全球直连
+  - DOMAIN,steampipe.steamcontent.tnkjmec.com,🎯 全球直连
+  - DOMAIN,steampowered.com.8686c.com,🎯 全球直连
+  - DOMAIN,steamstatic.com.8686c.com,🎯 全球直连
+  - DOMAIN,wmsjsteam.com,🎯 全球直连
+  - DOMAIN-SUFFIX,cm.steampowered.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steamchina.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steamcontent.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steamusercontent.com,🎯 全球直连
+# Microsoft Services
+# optimized from https://gist.github.com/TTTPOB/ce93fb3b04ba2f21880b09427442d831
+# source: https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges
   - DOMAIN-KEYWORD,1drv,Ⓜ️ 微软服务
   - DOMAIN-KEYWORD,microsoft,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,aadrm.com,Ⓜ️ 微软服务
@@ -2739,10 +2128,13 @@ rules:
   - DOMAIN-SUFFIX,wunderlist.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,yammer.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,yammerusercontent.com,Ⓜ️ 微软服务
+# Apple
+# 一般国内Apple肯定正常,不需要开代理
   - DOMAIN,apple.comscoreresearch.com,🍎 苹果服务
   - DOMAIN-SUFFIX,aaplimg.com,🍎 苹果服务
   - DOMAIN-SUFFIX,akadns.net,🍎 苹果服务
   - DOMAIN-SUFFIX,apple-cloudkit.com,🍎 苹果服务
+  - DOMAIN-SUFFIX,apple-mapkit.com,🍎 苹果服务
   - DOMAIN-SUFFIX,apple.co,🍎 苹果服务
   - DOMAIN-SUFFIX,apple.com,🍎 苹果服务
   - DOMAIN-SUFFIX,apple.com.cn,🍎 苹果服务
@@ -2766,28 +2158,93 @@ rules:
   - IP-CIDR,192.35.50.0/24,🍎 苹果服务,no-resolve
   - IP-CIDR,198.183.17.0/24,🍎 苹果服务,no-resolve
   - IP-CIDR,205.180.175.0/24,🍎 苹果服务,no-resolve
+# 内容：国外媒体列表
+# 更新：2023-01-15 22:06:33
+# 数量：330条
+# ABC
+# AbemaTV
+# All4
+# Amazon
+# AppleNews
+# AppleTV
+# BBCiPlayer
+# Bahamut
+# DAZN
+# Deezer
+# DiscoveryPlus
+# DisneyPlus
+# EncoreTVB
+# FoxNow
+# HBO
+# HBO_GO_HKG
+# HWTV
+# Hulu
+# HuluJapan
+# ITV
+# JOOX
+# Japonx
+# KKBOX
+# KKTV
+# LiTV
+# LineTV
+# My5
+# MyTVSuper
+# Netflix
+# Niconico
+# PBS
+# Pandora
+# Pornhub
+# Qobuz
+# SoundCloud
+# Spotify
+# TIDAL
+# TaiWanGood 台湾好
+# TikTok
+# Twitch
+# ViuTV
+# YouTube
+# YouTubeMusic
   - DOMAIN-SUFFIX,edgedatg.com,🌍 国外媒体
   - DOMAIN-SUFFIX,go.com,🌍 国外媒体
+#,USER-AGENT,AbemaTV*,🌍 国外媒体
   - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
+  - DOMAIN,api-abematv.bucketeer.jp,🌍 国外媒体
+  - DOMAIN-SUFFIX,abema-tv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,abema.io,🌍 国外媒体
   - DOMAIN-SUFFIX,abema.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,ameba.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,hayabusa.io,🌍 国外媒体
+  - DOMAIN-SUFFIX,hayabusa.media,🌍 国外媒体
+#,USER-AGENT,All4*,🌍 国外媒体
   - DOMAIN-SUFFIX,c4assets.com,🌍 国外媒体
   - DOMAIN-SUFFIX,channel4.com,🌍 国外媒体
-  - DOMAIN, atv-ps.amazon.com,🌍 国外媒体
-  - DOMAIN, fls-na.amazon.com,🌍 国外媒体
-  - DOMAIN-SUFFIX, media-amazon.com,🌍 国外媒体
+  - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
+  - DOMAIN,atv-ps.amazon.com,🌍 国外媒体
+  - DOMAIN,avodmp4s3ww-a.akamaihd.net,🌍 国外媒体
+  - DOMAIN,d1v5ir2lpwr8os.cloudfront.net,🌍 国外媒体
+  - DOMAIN,d1xfray82862hr.cloudfront.net,🌍 国外媒体
+  - DOMAIN,d22qjgkvxw22r6.cloudfront.net,🌍 国外媒体
+  - DOMAIN,d25xi40x97liuc.cloudfront.net,🌍 国外媒体
+  - DOMAIN,d27xxe7juh1us6.cloudfront.net,🌍 国外媒体
+  - DOMAIN,d3196yreox78o9.cloudfront.net,🌍 国外媒体
+  - DOMAIN,dmqdd6hw24ucf.cloudfront.net,🌍 国外媒体
+  - DOMAIN,ktpx.amazon.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,aboutamazon.com,🌍 国外媒体
   - DOMAIN-SUFFIX,aiv-cdn.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,amazonaws.co.uk,🌍 国外媒体
-  - DOMAIN-SUFFIX,amazonaws.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,aiv-delivery.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,amazon.jobs,🌍 国外媒体
+  - DOMAIN-SUFFIX,amazonuniversity.jobs,🌍 国外媒体
   - DOMAIN-SUFFIX,amazonvideo.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,llnwd.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,primevideo.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,media-amazon.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,pv-cdn.net,🌍 国外媒体
+#,URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/,🌍 国外媒体
+#,USER-AGENT,AppleNews*,🌍 国外媒体
+#,USER-AGENT,com.apple.news*,🌍 国外媒体
   - DOMAIN,gspe1-ssl.ls.apple.com,🌍 国外媒体
   - DOMAIN,np-edge.itunes.apple.com,🌍 国外媒体
   - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tv.apple.com,🌍 国外媒体
+#,USER-AGENT,BBCiPlayer*,🌍 国外媒体
   - DOMAIN-KEYWORD,bbcfmt,🌍 国外媒体
   - DOMAIN-KEYWORD,uk-live,🌍 国外媒体
   - DOMAIN,aod-dash-uk-live.akamaized.net,🌍 国外媒体
@@ -2802,51 +2259,32 @@ rules:
   - DOMAIN-SUFFIX,bbci.co,🌍 国外媒体
   - DOMAIN-SUFFIX,bbci.co.uk,🌍 国外媒体
   - DOMAIN-SUFFIX,bidi.net.uk,🌍 国外媒体
+#,USER-AGENT,Anime*,🌍 国外媒体
+  - DOMAIN,bahamut.akamaized.net,🌍 国外媒体
   - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
   - DOMAIN,gamer2-cds.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
-  - DOMAIN-SUFFIX,hinet.net,🌍 国外媒体
-  - DOMAIN-KEYWORD,livedazn,🌍 国外媒体
-  - DOMAIN-KEYWORD,vod2dazn,🌍 国外媒体
+#,USER-AGENT,DAZN*,🌍 国外媒体
   - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
   - DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
-  - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
-  - DOMAIN,players.brightcove.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,amplify.outbrain.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,bluekai.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,control.kochava.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,cws.conviva.com,🌍 国外媒体
   - DOMAIN-SUFFIX,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,d1sgwhnao7452x.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,dazn-api.com,🌍 国外媒体
   - DOMAIN-SUFFIX,dazn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,dazndn.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,dc1-voddash-perform.secure.footprint.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,dc1live21715dazn.akamaized.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,dc2-live2dash-perform.secure.footprint.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,dc2-live2hls-perform.secure.footprint.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,dc2-vodhls-perform.secure.footprint.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,dca-livedash-perform.secure.footprint.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,dca-voddash-perform.secure.footprint.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,dca-vodhls-perform.secure.footprint.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,dcb-livedash-perform.secure.footprint.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,dcb-voddash-perform.secure.footprint.net,🌍 国外媒体
   - DOMAIN-SUFFIX,dcblivedazn.akamaized.net,🌍 国外媒体
   - DOMAIN-SUFFIX,indazn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,indaznlab.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,perfops.doracdn.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,s.llnwi.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,s.yimg.jp,🌍 国外媒体
-  - DOMAIN-SUFFIX,secure.footprint.net,🌍 国外媒体
   - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,urbanairship.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,vjs.zencdn.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,widevine.entitlement.us.theplatform.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,yahoo.co.jp,🌍 国外媒体
+#,USER-AGENT,Deezer*,🌍 国外媒体
   - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
   - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,disco-api.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,discovery.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
+#,USER-AGENT,Disney*,🌍 国外媒体
+#,USER-AGENT,Disney+*,🌍 国外媒体
   - DOMAIN,cdn.registerdisney.go.com,🌍 国外媒体
   - DOMAIN-SUFFIX,adobedtm.com,🌍 国外媒体
   - DOMAIN-SUFFIX,bam.nr-data.net,🌍 国外媒体
@@ -2867,33 +2305,26 @@ rules:
   - DOMAIN-SUFFIX,dssott.com,🌍 国外媒体
   - DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,js-agent.newrelic.com,🌍 国外媒体
+#,USER-AGENT,encoreTVB*,🌍 国外媒体
   - DOMAIN,bcbolt446c5271-a.akamaihd.net,🌍 国外媒体
   - DOMAIN,content.jwplatform.com,🌍 国外媒体
   - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
   - DOMAIN,videos-f.jwpsrv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,encoretvb.com,🌍 国外媒体
+#,USER-AGENT,FOX%20NOW*,🌍 国外媒体
   - DOMAIN-SUFFIX,fox.com,🌍 国外媒体
   - DOMAIN-SUFFIX,foxdcg.com,🌍 国外媒体
   - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
-  - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
-  - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
-  - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🌍 国外媒体
-  - DOMAIN,dai3fd1oh325y.cloudfront.net,🌍 国外媒体
-  - DOMAIN,hboasia1-i.akamaihd.net,🌍 国外媒体
-  - DOMAIN,hboasia2-i.akamaihd.net,🌍 国外媒体
-  - DOMAIN,hboasia3-i.akamaihd.net,🌍 国外媒体
-  - DOMAIN,hboasia4-i.akamaihd.net,🌍 国外媒体
-  - DOMAIN,hboasia5-i.akamaihd.net,🌍 国外媒体
-  - DOMAIN,players.brightcove.net,🌍 国外媒体
-  - DOMAIN,s3-ap-southeast-1.amazonaws.com,🌍 国外媒体
+#,USER-AGENT,HBO%20NOW*,🌍 国外媒体
+#,USER-AGENT,HBOMAX*,🌍 国外媒体
   - DOMAIN-SUFFIX,hbo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogo.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,hbogoasia.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,hbogoasia.hk,🌍 国外媒体
   - DOMAIN-SUFFIX,hbomax.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbomaxcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbonow.com,🌍 国外媒体
+#,USER-AGENT,HBO%20GO%20PROD*,🌍 国外媒体
   - DOMAIN-KEYWORD,.hbogoasia.,🌍 国外媒体
+  - DOMAIN-KEYWORD,hbogoasia,🌍 国外媒体
   - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
   - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
   - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🌍 国外媒体
@@ -2909,8 +2340,10 @@ rules:
   - DOMAIN,hbounify-prod.evergent.com,🌍 国外媒体
   - DOMAIN,players.brightcove.net,🌍 国外媒体
   - DOMAIN,s3-ap-southeast-1.amazonaws.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,hboasia.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogoasia.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogoasia.hk,🌍 国外媒体
+#,USER-AGENT,HWTVMobile*,🌍 国外媒体
   - DOMAIN-SUFFIX,5itv.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,ocnttv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,cws-hulu.conviva.com,🌍 国外媒体
@@ -2926,9 +2359,12 @@ rules:
   - DOMAIN-SUFFIX,prod.hjholdings.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,streaks.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,yb.uncn.jp,🌍 国外媒体
+#,USER-AGENT,ITV_Player*,🌍 国外媒体
   - DOMAIN,itvpnpmobile-a.akamaihd.net,🌍 国外媒体
   - DOMAIN-SUFFIX,itv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,itvstatic.com,🌍 国外媒体
+#,USER-AGENT,JOOX*,🌍 国外媒体
+#,USER-AGENT,WeMusic*,🌍 国外媒体
   - DOMAIN-KEYWORD,jooxweb-api,🌍 国外媒体
   - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
   - DOMAIN-KEYWORD,japonx,🌍 国外媒体
@@ -2944,24 +2380,35 @@ rules:
   - DOMAIN-SUFFIX,kfs.io,🌍 国外媒体
   - DOMAIN-SUFFIX,kkbox.com,🌍 国外媒体
   - DOMAIN-SUFFIX,kkbox.com.tw,🌍 国外媒体
+#,USER-AGENT,KKTV*,🌍 国外媒体
+#,USER-AGENT,com.kktv.ios.kktv*,🌍 国外媒体
   - DOMAIN,kktv-theater.kk.stream,🌍 国外媒体
+  - DOMAIN,theater-kktv.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,kktv.com.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,kktv.me,🌍 国外媒体
   - DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,litv.tv,🌍 国外媒体
+#,USER-AGENT,LINE%20TV*,🌍 国外媒体
+#,USER-AGENT,LINE*,🌍 国外媒体
   - DOMAIN,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,linetv.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,profile.line-scdn.net,🌍 国外媒体
+#,USER-AGENT,My5*,🌍 国外媒体
   - DOMAIN,d349g9zuie06uo.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,channel5.com,🌍 国外媒体
   - DOMAIN-SUFFIX,my5.tv,🌍 国外媒体
+#,USER-AGENT,mytv*,🌍 国外媒体
+  - DOMAIN-KEYWORD,nowtv100,🌍 国外媒体
+  - DOMAIN-KEYWORD,rthklive,🌍 国外媒体
   - DOMAIN,mytvsuperlimited.hb.omtrdc.net,🌍 国外媒体
   - DOMAIN,mytvsuperlimited.sc.omtrdc.net,🌍 国外媒体
   - DOMAIN-SUFFIX,mytvsuper.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tvb.com,🌍 国外媒体
+#,USER-AGENT,Argo*,🌍 国外媒体
+  - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,🌍 国外媒体
   - DOMAIN-KEYWORD,dualstack.apiproxy-,🌍 国外媒体
-  - DOMAIN-KEYWORD,dualstack.ichnaea-web-,🌍 国外媒体
+  - DOMAIN-KEYWORD,netflixdnstest,🌍 国外媒体
   - DOMAIN,netflix.com.edgesuite.net,🌍 国外媒体
   - DOMAIN-SUFFIX,fast.com,🌍 国外媒体
   - DOMAIN-SUFFIX,netflix.com,🌍 国外媒体
@@ -2983,12 +2430,9 @@ rules:
   - DOMAIN-SUFFIX,nflxvideo.net,🌍 国外媒体
   - IP-CIDR,8.41.4.0/24,🌍 国外媒体,no-resolve
   - IP-CIDR,23.246.0.0/18,🌍 国外媒体,no-resolve
-  - IP-CIDR,34.210.42.111/32,🌍 国外媒体,no-resolve
   - IP-CIDR,37.77.184.0/21,🌍 国外媒体,no-resolve
   - IP-CIDR,38.72.126.0/24,🌍 国外媒体,no-resolve
   - IP-CIDR,45.57.0.0/17,🌍 国外媒体,no-resolve
-  - IP-CIDR,52.89.124.203/32,🌍 国外媒体,no-resolve
-  - IP-CIDR,54.148.37.5/32,🌍 国外媒体,no-resolve
   - IP-CIDR,64.120.128.0/17,🌍 国外媒体,no-resolve
   - IP-CIDR,66.197.128.0/17,🌍 国外媒体,no-resolve
   - IP-CIDR,69.53.224.0/19,🌍 国外媒体,no-resolve
@@ -3001,19 +2445,24 @@ rules:
   - IP-CIDR,198.45.48.0/20,🌍 国外媒体,no-resolve
   - IP-CIDR,207.45.72.0/22,🌍 国外媒体,no-resolve
   - IP-CIDR,208.75.76.0/22,🌍 国外媒体,no-resolve
+#,USER-AGENT,Niconico*,🌍 国外媒体
   - DOMAIN-SUFFIX,dmc.nico,🌍 国外媒体
   - DOMAIN-SUFFIX,nicovideo.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,nimg.jp,🌍 国外媒体
+#,USER-AGENT,PBS*,🌍 国外媒体
   - DOMAIN-SUFFIX,pbs.org,🌍 国外媒体
+#,USER-AGENT,Pandora*,🌍 国外媒体
   - DOMAIN-SUFFIX,pandora.com,🌍 国外媒体
   - DOMAIN-SUFFIX,phncdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,phprcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pornhub.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pornhubpremium.com,🌍 国外媒体
   - DOMAIN-SUFFIX,qobuz.com,🌍 国外媒体
+#,USER-AGENT,SoundCloud*,🌍 国外媒体
   - DOMAIN-SUFFIX,p-cdn.us,🌍 国外媒体
   - DOMAIN-SUFFIX,sndcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,soundcloud.com,🌍 国外媒体
+#,USER-AGENT,Spotify*,🌍 国外媒体
   - DOMAIN-KEYWORD,-spotify-com,🌍 国外媒体
   - DOMAIN-KEYWORD,spotify.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pscdn.co,🌍 国外媒体
@@ -3022,12 +2471,15 @@ rules:
   - DOMAIN-SUFFIX,spotify.com,🌍 国外媒体
   - DOMAIN-SUFFIX,spotifycdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,spotifycdn.net,🌍 国外媒体
+#,USER-AGENT,TIDAL*,🌍 国外媒体
   - DOMAIN-SUFFIX,tidal-cms.s3.amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tidal.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tidalhifi.com,🌍 国外媒体
+#,USER-AGENT,TaiwanGood*,🌍 国外媒体
   - DOMAIN,hamifans.emome.net,🌍 国外媒体
   - DOMAIN-SUFFIX,skyking.com.tw,🌍 国外媒体
-  - DOMAIN-KEYWORD,-tiktokcdn-com,🌍 国外媒体
+#,USER-AGENT,TikTok*,🌍 国外媒体
+  - DOMAIN-KEYWORD,tiktokcdn-,🌍 国外媒体
   - DOMAIN-SUFFIX,byteoversea.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ibytedtos.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ipstatp.com,🌍 国外媒体
@@ -3038,33 +2490,53 @@ rules:
   - DOMAIN-SUFFIX,tiktokcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tiktokv.com,🌍 国外媒体
   - DOMAIN-KEYWORD,ttvnw,🌍 国外媒体
+  - DOMAIN-SUFFIX,ext-twitch.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,jtvnw.net,🌍 国外媒体
   - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,twitch-ext.rootonline.de,🌍 国外媒体
   - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
+#,USER-AGENT,Viu*,🌍 国外媒体
+  - PROCESS-NAME,com.viu.pad,🌍 国外媒体
+  - PROCESS-NAME,com.viu.phone,🌍 国外媒体
+  - PROCESS-NAME,com.vuclip.viu,🌍 国外媒体
   - DOMAIN,api.viu.now.com,🌍 国外媒体
   - DOMAIN,d1k2us671qcoau.cloudfront.net,🌍 国外媒体
   - DOMAIN,d2anahhhmp1ffz.cloudfront.net,🌍 国外媒体
   - DOMAIN,dfp6rglgjqszk.cloudfront.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,bootstrapcdn.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,cognito-identity.us-east-1.amazonaws.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,firebaseio.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,jwpcdn.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,jwplayer.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,d1k2us671qcoau.cloudfront.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,d2anahhhmp1ffz.cloudfront.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dfp6rglgjqszk.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,mobileanalytics.us-east-1.amazonaws.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,nowe.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.now.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.tv,🌍 国外媒体
+#,USER-AGENT,*youtube*,🌍 国外媒体
+#,USER-AGENT,YouTube*,🌍 国外媒体
+#,USER-AGENT,com.google.ios.youtube*,🌍 国外媒体
   - DOMAIN-KEYWORD,youtube,🌍 国外媒体
   - DOMAIN,youtubei.googleapis.com,🌍 国外媒体
   - DOMAIN,yt3.ggpht.com,🌍 国外媒体
   - DOMAIN-SUFFIX,googlevideo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,gvt2.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,withyoutube.com,🌍 国外媒体
   - DOMAIN-SUFFIX,youtu.be,🌍 国外媒体
+  - DOMAIN-SUFFIX,youtube-nocookie.com,🌍 国外媒体
   - DOMAIN-SUFFIX,youtube.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,youtubeeducation.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,youtubegaming.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,youtubekids.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,yt.be,🌍 国外媒体
   - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
+#,USER-AGENT,*YouTubeMusic*,🌍 国外媒体
+#,USER-AGENT,*com.google.ios.youtubemusic*,🌍 国外媒体
+#,USER-AGENT,YouTubeMusic*,🌍 国外媒体
+#,USER-AGENT,com.google.ios.youtubemusic*,🌍 国外媒体
+  - DOMAIN,music.youtube.com,🌍 国外媒体
+# Telegram
+#PROCESS-NAME,Telegram.exe
+#PROCESS-NAME,org.telegram.messenger
   - DOMAIN-SUFFIX,t.me,📲 电报信息
   - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
   - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
@@ -3077,13 +2549,48 @@ rules:
   - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
   - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
   - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
-  - DOMAIN-SUFFIX,1password.com,🚀 节点选择
+# 长风网站，自动注入
   - DOMAIN-SUFFIX,v2rayse.com,🚀 节点选择
+  - DOMAIN-SUFFIX,cff.pw,🚀 节点选择
   - DOMAIN-SUFFIX,vpnse.org,🚀 节点选择
+  - DOMAIN-SUFFIX,cfmem.com,🚀 节点选择
+# 代理列表
+# MyList && Other
+# 国外域名
+# 国外域名关键字
+# Top Blocked Sites
+# Amazon
+# BBC
+# Developer 开发者常用国外网站、镜像和论坛
+# Discord
+# Facebook
+# Github
+# Google
+# GoogleCNProxyIP 谷歌中国服务 services.googleapis.cn
+# Instagram
+# Kakao Talk
+# Line
+# OneDrive
+#DOMAIN-SUFFIX,aria.microsoft.com
+# Porn
+# Pixiv
+# Spark
+# Steam
+# TapTap
+# Twitch
+# Twitter
+# Telegram
+# TeraBox
+# Whatsapp
+# Wikipedia 维基相关域名
+#飞流直播
+#华文电视
+# VikACG
+  - DOMAIN-SUFFIX,1password.com,🚀 节点选择
   - DOMAIN-SUFFIX,adguard.org,🚀 节点选择
   - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
   - DOMAIN-SUFFIX,btlibrary.me,🚀 节点选择
-  - DOMAIN-SUFFIX,cccat.io,🚀 节点选择
+  - DOMAIN-SUFFIX,chat.openai.com,🚀 节点选择
   - DOMAIN-SUFFIX,cloudcone.com,🚀 节点选择
   - DOMAIN-SUFFIX,dubox.com,🚀 节点选择
   - DOMAIN-SUFFIX,gameloft.com,🚀 节点选择
@@ -3091,16 +2598,16 @@ rules:
   - DOMAIN-SUFFIX,hoyolab.com,🚀 节点选择
   - DOMAIN-SUFFIX,inoreader.com,🚀 节点选择
   - DOMAIN-SUFFIX,ip138.com,🚀 节点选择
+  - DOMAIN-SUFFIX,linkedin.com,🚀 节点选择
   - DOMAIN-SUFFIX,myteamspeak.com,🚀 节点选择
   - DOMAIN-SUFFIX,notion.so,🚀 节点选择
+  - DOMAIN-SUFFIX,openai.com,🚀 节点选择
   - DOMAIN-SUFFIX,ping.pe,🚀 节点选择
   - DOMAIN-SUFFIX,reddit.com,🚀 节点选择
   - DOMAIN-SUFFIX,teddysun.com,🚀 节点选择
   - DOMAIN-SUFFIX,tumbex.com,🚀 节点选择
   - DOMAIN-SUFFIX,twdvd.com,🚀 节点选择
   - DOMAIN-SUFFIX,unsplash.com,🚀 节点选择
-  - DOMAIN-SUFFIX,xn--i2ru8q2qg.com,🚀 节点选择
-  - DOMAIN-SUFFIX,yunpanjingling.com,🚀 节点选择
   - DOMAIN-SUFFIX,eu,🚀 节点选择
   - DOMAIN-SUFFIX,hk,🚀 节点选择
   - DOMAIN-SUFFIX,jp,🚀 节点选择
@@ -3162,7 +2669,6 @@ rules:
   - DOMAIN-SUFFIX,cloudfront.net,🚀 节点选择
   - DOMAIN-SUFFIX,comodoca.com,🚀 节点选择
   - DOMAIN-SUFFIX,daum.net,🚀 节点选择
-  - DOMAIN-SUFFIX,demdex.net,🚀 节点选择
   - DOMAIN-SUFFIX,deskconnect.com,🚀 节点选择
   - DOMAIN-SUFFIX,disqus.com,🚀 节点选择
   - DOMAIN-SUFFIX,disquscdn.com,🚀 节点选择
@@ -3420,7 +2926,23 @@ rules:
   - DOMAIN-SUFFIX,smartmailcloud.com,🚀 节点选择
   - DOMAIN-SUFFIX,fanatical.com,🚀 节点选择
   - DOMAIN-SUFFIX,humblebundle.com,🚀 节点选择
+  - DOMAIN-SUFFIX,underlords.com,🚀 节点选择
+  - DOMAIN-SUFFIX,valvesoftware.com,🚀 节点选择
+  - DOMAIN-SUFFIX,playartifact.com,🚀 节点选择
+  - DOMAIN-SUFFIX,steam-chat.com,🚀 节点选择
   - DOMAIN-SUFFIX,steamcommunity.com,🚀 节点选择
+  - DOMAIN-SUFFIX,steamgames.com,🚀 节点选择
+  - DOMAIN-SUFFIX,steampowered.com,🚀 节点选择
+  - DOMAIN-SUFFIX,steamserver.net,🚀 节点选择
+  - DOMAIN-SUFFIX,steamstatic.com,🚀 节点选择
+  - DOMAIN-SUFFIX,steamstat.us,🚀 节点选择
+  - DOMAIN,steambroadcast.akamaized.net,🚀 节点选择
+  - DOMAIN,steamcdn-a.akamaihd.net,🚀 节点选择
+  - DOMAIN,steamcommunity-a.akamaihd.net,🚀 节点选择
+  - DOMAIN,steamstore-a.akamaihd.net,🚀 节点选择
+  - DOMAIN,steamusercontent-a.akamaihd.net,🚀 节点选择
+  - DOMAIN,steamuserimages-a.akamaihd.net,🚀 节点选择
+  - DOMAIN,steampipe.akamaized.net,🚀 节点选择
   - DOMAIN-SUFFIX,tap.io,🚀 节点选择
   - DOMAIN-SUFFIX,taptap.tw,🚀 节点选择
   - DOMAIN-SUFFIX,twitch.tv,🚀 节点选择
@@ -3476,6 +2998,55 @@ rules:
   - DOMAIN-SUFFIX,icntv.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,flzbcdn.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,ocnttv.com,🚀 节点选择
+  - DOMAIN-SUFFIX,vikacg.com,🚀 节点选择
+  - DOMAIN-SUFFIX,picjs.xyz,🚀 节点选择
+# 直连列表
+# MyList
+# CN域名直连(中国|公司|网络)
+# 中国国内常见域名关键词直连
+# 360
+# 4399
+# 58
+# Alibaba
+# Baidu
+# Bilibili
+# Blizzard
+# ByteDance
+# CCTV
+# ChinaNet
+# DiDi
+# Douyu 斗鱼
+# Epic
+# HuaWei
+# Iflytek 科大讯飞
+# Iqiyi
+# JD
+# Kingsoft
+# Kuaishou 快手
+# Meitu
+# LeTV 乐视
+# MGTV 芒果TV
+# MI
+# NetEase
+# PPTV、PPLive
+# PDD 拼多多
+# Sina
+# Sohu Sogo
+# Sony
+# SteamCN
+# Tencent
+# Vip 唯品会
+# Ximalaya 喜马拉雅
+# Xunlei 迅雷
+# YYeTs 人人影视
+# Private Tracker
+# TeamViewer
+# Public Direct CDN 公共直连
+#DOMAIN-SUFFIX,ajax.aspnetcdn.com
+#DOMAIN-SUFFIX,ajax.cloudflare.com
+#DOMAIN-SUFFIX,cdnjs.cloudflare.com
+#DOMAIN-SUFFIX,code.jquery.com
+# AccelerateDirectSites
   - DOMAIN-SUFFIX,13th.tech,🎯 全球直连
   - DOMAIN-SUFFIX,423down.com,🎯 全球直连
   - DOMAIN-SUFFIX,bokecc.com,🎯 全球直连
@@ -3488,10 +3059,13 @@ rules:
   - DOMAIN-SUFFIX,msftconnecttest.com,🎯 全球直连
   - DOMAIN-SUFFIX,msftncsi.com,🎯 全球直连
   - DOMAIN-SUFFIX,qupu123.com,🎯 全球直连
+  - DOMAIN-SUFFIX,pdfwifi.com,🎯 全球直连
+  - DOMAIN-SUFFIX,zhenguanyu.biz,🎯 全球直连
+  - DOMAIN-SUFFIX,zhenguanyu.com,🎯 全球直连
   - DOMAIN-SUFFIX,cn,🎯 全球直连
-  - DOMAIN-SUFFIX,中国,🎯 全球直连
-  - DOMAIN-SUFFIX,公司,🎯 全球直连
-  - DOMAIN-SUFFIX,网络,🎯 全球直连
+  - DOMAIN-SUFFIX,xn--fiqs8s,🎯 全球直连
+  - DOMAIN-SUFFIX,xn--55qx5d,🎯 全球直连
+  - DOMAIN-SUFFIX,xn--io0a7i,🎯 全球直连
   - DOMAIN-KEYWORD,-cn,🎯 全球直连
   - DOMAIN-KEYWORD,360buy,🎯 全球直连
   - DOMAIN-KEYWORD,alicdn,🎯 全球直连
@@ -3503,7 +3077,6 @@ rules:
   - DOMAIN-KEYWORD,ccgslb,🎯 全球直连
   - DOMAIN-KEYWORD,chinacache,🎯 全球直连
   - DOMAIN-KEYWORD,duobao,🎯 全球直连
-  - DOMAIN-KEYWORD,duolingo,🎯 全球直连
   - DOMAIN-KEYWORD,jdpay,🎯 全球直连
   - DOMAIN-KEYWORD,moke,🎯 全球直连
   - DOMAIN-KEYWORD,qhimg,🎯 全球直连
@@ -3579,7 +3152,6 @@ rules:
   - DOMAIN-SUFFIX,biliapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,biliapi.net,🎯 全球直连
   - DOMAIN-SUFFIX,bilibili.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bilibili.tv,🎯 全球直连
   - DOMAIN-SUFFIX,biligame.com,🎯 全球直连
   - DOMAIN-SUFFIX,biligame.net,🎯 全球直连
   - DOMAIN-SUFFIX,bilivideo.com,🎯 全球直连
@@ -3590,13 +3162,29 @@ rules:
   - DOMAIN-SUFFIX,battle.net,🎯 全球直连
   - DOMAIN-SUFFIX,battlenet.com,🎯 全球直连
   - DOMAIN-SUFFIX,blizzard.com,🎯 全球直连
+  - DOMAIN-SUFFIX,amemv.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bdxiguaimg.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bdxiguastatic.com,🎯 全球直连
+  - DOMAIN-SUFFIX,byted-static.com,🎯 全球直连
   - DOMAIN-SUFFIX,bytedance.com,🎯 全球直连
   - DOMAIN-SUFFIX,bytedance.net,🎯 全球直连
   - DOMAIN-SUFFIX,bytedns.net,🎯 全球直连
+  - DOMAIN-SUFFIX,bytednsdoc.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bytegoofy.com,🎯 全球直连
   - DOMAIN-SUFFIX,byteimg.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bytescm.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bytetos.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bytexservice.com,🎯 全球直连
+  - DOMAIN-SUFFIX,douyin.com,🎯 全球直连
+  - DOMAIN-SUFFIX,douyinpic.com,🎯 全球直连
+  - DOMAIN-SUFFIX,douyinstatic.com,🎯 全球直连
+  - DOMAIN-SUFFIX,douyinvod.com,🎯 全球直连
+  - DOMAIN-SUFFIX,feelgood.cn,🎯 全球直连
   - DOMAIN-SUFFIX,feiliao.com,🎯 全球直连
   - DOMAIN-SUFFIX,gifshow.com,🎯 全球直连
   - DOMAIN-SUFFIX,huoshan.com,🎯 全球直连
+  - DOMAIN-SUFFIX,huoshanzhibo.com,🎯 全球直连
+  - DOMAIN-SUFFIX,ibytedapm.com,🎯 全球直连
   - DOMAIN-SUFFIX,iesdouyin.com,🎯 全球直连
   - DOMAIN-SUFFIX,ixigua.com,🎯 全球直连
   - DOMAIN-SUFFIX,kspkg.com,🎯 全球直连
@@ -3604,6 +3192,7 @@ rules:
   - DOMAIN-SUFFIX,snssdk.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiao.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiao13.com,🎯 全球直连
+  - DOMAIN-SUFFIX,toutiaoapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiaocdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiaocdn.net,🎯 全球直连
   - DOMAIN-SUFFIX,toutiaocloud.com,🎯 全球直连
@@ -3612,6 +3201,7 @@ rules:
   - DOMAIN-SUFFIX,toutiaoimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiaopage.com,🎯 全球直连
   - DOMAIN-SUFFIX,wukong.com,🎯 全球直连
+  - DOMAIN-SUFFIX,zijieapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,zijieimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,zjbyte.com,🎯 全球直连
   - DOMAIN-SUFFIX,zjcdn.com,🎯 全球直连
@@ -3627,6 +3217,7 @@ rules:
   - DOMAIN-SUFFIX,douyuscdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyutv.com,🎯 全球直连
   - DOMAIN-SUFFIX,epicgames.com,🎯 全球直连
+  - DOMAIN-SUFFIX,epicgames.dev,🎯 全球直连
   - DOMAIN-SUFFIX,helpshift.com,🎯 全球直连
   - DOMAIN-SUFFIX,paragon.com,🎯 全球直连
   - DOMAIN-SUFFIX,unrealengine.com,🎯 全球直连
@@ -3700,10 +3291,16 @@ rules:
   - DOMAIN-SUFFIX,leju.com,🎯 全球直连
   - DOMAIN-SUFFIX,miaopai.com,🎯 全球直连
   - DOMAIN-SUFFIX,sina.com,🎯 全球直连
+  - DOMAIN-SUFFIX,sina.com.cn,🎯 全球直连
+  - DOMAIN-SUFFIX,sina.cn,🎯 全球直连
   - DOMAIN-SUFFIX,sinaapp.com,🎯 全球直连
+  - DOMAIN-SUFFIX,sinaapp.cn,🎯 全球直连
   - DOMAIN-SUFFIX,sinaimg.com,🎯 全球直连
+  - DOMAIN-SUFFIX,sinaimg.cn,🎯 全球直连
   - DOMAIN-SUFFIX,weibo.com,🎯 全球直连
+  - DOMAIN-SUFFIX,weibo.cn,🎯 全球直连
   - DOMAIN-SUFFIX,weibocdn.com,🎯 全球直连
+  - DOMAIN-SUFFIX,weibocdn.cn,🎯 全球直连
   - DOMAIN-SUFFIX,xiaoka.tv,🎯 全球直连
   - DOMAIN-SUFFIX,go2map.com,🎯 全球直连
   - DOMAIN-SUFFIX,sogo.com,🎯 全球直连
@@ -3720,20 +3317,21 @@ rules:
   - DOMAIN-SUFFIX,playstationnetwork.com,🎯 全球直连
   - DOMAIN-SUFFIX,sony.com,🎯 全球直连
   - DOMAIN-SUFFIX,sonyentertainmentnetwork.com,🎯 全球直连
-  - DOMAIN-SUFFIX,csgo.wmsj.cn,🎯 全球直连
-  - DOMAIN-SUFFIX,dl.steam.ksyna.com,🎯 全球直连
-  - DOMAIN-SUFFIX,dota2.wmsj.cn,🎯 全球直连
-  - DOMAIN-SUFFIX,st.dl.bscstorage.net,🎯 全球直连
-  - DOMAIN-SUFFIX,st.dl.eccdnx.com,🎯 全球直连
-  - DOMAIN-SUFFIX,st.dl.pinyuncloud.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net,🎯 全球直连
+  - DOMAIN-SUFFIX,cm.steampowered.com,🎯 全球直连
   - DOMAIN-SUFFIX,steamcontent.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamgames.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steampowered.com.8686c.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamstat.us,🎯 全球直连
-  - DOMAIN-SUFFIX,steamstatic.com,🎯 全球直连
   - DOMAIN-SUFFIX,steamusercontent.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net,🎯 全球直连
+  - DOMAIN-SUFFIX,steamchina.com,🎯 全球直连
+  - DOMAIN,csgo.wmsj.cn,🎯 全球直连
+  - DOMAIN,dota2.wmsj.cn,🎯 全球直连
+  - DOMAIN,wmsjsteam.com,🎯 全球直连
+  - DOMAIN,dl.steam.clngaa.com,🎯 全球直连
+  - DOMAIN,dl.steam.ksyna.com,🎯 全球直连
+  - DOMAIN,st.dl.bscstorage.net,🎯 全球直连
+  - DOMAIN,st.dl.eccdnx.com,🎯 全球直连
+  - DOMAIN,st.dl.pinyuncloud.com,🎯 全球直连
+  - DOMAIN,steampipe.steamcontent.tnkjmec.com,🎯 全球直连
+  - DOMAIN,steampowered.com.8686c.com,🎯 全球直连
+  - DOMAIN,steamstatic.com.8686c.com,🎯 全球直连
   - DOMAIN-SUFFIX,foxmail.com,🎯 全球直连
   - DOMAIN-SUFFIX,gtimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,idqqimg.com,🎯 全球直连
@@ -3833,7 +3431,6 @@ rules:
   - DOMAIN-SUFFIX,baomitu.com,🎯 全球直连
   - DOMAIN-SUFFIX,bootcss.com,🎯 全球直连
   - DOMAIN-SUFFIX,jiasule.com,🎯 全球直连
-  - DOMAIN-SUFFIX,jsdelivr.net,🎯 全球直连
   - DOMAIN-SUFFIX,staticfile.org,🎯 全球直连
   - DOMAIN-SUFFIX,upaiyun.com,🎯 全球直连
   - DOMAIN-SUFFIX,10010.com,🎯 全球直连
@@ -3879,8 +3476,6 @@ rules:
   - DOMAIN-SUFFIX,clouddn.com,🎯 全球直连
   - DOMAIN-SUFFIX,cloudxns.net,🎯 全球直连
   - DOMAIN-SUFFIX,cn163.net,🎯 全球直连
-  - DOMAIN-SUFFIX,cnbeta.com,🎯 全球直连
-  - DOMAIN-SUFFIX,cnbetacdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,cnblogs.com,🎯 全球直连
   - DOMAIN-SUFFIX,cnki.net,🎯 全球直连
   - DOMAIN-SUFFIX,cnmstl.net,🎯 全球直连
@@ -3955,11 +3550,9 @@ rules:
   - DOMAIN-SUFFIX,lanzoux.com,🎯 全球直连
   - DOMAIN-SUFFIX,lemicp.com,🎯 全球直连
   - DOMAIN-SUFFIX,letitfly.me,🎯 全球直连
-  - DOMAIN-SUFFIX,linkedin.com,🎯 全球直连
   - DOMAIN-SUFFIX,lizhi.fm,🎯 全球直连
   - DOMAIN-SUFFIX,lizhi.io,🎯 全球直连
   - DOMAIN-SUFFIX,lizhifm.com,🎯 全球直连
-  - DOMAIN-SUFFIX,loli.net,🎯 全球直连
   - DOMAIN-SUFFIX,luoo.net,🎯 全球直连
   - DOMAIN-SUFFIX,lvmama.com,🎯 全球直连
   - DOMAIN-SUFFIX,lxdns.com,🎯 全球直连
@@ -3986,7 +3579,6 @@ rules:
   - DOMAIN-SUFFIX,oracle.com,🎯 全球直连
   - DOMAIN-SUFFIX,oschina.net,🎯 全球直连
   - DOMAIN-SUFFIX,ourdvs.com,🎯 全球直连
-  - DOMAIN-SUFFIX,paypal.com,🎯 全球直连
   - DOMAIN-SUFFIX,polyv.net,🎯 全球直连
   - DOMAIN-SUFFIX,qbox.me,🎯 全球直连
   - DOMAIN-SUFFIX,qcloud.com,🎯 全球直连
@@ -4005,9 +3597,7 @@ rules:
   - DOMAIN-SUFFIX,quanmin.tv,🎯 全球直连
   - DOMAIN-SUFFIX,qunar.com,🎯 全球直连
   - DOMAIN-SUFFIX,qunarzz.com,🎯 全球直连
-  - DOMAIN-SUFFIX,rarbg.to,🎯 全球直连
   - DOMAIN-SUFFIX,repaik.com,🎯 全球直连
-  - DOMAIN-SUFFIX,rrmj.tv,🎯 全球直连
   - DOMAIN-SUFFIX,ruguoapp.com,🎯 全球直连
   - DOMAIN-SUFFIX,runoob.com,🎯 全球直连
   - DOMAIN-SUFFIX,sankuai.com,🎯 全球直连
@@ -4015,7 +3605,6 @@ rules:
   - DOMAIN-SUFFIX,sf-express.com,🎯 全球直连
   - DOMAIN-SUFFIX,shumilou.net,🎯 全球直连
   - DOMAIN-SUFFIX,simplecd.me,🎯 全球直连
-  - DOMAIN-SUFFIX,sm.ms,🎯 全球直连
   - DOMAIN-SUFFIX,smzdm.com,🎯 全球直连
   - DOMAIN-SUFFIX,snwx.com,🎯 全球直连
   - DOMAIN-SUFFIX,soufunimg.com,🎯 全球直连
@@ -4079,6 +3668,13 @@ rules:
   - DOMAIN-SUFFIX,zhimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhongsou.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhuihd.com,🎯 全球直连
+# 中国云服务商ip端
+# 阿里
+# 腾讯 qq
+# 百度 Baidu
+# 华为 huwei
+# 网易 NetEase
+# 360
   - IP-CIDR,8.128.0.0/10,🎯 全球直连,no-resolve
   - IP-CIDR,8.208.0.0/12,🎯 全球直连,no-resolve
   - IP-CIDR,14.1.112.0/22,🎯 全球直连,no-resolve
