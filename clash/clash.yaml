@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-05-01 12:48:33
+# 创建时间：2023-05-01 13:44:55
 # 使用模版：V2RaySE 默认模版
-# 节点数量：3
+# 节点数量：8
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,60 +21,95 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"保加利亚-3.45MB/s(Youtube:不良林)","type":"ss","server":"45.136.198.122","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
-  - {"name":"美国-5.27MB/s(Youtube:不良林)","type":"vmess","server":"142.0.132.41","port":50015,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"中转节点-5.87MB/s(Youtube:不良林)","type":"ssr","server":"hkt-imsbiz-04.xm1s.top","port":457,"password":"UtFRxN","cipher":"dummy","obfs":"plain","protocol":"auth_chain_a","obfs-param":"wns.windows.com","protocol-param":"2471:0v32AS","group":"SSRProvider"}
+  - {"name":"v2ray3.webgfw.top:2083_1","type":"vmess","server":"v2ray3.webgfw.top","port":2083,"cipher":"auto","uuid":"07e90bec-b70d-414c-a00e-c844f1ea3345","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/X9piqfat/"}}
+  - {"name":"v2ray3.webgfw.top:2083_2","type":"vmess","server":"v2ray3.webgfw.top","port":2083,"cipher":"auto","uuid":"1ace515b-a76b-4378-83ac-0ee3833b98be","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/X9piqfat/"}}
+  - {"name":"v2ray3.webgfw.top:2083_3","type":"vmess","server":"v2ray3.webgfw.top","port":2083,"cipher":"auto","uuid":"1f147af0-75fb-4c9d-8dac-54f56d48d42d","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/X9piqfat/"}}
+  - {"name":"v2ray3.webgfw.top:2083_4","type":"vmess","server":"v2ray3.webgfw.top","port":2083,"cipher":"auto","uuid":"4cc72565-0d05-41e6-bc34-72aba9da544f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/X9piqfat/"}}
+  - {"name":"v2ray3.webgfw.top:2083_5","type":"vmess","server":"v2ray3.webgfw.top","port":2083,"cipher":"auto","uuid":"1ace515b-a76b-4378-83ac-0ee3833b98be","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/X9piqfat/"}}
+  - {"name":"v2ray3.webgfw.top:2083_6","type":"vmess","server":"v2ray3.webgfw.top","port":2083,"cipher":"auto","uuid":"1f147af0-75fb-4c9d-8dac-54f56d48d42d","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/X9piqfat/"}}
+  - {"name":"v2ray3.webgfw.top:2083_7","type":"vmess","server":"v2ray3.webgfw.top","port":2083,"cipher":"auto","uuid":"4cc72565-0d05-41e6-bc34-72aba9da544f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/X9piqfat/"}}
+  - {"name":"v2ray3.webgfw.top:2083_8","type":"vmess","server":"v2ray3.webgfw.top","port":2083,"cipher":"auto","uuid":"ea9de06d-2436-42e9-8187-9e6d5fc40407","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/X9piqfat/"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 保加利亚-3.45MB/s(Youtube:不良林)
-      - 美国-5.27MB/s(Youtube:不良林)
-      - 中转节点-5.87MB/s(Youtube:不良林)
+      - v2ray3.webgfw.top:2083_1
+      - v2ray3.webgfw.top:2083_2
+      - v2ray3.webgfw.top:2083_3
+      - v2ray3.webgfw.top:2083_4
+      - v2ray3.webgfw.top:2083_5
+      - v2ray3.webgfw.top:2083_6
+      - v2ray3.webgfw.top:2083_7
+      - v2ray3.webgfw.top:2083_8
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 保加利亚-3.45MB/s(Youtube:不良林)
-      - 美国-5.27MB/s(Youtube:不良林)
-      - 中转节点-5.87MB/s(Youtube:不良林)
+      - v2ray3.webgfw.top:2083_1
+      - v2ray3.webgfw.top:2083_2
+      - v2ray3.webgfw.top:2083_3
+      - v2ray3.webgfw.top:2083_4
+      - v2ray3.webgfw.top:2083_5
+      - v2ray3.webgfw.top:2083_6
+      - v2ray3.webgfw.top:2083_7
+      - v2ray3.webgfw.top:2083_8
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 保加利亚-3.45MB/s(Youtube:不良林)
-      - 美国-5.27MB/s(Youtube:不良林)
-      - 中转节点-5.87MB/s(Youtube:不良林)
+      - v2ray3.webgfw.top:2083_1
+      - v2ray3.webgfw.top:2083_2
+      - v2ray3.webgfw.top:2083_3
+      - v2ray3.webgfw.top:2083_4
+      - v2ray3.webgfw.top:2083_5
+      - v2ray3.webgfw.top:2083_6
+      - v2ray3.webgfw.top:2083_7
+      - v2ray3.webgfw.top:2083_8
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 保加利亚-3.45MB/s(Youtube:不良林)
-      - 美国-5.27MB/s(Youtube:不良林)
-      - 中转节点-5.87MB/s(Youtube:不良林)
+      - v2ray3.webgfw.top:2083_1
+      - v2ray3.webgfw.top:2083_2
+      - v2ray3.webgfw.top:2083_3
+      - v2ray3.webgfw.top:2083_4
+      - v2ray3.webgfw.top:2083_5
+      - v2ray3.webgfw.top:2083_6
+      - v2ray3.webgfw.top:2083_7
+      - v2ray3.webgfw.top:2083_8
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 保加利亚-3.45MB/s(Youtube:不良林)
-      - 美国-5.27MB/s(Youtube:不良林)
-      - 中转节点-5.87MB/s(Youtube:不良林)
+      - v2ray3.webgfw.top:2083_1
+      - v2ray3.webgfw.top:2083_2
+      - v2ray3.webgfw.top:2083_3
+      - v2ray3.webgfw.top:2083_4
+      - v2ray3.webgfw.top:2083_5
+      - v2ray3.webgfw.top:2083_6
+      - v2ray3.webgfw.top:2083_7
+      - v2ray3.webgfw.top:2083_8
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 保加利亚-3.45MB/s(Youtube:不良林)
-      - 美国-5.27MB/s(Youtube:不良林)
-      - 中转节点-5.87MB/s(Youtube:不良林)
+      - v2ray3.webgfw.top:2083_1
+      - v2ray3.webgfw.top:2083_2
+      - v2ray3.webgfw.top:2083_3
+      - v2ray3.webgfw.top:2083_4
+      - v2ray3.webgfw.top:2083_5
+      - v2ray3.webgfw.top:2083_6
+      - v2ray3.webgfw.top:2083_7
+      - v2ray3.webgfw.top:2083_8
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -97,9 +132,14 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 保加利亚-3.45MB/s(Youtube:不良林)
-      - 美国-5.27MB/s(Youtube:不良林)
-      - 中转节点-5.87MB/s(Youtube:不良林)
+      - v2ray3.webgfw.top:2083_1
+      - v2ray3.webgfw.top:2083_2
+      - v2ray3.webgfw.top:2083_3
+      - v2ray3.webgfw.top:2083_4
+      - v2ray3.webgfw.top:2083_5
+      - v2ray3.webgfw.top:2083_6
+      - v2ray3.webgfw.top:2083_7
+      - v2ray3.webgfw.top:2083_8
 
 rules:
 # 本地/局域网地址
