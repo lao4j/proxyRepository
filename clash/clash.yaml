@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-05-01 13:44:55
+# 创建时间：2023-05-01 14:54:11
 # 使用模版：V2RaySE 默认模版
-# 节点数量：8
+# 节点数量：7
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,95 +21,88 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"v2ray3.webgfw.top:2083_1","type":"vmess","server":"v2ray3.webgfw.top","port":2083,"cipher":"auto","uuid":"07e90bec-b70d-414c-a00e-c844f1ea3345","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/X9piqfat/"}}
-  - {"name":"v2ray3.webgfw.top:2083_2","type":"vmess","server":"v2ray3.webgfw.top","port":2083,"cipher":"auto","uuid":"1ace515b-a76b-4378-83ac-0ee3833b98be","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/X9piqfat/"}}
-  - {"name":"v2ray3.webgfw.top:2083_3","type":"vmess","server":"v2ray3.webgfw.top","port":2083,"cipher":"auto","uuid":"1f147af0-75fb-4c9d-8dac-54f56d48d42d","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/X9piqfat/"}}
-  - {"name":"v2ray3.webgfw.top:2083_4","type":"vmess","server":"v2ray3.webgfw.top","port":2083,"cipher":"auto","uuid":"4cc72565-0d05-41e6-bc34-72aba9da544f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/X9piqfat/"}}
-  - {"name":"v2ray3.webgfw.top:2083_5","type":"vmess","server":"v2ray3.webgfw.top","port":2083,"cipher":"auto","uuid":"1ace515b-a76b-4378-83ac-0ee3833b98be","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/X9piqfat/"}}
-  - {"name":"v2ray3.webgfw.top:2083_6","type":"vmess","server":"v2ray3.webgfw.top","port":2083,"cipher":"auto","uuid":"1f147af0-75fb-4c9d-8dac-54f56d48d42d","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/X9piqfat/"}}
-  - {"name":"v2ray3.webgfw.top:2083_7","type":"vmess","server":"v2ray3.webgfw.top","port":2083,"cipher":"auto","uuid":"4cc72565-0d05-41e6-bc34-72aba9da544f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/X9piqfat/"}}
-  - {"name":"v2ray3.webgfw.top:2083_8","type":"vmess","server":"v2ray3.webgfw.top","port":2083,"cipher":"auto","uuid":"ea9de06d-2436-42e9-8187-9e6d5fc40407","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/X9piqfat/"}}
+  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"38.63.0.67","port":47002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国->🇳🇱_NL_荷兰","type":"vmess","server":"156.225.67.69","port":43553,"cipher":"auto","uuid":"11117d4c-3b6a-4e76-8bcc-2b41b3e9ca93","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"192.74.234.80","port":51302,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_3","type":"vmess","server":"172.67.145.116","port":8080,"cipher":"auto","uuid":"6d68cfc2-36e5-432d-b6f2-5ff431cd431b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/uitsrt","headers":{"host":"vc3chixui.uitsrt.me"}}}
+  - {"name":"🇺🇸_US_美国_4","type":"vmess","server":"192.74.242.154","port":44667,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国->🇯🇵_JP_日本","type":"vmess","server":"162.159.152.5","port":443,"cipher":"auto","uuid":"4a7cab09-d65d-4d3e-8951-697310c2f48f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/yfjc/jp1?ed=2048","headers":{"host":"jp1.yfjc.sbs"}}}
+  - {"name":"🇷🇺_RU_俄罗斯联邦","type":"ssr","server":"jp2.vfun.icu","port":443,"password":"vyunme","cipher":"aes-256-cfb","obfs":"plain","protocol":"auth_aes128_sha1","obfs-param":"ab93117422.jd.hk","protocol-param":"17422:TTp0SX"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - v2ray3.webgfw.top:2083_1
-      - v2ray3.webgfw.top:2083_2
-      - v2ray3.webgfw.top:2083_3
-      - v2ray3.webgfw.top:2083_4
-      - v2ray3.webgfw.top:2083_5
-      - v2ray3.webgfw.top:2083_6
-      - v2ray3.webgfw.top:2083_7
-      - v2ray3.webgfw.top:2083_8
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇷🇺_RU_俄罗斯联邦
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - v2ray3.webgfw.top:2083_1
-      - v2ray3.webgfw.top:2083_2
-      - v2ray3.webgfw.top:2083_3
-      - v2ray3.webgfw.top:2083_4
-      - v2ray3.webgfw.top:2083_5
-      - v2ray3.webgfw.top:2083_6
-      - v2ray3.webgfw.top:2083_7
-      - v2ray3.webgfw.top:2083_8
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇷🇺_RU_俄罗斯联邦
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - v2ray3.webgfw.top:2083_1
-      - v2ray3.webgfw.top:2083_2
-      - v2ray3.webgfw.top:2083_3
-      - v2ray3.webgfw.top:2083_4
-      - v2ray3.webgfw.top:2083_5
-      - v2ray3.webgfw.top:2083_6
-      - v2ray3.webgfw.top:2083_7
-      - v2ray3.webgfw.top:2083_8
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇷🇺_RU_俄罗斯联邦
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - v2ray3.webgfw.top:2083_1
-      - v2ray3.webgfw.top:2083_2
-      - v2ray3.webgfw.top:2083_3
-      - v2ray3.webgfw.top:2083_4
-      - v2ray3.webgfw.top:2083_5
-      - v2ray3.webgfw.top:2083_6
-      - v2ray3.webgfw.top:2083_7
-      - v2ray3.webgfw.top:2083_8
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇷🇺_RU_俄罗斯联邦
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - v2ray3.webgfw.top:2083_1
-      - v2ray3.webgfw.top:2083_2
-      - v2ray3.webgfw.top:2083_3
-      - v2ray3.webgfw.top:2083_4
-      - v2ray3.webgfw.top:2083_5
-      - v2ray3.webgfw.top:2083_6
-      - v2ray3.webgfw.top:2083_7
-      - v2ray3.webgfw.top:2083_8
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇷🇺_RU_俄罗斯联邦
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - v2ray3.webgfw.top:2083_1
-      - v2ray3.webgfw.top:2083_2
-      - v2ray3.webgfw.top:2083_3
-      - v2ray3.webgfw.top:2083_4
-      - v2ray3.webgfw.top:2083_5
-      - v2ray3.webgfw.top:2083_6
-      - v2ray3.webgfw.top:2083_7
-      - v2ray3.webgfw.top:2083_8
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇷🇺_RU_俄罗斯联邦
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -132,14 +125,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - v2ray3.webgfw.top:2083_1
-      - v2ray3.webgfw.top:2083_2
-      - v2ray3.webgfw.top:2083_3
-      - v2ray3.webgfw.top:2083_4
-      - v2ray3.webgfw.top:2083_5
-      - v2ray3.webgfw.top:2083_6
-      - v2ray3.webgfw.top:2083_7
-      - v2ray3.webgfw.top:2083_8
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇷🇺_RU_俄罗斯联邦
 
 rules:
 # 本地/局域网地址
