@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-05-01 15:45:27
+# 创建时间：2023-05-01 17:12:50
 # 使用模版：V2RaySE 默认模版
-# 节点数量：12
+# 节点数量：30
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,123 +21,249 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"中国 阿里云","type":"vmess","server":"n1681962788.aqdisrv.cn","port":443,"cipher":"auto","uuid":"541a9ac1-96c3-4916-b12e-025d80248de1","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":""}}
-  - {"name":"南非 V2CROSS.COM_1","type":"vmess","server":"156.225.67.251","port":48443,"cipher":"auto","uuid":"3fd637ad-46fe-4f85-a6e8-86b00bca1122","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"南非 V2CROSS.COM_2","type":"vmess","server":"156.225.67.251","port":48443,"cipher":"auto","uuid":"3fd637ad-46fe-4f85-a6e8-86b00bca1122","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 Datability","type":"vmess","server":"140.99.48.38","port":56102,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"南非 V2CROSS.COM_3","type":"vmess","server":"156.225.67.8","port":48895,"cipher":"auto","uuid":"d7735058-1dac-4618-99ff-0aa0441ec2d7","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 爱荷华州得梅因Microsoft数据中心","type":"vmess","server":"xf.starssd.org","port":10004,"cipher":"auto","uuid":"d3b20f5d-2e44-3892-a2c8-43bad5c14466","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 加利福尼亚州洛杉矶MULTACOM数据中心","type":"vmess","server":"cuq.shipv.net","port":10073,"cipher":"auto","uuid":"d3b20f5d-2e44-3892-a2c8-43bad5c14466","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_1","type":"vmess","server":"quiz.vidio.com","port":443,"cipher":"auto","uuid":"92869d41-a98a-40ba-b79d-2eeb7ffe2433","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/worryfree","headers":{"host":"dynamic-sg1b.obfs.xyz"}}}
-  - {"name":"美国 CloudFlare节点_2","type":"vmess","server":"cf-lt.sharecentre.online","port":8080,"cipher":"auto","uuid":"e2952737-6f10-492b-9813-19131deb71b1","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/api/v3/download.getFile","headers":{"host":"ssrsub.v03.ssrsub.com"}}}
-  - {"name":"美国 CloudFlare节点_3","type":"vmess","server":"cdn.yuntujisu.ml","port":2095,"cipher":"auto","uuid":"d59b24b1-b475-4d44-be46-a18563a87711","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"nanous.ytjs114514.ml"}}}
-  - {"name":"美国 CloudFlare节点_4","type":"vmess","server":"cf-lt.sharecentre.online","port":8080,"cipher":"auto","uuid":"e2952737-6f10-492b-9813-19131deb71b1","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/api/v3/download.getFile","headers":{"host":"ssrsub.v01.ssrsub.com"}}}
-  - {"name":"美国 V2CROSS.COM","type":"vmess","server":"vus4.0bad.com","port":443,"cipher":"auto","uuid":"927094d3-d678-4763-8591-e240d0bcae87","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/chat","headers":{"host":"vus4.0bad.com"}}}
+  - {"name":"🇭🇰_HK_香港_1","type":"trojan","server":"cn-hk-package.hyperlinkvpn.xyz","port":50180,"udp":true,"password":"ba5305d8-bf3e-4eee-8ebf-1c7b9a6dbed2","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇭🇰_HK_香港_2","type":"trojan","server":"103.20.223.4","port":50180,"udp":true,"password":"ba5305d8-bf3e-4eee-8ebf-1c7b9a6dbed2","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"45.86.11.174","port":59102,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"192.74.242.154","port":44667,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_3","type":"vmess","server":"137.175.3.231","port":53042,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_4","type":"vmess","server":"192.74.234.80","port":51302,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_5","type":"vmess","server":"171.22.134.2","port":53433,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_6","type":"vmess","server":"142.0.132.44","port":50015,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_7","type":"vmess","server":"38.63.0.67","port":47002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_8","type":"vmess","server":"192.74.237.50","port":30003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_9","type":"vmess","server":"142.4.112.12","port":51091,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_10","type":"vmess","server":"192.74.232.253","port":52402,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇭🇰_HK_香港_3","type":"vmess","server":"hk4.af49c4e4c2ef.sanfen004.me","port":443,"cipher":"auto","uuid":"a316207e-0d3b-4754-ae9f-a4ec13aacba9","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇺🇸_US_美国_11","type":"vmess","server":"38.40.219.180","port":53362,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_12","type":"vmess","server":"192.74.239.1","port":50242,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_CN_中国->🇸🇬_SG_新加坡","type":"ss","server":"p1.bxy-fun2.com","port":24101,"password":"d7bee830-09aa-43b2-8945-3b341b8787db","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇭🇰_HK_香港_4","type":"vmess","server":"hk5.af49c4e4c2ef.sanfen004.me","port":443,"cipher":"auto","uuid":"a316207e-0d3b-4754-ae9f-a4ec13aacba9","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇺🇸_US_美国_13","type":"vmess","server":"137.175.18.88","port":42002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇺🇸_US_美国_14","type":"vmess","server":"45.86.11.217","port":42131,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_15","type":"vmess","server":"140.99.149.43","port":53082,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_16","type":"vmess","server":"192.74.246.54","port":52992,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_17","type":"vmess","server":"142.0.132.41","port":50015,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_18","type":"vmess","server":"198.2.208.186","port":35402,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_19","type":"vmess","server":"142.4.106.247","port":52902,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵_JP_日本_1","type":"ssr","server":"43.206.229.96","port":443,"password":"vyunme","cipher":"aes-256-cfb","obfs":"plain","protocol":"auth_aes128_sha1","obfs-param":"ab93117422.jd.h%%�%�","protocol-param":"17422:TTp0SX"}
+  - {"name":"🇺🇸_US_美国->🇯🇵_JP_日本","type":"vmess","server":"162.159.152.5","port":443,"cipher":"auto","uuid":"4a7cab09-d65d-4d3e-8951-697310c2f48f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/yfjc/jp1?ed=2048","headers":{"host":"jp1.yfjc.sbs"}}}
+  - {"name":"🇺🇸_US_美国_20","type":"vmess","server":"142.4.126.66","port":31002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国","type":"vmess","server":"183.237.20.147","port":40095,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵_JP_日本_2","type":"ss","server":"52.194.213.108","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇺🇸_US_美国_21","type":"vmess","server":"cf-lt.sharecentre.online","port":80,"cipher":"aes-128-gcm","uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"dp3.scproxy.top"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 中国 阿里云
-      - 南非 V2CROSS.COM_1
-      - 南非 V2CROSS.COM_2
-      - 美国 Datability
-      - 南非 V2CROSS.COM_3
-      - 美国 爱荷华州得梅因Microsoft数据中心
-      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
-      - 美国 CloudFlare节点_1
-      - 美国 CloudFlare节点_2
-      - 美国 CloudFlare节点_3
-      - 美国 CloudFlare节点_4
-      - 美国 V2CROSS.COM
+      - 🇭🇰_HK_香港_1
+      - 🇭🇰_HK_香港_2
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_7
+      - 🇺🇸_US_美国_8
+      - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国_10
+      - 🇭🇰_HK_香港_3
+      - 🇺🇸_US_美国_11
+      - 🇺🇸_US_美国_12
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - 🇭🇰_HK_香港_4
+      - 🇺🇸_US_美国_13
+      - 🇺🇸_US_美国_14
+      - 🇺🇸_US_美国_15
+      - 🇺🇸_US_美国_16
+      - 🇺🇸_US_美国_17
+      - 🇺🇸_US_美国_18
+      - 🇺🇸_US_美国_19
+      - 🇯🇵_JP_日本_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇺🇸_US_美国_20
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇯🇵_JP_日本_2
+      - 🇺🇸_US_美国_21
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 中国 阿里云
-      - 南非 V2CROSS.COM_1
-      - 南非 V2CROSS.COM_2
-      - 美国 Datability
-      - 南非 V2CROSS.COM_3
-      - 美国 爱荷华州得梅因Microsoft数据中心
-      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
-      - 美国 CloudFlare节点_1
-      - 美国 CloudFlare节点_2
-      - 美国 CloudFlare节点_3
-      - 美国 CloudFlare节点_4
-      - 美国 V2CROSS.COM
+      - 🇭🇰_HK_香港_1
+      - 🇭🇰_HK_香港_2
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_7
+      - 🇺🇸_US_美国_8
+      - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国_10
+      - 🇭🇰_HK_香港_3
+      - 🇺🇸_US_美国_11
+      - 🇺🇸_US_美国_12
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - 🇭🇰_HK_香港_4
+      - 🇺🇸_US_美国_13
+      - 🇺🇸_US_美国_14
+      - 🇺🇸_US_美国_15
+      - 🇺🇸_US_美国_16
+      - 🇺🇸_US_美国_17
+      - 🇺🇸_US_美国_18
+      - 🇺🇸_US_美国_19
+      - 🇯🇵_JP_日本_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇺🇸_US_美国_20
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇯🇵_JP_日本_2
+      - 🇺🇸_US_美国_21
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国 阿里云
-      - 南非 V2CROSS.COM_1
-      - 南非 V2CROSS.COM_2
-      - 美国 Datability
-      - 南非 V2CROSS.COM_3
-      - 美国 爱荷华州得梅因Microsoft数据中心
-      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
-      - 美国 CloudFlare节点_1
-      - 美国 CloudFlare节点_2
-      - 美国 CloudFlare节点_3
-      - 美国 CloudFlare节点_4
-      - 美国 V2CROSS.COM
+      - 🇭🇰_HK_香港_1
+      - 🇭🇰_HK_香港_2
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_7
+      - 🇺🇸_US_美国_8
+      - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国_10
+      - 🇭🇰_HK_香港_3
+      - 🇺🇸_US_美国_11
+      - 🇺🇸_US_美国_12
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - 🇭🇰_HK_香港_4
+      - 🇺🇸_US_美国_13
+      - 🇺🇸_US_美国_14
+      - 🇺🇸_US_美国_15
+      - 🇺🇸_US_美国_16
+      - 🇺🇸_US_美国_17
+      - 🇺🇸_US_美国_18
+      - 🇺🇸_US_美国_19
+      - 🇯🇵_JP_日本_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇺🇸_US_美国_20
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇯🇵_JP_日本_2
+      - 🇺🇸_US_美国_21
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 中国 阿里云
-      - 南非 V2CROSS.COM_1
-      - 南非 V2CROSS.COM_2
-      - 美国 Datability
-      - 南非 V2CROSS.COM_3
-      - 美国 爱荷华州得梅因Microsoft数据中心
-      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
-      - 美国 CloudFlare节点_1
-      - 美国 CloudFlare节点_2
-      - 美国 CloudFlare节点_3
-      - 美国 CloudFlare节点_4
-      - 美国 V2CROSS.COM
+      - 🇭🇰_HK_香港_1
+      - 🇭🇰_HK_香港_2
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_7
+      - 🇺🇸_US_美国_8
+      - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国_10
+      - 🇭🇰_HK_香港_3
+      - 🇺🇸_US_美国_11
+      - 🇺🇸_US_美国_12
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - 🇭🇰_HK_香港_4
+      - 🇺🇸_US_美国_13
+      - 🇺🇸_US_美国_14
+      - 🇺🇸_US_美国_15
+      - 🇺🇸_US_美国_16
+      - 🇺🇸_US_美国_17
+      - 🇺🇸_US_美国_18
+      - 🇺🇸_US_美国_19
+      - 🇯🇵_JP_日本_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇺🇸_US_美国_20
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇯🇵_JP_日本_2
+      - 🇺🇸_US_美国_21
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 中国 阿里云
-      - 南非 V2CROSS.COM_1
-      - 南非 V2CROSS.COM_2
-      - 美国 Datability
-      - 南非 V2CROSS.COM_3
-      - 美国 爱荷华州得梅因Microsoft数据中心
-      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
-      - 美国 CloudFlare节点_1
-      - 美国 CloudFlare节点_2
-      - 美国 CloudFlare节点_3
-      - 美国 CloudFlare节点_4
-      - 美国 V2CROSS.COM
+      - 🇭🇰_HK_香港_1
+      - 🇭🇰_HK_香港_2
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_7
+      - 🇺🇸_US_美国_8
+      - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国_10
+      - 🇭🇰_HK_香港_3
+      - 🇺🇸_US_美国_11
+      - 🇺🇸_US_美国_12
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - 🇭🇰_HK_香港_4
+      - 🇺🇸_US_美国_13
+      - 🇺🇸_US_美国_14
+      - 🇺🇸_US_美国_15
+      - 🇺🇸_US_美国_16
+      - 🇺🇸_US_美国_17
+      - 🇺🇸_US_美国_18
+      - 🇺🇸_US_美国_19
+      - 🇯🇵_JP_日本_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇺🇸_US_美国_20
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇯🇵_JP_日本_2
+      - 🇺🇸_US_美国_21
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 中国 阿里云
-      - 南非 V2CROSS.COM_1
-      - 南非 V2CROSS.COM_2
-      - 美国 Datability
-      - 南非 V2CROSS.COM_3
-      - 美国 爱荷华州得梅因Microsoft数据中心
-      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
-      - 美国 CloudFlare节点_1
-      - 美国 CloudFlare节点_2
-      - 美国 CloudFlare节点_3
-      - 美国 CloudFlare节点_4
-      - 美国 V2CROSS.COM
+      - 🇭🇰_HK_香港_1
+      - 🇭🇰_HK_香港_2
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_7
+      - 🇺🇸_US_美国_8
+      - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国_10
+      - 🇭🇰_HK_香港_3
+      - 🇺🇸_US_美国_11
+      - 🇺🇸_US_美国_12
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - 🇭🇰_HK_香港_4
+      - 🇺🇸_US_美国_13
+      - 🇺🇸_US_美国_14
+      - 🇺🇸_US_美国_15
+      - 🇺🇸_US_美国_16
+      - 🇺🇸_US_美国_17
+      - 🇺🇸_US_美国_18
+      - 🇺🇸_US_美国_19
+      - 🇯🇵_JP_日本_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇺🇸_US_美国_20
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇯🇵_JP_日本_2
+      - 🇺🇸_US_美国_21
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -160,18 +286,36 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国 阿里云
-      - 南非 V2CROSS.COM_1
-      - 南非 V2CROSS.COM_2
-      - 美国 Datability
-      - 南非 V2CROSS.COM_3
-      - 美国 爱荷华州得梅因Microsoft数据中心
-      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
-      - 美国 CloudFlare节点_1
-      - 美国 CloudFlare节点_2
-      - 美国 CloudFlare节点_3
-      - 美国 CloudFlare节点_4
-      - 美国 V2CROSS.COM
+      - 🇭🇰_HK_香港_1
+      - 🇭🇰_HK_香港_2
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_7
+      - 🇺🇸_US_美国_8
+      - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国_10
+      - 🇭🇰_HK_香港_3
+      - 🇺🇸_US_美国_11
+      - 🇺🇸_US_美国_12
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - 🇭🇰_HK_香港_4
+      - 🇺🇸_US_美国_13
+      - 🇺🇸_US_美国_14
+      - 🇺🇸_US_美国_15
+      - 🇺🇸_US_美国_16
+      - 🇺🇸_US_美国_17
+      - 🇺🇸_US_美国_18
+      - 🇺🇸_US_美国_19
+      - 🇯🇵_JP_日本_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇺🇸_US_美国_20
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇯🇵_JP_日本_2
+      - 🇺🇸_US_美国_21
 
 rules:
 # 本地/局域网地址
