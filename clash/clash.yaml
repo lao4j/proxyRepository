@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-05-01 14:54:11
+# 创建时间：2023-05-01 15:45:27
 # 使用模版：V2RaySE 默认模版
-# 节点数量：7
+# 节点数量：12
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,88 +21,123 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"38.63.0.67","port":47002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国->🇳🇱_NL_荷兰","type":"vmess","server":"156.225.67.69","port":43553,"cipher":"auto","uuid":"11117d4c-3b6a-4e76-8bcc-2b41b3e9ca93","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"192.74.234.80","port":51302,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国_3","type":"vmess","server":"172.67.145.116","port":8080,"cipher":"auto","uuid":"6d68cfc2-36e5-432d-b6f2-5ff431cd431b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/uitsrt","headers":{"host":"vc3chixui.uitsrt.me"}}}
-  - {"name":"🇺🇸_US_美国_4","type":"vmess","server":"192.74.242.154","port":44667,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国->🇯🇵_JP_日本","type":"vmess","server":"162.159.152.5","port":443,"cipher":"auto","uuid":"4a7cab09-d65d-4d3e-8951-697310c2f48f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/yfjc/jp1?ed=2048","headers":{"host":"jp1.yfjc.sbs"}}}
-  - {"name":"🇷🇺_RU_俄罗斯联邦","type":"ssr","server":"jp2.vfun.icu","port":443,"password":"vyunme","cipher":"aes-256-cfb","obfs":"plain","protocol":"auth_aes128_sha1","obfs-param":"ab93117422.jd.hk","protocol-param":"17422:TTp0SX"}
+  - {"name":"中国 阿里云","type":"vmess","server":"n1681962788.aqdisrv.cn","port":443,"cipher":"auto","uuid":"541a9ac1-96c3-4916-b12e-025d80248de1","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":""}}
+  - {"name":"南非 V2CROSS.COM_1","type":"vmess","server":"156.225.67.251","port":48443,"cipher":"auto","uuid":"3fd637ad-46fe-4f85-a6e8-86b00bca1122","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"南非 V2CROSS.COM_2","type":"vmess","server":"156.225.67.251","port":48443,"cipher":"auto","uuid":"3fd637ad-46fe-4f85-a6e8-86b00bca1122","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 Datability","type":"vmess","server":"140.99.48.38","port":56102,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"南非 V2CROSS.COM_3","type":"vmess","server":"156.225.67.8","port":48895,"cipher":"auto","uuid":"d7735058-1dac-4618-99ff-0aa0441ec2d7","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 爱荷华州得梅因Microsoft数据中心","type":"vmess","server":"xf.starssd.org","port":10004,"cipher":"auto","uuid":"d3b20f5d-2e44-3892-a2c8-43bad5c14466","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 加利福尼亚州洛杉矶MULTACOM数据中心","type":"vmess","server":"cuq.shipv.net","port":10073,"cipher":"auto","uuid":"d3b20f5d-2e44-3892-a2c8-43bad5c14466","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点_1","type":"vmess","server":"quiz.vidio.com","port":443,"cipher":"auto","uuid":"92869d41-a98a-40ba-b79d-2eeb7ffe2433","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/worryfree","headers":{"host":"dynamic-sg1b.obfs.xyz"}}}
+  - {"name":"美国 CloudFlare节点_2","type":"vmess","server":"cf-lt.sharecentre.online","port":8080,"cipher":"auto","uuid":"e2952737-6f10-492b-9813-19131deb71b1","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/api/v3/download.getFile","headers":{"host":"ssrsub.v03.ssrsub.com"}}}
+  - {"name":"美国 CloudFlare节点_3","type":"vmess","server":"cdn.yuntujisu.ml","port":2095,"cipher":"auto","uuid":"d59b24b1-b475-4d44-be46-a18563a87711","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"nanous.ytjs114514.ml"}}}
+  - {"name":"美国 CloudFlare节点_4","type":"vmess","server":"cf-lt.sharecentre.online","port":8080,"cipher":"auto","uuid":"e2952737-6f10-492b-9813-19131deb71b1","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/api/v3/download.getFile","headers":{"host":"ssrsub.v01.ssrsub.com"}}}
+  - {"name":"美国 V2CROSS.COM","type":"vmess","server":"vus4.0bad.com","port":443,"cipher":"auto","uuid":"927094d3-d678-4763-8591-e240d0bcae87","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/chat","headers":{"host":"vus4.0bad.com"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇯🇵_JP_日本
-      - 🇷🇺_RU_俄罗斯联邦
+      - 中国 阿里云
+      - 南非 V2CROSS.COM_1
+      - 南非 V2CROSS.COM_2
+      - 美国 Datability
+      - 南非 V2CROSS.COM_3
+      - 美国 爱荷华州得梅因Microsoft数据中心
+      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
+      - 美国 CloudFlare节点_1
+      - 美国 CloudFlare节点_2
+      - 美国 CloudFlare节点_3
+      - 美国 CloudFlare节点_4
+      - 美国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇯🇵_JP_日本
-      - 🇷🇺_RU_俄罗斯联邦
+      - 中国 阿里云
+      - 南非 V2CROSS.COM_1
+      - 南非 V2CROSS.COM_2
+      - 美国 Datability
+      - 南非 V2CROSS.COM_3
+      - 美国 爱荷华州得梅因Microsoft数据中心
+      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
+      - 美国 CloudFlare节点_1
+      - 美国 CloudFlare节点_2
+      - 美国 CloudFlare节点_3
+      - 美国 CloudFlare节点_4
+      - 美国 V2CROSS.COM
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇯🇵_JP_日本
-      - 🇷🇺_RU_俄罗斯联邦
+      - 中国 阿里云
+      - 南非 V2CROSS.COM_1
+      - 南非 V2CROSS.COM_2
+      - 美国 Datability
+      - 南非 V2CROSS.COM_3
+      - 美国 爱荷华州得梅因Microsoft数据中心
+      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
+      - 美国 CloudFlare节点_1
+      - 美国 CloudFlare节点_2
+      - 美国 CloudFlare节点_3
+      - 美国 CloudFlare节点_4
+      - 美国 V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇯🇵_JP_日本
-      - 🇷🇺_RU_俄罗斯联邦
+      - 中国 阿里云
+      - 南非 V2CROSS.COM_1
+      - 南非 V2CROSS.COM_2
+      - 美国 Datability
+      - 南非 V2CROSS.COM_3
+      - 美国 爱荷华州得梅因Microsoft数据中心
+      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
+      - 美国 CloudFlare节点_1
+      - 美国 CloudFlare节点_2
+      - 美国 CloudFlare节点_3
+      - 美国 CloudFlare节点_4
+      - 美国 V2CROSS.COM
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇯🇵_JP_日本
-      - 🇷🇺_RU_俄罗斯联邦
+      - 中国 阿里云
+      - 南非 V2CROSS.COM_1
+      - 南非 V2CROSS.COM_2
+      - 美国 Datability
+      - 南非 V2CROSS.COM_3
+      - 美国 爱荷华州得梅因Microsoft数据中心
+      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
+      - 美国 CloudFlare节点_1
+      - 美国 CloudFlare节点_2
+      - 美国 CloudFlare节点_3
+      - 美国 CloudFlare节点_4
+      - 美国 V2CROSS.COM
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇯🇵_JP_日本
-      - 🇷🇺_RU_俄罗斯联邦
+      - 中国 阿里云
+      - 南非 V2CROSS.COM_1
+      - 南非 V2CROSS.COM_2
+      - 美国 Datability
+      - 南非 V2CROSS.COM_3
+      - 美国 爱荷华州得梅因Microsoft数据中心
+      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
+      - 美国 CloudFlare节点_1
+      - 美国 CloudFlare节点_2
+      - 美国 CloudFlare节点_3
+      - 美国 CloudFlare节点_4
+      - 美国 V2CROSS.COM
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -125,13 +160,18 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇯🇵_JP_日本
-      - 🇷🇺_RU_俄罗斯联邦
+      - 中国 阿里云
+      - 南非 V2CROSS.COM_1
+      - 南非 V2CROSS.COM_2
+      - 美国 Datability
+      - 南非 V2CROSS.COM_3
+      - 美国 爱荷华州得梅因Microsoft数据中心
+      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
+      - 美国 CloudFlare节点_1
+      - 美国 CloudFlare节点_2
+      - 美国 CloudFlare节点_3
+      - 美国 CloudFlare节点_4
+      - 美国 V2CROSS.COM
 
 rules:
 # 本地/局域网地址
