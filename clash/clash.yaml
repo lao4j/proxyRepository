@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-05-05 15:35:17
+# 创建时间：2023-05-05 16:59:54
 # 使用模版：V2RaySE 默认模版
-# 节点数量：3
+# 节点数量：1
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,60 +21,46 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"广移 - awsjp","type":"vmess","server":"8.v2-ray.cyou","port":23608,"cipher":"auto","uuid":"0dd19d20-ec86-3680-b256-87237bafa89e","alterId":2,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广移 - SG","type":"vmess","server":"6q59.cdn.node.a.tddns-ounk.com","port":40261,"cipher":"auto","uuid":"72bea5d3-7591-3ca4-9d61-3c89bd6e45a5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/d1af668b-cff6-464a-9415-a7782ead72d5.j.live003.m3u8"}}
-  - {"name":"JP","type":"vmess","server":"jp11.hneko.online","port":45125,"cipher":"auto","uuid":"a1b5ee2e-1e69-451c-b5dd-7c6c577a4bcc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/cctv13/hd.m3u8","headers":{"host":"jp11.hneko.online"}}}
+  - {"name":"🇺🇸_US_美国","type":"vmess","server":"107.167.4.122","port":46766,"cipher":"auto","uuid":"9838c1b4-c3fd-49b5-8a59-2ff05385f17c","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 广移 - awsjp
-      - 广移 - SG
-      - JP
+      - 🇺🇸_US_美国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 广移 - awsjp
-      - 广移 - SG
-      - JP
+      - 🇺🇸_US_美国
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 广移 - awsjp
-      - 广移 - SG
-      - JP
+      - 🇺🇸_US_美国
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 广移 - awsjp
-      - 广移 - SG
-      - JP
+      - 🇺🇸_US_美国
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 广移 - awsjp
-      - 广移 - SG
-      - JP
+      - 🇺🇸_US_美国
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 广移 - awsjp
-      - 广移 - SG
-      - JP
+      - 🇺🇸_US_美国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -97,9 +83,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 广移 - awsjp
-      - 广移 - SG
-      - JP
+      - 🇺🇸_US_美国
 
 rules:
 # 本地/局域网地址
