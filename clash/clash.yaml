@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-05-05 08:30:08
+# 创建时间：2023-05-05 09:38:00
 # 使用模版：V2RaySE 默认模版
-# 节点数量：1
+# 节点数量：12
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,46 +21,123 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇺🇸_US_美国","type":"vmess","server":"v23.jiedian.stream","port":80,"cipher":"auto","uuid":"faa80861-9c79-4e63-875d-1b906f5383e6","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇭🇰 HW-HK 1","type":"ss","server":"120.198.71.144","port":31520,"password":"4279bac8-ffaa-4e0a-884b-925d76b82e35","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇭🇰 HW-HK 2","type":"ss","server":"43.207.119.219","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇭🇰 HW-HK 3","type":"ss","server":"18.141.204.24","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇯🇵 HW-JP 1","type":"ss","server":"120.198.71.144","port":14487,"password":"4279bac8-ffaa-4e0a-884b-925d76b82e35","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇯🇵 HW-JP 2","type":"ss","server":"13.229.47.143","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇯🇵 HW-JP 3","type":"ss","server":"13.229.105.181","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇨🇳 HW-TW 1","type":"ss","server":"36.228.193.117","port":37783,"password":"4279bac8-ffaa-4e0a-884b-925d76b82e35","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇨🇳 HW-TW 2","type":"ss","server":"43.200.245.62","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇸🇬 HW-SG 1","type":"ss","server":"120.198.71.144","port":36721,"password":"4279bac8-ffaa-4e0a-884b-925d76b82e35","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇸🇬 HW-SG 2","type":"ss","server":"43.200.252.117","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇺🇸 HW-US 1","type":"ss","server":"54.213.121.112","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇺🇸 HW-US 2","type":"ss","server":"35.161.78.22","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸_US_美国
+      - 🇭🇰 HW-HK 1
+      - 🇭🇰 HW-HK 2
+      - 🇭🇰 HW-HK 3
+      - 🇯🇵 HW-JP 1
+      - 🇯🇵 HW-JP 2
+      - 🇯🇵 HW-JP 3
+      - 🇨🇳 HW-TW 1
+      - 🇨🇳 HW-TW 2
+      - 🇸🇬 HW-SG 1
+      - 🇸🇬 HW-SG 2
+      - 🇺🇸 HW-US 1
+      - 🇺🇸 HW-US 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸_US_美国
+      - 🇭🇰 HW-HK 1
+      - 🇭🇰 HW-HK 2
+      - 🇭🇰 HW-HK 3
+      - 🇯🇵 HW-JP 1
+      - 🇯🇵 HW-JP 2
+      - 🇯🇵 HW-JP 3
+      - 🇨🇳 HW-TW 1
+      - 🇨🇳 HW-TW 2
+      - 🇸🇬 HW-SG 1
+      - 🇸🇬 HW-SG 2
+      - 🇺🇸 HW-US 1
+      - 🇺🇸 HW-US 2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国
+      - 🇭🇰 HW-HK 1
+      - 🇭🇰 HW-HK 2
+      - 🇭🇰 HW-HK 3
+      - 🇯🇵 HW-JP 1
+      - 🇯🇵 HW-JP 2
+      - 🇯🇵 HW-JP 3
+      - 🇨🇳 HW-TW 1
+      - 🇨🇳 HW-TW 2
+      - 🇸🇬 HW-SG 1
+      - 🇸🇬 HW-SG 2
+      - 🇺🇸 HW-US 1
+      - 🇺🇸 HW-US 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国
+      - 🇭🇰 HW-HK 1
+      - 🇭🇰 HW-HK 2
+      - 🇭🇰 HW-HK 3
+      - 🇯🇵 HW-JP 1
+      - 🇯🇵 HW-JP 2
+      - 🇯🇵 HW-JP 3
+      - 🇨🇳 HW-TW 1
+      - 🇨🇳 HW-TW 2
+      - 🇸🇬 HW-SG 1
+      - 🇸🇬 HW-SG 2
+      - 🇺🇸 HW-US 1
+      - 🇺🇸 HW-US 2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸_US_美国
+      - 🇭🇰 HW-HK 1
+      - 🇭🇰 HW-HK 2
+      - 🇭🇰 HW-HK 3
+      - 🇯🇵 HW-JP 1
+      - 🇯🇵 HW-JP 2
+      - 🇯🇵 HW-JP 3
+      - 🇨🇳 HW-TW 1
+      - 🇨🇳 HW-TW 2
+      - 🇸🇬 HW-SG 1
+      - 🇸🇬 HW-SG 2
+      - 🇺🇸 HW-US 1
+      - 🇺🇸 HW-US 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国
+      - 🇭🇰 HW-HK 1
+      - 🇭🇰 HW-HK 2
+      - 🇭🇰 HW-HK 3
+      - 🇯🇵 HW-JP 1
+      - 🇯🇵 HW-JP 2
+      - 🇯🇵 HW-JP 3
+      - 🇨🇳 HW-TW 1
+      - 🇨🇳 HW-TW 2
+      - 🇸🇬 HW-SG 1
+      - 🇸🇬 HW-SG 2
+      - 🇺🇸 HW-US 1
+      - 🇺🇸 HW-US 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -83,7 +160,18 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸_US_美国
+      - 🇭🇰 HW-HK 1
+      - 🇭🇰 HW-HK 2
+      - 🇭🇰 HW-HK 3
+      - 🇯🇵 HW-JP 1
+      - 🇯🇵 HW-JP 2
+      - 🇯🇵 HW-JP 3
+      - 🇨🇳 HW-TW 1
+      - 🇨🇳 HW-TW 2
+      - 🇸🇬 HW-SG 1
+      - 🇸🇬 HW-SG 2
+      - 🇺🇸 HW-US 1
+      - 🇺🇸 HW-US 2
 
 rules:
 # 本地/局域网地址
