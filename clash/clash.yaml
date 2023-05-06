@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-05-06 06:38:22
+# 创建时间：2023-05-06 08:38:44
 # 使用模版：V2RaySE 默认模版
 # 节点数量：3
 ####################################
@@ -21,60 +21,60 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"CDN新加坡-3","type":"vmess","server":"cdn-xjp3.cqjsl.xyz","port":443,"cipher":"auto","uuid":"382beef8-8764-4fb8-8d31-9fe4fd8c5b8e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cdn-xjp3.cqjsl.xyz"}}}
-  - {"name":"CDN新加坡-4","type":"vmess","server":"cdn-xjp4.cqjsl.xyz","port":443,"cipher":"auto","uuid":"382beef8-8764-4fb8-8d31-9fe4fd8c5b8e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cdn-xjp4.cqjsl.xyz"}}}
-  - {"name":"CDN新加坡-5","type":"vmess","server":"cdn-xjp5.cqjsl.xyz","port":443,"cipher":"auto","uuid":"382beef8-8764-4fb8-8d31-9fe4fd8c5b8e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cdn-xjp5.cqjsl.xyz"}}}
+  - {"name":"xray.wefuckgfw.tk:2083_1","type":"vless","server":"xray.wefuckgfw.tk","port":2083,"uuid":"502d3d3a-c70c-472d-8d09-36a25991ac57","tls":true,"servername":"","network":"ws","ws-opts":{"path":"/4TLoIulw/"}}
+  - {"name":"xray.wefuckgfw.tk:2083_2","type":"vless","server":"xray.wefuckgfw.tk","port":2083,"uuid":"85b3a84e-a939-4be0-b35c-80e8c9b0f1c8","tls":true,"servername":"","network":"ws","ws-opts":{"path":"/4TLoIulw/"}}
+  - {"name":"xray.wefuckgfw.tk:2083_3","type":"vless","server":"xray.wefuckgfw.tk","port":2083,"uuid":"274bed7a-29ef-462a-8123-19e84612ab3c","tls":true,"servername":"","network":"ws","ws-opts":{"path":"/4TLoIulw/"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - CDN新加坡-3
-      - CDN新加坡-4
-      - CDN新加坡-5
+      - xray.wefuckgfw.tk:2083_1
+      - xray.wefuckgfw.tk:2083_2
+      - xray.wefuckgfw.tk:2083_3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - CDN新加坡-3
-      - CDN新加坡-4
-      - CDN新加坡-5
+      - xray.wefuckgfw.tk:2083_1
+      - xray.wefuckgfw.tk:2083_2
+      - xray.wefuckgfw.tk:2083_3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CDN新加坡-3
-      - CDN新加坡-4
-      - CDN新加坡-5
+      - xray.wefuckgfw.tk:2083_1
+      - xray.wefuckgfw.tk:2083_2
+      - xray.wefuckgfw.tk:2083_3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - CDN新加坡-3
-      - CDN新加坡-4
-      - CDN新加坡-5
+      - xray.wefuckgfw.tk:2083_1
+      - xray.wefuckgfw.tk:2083_2
+      - xray.wefuckgfw.tk:2083_3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - CDN新加坡-3
-      - CDN新加坡-4
-      - CDN新加坡-5
+      - xray.wefuckgfw.tk:2083_1
+      - xray.wefuckgfw.tk:2083_2
+      - xray.wefuckgfw.tk:2083_3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - CDN新加坡-3
-      - CDN新加坡-4
-      - CDN新加坡-5
+      - xray.wefuckgfw.tk:2083_1
+      - xray.wefuckgfw.tk:2083_2
+      - xray.wefuckgfw.tk:2083_3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -97,9 +97,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CDN新加坡-3
-      - CDN新加坡-4
-      - CDN新加坡-5
+      - xray.wefuckgfw.tk:2083_1
+      - xray.wefuckgfw.tk:2083_2
+      - xray.wefuckgfw.tk:2083_3
 
 rules:
 # 本地/局域网地址
