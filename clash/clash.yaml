@@ -1,11 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：12-05-2023 23:32:56
+# 客户端：Clash
+# 创建时间：13-05-2023 02:09:13
 # 使用模版：V2RaySE 默认模版
-# 节点数量：2
+# 节点数量：10
 ####################################
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -22,53 +21,109 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"Aleph - Free VPN - IRANCELL\r","type":"vless","server":"change-me.com","port":443,"uuid":"280e1db4-1962-4efe-ae8d-b292d6a39cef","tls":true,"servername":"rdr1.securedcdnconnectivitysolutions.com","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"Aleph Free VPN-sc3l5z4","type":"vless","server":"91.107.220.34","port":443,"udp":true,"uuid":"c60d9102-41b7-405b-b3b2-0c8f51ad8f2f","tls":true,"servername":"yandex.com","network":"tcp","reality-opts":{"public-key":"O9RSr5gSdok2K_tobQnf_scyKVqnCx6C4Jrl7_rCZEQ","short-id":"c4c3a184"},"client-fingerprint":"firefox"}
+  - {"name":"🐗VMESS-🇦🇪Dubai-1120_@DeamNet","type":"vmess","server":"20.233.12.144","port":443,"cipher":"auto","uuid":"4893ed3e-8a5f-48dc-aa1e-bbc2e67a065b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🐗VMESS-🇦🇪Dubai-1132_@DeamNet","type":"vmess","server":"20.233.12.144","port":443,"cipher":"auto","uuid":"4893ed3e-8a5f-48dc-aa1e-bbc2e67a065b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"20.233.12.144"}}}
+  - {"name":"🐗VMESS-🇦🇺Sydney-1025_@DeamNet","type":"vmess","server":"vau1.0bad.com","port":443,"cipher":"auto","uuid":"927094d3-d678-4763-8591-e240d0bcae87","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/chat","headers":{"host":"vau1.0bad.com"}}}
+  - {"name":"🐗VMESS-🇦🇺Sydney-1058_@DeamNet","type":"vmess","server":"vau1.0bad.com","port":443,"cipher":"auto","uuid":"927094d3-d678-4763-8591-e240d0bcae87","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/chat","headers":{"host":"vau1.0bad.com"}}}
+  - {"name":"🐗VMESS-🇨🇦Montreal-1006_@DeamNet","type":"vmess","server":"jparm.fineyoo.cf","port":443,"cipher":"auto","uuid":"bd5ee249-fe7b-4669-a6d9-b3f5eecb98e6","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/123","headers":{"host":"jparm.fineyoo.cf"}}}
+  - {"name":"🐗VMESS-🇨🇦Montreal-1107_@DeamNet","type":"vmess","server":"jpamd.fineyoo.ml","port":443,"cipher":"auto","uuid":"35e5e2ea-1372-4745-dff8-fb2bd11016c4","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/123"}}
+  - {"name":"🐗VMESS-🇨🇦Montreal-1133_@DeamNet","type":"vmess","server":"you.com","port":80,"cipher":"auto","uuid":"4a75de09-38a5-48b4-9172-7dd5399090f7","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"de1.v2-ray.us"}}}
+  - {"name":"🐗VMESS-🇨🇦Montreal-1161_@DeamNet","type":"vmess","server":"sgamd.ptuu.tk","port":443,"cipher":"auto","uuid":"80f1e736-4b86-4e31-80d1-aac867666095","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/123"}}
+  - {"name":"🐗VMESS-🇨🇦Montreal-1162_@DeamNet","type":"vmess","server":"usamd.ptuu.tk","port":443,"cipher":"auto","uuid":"009a2a72-afe7-4521-fec0-391908a088c6","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/123"}}
+  - {"name":"🐗VMESS-🇨🇦Montreal-1195_@DeamNet","type":"vmess","server":"jparm.fineyoo.ml","port":443,"cipher":"auto","uuid":"10ba478e-9de1-4aa9-c09e-7707025334d3","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/123"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "Aleph - Free VPN - IRANCELL\r"
-      - Aleph Free VPN-sc3l5z4
+      - 🐗VMESS-🇦🇪Dubai-1120_@DeamNet
+      - 🐗VMESS-🇦🇪Dubai-1132_@DeamNet
+      - 🐗VMESS-🇦🇺Sydney-1025_@DeamNet
+      - 🐗VMESS-🇦🇺Sydney-1058_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1006_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1107_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1133_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1161_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1162_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1195_@DeamNet
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "Aleph - Free VPN - IRANCELL\r"
-      - Aleph Free VPN-sc3l5z4
+      - 🐗VMESS-🇦🇪Dubai-1120_@DeamNet
+      - 🐗VMESS-🇦🇪Dubai-1132_@DeamNet
+      - 🐗VMESS-🇦🇺Sydney-1025_@DeamNet
+      - 🐗VMESS-🇦🇺Sydney-1058_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1006_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1107_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1133_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1161_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1162_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1195_@DeamNet
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "Aleph - Free VPN - IRANCELL\r"
-      - Aleph Free VPN-sc3l5z4
+      - 🐗VMESS-🇦🇪Dubai-1120_@DeamNet
+      - 🐗VMESS-🇦🇪Dubai-1132_@DeamNet
+      - 🐗VMESS-🇦🇺Sydney-1025_@DeamNet
+      - 🐗VMESS-🇦🇺Sydney-1058_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1006_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1107_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1133_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1161_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1162_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1195_@DeamNet
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "Aleph - Free VPN - IRANCELL\r"
-      - Aleph Free VPN-sc3l5z4
+      - 🐗VMESS-🇦🇪Dubai-1120_@DeamNet
+      - 🐗VMESS-🇦🇪Dubai-1132_@DeamNet
+      - 🐗VMESS-🇦🇺Sydney-1025_@DeamNet
+      - 🐗VMESS-🇦🇺Sydney-1058_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1006_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1107_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1133_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1161_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1162_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1195_@DeamNet
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - "Aleph - Free VPN - IRANCELL\r"
-      - Aleph Free VPN-sc3l5z4
+      - 🐗VMESS-🇦🇪Dubai-1120_@DeamNet
+      - 🐗VMESS-🇦🇪Dubai-1132_@DeamNet
+      - 🐗VMESS-🇦🇺Sydney-1025_@DeamNet
+      - 🐗VMESS-🇦🇺Sydney-1058_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1006_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1107_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1133_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1161_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1162_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1195_@DeamNet
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "Aleph - Free VPN - IRANCELL\r"
-      - Aleph Free VPN-sc3l5z4
+      - 🐗VMESS-🇦🇪Dubai-1120_@DeamNet
+      - 🐗VMESS-🇦🇪Dubai-1132_@DeamNet
+      - 🐗VMESS-🇦🇺Sydney-1025_@DeamNet
+      - 🐗VMESS-🇦🇺Sydney-1058_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1006_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1107_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1133_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1161_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1162_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1195_@DeamNet
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -91,8 +146,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "Aleph - Free VPN - IRANCELL\r"
-      - Aleph Free VPN-sc3l5z4
+      - 🐗VMESS-🇦🇪Dubai-1120_@DeamNet
+      - 🐗VMESS-🇦🇪Dubai-1132_@DeamNet
+      - 🐗VMESS-🇦🇺Sydney-1025_@DeamNet
+      - 🐗VMESS-🇦🇺Sydney-1058_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1006_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1107_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1133_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1161_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1162_@DeamNet
+      - 🐗VMESS-🇨🇦Montreal-1195_@DeamNet
 
 rules:
 # 本地/局域网地址
