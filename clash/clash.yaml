@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-05-14 11:29:19
+# 创建时间：2023-05-14 12:31:04
 # 使用模版：V2RaySE 默认模版
-# 节点数量：24
+# 节点数量：51
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,207 +21,396 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"更多节点关注@ShareCentrePro","type":"vmess","server":"127.0.0.1","port":443,"cipher":"auto","uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"「SCP」NL-CF-HTTP","type":"vmess","server":"172.64.83.15","port":80,"cipher":"auto","uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"nl.sharecentrepro.com"}}}
-  - {"name":"「SCP」SE-CF-HTTP","type":"vmess","server":"172.67.78.3","port":80,"cipher":"auto","uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"sw.sharecentrepro.com"}}}
-  - {"name":"「SCP」SG-OVH-HTTP","type":"vmess","server":"172.67.166.44","port":80,"cipher":"auto","uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"sg.ilovescp.com"}}}
-  - {"name":"「SCP」SG-DO-HTTP","type":"vmess","server":"172.67.14.119","port":80,"cipher":"auto","uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"do.sharecentrepro.com"}}}
-  - {"name":"「SCP」UK-CF-HTTP","type":"vmess","server":"162.159.135.43","port":80,"cipher":"auto","uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"uk1.scproxy.top"}}}
-  - {"name":"「SCP」HK-CF-HTTP","type":"vmess","server":"ping.pe","port":80,"cipher":"auto","uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"hk-hytron.ilovescp.com"}}}
-  - {"name":"「SCP」CA-CF-HTTP","type":"vmess","server":"172.64.83.15","port":80,"cipher":"auto","uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"ca.ilovescp.com"}}}
-  - {"name":"「SCP」JP-HTTP|赞助商 @KinhChannel","type":"vmess","server":"cf-lt.sharecentre.online","port":80,"cipher":"auto","uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"jp.scproxy.top"}}}
-  - {"name":"「SCP」US-BuyVM1-HTTP","type":"vmess","server":"172.67.78.3","port":80,"cipher":"auto","uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"ny1.sharecentrepro.org"}}}
-  - {"name":"「SCP」US-BuyVM2-HTTP","type":"vmess","server":"172.67.14.119","port":80,"cipher":"auto","uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"lv1.sharecentrepro.org"}}}
-  - {"name":"「SCP」US-BuyVM3-HTTP","type":"vmess","server":"172.67.166.44","port":80,"cipher":"auto","uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"lv2.sharecentrepro.org"}}}
-  - {"name":"「SCP」US-BuyVM4-HTTP","type":"vmess","server":"162.159.135.43","port":80,"cipher":"auto","uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"lv3.sharecentrepro.org"}}}
-  - {"name":"「SCP」US-DP1-HTTP","type":"vmess","server":"172.67.27.164","port":80,"cipher":"auto","uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"dp1.scproxy.top"}}}
-  - {"name":"「SCP」US-DP2-HTTP","type":"vmess","server":"172.67.59.138","port":80,"cipher":"auto","uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"dp2.scproxy.top"}}}
-  - {"name":"「SCP」US-DP3-HTTP","type":"vmess","server":"172.67.192.74","port":80,"cipher":"auto","uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"dp3.scproxy.top"}}}
-  - {"name":"「SCP」US-DP4-HTTP","type":"vmess","server":"172.67.78.3","port":80,"cipher":"auto","uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"dp4.scproxy.top"}}}
-  - {"name":"DP1","type":"vmess","server":"172.64.198.195","port":80,"cipher":"auto","uuid":"09c1d32d-4458-4ebf-b36d-4dd732bae3aa","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/yxzbp","headers":{"host":"dp1.yxjnode.com"}}}
-  - {"name":"DP2","type":"vmess","server":"172.65.253.191","port":80,"cipher":"auto","uuid":"09c1d32d-4458-4ebf-b36d-4dd732bae3aa","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/yxzbp","headers":{"host":"dp2.yxjnode.com"}}}
-  - {"name":"DP3","type":"vmess","server":"172.64.203.42","port":80,"cipher":"auto","uuid":"09c1d32d-4458-4ebf-b36d-4dd732bae3aa","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/yxzbp","headers":{"host":"dp3.yxjnode.com"}}}
-  - {"name":"DP4","type":"vmess","server":"141.101.113.254","port":80,"cipher":"auto","uuid":"09c1d32d-4458-4ebf-b36d-4dd732bae3aa","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/yxzbp","headers":{"host":"dp4.yxjnode.com"}}}
-  - {"name":"BuyVM1","type":"vmess","server":"162.159.250.191","port":80,"cipher":"auto","uuid":"09c1d32d-4458-4ebf-b36d-4dd732bae3aa","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/yxzbp","headers":{"host":"buyvm1.yxjnode.com"}}}
-  - {"name":"BuyVM2","type":"vmess","server":"162.159.250.191","port":80,"cipher":"auto","uuid":"09c1d32d-4458-4ebf-b36d-4dd732bae3aa","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/yxzbp","headers":{"host":"buyvm2.yxjnode.com"}}}
-  - {"name":"SW","type":"vmess","server":"cf.yxjnode.com","port":80,"cipher":"auto","uuid":"09c1d32d-4458-4ebf-b36d-4dd732bae3aa","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/yxzbp","headers":{"host":"op.yxjnode.com"}}}
+  - {"name":"🇭🇰 香港 01\r","type":"ss","server":"120.241.255.171","port":10001,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇭🇰 香港 02\r","type":"ss","server":"120.241.255.171","port":10002,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇭🇰 香港 03\r","type":"ss","server":"120.241.255.171","port":10003,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇭🇰 香港 04\r","type":"ss","server":"120.241.255.171","port":10004,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇭🇰 香港 05\r","type":"ss","server":"120.241.255.171","port":10005,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇭🇰 香港 06\r","type":"ss","server":"120.241.255.171","port":10006,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇭🇰 香港 07\r","type":"ss","server":"120.241.255.171","port":10007,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇭🇰 香港 08\r","type":"ss","server":"120.241.255.171","port":10008,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇹🇼 台湾 01\r","type":"ss","server":"120.241.255.171","port":10011,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇹🇼 台湾 02\r","type":"ss","server":"120.241.255.171","port":10012,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇸🇬 狮城 01\r","type":"ss","server":"szcu.xsus.link","port":10021,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇸🇬 狮城 02\r","type":"ss","server":"szcu.xsus.link","port":10022,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇸🇬 狮城 03\r","type":"ss","server":"szcu.xsus.link","port":10023,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇸🇬 狮城 04\r","type":"ss","server":"szcu.xsus.link","port":10024,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇸🇬 狮城 05\r","type":"ss","server":"szcu.xsus.link","port":10025,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇸🇬 狮城 06\r","type":"ss","server":"szcu.xsus.link","port":10026,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇸🇬 狮城 07\r","type":"ss","server":"szcu.xsus.link","port":10027,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇯🇵 日本 01\r","type":"ss","server":"jxcu.xsus.link","port":10031,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇯🇵 日本 02\r","type":"ss","server":"jxcu.xsus.link","port":10032,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇯🇵 日本 03\r","type":"ss","server":"jxcu.xsus.link","port":10033,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇯🇵 日本 04\r","type":"ss","server":"jxcu.xsus.link","port":10034,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇯🇵 日本 05\r","type":"ss","server":"jxcu.xsus.link","port":10035,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇯🇵 日本 06\r","type":"ss","server":"jxcu.xsus.link","port":10036,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇰🇷 韩国 01\r","type":"ss","server":"jxcu.xsus.link","port":10041,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇰🇷 韩国 02\r","type":"ss","server":"jxcu.xsus.link","port":10042,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇰🇷 韩国 03\r","type":"ss","server":"jxcu.xsus.link","port":10043,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸 美国 01\r","type":"ss","server":"jxcu.xsus.link","port":10051,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸 美国 02\r","type":"ss","server":"jxcu.xsus.link","port":10052,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸 美国 03\r","type":"ss","server":"jxcu.xsus.link","port":10053,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸 美国 04\r","type":"ss","server":"jxcu.xsus.link","port":10054,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸 美国 05\r","type":"ss","server":"jxcu.xsus.link","port":10055,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇬🇧 英国 01\r","type":"ss","server":"bjct.xsus.link","port":10069,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇬🇧 英国 02\r","type":"ss","server":"bjct.xsus.link","port":10073,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇩🇪 德国 01\r","type":"ss","server":"bjct.xsus.link","port":10070,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇩🇪 德国 02\r","type":"ss","server":"bjct.xsus.link","port":10072,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇳🇱 荷兰 01\r","type":"ss","server":"bjct.xsus.link","port":10071,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇵🇱 波兰 01\r","type":"ss","server":"bjct.xsus.link","port":10075,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇮🇳 印度 01\r","type":"ss","server":"szcu.xsus.link","port":10061,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇹🇭 泰国 01\r","type":"ss","server":"szcu.xsus.link","port":10063,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇦🇺 澳洲 01\r","type":"ss","server":"szcu.xsus.link","port":10065,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇰🇭 柬埔寨 01\r","type":"ss","server":"szcu.xsus.link","port":10066,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇨🇦 加拿大 01\r","type":"ss","server":"jxcu.xsus.link","port":10070,"password":"55d95572-73c1-4b9a-b565-71080ffb968b","cipher":"aes-256-gcm"}
+  - {"name":"🇭🇰 香港 01","type":"vmess","server":"hz-cm.32jr.com","port":32501,"cipher":"auto","uuid":"0390543e-479e-4247-bcfa-08877d6d3c9f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇭🇰 香港 02","type":"vmess","server":"0e5746b3a29552be95fa461f04d9e393f2c08b50.jscm1.lele233.top","port":46051,"cipher":"auto","uuid":"0390543e-479e-4247-bcfa-08877d6d3c9f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵 日本 01","type":"vmess","server":"zj-cm.32jr.com","port":32502,"cipher":"auto","uuid":"0390543e-479e-4247-bcfa-08877d6d3c9f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵 日本 02","type":"vmess","server":"sh-cm.32jr.com","port":32503,"cipher":"auto","uuid":"0390543e-479e-4247-bcfa-08877d6d3c9f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵 日本 03","type":"vmess","server":"0e5746b3a29552be95fa461f04d9e393f2c08b50.jscm1.lele233.top","port":46052,"cipher":"auto","uuid":"0390543e-479e-4247-bcfa-08877d6d3c9f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 新加坡 01","type":"vmess","server":"zj-cm.32jr.com","port":32504,"cipher":"auto","uuid":"0390543e-479e-4247-bcfa-08877d6d3c9f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 新加坡 02","type":"vmess","server":"gd-cm.32jr.com","port":32505,"cipher":"auto","uuid":"0390543e-479e-4247-bcfa-08877d6d3c9f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 美国 01","type":"vmess","server":"0e5746b3a29552be95fa461f04d9e393f2c08b50.jscm1.lele233.top","port":46056,"cipher":"auto","uuid":"0390543e-479e-4247-bcfa-08877d6d3c9f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 美国 02","type":"vmess","server":"sh-cm.32jr.com","port":32507,"cipher":"auto","uuid":"0390543e-479e-4247-bcfa-08877d6d3c9f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 更多节点关注@ShareCentrePro
-      - 「SCP」NL-CF-HTTP
-      - 「SCP」SE-CF-HTTP
-      - 「SCP」SG-OVH-HTTP
-      - 「SCP」SG-DO-HTTP
-      - 「SCP」UK-CF-HTTP
-      - 「SCP」HK-CF-HTTP
-      - 「SCP」CA-CF-HTTP
-      - 「SCP」JP-HTTP|赞助商 @KinhChannel
-      - 「SCP」US-BuyVM1-HTTP
-      - 「SCP」US-BuyVM2-HTTP
-      - 「SCP」US-BuyVM3-HTTP
-      - 「SCP」US-BuyVM4-HTTP
-      - 「SCP」US-DP1-HTTP
-      - 「SCP」US-DP2-HTTP
-      - 「SCP」US-DP3-HTTP
-      - 「SCP」US-DP4-HTTP
-      - DP1
-      - DP2
-      - DP3
-      - DP4
-      - BuyVM1
-      - BuyVM2
-      - SW
+      - "🇭🇰 香港 01\r"
+      - "🇭🇰 香港 02\r"
+      - "🇭🇰 香港 03\r"
+      - "🇭🇰 香港 04\r"
+      - "🇭🇰 香港 05\r"
+      - "🇭🇰 香港 06\r"
+      - "🇭🇰 香港 07\r"
+      - "🇭🇰 香港 08\r"
+      - "🇹🇼 台湾 01\r"
+      - "🇹🇼 台湾 02\r"
+      - "🇸🇬 狮城 01\r"
+      - "🇸🇬 狮城 02\r"
+      - "🇸🇬 狮城 03\r"
+      - "🇸🇬 狮城 04\r"
+      - "🇸🇬 狮城 05\r"
+      - "🇸🇬 狮城 06\r"
+      - "🇸🇬 狮城 07\r"
+      - "🇯🇵 日本 01\r"
+      - "🇯🇵 日本 02\r"
+      - "🇯🇵 日本 03\r"
+      - "🇯🇵 日本 04\r"
+      - "🇯🇵 日本 05\r"
+      - "🇯🇵 日本 06\r"
+      - "🇰🇷 韩国 01\r"
+      - "🇰🇷 韩国 02\r"
+      - "🇰🇷 韩国 03\r"
+      - "🇺🇸 美国 01\r"
+      - "🇺🇸 美国 02\r"
+      - "🇺🇸 美国 03\r"
+      - "🇺🇸 美国 04\r"
+      - "🇺🇸 美国 05\r"
+      - "🇬🇧 英国 01\r"
+      - "🇬🇧 英国 02\r"
+      - "🇩🇪 德国 01\r"
+      - "🇩🇪 德国 02\r"
+      - "🇳🇱 荷兰 01\r"
+      - "🇵🇱 波兰 01\r"
+      - "🇮🇳 印度 01\r"
+      - "🇹🇭 泰国 01\r"
+      - "🇦🇺 澳洲 01\r"
+      - "🇰🇭 柬埔寨 01\r"
+      - "🇨🇦 加拿大 01\r"
+      - 🇭🇰 香港 01
+      - 🇭🇰 香港 02
+      - 🇯🇵 日本 01
+      - 🇯🇵 日本 02
+      - 🇯🇵 日本 03
+      - 🇸🇬 新加坡 01
+      - 🇸🇬 新加坡 02
+      - 🇺🇸 美国 01
+      - 🇺🇸 美国 02
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 更多节点关注@ShareCentrePro
-      - 「SCP」NL-CF-HTTP
-      - 「SCP」SE-CF-HTTP
-      - 「SCP」SG-OVH-HTTP
-      - 「SCP」SG-DO-HTTP
-      - 「SCP」UK-CF-HTTP
-      - 「SCP」HK-CF-HTTP
-      - 「SCP」CA-CF-HTTP
-      - 「SCP」JP-HTTP|赞助商 @KinhChannel
-      - 「SCP」US-BuyVM1-HTTP
-      - 「SCP」US-BuyVM2-HTTP
-      - 「SCP」US-BuyVM3-HTTP
-      - 「SCP」US-BuyVM4-HTTP
-      - 「SCP」US-DP1-HTTP
-      - 「SCP」US-DP2-HTTP
-      - 「SCP」US-DP3-HTTP
-      - 「SCP」US-DP4-HTTP
-      - DP1
-      - DP2
-      - DP3
-      - DP4
-      - BuyVM1
-      - BuyVM2
-      - SW
+      - "🇭🇰 香港 01\r"
+      - "🇭🇰 香港 02\r"
+      - "🇭🇰 香港 03\r"
+      - "🇭🇰 香港 04\r"
+      - "🇭🇰 香港 05\r"
+      - "🇭🇰 香港 06\r"
+      - "🇭🇰 香港 07\r"
+      - "🇭🇰 香港 08\r"
+      - "🇹🇼 台湾 01\r"
+      - "🇹🇼 台湾 02\r"
+      - "🇸🇬 狮城 01\r"
+      - "🇸🇬 狮城 02\r"
+      - "🇸🇬 狮城 03\r"
+      - "🇸🇬 狮城 04\r"
+      - "🇸🇬 狮城 05\r"
+      - "🇸🇬 狮城 06\r"
+      - "🇸🇬 狮城 07\r"
+      - "🇯🇵 日本 01\r"
+      - "🇯🇵 日本 02\r"
+      - "🇯🇵 日本 03\r"
+      - "🇯🇵 日本 04\r"
+      - "🇯🇵 日本 05\r"
+      - "🇯🇵 日本 06\r"
+      - "🇰🇷 韩国 01\r"
+      - "🇰🇷 韩国 02\r"
+      - "🇰🇷 韩国 03\r"
+      - "🇺🇸 美国 01\r"
+      - "🇺🇸 美国 02\r"
+      - "🇺🇸 美国 03\r"
+      - "🇺🇸 美国 04\r"
+      - "🇺🇸 美国 05\r"
+      - "🇬🇧 英国 01\r"
+      - "🇬🇧 英国 02\r"
+      - "🇩🇪 德国 01\r"
+      - "🇩🇪 德国 02\r"
+      - "🇳🇱 荷兰 01\r"
+      - "🇵🇱 波兰 01\r"
+      - "🇮🇳 印度 01\r"
+      - "🇹🇭 泰国 01\r"
+      - "🇦🇺 澳洲 01\r"
+      - "🇰🇭 柬埔寨 01\r"
+      - "🇨🇦 加拿大 01\r"
+      - 🇭🇰 香港 01
+      - 🇭🇰 香港 02
+      - 🇯🇵 日本 01
+      - 🇯🇵 日本 02
+      - 🇯🇵 日本 03
+      - 🇸🇬 新加坡 01
+      - 🇸🇬 新加坡 02
+      - 🇺🇸 美国 01
+      - 🇺🇸 美国 02
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 更多节点关注@ShareCentrePro
-      - 「SCP」NL-CF-HTTP
-      - 「SCP」SE-CF-HTTP
-      - 「SCP」SG-OVH-HTTP
-      - 「SCP」SG-DO-HTTP
-      - 「SCP」UK-CF-HTTP
-      - 「SCP」HK-CF-HTTP
-      - 「SCP」CA-CF-HTTP
-      - 「SCP」JP-HTTP|赞助商 @KinhChannel
-      - 「SCP」US-BuyVM1-HTTP
-      - 「SCP」US-BuyVM2-HTTP
-      - 「SCP」US-BuyVM3-HTTP
-      - 「SCP」US-BuyVM4-HTTP
-      - 「SCP」US-DP1-HTTP
-      - 「SCP」US-DP2-HTTP
-      - 「SCP」US-DP3-HTTP
-      - 「SCP」US-DP4-HTTP
-      - DP1
-      - DP2
-      - DP3
-      - DP4
-      - BuyVM1
-      - BuyVM2
-      - SW
+      - "🇭🇰 香港 01\r"
+      - "🇭🇰 香港 02\r"
+      - "🇭🇰 香港 03\r"
+      - "🇭🇰 香港 04\r"
+      - "🇭🇰 香港 05\r"
+      - "🇭🇰 香港 06\r"
+      - "🇭🇰 香港 07\r"
+      - "🇭🇰 香港 08\r"
+      - "🇹🇼 台湾 01\r"
+      - "🇹🇼 台湾 02\r"
+      - "🇸🇬 狮城 01\r"
+      - "🇸🇬 狮城 02\r"
+      - "🇸🇬 狮城 03\r"
+      - "🇸🇬 狮城 04\r"
+      - "🇸🇬 狮城 05\r"
+      - "🇸🇬 狮城 06\r"
+      - "🇸🇬 狮城 07\r"
+      - "🇯🇵 日本 01\r"
+      - "🇯🇵 日本 02\r"
+      - "🇯🇵 日本 03\r"
+      - "🇯🇵 日本 04\r"
+      - "🇯🇵 日本 05\r"
+      - "🇯🇵 日本 06\r"
+      - "🇰🇷 韩国 01\r"
+      - "🇰🇷 韩国 02\r"
+      - "🇰🇷 韩国 03\r"
+      - "🇺🇸 美国 01\r"
+      - "🇺🇸 美国 02\r"
+      - "🇺🇸 美国 03\r"
+      - "🇺🇸 美国 04\r"
+      - "🇺🇸 美国 05\r"
+      - "🇬🇧 英国 01\r"
+      - "🇬🇧 英国 02\r"
+      - "🇩🇪 德国 01\r"
+      - "🇩🇪 德国 02\r"
+      - "🇳🇱 荷兰 01\r"
+      - "🇵🇱 波兰 01\r"
+      - "🇮🇳 印度 01\r"
+      - "🇹🇭 泰国 01\r"
+      - "🇦🇺 澳洲 01\r"
+      - "🇰🇭 柬埔寨 01\r"
+      - "🇨🇦 加拿大 01\r"
+      - 🇭🇰 香港 01
+      - 🇭🇰 香港 02
+      - 🇯🇵 日本 01
+      - 🇯🇵 日本 02
+      - 🇯🇵 日本 03
+      - 🇸🇬 新加坡 01
+      - 🇸🇬 新加坡 02
+      - 🇺🇸 美国 01
+      - 🇺🇸 美国 02
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 更多节点关注@ShareCentrePro
-      - 「SCP」NL-CF-HTTP
-      - 「SCP」SE-CF-HTTP
-      - 「SCP」SG-OVH-HTTP
-      - 「SCP」SG-DO-HTTP
-      - 「SCP」UK-CF-HTTP
-      - 「SCP」HK-CF-HTTP
-      - 「SCP」CA-CF-HTTP
-      - 「SCP」JP-HTTP|赞助商 @KinhChannel
-      - 「SCP」US-BuyVM1-HTTP
-      - 「SCP」US-BuyVM2-HTTP
-      - 「SCP」US-BuyVM3-HTTP
-      - 「SCP」US-BuyVM4-HTTP
-      - 「SCP」US-DP1-HTTP
-      - 「SCP」US-DP2-HTTP
-      - 「SCP」US-DP3-HTTP
-      - 「SCP」US-DP4-HTTP
-      - DP1
-      - DP2
-      - DP3
-      - DP4
-      - BuyVM1
-      - BuyVM2
-      - SW
+      - "🇭🇰 香港 01\r"
+      - "🇭🇰 香港 02\r"
+      - "🇭🇰 香港 03\r"
+      - "🇭🇰 香港 04\r"
+      - "🇭🇰 香港 05\r"
+      - "🇭🇰 香港 06\r"
+      - "🇭🇰 香港 07\r"
+      - "🇭🇰 香港 08\r"
+      - "🇹🇼 台湾 01\r"
+      - "🇹🇼 台湾 02\r"
+      - "🇸🇬 狮城 01\r"
+      - "🇸🇬 狮城 02\r"
+      - "🇸🇬 狮城 03\r"
+      - "🇸🇬 狮城 04\r"
+      - "🇸🇬 狮城 05\r"
+      - "🇸🇬 狮城 06\r"
+      - "🇸🇬 狮城 07\r"
+      - "🇯🇵 日本 01\r"
+      - "🇯🇵 日本 02\r"
+      - "🇯🇵 日本 03\r"
+      - "🇯🇵 日本 04\r"
+      - "🇯🇵 日本 05\r"
+      - "🇯🇵 日本 06\r"
+      - "🇰🇷 韩国 01\r"
+      - "🇰🇷 韩国 02\r"
+      - "🇰🇷 韩国 03\r"
+      - "🇺🇸 美国 01\r"
+      - "🇺🇸 美国 02\r"
+      - "🇺🇸 美国 03\r"
+      - "🇺🇸 美国 04\r"
+      - "🇺🇸 美国 05\r"
+      - "🇬🇧 英国 01\r"
+      - "🇬🇧 英国 02\r"
+      - "🇩🇪 德国 01\r"
+      - "🇩🇪 德国 02\r"
+      - "🇳🇱 荷兰 01\r"
+      - "🇵🇱 波兰 01\r"
+      - "🇮🇳 印度 01\r"
+      - "🇹🇭 泰国 01\r"
+      - "🇦🇺 澳洲 01\r"
+      - "🇰🇭 柬埔寨 01\r"
+      - "🇨🇦 加拿大 01\r"
+      - 🇭🇰 香港 01
+      - 🇭🇰 香港 02
+      - 🇯🇵 日本 01
+      - 🇯🇵 日本 02
+      - 🇯🇵 日本 03
+      - 🇸🇬 新加坡 01
+      - 🇸🇬 新加坡 02
+      - 🇺🇸 美国 01
+      - 🇺🇸 美国 02
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 更多节点关注@ShareCentrePro
-      - 「SCP」NL-CF-HTTP
-      - 「SCP」SE-CF-HTTP
-      - 「SCP」SG-OVH-HTTP
-      - 「SCP」SG-DO-HTTP
-      - 「SCP」UK-CF-HTTP
-      - 「SCP」HK-CF-HTTP
-      - 「SCP」CA-CF-HTTP
-      - 「SCP」JP-HTTP|赞助商 @KinhChannel
-      - 「SCP」US-BuyVM1-HTTP
-      - 「SCP」US-BuyVM2-HTTP
-      - 「SCP」US-BuyVM3-HTTP
-      - 「SCP」US-BuyVM4-HTTP
-      - 「SCP」US-DP1-HTTP
-      - 「SCP」US-DP2-HTTP
-      - 「SCP」US-DP3-HTTP
-      - 「SCP」US-DP4-HTTP
-      - DP1
-      - DP2
-      - DP3
-      - DP4
-      - BuyVM1
-      - BuyVM2
-      - SW
+      - "🇭🇰 香港 01\r"
+      - "🇭🇰 香港 02\r"
+      - "🇭🇰 香港 03\r"
+      - "🇭🇰 香港 04\r"
+      - "🇭🇰 香港 05\r"
+      - "🇭🇰 香港 06\r"
+      - "🇭🇰 香港 07\r"
+      - "🇭🇰 香港 08\r"
+      - "🇹🇼 台湾 01\r"
+      - "🇹🇼 台湾 02\r"
+      - "🇸🇬 狮城 01\r"
+      - "🇸🇬 狮城 02\r"
+      - "🇸🇬 狮城 03\r"
+      - "🇸🇬 狮城 04\r"
+      - "🇸🇬 狮城 05\r"
+      - "🇸🇬 狮城 06\r"
+      - "🇸🇬 狮城 07\r"
+      - "🇯🇵 日本 01\r"
+      - "🇯🇵 日本 02\r"
+      - "🇯🇵 日本 03\r"
+      - "🇯🇵 日本 04\r"
+      - "🇯🇵 日本 05\r"
+      - "🇯🇵 日本 06\r"
+      - "🇰🇷 韩国 01\r"
+      - "🇰🇷 韩国 02\r"
+      - "🇰🇷 韩国 03\r"
+      - "🇺🇸 美国 01\r"
+      - "🇺🇸 美国 02\r"
+      - "🇺🇸 美国 03\r"
+      - "🇺🇸 美国 04\r"
+      - "🇺🇸 美国 05\r"
+      - "🇬🇧 英国 01\r"
+      - "🇬🇧 英国 02\r"
+      - "🇩🇪 德国 01\r"
+      - "🇩🇪 德国 02\r"
+      - "🇳🇱 荷兰 01\r"
+      - "🇵🇱 波兰 01\r"
+      - "🇮🇳 印度 01\r"
+      - "🇹🇭 泰国 01\r"
+      - "🇦🇺 澳洲 01\r"
+      - "🇰🇭 柬埔寨 01\r"
+      - "🇨🇦 加拿大 01\r"
+      - 🇭🇰 香港 01
+      - 🇭🇰 香港 02
+      - 🇯🇵 日本 01
+      - 🇯🇵 日本 02
+      - 🇯🇵 日本 03
+      - 🇸🇬 新加坡 01
+      - 🇸🇬 新加坡 02
+      - 🇺🇸 美国 01
+      - 🇺🇸 美国 02
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 更多节点关注@ShareCentrePro
-      - 「SCP」NL-CF-HTTP
-      - 「SCP」SE-CF-HTTP
-      - 「SCP」SG-OVH-HTTP
-      - 「SCP」SG-DO-HTTP
-      - 「SCP」UK-CF-HTTP
-      - 「SCP」HK-CF-HTTP
-      - 「SCP」CA-CF-HTTP
-      - 「SCP」JP-HTTP|赞助商 @KinhChannel
-      - 「SCP」US-BuyVM1-HTTP
-      - 「SCP」US-BuyVM2-HTTP
-      - 「SCP」US-BuyVM3-HTTP
-      - 「SCP」US-BuyVM4-HTTP
-      - 「SCP」US-DP1-HTTP
-      - 「SCP」US-DP2-HTTP
-      - 「SCP」US-DP3-HTTP
-      - 「SCP」US-DP4-HTTP
-      - DP1
-      - DP2
-      - DP3
-      - DP4
-      - BuyVM1
-      - BuyVM2
-      - SW
+      - "🇭🇰 香港 01\r"
+      - "🇭🇰 香港 02\r"
+      - "🇭🇰 香港 03\r"
+      - "🇭🇰 香港 04\r"
+      - "🇭🇰 香港 05\r"
+      - "🇭🇰 香港 06\r"
+      - "🇭🇰 香港 07\r"
+      - "🇭🇰 香港 08\r"
+      - "🇹🇼 台湾 01\r"
+      - "🇹🇼 台湾 02\r"
+      - "🇸🇬 狮城 01\r"
+      - "🇸🇬 狮城 02\r"
+      - "🇸🇬 狮城 03\r"
+      - "🇸🇬 狮城 04\r"
+      - "🇸🇬 狮城 05\r"
+      - "🇸🇬 狮城 06\r"
+      - "🇸🇬 狮城 07\r"
+      - "🇯🇵 日本 01\r"
+      - "🇯🇵 日本 02\r"
+      - "🇯🇵 日本 03\r"
+      - "🇯🇵 日本 04\r"
+      - "🇯🇵 日本 05\r"
+      - "🇯🇵 日本 06\r"
+      - "🇰🇷 韩国 01\r"
+      - "🇰🇷 韩国 02\r"
+      - "🇰🇷 韩国 03\r"
+      - "🇺🇸 美国 01\r"
+      - "🇺🇸 美国 02\r"
+      - "🇺🇸 美国 03\r"
+      - "🇺🇸 美国 04\r"
+      - "🇺🇸 美国 05\r"
+      - "🇬🇧 英国 01\r"
+      - "🇬🇧 英国 02\r"
+      - "🇩🇪 德国 01\r"
+      - "🇩🇪 德国 02\r"
+      - "🇳🇱 荷兰 01\r"
+      - "🇵🇱 波兰 01\r"
+      - "🇮🇳 印度 01\r"
+      - "🇹🇭 泰国 01\r"
+      - "🇦🇺 澳洲 01\r"
+      - "🇰🇭 柬埔寨 01\r"
+      - "🇨🇦 加拿大 01\r"
+      - 🇭🇰 香港 01
+      - 🇭🇰 香港 02
+      - 🇯🇵 日本 01
+      - 🇯🇵 日本 02
+      - 🇯🇵 日本 03
+      - 🇸🇬 新加坡 01
+      - 🇸🇬 新加坡 02
+      - 🇺🇸 美国 01
+      - 🇺🇸 美国 02
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -244,30 +433,57 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 更多节点关注@ShareCentrePro
-      - 「SCP」NL-CF-HTTP
-      - 「SCP」SE-CF-HTTP
-      - 「SCP」SG-OVH-HTTP
-      - 「SCP」SG-DO-HTTP
-      - 「SCP」UK-CF-HTTP
-      - 「SCP」HK-CF-HTTP
-      - 「SCP」CA-CF-HTTP
-      - 「SCP」JP-HTTP|赞助商 @KinhChannel
-      - 「SCP」US-BuyVM1-HTTP
-      - 「SCP」US-BuyVM2-HTTP
-      - 「SCP」US-BuyVM3-HTTP
-      - 「SCP」US-BuyVM4-HTTP
-      - 「SCP」US-DP1-HTTP
-      - 「SCP」US-DP2-HTTP
-      - 「SCP」US-DP3-HTTP
-      - 「SCP」US-DP4-HTTP
-      - DP1
-      - DP2
-      - DP3
-      - DP4
-      - BuyVM1
-      - BuyVM2
-      - SW
+      - "🇭🇰 香港 01\r"
+      - "🇭🇰 香港 02\r"
+      - "🇭🇰 香港 03\r"
+      - "🇭🇰 香港 04\r"
+      - "🇭🇰 香港 05\r"
+      - "🇭🇰 香港 06\r"
+      - "🇭🇰 香港 07\r"
+      - "🇭🇰 香港 08\r"
+      - "🇹🇼 台湾 01\r"
+      - "🇹🇼 台湾 02\r"
+      - "🇸🇬 狮城 01\r"
+      - "🇸🇬 狮城 02\r"
+      - "🇸🇬 狮城 03\r"
+      - "🇸🇬 狮城 04\r"
+      - "🇸🇬 狮城 05\r"
+      - "🇸🇬 狮城 06\r"
+      - "🇸🇬 狮城 07\r"
+      - "🇯🇵 日本 01\r"
+      - "🇯🇵 日本 02\r"
+      - "🇯🇵 日本 03\r"
+      - "🇯🇵 日本 04\r"
+      - "🇯🇵 日本 05\r"
+      - "🇯🇵 日本 06\r"
+      - "🇰🇷 韩国 01\r"
+      - "🇰🇷 韩国 02\r"
+      - "🇰🇷 韩国 03\r"
+      - "🇺🇸 美国 01\r"
+      - "🇺🇸 美国 02\r"
+      - "🇺🇸 美国 03\r"
+      - "🇺🇸 美国 04\r"
+      - "🇺🇸 美国 05\r"
+      - "🇬🇧 英国 01\r"
+      - "🇬🇧 英国 02\r"
+      - "🇩🇪 德国 01\r"
+      - "🇩🇪 德国 02\r"
+      - "🇳🇱 荷兰 01\r"
+      - "🇵🇱 波兰 01\r"
+      - "🇮🇳 印度 01\r"
+      - "🇹🇭 泰国 01\r"
+      - "🇦🇺 澳洲 01\r"
+      - "🇰🇭 柬埔寨 01\r"
+      - "🇨🇦 加拿大 01\r"
+      - 🇭🇰 香港 01
+      - 🇭🇰 香港 02
+      - 🇯🇵 日本 01
+      - 🇯🇵 日本 02
+      - 🇯🇵 日本 03
+      - 🇸🇬 新加坡 01
+      - 🇸🇬 新加坡 02
+      - 🇺🇸 美国 01
+      - 🇺🇸 美国 02
 
 rules:
 # 本地/局域网地址
