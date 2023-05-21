@@ -1,410 +1,919 @@
-####################################
-# 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：2023-05-21 22:37:14
-# 使用模版：V2RaySE 默认模版
-# 节点数量：50
-####################################
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
-mixed-port: 7890
+#
+#-------------------------------------------------------------#
+#  创建者：https://v2rayse.com
+#  创建时间：2023-05-21 19:41:35
+#  模版：v2rayse默认模版
+#  节点数量：124
+#-------------------------------------------------------------#
+#
+port: 7890
+socks-port: 7891
 allow-lan: true
+mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
-dns:
-  enabled: true
-  nameserver:
-    - 119.29.29.29
-    - 223.5.5.5
-  fallback:
-    - 8.8.8.8
-    - 8.8.4.4
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
-
 proxies:
-  - {"name":"🇺🇸_US_美国->🇳🇱_NL_荷兰","type":"vmess","server":"tech.noaries.de","port":80,"cipher":"auto","uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"nl.sharecentrepro.com"}}}
-  - {"name":"🇺🇸_US_美国->🇨🇦_CA_加拿大","type":"vmess","server":"v2-ca1.silverdragon.cn","port":443,"cipher":"auto","uuid":"e790e3bf-c553-40ed-b2b6-436afd3f5f5c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ca/v2wss","headers":{"host":"v2-ca1.silverdragon.cn"}}}
-  - {"name":"🇨🇳_CN_中国->🇯🇵_JP_日本","type":"ss","server":"xgy.leiyingchuanmei.com","port":49257,"password":"adc570f1-d591-4a5a-93f0-0013bba3f116","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇨🇳_CN_中国->🇹🇼_TW_台湾","type":"ss","server":"14.29.124.168","port":24001,"password":"QazEdcTgb159@$*","cipher":"aes-128-cfb"}
-  - {"name":"🇺🇸_US_美国_1","type":"vless","server":"op.manluqiusuo.top","port":443,"uuid":"30d2a3e5-41fc-4677-a91b-1b0bd223a4fe","tls":true,"servername":"op.manluqiusuo.top","network":"ws","ws-opts":{"path":"/duzhichao1996"}}
-  - {"name":"🇳🇱_NL_荷兰->🇩🇪_DE_德国","type":"vmess","server":"188.114.97.7","port":443,"cipher":"auto","uuid":"9aa6b5ad-c0fc-47f4-a837-f72179d7b662","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/Lsv4s7nS0ErewnEN","headers":{"host":"channel2.unlimiteddev.tk"}}}
-  - {"name":"🇰🇷_KR_韩国_1","type":"ss","server":"43.201.254.7","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇯🇵_JP_日本_1","type":"ss","server":"54.249.172.11","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"us2.01dj.sbs","port":443,"cipher":"auto","uuid":"cb59b5eb-17d8-4b9f-9c43-6f038a9db9b0","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"🇳🇱_NL_荷兰_1","type":"vmess","server":"154.85.1.4","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"🇺🇸_US_美国_3","type":"vmess","server":"142.0.133.37","port":51412,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇹🇼_TW_台湾_1","type":"ss","server":"fn300mtw039.feichuanjs.net","port":443,"password":"688e37bf067f","cipher":"aes-256-gcm"}
-  - {"name":"🇺🇸_US_美国_4","type":"vmess","server":"171.22.134.3","port":53433,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇫🇷_FR_法国","type":"ssr","server":"fr-am1-5.eqsunshine.com","port":8181,"password":"RcfVcDzzB","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"origin"}
-  - {"name":"🇯🇵_JP_日本_2","type":"ss","server":"54.95.40.37","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇺🇸_US_美国_5","type":"vmess","server":"dallas.starsea.vip","port":443,"cipher":"auto","uuid":"10735fe6-6c8f-498b-b22e-8e98a57e033d","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"🇺🇸_US_美国_6","type":"trojan","server":"163.123.192.153","port":443,"udp":true,"password":"d69793f4-8379-41ab-91aa-e51371ca8d26","sni":"download.xn--mes358a9urctx.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇨🇦_CA_加拿大","type":"vmess","server":"ca-v2ray.freevmess.com","port":8442,"cipher":"auto","uuid":"8b0f471d-a520-4e1d-bcfc-d0a96bb97d69","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
-  - {"name":"🇺🇸_US_美国->🇩🇪_DE_德国","type":"vmess","server":"channel2.unlimiteddev.tk","port":443,"cipher":"auto","uuid":"9aa6b5ad-c0fc-47f4-a837-f72179d7b662","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/Lsv4s7nS0ErewnEN","headers":{"host":"channel2.unlimiteddev.tk"}}}
-  - {"name":"🇺🇸_US_美国_7","type":"vmess","server":"142.4.118.150","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"🇺🇸_US_美国_8","type":"vmess","server":"192.74.239.28","port":41288,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇰🇷_KR_韩国_2","type":"ss","server":"43.201.58.248","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇺🇸_US_美国_9","type":"vmess","server":"137.175.61.130","port":46679,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
-  - {"name":"🇺🇸_US_美国->🇯🇵_JP_日本","type":"vmess","server":"162.159.152.153","port":8880,"cipher":"auto","uuid":"67c5ce45-7b48-473e-bf25-e4c830b0ed24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/aries?ed=2048","headers":{"host":"csjp.iiio.wiki"}}}
-  - {"name":"🇺🇸_US_美国_10","type":"vmess","server":"cf.yxjnode.com","port":80,"cipher":"auto","uuid":"09c1d32d-4458-4ebf-b36d-4dd732bae3aa","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/yxzbp","headers":{"host":"dp1.yxjnode.com"}}}
-  - {"name":"🇷🇴_RO_罗马尼亚","type":"vmess","server":"45.85.119.135","port":443,"cipher":"auto","uuid":"7757E99E-75C9-46D5-854D-4065BF372100","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"Dusseldorf.kotick.site"}}}
-  - {"name":"🇯🇵_JP_日本_3","type":"ss","server":"3.112.214.134","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇳🇱_NL_荷兰_2","type":"vmess","server":"154.85.1.3","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"🇮🇳_IN_印度","type":"trojan","server":"152.70.74.66","port":443,"udp":true,"password":"d906afe5-7c3c-4ddc-aaa4-61c154a82e5e","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国_11","type":"vmess","server":"142.4.121.252","port":45409,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇯🇵_JP_日本_4","type":"ssr","server":"jp-am48-6.eqnode.net","port":8081,"password":"eAokbaDN6","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"origin"}
-  - {"name":"🇺🇸_US_美国_12","type":"vmess","server":"137.175.52.18","port":33002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国->🇬🇧_GB_英国","type":"vmess","server":"yn1.01dj.sbs","port":443,"cipher":"auto","uuid":"4dc3b73e-9c0a-477c-8a29-843849e9194e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"🇺🇸_US_美国_13","type":"vmess","server":"137.175.18.157","port":58007,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国_14","type":"vmess","server":"38.63.0.83","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"🇭🇰_HK_香港","type":"vmess","server":"43.154.76.92","port":21857,"cipher":"auto","uuid":"784272d2-bd2d-438a-bbd4-1271bb1f1b0d","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"🇰🇷_KR_韩国_3","type":"ss","server":"43.201.47.15","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇺🇸_US_美国_15","type":"vmess","server":"23.224.110.182","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"🇩🇪_DE_德国","type":"vmess","server":"cdn.twitter.now.cc","port":443,"cipher":"auto","uuid":"87283fe7-08e5-403b-a0aa-add7cd68a23e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ikun","headers":{"host":"lo.twittei.me"}}}
-  - {"name":"🇹🇼_TW_台湾_2","type":"trojan","server":"165.154.226.138","port":443,"udp":true,"password":"ca7febc2-bb45-4e6d-810e-ab0af6009c4e","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国_16","type":"vmess","server":"cf-lt.sharecentre.online","port":80,"cipher":"auto","uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"ca.ilovescp.com"}}}
-  - {"name":"🇸🇬_SG_新加坡","type":"vmess","server":"sigma.jandapirang.my.id","port":80,"cipher":"auto","uuid":"1d1c1d94-6987-4658-a4dc-8821a30fe7e0","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"🇯🇵_JP_日本_5","type":"ss","server":"54.64.196.107","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇹🇼_TW_台湾_3","type":"trojan","server":"165.154.246.194","port":443,"udp":true,"password":"ca7febc2-bb45-4e6d-810e-ab0af6009c4e","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国_17","type":"vmess","server":"45.88.176.27","port":41092,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国_18","type":"vmess","server":"cfcdn.sanfencdn.net","port":443,"cipher":"auto","uuid":"dd8314cc-3754-416d-9456-0991f2e74753","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/zh-cn","headers":{"host":"us2.sanfencdn.net"}}}
-  - {"name":"🇺🇸_US_美国_19","type":"vmess","server":"23.224.110.242","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"🇹🇼_TW_台湾_4","type":"trojan","server":"165.154.226.87","port":443,"udp":true,"password":"ca7febc2-bb45-4e6d-810e-ab0af6009c4e","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇹🇼_TW_台湾_5","type":"trojan","server":"165.154.246.207","port":443,"udp":true,"password":"ca7febc2-bb45-4e6d-810e-ab0af6009c4e","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇨🇳_CN_中国->🇭🇰_HK_香港","type":"vmess","server":"gzzz.8bqyato.ml","port":13252,"cipher":"auto","uuid":"3c1b5e94-d0aa-4670-8680-a941f2995e51","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"gw.alicdn.com"}}}
+  - {"type":"ssr","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉1","server":"jp-am48-6.eqnode.net","port":8081,"protocol":"origin","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","password":"eAokbaDN6"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉2","ws-opts":{"path":"/PGV2vtMvxwNFt2"},"server":"165.227.133.55","port":"80","uuid":"df68f678-62c3-4799-91a8-4d301e8cf565","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"ssr","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉3","server":"8.217.90.39","port":48687,"protocol":"auth_chain_a","cipher":"dummy","obfs":"tls1.2_ticket_auth","password":"8236u2378"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇬🇷👉4","server":"192.71.166.100","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉5","server":"43.201.147.86","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇾👉6","ws-opts":{"path":"/","headers":{"host":"4dy6e45u.lasl.sbs"}},"server":"203.23.106.145","port":"2053","uuid":"44944709-9cfe-41a8-8d9e-5320b7f96fa1","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉7","ws-opts":{"path":"/path/1684230882527","headers":{"host":"www.77039717.xyz"}},"server":"23.224.110.246","port":"443","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉8","ws-opts":{"path":"/qmbdkyzn","headers":{"host":"us-4.0rd.net"}},"server":"104.31.16.104","port":"80","uuid":"12c25b50-f6c7-11ed-b230-205c6d5f5d78","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉9","ws-opts":{"path":"/path/1684405930831","headers":{"host":"www.62317155.xyz"}},"server":"198.2.208.182","port":"443","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉10","ws-opts":{"path":"/PGV2vtMvxwNFt2"},"server":"165.227.133.55","port":"80","uuid":"df68f678-62c3-4799-91a8-4d301e8cf565","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉11","ws-opts":{"path":"/xrayvws","headers":{"host":"f.tun4.live"}},"server":"172.67.73.39","port":"80","uuid":"b8458948-a630-4e6d-809a-230b2223ff3d","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉12","server":"34.219.63.178","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉13","server":"54.178.201.232","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉14","server":"18.176.61.169","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉15","server":"43.201.35.98","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉16","server":"103.172.116.79","port":9044,"cipher":"aes-256-cfb","password":"KBGjZYcy4SyRShmA"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉17","server":"34.218.225.168","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇲🇹👉18","server":"171.22.254.17","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇬🇷👉19","server":"192.71.166.100","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉20","server":"45.94.41.52","port":56890,"cipher":"aes-256-gcm","password":"huKTAYDOrq"}
+  - {"type":"ssr","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉21","server":"60.190.113.40","port":443,"protocol":"auth_aes128_sha1","cipher":"aes-256-cfb","obfs":"plain","password":"vyunme","obfs-param":"ab93117422.jd.hk","protocol-param":"17422:TTp0SX"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉22","server":"13.230.108.197","port":31467,"password":"e8dacfc5-79b1-4289-92f1-e390080d56aa","udp":true,"skip-cert-verify":true,"sni":"sgp.piaole.me","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉23","server":"3.124.193.17","port":26911,"password":"e8dacfc5-79b1-4289-92f1-e390080d56aa","udp":true,"skip-cert-verify":true,"sni":"sgp.piaole.me","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉24","server":"42.3.78.86","port":443,"password":"b31eb45e-7f95-465f-8229-716058f6dc49","udp":true,"skip-cert-verify":true,"sni":"tlsdata.cnamazon.sbs","network":"tcp"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉25","server":"142.4.99.77","port":"43379","uuid":"b65da4af-a12a-4a59-9316-4549e12ba62c","alterId":"64","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉26","server":"67.21.91.137","port":"30983","uuid":"ec186cad-56ac-42b3-8309-184d0e748b04","alterId":"64","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉27","server":"170.178.167.142","port":"50002","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉28","server":"45.58.178.32","port":"57788","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉29","server":"23.225.176.7","port":"49812","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉30","ws-opts":{"path":"/wesad","headers":{"host":"mg.dogcloud.a.nod1.jijio.stream"}},"server":"91.216.169.185","port":"38999","uuid":"adc570f1-d591-4a5a-93f0-0013bba3f116","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇦👉31","server":"149.56.95.181","port":9053,"cipher":"aes-256-cfb","password":"SBM7R883jBmnqe6C"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉32","ws-opts":{"path":"/qmbdkyzn","headers":{"host":"us-4.0rd.net"}},"server":"104.31.16.104","port":"80","uuid":"12c25b50-f6c7-11ed-b230-205c6d5f5d78","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉33","server":"34.219.63.178","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉34","server":"54.178.201.232","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
+  - {"type":"ssr","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉35","server":"jp2.vfun.icu","port":443,"protocol":"auth_aes128_sha1","cipher":"aes-256-cfb","obfs":"plain","password":"vyunme","obfs-param":"ab93117422.jd.h%%�%�","protocol-param":"17422:TTp0SX"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉36","server":"18.176.61.169","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉37","server":"43.201.35.98","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉38","ws-opts":{"path":"/chat","headers":{"host":"vin1.0bad.com"}},"server":"vin1.0bad.com","port":"443","uuid":"927094d3-d678-4763-8591-e240d0bcae87","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉39","ws-opts":{"path":"/chat","headers":{"host":"vde2.0bad.com"}},"server":"vde2.0bad.com","port":"443","uuid":"927094d3-d678-4763-8591-e240d0bcae87","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"ssr","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉40","server":"jp-am48-6.eqnode.net","port":8081,"protocol":"origin","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","password":"eAokbaDN6"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉41","ws-opts":{"path":"/yxzbp","headers":{"host":"dp3.yxjnode.com"}},"server":"cf.yxjnode.com","port":"80","uuid":"09c1d32d-4458-4ebf-b36d-4dd732bae3aa","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇦👉42","server":"158.69.122.231","port":80,"cipher":"chacha20-ietf-poly1305","password":"xkud5hn"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉43","ws-opts":{"path":"ho3ino","headers":{"host":"h.h3io.co"}},"server":"104.18.2.132","port":"2096","uuid":"408e2686-9e0d-4014-841e-7ca5da55a215","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉44","server":"awssg17-data.amazon-azure.com","port":443,"password":"794d739c-89a0-444c-b2e7-acce12af3042","udp":true,"skip-cert-verify":true,"sni":"data.amazon-azure.com","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉45","server":"13.215.177.20","port":443,"password":"794d739c-89a0-444c-b2e7-acce12af3042","udp":true,"skip-cert-verify":true,"sni":"data.amazon-azure.com","network":"tcp"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉46","server":"54.36.174.181","port":8080,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉47","server":"54.36.174.181","port":3306,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉48","server":"54.36.174.181","port":8009,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉49","ws-opts":{"path":"/speedtest/Dusseldorf.kotick.site","headers":{"host":"gentle-scene-8348.bangolan8975.workers.dev"}},"server":"104.18.80.138","port":"443","uuid":"DCE76061-EE65-49DB-997C-A6A880DADE3A","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉50","ws-opts":{"path":"/speedtest/Dusseldorf.kotick.site","headers":{"host":"flat-dust-887e.bangolan116339.workers.dev"}},"server":"104.20.156.99","port":"443","uuid":"DCE76061-EE65-49DB-997C-A6A880DADE3A","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉51","ws-opts":{"path":"/speedtest/Amsterdam.kotick.site","headers":{"host":"cool-field-4b5b.walidfree18.workers.dev"}},"server":"104.22.45.103","port":"443","uuid":"DCE76061-EE65-49DB-997C-A6A880DADE3A","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉52","ws-opts":{"path":"/speedtest/Kansas.kotick.site","headers":{"host":"blue-fog-7594.walidfree3.workers.dev"}},"server":"104.18.59.66","port":"443","uuid":"DCE76061-EE65-49DB-997C-A6A880DADE3A","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉53","ws-opts":{"path":"/speedtest/Kansas.kotick.site","headers":{"host":"red-leaf-2332.walidfree20.workers.dev"}},"server":"104.22.22.237","port":"443","uuid":"DCE76061-EE65-49DB-997C-A6A880DADE3A","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉54","server":"awshk1-data.amazon-azure.com","port":443,"password":"4aeda200-44c9-4168-8f2a-a00a72176d35","udp":true,"skip-cert-verify":true,"sni":"data.amazon-azure.com","network":"tcp"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉55","ws-opts":{"path":"/"},"server":"51.15.75.140","port":"443","uuid":"4df65f62-99d9-42d1-a4b9-a35b37b26873","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉56","ws-opts":{"path":"ho3ino","headers":{"host":"h.h3io.co"}},"server":"104.21.29.207","port":"2096","uuid":"408e2686-9e0d-4014-841e-7ca5da55a215","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇷🇺👉57","server":"bgptru1.cnamazon.sbs","port":443,"password":"33114904-dfa7-4267-9996-2c5bb47b7b50","udp":true,"skip-cert-verify":true,"sni":"tlsdata.cnamazon.sbs","network":"tcp"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉58","ws-opts":{"path":"/speedtest/Dusseldorf.kotick.site","headers":{"host":"autumn-queen-b668.bangolan024369.workers.dev"}},"server":"104.19.38.157","port":"443","uuid":"DCE76061-EE65-49DB-997C-A6A880DADE3A","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉59","ws-opts":{"path":"/Lsv4s7nS0ErewnEN","headers":{"host":"channel1.unlimiteddev.tk"}},"server":"168.119.64.242","port":"443","uuid":"9aa6b5ad-c0fc-47f4-a837-f72179d7b662","alterId":"0","cipher":"chacha20-poly1305","network":"ws","tls":true}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉60","ws-opts":{"path":"/Lsv4s7nS0ErewnEN","headers":{"host":"channel2.unlimiteddev.tk"}},"server":"188.114.97.7","port":"443","uuid":"9aa6b5ad-c0fc-47f4-a837-f72179d7b662","alterId":"0","cipher":"chacha20-poly1305","network":"ws","tls":true}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉61","ws-opts":{"path":"/path/1683881458407","headers":{"host":"www.42077230.xyz"}},"server":"154.85.1.4","port":"443","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉62","ws-opts":{"path":"/vmess/"},"server":"54.36.103.107","port":"80","uuid":"556eddfa-7a44-43d8-82bd-7c1792fc563c","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉63","server":"54.36.174.181","port":7002,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉64","server":"54.36.174.181","port":5004,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉65","server":"209.141.60.31","port":43500,"password":"D44B7434-927C-AE52-D51F-A790C19ED74A","udp":true,"skip-cert-verify":true,"sni":"streaming.teacher2040.com","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉66","server":"43.207.168.70","port":443,"password":"4aeda200-44c9-4168-8f2a-a00a72176d35","udp":true,"skip-cert-verify":true,"sni":"data.amazon-azure.com","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉67","server":"43.198.104.244","port":443,"password":"4aeda200-44c9-4168-8f2a-a00a72176d35","udp":true,"skip-cert-verify":true,"sni":"data.amazon-azure.com","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉68","server":"16.162.51.238","port":443,"password":"e015d739-1656-4e9a-b0cc-5d8f11b0db5b","udp":true,"skip-cert-verify":true,"sni":"tlsdata.cnamazon.sbs","network":"tcp"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉69","ws-opts":{"path":"/?ed=2048","headers":{"host":"b3.iraniancp.click"}},"server":"188.114.98.0","port":"80","uuid":"44c467a9-8f0d-41a5-f00b-86569753e5b0","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉70","ws-opts":{"path":"/path/1683629314915","headers":{"host":"www.42077230.xyz"}},"server":"154.85.1.3","port":"443","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉71","ws-opts":{"path":"ho3ino","headers":{"host":"h.h3io.co"}},"server":"104.18.1.74","port":"2096","uuid":"408e2686-9e0d-4014-841e-7ca5da55a215","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉72","ws-opts":{"path":"/speedtest","headers":{"host":"Lille.kotick.site"}},"server":"104.16.55.52","port":"443","uuid":"3E271C5F-28FF-4704-B8E5-CC2B39AB7F60","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉73","ws-opts":{"path":"/qwer","headers":{"host":"zslbs.vtcss.top"}},"server":"173.245.49.88","port":"80","uuid":"c5c9844d-050e-44f1-cb6d-ec5166772631","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉74","ws-opts":{"path":"/qazxcv518","headers":{"host":"tou.vtcss.top"}},"server":"188.114.97.3","port":"80","uuid":"cb8cbbc3-137a-4064-8d02-b0ee3ca2c18c","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉75","ws-opts":{"path":"/X9piqfat/","headers":{"host":"v2ray3.webgfw.top"}},"server":"188.114.97.7","port":"2083","uuid":"1ace515b-a76b-4378-83ac-0ee3833b98be","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉76","ws-opts":{"path":"/speedtest","headers":{"host":"Dusseldorf.kotick.site"}},"server":"104.18.21.81","port":"443","uuid":"3E271C5F-28FF-4704-B8E5-CC2B39AB7F60","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉77","ws-opts":{"path":"/"},"server":"138.2.71.111","port":"80","uuid":"b2947942-701b-4de2-91cd-f6810d5d03bc","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉78","ws-opts":{"path":"/socket.io"},"server":"185.162.235.250","port":"2054","uuid":"6f117af4-cd52-40f8-9236-7c5e3f357cc8","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉79","server":"40.113.153.173","port":45160,"cipher":"chacha20-ietf-poly1305","password":"kQpaDJdFPnltYcbBYF4KtK"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉80","server":"54.36.174.181","port":8000,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉81","server":"54.36.174.181","port":5000,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉82","server":"54.36.174.181","port":9102,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"type":"ssr","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉83","server":"163.172.218.164","port":443,"protocol":"origin","cipher":"aes-256-ctr","obfs":"tls1.2_ticket_auth","password":"NewBypasser2023","obfs-param":"cdn.appsflyer.com"}
+  - {"type":"ssr","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉84","server":"195.154.118.40","port":443,"protocol":"origin","cipher":"aes-256-ctr","obfs":"tls1.2_ticket_auth","password":"NewBypasser2023","obfs-param":"cdn.appsflyer.com"}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉85","server":"146.59.146.237","port":2087,"cipher":"chacha20-ietf-poly1305","password":"ohC23uhIzjveJuR7"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉86","server":"43.206.121.204","port":443,"password":"bc2a1eb1-a706-4ee5-95a6-732a6c324142","udp":true,"skip-cert-verify":true,"sni":"tlsdata.cnamazon.sbs","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉87","server":"43.206.108.75","port":443,"password":"a5117e42-e7e2-4de1-aea8-c41e2b3bc545","udp":true,"skip-cert-verify":true,"sni":"tlsdata.cnamazon.sbs","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉88","server":"43.206.152.124","port":443,"password":"4aeda200-44c9-4168-8f2a-a00a72176d35","udp":true,"skip-cert-verify":true,"sni":"data.amazon-azure.com","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉89","server":"16.163.113.102","port":443,"password":"4aeda200-44c9-4168-8f2a-a00a72176d35","udp":true,"skip-cert-verify":true,"sni":"data.amazon-azure.com","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉90","server":"16.163.1.43","port":443,"password":"ca7febc2-bb45-4e6d-810e-ab0af6009c4e","udp":true,"skip-cert-verify":true,"sni":"data.amazon-azure.com","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉91","server":"13.230.108.197","port":31467,"password":"e8dacfc5-79b1-4289-92f1-e390080d56aa","udp":true,"skip-cert-verify":true,"sni":"sgp.piaole.me","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉92","server":"13.215.162.241","port":443,"password":"ca7febc2-bb45-4e6d-810e-ab0af6009c4e","udp":true,"skip-cert-verify":true,"sni":"data.amazonwebservicess.com","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉93","server":"3.124.193.17","port":26911,"password":"e8dacfc5-79b1-4289-92f1-e390080d56aa","udp":true,"skip-cert-verify":true,"sni":"sgp.piaole.me","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉94","server":"13.230.108.197","port":26911,"password":"7e7c5d75-1547-4385-a6f9-1a0a5e0ec4f3","udp":true,"skip-cert-verify":true,"sni":"sgp.piaole.me","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉95","server":"43.201.46.88","port":26911,"password":"7e7c5d75-1547-4385-a6f9-1a0a5e0ec4f3","udp":true,"skip-cert-verify":true,"sni":"sgp.piaole.me","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉96","server":"20.212.49.182","port":443,"password":"4935d10a-b305-4b3b-8bb0-f8f7feb3640d","udp":true,"skip-cert-verify":true,"sni":"sg.stablize.top","network":"tcp"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇦🇺👉97","server":"139.99.245.165","port":"50002","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇦🇺👉98","server":"139.99.137.53","port":"36318","uuid":"a54e42ba-6417-4018-999e-ef7491dd5103","alterId":"64","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉99","server":"51.195.35.149","port":"30812","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉100","ws-opts":{"path":"/speedtest","headers":{"host":"Dusseldorf.kotick.site"}},"server":"104.26.12.49","port":"443","uuid":"7757E99E-75C9-46D5-854D-4065BF372100","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇦🇺👉101","server":"139.99.131.113","port":"33505","uuid":"6c04a273-7302-4e09-9ced-aedaaa7461af","alterId":"64","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇮🇷👉102","server":"193.151.150.232","port":"443","uuid":"c9a22360-3f66-48c8-89ab-13799b05a730","alterId":"0","cipher":"auto","network":"tcp","tls":true}
+  - {"type":"ss","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇦👉103","server":"149.56.95.181","port":9053,"cipher":"aes-256-cfb","password":"SBM7R883jBmnqe6C"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉104","ws-opts":{"path":"/qmbdkyzn","headers":{"host":"us-4.0rd.net"}},"server":"104.31.16.104","port":"80","uuid":"12c25b50-f6c7-11ed-b230-205c6d5f5d78","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉105","ws-opts":{"path":"/sometimesnaive","headers":{"host":"jp1.01dj.sbs"}},"server":"jp1.01dj.sbs","port":"443","uuid":"4dc3b73e-9c0a-477c-8a29-843849e9194e","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇬🇧👉106","ws-opts":{"path":"/T5t5p1DPeSIooUZfEmkFAYfTxZ"},"server":"178.239.171.103","port":"80","uuid":"61280f80-cd25-4c7b-8e5a-b1560617047a","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉107","ws-opts":{"path":"/path/1684405930831","headers":{"host":"www.62317155.xyz"}},"server":"198.2.208.182","port":"443","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉108","ws-opts":{"path":"/path/1683629314915","headers":{"host":"www.42077230.xyz"}},"server":"154.85.1.3","port":"443","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉109","ws-opts":{"path":"/"},"server":"168.119.58.112","port":"80","uuid":"e42d68db-4297-4c17-b5cf-44d421aef400","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉110","ws-opts":{"path":"ho3ino","headers":{"host":"h.h3io.co"}},"server":"104.18.1.74","port":"2096","uuid":"408e2686-9e0d-4014-841e-7ca5da55a215","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉111","ws-opts":{"path":"/sometimesnaive","headers":{"host":"mg01.pmssr.xyz"}},"server":"mg01.pmssr.xyz","port":"443","uuid":"4dc3b73e-9c0a-477c-8a29-843849e9194e","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉112","ws-opts":{"path":"ho3ino","headers":{"host":"h.h3io.co"}},"server":"104.21.29.207","port":"2096","uuid":"408e2686-9e0d-4014-841e-7ca5da55a215","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉113","server":"43.207.197.172","port":443,"password":"ca7febc2-bb45-4e6d-810e-ab0af6009c4e","udp":true,"skip-cert-verify":true,"sni":"data.amazon-azure.com","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉114","server":"awsjp10-tg-data.amazonwebservicess.com","port":443,"password":"ca7febc2-bb45-4e6d-810e-ab0af6009c4e","udp":true,"skip-cert-verify":true,"sni":"data.amazonwebservicess.com","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉115","server":"awsjp14-data.amazon-azure.com","port":443,"password":"4aeda200-44c9-4168-8f2a-a00a72176d35","udp":true,"skip-cert-verify":true,"sni":"data.amazon-azure.com","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉116","server":"awsjp14-data.amazon-azure.com","port":443,"password":"4aeda200-44c9-4168-8f2a-a00a72176d35","udp":true,"skip-cert-verify":true,"sni":"data.amazon-azure.com","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉117","server":"awsjp1-data.amazon-azure.com","port":443,"password":"4aeda200-44c9-4168-8f2a-a00a72176d35","udp":true,"skip-cert-verify":true,"sni":"data.amazon-azure.com","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉118","server":"awsjp1-data.amazon-azure.com","port":443,"password":"4aeda200-44c9-4168-8f2a-a00a72176d35","udp":true,"skip-cert-verify":true,"sni":"data.amazon-azure.com","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉119","server":"awsjp6-data.amazon-azure.com","port":443,"password":"ca7febc2-bb45-4e6d-810e-ab0af6009c4e","udp":true,"skip-cert-verify":true,"sni":"data.amazon-azure.com","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉120","server":"awskr2-data.amazon-azure.com","port":443,"password":"794d739c-89a0-444c-b2e7-acce12af3042","udp":true,"skip-cert-verify":true,"sni":"data.amazon-azure.com","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉121","server":"awskr4-data.amazon-azure.com","port":443,"password":"ca7febc2-bb45-4e6d-810e-ab0af6009c4e","udp":true,"skip-cert-verify":true,"sni":"data.amazon-azure.com","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉122","server":"awshk15-data.amazon-azure.com","port":443,"password":"4aeda200-44c9-4168-8f2a-a00a72176d35","udp":true,"skip-cert-verify":true,"sni":"data.amazon-azure.com","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉123","server":"awshk6-tg-data.amazonwebservicess.com","port":443,"password":"ca7febc2-bb45-4e6d-810e-ab0af6009c4e","udp":true,"skip-cert-verify":true,"sni":"data.amazonwebservicess.com","network":"tcp"}
+  - {"type":"trojan","name":"@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉124","server":"awshk1-data.amazon-azure.com","port":443,"password":"4aeda200-44c9-4168-8f2a-a00a72176d35","udp":true,"skip-cert-verify":true,"sni":"data.amazon-azure.com","network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇺🇸_US_美国_1
-      - 🇳🇱_NL_荷兰->🇩🇪_DE_德国
-      - 🇰🇷_KR_韩国_1
-      - 🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国_2
-      - 🇳🇱_NL_荷兰_1
-      - 🇺🇸_US_美国_3
-      - 🇹🇼_TW_台湾_1
-      - 🇺🇸_US_美国_4
-      - 🇫🇷_FR_法国
-      - 🇯🇵_JP_日本_2
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇰🇷_KR_韩国_2
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国->🇯🇵_JP_日本
-      - 🇺🇸_US_美国_10
-      - 🇷🇴_RO_罗马尼亚
-      - 🇯🇵_JP_日本_3
-      - 🇳🇱_NL_荷兰_2
-      - 🇮🇳_IN_印度
-      - 🇺🇸_US_美国_11
-      - 🇯🇵_JP_日本_4
-      - 🇺🇸_US_美国_12
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇭🇰_HK_香港
-      - 🇰🇷_KR_韩国_3
-      - 🇺🇸_US_美国_15
-      - 🇩🇪_DE_德国
-      - 🇹🇼_TW_台湾_2
-      - 🇺🇸_US_美国_16
-      - 🇸🇬_SG_新加坡
-      - 🇯🇵_JP_日本_5
-      - 🇹🇼_TW_台湾_3
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇺🇸_US_美国_19
-      - 🇹🇼_TW_台湾_4
-      - 🇹🇼_TW_台湾_5
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉1'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉2'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉3'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇬🇷👉4'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉5'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇾👉6'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉7'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉8'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉9'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉10'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉11'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉12'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉13'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉14'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉15'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉16'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉17'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇲🇹👉18'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇬🇷👉19'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉20'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉21'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉22'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉23'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉24'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉25'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉26'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉27'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉28'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉29'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉30'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇦👉31'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉32'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉33'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉34'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉35'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉36'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉37'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉38'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉39'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉40'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉41'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇦👉42'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉43'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉44'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉45'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉46'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉47'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉48'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉49'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉50'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉51'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉52'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉53'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉54'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉55'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉56'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇷🇺👉57'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉58'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉59'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉60'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉61'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉62'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉63'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉64'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉65'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉66'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉67'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉68'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉69'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉70'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉71'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉72'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉73'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉74'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉75'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉76'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉77'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉78'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉79'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉80'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉81'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉82'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉83'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉84'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉85'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉86'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉87'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉88'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉89'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉90'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉91'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉92'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉93'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉94'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉95'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉96'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇦🇺👉97'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇦🇺👉98'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉99'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉100'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇦🇺👉101'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇮🇷👉102'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇦👉103'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉104'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉105'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇬🇧👉106'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉107'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉108'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉109'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉110'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉111'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉112'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉113'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉114'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉115'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉116'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉117'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉118'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉119'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉120'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉121'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉122'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉123'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉124'
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇺🇸_US_美国_1
-      - 🇳🇱_NL_荷兰->🇩🇪_DE_德国
-      - 🇰🇷_KR_韩国_1
-      - 🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国_2
-      - 🇳🇱_NL_荷兰_1
-      - 🇺🇸_US_美国_3
-      - 🇹🇼_TW_台湾_1
-      - 🇺🇸_US_美国_4
-      - 🇫🇷_FR_法国
-      - 🇯🇵_JP_日本_2
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇰🇷_KR_韩国_2
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国->🇯🇵_JP_日本
-      - 🇺🇸_US_美国_10
-      - 🇷🇴_RO_罗马尼亚
-      - 🇯🇵_JP_日本_3
-      - 🇳🇱_NL_荷兰_2
-      - 🇮🇳_IN_印度
-      - 🇺🇸_US_美国_11
-      - 🇯🇵_JP_日本_4
-      - 🇺🇸_US_美国_12
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇭🇰_HK_香港
-      - 🇰🇷_KR_韩国_3
-      - 🇺🇸_US_美国_15
-      - 🇩🇪_DE_德国
-      - 🇹🇼_TW_台湾_2
-      - 🇺🇸_US_美国_16
-      - 🇸🇬_SG_新加坡
-      - 🇯🇵_JP_日本_5
-      - 🇹🇼_TW_台湾_3
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇺🇸_US_美国_19
-      - 🇹🇼_TW_台湾_4
-      - 🇹🇼_TW_台湾_5
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉1'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉2'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉3'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇬🇷👉4'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉5'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇾👉6'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉7'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉8'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉9'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉10'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉11'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉12'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉13'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉14'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉15'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉16'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉17'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇲🇹👉18'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇬🇷👉19'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉20'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉21'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉22'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉23'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉24'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉25'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉26'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉27'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉28'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉29'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉30'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇦👉31'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉32'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉33'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉34'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉35'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉36'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉37'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉38'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉39'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉40'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉41'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇦👉42'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉43'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉44'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉45'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉46'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉47'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉48'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉49'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉50'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉51'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉52'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉53'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉54'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉55'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉56'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇷🇺👉57'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉58'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉59'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉60'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉61'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉62'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉63'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉64'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉65'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉66'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉67'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉68'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉69'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉70'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉71'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉72'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉73'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉74'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉75'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉76'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉77'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉78'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉79'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉80'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉81'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉82'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉83'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉84'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉85'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉86'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉87'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉88'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉89'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉90'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉91'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉92'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉93'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉94'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉95'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉96'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇦🇺👉97'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇦🇺👉98'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉99'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉100'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇦🇺👉101'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇮🇷👉102'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇦👉103'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉104'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉105'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇬🇧👉106'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉107'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉108'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉109'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉110'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉111'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉112'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉113'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉114'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉115'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉116'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉117'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉118'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉119'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉120'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉121'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉122'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉123'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉124'
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇺🇸_US_美国_1
-      - 🇳🇱_NL_荷兰->🇩🇪_DE_德国
-      - 🇰🇷_KR_韩国_1
-      - 🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国_2
-      - 🇳🇱_NL_荷兰_1
-      - 🇺🇸_US_美国_3
-      - 🇹🇼_TW_台湾_1
-      - 🇺🇸_US_美国_4
-      - 🇫🇷_FR_法国
-      - 🇯🇵_JP_日本_2
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇰🇷_KR_韩国_2
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国->🇯🇵_JP_日本
-      - 🇺🇸_US_美国_10
-      - 🇷🇴_RO_罗马尼亚
-      - 🇯🇵_JP_日本_3
-      - 🇳🇱_NL_荷兰_2
-      - 🇮🇳_IN_印度
-      - 🇺🇸_US_美国_11
-      - 🇯🇵_JP_日本_4
-      - 🇺🇸_US_美国_12
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇭🇰_HK_香港
-      - 🇰🇷_KR_韩国_3
-      - 🇺🇸_US_美国_15
-      - 🇩🇪_DE_德国
-      - 🇹🇼_TW_台湾_2
-      - 🇺🇸_US_美国_16
-      - 🇸🇬_SG_新加坡
-      - 🇯🇵_JP_日本_5
-      - 🇹🇼_TW_台湾_3
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇺🇸_US_美国_19
-      - 🇹🇼_TW_台湾_4
-      - 🇹🇼_TW_台湾_5
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉1'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉2'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉3'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇬🇷👉4'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉5'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇾👉6'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉7'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉8'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉9'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉10'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉11'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉12'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉13'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉14'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉15'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉16'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉17'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇲🇹👉18'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇬🇷👉19'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉20'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉21'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉22'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉23'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉24'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉25'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉26'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉27'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉28'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉29'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉30'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇦👉31'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉32'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉33'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉34'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉35'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉36'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉37'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉38'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉39'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉40'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉41'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇦👉42'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉43'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉44'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉45'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉46'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉47'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉48'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉49'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉50'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉51'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉52'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉53'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉54'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉55'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉56'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇷🇺👉57'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉58'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉59'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉60'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉61'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉62'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉63'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉64'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉65'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉66'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉67'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉68'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉69'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉70'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉71'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉72'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉73'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉74'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉75'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉76'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉77'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉78'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉79'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉80'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉81'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉82'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉83'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉84'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉85'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉86'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉87'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉88'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉89'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉90'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉91'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉92'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉93'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉94'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉95'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉96'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇦🇺👉97'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇦🇺👉98'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉99'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉100'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇦🇺👉101'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇮🇷👉102'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇦👉103'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉104'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉105'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇬🇧👉106'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉107'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉108'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉109'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉110'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉111'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉112'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉113'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉114'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉115'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉116'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉117'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉118'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉119'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉120'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉121'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉122'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉123'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉124'
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇺🇸_US_美国_1
-      - 🇳🇱_NL_荷兰->🇩🇪_DE_德国
-      - 🇰🇷_KR_韩国_1
-      - 🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国_2
-      - 🇳🇱_NL_荷兰_1
-      - 🇺🇸_US_美国_3
-      - 🇹🇼_TW_台湾_1
-      - 🇺🇸_US_美国_4
-      - 🇫🇷_FR_法国
-      - 🇯🇵_JP_日本_2
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇰🇷_KR_韩国_2
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国->🇯🇵_JP_日本
-      - 🇺🇸_US_美国_10
-      - 🇷🇴_RO_罗马尼亚
-      - 🇯🇵_JP_日本_3
-      - 🇳🇱_NL_荷兰_2
-      - 🇮🇳_IN_印度
-      - 🇺🇸_US_美国_11
-      - 🇯🇵_JP_日本_4
-      - 🇺🇸_US_美国_12
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇭🇰_HK_香港
-      - 🇰🇷_KR_韩国_3
-      - 🇺🇸_US_美国_15
-      - 🇩🇪_DE_德国
-      - 🇹🇼_TW_台湾_2
-      - 🇺🇸_US_美国_16
-      - 🇸🇬_SG_新加坡
-      - 🇯🇵_JP_日本_5
-      - 🇹🇼_TW_台湾_3
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇺🇸_US_美国_19
-      - 🇹🇼_TW_台湾_4
-      - 🇹🇼_TW_台湾_5
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉1'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉2'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉3'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇬🇷👉4'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉5'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇾👉6'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉7'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉8'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉9'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉10'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉11'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉12'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉13'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉14'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉15'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉16'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉17'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇲🇹👉18'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇬🇷👉19'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉20'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉21'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉22'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉23'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉24'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉25'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉26'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉27'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉28'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉29'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉30'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇦👉31'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉32'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉33'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉34'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉35'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉36'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉37'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉38'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉39'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉40'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉41'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇦👉42'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉43'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉44'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉45'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉46'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉47'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉48'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉49'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉50'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉51'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉52'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉53'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉54'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉55'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉56'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇷🇺👉57'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉58'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉59'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉60'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉61'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉62'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉63'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉64'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉65'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉66'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉67'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉68'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉69'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉70'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉71'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉72'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉73'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉74'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉75'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉76'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉77'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉78'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉79'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉80'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉81'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉82'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉83'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉84'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉85'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉86'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉87'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉88'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉89'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉90'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉91'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉92'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉93'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉94'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉95'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉96'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇦🇺👉97'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇦🇺👉98'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉99'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉100'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇦🇺👉101'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇮🇷👉102'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇦👉103'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉104'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉105'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇬🇧👉106'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉107'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉108'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉109'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉110'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉111'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉112'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉113'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉114'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉115'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉116'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉117'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉118'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉119'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉120'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉121'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉122'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉123'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉124'
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇺🇸_US_美国_1
-      - 🇳🇱_NL_荷兰->🇩🇪_DE_德国
-      - 🇰🇷_KR_韩国_1
-      - 🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国_2
-      - 🇳🇱_NL_荷兰_1
-      - 🇺🇸_US_美国_3
-      - 🇹🇼_TW_台湾_1
-      - 🇺🇸_US_美国_4
-      - 🇫🇷_FR_法国
-      - 🇯🇵_JP_日本_2
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇰🇷_KR_韩国_2
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国->🇯🇵_JP_日本
-      - 🇺🇸_US_美国_10
-      - 🇷🇴_RO_罗马尼亚
-      - 🇯🇵_JP_日本_3
-      - 🇳🇱_NL_荷兰_2
-      - 🇮🇳_IN_印度
-      - 🇺🇸_US_美国_11
-      - 🇯🇵_JP_日本_4
-      - 🇺🇸_US_美国_12
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇭🇰_HK_香港
-      - 🇰🇷_KR_韩国_3
-      - 🇺🇸_US_美国_15
-      - 🇩🇪_DE_德国
-      - 🇹🇼_TW_台湾_2
-      - 🇺🇸_US_美国_16
-      - 🇸🇬_SG_新加坡
-      - 🇯🇵_JP_日本_5
-      - 🇹🇼_TW_台湾_3
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇺🇸_US_美国_19
-      - 🇹🇼_TW_台湾_4
-      - 🇹🇼_TW_台湾_5
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉1'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉2'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉3'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇬🇷👉4'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉5'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇾👉6'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉7'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉8'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉9'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉10'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉11'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉12'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉13'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉14'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉15'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉16'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉17'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇲🇹👉18'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇬🇷👉19'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉20'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉21'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉22'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉23'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉24'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉25'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉26'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉27'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉28'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉29'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉30'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇦👉31'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉32'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉33'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉34'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉35'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉36'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉37'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉38'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉39'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉40'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉41'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇦👉42'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉43'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉44'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉45'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉46'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉47'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉48'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉49'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉50'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉51'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉52'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉53'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉54'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉55'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉56'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇷🇺👉57'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉58'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉59'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉60'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉61'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉62'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉63'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉64'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉65'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉66'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉67'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉68'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉69'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉70'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉71'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉72'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉73'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉74'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉75'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉76'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉77'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉78'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉79'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉80'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉81'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉82'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉83'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉84'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉85'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉86'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉87'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉88'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉89'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉90'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉91'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉92'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉93'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉94'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉95'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉96'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇦🇺👉97'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇦🇺👉98'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉99'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉100'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇦🇺👉101'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇮🇷👉102'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇦👉103'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉104'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉105'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇬🇧👉106'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉107'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉108'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉109'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉110'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉111'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉112'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉113'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉114'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉115'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉116'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉117'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉118'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉119'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉120'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉121'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉122'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉123'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉124'
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇺🇸_US_美国_1
-      - 🇳🇱_NL_荷兰->🇩🇪_DE_德国
-      - 🇰🇷_KR_韩国_1
-      - 🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国_2
-      - 🇳🇱_NL_荷兰_1
-      - 🇺🇸_US_美国_3
-      - 🇹🇼_TW_台湾_1
-      - 🇺🇸_US_美国_4
-      - 🇫🇷_FR_法国
-      - 🇯🇵_JP_日本_2
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇰🇷_KR_韩国_2
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国->🇯🇵_JP_日本
-      - 🇺🇸_US_美国_10
-      - 🇷🇴_RO_罗马尼亚
-      - 🇯🇵_JP_日本_3
-      - 🇳🇱_NL_荷兰_2
-      - 🇮🇳_IN_印度
-      - 🇺🇸_US_美国_11
-      - 🇯🇵_JP_日本_4
-      - 🇺🇸_US_美国_12
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇭🇰_HK_香港
-      - 🇰🇷_KR_韩国_3
-      - 🇺🇸_US_美国_15
-      - 🇩🇪_DE_德国
-      - 🇹🇼_TW_台湾_2
-      - 🇺🇸_US_美国_16
-      - 🇸🇬_SG_新加坡
-      - 🇯🇵_JP_日本_5
-      - 🇹🇼_TW_台湾_3
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇺🇸_US_美国_19
-      - 🇹🇼_TW_台湾_4
-      - 🇹🇼_TW_台湾_5
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉1'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉2'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉3'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇬🇷👉4'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉5'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇾👉6'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉7'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉8'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉9'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉10'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉11'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉12'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉13'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉14'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉15'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉16'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉17'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇲🇹👉18'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇬🇷👉19'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉20'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉21'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉22'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉23'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉24'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉25'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉26'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉27'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉28'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉29'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉30'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇦👉31'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉32'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉33'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉34'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉35'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉36'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉37'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉38'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉39'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉40'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉41'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇦👉42'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉43'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉44'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉45'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉46'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉47'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉48'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉49'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉50'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉51'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉52'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉53'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉54'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉55'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉56'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇷🇺👉57'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉58'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉59'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉60'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉61'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉62'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉63'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉64'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉65'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉66'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉67'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉68'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉69'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉70'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉71'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉72'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉73'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉74'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉75'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉76'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉77'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉78'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉79'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉80'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉81'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉82'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉83'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉84'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉85'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉86'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉87'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉88'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉89'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉90'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉91'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉92'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉93'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉94'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉95'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉96'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇦🇺👉97'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇦🇺👉98'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉99'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉100'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇦🇺👉101'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇮🇷👉102'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇦👉103'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉104'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉105'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇬🇧👉106'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉107'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉108'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉109'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉110'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉111'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉112'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉113'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉114'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉115'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉116'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉117'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉118'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉119'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉120'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉121'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉122'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉123'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉124'
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -427,67 +936,134 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇺🇸_US_美国_1
-      - 🇳🇱_NL_荷兰->🇩🇪_DE_德国
-      - 🇰🇷_KR_韩国_1
-      - 🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国_2
-      - 🇳🇱_NL_荷兰_1
-      - 🇺🇸_US_美国_3
-      - 🇹🇼_TW_台湾_1
-      - 🇺🇸_US_美国_4
-      - 🇫🇷_FR_法国
-      - 🇯🇵_JP_日本_2
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇰🇷_KR_韩国_2
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国->🇯🇵_JP_日本
-      - 🇺🇸_US_美国_10
-      - 🇷🇴_RO_罗马尼亚
-      - 🇯🇵_JP_日本_3
-      - 🇳🇱_NL_荷兰_2
-      - 🇮🇳_IN_印度
-      - 🇺🇸_US_美国_11
-      - 🇯🇵_JP_日本_4
-      - 🇺🇸_US_美国_12
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇭🇰_HK_香港
-      - 🇰🇷_KR_韩国_3
-      - 🇺🇸_US_美国_15
-      - 🇩🇪_DE_德国
-      - 🇹🇼_TW_台湾_2
-      - 🇺🇸_US_美国_16
-      - 🇸🇬_SG_新加坡
-      - 🇯🇵_JP_日本_5
-      - 🇹🇼_TW_台湾_3
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇺🇸_US_美国_19
-      - 🇹🇼_TW_台湾_4
-      - 🇹🇼_TW_台湾_5
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
-
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉1'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉2'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉3'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇬🇷👉4'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉5'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇾👉6'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉7'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉8'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉9'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉10'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉11'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉12'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉13'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉14'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉15'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉16'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉17'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇲🇹👉18'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇬🇷👉19'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉20'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉21'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉22'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉23'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉24'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉25'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉26'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉27'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉28'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉29'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉30'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇦👉31'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉32'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉33'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉34'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉35'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉36'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉37'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉38'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉39'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉40'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉41'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇦👉42'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉43'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉44'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉45'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉46'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉47'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉48'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉49'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉50'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉51'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉52'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉53'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉54'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉55'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉56'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇷🇺👉57'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉58'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉59'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉60'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉61'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉62'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉63'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉64'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉65'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉66'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉67'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉68'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉69'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉70'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉71'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉72'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉73'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉74'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉75'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉76'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉77'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉78'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉79'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉80'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉81'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉82'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉83'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉84'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉85'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉86'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉87'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉88'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉89'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉90'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉91'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉92'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉93'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉94'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉95'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇸🇬👉96'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇦🇺👉97'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇦🇺👉98'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇫🇷👉99'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉100'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇦🇺👉101'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇮🇷👉102'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇦👉103'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉104'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉105'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇬🇧👉106'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉107'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇳🇱👉108'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇩🇪👉109'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉110'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉111'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇺🇸👉112'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉113'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉114'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉115'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉116'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉117'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉118'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇯🇵👉119'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉120'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇰🇷👉121'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉122'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇭🇰👉123'
+      - '@Vpn_Filternetکانال‌آموزشی‌ما‌در‌تلگرام👉🇨🇳👉124'
 rules:
-# 本地/局域网地址
-# 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
-# ACL4SSR标志 如没有，代表不是用ACL4SSR规则
-# 本地/局域网地址
-# Router managed 路由器管理域名
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
-  - DOMAIN-SUFFIX,lan,🎯 全球直连
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - DOMAIN-SUFFIX,localhost,🎯 全球直连
   - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
@@ -496,13 +1072,10 @@ rules:
   - IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,198.18.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,224.0.0.0/4,🎯 全球直连,no-resolve
   - IP-CIDR6,::1/128,🎯 全球直连,no-resolve
   - IP-CIDR6,fc00::/7,🎯 全球直连,no-resolve
   - IP-CIDR6,fe80::/10,🎯 全球直连,no-resolve
   - IP-CIDR6,fd00::/8,🎯 全球直连,no-resolve
-  - DOMAIN,instant.arubanetworks.com,🎯 全球直连
-  - DOMAIN,setmeup.arubanetworks.com,🎯 全球直连
   - DOMAIN,router.asus.com,🎯 全球直连
   - DOMAIN-SUFFIX,hiwifi.com,🎯 全球直连
   - DOMAIN-SUFFIX,leike.cc,🎯 全球直连
@@ -511,17 +1084,9 @@ rules:
   - DOMAIN-SUFFIX,p.to,🎯 全球直连
   - DOMAIN-SUFFIX,peiluyou.com,🎯 全球直连
   - DOMAIN-SUFFIX,phicomm.me,🎯 全球直连
-  - DOMAIN-SUFFIX,router.ctc,🎯 全球直连
   - DOMAIN-SUFFIX,routerlogin.com,🎯 全球直连
   - DOMAIN-SUFFIX,tendawifi.com,🎯 全球直连
   - DOMAIN-SUFFIX,zte.home,🎯 全球直连
-  - DOMAIN-SUFFIX,tplogin.cn,🎯 全球直连
-# 本碎片只包含常见广告关键字、广告联盟。无副作用，放心使用
-# 广告关键词
-# 广告联盟-国内****************
-# 广告联盟-国外****************
-# 垃圾站点****************
-# 运营商广告****************
   - DOMAIN-KEYWORD,admarvel,🛑 全球拦截
   - DOMAIN-KEYWORD,admaster,🛑 全球拦截
   - DOMAIN-KEYWORD,adsage,🛑 全球拦截
@@ -549,6 +1114,25 @@ rules:
   - DOMAIN-KEYWORD,usage,🛑 全球拦截
   - DOMAIN-KEYWORD,wlmonitor,🛑 全球拦截
   - DOMAIN-KEYWORD,zjtoolbar,🛑 全球拦截
+  - DOMAIN-SUFFIX,admob.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,ads.gmodules.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,ads.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,adservice.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,afd.l.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,badad.googleplex.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,csi.gstatic.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,doubleclick.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,doubleclick.net,🛑 全球拦截
+  - DOMAIN-SUFFIX,google-analytics.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,googleadservices.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,googleadsserving.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,googlecommerce.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,googlesyndication.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,mobileads.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,pagead-tpc.l.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,pagead.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,pagead.l.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,service.urchin.com,🛑 全球拦截
   - DOMAIN-SUFFIX,09mk.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,100peng.com,🛑 全球拦截
   - DOMAIN-SUFFIX,114la.com,🛑 全球拦截
@@ -708,6 +1292,7 @@ rules:
   - DOMAIN-SUFFIX,edigitalsurvey.com,🛑 全球拦截
   - DOMAIN-SUFFIX,eduancm.com,🛑 全球拦截
   - DOMAIN-SUFFIX,emarbox.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,epsilon.com,🛑 全球拦截
   - DOMAIN-SUFFIX,exosrv.com,🛑 全球拦截
   - DOMAIN-SUFFIX,fancyapi.com,🛑 全球拦截
   - DOMAIN-SUFFIX,feitian001.com,🛑 全球拦截
@@ -783,6 +1368,7 @@ rules:
   - DOMAIN-SUFFIX,mediaplex.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mediav.com,🛑 全球拦截
   - DOMAIN-SUFFIX,megajoy.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,meiqia.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mgogo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,miaozhen.com,🛑 全球拦截
   - DOMAIN-SUFFIX,microad-cn.com,🛑 全球拦截
@@ -798,7 +1384,6 @@ rules:
   - DOMAIN-SUFFIX,mobgi.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mobisage.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,mobvista.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,moogos.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mopub.com,🛑 全球拦截
   - DOMAIN-SUFFIX,moquanad.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mpush.cn,🛑 全球拦截
@@ -893,7 +1478,6 @@ rules:
   - DOMAIN-SUFFIX,uuzu.com,🛑 全球拦截
   - DOMAIN-SUFFIX,uyunad.com,🛑 全球拦截
   - DOMAIN-SUFFIX,vamaker.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,vlion.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,voiceads.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,voiceads.com,🛑 全球拦截
   - DOMAIN-SUFFIX,vpon.com,🛑 全球拦截
@@ -995,6 +1579,7 @@ rules:
   - DOMAIN-SUFFIX,criteo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,criteo.net,🛑 全球拦截
   - DOMAIN-SUFFIX,csbew.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,demdex.net,🛑 全球拦截
   - DOMAIN-SUFFIX,directrev.com,🛑 全球拦截
   - DOMAIN-SUFFIX,dumedia.ru,🛑 全球拦截
   - DOMAIN-SUFFIX,effectivemeasure.com,🛑 全球拦截
@@ -1116,66 +1701,6 @@ rules:
   - DOMAIN-SUFFIX,go.10086.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,hivedata.cc,🛑 全球拦截
   - DOMAIN-SUFFIX,navi.gd.chinamobile.com,🛑 全球拦截
-# 包含常用应用的各种去广告规则。
-# 可能有轻微副作用，可放心使用。（如果网站功能和广告冲突，会删掉去广告规则）
-# 163
-# 17173
-# 178
-# 2345
-# 360
-# 58
-# Alibaba
-# Adobe
-# Apple
-# AutoHome
-# Baidu
-# Book-app 起点 掌阅 书旗 宜搜
-# ByteDance 头条抖音
-# Dangdang
-# Duomi
-# Facebook
-# Fang
-# Google
-# JD
-# Kugou
-# Kuwo
-# Meizu flyme 魅族
-# Meitu
-# Miui 小米
-# Moji
-# Qingting.fm
-# QQ
-# RenRen
-# Sina
-# Sougou
-# Teleplus
-# Twitter
-# UC ali
-# Weifeng
-# WPS Office
-# Wi-Fi key
-# Ximalaya 喜马拉雅
-# Xunlei 迅雷app&看看
-# Yahoo
-# Zhihu
-# Ads in Video apps 下面都是 ********************
-# 6间房
-# Baofeng 暴风影音
-# Douyu
-# Fenghuang 凤凰TV
-# Funshion 风行
-# iqiyi PPS 爱奇艺
-# Ku6 酷6
-# LeTV 乐视
-# MGTV 芒果TV
-# Sohu 搜狐
-# PPTV、PPLive
-# QQ Live
-# Youku & Tudou
-# Youtube
-# Others ads in Video apps
-# Ads in Video apps end 上面都是 ********************
-# 常用网站广告
   - DOMAIN-SUFFIX,a.youdao.com,🍃 应用净化
   - DOMAIN-SUFFIX,adgeo.corp.163.com,🍃 应用净化
   - DOMAIN-SUFFIX,analytics.126.net,🍃 应用净化
@@ -1285,10 +1810,12 @@ rules:
   - DOMAIN-SUFFIX,activate-sea.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,activate-sjc0.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,activate.adobe.com,🍃 应用净化
+  - DOMAIN-SUFFIX,activate.wip3.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,adobe-dns-2.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,adobe-dns-3.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,adobe-dns.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,ereg.adobe.com,🍃 应用净化
+  - DOMAIN-SUFFIX,ereg.wip3.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,geo2.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,hl2rcv.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,hlrcv.stage.adobe.com,🍃 应用净化
@@ -1343,6 +1870,7 @@ rules:
   - DOMAIN-SUFFIX,baikebcs.bdimg.com,🍃 应用净化
   - DOMAIN-SUFFIX,banlv.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,bar.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,bdimg.share.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,bdplus.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,btlaunch.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,c.baidu.cn,🍃 应用净化
@@ -1360,6 +1888,7 @@ rules:
   - DOMAIN-SUFFIX,click.hm.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,click.qianqian.com,🍃 应用净化
   - DOMAIN-SUFFIX,cm.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,cm.pos.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,cpro.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,cpro.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,cpro.baidustatic.com,🍃 应用净化
@@ -1462,10 +1991,13 @@ rules:
   - DOMAIN-SUFFIX,rp.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,rplog.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,s.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,s.cpro.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,sa.tuisong.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,sclick.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,sestat.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,shadu.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,share.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,snippet.pos.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,sobar.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,sobartop.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,spcode.baidu.cn,🍃 应用净化
@@ -1482,6 +2014,7 @@ rules:
   - DOMAIN-SUFFIX,tuijian.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,tuisong.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,tuisong.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,uat1.bfsspadserver.8le8le.com,🍃 应用净化
   - DOMAIN-SUFFIX,ubmcmm.baidustatic.com,🍃 应用净化
   - DOMAIN-SUFFIX,ucstat.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,ucstat.baidu.com,🍃 应用净化
@@ -1506,6 +2039,7 @@ rules:
   - DOMAIN-SUFFIX,wisepush.video.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,wm.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,wm.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,wn.pos.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,znsv.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,znsv.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,zz.bdstatic.com,🍃 应用净化
@@ -1556,11 +2090,7 @@ rules:
   - DOMAIN-SUFFIX,ic.snssdk.com,🍃 应用净化
   - DOMAIN-SUFFIX,log.snssdk.com,🍃 应用净化
   - DOMAIN-SUFFIX,nativeapp.toutiao.com,🍃 应用净化
-  - DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,🍃 应用净化
-  - DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,🍃 应用净化
-  - DOMAIN-SUFFIX,pangolin.snssdk.com,🍃 应用净化
   - DOMAIN-SUFFIX,partner.toutiao.com,🍃 应用净化
-  - DOMAIN-SUFFIX,pglstatp-toutiao.com,🍃 应用净化
   - DOMAIN-SUFFIX,sm.toutiao.com,🍃 应用净化
   - DOMAIN-SUFFIX,a.dangdang.com,🍃 应用净化
   - DOMAIN-SUFFIX,click.dangdang.com,🍃 应用净化
@@ -1690,6 +2220,7 @@ rules:
   - DOMAIN-SUFFIX,jellyfish.pandora.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,migc.g.mi.com,🍃 应用净化
   - DOMAIN-SUFFIX,migcreport.g.mi.com,🍃 应用净化
+  - DOMAIN-SUFFIX,mis.g.mi.com,🍃 应用净化
   - DOMAIN-SUFFIX,notice.game.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,ppurifier.game.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,r.browser.miui.com,🍃 应用净化
@@ -1893,6 +2424,7 @@ rules:
   - DOMAIN-SUFFIX,ws.progrss.yahoo.com,🍃 应用净化
   - DOMAIN-SUFFIX,yads.yahoo.co.jp,🍃 应用净化
   - DOMAIN-SUFFIX,ybp.yahoo.com,🍃 应用净化
+  - DOMAIN-SUFFIX,sugar.zhihu.com,🍃 应用净化
   - DOMAIN-SUFFIX,zhihu-web-analytics.zhihu.com,🍃 应用净化
   - DOMAIN-SUFFIX,shrek.6.cn,🍃 应用净化
   - DOMAIN-SUFFIX,simba.6.cn,🍃 应用净化
@@ -2081,6 +2613,7 @@ rules:
   - DOMAIN-SUFFIX,couchcoaster.jp,🍃 应用净化
   - DOMAIN-SUFFIX,delivery.dmkt-sp.jp,🍃 应用净化
   - DOMAIN-SUFFIX,ehg-youtube.hitbox.com,🍃 应用净化
+  - DOMAIN-SUFFIX,m-78.jp,🍃 应用净化
   - DOMAIN-SUFFIX,nichibenren.or.jp,🍃 应用净化
   - DOMAIN-SUFFIX,nicorette.co.kr,🍃 应用净化
   - DOMAIN-SUFFIX,ssl-youtube.2cnt.net,🍃 应用净化
@@ -2091,6 +2624,8 @@ rules:
   - DOMAIN-SUFFIX,ads.wasu.tv,🍃 应用净化
   - DOMAIN-SUFFIX,afp.wasu.tv,🍃 应用净化
   - DOMAIN-SUFFIX,c.algovid.com,🍃 应用净化
+  - DOMAIN-SUFFIX,cc.xtgreat.com,🍃 应用净化
+  - DOMAIN-SUFFIX,d.dsp.imageter.com,🍃 应用净化
   - DOMAIN-SUFFIX,gg.jtertp.com,🍃 应用净化
   - DOMAIN-SUFFIX,gridsum-vd.cntv.cn,🍃 应用净化
   - DOMAIN-SUFFIX,kwflvcdn.000dn.com,🍃 应用净化
@@ -2202,8 +2737,6 @@ rules:
   - DOMAIN-SUFFIX,tralog.ganji.com,🍃 应用净化
   - DOMAIN-SUFFIX,up.qingdaonews.com,🍃 应用净化
   - DOMAIN-SUFFIX,vaserviece.10jqka.com.cn,🍃 应用净化
-# Google China
-#DOMAIN-SUFFIX,translate.googleapis.com
   - DOMAIN-SUFFIX,265.com,🎯 全球直连
   - DOMAIN-SUFFIX,2mdn.net,🎯 全球直连
   - DOMAIN-SUFFIX,alt1-mtalk.google.com,🎯 全球直连
@@ -2235,32 +2768,13 @@ rules:
   - DOMAIN-SUFFIX,safebrowsing.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,settings.crashlytics.com,🎯 全球直连
   - DOMAIN-SUFFIX,ssl-google-analytics.l.google.com,🎯 全球直连
+  - DOMAIN-SUFFIX,ssl.gstatic.com,🎯 全球直连
   - DOMAIN-SUFFIX,toolbarqueries.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,tools.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,tools.l.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,update.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,www-googletagmanager.l.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,www.gstatic.com,🎯 全球直连
-# 内容：SteamCN
-# 数量：15条
-  - DOMAIN,csgo.wmsj.cn,🎯 全球直连
-  - DOMAIN,dl.steam.clngaa.com,🎯 全球直连
-  - DOMAIN,dl.steam.ksyna.com,🎯 全球直连
-  - DOMAIN,dota2.wmsj.cn,🎯 全球直连
-  - DOMAIN,st.dl.bscstorage.net,🎯 全球直连
-  - DOMAIN,st.dl.eccdnx.com,🎯 全球直连
-  - DOMAIN,st.dl.pinyuncloud.com,🎯 全球直连
-  - DOMAIN,steampipe.steamcontent.tnkjmec.com,🎯 全球直连
-  - DOMAIN,steampowered.com.8686c.com,🎯 全球直连
-  - DOMAIN,steamstatic.com.8686c.com,🎯 全球直连
-  - DOMAIN,wmsjsteam.com,🎯 全球直连
-  - DOMAIN-SUFFIX,cm.steampowered.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamchina.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamcontent.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamusercontent.com,🎯 全球直连
-# Microsoft Services
-# optimized from https://gist.github.com/TTTPOB/ce93fb3b04ba2f21880b09427442d831
-# source: https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges
   - DOMAIN-KEYWORD,1drv,Ⓜ️ 微软服务
   - DOMAIN-KEYWORD,microsoft,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,aadrm.com,Ⓜ️ 微软服务
@@ -2337,13 +2851,10 @@ rules:
   - DOMAIN-SUFFIX,wunderlist.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,yammer.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,yammerusercontent.com,Ⓜ️ 微软服务
-# Apple
-# 一般国内Apple肯定正常,不需要开代理
   - DOMAIN,apple.comscoreresearch.com,🍎 苹果服务
   - DOMAIN-SUFFIX,aaplimg.com,🍎 苹果服务
   - DOMAIN-SUFFIX,akadns.net,🍎 苹果服务
   - DOMAIN-SUFFIX,apple-cloudkit.com,🍎 苹果服务
-  - DOMAIN-SUFFIX,apple-mapkit.com,🍎 苹果服务
   - DOMAIN-SUFFIX,apple.co,🍎 苹果服务
   - DOMAIN-SUFFIX,apple.com,🍎 苹果服务
   - DOMAIN-SUFFIX,apple.com.cn,🍎 苹果服务
@@ -2367,93 +2878,28 @@ rules:
   - IP-CIDR,192.35.50.0/24,🍎 苹果服务,no-resolve
   - IP-CIDR,198.183.17.0/24,🍎 苹果服务,no-resolve
   - IP-CIDR,205.180.175.0/24,🍎 苹果服务,no-resolve
-# 内容：国外媒体列表
-# 更新：2023-01-15 22:06:33
-# 数量：330条
-# ABC
-# AbemaTV
-# All4
-# Amazon
-# AppleNews
-# AppleTV
-# BBCiPlayer
-# Bahamut
-# DAZN
-# Deezer
-# DiscoveryPlus
-# DisneyPlus
-# EncoreTVB
-# FoxNow
-# HBO
-# HBO_GO_HKG
-# HWTV
-# Hulu
-# HuluJapan
-# ITV
-# JOOX
-# Japonx
-# KKBOX
-# KKTV
-# LiTV
-# LineTV
-# My5
-# MyTVSuper
-# Netflix
-# Niconico
-# PBS
-# Pandora
-# Pornhub
-# Qobuz
-# SoundCloud
-# Spotify
-# TIDAL
-# TaiWanGood 台湾好
-# TikTok
-# Twitch
-# ViuTV
-# YouTube
-# YouTubeMusic
   - DOMAIN-SUFFIX,edgedatg.com,🌍 国外媒体
   - DOMAIN-SUFFIX,go.com,🌍 国外媒体
-#,USER-AGENT,AbemaTV*,🌍 国外媒体
   - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
-  - DOMAIN,api-abematv.bucketeer.jp,🌍 国外媒体
-  - DOMAIN-SUFFIX,abema-tv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,abema.io,🌍 国外媒体
   - DOMAIN-SUFFIX,abema.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,ameba.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,hayabusa.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,hayabusa.media,🌍 国外媒体
-#,USER-AGENT,All4*,🌍 国外媒体
   - DOMAIN-SUFFIX,c4assets.com,🌍 国外媒体
   - DOMAIN-SUFFIX,channel4.com,🌍 国外媒体
-  - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
-  - DOMAIN,atv-ps.amazon.com,🌍 国外媒体
-  - DOMAIN,avodmp4s3ww-a.akamaihd.net,🌍 国外媒体
-  - DOMAIN,d1v5ir2lpwr8os.cloudfront.net,🌍 国外媒体
-  - DOMAIN,d1xfray82862hr.cloudfront.net,🌍 国外媒体
-  - DOMAIN,d22qjgkvxw22r6.cloudfront.net,🌍 国外媒体
-  - DOMAIN,d25xi40x97liuc.cloudfront.net,🌍 国外媒体
-  - DOMAIN,d27xxe7juh1us6.cloudfront.net,🌍 国外媒体
-  - DOMAIN,d3196yreox78o9.cloudfront.net,🌍 国外媒体
-  - DOMAIN,dmqdd6hw24ucf.cloudfront.net,🌍 国外媒体
-  - DOMAIN,ktpx.amazon.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,aboutamazon.com,🌍 国外媒体
+  - DOMAIN, atv-ps.amazon.com,🌍 国外媒体
+  - DOMAIN, fls-na.amazon.com,🌍 国外媒体
+  - DOMAIN-SUFFIX, media-amazon.com,🌍 国外媒体
   - DOMAIN-SUFFIX,aiv-cdn.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,aiv-delivery.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,amazon.jobs,🌍 国外媒体
-  - DOMAIN-SUFFIX,amazonuniversity.jobs,🌍 国外媒体
+  - DOMAIN-SUFFIX,amazonaws.co.uk,🌍 国外媒体
+  - DOMAIN-SUFFIX,amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,amazonvideo.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,media-amazon.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,pv-cdn.net,🌍 国外媒体
-#,URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/,🌍 国外媒体
-#,USER-AGENT,AppleNews*,🌍 国外媒体
-#,USER-AGENT,com.apple.news*,🌍 国外媒体
+  - DOMAIN-SUFFIX,llnwd.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,primevideo.com,🌍 国外媒体
   - DOMAIN,gspe1-ssl.ls.apple.com,🌍 国外媒体
   - DOMAIN,np-edge.itunes.apple.com,🌍 国外媒体
   - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tv.apple.com,🌍 国外媒体
-#,USER-AGENT,BBCiPlayer*,🌍 国外媒体
   - DOMAIN-KEYWORD,bbcfmt,🌍 国外媒体
   - DOMAIN-KEYWORD,uk-live,🌍 国外媒体
   - DOMAIN,aod-dash-uk-live.akamaized.net,🌍 国外媒体
@@ -2468,32 +2914,51 @@ rules:
   - DOMAIN-SUFFIX,bbci.co,🌍 国外媒体
   - DOMAIN-SUFFIX,bbci.co.uk,🌍 国外媒体
   - DOMAIN-SUFFIX,bidi.net.uk,🌍 国外媒体
-#,USER-AGENT,Anime*,🌍 国外媒体
-  - DOMAIN,bahamut.akamaized.net,🌍 国外媒体
   - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
   - DOMAIN,gamer2-cds.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
-#,USER-AGENT,DAZN*,🌍 国外媒体
+  - DOMAIN-SUFFIX,hinet.net,🌍 国外媒体
+  - DOMAIN-KEYWORD,livedazn,🌍 国外媒体
+  - DOMAIN-KEYWORD,vod2dazn,🌍 国外媒体
   - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
   - DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
+  - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
+  - DOMAIN,players.brightcove.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,amplify.outbrain.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,bluekai.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,control.kochava.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,cws.conviva.com,🌍 国外媒体
   - DOMAIN-SUFFIX,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,d1sgwhnao7452x.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,dazn-api.com,🌍 国外媒体
   - DOMAIN-SUFFIX,dazn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,dazndn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,dc1-voddash-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dc1live21715dazn.akamaized.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dc2-live2dash-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dc2-live2hls-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dc2-vodhls-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dca-livedash-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dca-voddash-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dca-vodhls-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dcb-livedash-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dcb-voddash-perform.secure.footprint.net,🌍 国外媒体
   - DOMAIN-SUFFIX,dcblivedazn.akamaized.net,🌍 国外媒体
   - DOMAIN-SUFFIX,indazn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,indaznlab.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
+  - DOMAIN-SUFFIX,perfops.doracdn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,s.llnwi.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,s.yimg.jp,🌍 国外媒体
+  - DOMAIN-SUFFIX,secure.footprint.net,🌍 国外媒体
   - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
-#,USER-AGENT,Deezer*,🌍 国外媒体
+  - DOMAIN-SUFFIX,urbanairship.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,vjs.zencdn.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,widevine.entitlement.us.theplatform.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,yahoo.co.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
   - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,disco-api.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,discovery.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
-#,USER-AGENT,Disney*,🌍 国外媒体
-#,USER-AGENT,Disney+*,🌍 国外媒体
   - DOMAIN,cdn.registerdisney.go.com,🌍 国外媒体
   - DOMAIN-SUFFIX,adobedtm.com,🌍 国外媒体
   - DOMAIN-SUFFIX,bam.nr-data.net,🌍 国外媒体
@@ -2514,26 +2979,33 @@ rules:
   - DOMAIN-SUFFIX,dssott.com,🌍 国外媒体
   - DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,js-agent.newrelic.com,🌍 国外媒体
-#,USER-AGENT,encoreTVB*,🌍 国外媒体
   - DOMAIN,bcbolt446c5271-a.akamaihd.net,🌍 国外媒体
   - DOMAIN,content.jwplatform.com,🌍 国外媒体
   - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
   - DOMAIN,videos-f.jwpsrv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,encoretvb.com,🌍 国外媒体
-#,USER-AGENT,FOX%20NOW*,🌍 国外媒体
   - DOMAIN-SUFFIX,fox.com,🌍 国外媒体
   - DOMAIN-SUFFIX,foxdcg.com,🌍 国外媒体
   - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
-#,USER-AGENT,HBO%20NOW*,🌍 国外媒体
-#,USER-AGENT,HBOMAX*,🌍 国外媒体
+  - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
+  - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
+  - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🌍 国外媒体
+  - DOMAIN,dai3fd1oh325y.cloudfront.net,🌍 国外媒体
+  - DOMAIN,hboasia1-i.akamaihd.net,🌍 国外媒体
+  - DOMAIN,hboasia2-i.akamaihd.net,🌍 国外媒体
+  - DOMAIN,hboasia3-i.akamaihd.net,🌍 国外媒体
+  - DOMAIN,hboasia4-i.akamaihd.net,🌍 国外媒体
+  - DOMAIN,hboasia5-i.akamaihd.net,🌍 国外媒体
+  - DOMAIN,players.brightcove.net,🌍 国外媒体
+  - DOMAIN,s3-ap-southeast-1.amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogo.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,hbogoasia.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,hbogoasia.hk,🌍 国外媒体
   - DOMAIN-SUFFIX,hbomax.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbomaxcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbonow.com,🌍 国外媒体
-#,USER-AGENT,HBO%20GO%20PROD*,🌍 国外媒体
   - DOMAIN-KEYWORD,.hbogoasia.,🌍 国外媒体
-  - DOMAIN-KEYWORD,hbogoasia,🌍 国外媒体
   - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
   - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
   - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🌍 国外媒体
@@ -2549,10 +3021,8 @@ rules:
   - DOMAIN,hbounify-prod.evergent.com,🌍 国外媒体
   - DOMAIN,players.brightcove.net,🌍 国外媒体
   - DOMAIN,s3-ap-southeast-1.amazonaws.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,hboasia.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogoasia.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogoasia.hk,🌍 国外媒体
-#,USER-AGENT,HWTVMobile*,🌍 国外媒体
   - DOMAIN-SUFFIX,5itv.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,ocnttv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,cws-hulu.conviva.com,🌍 国外媒体
@@ -2568,12 +3038,9 @@ rules:
   - DOMAIN-SUFFIX,prod.hjholdings.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,streaks.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,yb.uncn.jp,🌍 国外媒体
-#,USER-AGENT,ITV_Player*,🌍 国外媒体
   - DOMAIN,itvpnpmobile-a.akamaihd.net,🌍 国外媒体
   - DOMAIN-SUFFIX,itv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,itvstatic.com,🌍 国外媒体
-#,USER-AGENT,JOOX*,🌍 国外媒体
-#,USER-AGENT,WeMusic*,🌍 国外媒体
   - DOMAIN-KEYWORD,jooxweb-api,🌍 国外媒体
   - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
   - DOMAIN-KEYWORD,japonx,🌍 国外媒体
@@ -2589,35 +3056,24 @@ rules:
   - DOMAIN-SUFFIX,kfs.io,🌍 国外媒体
   - DOMAIN-SUFFIX,kkbox.com,🌍 国外媒体
   - DOMAIN-SUFFIX,kkbox.com.tw,🌍 国外媒体
-#,USER-AGENT,KKTV*,🌍 国外媒体
-#,USER-AGENT,com.kktv.ios.kktv*,🌍 国外媒体
   - DOMAIN,kktv-theater.kk.stream,🌍 国外媒体
-  - DOMAIN,theater-kktv.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,kktv.com.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,kktv.me,🌍 国外媒体
   - DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,litv.tv,🌍 国外媒体
-#,USER-AGENT,LINE%20TV*,🌍 国外媒体
-#,USER-AGENT,LINE*,🌍 国外媒体
   - DOMAIN,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,linetv.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,profile.line-scdn.net,🌍 国外媒体
-#,USER-AGENT,My5*,🌍 国外媒体
   - DOMAIN,d349g9zuie06uo.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,channel5.com,🌍 国外媒体
   - DOMAIN-SUFFIX,my5.tv,🌍 国外媒体
-#,USER-AGENT,mytv*,🌍 国外媒体
-  - DOMAIN-KEYWORD,nowtv100,🌍 国外媒体
-  - DOMAIN-KEYWORD,rthklive,🌍 国外媒体
   - DOMAIN,mytvsuperlimited.hb.omtrdc.net,🌍 国外媒体
   - DOMAIN,mytvsuperlimited.sc.omtrdc.net,🌍 国外媒体
   - DOMAIN-SUFFIX,mytvsuper.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tvb.com,🌍 国外媒体
-#,USER-AGENT,Argo*,🌍 国外媒体
-  - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,🌍 国外媒体
   - DOMAIN-KEYWORD,dualstack.apiproxy-,🌍 国外媒体
-  - DOMAIN-KEYWORD,netflixdnstest,🌍 国外媒体
+  - DOMAIN-KEYWORD,dualstack.ichnaea-web-,🌍 国外媒体
   - DOMAIN,netflix.com.edgesuite.net,🌍 国外媒体
   - DOMAIN-SUFFIX,fast.com,🌍 国外媒体
   - DOMAIN-SUFFIX,netflix.com,🌍 国外媒体
@@ -2639,9 +3095,12 @@ rules:
   - DOMAIN-SUFFIX,nflxvideo.net,🌍 国外媒体
   - IP-CIDR,8.41.4.0/24,🌍 国外媒体,no-resolve
   - IP-CIDR,23.246.0.0/18,🌍 国外媒体,no-resolve
+  - IP-CIDR,34.210.42.111/32,🌍 国外媒体,no-resolve
   - IP-CIDR,37.77.184.0/21,🌍 国外媒体,no-resolve
   - IP-CIDR,38.72.126.0/24,🌍 国外媒体,no-resolve
   - IP-CIDR,45.57.0.0/17,🌍 国外媒体,no-resolve
+  - IP-CIDR,52.89.124.203/32,🌍 国外媒体,no-resolve
+  - IP-CIDR,54.148.37.5/32,🌍 国外媒体,no-resolve
   - IP-CIDR,64.120.128.0/17,🌍 国外媒体,no-resolve
   - IP-CIDR,66.197.128.0/17,🌍 国外媒体,no-resolve
   - IP-CIDR,69.53.224.0/19,🌍 国外媒体,no-resolve
@@ -2654,24 +3113,19 @@ rules:
   - IP-CIDR,198.45.48.0/20,🌍 国外媒体,no-resolve
   - IP-CIDR,207.45.72.0/22,🌍 国外媒体,no-resolve
   - IP-CIDR,208.75.76.0/22,🌍 国外媒体,no-resolve
-#,USER-AGENT,Niconico*,🌍 国外媒体
   - DOMAIN-SUFFIX,dmc.nico,🌍 国外媒体
   - DOMAIN-SUFFIX,nicovideo.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,nimg.jp,🌍 国外媒体
-#,USER-AGENT,PBS*,🌍 国外媒体
   - DOMAIN-SUFFIX,pbs.org,🌍 国外媒体
-#,USER-AGENT,Pandora*,🌍 国外媒体
   - DOMAIN-SUFFIX,pandora.com,🌍 国外媒体
   - DOMAIN-SUFFIX,phncdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,phprcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pornhub.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pornhubpremium.com,🌍 国外媒体
   - DOMAIN-SUFFIX,qobuz.com,🌍 国外媒体
-#,USER-AGENT,SoundCloud*,🌍 国外媒体
   - DOMAIN-SUFFIX,p-cdn.us,🌍 国外媒体
   - DOMAIN-SUFFIX,sndcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,soundcloud.com,🌍 国外媒体
-#,USER-AGENT,Spotify*,🌍 国外媒体
   - DOMAIN-KEYWORD,-spotify-com,🌍 国外媒体
   - DOMAIN-KEYWORD,spotify.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pscdn.co,🌍 国外媒体
@@ -2680,15 +3134,12 @@ rules:
   - DOMAIN-SUFFIX,spotify.com,🌍 国外媒体
   - DOMAIN-SUFFIX,spotifycdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,spotifycdn.net,🌍 国外媒体
-#,USER-AGENT,TIDAL*,🌍 国外媒体
   - DOMAIN-SUFFIX,tidal-cms.s3.amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tidal.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tidalhifi.com,🌍 国外媒体
-#,USER-AGENT,TaiwanGood*,🌍 国外媒体
   - DOMAIN,hamifans.emome.net,🌍 国外媒体
   - DOMAIN-SUFFIX,skyking.com.tw,🌍 国外媒体
-#,USER-AGENT,TikTok*,🌍 国外媒体
-  - DOMAIN-KEYWORD,tiktokcdn-,🌍 国外媒体
+  - DOMAIN-KEYWORD,-tiktokcdn-com,🌍 国外媒体
   - DOMAIN-SUFFIX,byteoversea.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ibytedtos.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ipstatp.com,🌍 国外媒体
@@ -2699,53 +3150,33 @@ rules:
   - DOMAIN-SUFFIX,tiktokcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tiktokv.com,🌍 国外媒体
   - DOMAIN-KEYWORD,ttvnw,🌍 国外媒体
-  - DOMAIN-SUFFIX,ext-twitch.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,jtvnw.net,🌍 国外媒体
   - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,twitch-ext.rootonline.de,🌍 国外媒体
   - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
-#,USER-AGENT,Viu*,🌍 国外媒体
-  - PROCESS-NAME,com.viu.pad,🌍 国外媒体
-  - PROCESS-NAME,com.viu.phone,🌍 国外媒体
-  - PROCESS-NAME,com.vuclip.viu,🌍 国外媒体
   - DOMAIN,api.viu.now.com,🌍 国外媒体
   - DOMAIN,d1k2us671qcoau.cloudfront.net,🌍 国外媒体
   - DOMAIN,d2anahhhmp1ffz.cloudfront.net,🌍 国外媒体
   - DOMAIN,dfp6rglgjqszk.cloudfront.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,bootstrapcdn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,cognito-identity.us-east-1.amazonaws.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,d1k2us671qcoau.cloudfront.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,d2anahhhmp1ffz.cloudfront.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,dfp6rglgjqszk.cloudfront.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,firebaseio.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,jwpcdn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,jwplayer.com,🌍 国外媒体
   - DOMAIN-SUFFIX,mobileanalytics.us-east-1.amazonaws.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,nowe.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.now.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.tv,🌍 国外媒体
-#,USER-AGENT,*youtube*,🌍 国外媒体
-#,USER-AGENT,YouTube*,🌍 国外媒体
-#,USER-AGENT,com.google.ios.youtube*,🌍 国外媒体
   - DOMAIN-KEYWORD,youtube,🌍 国外媒体
   - DOMAIN,youtubei.googleapis.com,🌍 国外媒体
   - DOMAIN,yt3.ggpht.com,🌍 国外媒体
   - DOMAIN-SUFFIX,googlevideo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,gvt2.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,withyoutube.com,🌍 国外媒体
   - DOMAIN-SUFFIX,youtu.be,🌍 国外媒体
-  - DOMAIN-SUFFIX,youtube-nocookie.com,🌍 国外媒体
   - DOMAIN-SUFFIX,youtube.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,youtubeeducation.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,youtubegaming.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,youtubekids.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,yt.be,🌍 国外媒体
   - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
-#,USER-AGENT,*YouTubeMusic*,🌍 国外媒体
-#,USER-AGENT,*com.google.ios.youtubemusic*,🌍 国外媒体
-#,USER-AGENT,YouTubeMusic*,🌍 国外媒体
-#,USER-AGENT,com.google.ios.youtubemusic*,🌍 国外媒体
-  - DOMAIN,music.youtube.com,🌍 国外媒体
-# Telegram
-#PROCESS-NAME,Telegram.exe
-#PROCESS-NAME,org.telegram.messenger
   - DOMAIN-SUFFIX,t.me,📲 电报信息
   - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
   - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
@@ -2758,48 +3189,13 @@ rules:
   - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
   - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
   - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
-# 长风网站，自动注入
-  - DOMAIN-SUFFIX,v2rayse.com,🚀 节点选择
-  - DOMAIN-SUFFIX,cff.pw,🚀 节点选择
-  - DOMAIN-SUFFIX,vpnse.org,🚀 节点选择
-  - DOMAIN-SUFFIX,cfmem.com,🚀 节点选择
-# 代理列表
-# MyList && Other
-# 国外域名
-# 国外域名关键字
-# Top Blocked Sites
-# Amazon
-# BBC
-# Developer 开发者常用国外网站、镜像和论坛
-# Discord
-# Facebook
-# Github
-# Google
-# GoogleCNProxyIP 谷歌中国服务 services.googleapis.cn
-# Instagram
-# Kakao Talk
-# Line
-# OneDrive
-#DOMAIN-SUFFIX,aria.microsoft.com
-# Porn
-# Pixiv
-# Spark
-# Steam
-# TapTap
-# Twitch
-# Twitter
-# Telegram
-# TeraBox
-# Whatsapp
-# Wikipedia 维基相关域名
-#飞流直播
-#华文电视
-# VikACG
   - DOMAIN-SUFFIX,1password.com,🚀 节点选择
+  - DOMAIN-SUFFIX,v2rayse.com,🚀 节点选择
+  - DOMAIN-SUFFIX,vpnse.org,🚀 节点选择
   - DOMAIN-SUFFIX,adguard.org,🚀 节点选择
   - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
   - DOMAIN-SUFFIX,btlibrary.me,🚀 节点选择
-  - DOMAIN-SUFFIX,chat.openai.com,🚀 节点选择
+  - DOMAIN-SUFFIX,cccat.io,🚀 节点选择
   - DOMAIN-SUFFIX,cloudcone.com,🚀 节点选择
   - DOMAIN-SUFFIX,dubox.com,🚀 节点选择
   - DOMAIN-SUFFIX,gameloft.com,🚀 节点选择
@@ -2807,16 +3203,16 @@ rules:
   - DOMAIN-SUFFIX,hoyolab.com,🚀 节点选择
   - DOMAIN-SUFFIX,inoreader.com,🚀 节点选择
   - DOMAIN-SUFFIX,ip138.com,🚀 节点选择
-  - DOMAIN-SUFFIX,linkedin.com,🚀 节点选择
   - DOMAIN-SUFFIX,myteamspeak.com,🚀 节点选择
   - DOMAIN-SUFFIX,notion.so,🚀 节点选择
-  - DOMAIN-SUFFIX,openai.com,🚀 节点选择
   - DOMAIN-SUFFIX,ping.pe,🚀 节点选择
   - DOMAIN-SUFFIX,reddit.com,🚀 节点选择
   - DOMAIN-SUFFIX,teddysun.com,🚀 节点选择
   - DOMAIN-SUFFIX,tumbex.com,🚀 节点选择
   - DOMAIN-SUFFIX,twdvd.com,🚀 节点选择
   - DOMAIN-SUFFIX,unsplash.com,🚀 节点选择
+  - DOMAIN-SUFFIX,xn--i2ru8q2qg.com,🚀 节点选择
+  - DOMAIN-SUFFIX,yunpanjingling.com,🚀 节点选择
   - DOMAIN-SUFFIX,eu,🚀 节点选择
   - DOMAIN-SUFFIX,hk,🚀 节点选择
   - DOMAIN-SUFFIX,jp,🚀 节点选择
@@ -2878,6 +3274,7 @@ rules:
   - DOMAIN-SUFFIX,cloudfront.net,🚀 节点选择
   - DOMAIN-SUFFIX,comodoca.com,🚀 节点选择
   - DOMAIN-SUFFIX,daum.net,🚀 节点选择
+  - DOMAIN-SUFFIX,demdex.net,🚀 节点选择
   - DOMAIN-SUFFIX,deskconnect.com,🚀 节点选择
   - DOMAIN-SUFFIX,disqus.com,🚀 节点选择
   - DOMAIN-SUFFIX,disquscdn.com,🚀 节点选择
@@ -3135,23 +3532,7 @@ rules:
   - DOMAIN-SUFFIX,smartmailcloud.com,🚀 节点选择
   - DOMAIN-SUFFIX,fanatical.com,🚀 节点选择
   - DOMAIN-SUFFIX,humblebundle.com,🚀 节点选择
-  - DOMAIN-SUFFIX,underlords.com,🚀 节点选择
-  - DOMAIN-SUFFIX,valvesoftware.com,🚀 节点选择
-  - DOMAIN-SUFFIX,playartifact.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steam-chat.com,🚀 节点选择
   - DOMAIN-SUFFIX,steamcommunity.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steamgames.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steampowered.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steamserver.net,🚀 节点选择
-  - DOMAIN-SUFFIX,steamstatic.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steamstat.us,🚀 节点选择
-  - DOMAIN,steambroadcast.akamaized.net,🚀 节点选择
-  - DOMAIN,steamcdn-a.akamaihd.net,🚀 节点选择
-  - DOMAIN,steamcommunity-a.akamaihd.net,🚀 节点选择
-  - DOMAIN,steamstore-a.akamaihd.net,🚀 节点选择
-  - DOMAIN,steamusercontent-a.akamaihd.net,🚀 节点选择
-  - DOMAIN,steamuserimages-a.akamaihd.net,🚀 节点选择
-  - DOMAIN,steampipe.akamaized.net,🚀 节点选择
   - DOMAIN-SUFFIX,tap.io,🚀 节点选择
   - DOMAIN-SUFFIX,taptap.tw,🚀 节点选择
   - DOMAIN-SUFFIX,twitch.tv,🚀 节点选择
@@ -3207,55 +3588,6 @@ rules:
   - DOMAIN-SUFFIX,icntv.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,flzbcdn.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,ocnttv.com,🚀 节点选择
-  - DOMAIN-SUFFIX,vikacg.com,🚀 节点选择
-  - DOMAIN-SUFFIX,picjs.xyz,🚀 节点选择
-# 直连列表
-# MyList
-# CN域名直连(中国|公司|网络)
-# 中国国内常见域名关键词直连
-# 360
-# 4399
-# 58
-# Alibaba
-# Baidu
-# Bilibili
-# Blizzard
-# ByteDance
-# CCTV
-# ChinaNet
-# DiDi
-# Douyu 斗鱼
-# Epic
-# HuaWei
-# Iflytek 科大讯飞
-# Iqiyi
-# JD
-# Kingsoft
-# Kuaishou 快手
-# Meitu
-# LeTV 乐视
-# MGTV 芒果TV
-# MI
-# NetEase
-# PPTV、PPLive
-# PDD 拼多多
-# Sina
-# Sohu Sogo
-# Sony
-# SteamCN
-# Tencent
-# Vip 唯品会
-# Ximalaya 喜马拉雅
-# Xunlei 迅雷
-# YYeTs 人人影视
-# Private Tracker
-# TeamViewer
-# Public Direct CDN 公共直连
-#DOMAIN-SUFFIX,ajax.aspnetcdn.com
-#DOMAIN-SUFFIX,ajax.cloudflare.com
-#DOMAIN-SUFFIX,cdnjs.cloudflare.com
-#DOMAIN-SUFFIX,code.jquery.com
-# AccelerateDirectSites
   - DOMAIN-SUFFIX,13th.tech,🎯 全球直连
   - DOMAIN-SUFFIX,423down.com,🎯 全球直连
   - DOMAIN-SUFFIX,bokecc.com,🎯 全球直连
@@ -3268,13 +3600,10 @@ rules:
   - DOMAIN-SUFFIX,msftconnecttest.com,🎯 全球直连
   - DOMAIN-SUFFIX,msftncsi.com,🎯 全球直连
   - DOMAIN-SUFFIX,qupu123.com,🎯 全球直连
-  - DOMAIN-SUFFIX,pdfwifi.com,🎯 全球直连
-  - DOMAIN-SUFFIX,zhenguanyu.biz,🎯 全球直连
-  - DOMAIN-SUFFIX,zhenguanyu.com,🎯 全球直连
   - DOMAIN-SUFFIX,cn,🎯 全球直连
-  - DOMAIN-SUFFIX,xn--fiqs8s,🎯 全球直连
-  - DOMAIN-SUFFIX,xn--55qx5d,🎯 全球直连
-  - DOMAIN-SUFFIX,xn--io0a7i,🎯 全球直连
+  - DOMAIN-SUFFIX,中国,🎯 全球直连
+  - DOMAIN-SUFFIX,公司,🎯 全球直连
+  - DOMAIN-SUFFIX,网络,🎯 全球直连
   - DOMAIN-KEYWORD,-cn,🎯 全球直连
   - DOMAIN-KEYWORD,360buy,🎯 全球直连
   - DOMAIN-KEYWORD,alicdn,🎯 全球直连
@@ -3286,6 +3615,7 @@ rules:
   - DOMAIN-KEYWORD,ccgslb,🎯 全球直连
   - DOMAIN-KEYWORD,chinacache,🎯 全球直连
   - DOMAIN-KEYWORD,duobao,🎯 全球直连
+  - DOMAIN-KEYWORD,duolingo,🎯 全球直连
   - DOMAIN-KEYWORD,jdpay,🎯 全球直连
   - DOMAIN-KEYWORD,moke,🎯 全球直连
   - DOMAIN-KEYWORD,qhimg,🎯 全球直连
@@ -3361,6 +3691,7 @@ rules:
   - DOMAIN-SUFFIX,biliapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,biliapi.net,🎯 全球直连
   - DOMAIN-SUFFIX,bilibili.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bilibili.tv,🎯 全球直连
   - DOMAIN-SUFFIX,biligame.com,🎯 全球直连
   - DOMAIN-SUFFIX,biligame.net,🎯 全球直连
   - DOMAIN-SUFFIX,bilivideo.com,🎯 全球直连
@@ -3371,29 +3702,13 @@ rules:
   - DOMAIN-SUFFIX,battle.net,🎯 全球直连
   - DOMAIN-SUFFIX,battlenet.com,🎯 全球直连
   - DOMAIN-SUFFIX,blizzard.com,🎯 全球直连
-  - DOMAIN-SUFFIX,amemv.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bdxiguaimg.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bdxiguastatic.com,🎯 全球直连
-  - DOMAIN-SUFFIX,byted-static.com,🎯 全球直连
   - DOMAIN-SUFFIX,bytedance.com,🎯 全球直连
   - DOMAIN-SUFFIX,bytedance.net,🎯 全球直连
   - DOMAIN-SUFFIX,bytedns.net,🎯 全球直连
-  - DOMAIN-SUFFIX,bytednsdoc.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bytegoofy.com,🎯 全球直连
   - DOMAIN-SUFFIX,byteimg.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bytescm.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bytetos.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bytexservice.com,🎯 全球直连
-  - DOMAIN-SUFFIX,douyin.com,🎯 全球直连
-  - DOMAIN-SUFFIX,douyinpic.com,🎯 全球直连
-  - DOMAIN-SUFFIX,douyinstatic.com,🎯 全球直连
-  - DOMAIN-SUFFIX,douyinvod.com,🎯 全球直连
-  - DOMAIN-SUFFIX,feelgood.cn,🎯 全球直连
   - DOMAIN-SUFFIX,feiliao.com,🎯 全球直连
   - DOMAIN-SUFFIX,gifshow.com,🎯 全球直连
   - DOMAIN-SUFFIX,huoshan.com,🎯 全球直连
-  - DOMAIN-SUFFIX,huoshanzhibo.com,🎯 全球直连
-  - DOMAIN-SUFFIX,ibytedapm.com,🎯 全球直连
   - DOMAIN-SUFFIX,iesdouyin.com,🎯 全球直连
   - DOMAIN-SUFFIX,ixigua.com,🎯 全球直连
   - DOMAIN-SUFFIX,kspkg.com,🎯 全球直连
@@ -3401,7 +3716,6 @@ rules:
   - DOMAIN-SUFFIX,snssdk.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiao.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiao13.com,🎯 全球直连
-  - DOMAIN-SUFFIX,toutiaoapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiaocdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiaocdn.net,🎯 全球直连
   - DOMAIN-SUFFIX,toutiaocloud.com,🎯 全球直连
@@ -3410,7 +3724,6 @@ rules:
   - DOMAIN-SUFFIX,toutiaoimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiaopage.com,🎯 全球直连
   - DOMAIN-SUFFIX,wukong.com,🎯 全球直连
-  - DOMAIN-SUFFIX,zijieapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,zijieimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,zjbyte.com,🎯 全球直连
   - DOMAIN-SUFFIX,zjcdn.com,🎯 全球直连
@@ -3426,7 +3739,6 @@ rules:
   - DOMAIN-SUFFIX,douyuscdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyutv.com,🎯 全球直连
   - DOMAIN-SUFFIX,epicgames.com,🎯 全球直连
-  - DOMAIN-SUFFIX,epicgames.dev,🎯 全球直连
   - DOMAIN-SUFFIX,helpshift.com,🎯 全球直连
   - DOMAIN-SUFFIX,paragon.com,🎯 全球直连
   - DOMAIN-SUFFIX,unrealengine.com,🎯 全球直连
@@ -3500,16 +3812,10 @@ rules:
   - DOMAIN-SUFFIX,leju.com,🎯 全球直连
   - DOMAIN-SUFFIX,miaopai.com,🎯 全球直连
   - DOMAIN-SUFFIX,sina.com,🎯 全球直连
-  - DOMAIN-SUFFIX,sina.com.cn,🎯 全球直连
-  - DOMAIN-SUFFIX,sina.cn,🎯 全球直连
   - DOMAIN-SUFFIX,sinaapp.com,🎯 全球直连
-  - DOMAIN-SUFFIX,sinaapp.cn,🎯 全球直连
   - DOMAIN-SUFFIX,sinaimg.com,🎯 全球直连
-  - DOMAIN-SUFFIX,sinaimg.cn,🎯 全球直连
   - DOMAIN-SUFFIX,weibo.com,🎯 全球直连
-  - DOMAIN-SUFFIX,weibo.cn,🎯 全球直连
   - DOMAIN-SUFFIX,weibocdn.com,🎯 全球直连
-  - DOMAIN-SUFFIX,weibocdn.cn,🎯 全球直连
   - DOMAIN-SUFFIX,xiaoka.tv,🎯 全球直连
   - DOMAIN-SUFFIX,go2map.com,🎯 全球直连
   - DOMAIN-SUFFIX,sogo.com,🎯 全球直连
@@ -3526,21 +3832,20 @@ rules:
   - DOMAIN-SUFFIX,playstationnetwork.com,🎯 全球直连
   - DOMAIN-SUFFIX,sony.com,🎯 全球直连
   - DOMAIN-SUFFIX,sonyentertainmentnetwork.com,🎯 全球直连
-  - DOMAIN-SUFFIX,cm.steampowered.com,🎯 全球直连
+  - DOMAIN-SUFFIX,csgo.wmsj.cn,🎯 全球直连
+  - DOMAIN-SUFFIX,dl.steam.ksyna.com,🎯 全球直连
+  - DOMAIN-SUFFIX,dota2.wmsj.cn,🎯 全球直连
+  - DOMAIN-SUFFIX,st.dl.bscstorage.net,🎯 全球直连
+  - DOMAIN-SUFFIX,st.dl.eccdnx.com,🎯 全球直连
+  - DOMAIN-SUFFIX,st.dl.pinyuncloud.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net,🎯 全球直连
   - DOMAIN-SUFFIX,steamcontent.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steamgames.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steampowered.com.8686c.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steamstat.us,🎯 全球直连
+  - DOMAIN-SUFFIX,steamstatic.com,🎯 全球直连
   - DOMAIN-SUFFIX,steamusercontent.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamchina.com,🎯 全球直连
-  - DOMAIN,csgo.wmsj.cn,🎯 全球直连
-  - DOMAIN,dota2.wmsj.cn,🎯 全球直连
-  - DOMAIN,wmsjsteam.com,🎯 全球直连
-  - DOMAIN,dl.steam.clngaa.com,🎯 全球直连
-  - DOMAIN,dl.steam.ksyna.com,🎯 全球直连
-  - DOMAIN,st.dl.bscstorage.net,🎯 全球直连
-  - DOMAIN,st.dl.eccdnx.com,🎯 全球直连
-  - DOMAIN,st.dl.pinyuncloud.com,🎯 全球直连
-  - DOMAIN,steampipe.steamcontent.tnkjmec.com,🎯 全球直连
-  - DOMAIN,steampowered.com.8686c.com,🎯 全球直连
-  - DOMAIN,steamstatic.com.8686c.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net,🎯 全球直连
   - DOMAIN-SUFFIX,foxmail.com,🎯 全球直连
   - DOMAIN-SUFFIX,gtimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,idqqimg.com,🎯 全球直连
@@ -3640,6 +3945,7 @@ rules:
   - DOMAIN-SUFFIX,baomitu.com,🎯 全球直连
   - DOMAIN-SUFFIX,bootcss.com,🎯 全球直连
   - DOMAIN-SUFFIX,jiasule.com,🎯 全球直连
+  - DOMAIN-SUFFIX,jsdelivr.net,🎯 全球直连
   - DOMAIN-SUFFIX,staticfile.org,🎯 全球直连
   - DOMAIN-SUFFIX,upaiyun.com,🎯 全球直连
   - DOMAIN-SUFFIX,10010.com,🎯 全球直连
@@ -3685,6 +3991,8 @@ rules:
   - DOMAIN-SUFFIX,clouddn.com,🎯 全球直连
   - DOMAIN-SUFFIX,cloudxns.net,🎯 全球直连
   - DOMAIN-SUFFIX,cn163.net,🎯 全球直连
+  - DOMAIN-SUFFIX,cnbeta.com,🎯 全球直连
+  - DOMAIN-SUFFIX,cnbetacdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,cnblogs.com,🎯 全球直连
   - DOMAIN-SUFFIX,cnki.net,🎯 全球直连
   - DOMAIN-SUFFIX,cnmstl.net,🎯 全球直连
@@ -3759,9 +4067,11 @@ rules:
   - DOMAIN-SUFFIX,lanzoux.com,🎯 全球直连
   - DOMAIN-SUFFIX,lemicp.com,🎯 全球直连
   - DOMAIN-SUFFIX,letitfly.me,🎯 全球直连
+  - DOMAIN-SUFFIX,linkedin.com,🎯 全球直连
   - DOMAIN-SUFFIX,lizhi.fm,🎯 全球直连
   - DOMAIN-SUFFIX,lizhi.io,🎯 全球直连
   - DOMAIN-SUFFIX,lizhifm.com,🎯 全球直连
+  - DOMAIN-SUFFIX,loli.net,🎯 全球直连
   - DOMAIN-SUFFIX,luoo.net,🎯 全球直连
   - DOMAIN-SUFFIX,lvmama.com,🎯 全球直连
   - DOMAIN-SUFFIX,lxdns.com,🎯 全球直连
@@ -3788,6 +4098,7 @@ rules:
   - DOMAIN-SUFFIX,oracle.com,🎯 全球直连
   - DOMAIN-SUFFIX,oschina.net,🎯 全球直连
   - DOMAIN-SUFFIX,ourdvs.com,🎯 全球直连
+  - DOMAIN-SUFFIX,paypal.com,🎯 全球直连
   - DOMAIN-SUFFIX,polyv.net,🎯 全球直连
   - DOMAIN-SUFFIX,qbox.me,🎯 全球直连
   - DOMAIN-SUFFIX,qcloud.com,🎯 全球直连
@@ -3806,7 +4117,9 @@ rules:
   - DOMAIN-SUFFIX,quanmin.tv,🎯 全球直连
   - DOMAIN-SUFFIX,qunar.com,🎯 全球直连
   - DOMAIN-SUFFIX,qunarzz.com,🎯 全球直连
+  - DOMAIN-SUFFIX,rarbg.to,🎯 全球直连
   - DOMAIN-SUFFIX,repaik.com,🎯 全球直连
+  - DOMAIN-SUFFIX,rrmj.tv,🎯 全球直连
   - DOMAIN-SUFFIX,ruguoapp.com,🎯 全球直连
   - DOMAIN-SUFFIX,runoob.com,🎯 全球直连
   - DOMAIN-SUFFIX,sankuai.com,🎯 全球直连
@@ -3814,6 +4127,7 @@ rules:
   - DOMAIN-SUFFIX,sf-express.com,🎯 全球直连
   - DOMAIN-SUFFIX,shumilou.net,🎯 全球直连
   - DOMAIN-SUFFIX,simplecd.me,🎯 全球直连
+  - DOMAIN-SUFFIX,sm.ms,🎯 全球直连
   - DOMAIN-SUFFIX,smzdm.com,🎯 全球直连
   - DOMAIN-SUFFIX,snwx.com,🎯 全球直连
   - DOMAIN-SUFFIX,soufunimg.com,🎯 全球直连
@@ -3877,13 +4191,6 @@ rules:
   - DOMAIN-SUFFIX,zhimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhongsou.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhuihd.com,🎯 全球直连
-# 中国云服务商ip端
-# 阿里
-# 腾讯 qq
-# 百度 Baidu
-# 华为 huwei
-# 网易 NetEase
-# 360
   - IP-CIDR,8.128.0.0/10,🎯 全球直连,no-resolve
   - IP-CIDR,8.208.0.0/12,🎯 全球直连,no-resolve
   - IP-CIDR,14.1.112.0/22,🎯 全球直连,no-resolve
