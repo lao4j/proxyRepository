@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-05-21 13:40:15
+# 创建时间：2023-05-21 15:23:27
 # 使用模版：V2RaySE 默认模版
-# 节点数量：4
+# 节点数量：10
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,67 +21,109 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"maxFU","type":"vmess","server":"8.218.17.35","port":2052,"cipher":"auto","uuid":"23182db5-e0b4-4453-a86c-c1f37d423b00","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cc.maxop.tk"}}}
-  - {"name":"JP, Tokyo 2","type":"ss","server":"43.201.58.248","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本| https://t.me/hkaa0","type":"vmess","server":"jp3.d4995a2eb9b2.sanfen004.me","port":443,"cipher":"auto","uuid":"7262cf44-a587-401a-9cd3-a87e2ce8f04e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"五叶节点分享 https://t.me/hkaa0","type":"vmess","server":"hk516.wyhkaa0.ml","port":2095,"cipher":"auto","uuid":"b0d78922-5401-414e-d9c7-7d19680f5823","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/tg@hkaa0","headers":{"host":"hk516.wyhkaa0.ml"}}}
+  - {"name":"🇺🇸_US_美国_1","type":"ss","server":"54.213.178.70","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇹🇼_TW_台湾","type":"trojan","server":"scloudtw2-tg-data.amazonwebservicess.com","port":443,"udp":true,"password":"4aeda200-44c9-4168-8f2a-a00a72176d35","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_2","type":"trojan","server":"163.123.192.152","port":443,"udp":true,"password":"7f4e8527-79da-49c3-8ca8-64eef120882f","sni":"download.xn--mes358acgm99l.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_3","type":"vmess","server":"23.224.110.183","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇺🇸_US_美国_4","type":"trojan","server":"148.59.74.240","port":443,"udp":true,"password":"95da9259-6a36-4de4-9811-e85282ccae77","sni":"20-212-60-88.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_5","type":"vmess","server":"104.26.14.137","port":443,"cipher":"auto","uuid":"7757E99E-75C9-46D5-854D-4065BF372100","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"Lille.kotick.site"}}}
+  - {"name":"🇰🇷_KR_韩国","type":"ss","server":"43.202.33.9","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇺🇦_UA_乌克兰","type":"vmess","server":"195.137.167.29","port":443,"cipher":"auto","uuid":"7757E99E-75C9-46D5-854D-4065BF372100","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"Lille.kotick.site"}}}
+  - {"name":"🇯🇵_JP_日本","type":"vmess","server":"36e5404c-1b0c-47e9-80a0-977c68d3f638.xn--9kq12xdq7a.com","port":80,"cipher":"auto","uuid":"ca099159-d67c-4918-9741-82a28c802234","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇺🇸_US_美国_6","type":"trojan","server":"163.123.192.143","port":443,"udp":true,"password":"8764f05d-8516-43cc-802c-a1ad6c67aeef","sni":"4-193-105-141.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - maxFU
-      - JP, Tokyo 2
-      - 日本| https://t.me/hkaa0
-      - 五叶节点分享 https://t.me/hkaa0
+      - 🇺🇸_US_美国_1
+      - 🇹🇼_TW_台湾
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇰🇷_KR_韩国
+      - 🇺🇦_UA_乌克兰
+      - 🇯🇵_JP_日本
+      - 🇺🇸_US_美国_6
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - maxFU
-      - JP, Tokyo 2
-      - 日本| https://t.me/hkaa0
-      - 五叶节点分享 https://t.me/hkaa0
+      - 🇺🇸_US_美国_1
+      - 🇹🇼_TW_台湾
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇰🇷_KR_韩国
+      - 🇺🇦_UA_乌克兰
+      - 🇯🇵_JP_日本
+      - 🇺🇸_US_美国_6
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - maxFU
-      - JP, Tokyo 2
-      - 日本| https://t.me/hkaa0
-      - 五叶节点分享 https://t.me/hkaa0
+      - 🇺🇸_US_美国_1
+      - 🇹🇼_TW_台湾
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇰🇷_KR_韩国
+      - 🇺🇦_UA_乌克兰
+      - 🇯🇵_JP_日本
+      - 🇺🇸_US_美国_6
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - maxFU
-      - JP, Tokyo 2
-      - 日本| https://t.me/hkaa0
-      - 五叶节点分享 https://t.me/hkaa0
+      - 🇺🇸_US_美国_1
+      - 🇹🇼_TW_台湾
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇰🇷_KR_韩国
+      - 🇺🇦_UA_乌克兰
+      - 🇯🇵_JP_日本
+      - 🇺🇸_US_美国_6
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - maxFU
-      - JP, Tokyo 2
-      - 日本| https://t.me/hkaa0
-      - 五叶节点分享 https://t.me/hkaa0
+      - 🇺🇸_US_美国_1
+      - 🇹🇼_TW_台湾
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇰🇷_KR_韩国
+      - 🇺🇦_UA_乌克兰
+      - 🇯🇵_JP_日本
+      - 🇺🇸_US_美国_6
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - maxFU
-      - JP, Tokyo 2
-      - 日本| https://t.me/hkaa0
-      - 五叶节点分享 https://t.me/hkaa0
+      - 🇺🇸_US_美国_1
+      - 🇹🇼_TW_台湾
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇰🇷_KR_韩国
+      - 🇺🇦_UA_乌克兰
+      - 🇯🇵_JP_日本
+      - 🇺🇸_US_美国_6
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -104,10 +146,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - maxFU
-      - JP, Tokyo 2
-      - 日本| https://t.me/hkaa0
-      - 五叶节点分享 https://t.me/hkaa0
+      - 🇺🇸_US_美国_1
+      - 🇹🇼_TW_台湾
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇰🇷_KR_韩国
+      - 🇺🇦_UA_乌克兰
+      - 🇯🇵_JP_日本
+      - 🇺🇸_US_美国_6
 
 rules:
 # 本地/局域网地址
