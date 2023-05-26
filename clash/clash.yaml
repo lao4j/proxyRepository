@@ -1,9 +1,9 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2023-05-26 21:26:49
+#  创建时间：2023-05-26 22:45:52
 #  模版：v2rayse默认模版
-#  节点数量：21
+#  节点数量：4
 #-------------------------------------------------------------#
 #
 port: 7890
@@ -13,186 +13,67 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"trojan","name":"🇹🇼_TW_台湾","server":"hinet1.downloadvip.cfd","port":443,"password":"5a67bf67-5af7-4262-a5ec-cd2c03866acd","udp":true,"skip-cert-verify":true,"sni":"download.xn--mes358acgm99l.com","network":"tcp"}
-  - {"type":"ss","name":"🇯🇵_JP_日本_1","server":"52.194.254.123","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
-  - {"type":"ss","name":"🇯🇵_JP_日本_2","server":"13.231.247.86","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
-  - {"type":"ss","name":"🇯🇵_JP_日本_3","server":"18.183.77.46","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
-  - {"type":"ss","name":"🇯🇵_JP_日本_4","server":"13.231.34.188","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
-  - {"type":"vmess","name":"🇺🇸_US_美国_1","ws-opts":{"path":"/abcd","headers":{"host":"bing.fustc.eu.org"}},"server":"www.cloudflare.com","port":443,"uuid":"de834e34-5f49-4696-b4b2-132e8ccd0d04","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"ss","name":"🇯🇵_JP_日本_5","server":"52.199.163.189","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
-  - {"type":"ssr","name":"🇯🇵_JP_日本_6","server":"jp-am48-6.eqnode.net","port":8081,"protocol":"origin","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","password":"eAokbaDN6"}
-  - {"type":"ss","name":"🇯🇵_JP_日本_7","server":"13.231.244.111","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
-  - {"type":"vmess","name":"🇲🇾_MY_马来西亚->🇰🇷_KR_韩国","ws-opts":{"path":"/aubcroig","headers":{"host":"rusabdfs.76898102.xyz"}},"server":"rusabdfs.76898102.xyz","port":2052,"uuid":"5936dbd5-670f-372c-87be-fa5a55dd2d0c","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"ss","name":"🇺🇸_US_美国_2","server":"54.189.216.64","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
-  - {"type":"vmess","name":"🇺🇸_US_美国_3","server":"38.63.2.16","port":57723,"uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","cipher":"auto","network":"tcp"}
-  - {"type":"vmess","name":"🇺🇸_US_美国_4","ws-opts":{"path":"/path/1683955693848"},"server":"38.63.0.69","port":443,"uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","cipher":"auto","network":"ws","tls":true}
-  - {"type":"ss","name":"🇺🇸_US_美国_5","server":"54.187.97.19","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
-  - {"type":"vmess","name":"🇯🇵_JP_日本_8","server":"45.88.43.239","port":46002,"uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","cipher":"auto","network":"tcp"}
-  - {"type":"trojan","name":"🇺🇸_US_美国_6","server":"163.123.192.153","port":443,"password":"194e456a-68d2-4f05-b554-c7282d32abae","udp":true,"skip-cert-verify":true,"sni":"download.xn--mes358a9urctx.com","network":"tcp"}
-  - {"type":"trojan","name":"🇮🇩_ID_印度尼西亚","server":"103.169.7.11","port":80,"password":"c0d9da22-2569-4bed-a395-607d9e7ae687","udp":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"type":"trojan","name":"🇰🇷_KR_韩国","server":"kr2.microsoft-orgwly.vip","port":443,"password":"c2f90faa-4097-49fe-a169-19c0badb1038","udp":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"type":"trojan","name":"🇧🇿_BZ_伯利兹->🇫🇷_FR_法国","server":"cnamemk.ciscocdn1.live","port":443,"password":"3c2504f0-8014-4a68-b49a-a098d8808e61","udp":true,"skip-cert-verify":true,"sni":"c7mk.ciscocdn1.live","network":"ws","ws-opts":{"path":"/BLda1CCMAiWUNnzj51ltOjG4G3"}}
-  - {"type":"vmess","name":"🇺🇸_US_美国_7","ws-opts":{"path":"/shirker","headers":{"host":"dp4.scproxy.top"}},"server":"cf-lt.sharecentre.online","port":80,"uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"ss","name":"🇨🇳_CN_中国->🇹🇼_TW_台湾","server":"02-1.qqingca.cc","port":20384,"cipher":"chacha20-ietf-poly1305","password":"27e2f037-effd-493a-bd28-6004cd9ff1cf"}
+  - {"type":"vmess","name":"「SCP」US-BuyVM4-HTTP","ws-opts":{"path":"/shirker","headers":{"host":"lv3.sharecentrepro.org"}},"server":"cf-lt.sharecentre.online","port":80,"uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":32,"cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"「SCP」IN-DO-HTTP","ws-opts":{"path":"/shirker","headers":{"host":"in.sharecentrepro.com"}},"server":"cf-lt.sharecentre.online","port":80,"uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":32,"cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"「SCP」SG-DO-HTTP","ws-opts":{"path":"/shirker","headers":{"host":"do.sharecentrepro.com"}},"server":"cf-lt.sharecentre.online","port":80,"uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":32,"cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"「SCP」HK-CF-HTTP","ws-opts":{"path":"/shirker","headers":{"host":"hk-hytron.ilovescp.com"}},"server":"cf-lt.sharecentre.online","port":80,"uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":32,"cipher":"auto","network":"ws"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇹🇼_TW_台湾
-      - 🇯🇵_JP_日本_1
-      - 🇯🇵_JP_日本_2
-      - 🇯🇵_JP_日本_3
-      - 🇯🇵_JP_日本_4
-      - 🇺🇸_US_美国_1
-      - 🇯🇵_JP_日本_5
-      - 🇯🇵_JP_日本_6
-      - 🇯🇵_JP_日本_7
-      - 🇲🇾_MY_马来西亚->🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇯🇵_JP_日本_8
-      - 🇺🇸_US_美国_6
-      - 🇮🇩_ID_印度尼西亚
-      - 🇰🇷_KR_韩国
-      - 🇧🇿_BZ_伯利兹->🇫🇷_FR_法国
-      - 🇺🇸_US_美国_7
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
+      - 「SCP」US-BuyVM4-HTTP
+      - 「SCP」IN-DO-HTTP
+      - 「SCP」SG-DO-HTTP
+      - 「SCP」HK-CF-HTTP
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇹🇼_TW_台湾
-      - 🇯🇵_JP_日本_1
-      - 🇯🇵_JP_日本_2
-      - 🇯🇵_JP_日本_3
-      - 🇯🇵_JP_日本_4
-      - 🇺🇸_US_美国_1
-      - 🇯🇵_JP_日本_5
-      - 🇯🇵_JP_日本_6
-      - 🇯🇵_JP_日本_7
-      - 🇲🇾_MY_马来西亚->🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇯🇵_JP_日本_8
-      - 🇺🇸_US_美国_6
-      - 🇮🇩_ID_印度尼西亚
-      - 🇰🇷_KR_韩国
-      - 🇧🇿_BZ_伯利兹->🇫🇷_FR_法国
-      - 🇺🇸_US_美国_7
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
+      - 「SCP」US-BuyVM4-HTTP
+      - 「SCP」IN-DO-HTTP
+      - 「SCP」SG-DO-HTTP
+      - 「SCP」HK-CF-HTTP
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇹🇼_TW_台湾
-      - 🇯🇵_JP_日本_1
-      - 🇯🇵_JP_日本_2
-      - 🇯🇵_JP_日本_3
-      - 🇯🇵_JP_日本_4
-      - 🇺🇸_US_美国_1
-      - 🇯🇵_JP_日本_5
-      - 🇯🇵_JP_日本_6
-      - 🇯🇵_JP_日本_7
-      - 🇲🇾_MY_马来西亚->🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇯🇵_JP_日本_8
-      - 🇺🇸_US_美国_6
-      - 🇮🇩_ID_印度尼西亚
-      - 🇰🇷_KR_韩国
-      - 🇧🇿_BZ_伯利兹->🇫🇷_FR_法国
-      - 🇺🇸_US_美国_7
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
+      - 「SCP」US-BuyVM4-HTTP
+      - 「SCP」IN-DO-HTTP
+      - 「SCP」SG-DO-HTTP
+      - 「SCP」HK-CF-HTTP
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇹🇼_TW_台湾
-      - 🇯🇵_JP_日本_1
-      - 🇯🇵_JP_日本_2
-      - 🇯🇵_JP_日本_3
-      - 🇯🇵_JP_日本_4
-      - 🇺🇸_US_美国_1
-      - 🇯🇵_JP_日本_5
-      - 🇯🇵_JP_日本_6
-      - 🇯🇵_JP_日本_7
-      - 🇲🇾_MY_马来西亚->🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇯🇵_JP_日本_8
-      - 🇺🇸_US_美国_6
-      - 🇮🇩_ID_印度尼西亚
-      - 🇰🇷_KR_韩国
-      - 🇧🇿_BZ_伯利兹->🇫🇷_FR_法国
-      - 🇺🇸_US_美国_7
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
+      - 「SCP」US-BuyVM4-HTTP
+      - 「SCP」IN-DO-HTTP
+      - 「SCP」SG-DO-HTTP
+      - 「SCP」HK-CF-HTTP
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇹🇼_TW_台湾
-      - 🇯🇵_JP_日本_1
-      - 🇯🇵_JP_日本_2
-      - 🇯🇵_JP_日本_3
-      - 🇯🇵_JP_日本_4
-      - 🇺🇸_US_美国_1
-      - 🇯🇵_JP_日本_5
-      - 🇯🇵_JP_日本_6
-      - 🇯🇵_JP_日本_7
-      - 🇲🇾_MY_马来西亚->🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇯🇵_JP_日本_8
-      - 🇺🇸_US_美国_6
-      - 🇮🇩_ID_印度尼西亚
-      - 🇰🇷_KR_韩国
-      - 🇧🇿_BZ_伯利兹->🇫🇷_FR_法国
-      - 🇺🇸_US_美国_7
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
+      - 「SCP」US-BuyVM4-HTTP
+      - 「SCP」IN-DO-HTTP
+      - 「SCP」SG-DO-HTTP
+      - 「SCP」HK-CF-HTTP
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇹🇼_TW_台湾
-      - 🇯🇵_JP_日本_1
-      - 🇯🇵_JP_日本_2
-      - 🇯🇵_JP_日本_3
-      - 🇯🇵_JP_日本_4
-      - 🇺🇸_US_美国_1
-      - 🇯🇵_JP_日本_5
-      - 🇯🇵_JP_日本_6
-      - 🇯🇵_JP_日本_7
-      - 🇲🇾_MY_马来西亚->🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇯🇵_JP_日本_8
-      - 🇺🇸_US_美国_6
-      - 🇮🇩_ID_印度尼西亚
-      - 🇰🇷_KR_韩国
-      - 🇧🇿_BZ_伯利兹->🇫🇷_FR_法国
-      - 🇺🇸_US_美国_7
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
+      - 「SCP」US-BuyVM4-HTTP
+      - 「SCP」IN-DO-HTTP
+      - 「SCP」SG-DO-HTTP
+      - 「SCP」HK-CF-HTTP
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -215,27 +96,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇹🇼_TW_台湾
-      - 🇯🇵_JP_日本_1
-      - 🇯🇵_JP_日本_2
-      - 🇯🇵_JP_日本_3
-      - 🇯🇵_JP_日本_4
-      - 🇺🇸_US_美国_1
-      - 🇯🇵_JP_日本_5
-      - 🇯🇵_JP_日本_6
-      - 🇯🇵_JP_日本_7
-      - 🇲🇾_MY_马来西亚->🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇯🇵_JP_日本_8
-      - 🇺🇸_US_美国_6
-      - 🇮🇩_ID_印度尼西亚
-      - 🇰🇷_KR_韩国
-      - 🇧🇿_BZ_伯利兹->🇫🇷_FR_法国
-      - 🇺🇸_US_美国_7
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
+      - 「SCP」US-BuyVM4-HTTP
+      - 「SCP」IN-DO-HTTP
+      - 「SCP」SG-DO-HTTP
+      - 「SCP」HK-CF-HTTP
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
