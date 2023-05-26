@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-05-25 20:35:40
+# 创建时间：2023-05-26 11:51:48
 # 使用模版：V2RaySE 默认模版
-# 节点数量：9
+# 节点数量：1
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,102 +21,46 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇹🇼_TW_台湾_1","type":"trojan","server":"165.154.246.229","port":443,"udp":true,"password":"ca7febc2-bb45-4e6d-810e-ab0af6009c4e","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇹🇼_TW_台湾_2","type":"trojan","server":"165.154.243.40","port":443,"udp":true,"password":"ca7febc2-bb45-4e6d-810e-ab0af6009c4e","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇸🇬_SG_新加坡","type":"trojan","server":"awssg18-data.amazon-azure.com","port":443,"udp":true,"password":"ca7febc2-bb45-4e6d-810e-ab0af6009c4e","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇰🇷_KR_韩国","type":"ss","server":"43.202.40.246","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"108.186.116.172","port":55005,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇨🇾_CY_塞浦路斯->🇩🇪_DE_德国","type":"vmess","server":"mkh3.blanku.me","port":443,"cipher":"auto","uuid":"245e7c23-0057-47a4-f2f0-07772e3338fa","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/wss26268?ed=2048","headers":{"host":"freeservice.blanku.me"}}}
-  - {"name":"🇺🇸_US_美国->🇳🇱_NL_荷兰","type":"vmess","server":"104.16.15.109","port":443,"cipher":"auto","uuid":"DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"Amsterdam.kotick.site"}}}
-  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"honeygain.com","port":443,"cipher":"auto","uuid":"7757E99E-75C9-46D5-854D-4065BF372100","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"Dusseldorf.kotick.site"}}}
-  - {"name":"🇺🇸_US_美国_3","type":"vmess","server":"141.101.113.152","port":80,"cipher":"auto","uuid":"53ae65be-81ee-4766-8a09-da43c44c4d30","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/qwer02","headers":{"host":"uyaa.vtcss.top"}}}
+  - {"name":"🇺🇸US-163.123.192.154-0244","type":"trojan","server":"163.123.192.154","port":443,"udp":true,"password":"997a9caa-5950-476f-8614-462fb2e0ed18","sni":"download.xn--mes358a9urctx.com","skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇹🇼_TW_台湾_1
-      - 🇹🇼_TW_台湾_2
-      - 🇸🇬_SG_新加坡
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
-      - 🇨🇾_CY_塞浦路斯->🇩🇪_DE_德国
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
+      - 🇺🇸US-163.123.192.154-0244
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇹🇼_TW_台湾_1
-      - 🇹🇼_TW_台湾_2
-      - 🇸🇬_SG_新加坡
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
-      - 🇨🇾_CY_塞浦路斯->🇩🇪_DE_德国
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
+      - 🇺🇸US-163.123.192.154-0244
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇹🇼_TW_台湾_1
-      - 🇹🇼_TW_台湾_2
-      - 🇸🇬_SG_新加坡
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
-      - 🇨🇾_CY_塞浦路斯->🇩🇪_DE_德国
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
+      - 🇺🇸US-163.123.192.154-0244
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇹🇼_TW_台湾_1
-      - 🇹🇼_TW_台湾_2
-      - 🇸🇬_SG_新加坡
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
-      - 🇨🇾_CY_塞浦路斯->🇩🇪_DE_德国
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
+      - 🇺🇸US-163.123.192.154-0244
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇹🇼_TW_台湾_1
-      - 🇹🇼_TW_台湾_2
-      - 🇸🇬_SG_新加坡
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
-      - 🇨🇾_CY_塞浦路斯->🇩🇪_DE_德国
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
+      - 🇺🇸US-163.123.192.154-0244
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇹🇼_TW_台湾_1
-      - 🇹🇼_TW_台湾_2
-      - 🇸🇬_SG_新加坡
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
-      - 🇨🇾_CY_塞浦路斯->🇩🇪_DE_德国
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
+      - 🇺🇸US-163.123.192.154-0244
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -139,15 +83,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇹🇼_TW_台湾_1
-      - 🇹🇼_TW_台湾_2
-      - 🇸🇬_SG_新加坡
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
-      - 🇨🇾_CY_塞浦路斯->🇩🇪_DE_德国
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
+      - 🇺🇸US-163.123.192.154-0244
 
 rules:
 # 本地/局域网地址
