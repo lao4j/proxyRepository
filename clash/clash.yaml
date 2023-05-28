@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-05-28 17:04:35
+# 创建时间：2023-05-28 18:38:28
 # 使用模版：V2RaySE 默认模版
-# 节点数量：3
+# 节点数量：10
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,60 +21,109 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇸🇬_电报https://t.me/chykj_1","type":"vmess","server":"168.138.174.249","port":41921,"cipher":"auto","uuid":"2308da67-868d-4bc0-e040-aa087a57312f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ssss"}}
-  - {"name":"🇨🇳_电报https://t.me/chykj_2\r","type":"ss","server":"02-2.qqingca.cc","port":20315,"password":"27e2f037-effd-493a-bd28-6004cd9ff1cf","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇭🇰_电报https://t.me/chykj_33\r","type":"trojan","server":"hk5.microsoft-orgwly.vip","port":443,"udp":true,"password":"37353bae-4cbf-447a-bf5a-d6cb7d9b6d5c","sni":"tls.microsoft-orgwly.vip","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇭🇰_HK_香港_1","type":"trojan","server":"hk7.microsoft-orgwly.vip","port":80,"udp":true,"password":"a132d6ab-fdd0-4d16-b01b-1bfc43fbe015","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"cf-lt.sharecentre.online","port":8080,"cipher":"auto","uuid":"4427eafb-3b3a-4265-9a32-fe0ea9cfd736","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/api/v3/download.getFile","headers":{"host":"ssrsub.v02.ssrsub.com"}}}
+  - {"name":"🇭🇰_HK_香港_2","type":"trojan","server":"hk5.microsoft-orgwly.vip","port":443,"udp":true,"password":"37353bae-4cbf-447a-bf5a-d6cb7d9b6d5c","sni":"tls.microsoft-orgwly.vip","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国->🇮🇳_IN_印度","type":"vmess","server":"yd1.01dj.sbs","port":443,"cipher":"auto","uuid":"95b2dc83-a476-4a82-93b2-0d77b4c30c18","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/sometimesnaive","headers":{"host":"yd1.01dj.sbs"}}}
+  - {"name":"🇬🇧_GB_英国","type":"trojan","server":"gb3.microsoft-orgwly.vip","port":35625,"udp":true,"password":"a132d6ab-fdd0-4d16-b01b-1bfc43fbe015","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"38.63.0.69","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇺🇸_US_美国_3","type":"trojan","server":"us1.microsoft-orgwly.vip","port":80,"udp":true,"password":"a132d6ab-fdd0-4d16-b01b-1bfc43fbe015","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇭🇰_HK_香港_3","type":"trojan","server":"hk2.microsoft-orgwly.vip","port":443,"udp":true,"password":"a132d6ab-fdd0-4d16-b01b-1bfc43fbe015","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_4","type":"vmess","server":"38.63.0.93","port":47002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇫🇷_FR_法国","type":"trojan","server":"fr1.microsoft-orgwly.vip","port":24667,"udp":true,"password":"a132d6ab-fdd0-4d16-b01b-1bfc43fbe015","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇸🇬_电报https://t.me/chykj_1
-      - "🇨🇳_电报https://t.me/chykj_2\r"
-      - "🇭🇰_电报https://t.me/chykj_33\r"
+      - 🇭🇰_HK_香港_1
+      - 🇺🇸_US_美国_1
+      - 🇭🇰_HK_香港_2
+      - 🇺🇸_US_美国->🇮🇳_IN_印度
+      - 🇬🇧_GB_英国
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇭🇰_HK_香港_3
+      - 🇺🇸_US_美国_4
+      - 🇫🇷_FR_法国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬_电报https://t.me/chykj_1
-      - "🇨🇳_电报https://t.me/chykj_2\r"
-      - "🇭🇰_电报https://t.me/chykj_33\r"
+      - 🇭🇰_HK_香港_1
+      - 🇺🇸_US_美国_1
+      - 🇭🇰_HK_香港_2
+      - 🇺🇸_US_美国->🇮🇳_IN_印度
+      - 🇬🇧_GB_英国
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇭🇰_HK_香港_3
+      - 🇺🇸_US_美国_4
+      - 🇫🇷_FR_法国
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇸🇬_电报https://t.me/chykj_1
-      - "🇨🇳_电报https://t.me/chykj_2\r"
-      - "🇭🇰_电报https://t.me/chykj_33\r"
+      - 🇭🇰_HK_香港_1
+      - 🇺🇸_US_美国_1
+      - 🇭🇰_HK_香港_2
+      - 🇺🇸_US_美国->🇮🇳_IN_印度
+      - 🇬🇧_GB_英国
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇭🇰_HK_香港_3
+      - 🇺🇸_US_美国_4
+      - 🇫🇷_FR_法国
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇬_电报https://t.me/chykj_1
-      - "🇨🇳_电报https://t.me/chykj_2\r"
-      - "🇭🇰_电报https://t.me/chykj_33\r"
+      - 🇭🇰_HK_香港_1
+      - 🇺🇸_US_美国_1
+      - 🇭🇰_HK_香港_2
+      - 🇺🇸_US_美国->🇮🇳_IN_印度
+      - 🇬🇧_GB_英国
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇭🇰_HK_香港_3
+      - 🇺🇸_US_美国_4
+      - 🇫🇷_FR_法国
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇸🇬_电报https://t.me/chykj_1
-      - "🇨🇳_电报https://t.me/chykj_2\r"
-      - "🇭🇰_电报https://t.me/chykj_33\r"
+      - 🇭🇰_HK_香港_1
+      - 🇺🇸_US_美国_1
+      - 🇭🇰_HK_香港_2
+      - 🇺🇸_US_美国->🇮🇳_IN_印度
+      - 🇬🇧_GB_英国
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇭🇰_HK_香港_3
+      - 🇺🇸_US_美国_4
+      - 🇫🇷_FR_法国
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇬_电报https://t.me/chykj_1
-      - "🇨🇳_电报https://t.me/chykj_2\r"
-      - "🇭🇰_电报https://t.me/chykj_33\r"
+      - 🇭🇰_HK_香港_1
+      - 🇺🇸_US_美国_1
+      - 🇭🇰_HK_香港_2
+      - 🇺🇸_US_美国->🇮🇳_IN_印度
+      - 🇬🇧_GB_英国
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇭🇰_HK_香港_3
+      - 🇺🇸_US_美国_4
+      - 🇫🇷_FR_法国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -97,9 +146,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬_电报https://t.me/chykj_1
-      - "🇨🇳_电报https://t.me/chykj_2\r"
-      - "🇭🇰_电报https://t.me/chykj_33\r"
+      - 🇭🇰_HK_香港_1
+      - 🇺🇸_US_美国_1
+      - 🇭🇰_HK_香港_2
+      - 🇺🇸_US_美国->🇮🇳_IN_印度
+      - 🇬🇧_GB_英国
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇭🇰_HK_香港_3
+      - 🇺🇸_US_美国_4
+      - 🇫🇷_FR_法国
 
 rules:
 # 本地/局域网地址
