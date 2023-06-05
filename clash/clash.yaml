@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-06-05 18:56:40
+# 创建时间：2023-06-05 20:28:30
 # 使用模版：V2RaySE 默认模版
-# 节点数量：1
+# 节点数量：7
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,46 +21,88 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"美国-4.25MB/s(Youtube:不良林)","type":"vmess","server":"137.175.29.38","port":53986,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"defaultName_1","type":"ssr","server":"~OxYВ\u0000��\u000ba&3\u0017�8XimJ`\u0004,\u0019}�s�W�l\r�1\"V\r��\u001e��^gǨ","port":null,"password":"","cipher":"dummy"}
+  - {"name":"defaultName_2","type":"ssr","server":"�k\r����@t_ک���&���X","port":null,"password":"","cipher":"dummy","protocol":"�Ʃ�D\tn�����\u0007\u0005��+2Z�b6-�.�;(M\u0010_���\\���"}
+  - {"name":"defaultName_3","type":"ssr","server":"}�6\f\u0013��]�\n �B&���)��t�i3�\t\u00198i�xL�].�\u0001h�[\u0018\u0018�\u000e՟�\u0000�c�Ka8~�1�\u0017\u0002��W��","port":null,"password":"","cipher":"dummy"}
+  - {"name":"defaultName_4","type":"ssr","server":"�5Q�WWC~!g)\u001d\b`\u0010Hy\u0017 s�5\u0013�Mw�敺\u0002��7c��>��\u00144-\u0011�q�\u0014]˪o�#Z�.K��L�%\u000fc\rjU���tO�R��#z\"F��� F�\t[�\u0013ٺ#e05_��EЊ����\u0000�B","port":null,"password":"","cipher":"dummy"}
+  - {"name":"defaultName_5","type":"ssr","server":"�v���y\u0017\u001d����@��\u0019\u0019�]<�\u0010=��B>����S� Sч�=�~!�\u0010&��,\u0001O9���t\u001e�g|S","port":null,"password":"","cipher":"dummy","protocol":"��b�\u0005\u000ev`\u001d�� �\u001aD���9@�ŁgBb\u0015�[��2r\u000bL\"�x\f�\t`�\u0004J�|��\u00024�\u0000�)tI��"}
+  - {"name":"defaultName_6","type":"ssr","server":"�\u0006�\b�x~����܍\u0004�T!\u0012+!%��V�TE\u000fb\u001f+,\u0001��A3�?���","port":null,"password":"","cipher":"dummy","protocol":"�\u0006�lT�C��\u0003�#�g�RON}�0mq�[\u0010�h�B����{��\t��3�k�\t\u000e�\u0002\u0001�F�Sύ\u0017֌��Y�\u0012��"}
+  - {"name":"defaultName_7","type":"ssr","server":"��\u000fe���U�4�) �70�V�(�\u0001���S�\b��\u0013]*��","port":null,"password":"","cipher":"dummy"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 美国-4.25MB/s(Youtube:不良林)
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - defaultName_4
+      - defaultName_5
+      - defaultName_6
+      - defaultName_7
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 美国-4.25MB/s(Youtube:不良林)
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - defaultName_4
+      - defaultName_5
+      - defaultName_6
+      - defaultName_7
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国-4.25MB/s(Youtube:不良林)
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - defaultName_4
+      - defaultName_5
+      - defaultName_6
+      - defaultName_7
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 美国-4.25MB/s(Youtube:不良林)
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - defaultName_4
+      - defaultName_5
+      - defaultName_6
+      - defaultName_7
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 美国-4.25MB/s(Youtube:不良林)
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - defaultName_4
+      - defaultName_5
+      - defaultName_6
+      - defaultName_7
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 美国-4.25MB/s(Youtube:不良林)
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - defaultName_4
+      - defaultName_5
+      - defaultName_6
+      - defaultName_7
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -83,7 +125,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国-4.25MB/s(Youtube:不良林)
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - defaultName_4
+      - defaultName_5
+      - defaultName_6
+      - defaultName_7
 
 rules:
 # 本地/局域网地址
