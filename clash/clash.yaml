@@ -1,11 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：2023-06-16 06:46:59
+# 客户端：Clash
+# 创建时间：2023-06-16 11:06:21
 # 使用模版：V2RaySE 默认模版
-# 节点数量：16
+# 节点数量：9
 ####################################
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -22,163 +21,102 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"CA加拿大wz","type":"vmess","server":"la.weizai2023.uk.eu.org","port":80,"cipher":"auto","uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"ca.ilovescp.com"}}}
-  - {"name":"UK英国wz","type":"vmess","server":"wz.weishao2023.uk.eu.org","port":443,"cipher":"auto","uuid":"e7d1e562-2af9-40ac-9fad-d1d4806ff1e9","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/mioooo?ed=2048","headers":{"host":"vceu1.unioreo.rip"}}}
-  - {"name":"SG新加坡wz","type":"vmess","server":"la.weizai2023.uk.eu.org","port":80,"cipher":"auto","uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"do.sharecentrepro.com"}}}
-  - {"name":"US美国wz","type":"vmess","server":"la.weizai2023.uk.eu.org","port":80,"cipher":"auto","uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"lv1.sharecentrepro.org"}}}
-  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"zfc.windowsupdate1.com","port":443,"cipher":"auto","uuid":"41bec492-cd79-4b57-9a15-7d2bb00fcfca","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/pq/usfh2?ed=2048","headers":{"host":"usfh2.pqjc.buzz"}}}
-  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"173.245.59.31","port":80,"cipher":"auto","uuid":"a67679a6-a186-4d62-f84e-f3f00dc7745e","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/youlingkaishi01","headers":{"host":"tou.vtcss.top"}}}
-  - {"name":"🇺🇸_US_美国_3","type":"vmess","server":"104.20.171.133","port":80,"cipher":"auto","uuid":"a67679a6-a186-4d62-f84e-f3f00dc7745e","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/youlingkaishi01","headers":{"host":"tou.vtcss.top"}}}
-  - {"name":"🇺🇸美国-由零開始_1","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"aes-128-gcm","uuid":"2d5d8b9c-8ec4-4a37-b610-78e71e13eaef","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"lv1.sharecentrepro.org"}}}
-  - {"name":"🇺🇸美国-由零開始_2","type":"vmess","server":"zfc.windowsupdate1.com","port":443,"cipher":"auto","uuid":"41bec492-cd79-4b57-9a15-7d2bb00fcfca","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/pq/usfh1?ed=2048","headers":{"host":"usfh1.pqjc.buzz"}}}
-  - {"name":"🇺🇸美国-由零開始_3","type":"vmess","server":"zfc.windowsupdate1.com","port":443,"cipher":"auto","uuid":"41bec492-cd79-4b57-9a15-7d2bb00fcfca","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/pq/usfh2?ed=2048","headers":{"host":"usfh2.pqjc.buzz"}}}
-  - {"name":"🇺🇸美国-由零開始_4","type":"vless","server":"letdown.butterfly-galaxy.com","port":443,"uuid":"f6782b0c-ef3c-4931-81ad-82fe0799b1ff","tls":true,"servername":"letdown.butterfly-galaxy.com","network":"ws","ws-opts":{"path":"/nimws"}}
-  - {"name":"US美国-顺丰资源","type":"vmess","server":"zfc.windowsupdate1.com","port":443,"cipher":"auto","uuid":"41bec492-cd79-4b57-9a15-7d2bb00fcfca","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/pq/usfh2?ed=2048","headers":{"host":"usfh2.pqjc.buzz"}}}
-  - {"name":"TW, Taipei｜4k无压力","type":"ss","server":"43.207.139.238","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇸🇬新加坡SG","type":"vless","server":"20.212.34.6","port":443,"udp":true,"uuid":"a566159f-dbef-4ff7-99df-b97a1960b5be","tls":true}
-  - {"name":"🇸🇬新加坡-Reality\n移动新加坡V6专用节点","type":"vless","server":"[2603","port":null,"udp":true,"uuid":"none:d8a6a531-3b28-4b73-c559-07fd79ed2647","tls":true}
-  - {"name":"瑞典","type":"vmess","server":"37.120.209.125","port":49982,"cipher":"auto","uuid":"dc0cf22d-e35c-4b77-8924-977f6844909b","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"cdn4","type":"vmess","server":"104.26.5.98","port":443,"cipher":"auto","uuid":"b6eb9cb4-5e34-420d-cbd1-5de198b3e373","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"vs2.anglesccs.top"}}}
+  - {"name":"cdn6","type":"vmess","server":"162.159.138.137","port":443,"cipher":"auto","uuid":"b6eb9cb4-5e34-420d-cbd1-5de198b3e373","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"vs2.anglesccs.top"}}}
+  - {"name":"cdn7","type":"vmess","server":"172.67.71.91","port":443,"cipher":"auto","uuid":"b6eb9cb4-5e34-420d-cbd1-5de198b3e373","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"vs2.anglesccs.top"}}}
+  - {"name":"cdn3","type":"vmess","server":"162.159.133.148","port":443,"cipher":"auto","uuid":"b6eb9cb4-5e34-420d-cbd1-5de198b3e373","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"vs2.anglesccs.top"}}}
+  - {"name":"cdn0","type":"vmess","server":"104.26.12.21","port":443,"cipher":"auto","uuid":"b6eb9cb4-5e34-420d-cbd1-5de198b3e373","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"vs2.anglesccs.top"}}}
+  - {"name":"cdn2","type":"vmess","server":"162.159.152.57","port":443,"cipher":"auto","uuid":"b6eb9cb4-5e34-420d-cbd1-5de198b3e373","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"vs2.anglesccs.top"}}}
+  - {"name":"cdn5","type":"vmess","server":"172.64.229.244","port":443,"cipher":"auto","uuid":"b6eb9cb4-5e34-420d-cbd1-5de198b3e373","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"vs2.anglesccs.top"}}}
+  - {"name":"cdn1","type":"vmess","server":"162.159.138.143","port":443,"cipher":"auto","uuid":"b6eb9cb4-5e34-420d-cbd1-5de198b3e373","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"vs2.anglesccs.top"}}}
+  - {"name":"cloud","type":"vmess","server":"vs2.anglesccs.top","port":56304,"cipher":"auto","uuid":"30e69e67-491c-4b46-aa30-60b75325e9db","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - CA加拿大wz
-      - UK英国wz
-      - SG新加坡wz
-      - US美国wz
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸美国-由零開始_1
-      - 🇺🇸美国-由零開始_2
-      - 🇺🇸美国-由零開始_3
-      - 🇺🇸美国-由零開始_4
-      - US美国-顺丰资源
-      - TW, Taipei｜4k无压力
-      - 🇸🇬新加坡SG
-      - |-
-        🇸🇬新加坡-Reality
-        移动新加坡V6专用节点
-      - 瑞典
+      - cdn4
+      - cdn6
+      - cdn7
+      - cdn3
+      - cdn0
+      - cdn2
+      - cdn5
+      - cdn1
+      - cloud
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - CA加拿大wz
-      - UK英国wz
-      - SG新加坡wz
-      - US美国wz
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸美国-由零開始_1
-      - 🇺🇸美国-由零開始_2
-      - 🇺🇸美国-由零開始_3
-      - 🇺🇸美国-由零開始_4
-      - US美国-顺丰资源
-      - TW, Taipei｜4k无压力
-      - 🇸🇬新加坡SG
-      - |-
-        🇸🇬新加坡-Reality
-        移动新加坡V6专用节点
-      - 瑞典
+      - cdn4
+      - cdn6
+      - cdn7
+      - cdn3
+      - cdn0
+      - cdn2
+      - cdn5
+      - cdn1
+      - cloud
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CA加拿大wz
-      - UK英国wz
-      - SG新加坡wz
-      - US美国wz
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸美国-由零開始_1
-      - 🇺🇸美国-由零開始_2
-      - 🇺🇸美国-由零開始_3
-      - 🇺🇸美国-由零開始_4
-      - US美国-顺丰资源
-      - TW, Taipei｜4k无压力
-      - 🇸🇬新加坡SG
-      - |-
-        🇸🇬新加坡-Reality
-        移动新加坡V6专用节点
-      - 瑞典
+      - cdn4
+      - cdn6
+      - cdn7
+      - cdn3
+      - cdn0
+      - cdn2
+      - cdn5
+      - cdn1
+      - cloud
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - CA加拿大wz
-      - UK英国wz
-      - SG新加坡wz
-      - US美国wz
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸美国-由零開始_1
-      - 🇺🇸美国-由零開始_2
-      - 🇺🇸美国-由零開始_3
-      - 🇺🇸美国-由零開始_4
-      - US美国-顺丰资源
-      - TW, Taipei｜4k无压力
-      - 🇸🇬新加坡SG
-      - |-
-        🇸🇬新加坡-Reality
-        移动新加坡V6专用节点
-      - 瑞典
+      - cdn4
+      - cdn6
+      - cdn7
+      - cdn3
+      - cdn0
+      - cdn2
+      - cdn5
+      - cdn1
+      - cloud
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - CA加拿大wz
-      - UK英国wz
-      - SG新加坡wz
-      - US美国wz
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸美国-由零開始_1
-      - 🇺🇸美国-由零開始_2
-      - 🇺🇸美国-由零開始_3
-      - 🇺🇸美国-由零開始_4
-      - US美国-顺丰资源
-      - TW, Taipei｜4k无压力
-      - 🇸🇬新加坡SG
-      - |-
-        🇸🇬新加坡-Reality
-        移动新加坡V6专用节点
-      - 瑞典
+      - cdn4
+      - cdn6
+      - cdn7
+      - cdn3
+      - cdn0
+      - cdn2
+      - cdn5
+      - cdn1
+      - cloud
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - CA加拿大wz
-      - UK英国wz
-      - SG新加坡wz
-      - US美国wz
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸美国-由零開始_1
-      - 🇺🇸美国-由零開始_2
-      - 🇺🇸美国-由零開始_3
-      - 🇺🇸美国-由零開始_4
-      - US美国-顺丰资源
-      - TW, Taipei｜4k无压力
-      - 🇸🇬新加坡SG
-      - |-
-        🇸🇬新加坡-Reality
-        移动新加坡V6专用节点
-      - 瑞典
+      - cdn4
+      - cdn6
+      - cdn7
+      - cdn3
+      - cdn0
+      - cdn2
+      - cdn5
+      - cdn1
+      - cloud
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -201,24 +139,15 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CA加拿大wz
-      - UK英国wz
-      - SG新加坡wz
-      - US美国wz
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸美国-由零開始_1
-      - 🇺🇸美国-由零開始_2
-      - 🇺🇸美国-由零開始_3
-      - 🇺🇸美国-由零開始_4
-      - US美国-顺丰资源
-      - TW, Taipei｜4k无压力
-      - 🇸🇬新加坡SG
-      - |-
-        🇸🇬新加坡-Reality
-        移动新加坡V6专用节点
-      - 瑞典
+      - cdn4
+      - cdn6
+      - cdn7
+      - cdn3
+      - cdn0
+      - cdn2
+      - cdn5
+      - cdn1
+      - cloud
 
 rules:
 # 本地/局域网地址
