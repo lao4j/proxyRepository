@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：2023-06-22 15:38:08
+# 客户端：Clash.Meta
+# 创建时间：2023-06-22 17:26:27
 # 使用模版：V2RaySE 默认模版
 # 节点数量：1
 ####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -21,46 +22,46 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"US checkpoint","type":"vmess","server":"34.96.223.136","port":443,"cipher":"auto","uuid":"a573ca7a-313e-4051-b449-ecacd83c7d8a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"hysteria","type":"hysteria","server":"152.69.208.195","port":18209,"sni":"www.bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"d50157","up":10,"down":50}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - US checkpoint
+      - hysteria
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - US checkpoint
+      - hysteria
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US checkpoint
+      - hysteria
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - US checkpoint
+      - hysteria
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - US checkpoint
+      - hysteria
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - US checkpoint
+      - hysteria
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -83,7 +84,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US checkpoint
+      - hysteria
 
 rules:
 # 本地/局域网地址
