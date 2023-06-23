@@ -1,11 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：2023-06-23 22:06:59
+# 客户端：Clash
+# 创建时间：2023-06-23 23:05:23
 # 使用模版：V2RaySE 默认模版
-# 节点数量：1
+# 节点数量：10
 ####################################
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -22,46 +21,109 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"hysteria","type":"hysteria","server":"152.69.208.195","port":18209,"sni":"www.bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"d50157","up":10,"down":50}
+  - {"name":"🇨🇳_CN_中国->🇰🇷_KR_韩国","type":"ss","server":"ctkr2.createmofa.xyz","port":32998,"password":"1c74f602-87e2-4101-93e0-f8360264870a","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇯🇵_JP_日本->🇺🇸_US_美国","type":"trojan","server":"azjp2.downloadvip.cfd","port":443,"udp":true,"password":"a48ef049-f572-4345-b75a-7b85ff83296c","sni":"us1.xn--mes358a9urctx.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"198.2.218.204","port":51203,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇮🇱_IL_以色列->🇳🇱_NL_荷兰_1","type":"trojan","server":"149.50.75.208","port":4003,"udp":true,"password":"TJCfE7Mx2YcA8kX8zg","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"142.4.110.27","port":52908,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇳🇱_NL_荷兰","type":"vmess","server":"188.114.98.138","port":8080,"cipher":"auto","uuid":"3b1b5871-6b4f-461d-8882-eba415d0ddf9","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/qwer","headers":{"host":"txx.vtcss.top"}}}
+  - {"name":"🇮🇱_IL_以色列->🇪🇪_EE_爱沙尼亚","type":"trojan","server":"149.50.92.76","port":4003,"udp":true,"password":"TJCfE7Mx2YcA8kX8zg","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇮🇱_IL_以色列->🇬🇧_GB_英国_1","type":"trojan","server":"uk1.barbecuepie.com","port":4003,"udp":true,"password":"TJCfE7Mx2YcA8kX8zg","sni":"uk1.barbecuepie.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇮🇱_IL_以色列->🇳🇱_NL_荷兰_2","type":"trojan","server":"149.50.75.90","port":4003,"udp":true,"password":"TJCfE7Mx2YcA8kX8zg","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇮🇱_IL_以色列->🇬🇧_GB_英国_2","type":"trojan","server":"149.50.77.108","port":4003,"udp":true,"password":"TJCfE7Mx2YcA8kX8zg","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - hysteria
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇯🇵_JP_日本->🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇮🇱_IL_以色列->🇳🇱_NL_荷兰_1
+      - 🇺🇸_US_美国_2
+      - 🇳🇱_NL_荷兰
+      - 🇮🇱_IL_以色列->🇪🇪_EE_爱沙尼亚
+      - 🇮🇱_IL_以色列->🇬🇧_GB_英国_1
+      - 🇮🇱_IL_以色列->🇳🇱_NL_荷兰_2
+      - 🇮🇱_IL_以色列->🇬🇧_GB_英国_2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - hysteria
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇯🇵_JP_日本->🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇮🇱_IL_以色列->🇳🇱_NL_荷兰_1
+      - 🇺🇸_US_美国_2
+      - 🇳🇱_NL_荷兰
+      - 🇮🇱_IL_以色列->🇪🇪_EE_爱沙尼亚
+      - 🇮🇱_IL_以色列->🇬🇧_GB_英国_1
+      - 🇮🇱_IL_以色列->🇳🇱_NL_荷兰_2
+      - 🇮🇱_IL_以色列->🇬🇧_GB_英国_2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - hysteria
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇯🇵_JP_日本->🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇮🇱_IL_以色列->🇳🇱_NL_荷兰_1
+      - 🇺🇸_US_美国_2
+      - 🇳🇱_NL_荷兰
+      - 🇮🇱_IL_以色列->🇪🇪_EE_爱沙尼亚
+      - 🇮🇱_IL_以色列->🇬🇧_GB_英国_1
+      - 🇮🇱_IL_以色列->🇳🇱_NL_荷兰_2
+      - 🇮🇱_IL_以色列->🇬🇧_GB_英国_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - hysteria
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇯🇵_JP_日本->🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇮🇱_IL_以色列->🇳🇱_NL_荷兰_1
+      - 🇺🇸_US_美国_2
+      - 🇳🇱_NL_荷兰
+      - 🇮🇱_IL_以色列->🇪🇪_EE_爱沙尼亚
+      - 🇮🇱_IL_以色列->🇬🇧_GB_英国_1
+      - 🇮🇱_IL_以色列->🇳🇱_NL_荷兰_2
+      - 🇮🇱_IL_以色列->🇬🇧_GB_英国_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - hysteria
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇯🇵_JP_日本->🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇮🇱_IL_以色列->🇳🇱_NL_荷兰_1
+      - 🇺🇸_US_美国_2
+      - 🇳🇱_NL_荷兰
+      - 🇮🇱_IL_以色列->🇪🇪_EE_爱沙尼亚
+      - 🇮🇱_IL_以色列->🇬🇧_GB_英国_1
+      - 🇮🇱_IL_以色列->🇳🇱_NL_荷兰_2
+      - 🇮🇱_IL_以色列->🇬🇧_GB_英国_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - hysteria
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇯🇵_JP_日本->🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇮🇱_IL_以色列->🇳🇱_NL_荷兰_1
+      - 🇺🇸_US_美国_2
+      - 🇳🇱_NL_荷兰
+      - 🇮🇱_IL_以色列->🇪🇪_EE_爱沙尼亚
+      - 🇮🇱_IL_以色列->🇬🇧_GB_英国_1
+      - 🇮🇱_IL_以色列->🇳🇱_NL_荷兰_2
+      - 🇮🇱_IL_以色列->🇬🇧_GB_英国_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -84,7 +146,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - hysteria
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇯🇵_JP_日本->🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇮🇱_IL_以色列->🇳🇱_NL_荷兰_1
+      - 🇺🇸_US_美国_2
+      - 🇳🇱_NL_荷兰
+      - 🇮🇱_IL_以色列->🇪🇪_EE_爱沙尼亚
+      - 🇮🇱_IL_以色列->🇬🇧_GB_英国_1
+      - 🇮🇱_IL_以色列->🇳🇱_NL_荷兰_2
+      - 🇮🇱_IL_以色列->🇬🇧_GB_英国_2
 
 rules:
 # 本地/局域网地址
