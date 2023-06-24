@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-06-24 21:16:24
+# 创建时间：2023-06-24 21:38:17
 # 使用模版：V2RaySE 默认模版
-# 节点数量：9
+# 节点数量：15
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -22,102 +22,144 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"v2rayse_test_1","type":"ss","server":"198.57.27.218","port":5004,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
-  - {"name":"v2rayse_test_2","type":"vmess","server":"154.23.190.162","port":443,"cipher":"auto","uuid":"b9984674-f771-4e67-a198-c7e60720ba2c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"v2rayse_test_3","type":"vmess","server":"154.23.190.162","port":443,"cipher":"auto","uuid":"b9984674-f771-4e67-a198-c7e60720ba2c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"defaultName_1","type":"ssr","server":"20.239.49.44","port":59814,"password":"3df57276-03ef-45cf-bdd4-4edb6dfaa0ef","cipher":"dummy","obfs":"plain","protocol":"origin","group":"https://v2rayse.com"}
-  - {"name":"v2rayse_test_4","type":"trojan","server":"ca-trojan.bonds.id","port":443,"udp":true,"password":"bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272","skip-cert-verify":true}
-  - {"name":"defaultName_2","type":"http","server":"124.15.12.24","port":251,"username":"username","password":"password"}
-  - {"name":"defaultName_3","type":"socks5","server":"124.15.12.24","port":2312}
-  - {"name":"Hys-1.2.3.4","type":"hysteria","server":"1.2.3.4","port":12854,"sni":"wechat.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"pekopeko","up":50,"down":250}
-  - {"name":"test","type":"vless","server":"1.2.3.4","port":7777,"uuid":"abc-def-ghi-fge-zsx","tls":true,"network":"tcp"}
+  - {"name":"cf bwg vless","type":"vless","server":"tl.printmyhouse.io","port":443,"uuid":"2830966d-f08d-474f-d462-e7854a0781c4","tls":true,"servername":"tl.printmyhouse.io","network":"ws","ws-opts":{"path":"/pkwok33899"},"client-fingerprint":"chrome"}
+  - {"name":"vless ws tls","type":"vless","server":"txt.kevinlynn.buzz","port":443,"uuid":"03e5cd21-9d27-4451-ecec-cd7d9125e395","tls":true,"servername":"txt.kevinlynn.buzz","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
+  - {"name":"🇺🇸 美国vless","type":"vless","server":"74.211.110.69","port":443,"uuid":"daf1d187-27be-44f7-a1b5-b02cd3c84c56","tls":true,"flow":"xtls-rprx-direct","client-fingerprint":"chrome"}
+  - {"name":"james","type":"trojan","server":"64.64.247.178","port":42014,"udp":true,"password":"james007","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"SVless","type":"vless","server":"main.fvfvfv.top","port":443,"uuid":"778bbd6b-1bad-4510-94db-256aa35cf38c","tls":true,"servername":"main.fvfvfv.top","network":"ws","ws-opts":{"path":"/gfgfgf"},"client-fingerprint":"chrome"}
+  - {"name":"fantastichelen","type":"vless","server":"199.19.105.68","port":443,"uuid":"d5f2fd0d-e14b-4711-9c99-76bcb2f59565","tls":true,"flow":"xtls-rprx-direct","client-fingerprint":"chrome"}
+  - {"name":"🇺🇸 洛杉矶","type":"vless","server":"64.64.229.142","port":443,"uuid":"085e4ac8-4eb1-4e9a-91f0-5130098b94fd","tls":true,"flow":"xtls-rprx-direct","client-fingerprint":"chrome"}
+  - {"name":"Marisol","type":"vless","server":"23.105.204.112","port":443,"uuid":"2bf35487-cc48-4950-bd2e-7b134681bc0d","tls":true,"flow":"xtls-rprx-direct","client-fingerprint":"chrome"}
+  - {"name":"cfvless","type":"vless","server":"test.testv2rayrss.top","port":443,"uuid":"5190f749-e8d0-459d-8f55-7fdea9b4ea6e","tls":true,"servername":"test.testv2rayrss.top","network":"ws","ws-opts":{"path":"/fsaf123"},"client-fingerprint":"chrome"}
+  - {"name":"🇺🇸 us-bwg","type":"vless","server":"212.50.231.22","port":443,"uuid":"b55a057d-4447-467c-ee57-60addbd30d52","tls":true,"flow":"xtls-rprx-direct","client-fingerprint":"chrome"}
+  - {"name":"bwgcfvless","type":"vless","server":"bwg1.doyo.work","port":443,"uuid":"b0719f7b-3e18-4191-c617-79be7de602a1","tls":true,"servername":"bwg1.doyo.work","network":"ws","ws-opts":{"path":"/data2022"}}
+  - {"name":"搬瓦工","type":"vless","server":"li.lijuecan.buzz","port":443,"uuid":"39512178-76b7-47a4-8805-9983049b95e3","tls":true,"servername":"li.lijuecan.buzz","network":"ws","ws-opts":{"path":"/dfggh"}}
+  - {"name":"defaultName","type":"vless","server":"199.19.105.233","port":30356,"uuid":"5b7f8abd-1a19-4bbf-debc-bbb77d8786d5","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"vless","type":"vless","server":"64.64.255.206","port":443,"uuid":"9e671a3b-ece8-46b1-d07e-5f8b9b38cf3d","tls":false,"flow":"xtls-rprx-direct","network":"tcp"}
+  - {"name":"CF VLESS","type":"vless","server":"10256869.xyz","port":443,"uuid":"86366038-6411-43f9-9043-d0b02915c3f7","tls":true,"servername":"10256869.xyz","network":"ws","ws-opts":{"path":"/wang"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - v2rayse_test_1
-      - v2rayse_test_2
-      - v2rayse_test_3
-      - defaultName_1
-      - v2rayse_test_4
-      - defaultName_2
-      - defaultName_3
-      - Hys-1.2.3.4
-      - test
+      - cf bwg vless
+      - vless ws tls
+      - 🇺🇸 美国vless
+      - james
+      - SVless
+      - fantastichelen
+      - 🇺🇸 洛杉矶
+      - Marisol
+      - cfvless
+      - 🇺🇸 us-bwg
+      - bwgcfvless
+      - 搬瓦工
+      - defaultName
+      - vless
+      - CF VLESS
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - v2rayse_test_1
-      - v2rayse_test_2
-      - v2rayse_test_3
-      - defaultName_1
-      - v2rayse_test_4
-      - defaultName_2
-      - defaultName_3
-      - Hys-1.2.3.4
-      - test
+      - cf bwg vless
+      - vless ws tls
+      - 🇺🇸 美国vless
+      - james
+      - SVless
+      - fantastichelen
+      - 🇺🇸 洛杉矶
+      - Marisol
+      - cfvless
+      - 🇺🇸 us-bwg
+      - bwgcfvless
+      - 搬瓦工
+      - defaultName
+      - vless
+      - CF VLESS
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - v2rayse_test_1
-      - v2rayse_test_2
-      - v2rayse_test_3
-      - defaultName_1
-      - v2rayse_test_4
-      - defaultName_2
-      - defaultName_3
-      - Hys-1.2.3.4
-      - test
+      - cf bwg vless
+      - vless ws tls
+      - 🇺🇸 美国vless
+      - james
+      - SVless
+      - fantastichelen
+      - 🇺🇸 洛杉矶
+      - Marisol
+      - cfvless
+      - 🇺🇸 us-bwg
+      - bwgcfvless
+      - 搬瓦工
+      - defaultName
+      - vless
+      - CF VLESS
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - v2rayse_test_1
-      - v2rayse_test_2
-      - v2rayse_test_3
-      - defaultName_1
-      - v2rayse_test_4
-      - defaultName_2
-      - defaultName_3
-      - Hys-1.2.3.4
-      - test
+      - cf bwg vless
+      - vless ws tls
+      - 🇺🇸 美国vless
+      - james
+      - SVless
+      - fantastichelen
+      - 🇺🇸 洛杉矶
+      - Marisol
+      - cfvless
+      - 🇺🇸 us-bwg
+      - bwgcfvless
+      - 搬瓦工
+      - defaultName
+      - vless
+      - CF VLESS
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - v2rayse_test_1
-      - v2rayse_test_2
-      - v2rayse_test_3
-      - defaultName_1
-      - v2rayse_test_4
-      - defaultName_2
-      - defaultName_3
-      - Hys-1.2.3.4
-      - test
+      - cf bwg vless
+      - vless ws tls
+      - 🇺🇸 美国vless
+      - james
+      - SVless
+      - fantastichelen
+      - 🇺🇸 洛杉矶
+      - Marisol
+      - cfvless
+      - 🇺🇸 us-bwg
+      - bwgcfvless
+      - 搬瓦工
+      - defaultName
+      - vless
+      - CF VLESS
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - v2rayse_test_1
-      - v2rayse_test_2
-      - v2rayse_test_3
-      - defaultName_1
-      - v2rayse_test_4
-      - defaultName_2
-      - defaultName_3
-      - Hys-1.2.3.4
-      - test
+      - cf bwg vless
+      - vless ws tls
+      - 🇺🇸 美国vless
+      - james
+      - SVless
+      - fantastichelen
+      - 🇺🇸 洛杉矶
+      - Marisol
+      - cfvless
+      - 🇺🇸 us-bwg
+      - bwgcfvless
+      - 搬瓦工
+      - defaultName
+      - vless
+      - CF VLESS
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -140,15 +182,21 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - v2rayse_test_1
-      - v2rayse_test_2
-      - v2rayse_test_3
-      - defaultName_1
-      - v2rayse_test_4
-      - defaultName_2
-      - defaultName_3
-      - Hys-1.2.3.4
-      - test
+      - cf bwg vless
+      - vless ws tls
+      - 🇺🇸 美国vless
+      - james
+      - SVless
+      - fantastichelen
+      - 🇺🇸 洛杉矶
+      - Marisol
+      - cfvless
+      - 🇺🇸 us-bwg
+      - bwgcfvless
+      - 搬瓦工
+      - defaultName
+      - vless
+      - CF VLESS
 
 rules:
 # 本地/局域网地址
