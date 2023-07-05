@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-07-05 18:58:00
+# 创建时间：2023-07-05 23:00:54
 # 使用模版：V2RaySE 默认模版
-# 节点数量：1
+# 节点数量：10
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,46 +21,109 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"defaultName","type":"socks5","server":"2001:41d0:c:e70:1234:1234:125:1","port":8388,"username":"fans","password":"134679"}
+  - {"name":"🇰🇷_KR_韩国_1","type":"ss","server":"3.35.230.64","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇨🇦_CA_加拿大->🇺🇸_US_美国","type":"vmess","server":"23.227.38.99","port":443,"cipher":"auto","uuid":"86d37526-5758-4cec-862f-df404b313086","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/3G6WPDL7","headers":{"host":"1.freek1.xyz"}}}
+  - {"name":"🇰🇷_KR_韩国_2","type":"ss","server":"43.202.55.210","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇺🇸_US_美国_1","type":"ss","server":"167.160.90.253","port":25511,"password":"dongtaiwang.com","cipher":"aes-256-gcm"}
+  - {"name":"🇨🇳_CN_中国->🇸🇬_SG_新加坡","type":"ss","server":"video.tiktokuu.xyz","port":735,"password":"BoomCloud2020","cipher":"rc4-md5"}
+  - {"name":"🇺🇸_US_美国->🇯🇵_JP_日本","type":"vmess","server":"ming2.kiwireich.com","port":443,"cipher":"auto","uuid":"18e5f40f-bda6-4c15-9334-e87cda6047af","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ray","headers":{"host":"ming2.kiwireich.com"}}}
+  - {"name":"🇰🇷_KR_韩国_3","type":"trojan","server":"kr5.microsoft-orgwly.vip","port":10023,"udp":true,"password":"db7a325b-b2a2-4217-af2c-1e2bfdc8d71c","sni":"tls.microsoft-orgwly.vip","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"107.167.16.217","port":33589,"cipher":"auto","uuid":"8c679b81-84fc-43ce-9553-ddca575a6949","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_CN_中国->🇰🇷_KR_韩国","type":"ss","server":"video.tiktokuu.xyz","port":722,"password":"BoomCloud2020","cipher":"rc4-md5"}
+  - {"name":"🇺🇸_US_美国_3","type":"vmess","server":"198.2.218.204","port":51203,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - defaultName
+      - 🇰🇷_KR_韩国_1
+      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
+      - 🇰🇷_KR_韩国_2
+      - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇰🇷_KR_韩国_3
+      - 🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇺🇸_US_美国_3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - defaultName
+      - 🇰🇷_KR_韩国_1
+      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
+      - 🇰🇷_KR_韩国_2
+      - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇰🇷_KR_韩国_3
+      - 🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇺🇸_US_美国_3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - defaultName
+      - 🇰🇷_KR_韩国_1
+      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
+      - 🇰🇷_KR_韩国_2
+      - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇰🇷_KR_韩国_3
+      - 🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇺🇸_US_美国_3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - defaultName
+      - 🇰🇷_KR_韩国_1
+      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
+      - 🇰🇷_KR_韩国_2
+      - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇰🇷_KR_韩国_3
+      - 🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇺🇸_US_美国_3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - defaultName
+      - 🇰🇷_KR_韩国_1
+      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
+      - 🇰🇷_KR_韩国_2
+      - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇰🇷_KR_韩国_3
+      - 🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇺🇸_US_美国_3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - defaultName
+      - 🇰🇷_KR_韩国_1
+      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
+      - 🇰🇷_KR_韩国_2
+      - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇰🇷_KR_韩国_3
+      - 🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇺🇸_US_美国_3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -83,7 +146,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - defaultName
+      - 🇰🇷_KR_韩国_1
+      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
+      - 🇰🇷_KR_韩国_2
+      - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇰🇷_KR_韩国_3
+      - 🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇺🇸_US_美国_3
 
 rules:
 # 本地/局域网地址
