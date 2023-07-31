@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：2023-07-31 20:25:30
+# 客户端：Clash.Meta
+# 创建时间：2023-07-31 20:46:57
 # 使用模版：ACL4SSR.ini
 # 节点数量：10
-# 节点类型：ss, vmess, ssr
+# 节点类型：ss, vmess, ssr, trojan, http, socks5, hysteria, vless
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -22,109 +23,109 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇸🇬_SG_新加坡_1","type":"ss","server":"13.213.44.183","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"142.4.109.68","port":46672,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"162.159.130.198","port":80,"cipher":"auto","uuid":"5f751c6e-50b1-4797-ba8e-6ffe324a0bce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"dp4.scproxy.top"}}}
-  - {"name":"🇺🇸_US_美国_3","type":"ss","server":"34.219.40.74","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇺🇸_US_美国_4","type":"vmess","server":"cdn.narutos.top","port":8880,"cipher":"auto","uuid":"4b5e4565-322f-4223-a891-78a84f189726","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/GdtYWlsLmNvbSJ9LCJjb3V","headers":{"host":"newyork.yj2022.gq"}}}
-  - {"name":"🇺🇸_US_美国->🇳🇱_NL_荷兰","type":"vmess","server":"45.199.138.138","port":44862,"cipher":"auto","uuid":"fe5f69e7-e183-439b-950b-9661ef0651f2","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇫🇷_FR_法国->🇳🇱_NL_荷兰","type":"vmess","server":"156.249.18.37","port":48222,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
-  - {"name":"🇸🇬_SG_新加坡_2","type":"ssr","server":"sg-am3.eqsunshine.com","port":32001,"password":"3g0dHlKME","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"origin"}
-  - {"name":"🇨🇳_CN_中国->🇸🇨_SC_塞舌尔","type":"vmess","server":"120.233.43.62","port":41402,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国->🇸🇬_SG_新加坡","type":"vmess","server":"xjp.shabijichang.com","port":80,"cipher":"auto","uuid":"77e02fea-35f7-46f1-a5c7-c8fdcbba1421","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"xjp.shabijichang.com"}}}
+  - {"name":"v2rayse_test_1","type":"ss","server":"198.57.27.218","port":5004,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
+  - {"name":"v2rayse_test_2","type":"vmess","server":"154.23.190.162","port":443,"cipher":"auto","uuid":"b9984674-f771-4e67-a198-c7e60720ba2c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"v2rayse_test_3","type":"vmess","server":"154.23.190.162","port":443,"cipher":"auto","uuid":"b9984674-f771-4e67-a198-c7e60720ba2c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"defaultName_1","type":"ssr","server":"20.239.49.44","port":59814,"password":"3df57276-03ef-45cf-bdd4-4edb6dfaa0ef","cipher":"dummy","obfs":"plain","protocol":"origin","group":"https://v2rayse.com"}
+  - {"name":"v2rayse_test_4","type":"trojan","server":"ca-trojan.bonds.id","port":443,"udp":true,"password":"bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272","skip-cert-verify":true}
+  - {"name":"defaultName_2","type":"http","server":"124.15.12.24","port":251,"username":"username","password":"password"}
+  - {"name":"defaultName_3","type":"socks5","server":"124.15.12.24","port":2312}
+  - {"name":"Hys-1.2.3.4","type":"hysteria","server":"1.2.3.4","port":12854,"sni":"wechat.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"pekopeko","up":50,"down":250}
+  - {"name":"test","type":"vless","server":"1.2.3.4","port":7777,"uuid":"abc-def-ghi-fge-zsx","tls":true,"network":"tcp"}
+  - {"name":"defaultName_4","type":"socks5","server":"1.2.3.4","port":123,"username":"username","password":"password"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇸🇬_SG_新加坡_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇫🇷_FR_法国->🇳🇱_NL_荷兰
-      - 🇸🇬_SG_新加坡_2
-      - 🇨🇳_CN_中国->🇸🇨_SC_塞舌尔
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
+      - v2rayse_test_1
+      - v2rayse_test_2
+      - v2rayse_test_3
+      - defaultName_1
+      - v2rayse_test_4
+      - defaultName_2
+      - defaultName_3
+      - Hys-1.2.3.4
+      - test
+      - defaultName_4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬_SG_新加坡_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇫🇷_FR_法国->🇳🇱_NL_荷兰
-      - 🇸🇬_SG_新加坡_2
-      - 🇨🇳_CN_中国->🇸🇨_SC_塞舌尔
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
+      - v2rayse_test_1
+      - v2rayse_test_2
+      - v2rayse_test_3
+      - defaultName_1
+      - v2rayse_test_4
+      - defaultName_2
+      - defaultName_3
+      - Hys-1.2.3.4
+      - test
+      - defaultName_4
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇸🇬_SG_新加坡_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇫🇷_FR_法国->🇳🇱_NL_荷兰
-      - 🇸🇬_SG_新加坡_2
-      - 🇨🇳_CN_中国->🇸🇨_SC_塞舌尔
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
+      - v2rayse_test_1
+      - v2rayse_test_2
+      - v2rayse_test_3
+      - defaultName_1
+      - v2rayse_test_4
+      - defaultName_2
+      - defaultName_3
+      - Hys-1.2.3.4
+      - test
+      - defaultName_4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇬_SG_新加坡_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇫🇷_FR_法国->🇳🇱_NL_荷兰
-      - 🇸🇬_SG_新加坡_2
-      - 🇨🇳_CN_中国->🇸🇨_SC_塞舌尔
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
+      - v2rayse_test_1
+      - v2rayse_test_2
+      - v2rayse_test_3
+      - defaultName_1
+      - v2rayse_test_4
+      - defaultName_2
+      - defaultName_3
+      - Hys-1.2.3.4
+      - test
+      - defaultName_4
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇸🇬_SG_新加坡_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇫🇷_FR_法国->🇳🇱_NL_荷兰
-      - 🇸🇬_SG_新加坡_2
-      - 🇨🇳_CN_中国->🇸🇨_SC_塞舌尔
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
+      - v2rayse_test_1
+      - v2rayse_test_2
+      - v2rayse_test_3
+      - defaultName_1
+      - v2rayse_test_4
+      - defaultName_2
+      - defaultName_3
+      - Hys-1.2.3.4
+      - test
+      - defaultName_4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇬_SG_新加坡_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇫🇷_FR_法国->🇳🇱_NL_荷兰
-      - 🇸🇬_SG_新加坡_2
-      - 🇨🇳_CN_中国->🇸🇨_SC_塞舌尔
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
+      - v2rayse_test_1
+      - v2rayse_test_2
+      - v2rayse_test_3
+      - defaultName_1
+      - v2rayse_test_4
+      - defaultName_2
+      - defaultName_3
+      - Hys-1.2.3.4
+      - test
+      - defaultName_4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -147,16 +148,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬_SG_新加坡_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇫🇷_FR_法国->🇳🇱_NL_荷兰
-      - 🇸🇬_SG_新加坡_2
-      - 🇨🇳_CN_中国->🇸🇨_SC_塞舌尔
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
+      - v2rayse_test_1
+      - v2rayse_test_2
+      - v2rayse_test_3
+      - defaultName_1
+      - v2rayse_test_4
+      - defaultName_2
+      - defaultName_3
+      - Hys-1.2.3.4
+      - test
+      - defaultName_4
 
 rule-providers:
   LocalAreaNetwork:
