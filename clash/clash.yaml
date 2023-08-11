@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-08-11 19:24:37
+# 创建时间：2023-08-11 20:11:07
 # 使用模版：V2RaySE 默认模版
-# 节点数量：4
+# 节点数量：8
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,67 +21,95 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"GetAFreeNode.com-Amsterdam","type":"vmess","server":"bobbykotick.rip","port":443,"cipher":"auto","uuid":"F05D86E9-D4AC-4015-A647-F6368DABE941","alterId":0,"tls":true,"servername":"Amsterdam.bobbykotick.rip","network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"Amsterdam.bobbykotick.rip"}}}
-  - {"name":"GetAFreeNode.com-Kansas","type":"vmess","server":"bobbykotick.rip","port":443,"cipher":"auto","uuid":"F05D86E9-D4AC-4015-A647-F6368DABE941","alterId":0,"tls":true,"servername":"Kansas.bobbykotick.rip","network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"Kansas.bobbykotick.rip"}}}
-  - {"name":"GetAFreeNode.com-Dusseldorf","type":"vmess","server":"bobbykotick.rip","port":443,"cipher":"auto","uuid":"F05D86E9-D4AC-4015-A647-F6368DABE941","alterId":0,"tls":true,"servername":"Dusseldorf.bobbykotick.rip","network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"Dusseldorf.bobbykotick.rip"}}}
-  - {"name":"GetAFreeNode.com-Lille","type":"vmess","server":"bobbykotick.rip","port":443,"cipher":"auto","uuid":"F05D86E9-D4AC-4015-A647-F6368DABE941","alterId":0,"tls":true,"servername":"Lille.bobbykotick.rip","network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"Lille.bobbykotick.rip"}}}
+  - {"name":"🇺🇸_US_美国->🇫🇷_FR_法国_1","type":"trojan","server":"cnamemc1.cdncisco3.co","port":443,"udp":true,"password":"5de2dfab-28e4-4773-b0d3-8d43da0d9ac3","sni":"c1mc.cdncisco3.co","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ywQ9KSLI4ZBm9wOAXUaN"}}
+  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"172.64.193.37","port":80,"cipher":"auto","uuid":"5f751c6e-50b1-4797-ba8e-6ffe324a0bce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"dp4.ilovescp.com"}}}
+  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"104.17.137.141","port":443,"cipher":"auto","uuid":"8f74ec8a-971c-11ed-a8fc-0242ac120002","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/d84ee332-1284-11ee-a5c8-8213fd3be4b9","headers":{"host":"d84ee332-1284-11ee-a5c8-8213fd3be4b9.bamarambash.monster"}}}
+  - {"name":"🇺🇸_US_美国->🇫🇷_FR_法国_2","type":"trojan","server":"cnamemt.ciscocdn1.live","port":443,"udp":true,"password":"4d706727-996f-4427-930d-60f3bd414cf9","sni":"c2mt.ciscocdn1.live","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/rDCYQta83d0oPABKBhcIX"}}
+  - {"name":"🇺🇸_US_美国_3","type":"vmess","server":"172.67.27.227","port":80,"cipher":"auto","uuid":"5f751c6e-50b1-4797-ba8e-6ffe324a0bce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"dp4.ilovescp.com"}}}
+  - {"name":"🇰🇷_KR_韩国","type":"ss","server":"43.201.251.48","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇷🇺_RU_俄罗斯联邦","type":"vmess","server":"45.144.179.138","port":443,"cipher":"auto","uuid":"96cbe4a6-5728-42df-dc7a-ceb9b51a3db5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
+  - {"name":"🇺🇸_US_美国_4","type":"ss","server":"34.217.75.169","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - GetAFreeNode.com-Amsterdam
-      - GetAFreeNode.com-Kansas
-      - GetAFreeNode.com-Dusseldorf
-      - GetAFreeNode.com-Lille
+      - 🇺🇸_US_美国->🇫🇷_FR_法国_1
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国->🇫🇷_FR_法国_2
+      - 🇺🇸_US_美国_3
+      - 🇰🇷_KR_韩国
+      - 🇷🇺_RU_俄罗斯联邦
+      - 🇺🇸_US_美国_4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - GetAFreeNode.com-Amsterdam
-      - GetAFreeNode.com-Kansas
-      - GetAFreeNode.com-Dusseldorf
-      - GetAFreeNode.com-Lille
+      - 🇺🇸_US_美国->🇫🇷_FR_法国_1
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国->🇫🇷_FR_法国_2
+      - 🇺🇸_US_美国_3
+      - 🇰🇷_KR_韩国
+      - 🇷🇺_RU_俄罗斯联邦
+      - 🇺🇸_US_美国_4
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - GetAFreeNode.com-Amsterdam
-      - GetAFreeNode.com-Kansas
-      - GetAFreeNode.com-Dusseldorf
-      - GetAFreeNode.com-Lille
+      - 🇺🇸_US_美国->🇫🇷_FR_法国_1
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国->🇫🇷_FR_法国_2
+      - 🇺🇸_US_美国_3
+      - 🇰🇷_KR_韩国
+      - 🇷🇺_RU_俄罗斯联邦
+      - 🇺🇸_US_美国_4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - GetAFreeNode.com-Amsterdam
-      - GetAFreeNode.com-Kansas
-      - GetAFreeNode.com-Dusseldorf
-      - GetAFreeNode.com-Lille
+      - 🇺🇸_US_美国->🇫🇷_FR_法国_1
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国->🇫🇷_FR_法国_2
+      - 🇺🇸_US_美国_3
+      - 🇰🇷_KR_韩国
+      - 🇷🇺_RU_俄罗斯联邦
+      - 🇺🇸_US_美国_4
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - GetAFreeNode.com-Amsterdam
-      - GetAFreeNode.com-Kansas
-      - GetAFreeNode.com-Dusseldorf
-      - GetAFreeNode.com-Lille
+      - 🇺🇸_US_美国->🇫🇷_FR_法国_1
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国->🇫🇷_FR_法国_2
+      - 🇺🇸_US_美国_3
+      - 🇰🇷_KR_韩国
+      - 🇷🇺_RU_俄罗斯联邦
+      - 🇺🇸_US_美国_4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - GetAFreeNode.com-Amsterdam
-      - GetAFreeNode.com-Kansas
-      - GetAFreeNode.com-Dusseldorf
-      - GetAFreeNode.com-Lille
+      - 🇺🇸_US_美国->🇫🇷_FR_法国_1
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国->🇫🇷_FR_法国_2
+      - 🇺🇸_US_美国_3
+      - 🇰🇷_KR_韩国
+      - 🇷🇺_RU_俄罗斯联邦
+      - 🇺🇸_US_美国_4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -104,10 +132,14 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - GetAFreeNode.com-Amsterdam
-      - GetAFreeNode.com-Kansas
-      - GetAFreeNode.com-Dusseldorf
-      - GetAFreeNode.com-Lille
+      - 🇺🇸_US_美国->🇫🇷_FR_法国_1
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国->🇫🇷_FR_法国_2
+      - 🇺🇸_US_美国_3
+      - 🇰🇷_KR_韩国
+      - 🇷🇺_RU_俄罗斯联邦
+      - 🇺🇸_US_美国_4
 
 rules:
 # 本地/局域网地址
