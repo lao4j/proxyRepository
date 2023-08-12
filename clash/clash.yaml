@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-08-12 11:28:06
+# 创建时间：2023-08-12 11:39:27
 # 使用模版：ACL4SSR.ini
-# 节点数量：10
+# 节点数量：11
 # 节点类型：ss, vmess, ssr, trojan, http, socks5, hysteria, vless
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
@@ -33,6 +33,7 @@ proxies:
   - {"name":"Hys-1.2.3.4","type":"hysteria","server":"1.2.3.4","port":12854,"sni":"wechat.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"pekopeko","up":50,"down":250}
   - {"name":"test","type":"vless","server":"1.2.3.4","port":7777,"uuid":"abc-def-ghi-fge-zsx","tls":true,"network":"tcp"}
   - {"name":"defaultName_4","type":"socks5","server":"1.2.3.4","port":123,"username":"username","password":"password"}
+  - {"name":"defaultName_5","type":"http","server":"github.com/wyx176/nps-socks5/blob/master/.travis.yml","port":null,"tls":true,"skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -49,6 +50,7 @@ proxy-groups:
       - Hys-1.2.3.4
       - test
       - defaultName_4
+      - defaultName_5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -65,6 +67,7 @@ proxy-groups:
       - Hys-1.2.3.4
       - test
       - defaultName_4
+      - defaultName_5
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -81,6 +84,7 @@ proxy-groups:
       - Hys-1.2.3.4
       - test
       - defaultName_4
+      - defaultName_5
   - name: 📲 电报信息
     type: select
     proxies:
@@ -96,6 +100,7 @@ proxy-groups:
       - Hys-1.2.3.4
       - test
       - defaultName_4
+      - defaultName_5
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -111,6 +116,7 @@ proxy-groups:
       - Hys-1.2.3.4
       - test
       - defaultName_4
+      - defaultName_5
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -126,6 +132,7 @@ proxy-groups:
       - Hys-1.2.3.4
       - test
       - defaultName_4
+      - defaultName_5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -158,6 +165,7 @@ proxy-groups:
       - Hys-1.2.3.4
       - test
       - defaultName_4
+      - defaultName_5
 
 rule-providers:
   LocalAreaNetwork:
