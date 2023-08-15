@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-08-14 23:44:02
+# 创建时间：15-08-2023 00:49:17
 # 使用模版：V2RaySE 默认模版
-# 节点数量：6
+# 节点数量：1
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,81 +21,46 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇺🇸_US_美国->🇫🇷_FR_法国_1","type":"vmess","server":"ns1.v2-vip.fun","port":8880,"cipher":"auto","uuid":"617c9bc4-4116-41c6-99e0-ace49a38fcdb","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/Jnv8ViZOUVgijjOh0p5uGjHnXIiY","headers":{"host":"fr7.tehme100.fun"}}}
-  - {"name":"🇺🇸_US_美国->🇫🇷_FR_法国_2","type":"vmess","server":"cdn.narutos.top","port":8880,"cipher":"auto","uuid":"4b5e4565-322f-4223-a891-78a84f189726","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/SMNxcwVdTTzcou9yQftDyZcCGQui9a","headers":{"host":"paris.yj2022.gq"}}}
-  - {"name":"🇨🇦_CA_加拿大","type":"vmess","server":"dongtaiwang3.com","port":443,"cipher":"auto","uuid":"6deddb7f-e557-42db-bfa0-cf40b36b27e2","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dongtaiwang.com","headers":{"host":"d.freeh1.xyz"}}}
-  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"172.64.193.37","port":80,"cipher":"auto","uuid":"5f751c6e-50b1-4797-ba8e-6ffe324a0bce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"dp4.ilovescp.com"}}}
-  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"172.64.202.22","port":80,"cipher":"auto","uuid":"5f751c6e-50b1-4797-ba8e-6ffe324a0bce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"dp4.ilovescp.com"}}}
-  - {"name":"🇯🇵_JP_日本","type":"trojan","server":"gsawshk2.aiopen.cfd","port":443,"udp":true,"password":"db4fb0e6-0e5b-4b12-95ac-03e60f5685d7","sni":"20-212-60-88.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"defaultName","type":"http","server":"t.me/Outline_Vpn","port":null,"tls":true,"skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸_US_美国->🇫🇷_FR_法国_1
-      - 🇺🇸_US_美国->🇫🇷_FR_法国_2
-      - 🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇯🇵_JP_日本
+      - defaultName
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸_US_美国->🇫🇷_FR_法国_1
-      - 🇺🇸_US_美国->🇫🇷_FR_法国_2
-      - 🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇯🇵_JP_日本
+      - defaultName
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国->🇫🇷_FR_法国_1
-      - 🇺🇸_US_美国->🇫🇷_FR_法国_2
-      - 🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇯🇵_JP_日本
+      - defaultName
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国->🇫🇷_FR_法国_1
-      - 🇺🇸_US_美国->🇫🇷_FR_法国_2
-      - 🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇯🇵_JP_日本
+      - defaultName
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸_US_美国->🇫🇷_FR_法国_1
-      - 🇺🇸_US_美国->🇫🇷_FR_法国_2
-      - 🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇯🇵_JP_日本
+      - defaultName
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国->🇫🇷_FR_法国_1
-      - 🇺🇸_US_美国->🇫🇷_FR_法国_2
-      - 🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇯🇵_JP_日本
+      - defaultName
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -118,12 +83,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸_US_美国->🇫🇷_FR_法国_1
-      - 🇺🇸_US_美国->🇫🇷_FR_法国_2
-      - 🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇯🇵_JP_日本
+      - defaultName
 
 rules:
 # 本地/局域网地址
