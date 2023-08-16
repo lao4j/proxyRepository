@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-08-16 18:33:20
+# 创建时间：2023-08-16 19:48:41
 # 使用模版：V2RaySE 默认模版
-# 节点数量：4
+# 节点数量：10
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,67 +21,109 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"GetAFreeNode.com-Amsterdam","type":"vmess","server":"bobbykotick.rip","port":443,"cipher":"auto","uuid":"F05D86E9-D4AC-4015-A647-F6368DABE941","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"Amsterdam.bobbykotick.rip"}}}
-  - {"name":"GetAFreeNode.com-Kansas","type":"vmess","server":"bobbykotick.rip","port":443,"cipher":"auto","uuid":"F05D86E9-D4AC-4015-A647-F6368DABE941","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"Kansas.bobbykotick.rip"}}}
-  - {"name":"GetAFreeNode.com-Lille","type":"vmess","server":"bobbykotick.rip","port":443,"cipher":"auto","uuid":"F05D86E9-D4AC-4015-A647-F6368DABE941","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"Lille.bobbykotick.rip"}}}
-  - {"name":"GetAFreeNode.com-Dusseldorf","type":"vmess","server":"bobbykotick.rip","port":443,"cipher":"auto","uuid":"F05D86E9-D4AC-4015-A647-F6368DABE941","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"Dusseldorf.bobbykotick.rip"}}}
+  - {"name":"美国-2.05MB/s(Youtube:不良林)","type":"vmess","server":"45.199.138.192","port":52015,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国-1.12MB/s(Youtube:不良林)","type":"vmess","server":"172.64.172.192","port":80,"cipher":"auto","uuid":"7390f4bc-1bf0-42f4-9c4f-0cbc35217ee3","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cc2.shabijichang.com"}}}
+  - {"name":"美国-2.36MB/s(Youtube:不良林)","type":"vmess","server":"172.64.110.64","port":80,"cipher":"auto","uuid":"7390f4bc-1bf0-42f4-9c4f-0cbc35217ee3","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cc2.shabijichang.com"}}}
+  - {"name":"美国-2.94MB/s(Youtube:不良林)","type":"vmess","server":"156.225.67.89","port":31129,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国-822.4KB/s(Youtube:不良林)","type":"vmess","server":"142.4.126.20","port":51815,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国-1.76MB/s(Youtube:不良林)","type":"vmess","server":"cf-lt.sharecentre.online","port":80,"cipher":"auto","uuid":"5f751c6e-50b1-4797-ba8e-6ffe324a0bce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"sggcp3.ilovescp.com"}}}
+  - {"name":"美国-561.1KB/s(Youtube:不良林)","type":"vmess","server":"cf-lt.sharecentre.online","port":80,"cipher":"auto","uuid":"5f751c6e-50b1-4797-ba8e-6ffe324a0bce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"usgcp1.ilovescp.com"}}}
+  - {"name":"美国-514.4KB/s(Youtube:不良林)","type":"vmess","server":"cf-lt.sharecentre.online","port":80,"cipher":"auto","uuid":"5f751c6e-50b1-4797-ba8e-6ffe324a0bce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"usgcp2.ilovescp.com"}}}
+  - {"name":"美国-1.21MB/s(Youtube:不良林)","type":"vmess","server":"cf-lt.sharecentre.online","port":80,"cipher":"auto","uuid":"5f751c6e-50b1-4797-ba8e-6ffe324a0bce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"usgcp3.ilovescp.com"}}}
+  - {"name":"美国-2.58MB/s(Youtube:不良林)","type":"vmess","server":"cf-lt.sharecentre.online","port":80,"cipher":"auto","uuid":"5f751c6e-50b1-4797-ba8e-6ffe324a0bce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"hk.ilovescp.com"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - GetAFreeNode.com-Amsterdam
-      - GetAFreeNode.com-Kansas
-      - GetAFreeNode.com-Lille
-      - GetAFreeNode.com-Dusseldorf
+      - 美国-2.05MB/s(Youtube:不良林)
+      - 美国-1.12MB/s(Youtube:不良林)
+      - 美国-2.36MB/s(Youtube:不良林)
+      - 美国-2.94MB/s(Youtube:不良林)
+      - 美国-822.4KB/s(Youtube:不良林)
+      - 美国-1.76MB/s(Youtube:不良林)
+      - 美国-561.1KB/s(Youtube:不良林)
+      - 美国-514.4KB/s(Youtube:不良林)
+      - 美国-1.21MB/s(Youtube:不良林)
+      - 美国-2.58MB/s(Youtube:不良林)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - GetAFreeNode.com-Amsterdam
-      - GetAFreeNode.com-Kansas
-      - GetAFreeNode.com-Lille
-      - GetAFreeNode.com-Dusseldorf
+      - 美国-2.05MB/s(Youtube:不良林)
+      - 美国-1.12MB/s(Youtube:不良林)
+      - 美国-2.36MB/s(Youtube:不良林)
+      - 美国-2.94MB/s(Youtube:不良林)
+      - 美国-822.4KB/s(Youtube:不良林)
+      - 美国-1.76MB/s(Youtube:不良林)
+      - 美国-561.1KB/s(Youtube:不良林)
+      - 美国-514.4KB/s(Youtube:不良林)
+      - 美国-1.21MB/s(Youtube:不良林)
+      - 美国-2.58MB/s(Youtube:不良林)
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - GetAFreeNode.com-Amsterdam
-      - GetAFreeNode.com-Kansas
-      - GetAFreeNode.com-Lille
-      - GetAFreeNode.com-Dusseldorf
+      - 美国-2.05MB/s(Youtube:不良林)
+      - 美国-1.12MB/s(Youtube:不良林)
+      - 美国-2.36MB/s(Youtube:不良林)
+      - 美国-2.94MB/s(Youtube:不良林)
+      - 美国-822.4KB/s(Youtube:不良林)
+      - 美国-1.76MB/s(Youtube:不良林)
+      - 美国-561.1KB/s(Youtube:不良林)
+      - 美国-514.4KB/s(Youtube:不良林)
+      - 美国-1.21MB/s(Youtube:不良林)
+      - 美国-2.58MB/s(Youtube:不良林)
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - GetAFreeNode.com-Amsterdam
-      - GetAFreeNode.com-Kansas
-      - GetAFreeNode.com-Lille
-      - GetAFreeNode.com-Dusseldorf
+      - 美国-2.05MB/s(Youtube:不良林)
+      - 美国-1.12MB/s(Youtube:不良林)
+      - 美国-2.36MB/s(Youtube:不良林)
+      - 美国-2.94MB/s(Youtube:不良林)
+      - 美国-822.4KB/s(Youtube:不良林)
+      - 美国-1.76MB/s(Youtube:不良林)
+      - 美国-561.1KB/s(Youtube:不良林)
+      - 美国-514.4KB/s(Youtube:不良林)
+      - 美国-1.21MB/s(Youtube:不良林)
+      - 美国-2.58MB/s(Youtube:不良林)
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - GetAFreeNode.com-Amsterdam
-      - GetAFreeNode.com-Kansas
-      - GetAFreeNode.com-Lille
-      - GetAFreeNode.com-Dusseldorf
+      - 美国-2.05MB/s(Youtube:不良林)
+      - 美国-1.12MB/s(Youtube:不良林)
+      - 美国-2.36MB/s(Youtube:不良林)
+      - 美国-2.94MB/s(Youtube:不良林)
+      - 美国-822.4KB/s(Youtube:不良林)
+      - 美国-1.76MB/s(Youtube:不良林)
+      - 美国-561.1KB/s(Youtube:不良林)
+      - 美国-514.4KB/s(Youtube:不良林)
+      - 美国-1.21MB/s(Youtube:不良林)
+      - 美国-2.58MB/s(Youtube:不良林)
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - GetAFreeNode.com-Amsterdam
-      - GetAFreeNode.com-Kansas
-      - GetAFreeNode.com-Lille
-      - GetAFreeNode.com-Dusseldorf
+      - 美国-2.05MB/s(Youtube:不良林)
+      - 美国-1.12MB/s(Youtube:不良林)
+      - 美国-2.36MB/s(Youtube:不良林)
+      - 美国-2.94MB/s(Youtube:不良林)
+      - 美国-822.4KB/s(Youtube:不良林)
+      - 美国-1.76MB/s(Youtube:不良林)
+      - 美国-561.1KB/s(Youtube:不良林)
+      - 美国-514.4KB/s(Youtube:不良林)
+      - 美国-1.21MB/s(Youtube:不良林)
+      - 美国-2.58MB/s(Youtube:不良林)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -104,10 +146,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - GetAFreeNode.com-Amsterdam
-      - GetAFreeNode.com-Kansas
-      - GetAFreeNode.com-Lille
-      - GetAFreeNode.com-Dusseldorf
+      - 美国-2.05MB/s(Youtube:不良林)
+      - 美国-1.12MB/s(Youtube:不良林)
+      - 美国-2.36MB/s(Youtube:不良林)
+      - 美国-2.94MB/s(Youtube:不良林)
+      - 美国-822.4KB/s(Youtube:不良林)
+      - 美国-1.76MB/s(Youtube:不良林)
+      - 美国-561.1KB/s(Youtube:不良林)
+      - 美国-514.4KB/s(Youtube:不良林)
+      - 美国-1.21MB/s(Youtube:不良林)
+      - 美国-2.58MB/s(Youtube:不良林)
 
 rules:
 # 本地/局域网地址
