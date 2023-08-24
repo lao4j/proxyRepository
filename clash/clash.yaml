@@ -1,11 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：2023-08-24 10:12:05
+# 客户端：Clash
+# 创建时间：2023-08-24 12:23:35
 # 使用模版：V2RaySE 默认模版
-# 节点数量：50
+# 节点数量：10
 ####################################
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -22,389 +21,109 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇺🇸_US_美国_1","type":"ss","server":"69.50.95.251","port":9098,"password":"ksjfuw!sop#","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇨🇳_CN_中国->🇸🇬_SG_新加坡","type":"vmess","server":"m.lwvzmdu.cn","port":16618,"cipher":"auto","uuid":"224c91ee-7e18-4f1e-86bb-c1836f218c95","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"m.lwvzmdu.cn"}}}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_1","type":"vmess","server":"r97q.cdn.node.a.tddns-ounk.com","port":13368,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8","headers":{"host":"r97q.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇭🇰_HK_香港","type":"trojan","server":"18.163.249.175","port":443,"udp":true,"password":"ZFYOpKqD8uEClpZ2ya83cyCDalwSOYz3F3eCxnBD4eSXNSR5R0aAATj7I3x69g","sni":"golang.protocolbuffer.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_2","type":"vmess","server":"syrbp.cdn.node.a.tddns-ounk.com","port":13736,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8","headers":{"host":"syrbp.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇺🇸_US_美国->🇬🇧_GB_英国","type":"vless","server":"172.67.178.12","port":443,"uuid":"43e00e4c-2316-4dc9-8262-cef31886dc56","tls":true,"servername":"marly.toptechnonews.com","network":"ws","ws-opts":{"path":"/nimws"}}
-  - {"name":"🇨🇳_CN_中国->🇯🇵_JP_日本_1","type":"vmess","server":"q8eq.cdn.node.a.tddns-ounk.com","port":13598,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8","headers":{"host":"q8eq.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_3","type":"vmess","server":"syhkv2.cdn.node.a.tddns-ounk.com","port":13405,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/9974f731e8cb457b17143895.v1.live.m3u8","headers":{"host":"syhkv2.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇺🇸_US_美国->🇵🇱_PL_波兰","type":"trojan","server":"cnamemc.ciscocdn1.live","port":443,"udp":true,"password":"5de2dfab-28e4-4773-b0d3-8d43da0d9ac3","sni":"c3mc.ciscocdn1.live","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ywQ9KSLI4ZBm9wOAXUaN"}}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_4","type":"vmess","server":"syhkv2.cdn.node.a.tddns-ounk.com","port":13345,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8","headers":{"host":"syhkv2.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_5","type":"vmess","server":"r97q.cdn.node.a.tddns-ounk.com","port":13367,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8","headers":{"host":"r97q.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"172.67.49.8","port":80,"cipher":"auto","uuid":"5f751c6e-50b1-4797-ba8e-6ffe324a0bce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"dp3.scproxy.top"}}}
-  - {"name":"🇨🇳_CN_中国->🇯🇵_JP_日本_2","type":"vmess","server":"xrbsy1.cdn.node.a.tddns-ounk.com","port":13023,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/4900-495a-aa20-da0626e0e87d.v2..live03.m3u8","headers":{"host":"xrbsy1.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇯🇵_JP_日本_1","type":"ss","server":"13.113.213.130","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇺🇸_US_美国_3","type":"vmess","server":"vfly3.win","port":443,"cipher":"auto","uuid":"9681f99e-d251-477a-d777-1d01ee550481","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/myblog","headers":{"host":"vfly3.win"}}}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_6","type":"vmess","server":"hfa1.cdn.node.a.tddns-ounk.com","port":13648,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/80080f42e36c6478a808050e.v1.live.m3u8","headers":{"host":"hfa1.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇨🇳_CN_中国->🇭🇰_HK_香港_1","type":"vmess","server":"z5sa6is.cdn.node.a.tddns-ounk.com","port":13684,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/4900-495a-aa20-da0626e0e87d.v2..live03.m3u8","headers":{"host":"z5sa6is.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇨🇳_CN_中国->🇭🇰_HK_香港_2","type":"vmess","server":"ahq9.cdn.node.a.tddns-ounk.com","port":13019,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/5534757c8f76f4deb8e17d1b.v1.live.m3u8","headers":{"host":"ahq9.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇸🇬_SG_新加坡","type":"vmess","server":"152.69.211.235","port":80,"cipher":"auto","uuid":"d345916f-1673-4a98-f37d-49357c84ce03","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
-  - {"name":"🇨🇳_CN_中国->🇹🇼_TW_台湾_1","type":"vmess","server":"fpxs9.cdn.node.a.tddns-ounk.com","port":13339,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/9974f731e8cb457b17143895.v1.live.m3u8","headers":{"host":"fpxs9.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇺🇸_US_美国_4","type":"vmess","server":"216.24.57.1","port":443,"cipher":"auto","uuid":"a7ee85f4-2528-412e-994f-ce65f54754e4","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"a7ee85f4","headers":{"host":"dd2.1808.cf"}}}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_7","type":"vmess","server":"syhkv2.cdn.node.a.tddns-ounk.com","port":13275,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8","headers":{"host":"syhkv2.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇯🇵_JP_日本_2","type":"ss","server":"13.114.170.208","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇨🇳_CN_中国->🇹🇼_TW_台湾_2","type":"vmess","server":"lld9k6.cdn.node.a.tddns-ounk.com","port":13320,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8","headers":{"host":"lld9k6.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇺🇸_US_美国->🇸🇬_SG_新加坡","type":"vmess","server":"vless.wyhkaa0.cf","port":80,"cipher":"auto","uuid":"87d0aa5d-09df-4785-d95d-6a0deed473be","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/TG:@hkaa0","headers":{"host":"vless.wyhkaa0.cf"}}}
-  - {"name":"🇨🇳_CN_中国->🇯🇵_JP_日本_3","type":"vmess","server":"xrbsy1.cdn.node.a.tddns-ounk.com","port":13477,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8","headers":{"host":"xrbsy1.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇨🇳_CN_中国->🇫🇷_FR_法国","type":"vmess","server":"m.lwvzmdu.cn","port":16645,"cipher":"auto","uuid":"224c91ee-7e18-4f1e-86bb-c1836f218c95","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"m.lwvzmdu.cn"}}}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_8","type":"vmess","server":"wzfla.cdn.node.a.tddns-ounk.com","port":13377,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8","headers":{"host":"wzfla.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_9","type":"vmess","server":"yes.iamagoodman.net","port":16622,"cipher":"auto","uuid":"224c91ee-7e18-4f1e-86bb-c1836f218c95","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"yes.iamagoodman.net"}}}
-  - {"name":"🇨🇳_CN_中国->🇯🇵_JP_日本_4","type":"vmess","server":"q8eq.cdn.node.a.tddns-ounk.com","port":13596,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8","headers":{"host":"q8eq.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇯🇵_JP_日本_3","type":"vmess","server":"jp6.lianpi.xyz","port":23234,"cipher":"auto","uuid":"1f3d67b4-6929-4598-90ca-84a841bf02e4","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇨🇳_CN_中国->🇭🇰_HK_香港_3","type":"vmess","server":"cd69.cdn.node.a.tddns-ounk.com","port":13476,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8","headers":{"host":"cd69.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_10","type":"vmess","server":"r97q.cdn.node.a.tddns-ounk.com","port":13364,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8","headers":{"host":"r97q.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_11","type":"vmess","server":"hfa1.cdn.node.a.tddns-ounk.com","port":13457,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/80080f42e36c6478a808050e.v1.live.m3u8","headers":{"host":"hfa1.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇺🇸_US_美国_5","type":"vmess","server":"16.wyhkaa0.gq","port":2095,"cipher":"auto","uuid":"c0fa7a10-3622-492a-e1cf-b8f8f4df3412","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/TG:@hkaa0","headers":{"host":"16.wyhkaa0.gq"}}}
-  - {"name":"🇨🇳_CN_中国->🇯🇵_JP_日本_5","type":"vmess","server":"wbgsba.cdn.node.a.tddns-ounk.com","port":13696,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8","headers":{"host":"wbgsba.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇺🇸_US_美国_6","type":"vmess","server":"b2n.ir","port":443,"cipher":"auto","uuid":"F5A0B71E-85AA-48FF-99D1-9F3B8459DA49","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"Dusseldorf.bobbykotick.rip"}}}
-  - {"name":"🇺🇸_US_美国_7","type":"vmess","server":"198.41.195.68","port":8080,"cipher":"auto","uuid":"74a890ab-5c4b-4f35-aea4-5fc2459bebd2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/blue","headers":{"host":"ecc.vtcss.top"}}}
-  - {"name":"🇨🇳_CN_中国->🇹🇼_TW_台湾_3","type":"vmess","server":"lld9k6.cdn.node.a.tddns-ounk.com","port":13321,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8","headers":{"host":"lld9k6.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_12","type":"vmess","server":"syrbp.cdn.node.a.tddns-ounk.com","port":13743,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8","headers":{"host":"syrbp.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_13","type":"vmess","server":"syhkv2.cdn.node.a.tddns-ounk.com","port":13472,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8","headers":{"host":"syhkv2.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_14","type":"vmess","server":"hfa1.cdn.node.a.tddns-ounk.com","port":13455,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/80080f42e36c6478a808050e.v1.live.m3u8","headers":{"host":"hfa1.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇨🇳_CN_中国_1","type":"vmess","server":"36.150.27.31","port":80,"cipher":"auto","uuid":"db8d12d5-1968-4125-b775-77d50aa65923","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_15","type":"vmess","server":"cdn.node.user-sub.pddns-usersdk.com","port":13003,"cipher":"auto","uuid":"5f9f4df4-5398-35d1-9a6a-44a8a575832d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ef483582-6269-468c-93af-c511eccb8a69","headers":{"host":"cdn.node.user-sub.pddns-usersdk.com"}}}
-  - {"name":"🇨🇳_CN_中国->🇭🇰_HK_香港_4","type":"ss","server":"am.rainplay.cn","port":7902,"password":"ce757f0b-1ecb-4657-b52e-27d4183f23c0","cipher":"aes-256-gcm"}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_16","type":"vmess","server":"syrbp.cdn.node.a.tddns-ounk.com","port":13732,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8","headers":{"host":"syrbp.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇨🇳_CN_中国_2","type":"vmess","server":"120.241.47.99","port":44002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦","type":"vmess","server":"ru1.mianfenyun012.eu.org","port":80,"cipher":"auto","uuid":"c5964a63-d67c-4668-cdae-6443a1581e76","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/jdbp606","headers":{"host":"ru1.mianfenyun012.eu.org"}}}
-  - {"name":"🇨🇳_CN_中国->🇭🇰_HK_香港_5","type":"vmess","server":"z5sa6is.cdn.node.a.tddns-ounk.com","port":13685,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/4900-495a-aa20-da0626e0e87d.v2..live03.m3u8","headers":{"host":"z5sa6is.cdn.node.a.tddns-ounk.com"}}}
-  - {"name":"🇺🇸_US_美国_8","type":"vmess","server":"us01a.anyco.vip","port":443,"cipher":"auto","uuid":"89f61f49-5cd1-45ef-b126-9d01acfa6604","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/cctv6/hlad.m3u8","headers":{"host":"us01a.anyco.vip"}}}
+  - {"name":"美国-3.93MB/s(Youtube:不良林)","type":"ss","server":"69.50.95.251","port":9098,"password":"ksjfuw!sop#","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中国-4.32MB/s(Youtube:不良林)","type":"vmess","server":"hfa1.cdn.node.a.tddns-ounk.com","port":13648,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/80080f42e36c6478a808050e.v1.live.m3u8","headers":{"host":"hfa1.cdn.node.a.tddns-ounk.com"}}}
+  - {"name":"中国-7.97MB/s(Youtube:不良林)","type":"vmess","server":"zjxc.pmxu.link","port":19278,"cipher":"auto","uuid":"0b4cba85-4791-3879-9f66-5e232c8184e9","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中国-13.35MB/s(Youtube:不良林)","type":"vmess","server":"z5is.cdn.node.a.tddns-ounk.com","port":13686,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/4900-495a-aa20-da0626e0e87d.v2..live03.m3u8","headers":{"host":"z5is.cdn.node.a.tddns-ounk.com"}}}
+  - {"name":"中国-12.55MB/s(Youtube:不良林)","type":"vmess","server":"cd69.cdn.node.a.tddns-ounk.com","port":13671,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8","headers":{"host":"cd69.cdn.node.a.tddns-ounk.com"}}}
+  - {"name":"中国-12.76MB/s(Youtube:不良林)","type":"vmess","server":"aaf8.cdn.node.a.tddns-ounk.com","port":13524,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8","headers":{"host":"aaf8.cdn.node.a.tddns-ounk.com"}}}
+  - {"name":"中国-7.38MB/s(Youtube:不良林)","type":"vmess","server":"syhkv2.cdn.node.a.tddns-ounk.com","port":13670,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8","headers":{"host":"syhkv2.cdn.node.a.tddns-ounk.com"}}}
+  - {"name":"韩国-2.70MB/s(Youtube:不良林)","type":"trojan","server":"il.mjt001.com","port":443,"udp":true,"password":"224c91ee-7e18-4f1e-86bb-c1836f218c95","sni":"il.mjt001.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国-3.59MB/s(Youtube:不良林)","type":"vmess","server":"cold-dawn-9246.fly.dev","port":443,"cipher":"auto","uuid":"ea4909ef-7ca6-4b46-bf2e-6c07896ef338","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ea4909ef-7ca6-4b46-bf2e-6c07896ef338-vm","headers":{"host":"cold-dawn-9246.fly.dev"}}}
+  - {"name":"中国-3.61MB/s(Youtube:不良林)","type":"vmess","server":"qgd6.cdn.node.a.tddns-ounk.com","port":13571,"cipher":"auto","uuid":"bbbbcaee-2fb5-3809-8722-d0b5ed0cd2bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8","headers":{"host":"qgd6.cdn.node.a.tddns-ounk.com"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇵🇱_PL_波兰
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_4
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
-      - 🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾_1
-      - 🇺🇸_US_美国_4
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_7
-      - 🇯🇵_JP_日本_2
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾_2
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_3
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_8
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_9
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_4
-      - 🇯🇵_JP_日本_3
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_10
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_5
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_12
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_13
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_14
-      - 🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_15
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_4
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_16
-      - 🇨🇳_CN_中国_2
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_5
-      - 🇺🇸_US_美国_8
+      - 美国-3.93MB/s(Youtube:不良林)
+      - 中国-4.32MB/s(Youtube:不良林)
+      - 中国-7.97MB/s(Youtube:不良林)
+      - 中国-13.35MB/s(Youtube:不良林)
+      - 中国-12.55MB/s(Youtube:不良林)
+      - 中国-12.76MB/s(Youtube:不良林)
+      - 中国-7.38MB/s(Youtube:不良林)
+      - 韩国-2.70MB/s(Youtube:不良林)
+      - 美国-3.59MB/s(Youtube:不良林)
+      - 中国-3.61MB/s(Youtube:不良林)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇵🇱_PL_波兰
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_4
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
-      - 🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾_1
-      - 🇺🇸_US_美国_4
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_7
-      - 🇯🇵_JP_日本_2
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾_2
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_3
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_8
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_9
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_4
-      - 🇯🇵_JP_日本_3
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_10
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_5
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_12
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_13
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_14
-      - 🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_15
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_4
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_16
-      - 🇨🇳_CN_中国_2
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_5
-      - 🇺🇸_US_美国_8
+      - 美国-3.93MB/s(Youtube:不良林)
+      - 中国-4.32MB/s(Youtube:不良林)
+      - 中国-7.97MB/s(Youtube:不良林)
+      - 中国-13.35MB/s(Youtube:不良林)
+      - 中国-12.55MB/s(Youtube:不良林)
+      - 中国-12.76MB/s(Youtube:不良林)
+      - 中国-7.38MB/s(Youtube:不良林)
+      - 韩国-2.70MB/s(Youtube:不良林)
+      - 美国-3.59MB/s(Youtube:不良林)
+      - 中国-3.61MB/s(Youtube:不良林)
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇵🇱_PL_波兰
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_4
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
-      - 🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾_1
-      - 🇺🇸_US_美国_4
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_7
-      - 🇯🇵_JP_日本_2
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾_2
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_3
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_8
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_9
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_4
-      - 🇯🇵_JP_日本_3
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_10
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_5
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_12
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_13
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_14
-      - 🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_15
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_4
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_16
-      - 🇨🇳_CN_中国_2
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_5
-      - 🇺🇸_US_美国_8
+      - 美国-3.93MB/s(Youtube:不良林)
+      - 中国-4.32MB/s(Youtube:不良林)
+      - 中国-7.97MB/s(Youtube:不良林)
+      - 中国-13.35MB/s(Youtube:不良林)
+      - 中国-12.55MB/s(Youtube:不良林)
+      - 中国-12.76MB/s(Youtube:不良林)
+      - 中国-7.38MB/s(Youtube:不良林)
+      - 韩国-2.70MB/s(Youtube:不良林)
+      - 美国-3.59MB/s(Youtube:不良林)
+      - 中国-3.61MB/s(Youtube:不良林)
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇵🇱_PL_波兰
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_4
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
-      - 🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾_1
-      - 🇺🇸_US_美国_4
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_7
-      - 🇯🇵_JP_日本_2
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾_2
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_3
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_8
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_9
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_4
-      - 🇯🇵_JP_日本_3
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_10
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_5
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_12
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_13
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_14
-      - 🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_15
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_4
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_16
-      - 🇨🇳_CN_中国_2
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_5
-      - 🇺🇸_US_美国_8
+      - 美国-3.93MB/s(Youtube:不良林)
+      - 中国-4.32MB/s(Youtube:不良林)
+      - 中国-7.97MB/s(Youtube:不良林)
+      - 中国-13.35MB/s(Youtube:不良林)
+      - 中国-12.55MB/s(Youtube:不良林)
+      - 中国-12.76MB/s(Youtube:不良林)
+      - 中国-7.38MB/s(Youtube:不良林)
+      - 韩国-2.70MB/s(Youtube:不良林)
+      - 美国-3.59MB/s(Youtube:不良林)
+      - 中国-3.61MB/s(Youtube:不良林)
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇵🇱_PL_波兰
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_4
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
-      - 🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾_1
-      - 🇺🇸_US_美国_4
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_7
-      - 🇯🇵_JP_日本_2
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾_2
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_3
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_8
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_9
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_4
-      - 🇯🇵_JP_日本_3
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_10
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_5
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_12
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_13
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_14
-      - 🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_15
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_4
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_16
-      - 🇨🇳_CN_中国_2
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_5
-      - 🇺🇸_US_美国_8
+      - 美国-3.93MB/s(Youtube:不良林)
+      - 中国-4.32MB/s(Youtube:不良林)
+      - 中国-7.97MB/s(Youtube:不良林)
+      - 中国-13.35MB/s(Youtube:不良林)
+      - 中国-12.55MB/s(Youtube:不良林)
+      - 中国-12.76MB/s(Youtube:不良林)
+      - 中国-7.38MB/s(Youtube:不良林)
+      - 韩国-2.70MB/s(Youtube:不良林)
+      - 美国-3.59MB/s(Youtube:不良林)
+      - 中国-3.61MB/s(Youtube:不良林)
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇵🇱_PL_波兰
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_4
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
-      - 🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾_1
-      - 🇺🇸_US_美国_4
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_7
-      - 🇯🇵_JP_日本_2
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾_2
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_3
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_8
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_9
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_4
-      - 🇯🇵_JP_日本_3
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_10
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_5
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_12
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_13
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_14
-      - 🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_15
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_4
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_16
-      - 🇨🇳_CN_中国_2
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_5
-      - 🇺🇸_US_美国_8
+      - 美国-3.93MB/s(Youtube:不良林)
+      - 中国-4.32MB/s(Youtube:不良林)
+      - 中国-7.97MB/s(Youtube:不良林)
+      - 中国-13.35MB/s(Youtube:不良林)
+      - 中国-12.55MB/s(Youtube:不良林)
+      - 中国-12.76MB/s(Youtube:不良林)
+      - 中国-7.38MB/s(Youtube:不良林)
+      - 韩国-2.70MB/s(Youtube:不良林)
+      - 美国-3.59MB/s(Youtube:不良林)
+      - 中国-3.61MB/s(Youtube:不良林)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -427,56 +146,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇵🇱_PL_波兰
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_4
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
-      - 🇯🇵_JP_日本_1
-      - 🇺🇸_US_美国_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾_1
-      - 🇺🇸_US_美国_4
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_7
-      - 🇯🇵_JP_日本_2
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾_2
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_3
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_8
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_9
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_4
-      - 🇯🇵_JP_日本_3
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_10
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_5
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾_3
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_12
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_13
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_14
-      - 🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_15
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_4
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_16
-      - 🇨🇳_CN_中国_2
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_5
-      - 🇺🇸_US_美国_8
+      - 美国-3.93MB/s(Youtube:不良林)
+      - 中国-4.32MB/s(Youtube:不良林)
+      - 中国-7.97MB/s(Youtube:不良林)
+      - 中国-13.35MB/s(Youtube:不良林)
+      - 中国-12.55MB/s(Youtube:不良林)
+      - 中国-12.76MB/s(Youtube:不良林)
+      - 中国-7.38MB/s(Youtube:不良林)
+      - 韩国-2.70MB/s(Youtube:不良林)
+      - 美国-3.59MB/s(Youtube:不良林)
+      - 中国-3.61MB/s(Youtube:不良林)
 
 rules:
 # 本地/局域网地址
