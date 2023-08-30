@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-08-30 13:41:42
+# 创建时间：2023-08-30 14:46:52
 # 使用模版：V2RaySE 默认模版
-# 节点数量：1
+# 节点数量：6
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,46 +21,81 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"defaultName","type":"http","server":"v2rayshare.com/wp-content/uploads/2023/08/20230830.yaml","port":null,"tls":true,"skip-cert-verify":true}
+  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"Amsterdam.kotick.site","port":443,"cipher":"auto","uuid":"9F858CE1-7E02-4863-AA24-D90F8D3437D7","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"speedtest","headers":{"host":"Amsterdam.kotick.site"}}}
+  - {"name":"🇺🇸_US_美国->🇯🇵_JP_日本","type":"vmess","server":"19.620720.xyz","port":443,"cipher":"auto","uuid":"3a47bbc1-8bb4-4d98-b7be-17129393a651","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"19.620720.xyz"}}}
+  - {"name":"🇺🇸_US_美国->🇧🇷_BR_巴西","type":"vmess","server":"172.67.131.179","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"sbl.shabijichang.com"}}}
+  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"67.21.95.78","port":53314,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国->🇦🇺_AU_澳大利亚","type":"vmess","server":"9.620720.xyz","port":443,"cipher":"auto","uuid":"3a47bbc1-8bb4-4d98-b7be-17129393a651","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"9.620720.xyz"}}}
+  - {"name":"🇺🇸_US_美国_3","type":"vmess","server":"199.188.111.249","port":46500,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - defaultName
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇺🇸_US_美国->🇧🇷_BR_巴西
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国->🇦🇺_AU_澳大利亚
+      - 🇺🇸_US_美国_3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - defaultName
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇺🇸_US_美国->🇧🇷_BR_巴西
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国->🇦🇺_AU_澳大利亚
+      - 🇺🇸_US_美国_3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - defaultName
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇺🇸_US_美国->🇧🇷_BR_巴西
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国->🇦🇺_AU_澳大利亚
+      - 🇺🇸_US_美国_3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - defaultName
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇺🇸_US_美国->🇧🇷_BR_巴西
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国->🇦🇺_AU_澳大利亚
+      - 🇺🇸_US_美国_3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - defaultName
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇺🇸_US_美国->🇧🇷_BR_巴西
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国->🇦🇺_AU_澳大利亚
+      - 🇺🇸_US_美国_3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - defaultName
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇺🇸_US_美国->🇧🇷_BR_巴西
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国->🇦🇺_AU_澳大利亚
+      - 🇺🇸_US_美国_3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -83,7 +118,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - defaultName
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇺🇸_US_美国->🇧🇷_BR_巴西
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国->🇦🇺_AU_澳大利亚
+      - 🇺🇸_US_美国_3
 
 rules:
 # 本地/局域网地址
