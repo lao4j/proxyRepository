@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-08-31 20:02:30
+# 创建时间：2023-09-01 06:05:42
 # 使用模版：V2RaySE 默认模版
-# 节点数量：10
+# 节点数量：36
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -11,6 +11,7 @@ log-level: info
 external-controller: 0.0.0.0:9090
 dns:
   enabled: true
+  listen: 0.0.0.0:1053
   ipv6: true
   default-nameserver:
     - 223.5.5.5
@@ -78,115 +79,297 @@ dns:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
   fallback-filter:
-    geoip: true
+    geoip: false
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"141.101.123.42","port":2052,"cipher":"auto","uuid":"0afb8b2c-149a-49a8-e90f-d77884ac922f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/blue99","headers":{"host":"ecc.vtcss.top"}}}
-  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"141.101.115.65","port":80,"cipher":"auto","uuid":"5f751c6e-50b1-4797-ba8e-6ffe324a0bce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"dp3.scproxy.top"}}}
-  - {"name":"🇺🇸_US_美国->🇨🇱_CL_智利","type":"vmess","server":"172.67.163.162","port":80,"cipher":"auto","uuid":"11378141-9527-478d-b0b9-c18396ca7c53","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"sdyg.shabijichang.com"}}}
-  - {"name":"🇺🇸_US_美国->🇨🇳_CN_中国","type":"vmess","server":"172.67.59.39","port":80,"cipher":"auto","uuid":"5f751c6e-50b1-4797-ba8e-6ffe324a0bce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"ca.ilovescp.com"}}}
-  - {"name":"🇭🇰_HK_香港->🇺🇸_US_美国","type":"vmess","server":"103.160.204.31","port":2052,"cipher":"auto","uuid":"0afb8b2c-149a-49a8-e90f-d77884ac922f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/blue99","headers":{"host":"ecc.vtcss.top"}}}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国","type":"ss","server":"free.node.kk-proxy.pro","port":55928,"password":"248db21a-345d-4eb8-b6e3-859a5d633d81","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇺🇸_US_美国->🇨🇦_CA_加拿大","type":"vmess","server":"singapore.com","port":443,"cipher":"auto","uuid":"6deddb7f-e557-42db-bfa0-cf40b36b27e2","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dongtaiwang.com","headers":{"host":"d.freeh1.xyz"}}}
-  - {"name":"🇺🇸_US_美国_3","type":"vmess","server":"172.67.27.227","port":80,"cipher":"auto","uuid":"5f751c6e-50b1-4797-ba8e-6ffe324a0bce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"dp4.ilovescp.com"}}}
-  - {"name":"🇺🇸_US_美国->🇳🇱_NL_荷兰","type":"vmess","server":"45.199.138.162","port":32661,"cipher":"auto","uuid":"65ea6727-4461-47a7-a5c4-fef2c67f2f79","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国_4","type":"vmess","server":"172.67.100.189","port":80,"cipher":"auto","uuid":"5f751c6e-50b1-4797-ba8e-6ffe324a0bce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"dp3.scproxy.top"}}}
+  - {"name":"🇯🇵_JP_日本_1","type":"trojan","server":"kbawsjp1.aiopen.cfd","port":443,"udp":true,"password":"343f9a0c-494e-4c23-8adc-afb3f75c1294","sni":"4-193-105-141.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵_JP_日本_2","type":"vmess","server":"jp6.lianpi.xyz","port":23234,"cipher":"auto","uuid":"1f3d67b4-6929-4598-90ca-84a841bf02e4","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"cfcdn2.sanfencdn.net","port":443,"cipher":"auto","uuid":"48843232-58e7-429f-90fb-3809074cc0bb","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/zh-cn","headers":{"host":"us4.sanfencdn1.com"}}}
+  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"162.159.194.228","port":80,"cipher":"auto","uuid":"5f751c6e-50b1-4797-ba8e-6ffe324a0bce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"dp4.ilovescp.com"}}}
+  - {"name":"🇺🇸_US_美国_3","type":"vmess","server":"108.186.208.156","port":53404,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇭🇰_HK_香港","type":"vmess","server":"081d1aad-rwcsg0-1n7jq.bn.p5pv.com","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"081d1aad-rwcsg0-1n7jq.bn.p5pv.com"}}}
+  - {"name":"🇭🇰HK_30513+@WangCai_1","type":"ss","server":"fd7fe5d.h2.gladns.com","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs-local","plugin-opts":{"mode":"websocket"}}
+  - {"name":"🇯🇵JP_65870+@WangCai_1","type":"ss","server":"730bcce.j3.gladns.com","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs-local","plugin-opts":{"mode":"websocket"}}
+  - {"name":"🇺🇸_电报频道 @mfjdpd_1","type":"vmess","server":"137.175.86.188","port":42151,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"🇭🇰_电报频道 @mfjdpd","type":"vmess","server":"103.160.204.65","port":2052,"cipher":"auto","uuid":"0afb8b2c-149a-49a8-e90f-d77884ac922f","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/blue99","headers":{"host":"ecc.vtcss.top"}}}
+  - {"name":"🇨🇳TW_142593+@WangCai_1","type":"ss","server":"5248af9.t7.gladns.com","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs-local","plugin-opts":{"mode":"websocket"}}
+  - {"name":"🇯🇵JP_82897+@WangCai_1","type":"ss","server":"2739a83.j3.gladns.com","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs-local","plugin-opts":{"mode":"websocket"}}
+  - {"name":"🇯🇵JP_57003+@WangCai_1","type":"ss","server":"9f8e2e7.j3.gladns.com","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs-local","plugin-opts":{"mode":"websocket"}}
+  - {"name":"🇯🇵JP_123597+@WangCai_1","type":"ss","server":"0603dc7.j4.gladns.com","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs-local","plugin-opts":{"mode":"websocket"}}
+  - {"name":"🇺🇸_电报频道 @mfjdpd_2","type":"vmess","server":"162.159.253.16","port":80,"cipher":"auto","uuid":"5f751c6e-50b1-4797-ba8e-6ffe324a0bce","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"ca.ilovescp.com"}}}
+  - {"name":"🇭🇰HK_142593+@WangCai_1","type":"ss","server":"fd7fe5d.h4.gladns.com","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs-local","plugin-opts":{"mode":"websocket"}}
+  - {"name":"美国-3.10MB/s","type":"vmess","server":"45.199.138.162","port":32661,"cipher":"auto","uuid":"65ea6727-4461-47a7-a5c4-fef2c67f2f79","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"新加坡-1.56MB/s","type":"ss","server":"13.215.183.152","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"美国-559.9KB/s","type":"vmess","server":"172.67.200.238","port":443,"cipher":"auto","uuid":"3a02e17e-d68d-4082-893a-65a43716ab13","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"dallas.starsea.vip"}}}
+  - {"name":"美国-3.42MB/s","type":"vmess","server":"172.64.153.211","port":443,"cipher":"auto","uuid":"6e751712-9569-5187-86ea-8f585ad99105","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/api01","headers":{"host":"schereswed.softwarenews.store"}}}
+  - {"name":"美国-5.23MB/s","type":"vmess","server":"cf-lt.sharecentre.online","port":80,"cipher":"auto","uuid":"5f751c6e-50b1-4797-ba8e-6ffe324a0bce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"lv1.sharecentrepro.org"}}}
+  - {"name":"法国-3.52MB/s","type":"vmess","server":"156.249.18.24","port":44265,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国-3.55MB/s_1","type":"vmess","server":"156.225.67.47","port":49414,"cipher":"auto","uuid":"3ca912da-6ac2-418f-b9cf-45b6f694579b","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"加拿大-5.90MB/s_1","type":"vmess","server":"23.227.39.109","port":443,"cipher":"auto","uuid":"87a95522-985c-4a17-afea-9b7d7208bce5","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dongtaiwang.com","headers":{"host":"3.freek1.xyz"}}}
+  - {"name":"美国-1.23MB/s","type":"vmess","server":"172.67.100.189","port":80,"cipher":"auto","uuid":"5f751c6e-50b1-4797-ba8e-6ffe324a0bce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"dp3.scproxy.top"}}}
+  - {"name":"美国-1.97MB/s","type":"vmess","server":"104.25.13.12","port":80,"cipher":"auto","uuid":"a7ee85f4-2528-412e-994f-ce65f54754e4","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"a7ee85f4","headers":{"host":"dd2.1808.cf"}}}
+  - {"name":"美国-3.55MB/s_2","type":"vmess","server":"45.199.138.135","port":51119,"cipher":"auto","uuid":"743bdc87-1dea-41bf-aa0b-51dfbbfec8aa","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"加拿大-5.90MB/s_2","type":"vmess","server":"23.227.39.109","port":443,"cipher":"auto","uuid":"87a95522-985c-4a17-afea-9b7d7208bce5","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dongtaiwang.com","headers":{"host":"3.freek1.xyz"}}}
+  - {"name":"美国-229.9KB/s","type":"ss","server":"216.52.183.244","port":443,"password":"83XvX4Vo%*3a","cipher":"aes-128-gcm","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":false}}
+  - {"name":"美国-1.64MB/s","type":"vmess","server":"45.199.138.192","port":40835,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国-3.21MB/s","type":"vmess","server":"45.199.138.92","port":47086,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca4690dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国-3.22MB/s","type":"vmess","server":"45.199.138.184","port":47365,"cipher":"auto","uuid":"078eb24d-8d1d-4fbd-b914-ee58a897a35e","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"未知国家-346.0KB/s","type":"vmess","server":"us-03.cloudlion.me","port":2082,"cipher":"auto","uuid":"55e15a5f-0a15-44fb-b872-0c91b84e7049","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"us-03.cloudlion.me"}}}
+  - {"name":"美国-4.01MB/s","type":"vmess","server":"172.67.85.32","port":80,"cipher":"auto","uuid":"11378141-9527-478d-b0b9-c18396ca7c53","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"sdyg.shabijichang.com"}}}
+  - {"name":"未知国家-2.27MB/s","type":"vmess","server":"9.wyhkaa0.gq","port":2095,"cipher":"auto","uuid":"d838d99a-6806-4be4-c126-7fca613cf6a9","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/TG:@hkaa0","headers":{"host":"9.wyhkaa0.gq"}}}
+  - {"name":"法国-5.05MB/s","type":"vmess","server":"173.245.49.236","port":80,"cipher":"auto","uuid":"5f751c6e-50b1-4797-ba8e-6ffe324a0bce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"ca.ilovescp.com"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 🇯🇵_JP_日本_1
+      - 🇯🇵_JP_日本_2
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇨🇱_CL_智利
-      - 🇺🇸_US_美国->🇨🇳_CN_中国
-      - 🇭🇰_HK_香港->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大
       - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_4
+      - 🇭🇰_HK_香港
+      - 🇭🇰HK_30513+@WangCai_1
+      - 🇯🇵JP_65870+@WangCai_1
+      - 🇺🇸_电报频道 @mfjdpd_1
+      - 🇭🇰_电报频道 @mfjdpd
+      - 🇨🇳TW_142593+@WangCai_1
+      - 🇯🇵JP_82897+@WangCai_1
+      - 🇯🇵JP_57003+@WangCai_1
+      - 🇯🇵JP_123597+@WangCai_1
+      - 🇺🇸_电报频道 @mfjdpd_2
+      - 🇭🇰HK_142593+@WangCai_1
+      - 美国-3.10MB/s
+      - 新加坡-1.56MB/s
+      - 美国-559.9KB/s
+      - 美国-3.42MB/s
+      - 美国-5.23MB/s
+      - 法国-3.52MB/s
+      - 美国-3.55MB/s_1
+      - 加拿大-5.90MB/s_1
+      - 美国-1.23MB/s
+      - 美国-1.97MB/s
+      - 美国-3.55MB/s_2
+      - 加拿大-5.90MB/s_2
+      - 美国-229.9KB/s
+      - 美国-1.64MB/s
+      - 美国-3.21MB/s
+      - 美国-3.22MB/s
+      - 未知国家-346.0KB/s
+      - 美国-4.01MB/s
+      - 未知国家-2.27MB/s
+      - 法国-5.05MB/s
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇯🇵_JP_日本_1
+      - 🇯🇵_JP_日本_2
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇨🇱_CL_智利
-      - 🇺🇸_US_美国->🇨🇳_CN_中国
-      - 🇭🇰_HK_香港->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大
       - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_4
+      - 🇭🇰_HK_香港
+      - 🇭🇰HK_30513+@WangCai_1
+      - 🇯🇵JP_65870+@WangCai_1
+      - 🇺🇸_电报频道 @mfjdpd_1
+      - 🇭🇰_电报频道 @mfjdpd
+      - 🇨🇳TW_142593+@WangCai_1
+      - 🇯🇵JP_82897+@WangCai_1
+      - 🇯🇵JP_57003+@WangCai_1
+      - 🇯🇵JP_123597+@WangCai_1
+      - 🇺🇸_电报频道 @mfjdpd_2
+      - 🇭🇰HK_142593+@WangCai_1
+      - 美国-3.10MB/s
+      - 新加坡-1.56MB/s
+      - 美国-559.9KB/s
+      - 美国-3.42MB/s
+      - 美国-5.23MB/s
+      - 法国-3.52MB/s
+      - 美国-3.55MB/s_1
+      - 加拿大-5.90MB/s_1
+      - 美国-1.23MB/s
+      - 美国-1.97MB/s
+      - 美国-3.55MB/s_2
+      - 加拿大-5.90MB/s_2
+      - 美国-229.9KB/s
+      - 美国-1.64MB/s
+      - 美国-3.21MB/s
+      - 美国-3.22MB/s
+      - 未知国家-346.0KB/s
+      - 美国-4.01MB/s
+      - 未知国家-2.27MB/s
+      - 法国-5.05MB/s
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇯🇵_JP_日本_1
+      - 🇯🇵_JP_日本_2
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇨🇱_CL_智利
-      - 🇺🇸_US_美国->🇨🇳_CN_中国
-      - 🇭🇰_HK_香港->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大
       - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_4
+      - 🇭🇰_HK_香港
+      - 🇭🇰HK_30513+@WangCai_1
+      - 🇯🇵JP_65870+@WangCai_1
+      - 🇺🇸_电报频道 @mfjdpd_1
+      - 🇭🇰_电报频道 @mfjdpd
+      - 🇨🇳TW_142593+@WangCai_1
+      - 🇯🇵JP_82897+@WangCai_1
+      - 🇯🇵JP_57003+@WangCai_1
+      - 🇯🇵JP_123597+@WangCai_1
+      - 🇺🇸_电报频道 @mfjdpd_2
+      - 🇭🇰HK_142593+@WangCai_1
+      - 美国-3.10MB/s
+      - 新加坡-1.56MB/s
+      - 美国-559.9KB/s
+      - 美国-3.42MB/s
+      - 美国-5.23MB/s
+      - 法国-3.52MB/s
+      - 美国-3.55MB/s_1
+      - 加拿大-5.90MB/s_1
+      - 美国-1.23MB/s
+      - 美国-1.97MB/s
+      - 美国-3.55MB/s_2
+      - 加拿大-5.90MB/s_2
+      - 美国-229.9KB/s
+      - 美国-1.64MB/s
+      - 美国-3.21MB/s
+      - 美国-3.22MB/s
+      - 未知国家-346.0KB/s
+      - 美国-4.01MB/s
+      - 未知国家-2.27MB/s
+      - 法国-5.05MB/s
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇯🇵_JP_日本_1
+      - 🇯🇵_JP_日本_2
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇨🇱_CL_智利
-      - 🇺🇸_US_美国->🇨🇳_CN_中国
-      - 🇭🇰_HK_香港->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大
       - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_4
+      - 🇭🇰_HK_香港
+      - 🇭🇰HK_30513+@WangCai_1
+      - 🇯🇵JP_65870+@WangCai_1
+      - 🇺🇸_电报频道 @mfjdpd_1
+      - 🇭🇰_电报频道 @mfjdpd
+      - 🇨🇳TW_142593+@WangCai_1
+      - 🇯🇵JP_82897+@WangCai_1
+      - 🇯🇵JP_57003+@WangCai_1
+      - 🇯🇵JP_123597+@WangCai_1
+      - 🇺🇸_电报频道 @mfjdpd_2
+      - 🇭🇰HK_142593+@WangCai_1
+      - 美国-3.10MB/s
+      - 新加坡-1.56MB/s
+      - 美国-559.9KB/s
+      - 美国-3.42MB/s
+      - 美国-5.23MB/s
+      - 法国-3.52MB/s
+      - 美国-3.55MB/s_1
+      - 加拿大-5.90MB/s_1
+      - 美国-1.23MB/s
+      - 美国-1.97MB/s
+      - 美国-3.55MB/s_2
+      - 加拿大-5.90MB/s_2
+      - 美国-229.9KB/s
+      - 美国-1.64MB/s
+      - 美国-3.21MB/s
+      - 美国-3.22MB/s
+      - 未知国家-346.0KB/s
+      - 美国-4.01MB/s
+      - 未知国家-2.27MB/s
+      - 法国-5.05MB/s
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 🇯🇵_JP_日本_1
+      - 🇯🇵_JP_日本_2
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇨🇱_CL_智利
-      - 🇺🇸_US_美国->🇨🇳_CN_中国
-      - 🇭🇰_HK_香港->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大
       - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_4
+      - 🇭🇰_HK_香港
+      - 🇭🇰HK_30513+@WangCai_1
+      - 🇯🇵JP_65870+@WangCai_1
+      - 🇺🇸_电报频道 @mfjdpd_1
+      - 🇭🇰_电报频道 @mfjdpd
+      - 🇨🇳TW_142593+@WangCai_1
+      - 🇯🇵JP_82897+@WangCai_1
+      - 🇯🇵JP_57003+@WangCai_1
+      - 🇯🇵JP_123597+@WangCai_1
+      - 🇺🇸_电报频道 @mfjdpd_2
+      - 🇭🇰HK_142593+@WangCai_1
+      - 美国-3.10MB/s
+      - 新加坡-1.56MB/s
+      - 美国-559.9KB/s
+      - 美国-3.42MB/s
+      - 美国-5.23MB/s
+      - 法国-3.52MB/s
+      - 美国-3.55MB/s_1
+      - 加拿大-5.90MB/s_1
+      - 美国-1.23MB/s
+      - 美国-1.97MB/s
+      - 美国-3.55MB/s_2
+      - 加拿大-5.90MB/s_2
+      - 美国-229.9KB/s
+      - 美国-1.64MB/s
+      - 美国-3.21MB/s
+      - 美国-3.22MB/s
+      - 未知国家-346.0KB/s
+      - 美国-4.01MB/s
+      - 未知国家-2.27MB/s
+      - 法国-5.05MB/s
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇯🇵_JP_日本_1
+      - 🇯🇵_JP_日本_2
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇨🇱_CL_智利
-      - 🇺🇸_US_美国->🇨🇳_CN_中国
-      - 🇭🇰_HK_香港->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大
       - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_4
+      - 🇭🇰_HK_香港
+      - 🇭🇰HK_30513+@WangCai_1
+      - 🇯🇵JP_65870+@WangCai_1
+      - 🇺🇸_电报频道 @mfjdpd_1
+      - 🇭🇰_电报频道 @mfjdpd
+      - 🇨🇳TW_142593+@WangCai_1
+      - 🇯🇵JP_82897+@WangCai_1
+      - 🇯🇵JP_57003+@WangCai_1
+      - 🇯🇵JP_123597+@WangCai_1
+      - 🇺🇸_电报频道 @mfjdpd_2
+      - 🇭🇰HK_142593+@WangCai_1
+      - 美国-3.10MB/s
+      - 新加坡-1.56MB/s
+      - 美国-559.9KB/s
+      - 美国-3.42MB/s
+      - 美国-5.23MB/s
+      - 法国-3.52MB/s
+      - 美国-3.55MB/s_1
+      - 加拿大-5.90MB/s_1
+      - 美国-1.23MB/s
+      - 美国-1.97MB/s
+      - 美国-3.55MB/s_2
+      - 加拿大-5.90MB/s_2
+      - 美国-229.9KB/s
+      - 美国-1.64MB/s
+      - 美国-3.21MB/s
+      - 美国-3.22MB/s
+      - 未知国家-346.0KB/s
+      - 美国-4.01MB/s
+      - 未知国家-2.27MB/s
+      - 法国-5.05MB/s
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -209,16 +392,42 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇯🇵_JP_日本_1
+      - 🇯🇵_JP_日本_2
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇨🇱_CL_智利
-      - 🇺🇸_US_美国->🇨🇳_CN_中国
-      - 🇭🇰_HK_香港->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大
       - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_4
+      - 🇭🇰_HK_香港
+      - 🇭🇰HK_30513+@WangCai_1
+      - 🇯🇵JP_65870+@WangCai_1
+      - 🇺🇸_电报频道 @mfjdpd_1
+      - 🇭🇰_电报频道 @mfjdpd
+      - 🇨🇳TW_142593+@WangCai_1
+      - 🇯🇵JP_82897+@WangCai_1
+      - 🇯🇵JP_57003+@WangCai_1
+      - 🇯🇵JP_123597+@WangCai_1
+      - 🇺🇸_电报频道 @mfjdpd_2
+      - 🇭🇰HK_142593+@WangCai_1
+      - 美国-3.10MB/s
+      - 新加坡-1.56MB/s
+      - 美国-559.9KB/s
+      - 美国-3.42MB/s
+      - 美国-5.23MB/s
+      - 法国-3.52MB/s
+      - 美国-3.55MB/s_1
+      - 加拿大-5.90MB/s_1
+      - 美国-1.23MB/s
+      - 美国-1.97MB/s
+      - 美国-3.55MB/s_2
+      - 加拿大-5.90MB/s_2
+      - 美国-229.9KB/s
+      - 美国-1.64MB/s
+      - 美国-3.21MB/s
+      - 美国-3.22MB/s
+      - 未知国家-346.0KB/s
+      - 美国-4.01MB/s
+      - 未知国家-2.27MB/s
+      - 法国-5.05MB/s
 
 rules:
 # 本地/局域网地址
