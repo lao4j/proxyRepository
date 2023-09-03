@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：2023-09-03 10:38:17
+# 客户端：Clash.Meta
+# 创建时间：2023-09-03 12:50:03
 # 使用模版：V2RaySE 默认模版
-# 节点数量：18
+# 节点数量：9
 ####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -85,165 +86,102 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇨🇳_CN_中国","type":"ss","server":"cm1-go.go001.buzz","port":31101,"password":"123456","cipher":"aes-256-gcm"}
-  - {"name":"🇨🇳_CN_中国->🇹🇼_TW_台湾","type":"vmess","server":"221.131.165.186","port":18075,"cipher":"auto","uuid":"1b35440a-1309-339b-9dd3-ff90ff887d76","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/soda"}}
-  - {"name":"🇨🇳_CN_中国->🇭🇰_HK_香港","type":"vmess","server":"in06.my1188.org","port":64096,"cipher":"auto","uuid":"886ac452-590a-3dae-bed9-96203e9aacfb","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国","type":"ss","server":"free.node.kk-proxy.pro","port":54455,"password":"7b5e7dee-645f-476b-bd25-7748d5f69962","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇨🇦_CA_加拿大","type":"vmess","server":"23.227.38.81","port":443,"cipher":"auto","uuid":"6deddb7f-e557-42db-bfa0-cf40b36b27e2","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dongtaiwang.com","headers":{"host":"d.freeh1.xyz"}}}
-  - {"name":"🇰🇷_KR_韩国","type":"ss","server":"54.180.139.224","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"3.wyhkaa0.gq","port":2095,"cipher":"auto","uuid":"0150eac1-6e49-4329-9c06-50027c0b9ad7","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/TG:@hkaa0","headers":{"host":"3.wyhkaa0.gq"}}}
-  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"6.wyhkaa0.gq","port":2095,"cipher":"auto","uuid":"6bbc9554-07bc-47c6-a088-87aa79fd5ca1","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/TG:@hkaa0","headers":{"host":"6.wyhkaa0.gq"}}}
-  - {"name":"中转节点-5.63MB/s","type":"vmess","server":"in06.my1188.org","port":64003,"cipher":"auto","uuid":"886ac452-590a-3dae-bed9-96203e9aacfb","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国-2.35MB/s","type":"vmess","server":"45.199.138.62","port":34325,"cipher":"auto","uuid":"130c9f2e-42b1-4ebf-b345-e26456a061f9","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"未知国家-312.7KB/s","type":"vmess","server":"cf-lt.sharecentre.online","port":80,"cipher":"auto","uuid":"5f751c6e-50b1-4797-ba8e-6ffe324a0bce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"lv3.sharecentrepro.org"}}}
-  - {"name":"美国-208.8KB/s","type":"vmess","server":"156.225.67.95","port":31965,"cipher":"auto","uuid":"5a4d69ad-20a9-4941-b223-87bbd09f5f52","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国-2.63MB/s","type":"ss","server":"216.52.183.244","port":443,"password":"83XvX4Vo%*3a","cipher":"aes-128-gcm","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":false}}
-  - {"name":"土耳其-1.19MB/s","type":"ss","server":"45.89.52.66","port":9014,"password":"KnJGad3FqTvjqbaX","cipher":"aes-256-cfb"}
-  - {"name":"土耳其-1.40MB/s","type":"ss","server":"45.89.52.66","port":9011,"password":"M3t2ZEQcMGRWBjRa","cipher":"aes-256-cfb"}
-  - {"name":"未知国家-4.36MB/s","type":"vmess","server":"104.21.31.254","port":443,"cipher":"auto","uuid":"927094d3-d678-4763-8591-e240d0bcae87","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vsg1.0bad.com/chat","headers":{"host":"panel2.hodorauth.com"}}}
-  - {"name":"中转节点-1.20MB/s","type":"vmess","server":"120.233.43.62","port":51904,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国-5.39MB/s","type":"vmess","server":"199.188.111.250","port":46500,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"v2rayse_test_1","type":"ss","server":"198.57.27.218","port":5004,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
+  - {"name":"v2rayse_test_2","type":"vmess","server":"154.23.190.162","port":443,"cipher":"auto","uuid":"b9984674-f771-4e67-a198-c7e60720ba2c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"v2rayse_test_3","type":"vmess","server":"154.23.190.162","port":443,"cipher":"auto","uuid":"b9984674-f771-4e67-a198-c7e60720ba2c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"defaultName_1","type":"ssr","server":"20.239.49.44","port":59814,"password":"3df57276-03ef-45cf-bdd4-4edb6dfaa0ef","cipher":"dummy","obfs":"plain","protocol":"origin","group":"https://v2rayse.com"}
+  - {"name":"v2rayse_test_4","type":"trojan","server":"ca-trojan.bonds.id","port":443,"udp":true,"password":"bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272","skip-cert-verify":true}
+  - {"name":"defaultName_2","type":"http","server":"124.15.12.24","port":251,"username":"username","password":"password"}
+  - {"name":"defaultName_3","type":"socks5","server":"124.15.12.24","port":2312}
+  - {"name":"Hys-1.2.3.4","type":"hysteria","server":"1.2.3.4","port":12854,"sni":"wechat.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"pekopeko","up":50,"down":250}
+  - {"name":"defaultName_4","type":"socks5","server":"1.2.3.4","port":123,"username":"username","password":"password"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳_CN_中国
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇦_CA_加拿大
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 中转节点-5.63MB/s
-      - 美国-2.35MB/s
-      - 未知国家-312.7KB/s
-      - 美国-208.8KB/s
-      - 美国-2.63MB/s
-      - 土耳其-1.19MB/s
-      - 土耳其-1.40MB/s
-      - 未知国家-4.36MB/s
-      - 中转节点-1.20MB/s
-      - 美国-5.39MB/s
+      - v2rayse_test_1
+      - v2rayse_test_2
+      - v2rayse_test_3
+      - defaultName_1
+      - v2rayse_test_4
+      - defaultName_2
+      - defaultName_3
+      - Hys-1.2.3.4
+      - defaultName_4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳_CN_中国
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇦_CA_加拿大
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 中转节点-5.63MB/s
-      - 美国-2.35MB/s
-      - 未知国家-312.7KB/s
-      - 美国-208.8KB/s
-      - 美国-2.63MB/s
-      - 土耳其-1.19MB/s
-      - 土耳其-1.40MB/s
-      - 未知国家-4.36MB/s
-      - 中转节点-1.20MB/s
-      - 美国-5.39MB/s
+      - v2rayse_test_1
+      - v2rayse_test_2
+      - v2rayse_test_3
+      - defaultName_1
+      - v2rayse_test_4
+      - defaultName_2
+      - defaultName_3
+      - Hys-1.2.3.4
+      - defaultName_4
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇦_CA_加拿大
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 中转节点-5.63MB/s
-      - 美国-2.35MB/s
-      - 未知国家-312.7KB/s
-      - 美国-208.8KB/s
-      - 美国-2.63MB/s
-      - 土耳其-1.19MB/s
-      - 土耳其-1.40MB/s
-      - 未知国家-4.36MB/s
-      - 中转节点-1.20MB/s
-      - 美国-5.39MB/s
+      - v2rayse_test_1
+      - v2rayse_test_2
+      - v2rayse_test_3
+      - defaultName_1
+      - v2rayse_test_4
+      - defaultName_2
+      - defaultName_3
+      - Hys-1.2.3.4
+      - defaultName_4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇦_CA_加拿大
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 中转节点-5.63MB/s
-      - 美国-2.35MB/s
-      - 未知国家-312.7KB/s
-      - 美国-208.8KB/s
-      - 美国-2.63MB/s
-      - 土耳其-1.19MB/s
-      - 土耳其-1.40MB/s
-      - 未知国家-4.36MB/s
-      - 中转节点-1.20MB/s
-      - 美国-5.39MB/s
+      - v2rayse_test_1
+      - v2rayse_test_2
+      - v2rayse_test_3
+      - defaultName_1
+      - v2rayse_test_4
+      - defaultName_2
+      - defaultName_3
+      - Hys-1.2.3.4
+      - defaultName_4
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳_CN_中国
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇦_CA_加拿大
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 中转节点-5.63MB/s
-      - 美国-2.35MB/s
-      - 未知国家-312.7KB/s
-      - 美国-208.8KB/s
-      - 美国-2.63MB/s
-      - 土耳其-1.19MB/s
-      - 土耳其-1.40MB/s
-      - 未知国家-4.36MB/s
-      - 中转节点-1.20MB/s
-      - 美国-5.39MB/s
+      - v2rayse_test_1
+      - v2rayse_test_2
+      - v2rayse_test_3
+      - defaultName_1
+      - v2rayse_test_4
+      - defaultName_2
+      - defaultName_3
+      - Hys-1.2.3.4
+      - defaultName_4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇦_CA_加拿大
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 中转节点-5.63MB/s
-      - 美国-2.35MB/s
-      - 未知国家-312.7KB/s
-      - 美国-208.8KB/s
-      - 美国-2.63MB/s
-      - 土耳其-1.19MB/s
-      - 土耳其-1.40MB/s
-      - 未知国家-4.36MB/s
-      - 中转节点-1.20MB/s
-      - 美国-5.39MB/s
+      - v2rayse_test_1
+      - v2rayse_test_2
+      - v2rayse_test_3
+      - defaultName_1
+      - v2rayse_test_4
+      - defaultName_2
+      - defaultName_3
+      - Hys-1.2.3.4
+      - defaultName_4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -266,24 +204,15 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳_CN_中国
-      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇦_CA_加拿大
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 中转节点-5.63MB/s
-      - 美国-2.35MB/s
-      - 未知国家-312.7KB/s
-      - 美国-208.8KB/s
-      - 美国-2.63MB/s
-      - 土耳其-1.19MB/s
-      - 土耳其-1.40MB/s
-      - 未知国家-4.36MB/s
-      - 中转节点-1.20MB/s
-      - 美国-5.39MB/s
+      - v2rayse_test_1
+      - v2rayse_test_2
+      - v2rayse_test_3
+      - defaultName_1
+      - v2rayse_test_4
+      - defaultName_2
+      - defaultName_3
+      - Hys-1.2.3.4
+      - defaultName_4
 
 rules:
 # 本地/局域网地址
