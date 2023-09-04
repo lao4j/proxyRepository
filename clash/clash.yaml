@@ -1,67 +1,284 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：03-09-2023 16:48:18
+# 客户端：Clash
+# 创建时间：2023-09-04 04:33:26
 # 使用模版：V2RaySE 默认模版
-# 节点数量：1
+# 节点数量：23
 ####################################
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
 external-controller: 0.0.0.0:9090
 dns:
   enabled: true
-  nameserver:
-    - 119.29.29.29
+  listen: 0.0.0.0:1053
+  ipv6: true
+  default-nameserver:
     - 223.5.5.5
-  fallback:
-    - 8.8.8.8
-    - 8.8.4.4
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
+    - 114.114.114.114
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - swscan.apple.com
+    - mesu.apple.com
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - +.music.163.com
+    - '*.126.net'
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - '*.kuwo.cn'
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - +.y.qq.com
+    - +.music.tc.qq.com
+    - aqqmusic.tc.qq.com
+    - +.stream.qqmusic.qq.com
+    - '*.xiami.com'
+    - +.music.migu.cn
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - +.xboxlive.com
+    - localhost.ptlogin2.qq.com
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - '*.mcdn.bilivideo.cn'
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 
 proxies:
-  - {"name":"","type":"vless","server":"51.38.110.140","port":2087,"uuid":"51dd8322-2048-4846-a609-966b4ed7d532","tls":false,"servername":"www.speedtest.net","network":"tcp"}
+  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"13.wyhkaa0.gq","port":2095,"cipher":"auto","uuid":"32af4006-0698-4910-806c-b813074f36eb","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/TG:@hkaa0","headers":{"host":"13.wyhkaa0.gq"}}}
+  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"3.wyhkaa0.gq","port":2095,"cipher":"auto","uuid":"0150eac1-6e49-4329-9c06-50027c0b9ad7","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/TG:@hkaa0","headers":{"host":"3.wyhkaa0.gq"}}}
+  - {"name":"美国优化高速入口(频道:马克吐温)","type":"ss","server":"jh.xianyuwangluo.cyou","port":27207,"password":"2c132199-006a-4bc1-958c-d1bffe978fcb","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"日本优化高速入口(频道:马克吐温)","type":"ss","server":"fs.xianyuwangluo.cyou","port":27202,"password":"2c132199-006a-4bc1-958c-d1bffe978fcb","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"澳大利亚优化高速入口(频道:马克吐温)","type":"ss","server":"jh.xianyuwangluo.cyou","port":27204,"password":"2c132199-006a-4bc1-958c-d1bffe978fcb","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"未知国家-4.38MB/s","type":"vmess","server":"Tokyo.mfa.ee","port":2052,"cipher":"auto","uuid":"992889a7-296e-4a44-98c2-0eb89af4411d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"vnpt.iiio.wiki"}}}
+  - {"name":"美国-681.5KB/s","type":"vmess","server":"156.225.67.101","port":53797,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"韩国-1.29MB/s","type":"ss","server":"3.36.97.84","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"中转节点-2.85MB/s","type":"vmess","server":"mf632fx.micloud.buzz","port":42232,"cipher":"auto","uuid":"c633cbf9-fb85-42eb-bae7-f2b5e2bbefe3","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/zh-cn","headers":{"host":"mf632fx.micloud.buzz"}}}
+  - {"name":"香港-536.6KB/s","type":"ss","server":"8.210.112.68","port":443,"password":"a-wym4ovY4Yw","cipher":"aes-128-gcm","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":false}}
+  - {"name":"美国-2.32MB/s","type":"vmess","server":"172.67.160.88","port":80,"cipher":"auto","uuid":"567d3fe2-8df2-466c-ab0d-640cc151c62c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/blue","headers":{"host":"ziyong.vtcss.top"}}}
+  - {"name":"美国-1.82MB/s","type":"vmess","server":"108.166.203.181","port":44945,"cipher":"auto","uuid":"268a491b-764c-44d1-81a4-30de16130867","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中转节点-1.29MB/s","type":"vmess","server":"fusion.mlinuu.top","port":3507,"cipher":"auto","uuid":"ce6c3ee0-e0bd-39d2-8b49-97c6add325c6","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国-2.00MB/s","type":"vmess","server":"171.22.116.45","port":36709,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中转节点-394.9KB/s","type":"vmess","server":"120.233.42.184","port":36785,"cipher":"auto","uuid":"f11aa310-006b-3db4-910d-3f7217fbfa73","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中转节点-483.3KB/s","type":"vmess","server":"fusion.mlinuu.top","port":3504,"cipher":"auto","uuid":"ce6c3ee0-e0bd-39d2-8b49-97c6add325c6","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"香港-1.67MB/s","type":"ss","server":"8.210.112.68","port":443,"password":"a-wym4ovY4Yw","cipher":"aes-128-gcm","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":false}}
+  - {"name":"中转节点-6.97MB/s","type":"vmess","server":"183.232.249.52","port":46784,"cipher":"auto","uuid":"f11aa310-006b-3db4-910d-3f7217fbfa73","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国-4.02MB/s","type":"vmess","server":"172.67.149.81","port":80,"cipher":"auto","uuid":"f31c0b34-977b-4c2b-acfa-becfdfc1f267","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"sdygarm.e5outllok.me"}}}
+  - {"name":"新加坡-1.15MB/s","type":"ss","server":"54.251.161.100","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"土耳其-2.18MB/s","type":"ss","server":"45.89.52.66","port":9005,"password":"ZET59LF6DvCC8KVt","cipher":"aes-256-cfb"}
+  - {"name":"中转节点-4.72MB/s","type":"vmess","server":"183.232.249.40","port":54004,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国-1.83MB/s","type":"ss","server":"85.239.52.174","port":444,"password":"datdaHedy","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - ''
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 美国优化高速入口(频道:马克吐温)
+      - 日本优化高速入口(频道:马克吐温)
+      - 澳大利亚优化高速入口(频道:马克吐温)
+      - 未知国家-4.38MB/s
+      - 美国-681.5KB/s
+      - 韩国-1.29MB/s
+      - 中转节点-2.85MB/s
+      - 香港-536.6KB/s
+      - 美国-2.32MB/s
+      - 美国-1.82MB/s
+      - 中转节点-1.29MB/s
+      - 美国-2.00MB/s
+      - 中转节点-394.9KB/s
+      - 中转节点-483.3KB/s
+      - 香港-1.67MB/s
+      - 中转节点-6.97MB/s
+      - 美国-4.02MB/s
+      - 新加坡-1.15MB/s
+      - 土耳其-2.18MB/s
+      - 中转节点-4.72MB/s
+      - 美国-1.83MB/s
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - ''
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 美国优化高速入口(频道:马克吐温)
+      - 日本优化高速入口(频道:马克吐温)
+      - 澳大利亚优化高速入口(频道:马克吐温)
+      - 未知国家-4.38MB/s
+      - 美国-681.5KB/s
+      - 韩国-1.29MB/s
+      - 中转节点-2.85MB/s
+      - 香港-536.6KB/s
+      - 美国-2.32MB/s
+      - 美国-1.82MB/s
+      - 中转节点-1.29MB/s
+      - 美国-2.00MB/s
+      - 中转节点-394.9KB/s
+      - 中转节点-483.3KB/s
+      - 香港-1.67MB/s
+      - 中转节点-6.97MB/s
+      - 美国-4.02MB/s
+      - 新加坡-1.15MB/s
+      - 土耳其-2.18MB/s
+      - 中转节点-4.72MB/s
+      - 美国-1.83MB/s
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ''
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 美国优化高速入口(频道:马克吐温)
+      - 日本优化高速入口(频道:马克吐温)
+      - 澳大利亚优化高速入口(频道:马克吐温)
+      - 未知国家-4.38MB/s
+      - 美国-681.5KB/s
+      - 韩国-1.29MB/s
+      - 中转节点-2.85MB/s
+      - 香港-536.6KB/s
+      - 美国-2.32MB/s
+      - 美国-1.82MB/s
+      - 中转节点-1.29MB/s
+      - 美国-2.00MB/s
+      - 中转节点-394.9KB/s
+      - 中转节点-483.3KB/s
+      - 香港-1.67MB/s
+      - 中转节点-6.97MB/s
+      - 美国-4.02MB/s
+      - 新加坡-1.15MB/s
+      - 土耳其-2.18MB/s
+      - 中转节点-4.72MB/s
+      - 美国-1.83MB/s
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ''
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 美国优化高速入口(频道:马克吐温)
+      - 日本优化高速入口(频道:马克吐温)
+      - 澳大利亚优化高速入口(频道:马克吐温)
+      - 未知国家-4.38MB/s
+      - 美国-681.5KB/s
+      - 韩国-1.29MB/s
+      - 中转节点-2.85MB/s
+      - 香港-536.6KB/s
+      - 美国-2.32MB/s
+      - 美国-1.82MB/s
+      - 中转节点-1.29MB/s
+      - 美国-2.00MB/s
+      - 中转节点-394.9KB/s
+      - 中转节点-483.3KB/s
+      - 香港-1.67MB/s
+      - 中转节点-6.97MB/s
+      - 美国-4.02MB/s
+      - 新加坡-1.15MB/s
+      - 土耳其-2.18MB/s
+      - 中转节点-4.72MB/s
+      - 美国-1.83MB/s
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - ''
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 美国优化高速入口(频道:马克吐温)
+      - 日本优化高速入口(频道:马克吐温)
+      - 澳大利亚优化高速入口(频道:马克吐温)
+      - 未知国家-4.38MB/s
+      - 美国-681.5KB/s
+      - 韩国-1.29MB/s
+      - 中转节点-2.85MB/s
+      - 香港-536.6KB/s
+      - 美国-2.32MB/s
+      - 美国-1.82MB/s
+      - 中转节点-1.29MB/s
+      - 美国-2.00MB/s
+      - 中转节点-394.9KB/s
+      - 中转节点-483.3KB/s
+      - 香港-1.67MB/s
+      - 中转节点-6.97MB/s
+      - 美国-4.02MB/s
+      - 新加坡-1.15MB/s
+      - 土耳其-2.18MB/s
+      - 中转节点-4.72MB/s
+      - 美国-1.83MB/s
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ''
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 美国优化高速入口(频道:马克吐温)
+      - 日本优化高速入口(频道:马克吐温)
+      - 澳大利亚优化高速入口(频道:马克吐温)
+      - 未知国家-4.38MB/s
+      - 美国-681.5KB/s
+      - 韩国-1.29MB/s
+      - 中转节点-2.85MB/s
+      - 香港-536.6KB/s
+      - 美国-2.32MB/s
+      - 美国-1.82MB/s
+      - 中转节点-1.29MB/s
+      - 美国-2.00MB/s
+      - 中转节点-394.9KB/s
+      - 中转节点-483.3KB/s
+      - 香港-1.67MB/s
+      - 中转节点-6.97MB/s
+      - 美国-4.02MB/s
+      - 新加坡-1.15MB/s
+      - 土耳其-2.18MB/s
+      - 中转节点-4.72MB/s
+      - 美国-1.83MB/s
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -84,7 +301,29 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ''
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 美国优化高速入口(频道:马克吐温)
+      - 日本优化高速入口(频道:马克吐温)
+      - 澳大利亚优化高速入口(频道:马克吐温)
+      - 未知国家-4.38MB/s
+      - 美国-681.5KB/s
+      - 韩国-1.29MB/s
+      - 中转节点-2.85MB/s
+      - 香港-536.6KB/s
+      - 美国-2.32MB/s
+      - 美国-1.82MB/s
+      - 中转节点-1.29MB/s
+      - 美国-2.00MB/s
+      - 中转节点-394.9KB/s
+      - 中转节点-483.3KB/s
+      - 香港-1.67MB/s
+      - 中转节点-6.97MB/s
+      - 美国-4.02MB/s
+      - 新加坡-1.15MB/s
+      - 土耳其-2.18MB/s
+      - 中转节点-4.72MB/s
+      - 美国-1.83MB/s
 
 rules:
 # 本地/局域网地址
