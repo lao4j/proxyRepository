@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：04-09-2023 16:52:59
+# 创建时间：2023-09-04 22:07:15
 # 使用模版：V2RaySE 默认模版
-# 节点数量：2
+# 节点数量：1
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -11,63 +11,120 @@ log-level: info
 external-controller: 0.0.0.0:9090
 dns:
   enabled: true
-  nameserver:
-    - 119.29.29.29
+  listen: 0.0.0.0:1053
+  ipv6: true
+  default-nameserver:
     - 223.5.5.5
-  fallback:
-    - 8.8.8.8
-    - 8.8.4.4
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
+    - 114.114.114.114
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - swscan.apple.com
+    - mesu.apple.com
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - +.music.163.com
+    - '*.126.net'
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - '*.kuwo.cn'
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - +.y.qq.com
+    - +.music.tc.qq.com
+    - aqqmusic.tc.qq.com
+    - +.stream.qqmusic.qq.com
+    - '*.xiami.com'
+    - +.music.migu.cn
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - +.xboxlive.com
+    - localhost.ptlogin2.qq.com
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - '*.mcdn.bilivideo.cn'
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 
 proxies:
-  - {"name":"کانفیگ اختصاصی 🟢azadnet","type":"vmess","server":"joinshin.turboo-server.com","port":60419,"cipher":"auto","uuid":"bd7b264a-88c4-38f4-b597-ee26ea25349a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"azadnet","type":"vmess","server":"116.203.228.52","port":443,"cipher":"auto","uuid":"89bf4fb0-6b78-44dc-8b58-c8404c7da958","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷_KR_韩国->🇺🇸_US_美国","type":"ss","server":"free.node.kk-proxy.pro","port":54455,"password":"235fa4fe-078c-4bd9-bb4f-d799d3193d3f","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - کانفیگ اختصاصی 🟢azadnet
-      - azadnet
+      - 🇰🇷_KR_韩国->🇺🇸_US_美国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - کانفیگ اختصاصی 🟢azadnet
-      - azadnet
+      - 🇰🇷_KR_韩国->🇺🇸_US_美国
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - کانفیگ اختصاصی 🟢azadnet
-      - azadnet
+      - 🇰🇷_KR_韩国->🇺🇸_US_美国
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - کانفیگ اختصاصی 🟢azadnet
-      - azadnet
+      - 🇰🇷_KR_韩国->🇺🇸_US_美国
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - کانفیگ اختصاصی 🟢azadnet
-      - azadnet
+      - 🇰🇷_KR_韩国->🇺🇸_US_美国
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - کانفیگ اختصاصی 🟢azadnet
-      - azadnet
+      - 🇰🇷_KR_韩国->🇺🇸_US_美国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -90,8 +147,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - کانفیگ اختصاصی 🟢azadnet
-      - azadnet
+      - 🇰🇷_KR_韩国->🇺🇸_US_美国
 
 rules:
 # 本地/局域网地址
