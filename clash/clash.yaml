@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-09-05 13:57:55
+# 创建时间：05-09-2023 11:27:57
 # 使用模版：V2RaySE 默认模版
-# 节点数量：10
+# 节点数量：12
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -11,183 +11,133 @@ log-level: info
 external-controller: 0.0.0.0:9090
 dns:
   enabled: true
-  listen: 0.0.0.0:1053
-  ipv6: true
-  default-nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-    - '*.lan'
-    - '*.linksys.com'
-    - '*.linksyssmartwifi.com'
-    - swscan.apple.com
-    - mesu.apple.com
-    - '*.msftconnecttest.com'
-    - '*.msftncsi.com'
-    - time.*.com
-    - time.*.gov
-    - time.*.edu.cn
-    - time.*.apple.com
-    - time1.*.com
-    - time2.*.com
-    - time3.*.com
-    - time4.*.com
-    - time5.*.com
-    - time6.*.com
-    - time7.*.com
-    - ntp.*.com
-    - ntp.*.com
-    - ntp1.*.com
-    - ntp2.*.com
-    - ntp3.*.com
-    - ntp4.*.com
-    - ntp5.*.com
-    - ntp6.*.com
-    - ntp7.*.com
-    - '*.time.edu.cn'
-    - '*.ntp.org.cn'
-    - +.pool.ntp.org
-    - time1.cloud.tencent.com
-    - +.music.163.com
-    - '*.126.net'
-    - musicapi.taihe.com
-    - music.taihe.com
-    - songsearch.kugou.com
-    - trackercdn.kugou.com
-    - '*.kuwo.cn'
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com
-    - +.y.qq.com
-    - +.music.tc.qq.com
-    - aqqmusic.tc.qq.com
-    - +.stream.qqmusic.qq.com
-    - '*.xiami.com'
-    - +.music.migu.cn
-    - +.srv.nintendo.net
-    - +.stun.playstation.net
-    - xbox.*.microsoft.com
-    - +.xboxlive.com
-    - localhost.ptlogin2.qq.com
-    - proxy.golang.org
-    - stun.*.*
-    - stun.*.*.*
-    - '*.mcdn.bilivideo.cn'
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
-  fallback-filter:
-    geoip: false
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
+    - 119.29.29.29
+    - 223.5.5.5
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
 
 proxies:
-  - {"name":"美国-2.46MB/s","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"70a93fcb-f8c0-4916-96b5-8c54f3394708","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"db2.shabijichang.com"}}}
-  - {"name":"美国-2.61MB/s","type":"ss","server":"216.52.183.244","port":443,"password":"83XvX4Vo%*3a","cipher":"aes-128-gcm","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":false}}
-  - {"name":"美国-966.6KB/s","type":"vmess","server":"sdygarm.e5outllok.me","port":80,"cipher":"auto","uuid":"f31c0b34-977b-4c2b-acfa-becfdfc1f267","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"sdygarm.e5outllok.me"}}}
-  - {"name":"中转节点-390.7KB/s","type":"ss","server":"183.232.170.32","port":30005,"password":"g12sQi#ss#&1","cipher":"aes-128-gcm","plugin":"obfs-local","plugin-opts":{"mode":"websocket"}}
-  - {"name":"美国-3.00MB/s","type":"vmess","server":"45.199.138.180","port":54785,"cipher":"auto","uuid":"d3133484-f2bf-4b0c-8d38-f8e645b65687","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"未知国家-1.88MB/s","type":"vmess","server":"cfyd.starsea.vip","port":80,"cipher":"auto","uuid":"c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/sshkit/1736960111/64ee26041efcc/","headers":{"host":"sg1-v2ray.sshkit.org"}}}
-  - {"name":"美国-3.30MB/s","type":"vmess","server":"142.4.111.77","port":42002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"香港-605.1KB/s","type":"ss","server":"8.210.112.68","port":443,"password":"a-wym4ovY4Yw","cipher":"aes-128-gcm","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":false}}
-  - {"name":"韩国-1.96MB/s","type":"ss","server":"13.124.220.115","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"中转节点-1.62MB/s","type":"ss","server":"183.232.170.32","port":20014,"password":"g12sQi#ss#&1","cipher":"aes-128-gcm","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":false}}
+  - {"name":"Los Angeles","type":"vmess","server":"38.75.137.27","port":22324,"cipher":"auto","uuid":"04621bae-ab36-11ec-b909-0242ac120002","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"Miami","type":"vmess","server":"162.251.62.115","port":22324,"cipher":"auto","uuid":"04621bae-ab36-11ec-b909-0242ac120002","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"Frankfort","type":"vmess","server":"23.158.56.89","port":22324,"cipher":"auto","uuid":"04621bae-ab36-11ec-b909-0242ac120002","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"London","type":"vmess","server":"172.99.190.12","port":22324,"cipher":"auto","uuid":"04621bae-ab36-11ec-b909-0242ac120002","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"Toronto","type":"vmess","server":"198.57.27.212","port":22324,"cipher":"auto","uuid":"04621bae-ab36-11ec-b909-0242ac120002","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"Server-1","type":"vmess","server":"octavi.cfd","port":443,"cipher":"aes-128-gcm","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":1,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"linkvws","headers":{"host":"octavi.cfd"}}}
+  - {"name":"Server-2","type":"vmess","server":"alvvin.click","port":443,"cipher":"aes-128-gcm","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":1,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"linkvws","headers":{"host":"alvvin.click"}}}
+  - {"name":"Server-3","type":"vmess","server":"waynn.makeup","port":443,"cipher":"aes-128-gcm","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":1,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"linkvws","headers":{"host":"waynn.makeup"}}}
+  - {"name":"Server-4","type":"vmess","server":"edeen.makeup","port":443,"cipher":"aes-128-gcm","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":1,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"linkvws","headers":{"host":"edeen.makeup"}}}
+  - {"name":"Server-5","type":"vmess","server":"ophelia.mom","port":443,"cipher":"aes-128-gcm","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":1,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"linkvws","headers":{"host":"ophelia.mom"}}}
+  - {"name":"Server-6","type":"vmess","server":"odelia.autos","port":443,"cipher":"aes-128-gcm","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":1,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"linkvws","headers":{"host":"odelia.autos"}}}
+  - {"name":"Server-7","type":"vmess","server":"oliv.beauty","port":443,"cipher":"aes-128-gcm","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":1,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"linkvws","headers":{"host":"oliv.beauty"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 美国-2.46MB/s
-      - 美国-2.61MB/s
-      - 美国-966.6KB/s
-      - 中转节点-390.7KB/s
-      - 美国-3.00MB/s
-      - 未知国家-1.88MB/s
-      - 美国-3.30MB/s
-      - 香港-605.1KB/s
-      - 韩国-1.96MB/s
-      - 中转节点-1.62MB/s
+      - Los Angeles
+      - Miami
+      - Frankfort
+      - London
+      - Toronto
+      - Server-1
+      - Server-2
+      - Server-3
+      - Server-4
+      - Server-5
+      - Server-6
+      - Server-7
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 美国-2.46MB/s
-      - 美国-2.61MB/s
-      - 美国-966.6KB/s
-      - 中转节点-390.7KB/s
-      - 美国-3.00MB/s
-      - 未知国家-1.88MB/s
-      - 美国-3.30MB/s
-      - 香港-605.1KB/s
-      - 韩国-1.96MB/s
-      - 中转节点-1.62MB/s
+      - Los Angeles
+      - Miami
+      - Frankfort
+      - London
+      - Toronto
+      - Server-1
+      - Server-2
+      - Server-3
+      - Server-4
+      - Server-5
+      - Server-6
+      - Server-7
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国-2.46MB/s
-      - 美国-2.61MB/s
-      - 美国-966.6KB/s
-      - 中转节点-390.7KB/s
-      - 美国-3.00MB/s
-      - 未知国家-1.88MB/s
-      - 美国-3.30MB/s
-      - 香港-605.1KB/s
-      - 韩国-1.96MB/s
-      - 中转节点-1.62MB/s
+      - Los Angeles
+      - Miami
+      - Frankfort
+      - London
+      - Toronto
+      - Server-1
+      - Server-2
+      - Server-3
+      - Server-4
+      - Server-5
+      - Server-6
+      - Server-7
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 美国-2.46MB/s
-      - 美国-2.61MB/s
-      - 美国-966.6KB/s
-      - 中转节点-390.7KB/s
-      - 美国-3.00MB/s
-      - 未知国家-1.88MB/s
-      - 美国-3.30MB/s
-      - 香港-605.1KB/s
-      - 韩国-1.96MB/s
-      - 中转节点-1.62MB/s
+      - Los Angeles
+      - Miami
+      - Frankfort
+      - London
+      - Toronto
+      - Server-1
+      - Server-2
+      - Server-3
+      - Server-4
+      - Server-5
+      - Server-6
+      - Server-7
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 美国-2.46MB/s
-      - 美国-2.61MB/s
-      - 美国-966.6KB/s
-      - 中转节点-390.7KB/s
-      - 美国-3.00MB/s
-      - 未知国家-1.88MB/s
-      - 美国-3.30MB/s
-      - 香港-605.1KB/s
-      - 韩国-1.96MB/s
-      - 中转节点-1.62MB/s
+      - Los Angeles
+      - Miami
+      - Frankfort
+      - London
+      - Toronto
+      - Server-1
+      - Server-2
+      - Server-3
+      - Server-4
+      - Server-5
+      - Server-6
+      - Server-7
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 美国-2.46MB/s
-      - 美国-2.61MB/s
-      - 美国-966.6KB/s
-      - 中转节点-390.7KB/s
-      - 美国-3.00MB/s
-      - 未知国家-1.88MB/s
-      - 美国-3.30MB/s
-      - 香港-605.1KB/s
-      - 韩国-1.96MB/s
-      - 中转节点-1.62MB/s
+      - Los Angeles
+      - Miami
+      - Frankfort
+      - London
+      - Toronto
+      - Server-1
+      - Server-2
+      - Server-3
+      - Server-4
+      - Server-5
+      - Server-6
+      - Server-7
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -210,16 +160,18 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国-2.46MB/s
-      - 美国-2.61MB/s
-      - 美国-966.6KB/s
-      - 中转节点-390.7KB/s
-      - 美国-3.00MB/s
-      - 未知国家-1.88MB/s
-      - 美国-3.30MB/s
-      - 香港-605.1KB/s
-      - 韩国-1.96MB/s
-      - 中转节点-1.62MB/s
+      - Los Angeles
+      - Miami
+      - Frankfort
+      - London
+      - Toronto
+      - Server-1
+      - Server-2
+      - Server-3
+      - Server-4
+      - Server-5
+      - Server-6
+      - Server-7
 
 rules:
 # 本地/局域网地址
