@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-09-08 19:48:51
+# 创建时间：2023-09-08 21:22:37
 # 使用模版：V2RaySE 默认模版
-# 节点数量：7
+# 节点数量：6
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -11,98 +11,155 @@ log-level: info
 external-controller: 0.0.0.0:9090
 dns:
   enabled: true
-  nameserver:
-    - 119.29.29.29
+  listen: 0.0.0.0:1053
+  ipv6: true
+  default-nameserver:
     - 223.5.5.5
-  fallback:
-    - 8.8.8.8
-    - 8.8.4.4
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
+    - 114.114.114.114
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - swscan.apple.com
+    - mesu.apple.com
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - +.music.163.com
+    - '*.126.net'
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - '*.kuwo.cn'
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - +.y.qq.com
+    - +.music.tc.qq.com
+    - aqqmusic.tc.qq.com
+    - +.stream.qqmusic.qq.com
+    - '*.xiami.com'
+    - +.music.migu.cn
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - +.xboxlive.com
+    - localhost.ptlogin2.qq.com
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - '*.mcdn.bilivideo.cn'
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇨🇳_CN_中国->🇮🇳_IN_印度","type":"vmess","server":"zjxc.pmxu.link","port":36988,"cipher":"auto","uuid":"67febe58-6831-3c16-93dd-34706ef61a63","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国","type":"vmess","server":"31.kccic2pa.xyz","port":50031,"cipher":"auto","uuid":"120cadf2-e254-4069-97b2-acd33cfc4f3f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国->🇮🇳_IN_印度_1","type":"vmess","server":"172.64.101.98","port":80,"cipher":"auto","uuid":"272b3891-e103-45e0-8b09-f4d770bf5ba4","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"mm4.shabijichang.com"}}}
-  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"ns1.v2-vip.fun","port":8880,"cipher":"auto","uuid":"617c9bc4-4116-41c6-99e0-ace49a38fcdb","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/Jnv8ViZOUVgijjOh0p5uGjHnXIiY","headers":{"host":"fr7.tehme100.fun"}}}
-  - {"name":"🇺🇸_US_美国->🇮🇳_IN_印度_2","type":"vmess","server":"172.67.146.22","port":80,"cipher":"auto","uuid":"545e2bdb-ac6d-428f-82c7-7966be8d9ebc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"mm.shabijichang.com"}}}
-  - {"name":"🇺🇸_US_美国->🇨🇳_CN_中国","type":"vmess","server":"172.67.92.119","port":80,"cipher":"auto","uuid":"5f751c6e-50b1-4797-ba8e-6ffe324a0bce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"ca.ilovescp.com"}}}
-  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"172.67.102.115","port":80,"cipher":"auto","uuid":"5f751c6e-50b1-4797-ba8e-6ffe324a0bce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"dp3.scproxy.top"}}}
+  - {"name":"US-VPS1-SJ","type":"trojan","server":"whiteswang.club","port":1980,"udp":true,"password":"561b7a41-13e8-4799-8239-e4e5faf8562c","sni":"whiteswang.club","skip-cert-verify":true,"alpn":["http/1.1"]}
+  - {"name":"US-VPS2-SEA","type":"trojan","server":"lucheap.store","port":6023,"udp":true,"password":"c0f25d60-620e-4b1b-8e44-78ecd0da57d0","sni":"lucheap.store","skip-cert-verify":true,"alpn":["http/1.1"]}
+  - {"name":"US-VPS3-SEA2","type":"trojan","server":"ipoints.site","port":6023,"udp":true,"password":"158cd0ee-131c-445c-874d-5b8ac9cc3f3b","sni":"ipoints.site","skip-cert-verify":true,"alpn":["http/1.1"]}
+  - {"name":"US-VPS4-LA","type":"trojan","server":"winfo.shop","port":8003,"udp":true,"password":"39cfe88e-c58e-419c-9054-637575d07008","sni":"winfo.shop","skip-cert-verify":true,"alpn":["http/1.1"]}
+  - {"name":"JP-VPS5-OS","type":"trojan","server":"mynyr.site","port":8003,"udp":true,"password":"ef10ed06-f061-4ed3-b418-0df34c9ab325","sni":"mynyr.site","skip-cert-verify":true,"alpn":["http/1.1"]}
+  - {"name":"HK-VPS6-HK","type":"trojan","server":"luyangmao.store","port":443,"udp":true,"password":"21ff1543-b38d-4a3c-9007-6118b8ee796f","sni":"luyangmao.store","skip-cert-verify":true,"alpn":["http/1.1"]}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇮🇳_IN_印度_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇮🇳_IN_印度_2
-      - 🇺🇸_US_美国->🇨🇳_CN_中国
-      - 🇺🇸_US_美国_2
+      - US-VPS1-SJ
+      - US-VPS2-SEA
+      - US-VPS3-SEA2
+      - US-VPS4-LA
+      - JP-VPS5-OS
+      - HK-VPS6-HK
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇮🇳_IN_印度_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇮🇳_IN_印度_2
-      - 🇺🇸_US_美国->🇨🇳_CN_中国
-      - 🇺🇸_US_美国_2
+      - US-VPS1-SJ
+      - US-VPS2-SEA
+      - US-VPS3-SEA2
+      - US-VPS4-LA
+      - JP-VPS5-OS
+      - HK-VPS6-HK
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇮🇳_IN_印度_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇮🇳_IN_印度_2
-      - 🇺🇸_US_美国->🇨🇳_CN_中国
-      - 🇺🇸_US_美国_2
+      - US-VPS1-SJ
+      - US-VPS2-SEA
+      - US-VPS3-SEA2
+      - US-VPS4-LA
+      - JP-VPS5-OS
+      - HK-VPS6-HK
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇮🇳_IN_印度_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇮🇳_IN_印度_2
-      - 🇺🇸_US_美国->🇨🇳_CN_中国
-      - 🇺🇸_US_美国_2
+      - US-VPS1-SJ
+      - US-VPS2-SEA
+      - US-VPS3-SEA2
+      - US-VPS4-LA
+      - JP-VPS5-OS
+      - HK-VPS6-HK
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇮🇳_IN_印度_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇮🇳_IN_印度_2
-      - 🇺🇸_US_美国->🇨🇳_CN_中国
-      - 🇺🇸_US_美国_2
+      - US-VPS1-SJ
+      - US-VPS2-SEA
+      - US-VPS3-SEA2
+      - US-VPS4-LA
+      - JP-VPS5-OS
+      - HK-VPS6-HK
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇮🇳_IN_印度_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇮🇳_IN_印度_2
-      - 🇺🇸_US_美国->🇨🇳_CN_中国
-      - 🇺🇸_US_美国_2
+      - US-VPS1-SJ
+      - US-VPS2-SEA
+      - US-VPS3-SEA2
+      - US-VPS4-LA
+      - JP-VPS5-OS
+      - HK-VPS6-HK
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -125,13 +182,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇮🇳_IN_印度_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇮🇳_IN_印度_2
-      - 🇺🇸_US_美国->🇨🇳_CN_中国
-      - 🇺🇸_US_美国_2
+      - US-VPS1-SJ
+      - US-VPS2-SEA
+      - US-VPS3-SEA2
+      - US-VPS4-LA
+      - JP-VPS5-OS
+      - HK-VPS6-HK
 
 rules:
 # 本地/局域网地址
