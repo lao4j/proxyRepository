@@ -1,11 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：2023-09-11 21:40:41
+# 客户端：Clash
+# 创建时间：2023-09-11 22:40:25
 # 使用模版：V2RaySE 默认模版
 # 节点数量：1
 ####################################
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -86,46 +85,46 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"香港限时专享Q群546470680","type":"vless","server":"realcm.skrspc.com","port":29105,"udp":true,"uuid":"003d5850-42a6-4010-b4f1-31e8f7d6007f","tls":true,"servername":"www.airbnb.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"hqvrFuyijjo0LRHAZfYor7Fw-DyWUGKs_G6hV-ZUwCM","short-id":"dcd5ac91"},"client-fingerprint":"random"}
+  - {"name":"defaultName","type":"socks5","server":"59.56.77.147","port":11002,"username":"KhClTgadm","password":"2rIkrHu82QW087LO"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 香港限时专享Q群546470680
+      - defaultName
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 香港限时专享Q群546470680
+      - defaultName
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港限时专享Q群546470680
+      - defaultName
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 香港限时专享Q群546470680
+      - defaultName
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 香港限时专享Q群546470680
+      - defaultName
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 香港限时专享Q群546470680
+      - defaultName
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -148,7 +147,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港限时专享Q群546470680
+      - defaultName
 
 rules:
 # 本地/局域网地址
