@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-09-22 18:59:10
+# 创建时间：2023-09-22 19:43:44
 # 使用模版：V2RaySE 默认模版
-# 节点数量：10
+# 节点数量：3
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -11,183 +11,70 @@ log-level: info
 external-controller: 0.0.0.0:9090
 dns:
   enabled: true
-  listen: 0.0.0.0:1053
-  ipv6: true
-  default-nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-    - '*.lan'
-    - '*.linksys.com'
-    - '*.linksyssmartwifi.com'
-    - swscan.apple.com
-    - mesu.apple.com
-    - '*.msftconnecttest.com'
-    - '*.msftncsi.com'
-    - time.*.com
-    - time.*.gov
-    - time.*.edu.cn
-    - time.*.apple.com
-    - time1.*.com
-    - time2.*.com
-    - time3.*.com
-    - time4.*.com
-    - time5.*.com
-    - time6.*.com
-    - time7.*.com
-    - ntp.*.com
-    - ntp.*.com
-    - ntp1.*.com
-    - ntp2.*.com
-    - ntp3.*.com
-    - ntp4.*.com
-    - ntp5.*.com
-    - ntp6.*.com
-    - ntp7.*.com
-    - '*.time.edu.cn'
-    - '*.ntp.org.cn'
-    - +.pool.ntp.org
-    - time1.cloud.tencent.com
-    - +.music.163.com
-    - '*.126.net'
-    - musicapi.taihe.com
-    - music.taihe.com
-    - songsearch.kugou.com
-    - trackercdn.kugou.com
-    - '*.kuwo.cn'
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com
-    - +.y.qq.com
-    - +.music.tc.qq.com
-    - aqqmusic.tc.qq.com
-    - +.stream.qqmusic.qq.com
-    - '*.xiami.com'
-    - +.music.migu.cn
-    - +.srv.nintendo.net
-    - +.stun.playstation.net
-    - xbox.*.microsoft.com
-    - +.xboxlive.com
-    - localhost.ptlogin2.qq.com
-    - proxy.golang.org
-    - stun.*.*
-    - stun.*.*.*
-    - '*.mcdn.bilivideo.cn'
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
-  fallback-filter:
-    geoip: false
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
+    - 119.29.29.29
+    - 223.5.5.5
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
 
 proxies:
-  - {"name":"中转节点-1.19MB/s","type":"vmess","server":"us1698.131jsq.one","port":32005,"cipher":"auto","uuid":"47d31242-26c7-42ab-8647-8c36e32cadcb","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国-1.52MB/s","type":"vmess","server":"45.199.138.180","port":54885,"cipher":"auto","uuid":"d3133484-f2bf-4b0c-8d38-f8e645b65687","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本-681.2KB/s","type":"trojan","server":"jp1.downloadvip.cfd","port":443,"udp":true,"password":"08900750-d084-4e2f-a3d6-ed4213a43678","sni":"download.xn--mes358a9urctx.com","skip-cert-verify":true}
-  - {"name":"美国-1.92MB/s","type":"vmess","server":"45.199.138.209","port":50447,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca4690dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"中转节点-15.62MB/s","type":"trojan","server":"azjp2.downloadvip.cfd","port":38200,"udp":true,"password":"08900750-d084-4e2f-a3d6-ed4213a43678","sni":"jp1.xn--mes358a9urctx.com","skip-cert-verify":true}
-  - {"name":"日本-556.2KB/s","type":"trojan","server":"hk1.downloadvip.cfd","port":443,"udp":true,"password":"08900750-d084-4e2f-a3d6-ed4213a43678","sni":"download.xn--mes358a9urctx.com","skip-cert-verify":true}
-  - {"name":"新加坡-1.97MB/s","type":"ss","server":"103.172.116.79","port":9044,"password":"KBGjZYcy4SyRShmA","cipher":"aes-256-cfb"}
-  - {"name":"日本-362.3KB/s","type":"ssr","server":"jp-am48-6.eqnode.net","port":8081,"password":"eAokbaDN6","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"origin","group":"SSRProvider"}
-  - {"name":"美国-846.6KB/s","type":"vmess","server":"mrb2.shabijichang.com","port":80,"cipher":"auto","uuid":"53701585-591f-48a3-9515-8831ed0524ac","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"mrb2.shabijichang.com"}}}
-  - {"name":"美国-1.55MB/s","type":"vmess","server":"156.225.67.48","port":45493,"cipher":"auto","uuid":"3ca912da-6ac2-418f-b9cf-45b6f694579b","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"法国","type":"vmess","server":"cdn.narutos.top","port":8880,"cipher":"auto","uuid":"4b5e4565-322f-4223-a891-78a84f189726","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/SMNxcwVdTTzcou9yQftDyZcCGQui9a","headers":{"host":"paris.yj2022.gq"}}}
+  - {"name":"荷兰","type":"vmess","server":"cdn.narutos.top","port":8880,"cipher":"auto","uuid":"4b5e4565-322f-4223-a891-78a84f189726","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/XQ2WCa29jfDMGBcbnQ","headers":{"host":"netherlands.yj2022.gq"}}}
+  - {"name":"波兰","type":"vmess","server":"cdn.narutos.top","port":8880,"cipher":"auto","uuid":"4b5e4565-322f-4223-a891-78a84f189726","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/XQ2WCa29jfDM25GBcbnQ","headers":{"host":"poland.yj2022.gq"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 中转节点-1.19MB/s
-      - 美国-1.52MB/s
-      - 日本-681.2KB/s
-      - 美国-1.92MB/s
-      - 中转节点-15.62MB/s
-      - 日本-556.2KB/s
-      - 新加坡-1.97MB/s
-      - 日本-362.3KB/s
-      - 美国-846.6KB/s
-      - 美国-1.55MB/s
+      - 法国
+      - 荷兰
+      - 波兰
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 中转节点-1.19MB/s
-      - 美国-1.52MB/s
-      - 日本-681.2KB/s
-      - 美国-1.92MB/s
-      - 中转节点-15.62MB/s
-      - 日本-556.2KB/s
-      - 新加坡-1.97MB/s
-      - 日本-362.3KB/s
-      - 美国-846.6KB/s
-      - 美国-1.55MB/s
+      - 法国
+      - 荷兰
+      - 波兰
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中转节点-1.19MB/s
-      - 美国-1.52MB/s
-      - 日本-681.2KB/s
-      - 美国-1.92MB/s
-      - 中转节点-15.62MB/s
-      - 日本-556.2KB/s
-      - 新加坡-1.97MB/s
-      - 日本-362.3KB/s
-      - 美国-846.6KB/s
-      - 美国-1.55MB/s
+      - 法国
+      - 荷兰
+      - 波兰
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 中转节点-1.19MB/s
-      - 美国-1.52MB/s
-      - 日本-681.2KB/s
-      - 美国-1.92MB/s
-      - 中转节点-15.62MB/s
-      - 日本-556.2KB/s
-      - 新加坡-1.97MB/s
-      - 日本-362.3KB/s
-      - 美国-846.6KB/s
-      - 美国-1.55MB/s
+      - 法国
+      - 荷兰
+      - 波兰
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 中转节点-1.19MB/s
-      - 美国-1.52MB/s
-      - 日本-681.2KB/s
-      - 美国-1.92MB/s
-      - 中转节点-15.62MB/s
-      - 日本-556.2KB/s
-      - 新加坡-1.97MB/s
-      - 日本-362.3KB/s
-      - 美国-846.6KB/s
-      - 美国-1.55MB/s
+      - 法国
+      - 荷兰
+      - 波兰
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 中转节点-1.19MB/s
-      - 美国-1.52MB/s
-      - 日本-681.2KB/s
-      - 美国-1.92MB/s
-      - 中转节点-15.62MB/s
-      - 日本-556.2KB/s
-      - 新加坡-1.97MB/s
-      - 日本-362.3KB/s
-      - 美国-846.6KB/s
-      - 美国-1.55MB/s
+      - 法国
+      - 荷兰
+      - 波兰
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -210,16 +97,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中转节点-1.19MB/s
-      - 美国-1.52MB/s
-      - 日本-681.2KB/s
-      - 美国-1.92MB/s
-      - 中转节点-15.62MB/s
-      - 日本-556.2KB/s
-      - 新加坡-1.97MB/s
-      - 日本-362.3KB/s
-      - 美国-846.6KB/s
-      - 美国-1.55MB/s
+      - 法国
+      - 荷兰
+      - 波兰
 
 rules:
 # 本地/局域网地址
