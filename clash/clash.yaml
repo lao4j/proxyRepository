@@ -1,7 +1,7 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2023-09-25 15:17:29
+#  创建时间：2023-09-25 15:49:44
 #  模版：v2rayse默认模版
 #  节点数量：1
 #-------------------------------------------------------------#
@@ -13,46 +13,46 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"vless","name":"✈www.iyio.net|CH","server":"64.110.64.80","port":443,"uuid":"a13df940-020c-465f-bc89-ee5279b5cd6a","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"cg01.wang66.homes","ws-opts":{"path":"/blues","headers":{"host":"cg01.wang66.homes"}}}
+  - {"type":"vless","name":"✈www.iyio.net|GB","server":"158.180.72.184","port":443,"uuid":"a13df940-020c-465f-bc89-ee5279b5cd6a","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xd01.ylks01.eu.org","ws-opts":{"path":"/blues","headers":{"host":"xd01.ylks01.eu.org"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - ✈www.iyio.net|CH
+      - ✈www.iyio.net|GB
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - ✈www.iyio.net|CH
+      - ✈www.iyio.net|GB
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ✈www.iyio.net|CH
+      - ✈www.iyio.net|GB
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ✈www.iyio.net|CH
+      - ✈www.iyio.net|GB
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - ✈www.iyio.net|CH
+      - ✈www.iyio.net|GB
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ✈www.iyio.net|CH
+      - ✈www.iyio.net|GB
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -75,7 +75,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ✈www.iyio.net|CH
+      - ✈www.iyio.net|GB
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
