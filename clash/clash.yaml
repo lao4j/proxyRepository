@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-09-26 17:29:09
+# 创建时间：2023-09-26 17:32:12
 # 使用模版：V2RaySE 默认模版
-# 节点数量：2
+# 节点数量：6
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,53 +21,81 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"64.32.4.37","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1695652618025","headers":{"host":"www.13082798.xyz"}}}
-  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"170.178.179.189","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/031730091420"}}
+  - {"name":"🇨🇳_CN_中国->🇸🇬_SG_新加坡","type":"vmess","server":"183.249.20.153","port":64012,"cipher":"auto","uuid":"1f3eb856-26ca-3480-872c-c911ea27cf65","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"198.2.216.198","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1695652618025","headers":{"host":"www.29303416.xyz"}}}
+  - {"name":"🇺🇸_US_美国->🇯🇵_JP_日本","type":"vmess","server":"198.41.211.141","port":2052,"cipher":"auto","uuid":"4dc07574-4fc9-40db-864e-a2ca27852254","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"jp.bpyjc.com"}}}
+  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"137.175.18.84","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1695523810028","headers":{"host":"www.66273264.xyz"}}}
+  - {"name":"🇺🇸_US_美国_3","type":"vmess","server":"107.148.195.131","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1695652618025","headers":{"host":"www.30372614.xyz"}}}
+  - {"name":"🇺🇸_US_美国_4","type":"vmess","server":"142.0.140.189","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1695652618025","headers":{"host":"www.85351920.xyz"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
       - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
       - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
       - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
       - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
       - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
       - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
       - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
       - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
       - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
       - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
       - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
       - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -90,8 +118,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
       - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
       - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
 
 rules:
 # 本地/局域网地址
