@@ -1,11 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：2023-09-27 21:07:02
+# 客户端：Clash
+# 创建时间：27-09-2023 19:44:50
 # 使用模版：V2RaySE 默认模版
-# 节点数量：1
+# 节点数量：4
 ####################################
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -86,46 +85,67 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"vcfwk.xpdbk.com","type":"vless","server":"vcfwk.xpdbk.com","port":443,"uuid":"6f16a14c-8884-4170-aa09-0a0c7c0b976a","tls":true,"servername":"vcfwk.xpdbk.com","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"vcfwk.xpdbk.com"}},"client-fingerprint":"randomized"}
+  - {"name":"🇰🇷_KR_نامحدود۰۱۴۲_3","type":"ss","server":"129.154.222.205","port":23333,"password":"73b0f320-7bda-47bf-bed3-b6438cc7a61f","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇰🇷_KR_نامحدود۰۱۴۲_4","type":"vmess","server":"129.154.222.205","port":18804,"cipher":"auto","uuid":"73b0f320-7bda-47bf-bed3-b6438cc7a61f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"caonimashabiwanyi1.daxiongda.top"}}}
+  - {"name":"🇺🇸_US_نامحدود۰۱۴۲_73","type":"vmess","server":"172.67.243.203","port":80,"cipher":"auto","uuid":"73b0f320-7bda-47bf-bed3-b6438cc7a61f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"sbl6.shabijichang.com"}}}
+  - {"name":"🇺🇸_US_نامحدود۰۱۴۲_51","type":"vmess","server":"104.21.75.246","port":80,"cipher":"auto","uuid":"73b0f320-7bda-47bf-bed3-b6438cc7a61f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"fhc5.shabijichang.com"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - vcfwk.xpdbk.com
+      - 🇰🇷_KR_نامحدود۰۱۴۲_3
+      - 🇰🇷_KR_نامحدود۰۱۴۲_4
+      - 🇺🇸_US_نامحدود۰۱۴۲_73
+      - 🇺🇸_US_نامحدود۰۱۴۲_51
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - vcfwk.xpdbk.com
+      - 🇰🇷_KR_نامحدود۰۱۴۲_3
+      - 🇰🇷_KR_نامحدود۰۱۴۲_4
+      - 🇺🇸_US_نامحدود۰۱۴۲_73
+      - 🇺🇸_US_نامحدود۰۱۴۲_51
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - vcfwk.xpdbk.com
+      - 🇰🇷_KR_نامحدود۰۱۴۲_3
+      - 🇰🇷_KR_نامحدود۰۱۴۲_4
+      - 🇺🇸_US_نامحدود۰۱۴۲_73
+      - 🇺🇸_US_نامحدود۰۱۴۲_51
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - vcfwk.xpdbk.com
+      - 🇰🇷_KR_نامحدود۰۱۴۲_3
+      - 🇰🇷_KR_نامحدود۰۱۴۲_4
+      - 🇺🇸_US_نامحدود۰۱۴۲_73
+      - 🇺🇸_US_نامحدود۰۱۴۲_51
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - vcfwk.xpdbk.com
+      - 🇰🇷_KR_نامحدود۰۱۴۲_3
+      - 🇰🇷_KR_نامحدود۰۱۴۲_4
+      - 🇺🇸_US_نامحدود۰۱۴۲_73
+      - 🇺🇸_US_نامحدود۰۱۴۲_51
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - vcfwk.xpdbk.com
+      - 🇰🇷_KR_نامحدود۰۱۴۲_3
+      - 🇰🇷_KR_نامحدود۰۱۴۲_4
+      - 🇺🇸_US_نامحدود۰۱۴۲_73
+      - 🇺🇸_US_نامحدود۰۱۴۲_51
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -148,7 +168,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - vcfwk.xpdbk.com
+      - 🇰🇷_KR_نامحدود۰۱۴۲_3
+      - 🇰🇷_KR_نامحدود۰۱۴۲_4
+      - 🇺🇸_US_نامحدود۰۱۴۲_73
+      - 🇺🇸_US_نامحدود۰۱۴۲_51
 
 rules:
 # 本地/局域网地址
