@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：30-09-2023 23:21:17
+# 客户端：Clash.Meta
+# 创建时间：2023-10-01 18:49:41
 # 使用模版：V2RaySE 默认模版
-# 节点数量：14
+# 节点数量：10
 ####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -21,137 +22,109 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"London 🇬🇧","type":"ss","server":"212.102.53.194","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":" Germany 🇩🇪","type":"ss","server":"138.199.36.104","port":443,"password":"asdKkaskJKfnsa","cipher":"aes-256-cfb"}
-  - {"name":"Paris 🇫🇷","type":"ss","server":"146.59.71.220","port":80,"password":"asdKkaskJKfnsa","cipher":"aes-256-cfb"}
-  - {"name":"London 2 🇬🇧","type":"ss","server":"212.102.53.197","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"🇺🇸 US","type":"ss","server":"156.146.62.160","port":443,"password":"shadowsocks","cipher":"aes-128-cfb"}
-  - {"name":" Sweden 🇸🇪 ","type":"ss","server":"46.246.97.3","port":51348,"password":"Geu654gdsjGppRyadLu","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇺🇸 US 2","type":"ss","server":"156.146.38.163","port":443,"password":"shadowsocks","cipher":"aes-128-cfb"}
-  - {"name":" Sweden 2 🇸🇪","type":"ss","server":"37.19.222.212","port":443,"password":"asdKkaskJKfnsa","cipher":"aes-256-cfb"}
-  - {"name":" Azerbaijan 🇦🇿","type":"ss","server":"180.149.44.120","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
-  - {"name":"US 3 🇺🇸","type":"ss","server":"167.88.63.44","port":5004,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
-  - {"name":" US 4 🇺🇸","type":"ss","server":"167.88.63.44","port":3306,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
-  - {"name":" Norway🇳🇴","type":"ss","server":"185.90.61.153","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
-  - {"name":"🇩🇪 Germany ","type":"vmess","server":"23.158.56.89","port":22324,"cipher":"auto","uuid":"04621bae-ab36-11ec-b909-0242ac120002","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":" Germany 2 🇩🇪","type":"ss","server":"162.19.170.212","port":443,"password":"asdKkaskJKfnsa","cipher":"aes-256-cfb"}
+  - {"name":"🇺🇸_US_美国_1","type":"vless","server":"986join.outline-vpn.cloud","port":443,"uuid":"c688395a-b36b-4071-974b-bc91ac2ad2c4","tls":true,"servername":"edtunnel-b6t.pages.dev","network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"142.4.126.34","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1695993071029","headers":{"host":"www.29135019.xyz"}}}
+  - {"name":"🇳🇱_NL_荷兰->🇬🇧_GB_英国","type":"vless","server":"188.114.96.21","port":443,"uuid":"884f9b2c-f0c5-44dd-a68e-3e39ce93bb39","tls":true,"servername":"cf-wkrs-pages-vless-aoy.pages.dev","network":"ws","ws-opts":{"path":"/@azarbayjab1/@azarbayjab1/@azarbayjab1/@azarbayjab1/@azarbayjab1/@azarbayjab1/@azarbayjab1/@azarbayjab1/@azarbayjab1/@azarbayjab1/https://octohide.com/routertabrizm137.com/diamond_tm/t.me/azarbayjab1"}}
+  - {"name":"🇨🇳_CN_中国->🇸🇬_SG_新加坡_1","type":"ss","server":"free.node.kk-proxy.pro","port":24961,"password":"3190f0de-ef9f-416d-89e7-502a0f276f91","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇸🇬_SG_新加坡","type":"trojan","server":"5.44.249.50","port":3306,"udp":true,"password":"8a5360b3b31229d8","sni":"n2.gladns.com","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/gateway/connect","headers":{"host":"n2.gladns.com"}}}
+  - {"name":"🇭🇰_HK_香港->🇳🇱_NL_荷兰","type":"vmess","server":"156.245.8.248","port":41671,"cipher":"auto","uuid":"964bf499-9ec0-4378-92b6-87d8d861b2d0","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_CN_中国","type":"trojan","server":"hk.kunlun-ppg.com","port":10802,"udp":true,"password":"1f41a319-6601-484b-8f23-549d93018f70","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_CN_中国->🇸🇬_SG_新加坡_2","type":"ss","server":"free.node.kk-proxy.pro","port":54455,"password":"3190f0de-ef9f-416d-89e7-502a0f276f91","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇨🇳_CN_中国->🇯🇵_JP_日本","type":"trojan","server":"fqpmq-1083-tr-9.r-kcd-b.tuil.xyz","port":29969,"udp":true,"password":"PJUKhmVpDDqtAvMHDvmMpoQYChiuwjgv","sni":"cdn.cjhh.lol","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇻🇳_VN_越南","type":"vmess","server":"vn2.4gspeed.me","port":80,"cipher":"auto","uuid":"a05b6151-b432-487c-936a-534c20c60c20","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/4gspeed.me","headers":{"host":"vn2.4gspeed.me"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - London 🇬🇧
-      - ' Germany 🇩🇪'
-      - Paris 🇫🇷
-      - London 2 🇬🇧
-      - 🇺🇸 US
-      - ' Sweden 🇸🇪 '
-      - 🇺🇸 US 2
-      - ' Sweden 2 🇸🇪'
-      - ' Azerbaijan 🇦🇿'
-      - US 3 🇺🇸
-      - ' US 4 🇺🇸'
-      - ' Norway🇳🇴'
-      - '🇩🇪 Germany '
-      - ' Germany 2 🇩🇪'
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇳🇱_NL_荷兰->🇬🇧_GB_英国
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡
+      - 🇭🇰_HK_香港->🇳🇱_NL_荷兰
+      - 🇨🇳_CN_中国
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇻🇳_VN_越南
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - London 🇬🇧
-      - ' Germany 🇩🇪'
-      - Paris 🇫🇷
-      - London 2 🇬🇧
-      - 🇺🇸 US
-      - ' Sweden 🇸🇪 '
-      - 🇺🇸 US 2
-      - ' Sweden 2 🇸🇪'
-      - ' Azerbaijan 🇦🇿'
-      - US 3 🇺🇸
-      - ' US 4 🇺🇸'
-      - ' Norway🇳🇴'
-      - '🇩🇪 Germany '
-      - ' Germany 2 🇩🇪'
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇳🇱_NL_荷兰->🇬🇧_GB_英国
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡
+      - 🇭🇰_HK_香港->🇳🇱_NL_荷兰
+      - 🇨🇳_CN_中国
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇻🇳_VN_越南
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - London 🇬🇧
-      - ' Germany 🇩🇪'
-      - Paris 🇫🇷
-      - London 2 🇬🇧
-      - 🇺🇸 US
-      - ' Sweden 🇸🇪 '
-      - 🇺🇸 US 2
-      - ' Sweden 2 🇸🇪'
-      - ' Azerbaijan 🇦🇿'
-      - US 3 🇺🇸
-      - ' US 4 🇺🇸'
-      - ' Norway🇳🇴'
-      - '🇩🇪 Germany '
-      - ' Germany 2 🇩🇪'
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇳🇱_NL_荷兰->🇬🇧_GB_英国
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡
+      - 🇭🇰_HK_香港->🇳🇱_NL_荷兰
+      - 🇨🇳_CN_中国
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇻🇳_VN_越南
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - London 🇬🇧
-      - ' Germany 🇩🇪'
-      - Paris 🇫🇷
-      - London 2 🇬🇧
-      - 🇺🇸 US
-      - ' Sweden 🇸🇪 '
-      - 🇺🇸 US 2
-      - ' Sweden 2 🇸🇪'
-      - ' Azerbaijan 🇦🇿'
-      - US 3 🇺🇸
-      - ' US 4 🇺🇸'
-      - ' Norway🇳🇴'
-      - '🇩🇪 Germany '
-      - ' Germany 2 🇩🇪'
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇳🇱_NL_荷兰->🇬🇧_GB_英国
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡
+      - 🇭🇰_HK_香港->🇳🇱_NL_荷兰
+      - 🇨🇳_CN_中国
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇻🇳_VN_越南
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - London 🇬🇧
-      - ' Germany 🇩🇪'
-      - Paris 🇫🇷
-      - London 2 🇬🇧
-      - 🇺🇸 US
-      - ' Sweden 🇸🇪 '
-      - 🇺🇸 US 2
-      - ' Sweden 2 🇸🇪'
-      - ' Azerbaijan 🇦🇿'
-      - US 3 🇺🇸
-      - ' US 4 🇺🇸'
-      - ' Norway🇳🇴'
-      - '🇩🇪 Germany '
-      - ' Germany 2 🇩🇪'
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇳🇱_NL_荷兰->🇬🇧_GB_英国
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡
+      - 🇭🇰_HK_香港->🇳🇱_NL_荷兰
+      - 🇨🇳_CN_中国
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇻🇳_VN_越南
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - London 🇬🇧
-      - ' Germany 🇩🇪'
-      - Paris 🇫🇷
-      - London 2 🇬🇧
-      - 🇺🇸 US
-      - ' Sweden 🇸🇪 '
-      - 🇺🇸 US 2
-      - ' Sweden 2 🇸🇪'
-      - ' Azerbaijan 🇦🇿'
-      - US 3 🇺🇸
-      - ' US 4 🇺🇸'
-      - ' Norway🇳🇴'
-      - '🇩🇪 Germany '
-      - ' Germany 2 🇩🇪'
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇳🇱_NL_荷兰->🇬🇧_GB_英国
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡
+      - 🇭🇰_HK_香港->🇳🇱_NL_荷兰
+      - 🇨🇳_CN_中国
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇻🇳_VN_越南
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -174,20 +147,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - London 🇬🇧
-      - ' Germany 🇩🇪'
-      - Paris 🇫🇷
-      - London 2 🇬🇧
-      - 🇺🇸 US
-      - ' Sweden 🇸🇪 '
-      - 🇺🇸 US 2
-      - ' Sweden 2 🇸🇪'
-      - ' Azerbaijan 🇦🇿'
-      - US 3 🇺🇸
-      - ' US 4 🇺🇸'
-      - ' Norway🇳🇴'
-      - '🇩🇪 Germany '
-      - ' Germany 2 🇩🇪'
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇳🇱_NL_荷兰->🇬🇧_GB_英国
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡
+      - 🇭🇰_HK_香港->🇳🇱_NL_荷兰
+      - 🇨🇳_CN_中国
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_2
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇻🇳_VN_越南
 
 rules:
 # 本地/局域网地址
