@@ -1,11 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：2023-11-03 13:23:13
+# 客户端：Clash
+# 创建时间：2023-11-03 15:16:44
 # 使用模版：V2RaySE 默认模版
-# 节点数量：10
+# 节点数量：44
 ####################################
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -86,109 +85,347 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇺🇸_US_美国_1","type":"vless","server":"104.24.145.43","port":2083,"uuid":"b3c67462-87f5-442e-8cdc-fc298e397815","tls":true,"servername":"vip1.futurevpn.fun","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"us-new04.gujuji.top","port":8080,"cipher":"auto","uuid":"b4fccf6a-85a4-492a-96f3-d93e90360157","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"us-new04.gujuji.top"}}}
-  - {"name":"🇨🇳_CN_中国->🇨🇦_CA_加拿大","type":"vmess","server":"userpd.haitunvip.vip","port":11302,"cipher":"auto","uuid":"8508a3b4-a426-39ea-a3a0-378413d4ee76","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ef483582-6269-468c-93af-c512ec2b8a61","headers":{"host":"userpd.haitunvip.vip"}}}
-  - {"name":"🇺🇸_US_美国->🇨🇦_CA_加拿大_1","type":"vless","server":"172.67.217.82","port":443,"uuid":"3480ec71-92aa-4e2a-ae74-efc2e12f0fbf","tls":true,"servername":"interlopers.realbarcafootball.com","network":"ws","ws-opts":{"path":"/nimws"}}
-  - {"name":"🇺🇸_US_美国->🇫🇷_FR_法国","type":"vmess","server":"fr-new01.gujuji.top","port":8080,"cipher":"auto","uuid":"b4fccf6a-85a4-492a-96f3-d93e90360157","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"fr-new01.gujuji.top"}}}
-  - {"name":"🇺🇸_US_美国->🇮🇳_IN_印度","type":"vmess","server":"mm3.shabijichang.com","port":80,"cipher":"auto","uuid":"c458695d-6908-45c3-9512-e0c46418454c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"mm3.shabijichang.com"}}}
-  - {"name":"🇺🇸_US_美国->🇨🇦_CA_加拿大_2","type":"vmess","server":"ca-new01.gujuji.top","port":8080,"cipher":"auto","uuid":"b4fccf6a-85a4-492a-96f3-d93e90360157","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ca-new01.gujuji.top"}}}
-  - {"name":"🇺🇸_US_美国_3","type":"vmess","server":"us-new03.gujuji.top","port":8080,"cipher":"auto","uuid":"b4fccf6a-85a4-492a-96f3-d93e90360157","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"us-new03.gujuji.top"}}}
-  - {"name":"🇺🇸_US_美国_4","type":"ss","server":"bx.fanqiecloud.top","port":20902,"password":"cc90e910-590c-4fe9-bf12-0e777a798506","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇺🇸_US_美国->🇩🇪_DE_德国","type":"vmess","server":"de-new01.gujuji.top","port":8080,"cipher":"auto","uuid":"b4fccf6a-85a4-492a-96f3-d93e90360157","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"de-new01.gujuji.top"}}}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_1","type":"trojan","server":"hk.kunlun-ppg.com","port":10808,"udp":true,"password":"c63071a6-5cb2-4692-8a1c-2b8cfdbaa1d1","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_2","type":"trojan","server":"hk.kunlun-ppg.com","port":10802,"udp":true,"password":"3a4c8496-c1ea-41ee-996d-081db6224c37","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_3","type":"trojan","server":"hk.kunlun-ppg.com","port":10801,"udp":true,"password":"7ba410b4-1326-44a9-b21b-5d18ce99a315","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_4","type":"trojan","server":"hk.kunlun-ppg.com","port":10804,"udp":true,"password":"aac7ed46-a163-402d-933f-fc391ce9c9e5","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_5","type":"trojan","server":"hk.kunlun-ppg.com","port":10807,"udp":true,"password":"d38a17e4-8ae4-4370-881a-99c186d33915","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_6","type":"trojan","server":"hk.kunlun-ppg.com","port":10803,"udp":true,"password":"bbcc1439-3726-485c-b909-91647ba690a1","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_7","type":"trojan","server":"hk.kunlun-ppg.com","port":10806,"udp":true,"password":"0d855187-4fc2-4e68-86ef-b33c1c7814fe","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_8","type":"trojan","server":"hk.kunlun-ppg.com","port":10805,"udp":true,"password":"c63071a6-5cb2-4692-8a1c-2b8cfdbaa1d1","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬TG频道 @oeo12  =SG_1","type":"ss","server":"sgggg.doushimeng.com","port":20252,"password":"ca9ad5cb-e118-4cd7-adef-377f494a423c","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_9","type":"trojan","server":"jp.kunlun-ppg.com","port":10816,"udp":true,"password":"053a5544-d3a2-479e-b627-91c57409db05","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_10","type":"trojan","server":"jp.kunlun-ppg.com","port":10812,"udp":true,"password":"7ba410b4-1326-44a9-b21b-5d18ce99a315","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_11","type":"trojan","server":"jp.kunlun-ppg.com","port":10818,"udp":true,"password":"3a4c8496-c1ea-41ee-996d-081db6224c37","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_12","type":"trojan","server":"jp.kunlun-ppg.com","port":10813,"udp":true,"password":"bbc1251b-b4a0-4afe-83d4-5dd5684071c5","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_13","type":"trojan","server":"jp.kunlun-ppg.com","port":10811,"udp":true,"password":"9b473e0f-c5e6-4e16-b2de-8e593d000e94","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_14","type":"trojan","server":"jp.kunlun-ppg.com","port":10817,"udp":true,"password":"3a4c8496-c1ea-41ee-996d-081db6224c37","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_15","type":"trojan","server":"jp.kunlun-ppg.com","port":10814,"udp":true,"password":"603b6ed7-81a9-4204-b59d-9cd5f260acd5","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_16","type":"trojan","server":"hk.kunlun-ppg.com","port":10809,"udp":true,"password":"726f982a-39d4-46d5-a124-4bc44e6a12a7","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_17","type":"trojan","server":"hk.kunlun-ppg.com","port":10810,"udp":true,"password":"d10c9330-21fd-41a3-a7d7-55161ed7349a","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_18","type":"trojan","server":"sg.kunlun-ppg.com","port":10830,"udp":true,"password":"2def95e7-ffe7-4f97-af9b-4d67b848b6bd","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_19","type":"trojan","server":"sg.kunlun-ppg.com","port":10831,"udp":true,"password":"d87f02a0-d16a-48a9-8fe0-442530ba364f","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_20","type":"trojan","server":"sg.kunlun-ppg.com","port":10829,"udp":true,"password":"452862ba-1d04-44f3-a91e-a324a6a164d9","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_21","type":"trojan","server":"sg.kunlun-ppg.com","port":10827,"udp":true,"password":"d10c9330-21fd-41a3-a7d7-55161ed7349a","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_22","type":"trojan","server":"sg.kunlun-ppg.com","port":10828,"udp":true,"password":"d10c9330-21fd-41a3-a7d7-55161ed7349a","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_23","type":"trojan","server":"sg.kunlun-ppg.com","port":10834,"udp":true,"password":"0d855187-4fc2-4e68-86ef-b33c1c7814fe","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_24","type":"trojan","server":"sg.kunlun-ppg.com","port":10833,"udp":true,"password":"c63071a6-5cb2-4692-8a1c-2b8cfdbaa1d1","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_25","type":"trojan","server":"other.kunlun-ppg.com","port":10836,"udp":true,"password":"5dcd8073-d7c4-468b-957f-150f976966f2","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_26","type":"vmess","server":"112.29.94.23","port":49884,"cipher":"auto","uuid":"21a9bff2-72de-4e62-93ff-8b159f66d875","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_27","type":"trojan","server":"other.kunlun-ppg.com","port":10847,"udp":true,"password":"3e3cd44f-a06f-4571-8721-ce06a5fc12b7","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_28","type":"trojan","server":"other.kunlun-ppg.com","port":10840,"udp":true,"password":"3a4c8496-c1ea-41ee-996d-081db6224c37","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_29","type":"trojan","server":"jp.kunlun-ppg.com","port":10815,"udp":true,"password":"3a4c8496-c1ea-41ee-996d-081db6224c37","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬TG频道 @oeo12  =SG_2","type":"vmess","server":"8.222.239.214","port":80,"cipher":"auto","uuid":"ffffffff-ffff-ffff-ffff-ffffffffffff","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"warp.chigua.tk"}}}
+  - {"name":"🇺🇸TG频道 @oeo12  =US","type":"vmess","server":"mlscdn.ccccdn.tk","port":80,"cipher":"auto","uuid":"65da50e6-89c0-4d10-b7cf-16404dae0879","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/wo.img","headers":{"host":"riben.chisi.link"}}}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_30","type":"trojan","server":"other.kunlun-ppg.com","port":10835,"udp":true,"password":"452862ba-1d04-44f3-a91e-a324a6a164d9","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_31","type":"vmess","server":"120.233.43.51","port":26022,"cipher":"auto","uuid":"54eac280-1192-3bda-8812-7acfdec61cfd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_32","type":"vmess","server":"120.233.43.51","port":26023,"cipher":"auto","uuid":"54eac280-1192-3bda-8812-7acfdec61cfd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_33","type":"vmess","server":"120.233.43.51","port":26021,"cipher":"auto","uuid":"54eac280-1192-3bda-8812-7acfdec61cfd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_34","type":"vmess","server":"120.233.43.51","port":26022,"cipher":"auto","uuid":"54eac280-1192-3bda-8812-7acfdec61cfd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_35","type":"vmess","server":"120.233.43.51","port":26023,"cipher":"auto","uuid":"54eac280-1192-3bda-8812-7acfdec61cfd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_36","type":"vmess","server":"120.233.43.51","port":26020,"cipher":"auto","uuid":"54eac280-1192-3bda-8812-7acfdec61cfd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_37","type":"vmess","server":"120.233.43.51","port":26022,"cipher":"auto","uuid":"54eac280-1192-3bda-8812-7acfdec61cfd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_38","type":"vmess","server":"120.233.43.51","port":26021,"cipher":"auto","uuid":"54eac280-1192-3bda-8812-7acfdec61cfd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_39","type":"vmess","server":"120.233.43.51","port":26023,"cipher":"auto","uuid":"54eac280-1192-3bda-8812-7acfdec61cfd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_40","type":"vmess","server":"120.233.43.51","port":26021,"cipher":"auto","uuid":"54eac280-1192-3bda-8812-7acfdec61cfd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳TG频道 @oeo12  =CN_41","type":"vmess","server":"120.233.43.51","port":26020,"cipher":"auto","uuid":"54eac280-1192-3bda-8812-7acfdec61cfd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国->🇫🇷_FR_法国
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇨🇳TG频道 @oeo12  =CN_1
+      - 🇨🇳TG频道 @oeo12  =CN_2
+      - 🇨🇳TG频道 @oeo12  =CN_3
+      - 🇨🇳TG频道 @oeo12  =CN_4
+      - 🇨🇳TG频道 @oeo12  =CN_5
+      - 🇨🇳TG频道 @oeo12  =CN_6
+      - 🇨🇳TG频道 @oeo12  =CN_7
+      - 🇨🇳TG频道 @oeo12  =CN_8
+      - 🇸🇬TG频道 @oeo12  =SG_1
+      - 🇨🇳TG频道 @oeo12  =CN_9
+      - 🇨🇳TG频道 @oeo12  =CN_10
+      - 🇨🇳TG频道 @oeo12  =CN_11
+      - 🇨🇳TG频道 @oeo12  =CN_12
+      - 🇨🇳TG频道 @oeo12  =CN_13
+      - 🇨🇳TG频道 @oeo12  =CN_14
+      - 🇨🇳TG频道 @oeo12  =CN_15
+      - 🇨🇳TG频道 @oeo12  =CN_16
+      - 🇨🇳TG频道 @oeo12  =CN_17
+      - 🇨🇳TG频道 @oeo12  =CN_18
+      - 🇨🇳TG频道 @oeo12  =CN_19
+      - 🇨🇳TG频道 @oeo12  =CN_20
+      - 🇨🇳TG频道 @oeo12  =CN_21
+      - 🇨🇳TG频道 @oeo12  =CN_22
+      - 🇨🇳TG频道 @oeo12  =CN_23
+      - 🇨🇳TG频道 @oeo12  =CN_24
+      - 🇨🇳TG频道 @oeo12  =CN_25
+      - 🇨🇳TG频道 @oeo12  =CN_26
+      - 🇨🇳TG频道 @oeo12  =CN_27
+      - 🇨🇳TG频道 @oeo12  =CN_28
+      - 🇨🇳TG频道 @oeo12  =CN_29
+      - 🇸🇬TG频道 @oeo12  =SG_2
+      - 🇺🇸TG频道 @oeo12  =US
+      - 🇨🇳TG频道 @oeo12  =CN_30
+      - 🇨🇳TG频道 @oeo12  =CN_31
+      - 🇨🇳TG频道 @oeo12  =CN_32
+      - 🇨🇳TG频道 @oeo12  =CN_33
+      - 🇨🇳TG频道 @oeo12  =CN_34
+      - 🇨🇳TG频道 @oeo12  =CN_35
+      - 🇨🇳TG频道 @oeo12  =CN_36
+      - 🇨🇳TG频道 @oeo12  =CN_37
+      - 🇨🇳TG频道 @oeo12  =CN_38
+      - 🇨🇳TG频道 @oeo12  =CN_39
+      - 🇨🇳TG频道 @oeo12  =CN_40
+      - 🇨🇳TG频道 @oeo12  =CN_41
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国->🇫🇷_FR_法国
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇨🇳TG频道 @oeo12  =CN_1
+      - 🇨🇳TG频道 @oeo12  =CN_2
+      - 🇨🇳TG频道 @oeo12  =CN_3
+      - 🇨🇳TG频道 @oeo12  =CN_4
+      - 🇨🇳TG频道 @oeo12  =CN_5
+      - 🇨🇳TG频道 @oeo12  =CN_6
+      - 🇨🇳TG频道 @oeo12  =CN_7
+      - 🇨🇳TG频道 @oeo12  =CN_8
+      - 🇸🇬TG频道 @oeo12  =SG_1
+      - 🇨🇳TG频道 @oeo12  =CN_9
+      - 🇨🇳TG频道 @oeo12  =CN_10
+      - 🇨🇳TG频道 @oeo12  =CN_11
+      - 🇨🇳TG频道 @oeo12  =CN_12
+      - 🇨🇳TG频道 @oeo12  =CN_13
+      - 🇨🇳TG频道 @oeo12  =CN_14
+      - 🇨🇳TG频道 @oeo12  =CN_15
+      - 🇨🇳TG频道 @oeo12  =CN_16
+      - 🇨🇳TG频道 @oeo12  =CN_17
+      - 🇨🇳TG频道 @oeo12  =CN_18
+      - 🇨🇳TG频道 @oeo12  =CN_19
+      - 🇨🇳TG频道 @oeo12  =CN_20
+      - 🇨🇳TG频道 @oeo12  =CN_21
+      - 🇨🇳TG频道 @oeo12  =CN_22
+      - 🇨🇳TG频道 @oeo12  =CN_23
+      - 🇨🇳TG频道 @oeo12  =CN_24
+      - 🇨🇳TG频道 @oeo12  =CN_25
+      - 🇨🇳TG频道 @oeo12  =CN_26
+      - 🇨🇳TG频道 @oeo12  =CN_27
+      - 🇨🇳TG频道 @oeo12  =CN_28
+      - 🇨🇳TG频道 @oeo12  =CN_29
+      - 🇸🇬TG频道 @oeo12  =SG_2
+      - 🇺🇸TG频道 @oeo12  =US
+      - 🇨🇳TG频道 @oeo12  =CN_30
+      - 🇨🇳TG频道 @oeo12  =CN_31
+      - 🇨🇳TG频道 @oeo12  =CN_32
+      - 🇨🇳TG频道 @oeo12  =CN_33
+      - 🇨🇳TG频道 @oeo12  =CN_34
+      - 🇨🇳TG频道 @oeo12  =CN_35
+      - 🇨🇳TG频道 @oeo12  =CN_36
+      - 🇨🇳TG频道 @oeo12  =CN_37
+      - 🇨🇳TG频道 @oeo12  =CN_38
+      - 🇨🇳TG频道 @oeo12  =CN_39
+      - 🇨🇳TG频道 @oeo12  =CN_40
+      - 🇨🇳TG频道 @oeo12  =CN_41
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国->🇫🇷_FR_法国
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇨🇳TG频道 @oeo12  =CN_1
+      - 🇨🇳TG频道 @oeo12  =CN_2
+      - 🇨🇳TG频道 @oeo12  =CN_3
+      - 🇨🇳TG频道 @oeo12  =CN_4
+      - 🇨🇳TG频道 @oeo12  =CN_5
+      - 🇨🇳TG频道 @oeo12  =CN_6
+      - 🇨🇳TG频道 @oeo12  =CN_7
+      - 🇨🇳TG频道 @oeo12  =CN_8
+      - 🇸🇬TG频道 @oeo12  =SG_1
+      - 🇨🇳TG频道 @oeo12  =CN_9
+      - 🇨🇳TG频道 @oeo12  =CN_10
+      - 🇨🇳TG频道 @oeo12  =CN_11
+      - 🇨🇳TG频道 @oeo12  =CN_12
+      - 🇨🇳TG频道 @oeo12  =CN_13
+      - 🇨🇳TG频道 @oeo12  =CN_14
+      - 🇨🇳TG频道 @oeo12  =CN_15
+      - 🇨🇳TG频道 @oeo12  =CN_16
+      - 🇨🇳TG频道 @oeo12  =CN_17
+      - 🇨🇳TG频道 @oeo12  =CN_18
+      - 🇨🇳TG频道 @oeo12  =CN_19
+      - 🇨🇳TG频道 @oeo12  =CN_20
+      - 🇨🇳TG频道 @oeo12  =CN_21
+      - 🇨🇳TG频道 @oeo12  =CN_22
+      - 🇨🇳TG频道 @oeo12  =CN_23
+      - 🇨🇳TG频道 @oeo12  =CN_24
+      - 🇨🇳TG频道 @oeo12  =CN_25
+      - 🇨🇳TG频道 @oeo12  =CN_26
+      - 🇨🇳TG频道 @oeo12  =CN_27
+      - 🇨🇳TG频道 @oeo12  =CN_28
+      - 🇨🇳TG频道 @oeo12  =CN_29
+      - 🇸🇬TG频道 @oeo12  =SG_2
+      - 🇺🇸TG频道 @oeo12  =US
+      - 🇨🇳TG频道 @oeo12  =CN_30
+      - 🇨🇳TG频道 @oeo12  =CN_31
+      - 🇨🇳TG频道 @oeo12  =CN_32
+      - 🇨🇳TG频道 @oeo12  =CN_33
+      - 🇨🇳TG频道 @oeo12  =CN_34
+      - 🇨🇳TG频道 @oeo12  =CN_35
+      - 🇨🇳TG频道 @oeo12  =CN_36
+      - 🇨🇳TG频道 @oeo12  =CN_37
+      - 🇨🇳TG频道 @oeo12  =CN_38
+      - 🇨🇳TG频道 @oeo12  =CN_39
+      - 🇨🇳TG频道 @oeo12  =CN_40
+      - 🇨🇳TG频道 @oeo12  =CN_41
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国->🇫🇷_FR_法国
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇨🇳TG频道 @oeo12  =CN_1
+      - 🇨🇳TG频道 @oeo12  =CN_2
+      - 🇨🇳TG频道 @oeo12  =CN_3
+      - 🇨🇳TG频道 @oeo12  =CN_4
+      - 🇨🇳TG频道 @oeo12  =CN_5
+      - 🇨🇳TG频道 @oeo12  =CN_6
+      - 🇨🇳TG频道 @oeo12  =CN_7
+      - 🇨🇳TG频道 @oeo12  =CN_8
+      - 🇸🇬TG频道 @oeo12  =SG_1
+      - 🇨🇳TG频道 @oeo12  =CN_9
+      - 🇨🇳TG频道 @oeo12  =CN_10
+      - 🇨🇳TG频道 @oeo12  =CN_11
+      - 🇨🇳TG频道 @oeo12  =CN_12
+      - 🇨🇳TG频道 @oeo12  =CN_13
+      - 🇨🇳TG频道 @oeo12  =CN_14
+      - 🇨🇳TG频道 @oeo12  =CN_15
+      - 🇨🇳TG频道 @oeo12  =CN_16
+      - 🇨🇳TG频道 @oeo12  =CN_17
+      - 🇨🇳TG频道 @oeo12  =CN_18
+      - 🇨🇳TG频道 @oeo12  =CN_19
+      - 🇨🇳TG频道 @oeo12  =CN_20
+      - 🇨🇳TG频道 @oeo12  =CN_21
+      - 🇨🇳TG频道 @oeo12  =CN_22
+      - 🇨🇳TG频道 @oeo12  =CN_23
+      - 🇨🇳TG频道 @oeo12  =CN_24
+      - 🇨🇳TG频道 @oeo12  =CN_25
+      - 🇨🇳TG频道 @oeo12  =CN_26
+      - 🇨🇳TG频道 @oeo12  =CN_27
+      - 🇨🇳TG频道 @oeo12  =CN_28
+      - 🇨🇳TG频道 @oeo12  =CN_29
+      - 🇸🇬TG频道 @oeo12  =SG_2
+      - 🇺🇸TG频道 @oeo12  =US
+      - 🇨🇳TG频道 @oeo12  =CN_30
+      - 🇨🇳TG频道 @oeo12  =CN_31
+      - 🇨🇳TG频道 @oeo12  =CN_32
+      - 🇨🇳TG频道 @oeo12  =CN_33
+      - 🇨🇳TG频道 @oeo12  =CN_34
+      - 🇨🇳TG频道 @oeo12  =CN_35
+      - 🇨🇳TG频道 @oeo12  =CN_36
+      - 🇨🇳TG频道 @oeo12  =CN_37
+      - 🇨🇳TG频道 @oeo12  =CN_38
+      - 🇨🇳TG频道 @oeo12  =CN_39
+      - 🇨🇳TG频道 @oeo12  =CN_40
+      - 🇨🇳TG频道 @oeo12  =CN_41
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国->🇫🇷_FR_法国
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇨🇳TG频道 @oeo12  =CN_1
+      - 🇨🇳TG频道 @oeo12  =CN_2
+      - 🇨🇳TG频道 @oeo12  =CN_3
+      - 🇨🇳TG频道 @oeo12  =CN_4
+      - 🇨🇳TG频道 @oeo12  =CN_5
+      - 🇨🇳TG频道 @oeo12  =CN_6
+      - 🇨🇳TG频道 @oeo12  =CN_7
+      - 🇨🇳TG频道 @oeo12  =CN_8
+      - 🇸🇬TG频道 @oeo12  =SG_1
+      - 🇨🇳TG频道 @oeo12  =CN_9
+      - 🇨🇳TG频道 @oeo12  =CN_10
+      - 🇨🇳TG频道 @oeo12  =CN_11
+      - 🇨🇳TG频道 @oeo12  =CN_12
+      - 🇨🇳TG频道 @oeo12  =CN_13
+      - 🇨🇳TG频道 @oeo12  =CN_14
+      - 🇨🇳TG频道 @oeo12  =CN_15
+      - 🇨🇳TG频道 @oeo12  =CN_16
+      - 🇨🇳TG频道 @oeo12  =CN_17
+      - 🇨🇳TG频道 @oeo12  =CN_18
+      - 🇨🇳TG频道 @oeo12  =CN_19
+      - 🇨🇳TG频道 @oeo12  =CN_20
+      - 🇨🇳TG频道 @oeo12  =CN_21
+      - 🇨🇳TG频道 @oeo12  =CN_22
+      - 🇨🇳TG频道 @oeo12  =CN_23
+      - 🇨🇳TG频道 @oeo12  =CN_24
+      - 🇨🇳TG频道 @oeo12  =CN_25
+      - 🇨🇳TG频道 @oeo12  =CN_26
+      - 🇨🇳TG频道 @oeo12  =CN_27
+      - 🇨🇳TG频道 @oeo12  =CN_28
+      - 🇨🇳TG频道 @oeo12  =CN_29
+      - 🇸🇬TG频道 @oeo12  =SG_2
+      - 🇺🇸TG频道 @oeo12  =US
+      - 🇨🇳TG频道 @oeo12  =CN_30
+      - 🇨🇳TG频道 @oeo12  =CN_31
+      - 🇨🇳TG频道 @oeo12  =CN_32
+      - 🇨🇳TG频道 @oeo12  =CN_33
+      - 🇨🇳TG频道 @oeo12  =CN_34
+      - 🇨🇳TG频道 @oeo12  =CN_35
+      - 🇨🇳TG频道 @oeo12  =CN_36
+      - 🇨🇳TG频道 @oeo12  =CN_37
+      - 🇨🇳TG频道 @oeo12  =CN_38
+      - 🇨🇳TG频道 @oeo12  =CN_39
+      - 🇨🇳TG频道 @oeo12  =CN_40
+      - 🇨🇳TG频道 @oeo12  =CN_41
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国->🇫🇷_FR_法国
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇨🇳TG频道 @oeo12  =CN_1
+      - 🇨🇳TG频道 @oeo12  =CN_2
+      - 🇨🇳TG频道 @oeo12  =CN_3
+      - 🇨🇳TG频道 @oeo12  =CN_4
+      - 🇨🇳TG频道 @oeo12  =CN_5
+      - 🇨🇳TG频道 @oeo12  =CN_6
+      - 🇨🇳TG频道 @oeo12  =CN_7
+      - 🇨🇳TG频道 @oeo12  =CN_8
+      - 🇸🇬TG频道 @oeo12  =SG_1
+      - 🇨🇳TG频道 @oeo12  =CN_9
+      - 🇨🇳TG频道 @oeo12  =CN_10
+      - 🇨🇳TG频道 @oeo12  =CN_11
+      - 🇨🇳TG频道 @oeo12  =CN_12
+      - 🇨🇳TG频道 @oeo12  =CN_13
+      - 🇨🇳TG频道 @oeo12  =CN_14
+      - 🇨🇳TG频道 @oeo12  =CN_15
+      - 🇨🇳TG频道 @oeo12  =CN_16
+      - 🇨🇳TG频道 @oeo12  =CN_17
+      - 🇨🇳TG频道 @oeo12  =CN_18
+      - 🇨🇳TG频道 @oeo12  =CN_19
+      - 🇨🇳TG频道 @oeo12  =CN_20
+      - 🇨🇳TG频道 @oeo12  =CN_21
+      - 🇨🇳TG频道 @oeo12  =CN_22
+      - 🇨🇳TG频道 @oeo12  =CN_23
+      - 🇨🇳TG频道 @oeo12  =CN_24
+      - 🇨🇳TG频道 @oeo12  =CN_25
+      - 🇨🇳TG频道 @oeo12  =CN_26
+      - 🇨🇳TG频道 @oeo12  =CN_27
+      - 🇨🇳TG频道 @oeo12  =CN_28
+      - 🇨🇳TG频道 @oeo12  =CN_29
+      - 🇸🇬TG频道 @oeo12  =SG_2
+      - 🇺🇸TG频道 @oeo12  =US
+      - 🇨🇳TG频道 @oeo12  =CN_30
+      - 🇨🇳TG频道 @oeo12  =CN_31
+      - 🇨🇳TG频道 @oeo12  =CN_32
+      - 🇨🇳TG频道 @oeo12  =CN_33
+      - 🇨🇳TG频道 @oeo12  =CN_34
+      - 🇨🇳TG频道 @oeo12  =CN_35
+      - 🇨🇳TG频道 @oeo12  =CN_36
+      - 🇨🇳TG频道 @oeo12  =CN_37
+      - 🇨🇳TG频道 @oeo12  =CN_38
+      - 🇨🇳TG频道 @oeo12  =CN_39
+      - 🇨🇳TG频道 @oeo12  =CN_40
+      - 🇨🇳TG频道 @oeo12  =CN_41
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -211,16 +448,50 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国->🇫🇷_FR_法国
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇨🇳TG频道 @oeo12  =CN_1
+      - 🇨🇳TG频道 @oeo12  =CN_2
+      - 🇨🇳TG频道 @oeo12  =CN_3
+      - 🇨🇳TG频道 @oeo12  =CN_4
+      - 🇨🇳TG频道 @oeo12  =CN_5
+      - 🇨🇳TG频道 @oeo12  =CN_6
+      - 🇨🇳TG频道 @oeo12  =CN_7
+      - 🇨🇳TG频道 @oeo12  =CN_8
+      - 🇸🇬TG频道 @oeo12  =SG_1
+      - 🇨🇳TG频道 @oeo12  =CN_9
+      - 🇨🇳TG频道 @oeo12  =CN_10
+      - 🇨🇳TG频道 @oeo12  =CN_11
+      - 🇨🇳TG频道 @oeo12  =CN_12
+      - 🇨🇳TG频道 @oeo12  =CN_13
+      - 🇨🇳TG频道 @oeo12  =CN_14
+      - 🇨🇳TG频道 @oeo12  =CN_15
+      - 🇨🇳TG频道 @oeo12  =CN_16
+      - 🇨🇳TG频道 @oeo12  =CN_17
+      - 🇨🇳TG频道 @oeo12  =CN_18
+      - 🇨🇳TG频道 @oeo12  =CN_19
+      - 🇨🇳TG频道 @oeo12  =CN_20
+      - 🇨🇳TG频道 @oeo12  =CN_21
+      - 🇨🇳TG频道 @oeo12  =CN_22
+      - 🇨🇳TG频道 @oeo12  =CN_23
+      - 🇨🇳TG频道 @oeo12  =CN_24
+      - 🇨🇳TG频道 @oeo12  =CN_25
+      - 🇨🇳TG频道 @oeo12  =CN_26
+      - 🇨🇳TG频道 @oeo12  =CN_27
+      - 🇨🇳TG频道 @oeo12  =CN_28
+      - 🇨🇳TG频道 @oeo12  =CN_29
+      - 🇸🇬TG频道 @oeo12  =SG_2
+      - 🇺🇸TG频道 @oeo12  =US
+      - 🇨🇳TG频道 @oeo12  =CN_30
+      - 🇨🇳TG频道 @oeo12  =CN_31
+      - 🇨🇳TG频道 @oeo12  =CN_32
+      - 🇨🇳TG频道 @oeo12  =CN_33
+      - 🇨🇳TG频道 @oeo12  =CN_34
+      - 🇨🇳TG频道 @oeo12  =CN_35
+      - 🇨🇳TG频道 @oeo12  =CN_36
+      - 🇨🇳TG频道 @oeo12  =CN_37
+      - 🇨🇳TG频道 @oeo12  =CN_38
+      - 🇨🇳TG频道 @oeo12  =CN_39
+      - 🇨🇳TG频道 @oeo12  =CN_40
+      - 🇨🇳TG频道 @oeo12  =CN_41
 
 rules:
 # 本地/局域网地址
