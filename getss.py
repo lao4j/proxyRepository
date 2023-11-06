@@ -28,7 +28,7 @@ for index in range(filenum):
         copyfile(srcfile, r"/usr/local/git_repository/proxyRepository/clash/clash.yaml")
         copyfile(srcfile, r"/usr/local/nginx/download/clash.yaml")
         isclash = True
-    if file.endswith('txt') and not isss and filesize < 90000 and filesize > 50000:
+    if file.endswith('txt') and not isss and filesize > 10000:
         srcfile = '{}/{}'.format(dayDir, file)
         copyfile(srcfile, r"/usr/local/git_repository/proxyRepository/ss/ss.txt")
         copyfile(srcfile, r"/usr/local/nginx/download/ss.txt")
