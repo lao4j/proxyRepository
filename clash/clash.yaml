@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：07-11-2023 19:58:36
+# 创建时间：2023-11-08 01:13:22
 # 使用模版：V2RaySE 默认模版
-# 节点数量：14
+# 节点数量：68
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -11,147 +11,589 @@ log-level: info
 external-controller: 0.0.0.0:9090
 dns:
   enabled: true
-  nameserver:
-    - 119.29.29.29
+  listen: 0.0.0.0:1053
+  ipv6: true
+  default-nameserver:
     - 223.5.5.5
-  fallback:
-    - 8.8.8.8
-    - 8.8.4.4
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
+    - 114.114.114.114
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - swscan.apple.com
+    - mesu.apple.com
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - +.music.163.com
+    - '*.126.net'
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - '*.kuwo.cn'
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - +.y.qq.com
+    - +.music.tc.qq.com
+    - aqqmusic.tc.qq.com
+    - +.stream.qqmusic.qq.com
+    - '*.xiami.com'
+    - +.music.migu.cn
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - +.xboxlive.com
+    - localhost.ptlogin2.qq.com
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - '*.mcdn.bilivideo.cn'
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 
 proxies:
-  - {"name":"Germany 2 🇩🇪","type":"vmess","server":"s4.ghermez.org","port":443,"cipher":"auto","uuid":"s4.ghermez.org:443?type=grpc&encryption=auto&security=tls&sni=server.ghermez.org#Germany%202%20%F0%9F%87%A9%F0%9F%87%AA","alter-id":0,"tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"/","grpc-mode":"gun"}}
-  - {"name":"SWEDEN+🇸🇪","type":"ss","server":"45.82.13.47","port":38385,"password":"UnuIwybd0gnGyrmL6xiXPO","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"US+🇺🇲_1","type":"ss","server":"89.187.179.192","port":443,"password":"asdKkaskJKfnsa","cipher":"aes-256-cfb"}
-  - {"name":"UK 🇬🇧","type":"vmess","server":"172.67.215.202","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alter-id":1,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"linkvws","headers":{"host":"octavi.cfd"}}}
-  - {"name":"🇹🇷+TURKEY+","type":"ss","server":"45.89.52.66","port":9040,"password":"p9z5BVADH2YFs3MN","cipher":"aes-256-cfb"}
-  - {"name":"Germany 🇩🇪","type":"vmess","server":"iran01.biqibao.site","port":2052,"cipher":"auto","uuid":"iran01.biqibao.site:2052?type=ws&encryption=auto&host=de5.biqibao.site&path=%2Fpublic#Germany%20%F0%9F%87%A9%F0%9F%87%AA","alter-id":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/public","headers":{"host":"de5.biqibao.site"}}}
-  - {"name":"Sweden 2 🇸🇪","type":"ss","server":"passconf.xyz","port":8080,"password":"qGjmI8WQlF0tfhDbkLqGdN","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"Paris+++🇫🇷","type":"ss","server":"51.159.210.114","port":443,"password":"asdKkaskJKfnsa","cipher":"aes-256-cfb"}
-  - {"name":"US+2+🇺🇲","type":"ss","server":"89.187.179.192","port":443,"password":"asdKkaskJKfnsa","cipher":"aes-256-gcm"}
-  - {"name":"+Germany+4++🇩🇪","type":"ss","server":"138.199.36.104","port":443,"password":"asdKkaskJKfnsa","cipher":"aes-256-cfb"}
-  - {"name":"Germany++5+🇩🇪","type":"ss","server":"57.129.1.18","port":443,"password":"asdKkaskJKfnsa","cipher":"aes-256-cfb"}
-  - {"name":"Germany+6+🇩🇪","type":"ss","server":"162.19.170.225","port":443,"password":"asdKkaskJKfnsa","cipher":"aes-256-cfb"}
-  - {"name":"Us 3 🇺🇲","type":"vmess","server":"104.16.0.0","port":2087,"cipher":"auto","uuid":"104.16.0.0:2087?type=grpc&encryption=auto&security=tls&sni=my.designlion.buzz#Us%203%20%F0%9F%87%BA%F0%9F%87%B2","alter-id":0,"tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"/","grpc-mode":"gun"}}
-  - {"name":"US+🇺🇲_2","type":"ss","server":"89.187.179.192","port":443,"password":"asdKkaskJKfnsa","cipher":"aes-256-cfb"}
+  - {"name":"t.me/wbnet_🇺🇦_1","type":"ss","server":"91.210.164.133","port":444,"password":"ocaptUfI","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇻🇳_2","type":"ss","server":"103.163.218.2","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"t.me/wbnet_🇹🇷_3","type":"ss","server":"107.150.94.26","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"t.me/wbnet_🇱🇾_4","type":"ss","server":"41.208.71.10","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"t.me/wbnet_🇺🇦_5","type":"ss","server":"91.210.164.120","port":444,"password":"RyRikpek","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇺🇦_6","type":"ss","server":"130.0.233.20","port":31675,"password":"m7pZhBG","cipher":"aes-256-cfb"}
+  - {"name":"t.me/wbnet_🇰🇷_7","type":"ss","server":"158.247.194.72","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"t.me/wbnet_🇫🇮_8","type":"ss","server":"135.181.114.242","port":8478,"password":"siF98xBL2v1i","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇧🇦_9","type":"ss","server":"185.164.35.9","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"t.me/wbnet_🇵🇹_10","type":"ss","server":"185.231.233.130","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"t.me/wbnet_🇦🇪_11","type":"ss","server":"217.138.193.10","port":806,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇦🇪_12","type":"ss","server":"217.138.193.10","port":808,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇪🇪_13","type":"ss","server":"45.136.196.45","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"t.me/wbnet_🇷🇺_14","type":"ss","server":"62.109.22.113","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"t.me/wbnet_🇷🇺_15","type":"ss","server":"185.4.65.6","port":21247,"password":"vDS9G2p","cipher":"aes-256-cfb"}
+  - {"name":"t.me/wbnet_🇷🇺_16","type":"ss","server":"213.183.53.222","port":9014,"password":"KnJGad3FqTvjqbaX","cipher":"aes-256-cfb"}
+  - {"name":"t.me/wbnet_🇩🇪_17","type":"ss","server":"193.176.86.190","port":800,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇩🇪_18","type":"ss","server":"193.176.86.190","port":801,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇩🇪_19","type":"ss","server":"193.176.86.190","port":802,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇩🇪_20","type":"ss","server":"193.176.86.190","port":803,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇩🇪_21","type":"ss","server":"193.176.86.190","port":804,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇩🇪_22","type":"ss","server":"193.176.86.190","port":805,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇩🇪_23","type":"ss","server":"193.176.86.190","port":806,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇩🇪_24","type":"ss","server":"193.176.86.190","port":807,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇦🇪_25","type":"ss","server":"217.138.193.10","port":800,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇦🇪_26","type":"ss","server":"217.138.193.10","port":801,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇦🇪_27","type":"ss","server":"217.138.193.10","port":802,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇦🇪_28","type":"ss","server":"217.138.193.10","port":803,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇦🇪_29","type":"ss","server":"217.138.193.10","port":804,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇦🇪_30","type":"ss","server":"217.138.193.10","port":805,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇦🇪_31","type":"ss","server":"217.138.193.10","port":807,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇦🇪_32","type":"ss","server":"217.138.193.10","port":808,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇦🇪_33","type":"ss","server":"217.138.193.10","port":809,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇯🇵_34","type":"ss","server":"85.208.108.22","port":443,"password":"pKEW8JPByTVTLtM","cipher":"aes-256-gcm"}
+  - {"name":"t.me/wbnet_35","type":"ss","server":"103.172.116.5","port":9019,"password":"GA9KzeEgvfxNrgmM","cipher":"aes-256-cfb"}
+  - {"name":"t.me/wbnet_36","type":"ss","server":"103.172.116.5","port":9027,"password":"EXN3S3eQpjE7EJu8","cipher":"aes-256-cfb"}
+  - {"name":"t.me/wbnet_🇹🇭_37","type":"ss","server":"119.59.127.144","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"t.me/wbnet_🇲🇾_38","type":"ss","server":"123.253.34.235","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"t.me/wbnet_🇺🇸_39","type":"ss","server":"5.181.234.254","port":800,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇺🇸_40","type":"ss","server":"5.181.234.254","port":801,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇺🇸_41","type":"ss","server":"5.181.234.254","port":804,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇺🇸_42","type":"ss","server":"5.181.234.254","port":808,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇺🇸_43","type":"ss","server":"5.181.234.254","port":811,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇺🇸_44","type":"ss","server":"5.181.234.254","port":812,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇦🇱_45","type":"ss","server":"31.171.153.178","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"t.me/wbnet_🇸🇬_46","type":"ss","server":"81.90.189.41","port":800,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇸🇬_47","type":"ss","server":"81.90.189.41","port":802,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇸🇬_48","type":"ss","server":"81.90.189.41","port":804,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇸🇬_49","type":"ss","server":"81.90.189.41","port":805,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇸🇬_50","type":"ss","server":"81.90.189.41","port":806,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇸🇬_51","type":"ss","server":"81.90.189.41","port":808,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇸🇬_52","type":"ss","server":"81.90.189.41","port":809,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇸🇬_53","type":"ss","server":"81.90.189.41","port":811,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇮🇸_54","type":"ss","server":"37.235.49.152","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"t.me/wbnet_🇮🇳_55","type":"ss","server":"103.171.45.176","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"t.me/wbnet_🇬🇧_56","type":"ss","server":"78.129.253.9","port":803,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇬🇧_57","type":"ss","server":"78.129.253.9","port":804,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇬🇧_58","type":"ss","server":"78.129.253.9","port":806,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇬🇧_59","type":"ss","server":"78.129.253.9","port":807,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇬🇧_60","type":"ss","server":"78.129.253.9","port":812,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"t.me/wbnet_🇪🇪_61","type":"ss","server":"45.136.198.122","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"t.me/wbnet_🇺🇸_62","type":"ss","server":"172.99.188.99","port":3389,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"t.me/wbnet_🇺🇸_63","type":"ss","server":"172.99.188.99","port":4444,"password":"pKEW8JPByTVTLtM","cipher":"aes-256-gcm"}
+  - {"name":"t.me/wbnet_🇺🇸_64","type":"ss","server":"172.99.188.99","port":5001,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"t.me/wbnet_🇺🇸_65","type":"ss","server":"172.99.188.99","port":5004,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
+  - {"name":"t.me/wbnet_🇯🇵_66","type":"ss","server":"85.208.108.61","port":443,"password":"pKEW8JPByTVTLtM","cipher":"aes-256-gcm"}
+  - {"name":"t.me/wbnet_🇮🇱_67","type":"ss","server":"31.133.100.49","port":50000,"password":"3135771619","cipher":"aes-256-cfb"}
+  - {"name":"t.me/wbnet_🇷🇺_68","type":"ss","server":"45.8.147.126","port":20166,"password":"JLJ3ZNyeqGNU","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - Germany 2 🇩🇪
-      - SWEDEN+🇸🇪
-      - US+🇺🇲_1
-      - UK 🇬🇧
-      - 🇹🇷+TURKEY+
-      - Germany 🇩🇪
-      - Sweden 2 🇸🇪
-      - Paris+++🇫🇷
-      - US+2+🇺🇲
-      - +Germany+4++🇩🇪
-      - Germany++5+🇩🇪
-      - Germany+6+🇩🇪
-      - Us 3 🇺🇲
-      - US+🇺🇲_2
+      - t.me/wbnet_🇺🇦_1
+      - t.me/wbnet_🇻🇳_2
+      - t.me/wbnet_🇹🇷_3
+      - t.me/wbnet_🇱🇾_4
+      - t.me/wbnet_🇺🇦_5
+      - t.me/wbnet_🇺🇦_6
+      - t.me/wbnet_🇰🇷_7
+      - t.me/wbnet_🇫🇮_8
+      - t.me/wbnet_🇧🇦_9
+      - t.me/wbnet_🇵🇹_10
+      - t.me/wbnet_🇦🇪_11
+      - t.me/wbnet_🇦🇪_12
+      - t.me/wbnet_🇪🇪_13
+      - t.me/wbnet_🇷🇺_14
+      - t.me/wbnet_🇷🇺_15
+      - t.me/wbnet_🇷🇺_16
+      - t.me/wbnet_🇩🇪_17
+      - t.me/wbnet_🇩🇪_18
+      - t.me/wbnet_🇩🇪_19
+      - t.me/wbnet_🇩🇪_20
+      - t.me/wbnet_🇩🇪_21
+      - t.me/wbnet_🇩🇪_22
+      - t.me/wbnet_🇩🇪_23
+      - t.me/wbnet_🇩🇪_24
+      - t.me/wbnet_🇦🇪_25
+      - t.me/wbnet_🇦🇪_26
+      - t.me/wbnet_🇦🇪_27
+      - t.me/wbnet_🇦🇪_28
+      - t.me/wbnet_🇦🇪_29
+      - t.me/wbnet_🇦🇪_30
+      - t.me/wbnet_🇦🇪_31
+      - t.me/wbnet_🇦🇪_32
+      - t.me/wbnet_🇦🇪_33
+      - t.me/wbnet_🇯🇵_34
+      - t.me/wbnet_35
+      - t.me/wbnet_36
+      - t.me/wbnet_🇹🇭_37
+      - t.me/wbnet_🇲🇾_38
+      - t.me/wbnet_🇺🇸_39
+      - t.me/wbnet_🇺🇸_40
+      - t.me/wbnet_🇺🇸_41
+      - t.me/wbnet_🇺🇸_42
+      - t.me/wbnet_🇺🇸_43
+      - t.me/wbnet_🇺🇸_44
+      - t.me/wbnet_🇦🇱_45
+      - t.me/wbnet_🇸🇬_46
+      - t.me/wbnet_🇸🇬_47
+      - t.me/wbnet_🇸🇬_48
+      - t.me/wbnet_🇸🇬_49
+      - t.me/wbnet_🇸🇬_50
+      - t.me/wbnet_🇸🇬_51
+      - t.me/wbnet_🇸🇬_52
+      - t.me/wbnet_🇸🇬_53
+      - t.me/wbnet_🇮🇸_54
+      - t.me/wbnet_🇮🇳_55
+      - t.me/wbnet_🇬🇧_56
+      - t.me/wbnet_🇬🇧_57
+      - t.me/wbnet_🇬🇧_58
+      - t.me/wbnet_🇬🇧_59
+      - t.me/wbnet_🇬🇧_60
+      - t.me/wbnet_🇪🇪_61
+      - t.me/wbnet_🇺🇸_62
+      - t.me/wbnet_🇺🇸_63
+      - t.me/wbnet_🇺🇸_64
+      - t.me/wbnet_🇺🇸_65
+      - t.me/wbnet_🇯🇵_66
+      - t.me/wbnet_🇮🇱_67
+      - t.me/wbnet_🇷🇺_68
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - Germany 2 🇩🇪
-      - SWEDEN+🇸🇪
-      - US+🇺🇲_1
-      - UK 🇬🇧
-      - 🇹🇷+TURKEY+
-      - Germany 🇩🇪
-      - Sweden 2 🇸🇪
-      - Paris+++🇫🇷
-      - US+2+🇺🇲
-      - +Germany+4++🇩🇪
-      - Germany++5+🇩🇪
-      - Germany+6+🇩🇪
-      - Us 3 🇺🇲
-      - US+🇺🇲_2
+      - t.me/wbnet_🇺🇦_1
+      - t.me/wbnet_🇻🇳_2
+      - t.me/wbnet_🇹🇷_3
+      - t.me/wbnet_🇱🇾_4
+      - t.me/wbnet_🇺🇦_5
+      - t.me/wbnet_🇺🇦_6
+      - t.me/wbnet_🇰🇷_7
+      - t.me/wbnet_🇫🇮_8
+      - t.me/wbnet_🇧🇦_9
+      - t.me/wbnet_🇵🇹_10
+      - t.me/wbnet_🇦🇪_11
+      - t.me/wbnet_🇦🇪_12
+      - t.me/wbnet_🇪🇪_13
+      - t.me/wbnet_🇷🇺_14
+      - t.me/wbnet_🇷🇺_15
+      - t.me/wbnet_🇷🇺_16
+      - t.me/wbnet_🇩🇪_17
+      - t.me/wbnet_🇩🇪_18
+      - t.me/wbnet_🇩🇪_19
+      - t.me/wbnet_🇩🇪_20
+      - t.me/wbnet_🇩🇪_21
+      - t.me/wbnet_🇩🇪_22
+      - t.me/wbnet_🇩🇪_23
+      - t.me/wbnet_🇩🇪_24
+      - t.me/wbnet_🇦🇪_25
+      - t.me/wbnet_🇦🇪_26
+      - t.me/wbnet_🇦🇪_27
+      - t.me/wbnet_🇦🇪_28
+      - t.me/wbnet_🇦🇪_29
+      - t.me/wbnet_🇦🇪_30
+      - t.me/wbnet_🇦🇪_31
+      - t.me/wbnet_🇦🇪_32
+      - t.me/wbnet_🇦🇪_33
+      - t.me/wbnet_🇯🇵_34
+      - t.me/wbnet_35
+      - t.me/wbnet_36
+      - t.me/wbnet_🇹🇭_37
+      - t.me/wbnet_🇲🇾_38
+      - t.me/wbnet_🇺🇸_39
+      - t.me/wbnet_🇺🇸_40
+      - t.me/wbnet_🇺🇸_41
+      - t.me/wbnet_🇺🇸_42
+      - t.me/wbnet_🇺🇸_43
+      - t.me/wbnet_🇺🇸_44
+      - t.me/wbnet_🇦🇱_45
+      - t.me/wbnet_🇸🇬_46
+      - t.me/wbnet_🇸🇬_47
+      - t.me/wbnet_🇸🇬_48
+      - t.me/wbnet_🇸🇬_49
+      - t.me/wbnet_🇸🇬_50
+      - t.me/wbnet_🇸🇬_51
+      - t.me/wbnet_🇸🇬_52
+      - t.me/wbnet_🇸🇬_53
+      - t.me/wbnet_🇮🇸_54
+      - t.me/wbnet_🇮🇳_55
+      - t.me/wbnet_🇬🇧_56
+      - t.me/wbnet_🇬🇧_57
+      - t.me/wbnet_🇬🇧_58
+      - t.me/wbnet_🇬🇧_59
+      - t.me/wbnet_🇬🇧_60
+      - t.me/wbnet_🇪🇪_61
+      - t.me/wbnet_🇺🇸_62
+      - t.me/wbnet_🇺🇸_63
+      - t.me/wbnet_🇺🇸_64
+      - t.me/wbnet_🇺🇸_65
+      - t.me/wbnet_🇯🇵_66
+      - t.me/wbnet_🇮🇱_67
+      - t.me/wbnet_🇷🇺_68
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Germany 2 🇩🇪
-      - SWEDEN+🇸🇪
-      - US+🇺🇲_1
-      - UK 🇬🇧
-      - 🇹🇷+TURKEY+
-      - Germany 🇩🇪
-      - Sweden 2 🇸🇪
-      - Paris+++🇫🇷
-      - US+2+🇺🇲
-      - +Germany+4++🇩🇪
-      - Germany++5+🇩🇪
-      - Germany+6+🇩🇪
-      - Us 3 🇺🇲
-      - US+🇺🇲_2
+      - t.me/wbnet_🇺🇦_1
+      - t.me/wbnet_🇻🇳_2
+      - t.me/wbnet_🇹🇷_3
+      - t.me/wbnet_🇱🇾_4
+      - t.me/wbnet_🇺🇦_5
+      - t.me/wbnet_🇺🇦_6
+      - t.me/wbnet_🇰🇷_7
+      - t.me/wbnet_🇫🇮_8
+      - t.me/wbnet_🇧🇦_9
+      - t.me/wbnet_🇵🇹_10
+      - t.me/wbnet_🇦🇪_11
+      - t.me/wbnet_🇦🇪_12
+      - t.me/wbnet_🇪🇪_13
+      - t.me/wbnet_🇷🇺_14
+      - t.me/wbnet_🇷🇺_15
+      - t.me/wbnet_🇷🇺_16
+      - t.me/wbnet_🇩🇪_17
+      - t.me/wbnet_🇩🇪_18
+      - t.me/wbnet_🇩🇪_19
+      - t.me/wbnet_🇩🇪_20
+      - t.me/wbnet_🇩🇪_21
+      - t.me/wbnet_🇩🇪_22
+      - t.me/wbnet_🇩🇪_23
+      - t.me/wbnet_🇩🇪_24
+      - t.me/wbnet_🇦🇪_25
+      - t.me/wbnet_🇦🇪_26
+      - t.me/wbnet_🇦🇪_27
+      - t.me/wbnet_🇦🇪_28
+      - t.me/wbnet_🇦🇪_29
+      - t.me/wbnet_🇦🇪_30
+      - t.me/wbnet_🇦🇪_31
+      - t.me/wbnet_🇦🇪_32
+      - t.me/wbnet_🇦🇪_33
+      - t.me/wbnet_🇯🇵_34
+      - t.me/wbnet_35
+      - t.me/wbnet_36
+      - t.me/wbnet_🇹🇭_37
+      - t.me/wbnet_🇲🇾_38
+      - t.me/wbnet_🇺🇸_39
+      - t.me/wbnet_🇺🇸_40
+      - t.me/wbnet_🇺🇸_41
+      - t.me/wbnet_🇺🇸_42
+      - t.me/wbnet_🇺🇸_43
+      - t.me/wbnet_🇺🇸_44
+      - t.me/wbnet_🇦🇱_45
+      - t.me/wbnet_🇸🇬_46
+      - t.me/wbnet_🇸🇬_47
+      - t.me/wbnet_🇸🇬_48
+      - t.me/wbnet_🇸🇬_49
+      - t.me/wbnet_🇸🇬_50
+      - t.me/wbnet_🇸🇬_51
+      - t.me/wbnet_🇸🇬_52
+      - t.me/wbnet_🇸🇬_53
+      - t.me/wbnet_🇮🇸_54
+      - t.me/wbnet_🇮🇳_55
+      - t.me/wbnet_🇬🇧_56
+      - t.me/wbnet_🇬🇧_57
+      - t.me/wbnet_🇬🇧_58
+      - t.me/wbnet_🇬🇧_59
+      - t.me/wbnet_🇬🇧_60
+      - t.me/wbnet_🇪🇪_61
+      - t.me/wbnet_🇺🇸_62
+      - t.me/wbnet_🇺🇸_63
+      - t.me/wbnet_🇺🇸_64
+      - t.me/wbnet_🇺🇸_65
+      - t.me/wbnet_🇯🇵_66
+      - t.me/wbnet_🇮🇱_67
+      - t.me/wbnet_🇷🇺_68
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - Germany 2 🇩🇪
-      - SWEDEN+🇸🇪
-      - US+🇺🇲_1
-      - UK 🇬🇧
-      - 🇹🇷+TURKEY+
-      - Germany 🇩🇪
-      - Sweden 2 🇸🇪
-      - Paris+++🇫🇷
-      - US+2+🇺🇲
-      - +Germany+4++🇩🇪
-      - Germany++5+🇩🇪
-      - Germany+6+🇩🇪
-      - Us 3 🇺🇲
-      - US+🇺🇲_2
+      - t.me/wbnet_🇺🇦_1
+      - t.me/wbnet_🇻🇳_2
+      - t.me/wbnet_🇹🇷_3
+      - t.me/wbnet_🇱🇾_4
+      - t.me/wbnet_🇺🇦_5
+      - t.me/wbnet_🇺🇦_6
+      - t.me/wbnet_🇰🇷_7
+      - t.me/wbnet_🇫🇮_8
+      - t.me/wbnet_🇧🇦_9
+      - t.me/wbnet_🇵🇹_10
+      - t.me/wbnet_🇦🇪_11
+      - t.me/wbnet_🇦🇪_12
+      - t.me/wbnet_🇪🇪_13
+      - t.me/wbnet_🇷🇺_14
+      - t.me/wbnet_🇷🇺_15
+      - t.me/wbnet_🇷🇺_16
+      - t.me/wbnet_🇩🇪_17
+      - t.me/wbnet_🇩🇪_18
+      - t.me/wbnet_🇩🇪_19
+      - t.me/wbnet_🇩🇪_20
+      - t.me/wbnet_🇩🇪_21
+      - t.me/wbnet_🇩🇪_22
+      - t.me/wbnet_🇩🇪_23
+      - t.me/wbnet_🇩🇪_24
+      - t.me/wbnet_🇦🇪_25
+      - t.me/wbnet_🇦🇪_26
+      - t.me/wbnet_🇦🇪_27
+      - t.me/wbnet_🇦🇪_28
+      - t.me/wbnet_🇦🇪_29
+      - t.me/wbnet_🇦🇪_30
+      - t.me/wbnet_🇦🇪_31
+      - t.me/wbnet_🇦🇪_32
+      - t.me/wbnet_🇦🇪_33
+      - t.me/wbnet_🇯🇵_34
+      - t.me/wbnet_35
+      - t.me/wbnet_36
+      - t.me/wbnet_🇹🇭_37
+      - t.me/wbnet_🇲🇾_38
+      - t.me/wbnet_🇺🇸_39
+      - t.me/wbnet_🇺🇸_40
+      - t.me/wbnet_🇺🇸_41
+      - t.me/wbnet_🇺🇸_42
+      - t.me/wbnet_🇺🇸_43
+      - t.me/wbnet_🇺🇸_44
+      - t.me/wbnet_🇦🇱_45
+      - t.me/wbnet_🇸🇬_46
+      - t.me/wbnet_🇸🇬_47
+      - t.me/wbnet_🇸🇬_48
+      - t.me/wbnet_🇸🇬_49
+      - t.me/wbnet_🇸🇬_50
+      - t.me/wbnet_🇸🇬_51
+      - t.me/wbnet_🇸🇬_52
+      - t.me/wbnet_🇸🇬_53
+      - t.me/wbnet_🇮🇸_54
+      - t.me/wbnet_🇮🇳_55
+      - t.me/wbnet_🇬🇧_56
+      - t.me/wbnet_🇬🇧_57
+      - t.me/wbnet_🇬🇧_58
+      - t.me/wbnet_🇬🇧_59
+      - t.me/wbnet_🇬🇧_60
+      - t.me/wbnet_🇪🇪_61
+      - t.me/wbnet_🇺🇸_62
+      - t.me/wbnet_🇺🇸_63
+      - t.me/wbnet_🇺🇸_64
+      - t.me/wbnet_🇺🇸_65
+      - t.me/wbnet_🇯🇵_66
+      - t.me/wbnet_🇮🇱_67
+      - t.me/wbnet_🇷🇺_68
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - Germany 2 🇩🇪
-      - SWEDEN+🇸🇪
-      - US+🇺🇲_1
-      - UK 🇬🇧
-      - 🇹🇷+TURKEY+
-      - Germany 🇩🇪
-      - Sweden 2 🇸🇪
-      - Paris+++🇫🇷
-      - US+2+🇺🇲
-      - +Germany+4++🇩🇪
-      - Germany++5+🇩🇪
-      - Germany+6+🇩🇪
-      - Us 3 🇺🇲
-      - US+🇺🇲_2
+      - t.me/wbnet_🇺🇦_1
+      - t.me/wbnet_🇻🇳_2
+      - t.me/wbnet_🇹🇷_3
+      - t.me/wbnet_🇱🇾_4
+      - t.me/wbnet_🇺🇦_5
+      - t.me/wbnet_🇺🇦_6
+      - t.me/wbnet_🇰🇷_7
+      - t.me/wbnet_🇫🇮_8
+      - t.me/wbnet_🇧🇦_9
+      - t.me/wbnet_🇵🇹_10
+      - t.me/wbnet_🇦🇪_11
+      - t.me/wbnet_🇦🇪_12
+      - t.me/wbnet_🇪🇪_13
+      - t.me/wbnet_🇷🇺_14
+      - t.me/wbnet_🇷🇺_15
+      - t.me/wbnet_🇷🇺_16
+      - t.me/wbnet_🇩🇪_17
+      - t.me/wbnet_🇩🇪_18
+      - t.me/wbnet_🇩🇪_19
+      - t.me/wbnet_🇩🇪_20
+      - t.me/wbnet_🇩🇪_21
+      - t.me/wbnet_🇩🇪_22
+      - t.me/wbnet_🇩🇪_23
+      - t.me/wbnet_🇩🇪_24
+      - t.me/wbnet_🇦🇪_25
+      - t.me/wbnet_🇦🇪_26
+      - t.me/wbnet_🇦🇪_27
+      - t.me/wbnet_🇦🇪_28
+      - t.me/wbnet_🇦🇪_29
+      - t.me/wbnet_🇦🇪_30
+      - t.me/wbnet_🇦🇪_31
+      - t.me/wbnet_🇦🇪_32
+      - t.me/wbnet_🇦🇪_33
+      - t.me/wbnet_🇯🇵_34
+      - t.me/wbnet_35
+      - t.me/wbnet_36
+      - t.me/wbnet_🇹🇭_37
+      - t.me/wbnet_🇲🇾_38
+      - t.me/wbnet_🇺🇸_39
+      - t.me/wbnet_🇺🇸_40
+      - t.me/wbnet_🇺🇸_41
+      - t.me/wbnet_🇺🇸_42
+      - t.me/wbnet_🇺🇸_43
+      - t.me/wbnet_🇺🇸_44
+      - t.me/wbnet_🇦🇱_45
+      - t.me/wbnet_🇸🇬_46
+      - t.me/wbnet_🇸🇬_47
+      - t.me/wbnet_🇸🇬_48
+      - t.me/wbnet_🇸🇬_49
+      - t.me/wbnet_🇸🇬_50
+      - t.me/wbnet_🇸🇬_51
+      - t.me/wbnet_🇸🇬_52
+      - t.me/wbnet_🇸🇬_53
+      - t.me/wbnet_🇮🇸_54
+      - t.me/wbnet_🇮🇳_55
+      - t.me/wbnet_🇬🇧_56
+      - t.me/wbnet_🇬🇧_57
+      - t.me/wbnet_🇬🇧_58
+      - t.me/wbnet_🇬🇧_59
+      - t.me/wbnet_🇬🇧_60
+      - t.me/wbnet_🇪🇪_61
+      - t.me/wbnet_🇺🇸_62
+      - t.me/wbnet_🇺🇸_63
+      - t.me/wbnet_🇺🇸_64
+      - t.me/wbnet_🇺🇸_65
+      - t.me/wbnet_🇯🇵_66
+      - t.me/wbnet_🇮🇱_67
+      - t.me/wbnet_🇷🇺_68
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - Germany 2 🇩🇪
-      - SWEDEN+🇸🇪
-      - US+🇺🇲_1
-      - UK 🇬🇧
-      - 🇹🇷+TURKEY+
-      - Germany 🇩🇪
-      - Sweden 2 🇸🇪
-      - Paris+++🇫🇷
-      - US+2+🇺🇲
-      - +Germany+4++🇩🇪
-      - Germany++5+🇩🇪
-      - Germany+6+🇩🇪
-      - Us 3 🇺🇲
-      - US+🇺🇲_2
+      - t.me/wbnet_🇺🇦_1
+      - t.me/wbnet_🇻🇳_2
+      - t.me/wbnet_🇹🇷_3
+      - t.me/wbnet_🇱🇾_4
+      - t.me/wbnet_🇺🇦_5
+      - t.me/wbnet_🇺🇦_6
+      - t.me/wbnet_🇰🇷_7
+      - t.me/wbnet_🇫🇮_8
+      - t.me/wbnet_🇧🇦_9
+      - t.me/wbnet_🇵🇹_10
+      - t.me/wbnet_🇦🇪_11
+      - t.me/wbnet_🇦🇪_12
+      - t.me/wbnet_🇪🇪_13
+      - t.me/wbnet_🇷🇺_14
+      - t.me/wbnet_🇷🇺_15
+      - t.me/wbnet_🇷🇺_16
+      - t.me/wbnet_🇩🇪_17
+      - t.me/wbnet_🇩🇪_18
+      - t.me/wbnet_🇩🇪_19
+      - t.me/wbnet_🇩🇪_20
+      - t.me/wbnet_🇩🇪_21
+      - t.me/wbnet_🇩🇪_22
+      - t.me/wbnet_🇩🇪_23
+      - t.me/wbnet_🇩🇪_24
+      - t.me/wbnet_🇦🇪_25
+      - t.me/wbnet_🇦🇪_26
+      - t.me/wbnet_🇦🇪_27
+      - t.me/wbnet_🇦🇪_28
+      - t.me/wbnet_🇦🇪_29
+      - t.me/wbnet_🇦🇪_30
+      - t.me/wbnet_🇦🇪_31
+      - t.me/wbnet_🇦🇪_32
+      - t.me/wbnet_🇦🇪_33
+      - t.me/wbnet_🇯🇵_34
+      - t.me/wbnet_35
+      - t.me/wbnet_36
+      - t.me/wbnet_🇹🇭_37
+      - t.me/wbnet_🇲🇾_38
+      - t.me/wbnet_🇺🇸_39
+      - t.me/wbnet_🇺🇸_40
+      - t.me/wbnet_🇺🇸_41
+      - t.me/wbnet_🇺🇸_42
+      - t.me/wbnet_🇺🇸_43
+      - t.me/wbnet_🇺🇸_44
+      - t.me/wbnet_🇦🇱_45
+      - t.me/wbnet_🇸🇬_46
+      - t.me/wbnet_🇸🇬_47
+      - t.me/wbnet_🇸🇬_48
+      - t.me/wbnet_🇸🇬_49
+      - t.me/wbnet_🇸🇬_50
+      - t.me/wbnet_🇸🇬_51
+      - t.me/wbnet_🇸🇬_52
+      - t.me/wbnet_🇸🇬_53
+      - t.me/wbnet_🇮🇸_54
+      - t.me/wbnet_🇮🇳_55
+      - t.me/wbnet_🇬🇧_56
+      - t.me/wbnet_🇬🇧_57
+      - t.me/wbnet_🇬🇧_58
+      - t.me/wbnet_🇬🇧_59
+      - t.me/wbnet_🇬🇧_60
+      - t.me/wbnet_🇪🇪_61
+      - t.me/wbnet_🇺🇸_62
+      - t.me/wbnet_🇺🇸_63
+      - t.me/wbnet_🇺🇸_64
+      - t.me/wbnet_🇺🇸_65
+      - t.me/wbnet_🇯🇵_66
+      - t.me/wbnet_🇮🇱_67
+      - t.me/wbnet_🇷🇺_68
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -174,20 +616,74 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Germany 2 🇩🇪
-      - SWEDEN+🇸🇪
-      - US+🇺🇲_1
-      - UK 🇬🇧
-      - 🇹🇷+TURKEY+
-      - Germany 🇩🇪
-      - Sweden 2 🇸🇪
-      - Paris+++🇫🇷
-      - US+2+🇺🇲
-      - +Germany+4++🇩🇪
-      - Germany++5+🇩🇪
-      - Germany+6+🇩🇪
-      - Us 3 🇺🇲
-      - US+🇺🇲_2
+      - t.me/wbnet_🇺🇦_1
+      - t.me/wbnet_🇻🇳_2
+      - t.me/wbnet_🇹🇷_3
+      - t.me/wbnet_🇱🇾_4
+      - t.me/wbnet_🇺🇦_5
+      - t.me/wbnet_🇺🇦_6
+      - t.me/wbnet_🇰🇷_7
+      - t.me/wbnet_🇫🇮_8
+      - t.me/wbnet_🇧🇦_9
+      - t.me/wbnet_🇵🇹_10
+      - t.me/wbnet_🇦🇪_11
+      - t.me/wbnet_🇦🇪_12
+      - t.me/wbnet_🇪🇪_13
+      - t.me/wbnet_🇷🇺_14
+      - t.me/wbnet_🇷🇺_15
+      - t.me/wbnet_🇷🇺_16
+      - t.me/wbnet_🇩🇪_17
+      - t.me/wbnet_🇩🇪_18
+      - t.me/wbnet_🇩🇪_19
+      - t.me/wbnet_🇩🇪_20
+      - t.me/wbnet_🇩🇪_21
+      - t.me/wbnet_🇩🇪_22
+      - t.me/wbnet_🇩🇪_23
+      - t.me/wbnet_🇩🇪_24
+      - t.me/wbnet_🇦🇪_25
+      - t.me/wbnet_🇦🇪_26
+      - t.me/wbnet_🇦🇪_27
+      - t.me/wbnet_🇦🇪_28
+      - t.me/wbnet_🇦🇪_29
+      - t.me/wbnet_🇦🇪_30
+      - t.me/wbnet_🇦🇪_31
+      - t.me/wbnet_🇦🇪_32
+      - t.me/wbnet_🇦🇪_33
+      - t.me/wbnet_🇯🇵_34
+      - t.me/wbnet_35
+      - t.me/wbnet_36
+      - t.me/wbnet_🇹🇭_37
+      - t.me/wbnet_🇲🇾_38
+      - t.me/wbnet_🇺🇸_39
+      - t.me/wbnet_🇺🇸_40
+      - t.me/wbnet_🇺🇸_41
+      - t.me/wbnet_🇺🇸_42
+      - t.me/wbnet_🇺🇸_43
+      - t.me/wbnet_🇺🇸_44
+      - t.me/wbnet_🇦🇱_45
+      - t.me/wbnet_🇸🇬_46
+      - t.me/wbnet_🇸🇬_47
+      - t.me/wbnet_🇸🇬_48
+      - t.me/wbnet_🇸🇬_49
+      - t.me/wbnet_🇸🇬_50
+      - t.me/wbnet_🇸🇬_51
+      - t.me/wbnet_🇸🇬_52
+      - t.me/wbnet_🇸🇬_53
+      - t.me/wbnet_🇮🇸_54
+      - t.me/wbnet_🇮🇳_55
+      - t.me/wbnet_🇬🇧_56
+      - t.me/wbnet_🇬🇧_57
+      - t.me/wbnet_🇬🇧_58
+      - t.me/wbnet_🇬🇧_59
+      - t.me/wbnet_🇬🇧_60
+      - t.me/wbnet_🇪🇪_61
+      - t.me/wbnet_🇺🇸_62
+      - t.me/wbnet_🇺🇸_63
+      - t.me/wbnet_🇺🇸_64
+      - t.me/wbnet_🇺🇸_65
+      - t.me/wbnet_🇯🇵_66
+      - t.me/wbnet_🇮🇱_67
+      - t.me/wbnet_🇷🇺_68
 
 rules:
 # 本地/局域网地址
