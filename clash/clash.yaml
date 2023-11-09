@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：2023-11-08 16:46:21
+# 客户端：Clash.Meta
+# 创建时间：2023-11-09 00:14:15
 # 使用模版：V2RaySE 默认模版
-# 节点数量：4
+# 节点数量：10
 ####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -85,67 +86,109 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"硅谷-9psthvd6","type":"trojan","server":"www.91caidog.cn","port":7992,"udp":true,"password":"tUfiv2o6gs","sni":"www.91caidog.cn","skip-cert-verify":true,"network":"tcp","alpn":["http/1.1","h2"]}
-  - {"name":"硅谷-oe4nolaz","type":"vmess","server":"www.91caidog.cn","port":7991,"cipher":"auto","uuid":"44e65d35-8a16-4352-b933-6adf99f40405","tls":true,"skip-cert-verify":true,"servername":"www.91caidog.cn","network":"tcp"}
-  - {"name":"HK_trojan-xbhmtevy","type":"trojan","server":"ao.linfeifei.uk","port":7991,"udp":true,"password":"PbbWExXGoh","sni":"ao.linfeifei.uk","skip-cert-verify":true,"network":"tcp","alpn":["http/1.1","h2"]}
-  - {"name":"HK_vmess-dp9y3syo","type":"vmess","server":"ao.linfeifei.uk","port":7992,"cipher":"auto","uuid":"68b8923b-6723-424a-b1bb-22c69cac2569","tls":true,"skip-cert-verify":true,"servername":"ao.linfeifei.uk","network":"tcp"}
+  - {"name":"🇺🇸_US_美国->🇬🇧_GB_英国","type":"vmess","server":"ld2.shabijichang.com","port":80,"cipher":"auto","uuid":"c458695d-6908-45c3-9512-e0c46418454c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ld2.shabijichang.com"}}}
+  - {"name":"🇺🇸_US_美国->🇳🇱_NL_荷兰","type":"vmess","server":"45.199.138.191","port":30000,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1699280099138","headers":{"host":"www.42077230.xyz"}}}
+  - {"name":"🇨🇳_CN_中国->🇬🇧_GB_英国","type":"vmess","server":"112.29.94.23","port":49006,"cipher":"auto","uuid":"21a9bff2-72de-4e62-93ff-8b159f66d875","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国->🇫🇷_FR_法国","type":"vless","server":"172.67.156.27","port":443,"uuid":"d6f79630-aa94-4536-b2ef-899b5acb3b49","tls":true,"servername":"unmanliest.appreviewcenter.com","network":"ws","ws-opts":{"path":"/nimws"}}
+  - {"name":"🇩🇪_DE_德国","type":"trojan","server":"5.104.108.120","port":443,"udp":true,"password":"73751185-6cb0-4675-a8ee-5b7b75bf772d","sni":"20-24-33-134.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇦_CA_加拿大->🇬🇧_GB_英国","type":"vmess","server":"64.68.192.77","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":1,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"linkvws","headers":{"host":"ophelia.mom"}}}
+  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"45.199.138.146","port":30000,"cipher":"auto","uuid":"4ec0ae62-de09-4029-904a-0313d4628ecf","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1699193100388","headers":{"host":"www.19229362.xyz"}}}
+  - {"name":"🇺🇸_US_美国_2","type":"vless","server":"104.31.16.109","port":443,"uuid":"97d26fd0-e2ac-4b1f-a098-f422fc49bd30","tls":true,"servername":"singbox.cypherpunks.asia","network":"ws","ws-opts":{"path":"/cypherpunks"}}
+  - {"name":"🇺🇸_US_美国_3","type":"vmess","server":"45.58.152.70","port":30000,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1699193100388","headers":{"host":"www.54964745.xyz"}}}
+  - {"name":"🇷🇺_RU_俄罗斯联邦","type":"vmess","server":"5.42.75.176","port":8080,"cipher":"auto","uuid":"4080ef66-31f7-4cf5-b0a4-c031a8450783","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 硅谷-9psthvd6
-      - 硅谷-oe4nolaz
-      - HK_trojan-xbhmtevy
-      - HK_vmess-dp9y3syo
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇩🇪_DE_德国
+      - 🇨🇦_CA_加拿大->🇬🇧_GB_英国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇷🇺_RU_俄罗斯联邦
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 硅谷-9psthvd6
-      - 硅谷-oe4nolaz
-      - HK_trojan-xbhmtevy
-      - HK_vmess-dp9y3syo
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇩🇪_DE_德国
+      - 🇨🇦_CA_加拿大->🇬🇧_GB_英国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇷🇺_RU_俄罗斯联邦
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 硅谷-9psthvd6
-      - 硅谷-oe4nolaz
-      - HK_trojan-xbhmtevy
-      - HK_vmess-dp9y3syo
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇩🇪_DE_德国
+      - 🇨🇦_CA_加拿大->🇬🇧_GB_英国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇷🇺_RU_俄罗斯联邦
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 硅谷-9psthvd6
-      - 硅谷-oe4nolaz
-      - HK_trojan-xbhmtevy
-      - HK_vmess-dp9y3syo
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇩🇪_DE_德国
+      - 🇨🇦_CA_加拿大->🇬🇧_GB_英国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇷🇺_RU_俄罗斯联邦
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 硅谷-9psthvd6
-      - 硅谷-oe4nolaz
-      - HK_trojan-xbhmtevy
-      - HK_vmess-dp9y3syo
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇩🇪_DE_德国
+      - 🇨🇦_CA_加拿大->🇬🇧_GB_英国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇷🇺_RU_俄罗斯联邦
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 硅谷-9psthvd6
-      - 硅谷-oe4nolaz
-      - HK_trojan-xbhmtevy
-      - HK_vmess-dp9y3syo
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇩🇪_DE_德国
+      - 🇨🇦_CA_加拿大->🇬🇧_GB_英国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇷🇺_RU_俄罗斯联邦
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -168,10 +211,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 硅谷-9psthvd6
-      - 硅谷-oe4nolaz
-      - HK_trojan-xbhmtevy
-      - HK_vmess-dp9y3syo
+      - 🇺🇸_US_美国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇩🇪_DE_德国
+      - 🇨🇦_CA_加拿大->🇬🇧_GB_英国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇷🇺_RU_俄罗斯联邦
 
 rules:
 # 本地/局域网地址
