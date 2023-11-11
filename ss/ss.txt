@@ -1,35 +1,52 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Surfboard
-# 创建时间：2023-11-10 10:42:45
+# 客户端：Surge
+# 创建时间：2023-11-11 01:52:18
 # 使用模版：V2RaySE 默认模版
-# 节点数量：1
+# 节点数量：6
 ####################################
 
 [General]
 loglevel = notify
-interface = 127.0.0.1
-skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
-ipv6 = false
-dns-server = system, 223.5.5.5
+bypass-system = true
+skip-proxy = 127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,100.64.0.0/10,localhost,*.local,e.crashlytics.com,captive.apple.com,::ffff:0:0:0:0/1,::ffff:128:0:0:0/1
+#DNS设置或根据自己网络情况进行相应设置
+bypass-tun = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12
+dns-server = 119.29.29.29,223.5.5.5,218.30.19.40,61.134.1.4
+external-controller-access = password@0.0.0.0:6170
+http-api = password@0.0.0.0:6171
+test-timeout = 5
+http-api-web-dashboard = true
 exclude-simple-hostnames = true
-enhanced-mode-by-rule = true
+allow-wifi-access = true
+http-listen = 0.0.0.0:6152
+socks5-listen = 0.0.0.0:6153
+wifi-access-http-port = 6152
+wifi-access-socks5-port = 6153
+
+[Script]
+http-request https?:\/\/.*\.iqiyi\.com\/.*authcookie= script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 
 [Proxy]
 DIRECT = direct
-defaultName = socks5, 45.32.117.124, 13571, kba0M3, C44xSc
+v2rayse_test_1 = ss,198.57.27.218,5004,encrypt-method=aes-256-gcm,password=g5MeD6Ft3CWlJId,tfo=false,udp-relay=false
+v2rayse_test_2 = vmess,154.23.190.162,443,username=b9984674-f771-4e67-a198-c7e60720ba2c,tls=false,vmess-aead=false,tls13=false,ws=true,sni=154.23.190.162,skip-cert-verify=true,tfo=false,udp-relay=false
+v2rayse_test_3 = vmess,154.23.190.162,443,username=b9984674-f771-4e67-a198-c7e60720ba2c,tls=false,vmess-aead=false,tls13=false,ws=true,sni=154.23.190.162,skip-cert-verify=true,tfo=false,udp-relay=false
+defaultName_1 = external,exec=/usr/bin/ssr-local,args=-1,args=1080,args=-s,args=20.239.49.44,args=-p,args=59814,args=-m,args=dummy,args=-k,args=3df57276-03ef-45cf-bdd4-4edb6dfaa0ef,args=-o,args=plain,args=-O,args=origin,local-port=1080,addresses=20.239.49.44,tfo=false,udp-relay=false
+v2rayse_test_4 = trojan,ca-trojan.bonds.id,443,password=bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272,skip-cert-verify=true,tfo=false,udp-relay=false
+defaultName_2 = http,124.15.12.24,251,username=username,password=password
 
 [Proxy Group]
-🚀 节点选择 = select,♻️ 自动选择,DIRECT,defaultName
-♻️ 自动选择 = url-test,defaultName,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 50
-🌍 国外媒体 = select,🚀 节点选择,♻️ 自动选择,🎯 全球直连,defaultName
-📲 电报信息 = select,🚀 节点选择,🎯 全球直连,defaultName
-Ⓜ️ 微软服务 = select,🎯 全球直连,🚀 节点选择,defaultName
-🍎 苹果服务 = select,🚀 节点选择,🎯 全球直连,defaultName
+🚀 节点选择 = select,♻️ 自动选择,DIRECT,v2rayse_test_1,v2rayse_test_2,v2rayse_test_3,defaultName_1,v2rayse_test_4,defaultName_2
+♻️ 自动选择 = url-test,v2rayse_test_1,v2rayse_test_2,v2rayse_test_3,defaultName_1,v2rayse_test_4,defaultName_2,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 50
+🌍 国外媒体 = select,🚀 节点选择,♻️ 自动选择,🎯 全球直连,v2rayse_test_1,v2rayse_test_2,v2rayse_test_3,defaultName_1,v2rayse_test_4,defaultName_2
+📲 电报信息 = select,🚀 节点选择,🎯 全球直连,v2rayse_test_1,v2rayse_test_2,v2rayse_test_3,defaultName_1,v2rayse_test_4,defaultName_2
+Ⓜ️ 微软服务 = select,🎯 全球直连,🚀 节点选择,v2rayse_test_1,v2rayse_test_2,v2rayse_test_3,defaultName_1,v2rayse_test_4,defaultName_2
+🍎 苹果服务 = select,🚀 节点选择,🎯 全球直连,v2rayse_test_1,v2rayse_test_2,v2rayse_test_3,defaultName_1,v2rayse_test_4,defaultName_2
 🎯 全球直连 = select,DIRECT,🚀 节点选择,♻️ 自动选择
 🛑 全球拦截 = select,REJECT,DIRECT
 🍃 应用净化 = select,REJECT,DIRECT
-🐟 漏网之鱼 = select,🚀 节点选择,🎯 全球直连,♻️ 自动选择,defaultName
+🐟 漏网之鱼 = select,🚀 节点选择,🎯 全球直连,♻️ 自动选择,v2rayse_test_1,v2rayse_test_2,v2rayse_test_3,defaultName_1,v2rayse_test_4,defaultName_2
 
 [Rule]
 # 本地/局域网地址
