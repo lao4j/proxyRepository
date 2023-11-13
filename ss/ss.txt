@@ -1,54 +1,53 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Surge
-# 创建时间：2023-11-11 01:52:18
+# 客户端：QuantumultX
+# 创建时间：2023-11-13 14:59:53
 # 使用模版：V2RaySE 默认模版
-# 节点数量：6
+# 节点数量：9
 ####################################
 
-[General]
-loglevel = notify
-bypass-system = true
-skip-proxy = 127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,100.64.0.0/10,localhost,*.local,e.crashlytics.com,captive.apple.com,::ffff:0:0:0:0/1,::ffff:128:0:0:0/1
-#DNS设置或根据自己网络情况进行相应设置
-bypass-tun = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12
-dns-server = 119.29.29.29,223.5.5.5,218.30.19.40,61.134.1.4
-external-controller-access = password@0.0.0.0:6170
-http-api = password@0.0.0.0:6171
-test-timeout = 5
-http-api-web-dashboard = true
-exclude-simple-hostnames = true
-allow-wifi-access = true
-http-listen = 0.0.0.0:6152
-socks5-listen = 0.0.0.0:6153
-wifi-access-http-port = 6152
-wifi-access-socks5-port = 6153
+[general]
+excluded_routes = 192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8
+geo_location_checker = http://ip-api.com/json/?lang=zh-CN, https://github.com/KOP-XIAO/QuantumultX/raw/master/Scripts/IP_API.js
+network_check_url = http://www.baidu.com/
+server_check_url = http://www.gstatic.com/generate_204
 
-[Script]
-http-request https?:\/\/.*\.iqiyi\.com\/.*authcookie= script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+[dns]
+server = 119.29.29.29
+server = 223.5.5.5
+server = 1.0.0.1
+server = 8.8.8.8
 
-[Proxy]
-DIRECT = direct
-v2rayse_test_1 = ss,198.57.27.218,5004,encrypt-method=aes-256-gcm,password=g5MeD6Ft3CWlJId,tfo=false,udp-relay=false
-v2rayse_test_2 = vmess,154.23.190.162,443,username=b9984674-f771-4e67-a198-c7e60720ba2c,tls=false,vmess-aead=false,tls13=false,ws=true,sni=154.23.190.162,skip-cert-verify=true,tfo=false,udp-relay=false
-v2rayse_test_3 = vmess,154.23.190.162,443,username=b9984674-f771-4e67-a198-c7e60720ba2c,tls=false,vmess-aead=false,tls13=false,ws=true,sni=154.23.190.162,skip-cert-verify=true,tfo=false,udp-relay=false
-defaultName_1 = external,exec=/usr/bin/ssr-local,args=-1,args=1080,args=-s,args=20.239.49.44,args=-p,args=59814,args=-m,args=dummy,args=-k,args=3df57276-03ef-45cf-bdd4-4edb6dfaa0ef,args=-o,args=plain,args=-O,args=origin,local-port=1080,addresses=20.239.49.44,tfo=false,udp-relay=false
-v2rayse_test_4 = trojan,ca-trojan.bonds.id,443,password=bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272,skip-cert-verify=true,tfo=false,udp-relay=false
-defaultName_2 = http,124.15.12.24,251,username=username,password=password
+[policy]
+static = 🚀 节点选择, ♻️ 自动选择, DIRECT, 🇸🇬_SG_新加坡->🇺🇸_US_美国, 🇫🇷_FR_法国_1, 🇫🇷_FR_法国_2, 🇫🇷_FR_法国_3, 🇺🇸_US_美国->🇳🇱_NL_荷兰, 🇫🇷_FR_法国_4, 🇫🇷_FR_法国_5, 🇫🇷_FR_法国_6, 🇫🇷_FR_法国_7
+url-latency-benchmark = ♻️ 自动选择, 🇸🇬_SG_新加坡->🇺🇸_US_美国, 🇫🇷_FR_法国_1, 🇫🇷_FR_法国_2, 🇫🇷_FR_法国_3, 🇺🇸_US_美国->🇳🇱_NL_荷兰, 🇫🇷_FR_法国_4, 🇫🇷_FR_法国_5, 🇫🇷_FR_法国_6, 🇫🇷_FR_法国_7
+static = 🌍 国外媒体, 🚀 节点选择, ♻️ 自动选择, 🎯 全球直连, 🇸🇬_SG_新加坡->🇺🇸_US_美国, 🇫🇷_FR_法国_1, 🇫🇷_FR_法国_2, 🇫🇷_FR_法国_3, 🇺🇸_US_美国->🇳🇱_NL_荷兰, 🇫🇷_FR_法国_4, 🇫🇷_FR_法国_5, 🇫🇷_FR_法国_6, 🇫🇷_FR_法国_7
+static = 📲 电报信息, 🚀 节点选择, 🎯 全球直连, 🇸🇬_SG_新加坡->🇺🇸_US_美国, 🇫🇷_FR_法国_1, 🇫🇷_FR_法国_2, 🇫🇷_FR_法国_3, 🇺🇸_US_美国->🇳🇱_NL_荷兰, 🇫🇷_FR_法国_4, 🇫🇷_FR_法国_5, 🇫🇷_FR_法国_6, 🇫🇷_FR_法国_7
+static = Ⓜ️ 微软服务, 🎯 全球直连, 🚀 节点选择, 🇸🇬_SG_新加坡->🇺🇸_US_美国, 🇫🇷_FR_法国_1, 🇫🇷_FR_法国_2, 🇫🇷_FR_法国_3, 🇺🇸_US_美国->🇳🇱_NL_荷兰, 🇫🇷_FR_法国_4, 🇫🇷_FR_法国_5, 🇫🇷_FR_法国_6, 🇫🇷_FR_法国_7
+static = 🍎 苹果服务, 🚀 节点选择, 🎯 全球直连, 🇸🇬_SG_新加坡->🇺🇸_US_美国, 🇫🇷_FR_法国_1, 🇫🇷_FR_法国_2, 🇫🇷_FR_法国_3, 🇺🇸_US_美国->🇳🇱_NL_荷兰, 🇫🇷_FR_法国_4, 🇫🇷_FR_法国_5, 🇫🇷_FR_法国_6, 🇫🇷_FR_法国_7
+static = 🎯 全球直连, DIRECT, 🚀 节点选择, ♻️ 自动选择
+static = 🛑 全球拦截, REJECT, DIRECT
+static = 🍃 应用净化, REJECT, DIRECT
+static = 🐟 漏网之鱼, 🚀 节点选择, 🎯 全球直连, ♻️ 自动选择, 🇸🇬_SG_新加坡->🇺🇸_US_美国, 🇫🇷_FR_法国_1, 🇫🇷_FR_法国_2, 🇫🇷_FR_法国_3, 🇺🇸_US_美国->🇳🇱_NL_荷兰, 🇫🇷_FR_法国_4, 🇫🇷_FR_法国_5, 🇫🇷_FR_法国_6, 🇫🇷_FR_法国_7
 
-[Proxy Group]
-🚀 节点选择 = select,♻️ 自动选择,DIRECT,v2rayse_test_1,v2rayse_test_2,v2rayse_test_3,defaultName_1,v2rayse_test_4,defaultName_2
-♻️ 自动选择 = url-test,v2rayse_test_1,v2rayse_test_2,v2rayse_test_3,defaultName_1,v2rayse_test_4,defaultName_2,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 50
-🌍 国外媒体 = select,🚀 节点选择,♻️ 自动选择,🎯 全球直连,v2rayse_test_1,v2rayse_test_2,v2rayse_test_3,defaultName_1,v2rayse_test_4,defaultName_2
-📲 电报信息 = select,🚀 节点选择,🎯 全球直连,v2rayse_test_1,v2rayse_test_2,v2rayse_test_3,defaultName_1,v2rayse_test_4,defaultName_2
-Ⓜ️ 微软服务 = select,🎯 全球直连,🚀 节点选择,v2rayse_test_1,v2rayse_test_2,v2rayse_test_3,defaultName_1,v2rayse_test_4,defaultName_2
-🍎 苹果服务 = select,🚀 节点选择,🎯 全球直连,v2rayse_test_1,v2rayse_test_2,v2rayse_test_3,defaultName_1,v2rayse_test_4,defaultName_2
-🎯 全球直连 = select,DIRECT,🚀 节点选择,♻️ 自动选择
-🛑 全球拦截 = select,REJECT,DIRECT
-🍃 应用净化 = select,REJECT,DIRECT
-🐟 漏网之鱼 = select,🚀 节点选择,🎯 全球直连,♻️ 自动选择,v2rayse_test_1,v2rayse_test_2,v2rayse_test_3,defaultName_1,v2rayse_test_4,defaultName_2
+[server_remote]
 
-[Rule]
+[filter_remote]
+
+[rewrite_remote]
+
+[server_local]
+vmess = 8.222.235.92:80, method = chacha20-ietf-poly1305, password = ffffffff-ffff-ffff-ffff-ffffffffffff, aead = true, tls13 = false, obfs = ws, obfs-host = warp.chigua.tk, obfs-uri = /, fast-open = false, tag = 🇸🇬_SG_新加坡->🇺🇸_US_美国
+shadowsocks = 54.36.174.181:6679, method = aes-256-gcm, password = TEzjfAYq2IjtuoS, fast-open = false, tag = 🇫🇷_FR_法国_1
+shadowsocks = 54.36.174.181:8882, method = aes-256-gcm, password = kDWvXYZoTBcGkC4, fast-open = false, tag = 🇫🇷_FR_法国_2
+shadowsocks = 54.36.174.181:8888, method = aes-256-gcm, password = Y6R9pAtvxxzmGC, fast-open = false, tag = 🇫🇷_FR_法国_3
+vmess = 45.199.138.191:30000, method = chacha20-ietf-poly1305, password = 418048af-a293-4b99-9b0c-98ca3580dd24, aead = false, tls13 = false, obfs = ws, obfs-host = www.42077230.xyz, obfs-uri = /path/1699280099138, fast-open = false, tag = 🇺🇸_US_美国->🇳🇱_NL_荷兰
+shadowsocks = 51.159.221.231:443, method = aes-256-cfb, password = asdKkaskJKfnsa, fast-open = false, tag = 🇫🇷_FR_法国_4
+shadowsocks = 54.36.174.181:5004, method = aes-256-gcm, password = g5MeD6Ft3CWlJId, fast-open = false, tag = 🇫🇷_FR_法国_5
+shadowsocks = 54.36.174.181:8000, method = aes-256-gcm, password = KixLvKzwjekG00rm, fast-open = false, tag = 🇫🇷_FR_法国_6
+shadowsocks = 54.36.174.181:7002, method = aes-256-gcm, password = RexnBgU7EV5ADxG, fast-open = false, tag = 🇫🇷_FR_法国_7
+
+[filter_local]
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
 # ACL4SSR标志 如没有，代表不是用ACL4SSR规则
@@ -67,10 +66,10 @@ IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
 IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
 IP-CIDR,198.18.0.0/16,🎯 全球直连,no-resolve
 IP-CIDR,224.0.0.0/4,🎯 全球直连,no-resolve
-IP-CIDR6,::1/128,🎯 全球直连,no-resolve
-IP-CIDR6,fc00::/7,🎯 全球直连,no-resolve
-IP-CIDR6,fe80::/10,🎯 全球直连,no-resolve
-IP-CIDR6,fd00::/8,🎯 全球直连,no-resolve
+IP6-CIDR,::1/128,🎯 全球直连,no-resolve
+IP6-CIDR,fc00::/7,🎯 全球直连,no-resolve
+IP6-CIDR,fe80::/10,🎯 全球直连,no-resolve
+IP6-CIDR,fd00::/8,🎯 全球直连,no-resolve
 DOMAIN,instant.arubanetworks.com,🎯 全球直连
 DOMAIN,setmeup.arubanetworks.com,🎯 全球直连
 DOMAIN,router.asus.com,🎯 全球直连
@@ -2016,7 +2015,7 @@ DOMAIN-SUFFIX,amazonuniversity.jobs,🌍 国外媒体
 DOMAIN-SUFFIX,amazonvideo.com,🌍 国外媒体
 DOMAIN-SUFFIX,media-amazon.com,🌍 国外媒体
 DOMAIN-SUFFIX,pv-cdn.net,🌍 国外媒体
-URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/,🌍 国外媒体
+#,URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/,🌍 国外媒体
 USER-AGENT,AppleNews*,🌍 国外媒体
 USER-AGENT,com.apple.news*,🌍 国外媒体
 DOMAIN,gspe1-ssl.ls.apple.com,🌍 国外媒体
@@ -2276,9 +2275,9 @@ DOMAIN-SUFFIX,twitch-ext.rootonline.de,🌍 国外媒体
 DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
 DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
 USER-AGENT,Viu*,🌍 国外媒体
-PROCESS-NAME,com.viu.pad,🌍 国外媒体
-PROCESS-NAME,com.viu.phone,🌍 国外媒体
-PROCESS-NAME,com.vuclip.viu,🌍 国外媒体
+#,PROCESS-NAME,com.viu.pad,🌍 国外媒体
+#,PROCESS-NAME,com.viu.phone,🌍 国外媒体
+#,PROCESS-NAME,com.vuclip.viu,🌍 国外媒体
 DOMAIN,api.viu.now.com,🌍 国外媒体
 DOMAIN,d1k2us671qcoau.cloudfront.net,🌍 国外媒体
 DOMAIN,d2anahhhmp1ffz.cloudfront.net,🌍 国外媒体
@@ -2325,9 +2324,9 @@ DOMAIN-SUFFIX,telesco.pe,📲 电报信息
 IP-CIDR,91.108.0.0/16,📲 电报信息,no-resolve
 IP-CIDR,109.239.140.0/24,📲 电报信息,no-resolve
 IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
-IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
-IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
-IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
+IP6-CIDR,2001:67c:4e8::/48,📲 电报信息,no-resolve
+IP6-CIDR,2001:b28:f23d::/48,📲 电报信息,no-resolve
+IP6-CIDR,2001:b28:f23f::/48,📲 电报信息,no-resolve
 # 长风网站，自动注入
 DOMAIN-SUFFIX,v2rayse.com,🚀 节点选择
 DOMAIN-SUFFIX,cff.pw,🚀 节点选择
@@ -2741,9 +2740,9 @@ DOMAIN-SUFFIX,telesco.pe,🚀 节点选择
 IP-CIDR,91.108.0.0/16,🚀 节点选择,no-resolve
 IP-CIDR,109.239.140.0/24,🚀 节点选择,no-resolve
 IP-CIDR,149.154.160.0/20,🚀 节点选择,no-resolve
-IP-CIDR6,2001:67c:4e8::/48,🚀 节点选择,no-resolve
-IP-CIDR6,2001:b28:f23d::/48,🚀 节点选择,no-resolve
-IP-CIDR6,2001:b28:f23f::/48,🚀 节点选择,no-resolve
+IP6-CIDR,2001:67c:4e8::/48,🚀 节点选择,no-resolve
+IP6-CIDR,2001:b28:f23d::/48,🚀 节点选择,no-resolve
+IP6-CIDR,2001:b28:f23f::/48,🚀 节点选择,no-resolve
 DOMAIN-SUFFIX,terabox.com,🚀 节点选择
 DOMAIN-SUFFIX,teraboxcdn.com,🚀 节点选择
 IP-CIDR,18.194.0.0/15,🚀 节点选择,no-resolve
@@ -3203,10 +3202,10 @@ IP-CIDR,139.220.243.27/32,🎯 全球直连,no-resolve
 IP-CIDR,172.16.102.56/32,🎯 全球直连,no-resolve
 IP-CIDR,185.188.32.1/28,🎯 全球直连,no-resolve
 IP-CIDR,221.226.128.146/32,🎯 全球直连,no-resolve
-IP-CIDR6,2a0b:b580::/48,🎯 全球直连,no-resolve
-IP-CIDR6,2a0b:b581::/48,🎯 全球直连,no-resolve
-IP-CIDR6,2a0b:b582::/48,🎯 全球直连,no-resolve
-IP-CIDR6,2a0b:b583::/48,🎯 全球直连,no-resolve
+IP6-CIDR,2a0b:b580::/48,🎯 全球直连,no-resolve
+IP6-CIDR,2a0b:b581::/48,🎯 全球直连,no-resolve
+IP6-CIDR,2a0b:b582::/48,🎯 全球直连,no-resolve
+IP6-CIDR,2a0b:b583::/48,🎯 全球直连,no-resolve
 DOMAIN-SUFFIX,baomitu.com,🎯 全球直连
 DOMAIN-SUFFIX,bootcss.com,🎯 全球直连
 DOMAIN-SUFFIX,jiasule.com,🎯 全球直连
@@ -3677,3 +3676,7 @@ IP-CIDR,101.198.192.0/19,🎯 全球直连,no-resolve
 IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
 GEOIP,CN,🎯 全球直连
 FINAL,🐟 漏网之鱼
+
+[rewrite_local]
+
+[mitm]
