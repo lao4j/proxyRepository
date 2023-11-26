@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-11-26 09:42:14
+# 创建时间：2023-11-26 14:21:18
 # 使用模版：V2RaySE 默认模版
-# 节点数量：6
+# 节点数量：1
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -85,81 +85,46 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦","type":"vmess","server":"upload.ir","port":80,"cipher":"auto","uuid":"085f6281-5c4c-4a34-8b44-d65bc2e2b069","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"is3-vmess.sshmax.xyz"}}}
-  - {"name":"🇫🇷_FR_法国","type":"ss","server":"51.158.195.96","port":443,"password":"asdKkaskJKfnsa","cipher":"aes-256-cfb"}
-  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"a7.wxlljc520.com","port":443,"cipher":"auto","uuid":"4d7732ee-986a-4c25-8443-d6fefa8d2190","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/apple","headers":{"host":"777.golinkwuxian.top"}}}
-  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"c5.wuxianliulianng.xyz","port":443,"cipher":"auto","uuid":"4d7732ee-986a-4c25-8443-d6fefa8d2190","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/apple","headers":{"host":"555.golinkwuxian.top"}}}
-  - {"name":"🇬🇧_GB_英国","type":"trojan","server":"18.133.213.117","port":22222,"udp":true,"password":"telegram-id-directvpn","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国_3","type":"vmess","server":"172.67.77.246","port":2052,"cipher":"auto","uuid":"6da3e574-52f1-4690-a53b-2847ce756456","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/lonan","headers":{"host":"vdsus.1145114.me"}}}
+  - {"name":"🇫🇷_FR_法国","type":"ss","server":"51.158.195.96","port":110,"password":"asdKkaskJKfnsa","cipher":"aes-256-cfb"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
       - 🇫🇷_FR_法国
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇬🇧_GB_英国
-      - 🇺🇸_US_美国_3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
       - 🇫🇷_FR_法国
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇬🇧_GB_英国
-      - 🇺🇸_US_美国_3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
       - 🇫🇷_FR_法国
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇬🇧_GB_英国
-      - 🇺🇸_US_美国_3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
       - 🇫🇷_FR_法国
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇬🇧_GB_英国
-      - 🇺🇸_US_美国_3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
       - 🇫🇷_FR_法国
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇬🇧_GB_英国
-      - 🇺🇸_US_美国_3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
       - 🇫🇷_FR_法国
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇬🇧_GB_英国
-      - 🇺🇸_US_美国_3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -182,12 +147,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
       - 🇫🇷_FR_法国
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇬🇧_GB_英国
-      - 🇺🇸_US_美国_3
 
 rules:
 # 本地/局域网地址
