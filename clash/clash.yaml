@@ -1,15 +1,15 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-11-27 12:15:58
+# 创建时间：2023-11-27 13:46:56
 # 使用模版：V2RaySE 默认模版
 # 节点数量：1
 ####################################
 mixed-port: 7890
 allow-lan: true
 log-level: info
-ipv6: true
 external-controller: 0.0.0.0:9090
+ipv6: true
 dns:
   enabled: true
   listen: 0.0.0.0:1053
@@ -85,7 +85,7 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"sg","server":[2403:cfc0:1114:a2:e1::e74a],"port":1152,"password":"019513dc-7a90-4c36-9e27-4a2145fb5cb5","uuid":"019513dc-7a90-4c36-9e27-4a2145fb5cb5","alpn":["h3"],"disable-sni":true,"udp-relay-mode":"native","congestion_control":"bbr"}
+  - {"name":"sg","server":"2403:cfc0:1114:a2:e1::e74a","port":1152,"password":"019513dc-7a90-4c36-9e27-4a2145fb5cb5","uuid":"019513dc-7a90-4c36-9e27-4a2145fb5cb5","alpn":["h3"],"disable-sni":true,"udp-relay-mode":"native","congestion_control":"bbr"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -106,7 +106,7 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - sg
+      - defaultName
   - name: 📲 电报信息
     type: select
     proxies:
