@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：2023-11-27 14:57:56
+# 客户端：Clash.Meta
+# 创建时间：2023-11-27 15:04:25
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：9
-# 节点类型：vmess, trojan, ss
+# 节点数量：10
+# 节点类型：ss, vless, vmess
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -86,45 +87,48 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇮🇷_IR_伊朗->🇩🇪_DE_德国","type":"vmess","server":"158.58.188.21","port":45357,"cipher":"auto","uuid":"4ca955a6-737c-4f31-aa15-e2919d6d704b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"🇩🇪_DE_德国","type":"trojan","server":"5.104.107.143","port":443,"udp":true,"password":"d33df23a-8b9e-468e-bc33-dd3643008ced","sni":"de1.xn--mes358a9urctx.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇫🇷_FR_法国_1","type":"ss","server":"51.158.195.96","port":443,"password":"asdKkaskJKfnsa","cipher":"aes-256-cfb"}
-  - {"name":"🇫🇷_FR_法国_2","type":"ss","server":"51.158.195.96","port":80,"password":"asdKkaskJKfnsa","cipher":"aes-256-cfb"}
-  - {"name":"🇫🇷_FR_法国_3","type":"ss","server":"54.36.174.181","port":2376,"password":"faBAoD54k87UJG7","cipher":"aes-256-gcm"}
-  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"fr-v2ray.freevmess.com","port":8442,"cipher":"auto","uuid":"6773a666-5593-4c9f-aacd-52300b6a02d4","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
-  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"us-fsl.jikuai.xyz","port":8443,"cipher":"auto","uuid":"70666776-4e9f-4350-b3f0-afaff6a70db0","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/user"}}
-  - {"name":"🇫🇷_FR_法国_4","type":"ss","server":"54.36.174.181","port":5601,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
-  - {"name":"🇫🇷_FR_法国_5","type":"ss","server":"51.158.200.149","port":443,"password":"asdKkaskJKfnsa","cipher":"aes-256-cfb"}
+  - {"name":"🇫🇷_FR_法国_1","type":"ss","server":"54.36.174.181","port":5601,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"🇫🇷_FR_法国_2","type":"ss","server":"51.158.200.149","port":443,"password":"asdKkaskJKfnsa","cipher":"aes-256-cfb"}
+  - {"name":"🇨🇷_CR_哥斯达黎加->🇩🇪_DE_德国","type":"vless","server":"190.93.246.241","port":2053,"uuid":"b0e4e5dd-e6b7-491e-813e-ecd9fc3380e9","tls":true,"servername":"assjkldcjkfjdsfk.eitaa.mom","network":"ws","ws-opts":{"path":"/backup"}}
+  - {"name":"🇺🇸_US_美国_1","type":"vless","server":"162.159.134.233","port":2096,"uuid":"35ef9fb8-ceea-4d65-91f3-d443f614bf43","tls":true,"servername":"cltkk.edlaghiye.com","network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇬🇧_GB_英国","type":"vmess","server":"172.99.190.109","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"linkvws"}}
+  - {"name":"🇺🇸_US_美国->🇮🇳_IN_印度","type":"vmess","server":"mm3.shabijichang.com","port":80,"cipher":"auto","uuid":"c458695d-6908-45c3-9512-e0c46418454c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"mm3.shabijichang.com"}}}
+  - {"name":"🇫🇷_FR_法国_3","type":"ss","server":"54.36.174.181","port":7307,"password":"FoOiGlkAA9yPEGP","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸_US_美国->🇩🇪_DE_德国","type":"vless","server":"172.67.201.188","port":443,"uuid":"a5caca7b-9c8c-4825-b186-8fb70db0ddc0","tls":true,"servername":"zula.moaidownloader.info","network":"ws","ws-opts":{"path":"/download.zula_v1.8.10"}}
+  - {"name":"🇫🇷_FR_法国_4","type":"ss","server":"51.158.195.96","port":110,"password":"asdKkaskJKfnsa","cipher":"aes-256-cfb"}
+  - {"name":"🇺🇸_US_美国_2","type":"vless","server":"162.159.130.233","port":2096,"uuid":"35ef9fb8-ceea-4d65-91f3-d443f614bf43","tls":true,"servername":"cltkk.edlaghiye.com","network":"ws","ws-opts":{"path":"/"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇮🇷_IR_伊朗->🇩🇪_DE_德国
-      - 🇩🇪_DE_德国
       - 🇫🇷_FR_法国_1
       - 🇫🇷_FR_法国_2
-      - 🇫🇷_FR_法国_3
+      - 🇨🇷_CR_哥斯达黎加->🇩🇪_DE_德国
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
+      - 🇬🇧_GB_英国
+      - 🇺🇸_US_美国->🇮🇳_IN_印度
+      - 🇫🇷_FR_法国_3
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
       - 🇫🇷_FR_法国_4
-      - 🇫🇷_FR_法国_5
+      - 🇺🇸_US_美国_2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇮🇷_IR_伊朗->🇩🇪_DE_德国
-      - 🇩🇪_DE_德国
       - 🇫🇷_FR_法国_1
       - 🇫🇷_FR_法国_2
-      - 🇫🇷_FR_法国_3
+      - 🇨🇷_CR_哥斯达黎加->🇩🇪_DE_德国
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
+      - 🇬🇧_GB_英国
+      - 🇺🇸_US_美国->🇮🇳_IN_印度
+      - 🇫🇷_FR_法国_3
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
       - 🇫🇷_FR_法国_4
-      - 🇫🇷_FR_法国_5
+      - 🇺🇸_US_美国_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -142,15 +146,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇮🇷_IR_伊朗->🇩🇪_DE_德国
-      - 🇩🇪_DE_德国
       - 🇫🇷_FR_法国_1
       - 🇫🇷_FR_法国_2
-      - 🇫🇷_FR_法国_3
+      - 🇨🇷_CR_哥斯达黎加->🇩🇪_DE_德国
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
+      - 🇬🇧_GB_英国
+      - 🇺🇸_US_美国->🇮🇳_IN_印度
+      - 🇫🇷_FR_法国_3
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
       - 🇫🇷_FR_法国_4
-      - 🇫🇷_FR_法国_5
+      - 🇺🇸_US_美国_2
 
 rules:
 # 本地/局域网地址
