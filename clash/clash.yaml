@@ -1,11 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：2023-11-30 16:17:27
+# 客户端：Clash
+# 创建时间：2023-11-30 17:20:40
 # 使用模版：V2RaySE 默认模版
-# 节点数量：18
+# 节点数量：13
 ####################################
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -86,165 +85,130 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"v2rayse_test_1","type":"ss","server":"198.57.27.218","port":5004,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
-  - {"name":"v2rayse_test_2","type":"vmess","server":"154.23.190.162","port":443,"cipher":"auto","uuid":"b9984674-f771-4e67-a198-c7e60720ba2c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"v2rayse_test_3","type":"vmess","server":"154.23.190.162","port":443,"cipher":"auto","uuid":"b9984674-f771-4e67-a198-c7e60720ba2c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"defaultName_1","type":"ssr","server":"20.239.49.44","port":59814,"password":"3df57276-03ef-45cf-bdd4-4edb6dfaa0ef","cipher":"dummy","obfs":"plain","protocol":"origin","group":"https://v2rayse.com"}
-  - {"name":"v2rayse_test_4","type":"trojan","server":"ca-trojan.bonds.id","port":443,"udp":true,"password":"bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272","skip-cert-verify":true}
-  - {"name":"defaultName_2","type":"http","server":"124.15.12.24","port":251,"username":"username","password":"password"}
-  - {"name":"defaultName_3","type":"socks5","server":"124.15.12.24","port":2312}
-  - {"name":"Hys-1.2.3.4","type":"hysteria","server":"1.2.3.4","port":12854,"sni":"wechat.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"pekopeko","up":50,"down":250}
-  - {"name":"test","type":"vless","server":"1.2.3.4","port":7777,"uuid":"abc-def-ghi-fge-zsx","tls":true,"network":"tcp"}
-  - {"name":"defaultName_4","type":"socks5","server":"1.2.3.4","port":123,"username":"username","password":"password"}
-  - {"name":"@v2rayng_org","type":"vless","server":"mtn.MsV2ray.space","port":2053,"uuid":"1fac0e66-13a0-443f-fd7a-8c0b027e4632","tls":true,"servername":"de.MsV2ray.sbs","network":"grpc","grpc-opts":{"grpc-service-name":"@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"},"alpn":["h2","http/1.1"]}
-  - {"name":"🌟@V2ray_Alpha+Reality+1","type":"vless","server":"5.75.193.204","port":41777,"udp":true,"uuid":"e769daff-96eb-4fd1-d49b-a19a31a05d41","tls":true,"servername":"tuya.com","network":"grpc","grpc-opts":{"grpc-service-name":"@V2ray_Alpha @V2ray_Alpha @V2ray_Alpha"},"reality-opts":{"public-key":"3XnceqhA6mCuDfvaIrddzv3434lZSDUnAFbGUBVXo0w","short-id":"ae79354f"},"client-fingerprint":"firefox"}
-  - {"name":"🌟@V2ray_Alpha+Reality+2","type":"vless","server":"5.75.193.204","port":31508,"udp":true,"uuid":"b793ac52-91e2-4ee6-984d-ba2c02a16198","tls":true,"servername":"flutter.dev","network":"grpc","grpc-opts":{"grpc-service-name":"@V2ray_Alpha @V2ray_Alpha @V2ray_Alpha"},"reality-opts":{"public-key":"A8MOfDDQCeh_quTIo-G53gybaeAlYf7civk6rEr_jBM","short-id":"56ad4e05"},"client-fingerprint":"firefox"}
-  - {"name":"🌟@V2ray_Alpha+Reality+3","type":"vless","server":"5.75.193.204","port":21111,"udp":true,"uuid":"f74c7816-e164-4301-e43e-950c56d19a82","tls":true,"servername":"datadoghq.com","network":"grpc","grpc-opts":{"grpc-service-name":"@V2ray_Alpha @V2ray_Alpha @V2ray_Alpha"},"reality-opts":{"public-key":"gdFdRDmZilv6X25z8JPPuDSFX7f8P-HJoBB5WRi8pzY","short-id":"2f3b6e8b"},"client-fingerprint":"firefox"}
-  - {"name":"🌟@V2ray_Alpha+Reality+5","type":"vless","server":"5.75.193.204","port":19258,"udp":true,"uuid":"e045325b-4ff1-480d-87e8-f93a0b55a48d","tls":true,"servername":"ea.com","network":"grpc","grpc-opts":{"grpc-service-name":"@V2ray_Alpha @V2ray_Alpha @V2ray_Alpha"},"reality-opts":{"public-key":"Dgat-57o1hbmXF6yWMuS6B5Xfui7CdSIDY60ABRSPBU","short-id":"bbcf1a4e"},"client-fingerprint":"firefox"}
-  - {"name":"🌟@V2ray_Alpha+Reality+6","type":"vless","server":"5.75.193.204","port":51555,"udp":true,"uuid":"ee286a98-f282-42f3-c543-56f86a10cf05","tls":true,"servername":"lit.dev","network":"grpc","grpc-opts":{"grpc-service-name":"@V2ray_Alpha @V2ray_Alpha @V2ray_Alpha"},"reality-opts":{"public-key":"c0s2qLCWSqtNHUqThMPKNqTqLHNdYZpLHyBN-sQRXkk","short-id":"83b0d7a3"},"client-fingerprint":"firefox"}
-  - {"name":"سرویس+پرسرعت+|+🇫🇷+|+ایرانسل+-+جدید","type":"vless","server":"[","port":null,"udp":true,"uuid":"d8253715-9664-4c3b-9ecd-e4805c8430f8","tls":true,"servername":"ea.com","network":"grpc","grpc-opts":{"grpc-service-name":""},"reality-opts":{"public-key":"i-TBCDM3b7W2NE5JavNy7XBTsQwIjYD7qG9VEVfnxjg","short-id":"b1b454f6"},"client-fingerprint":"chrome"}
-  - {"name":"سرویس+پرسرعت+|+🇩🇪+|+همراه+اول","type":"vless","server":"104.24.255.191","port":80,"uuid":"53c7c12a-a567-4220-9216-bae3672b9b1d","tls":false,"servername":"fiTneSs.Divar.PrO","network":"ws","ws-opts":{"path":"/backup","headers":{"host":"fiTneSs.Divar.PrO"}}}
+  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"c5.wuxianliulianng.xyz","port":443,"cipher":"auto","uuid":"4d7732ee-986a-4c25-8443-d6fefa8d2190","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/apple","headers":{"host":"555.golinkwuxian.top"}}}
+  - {"name":"🇩🇪_DE_德国","type":"ss","server":"80.92.204.106","port":9094,"password":"rpgbNnU9rDDU4aWZ","cipher":"aes-256-cfb"}
+  - {"name":"🇨🇳_CN_中国->🇬🇧_GB_英国","type":"vmess","server":"112.29.94.23","port":43526,"cipher":"auto","uuid":"21a9bff2-72de-4e62-93ff-8b159f66d875","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"xyz23.forwardv2raytelegramchannel.fun","port":2096,"cipher":"auto","uuid":"819f16dc-5632-42dd-8427-09a702867016","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/FORWARDV2RAY"}}
+  - {"name":"🇫🇷_FR_法国_1","type":"ss","server":"51.158.195.96","port":443,"password":"asdKkaskJKfnsa","cipher":"aes-256-cfb"}
+  - {"name":"🇺🇸_US_美国_3","type":"trojan","server":"sg2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen","port":443,"udp":true,"password":"9bda5d52-ebb1-44df-bacf-039182452475","sni":"13-231-155-134.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇦_CA_加拿大","type":"vmess","server":"193.203.203.88","port":2082,"cipher":"auto","uuid":"5f2d026e-1dbd-4bb0-aa61-b1bcc544ab2c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
+  - {"name":"🇨🇳_CN_中国->🇹🇷_TR_土耳其","type":"trojan","server":"lbsh.bnnodeservice.com","port":34014,"udp":true,"password":"c82b2e40-8a24-4a4a-85c7-e123ee0ff3d0","sni":"cert.bitbyte.one","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_4","type":"vmess","server":"xyz28.forwardv2raytelegramchannel.fun","port":2096,"cipher":"auto","uuid":"819f16dc-5632-42dd-8427-09a702867016","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_1","type":"trojan","server":"other.kunlun-ppg.com","port":10850,"udp":true,"password":"5b263211-7c16-4e24-84a0-57ce29a3c234","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_2","type":"trojan","server":"other.kunlun-ppg.com","port":10837,"udp":true,"password":"5b263211-7c16-4e24-84a0-57ce29a3c234","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇫🇷_FR_法国_2","type":"ss","server":"51.158.195.96","port":80,"password":"asdKkaskJKfnsa","cipher":"aes-256-cfb"}
+  - {"name":"🇫🇷_FR_法国_3","type":"ss","server":"51.158.195.96","port":110,"password":"asdKkaskJKfnsa","cipher":"aes-256-cfb"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - v2rayse_test_1
-      - v2rayse_test_2
-      - v2rayse_test_3
-      - defaultName_1
-      - v2rayse_test_4
-      - defaultName_2
-      - defaultName_3
-      - Hys-1.2.3.4
-      - test
-      - defaultName_4
-      - '@v2rayng_org'
-      - 🌟@V2ray_Alpha+Reality+1
-      - 🌟@V2ray_Alpha+Reality+2
-      - 🌟@V2ray_Alpha+Reality+3
-      - 🌟@V2ray_Alpha+Reality+5
-      - 🌟@V2ray_Alpha+Reality+6
-      - سرویس+پرسرعت+|+🇫🇷+|+ایرانسل+-+جدید
-      - سرویس+پرسرعت+|+🇩🇪+|+همراه+اول
+      - 🇺🇸_US_美国_1
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国_2
+      - 🇫🇷_FR_法国_1
+      - 🇺🇸_US_美国_3
+      - 🇨🇦_CA_加拿大
+      - 🇨🇳_CN_中国->🇹🇷_TR_土耳其
+      - 🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+      - 🇫🇷_FR_法国_2
+      - 🇫🇷_FR_法国_3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - v2rayse_test_1
-      - v2rayse_test_2
-      - v2rayse_test_3
-      - defaultName_1
-      - v2rayse_test_4
-      - defaultName_2
-      - defaultName_3
-      - Hys-1.2.3.4
-      - test
-      - defaultName_4
-      - '@v2rayng_org'
-      - 🌟@V2ray_Alpha+Reality+1
-      - 🌟@V2ray_Alpha+Reality+2
-      - 🌟@V2ray_Alpha+Reality+3
-      - 🌟@V2ray_Alpha+Reality+5
-      - 🌟@V2ray_Alpha+Reality+6
-      - سرویس+پرسرعت+|+🇫🇷+|+ایرانسل+-+جدید
-      - سرویس+پرسرعت+|+🇩🇪+|+همراه+اول
+      - 🇺🇸_US_美国_1
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国_2
+      - 🇫🇷_FR_法国_1
+      - 🇺🇸_US_美国_3
+      - 🇨🇦_CA_加拿大
+      - 🇨🇳_CN_中国->🇹🇷_TR_土耳其
+      - 🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+      - 🇫🇷_FR_法国_2
+      - 🇫🇷_FR_法国_3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - v2rayse_test_1
-      - v2rayse_test_2
-      - v2rayse_test_3
-      - defaultName_1
-      - v2rayse_test_4
-      - defaultName_2
-      - defaultName_3
-      - Hys-1.2.3.4
-      - test
-      - defaultName_4
-      - '@v2rayng_org'
-      - 🌟@V2ray_Alpha+Reality+1
-      - 🌟@V2ray_Alpha+Reality+2
-      - 🌟@V2ray_Alpha+Reality+3
-      - 🌟@V2ray_Alpha+Reality+5
-      - 🌟@V2ray_Alpha+Reality+6
-      - سرویس+پرسرعت+|+🇫🇷+|+ایرانسل+-+جدید
-      - سرویس+پرسرعت+|+🇩🇪+|+همراه+اول
+      - 🇺🇸_US_美国_1
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国_2
+      - 🇫🇷_FR_法国_1
+      - 🇺🇸_US_美国_3
+      - 🇨🇦_CA_加拿大
+      - 🇨🇳_CN_中国->🇹🇷_TR_土耳其
+      - 🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+      - 🇫🇷_FR_法国_2
+      - 🇫🇷_FR_法国_3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - v2rayse_test_1
-      - v2rayse_test_2
-      - v2rayse_test_3
-      - defaultName_1
-      - v2rayse_test_4
-      - defaultName_2
-      - defaultName_3
-      - Hys-1.2.3.4
-      - test
-      - defaultName_4
-      - '@v2rayng_org'
-      - 🌟@V2ray_Alpha+Reality+1
-      - 🌟@V2ray_Alpha+Reality+2
-      - 🌟@V2ray_Alpha+Reality+3
-      - 🌟@V2ray_Alpha+Reality+5
-      - 🌟@V2ray_Alpha+Reality+6
-      - سرویس+پرسرعت+|+🇫🇷+|+ایرانسل+-+جدید
-      - سرویس+پرسرعت+|+🇩🇪+|+همراه+اول
+      - 🇺🇸_US_美国_1
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国_2
+      - 🇫🇷_FR_法国_1
+      - 🇺🇸_US_美国_3
+      - 🇨🇦_CA_加拿大
+      - 🇨🇳_CN_中国->🇹🇷_TR_土耳其
+      - 🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+      - 🇫🇷_FR_法国_2
+      - 🇫🇷_FR_法国_3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - v2rayse_test_1
-      - v2rayse_test_2
-      - v2rayse_test_3
-      - defaultName_1
-      - v2rayse_test_4
-      - defaultName_2
-      - defaultName_3
-      - Hys-1.2.3.4
-      - test
-      - defaultName_4
-      - '@v2rayng_org'
-      - 🌟@V2ray_Alpha+Reality+1
-      - 🌟@V2ray_Alpha+Reality+2
-      - 🌟@V2ray_Alpha+Reality+3
-      - 🌟@V2ray_Alpha+Reality+5
-      - 🌟@V2ray_Alpha+Reality+6
-      - سرویس+پرسرعت+|+🇫🇷+|+ایرانسل+-+جدید
-      - سرویس+پرسرعت+|+🇩🇪+|+همراه+اول
+      - 🇺🇸_US_美国_1
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国_2
+      - 🇫🇷_FR_法国_1
+      - 🇺🇸_US_美国_3
+      - 🇨🇦_CA_加拿大
+      - 🇨🇳_CN_中国->🇹🇷_TR_土耳其
+      - 🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+      - 🇫🇷_FR_法国_2
+      - 🇫🇷_FR_法国_3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - v2rayse_test_1
-      - v2rayse_test_2
-      - v2rayse_test_3
-      - defaultName_1
-      - v2rayse_test_4
-      - defaultName_2
-      - defaultName_3
-      - Hys-1.2.3.4
-      - test
-      - defaultName_4
-      - '@v2rayng_org'
-      - 🌟@V2ray_Alpha+Reality+1
-      - 🌟@V2ray_Alpha+Reality+2
-      - 🌟@V2ray_Alpha+Reality+3
-      - 🌟@V2ray_Alpha+Reality+5
-      - 🌟@V2ray_Alpha+Reality+6
-      - سرویس+پرسرعت+|+🇫🇷+|+ایرانسل+-+جدید
-      - سرویس+پرسرعت+|+🇩🇪+|+همراه+اول
+      - 🇺🇸_US_美国_1
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国_2
+      - 🇫🇷_FR_法国_1
+      - 🇺🇸_US_美国_3
+      - 🇨🇦_CA_加拿大
+      - 🇨🇳_CN_中国->🇹🇷_TR_土耳其
+      - 🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+      - 🇫🇷_FR_法国_2
+      - 🇫🇷_FR_法国_3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -267,24 +231,19 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - v2rayse_test_1
-      - v2rayse_test_2
-      - v2rayse_test_3
-      - defaultName_1
-      - v2rayse_test_4
-      - defaultName_2
-      - defaultName_3
-      - Hys-1.2.3.4
-      - test
-      - defaultName_4
-      - '@v2rayng_org'
-      - 🌟@V2ray_Alpha+Reality+1
-      - 🌟@V2ray_Alpha+Reality+2
-      - 🌟@V2ray_Alpha+Reality+3
-      - 🌟@V2ray_Alpha+Reality+5
-      - 🌟@V2ray_Alpha+Reality+6
-      - سرویس+پرسرعت+|+🇫🇷+|+ایرانسل+-+جدید
-      - سرویس+پرسرعت+|+🇩🇪+|+همراه+اول
+      - 🇺🇸_US_美国_1
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
+      - 🇺🇸_US_美国_2
+      - 🇫🇷_FR_法国_1
+      - 🇺🇸_US_美国_3
+      - 🇨🇦_CA_加拿大
+      - 🇨🇳_CN_中国->🇹🇷_TR_土耳其
+      - 🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+      - 🇫🇷_FR_法国_2
+      - 🇫🇷_FR_法国_3
 
 rules:
 # 本地/局域网地址
