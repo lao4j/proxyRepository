@@ -1,70 +1,58 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Surfboard
-# 创建时间：2023-12-01 15:59:17
+# 客户端：QuantumultX
+# 创建时间：2023-12-01 23:35:41
 # 使用模版：V2RaySE 默认模版
-# 节点数量：34
+# 节点数量：14
 ####################################
 
-[General]
-loglevel = notify
-interface = 127.0.0.1
-skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
-ipv6 = false
-dns-server = system, 223.5.5.5
-exclude-simple-hostnames = true
-enhanced-mode-by-rule = true
+[general]
+excluded_routes = 192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8
+geo_location_checker = http://ip-api.com/json/?lang=zh-CN, https://github.com/KOP-XIAO/QuantumultX/raw/master/Scripts/IP_API.js
+network_check_url = http://www.baidu.com/
+server_check_url = http://www.gstatic.com/generate_204
 
-[Proxy]
-DIRECT = direct
-🇫🇷_FR_法国_1 = ss, 54.36.174.181, 8091, encrypt-method = aes-256-gcm, password = PCnnH6SQSnfoS27
-🇫🇷_FR_法国_2 = ss, 54.36.174.181, 8090, encrypt-method = aes-256-gcm, password = PCnnH6SQSnfoS27
-🇫🇷_FR_法国_3 = ss, ak1732.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 8119, encrypt-method = aes-256-gcm, password = cdBIDV42DCwnfIN
-🇫🇷_FR_法国_4 = ss, 54.36.174.181, 8080, encrypt-method = aes-256-gcm, password = KixLvKzwjekG00rm
-🇨🇳_CN_中国->🇺🇸_US_美国 = ss, p1.bxy-fun1.com, 30470, encrypt-method = chacha20-ietf-poly1305, password = d7bee830-09aa-43b2-8945-3b341b8787db
-🇮🇹_IT_意大利 = ss, it.fanqiecloud.top, 22802, encrypt-method = chacha20-ietf-poly1305, password = 6be55da9-599c-44a8-9437-c2c65a6065c3
-🇬🇧_GB_英国 = vmess, 172.99.190.109, 443, username = 03fcc618-b93d-6796-6aed-8a38c975d581, ws = true, tls = true, vmess-aead = true, ws-path = linkvws, skip-cert-verify = true, tfo = false
-🇫🇷_FR_法国_5 = ss, 54.36.174.181, 6679, encrypt-method = aes-256-gcm, password = TEzjfAYq2IjtuoS
-🇺🇸_US_美国_1 = vmess, 23.26.226.45, 2086, username = 70408f5d-78f2-44d0-9747-ae68da8651a4, ws = true, tls = false, vmess-aead = true, ws-path = 70408f5d-78f2-44d0-9747-ae68da8651a4-vm, skip-cert-verify = true, tfo = false
-🇷🇺_RU_俄罗斯联邦 = vmess, 176.120.74.142, 443, username = 75695f5a-b6af-44f4-9983-ae250b53ff9c, ws = true, tls = false, vmess-aead = true, skip-cert-verify = true, tfo = false
-🇫🇷_FR_法国_6 = ss, 54.36.174.181, 3306, encrypt-method = aes-256-gcm, password = Y6R9pAtvxxzmGC
-🇹🇷_TR_土耳其 = ss, 193.46.56.210, 2443, encrypt-method = aes-256-gcm, password = QD5y4idwNj
-🇫🇷_FR_法国_7 = ss, ak1751.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 5600, encrypt-method = aes-256-gcm, password = Y6R9pAtvxxzmGC
-🇫🇷_FR_法国_8 = ss, 54.36.174.181, 5001, encrypt-method = aes-256-gcm, password = Y6R9pAtvxxzmGC
-🇫🇷_FR_法国_9 = ss, 54.36.174.181, 7002, encrypt-method = aes-256-gcm, password = RexnBgU7EV5ADxG
-🇫🇷_FR_法国_10 = ss, 54.36.174.181, 8119, encrypt-method = aes-256-gcm, password = cdBIDV42DCwnfIN
-🇺🇸_US_美国_2 = ss, us.fanqiecloud.top, 22752, encrypt-method = chacha20-ietf-poly1305, password = 6be55da9-599c-44a8-9437-c2c65a6065c3
-🇨🇦_CA_加拿大 = vmess, 193.203.203.88, 2082, username = 5f2d026e-1dbd-4bb0-aa61-b1bcc544ab2c, tls = false, vmess-aead = true, skip-cert-verify = true, tfo = false
-🇫🇷_FR_法国_11 = ss, www.outline.network.ak1941.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 7001, encrypt-method = aes-256-gcm, password = RexnBgU7EV5ADxG
-🇫🇷_FR_法国_12 = ss, 54.36.174.181, 5500, encrypt-method = aes-256-gcm, password = KixLvKzwjekG00rm
-🇫🇷_FR_法国_13 = ss, 51.158.195.96, 80, encrypt-method = aes-256-cfb, password = asdKkaskJKfnsa
-🇫🇷_FR_法国_14 = ss, 54.36.174.181, 6379, encrypt-method = aes-256-gcm, password = zDNVedRFPQexG9v
-🇺🇸_US_美国_3 = ss, 34.209.235.189, 443, encrypt-method = aes-256-cfb, password = amazonskr05
-🇩🇪_DE_德国 = vmess, ee1-vmess.sshmax.xyz, 80, username = 34d4f393-ead9-48df-9370-ca8b52e6aabd, ws = true, tls = false, vmess-aead = true, skip-cert-verify = true, tfo = false
-🇫🇷_FR_法国_15 = trojan, 35.181.125.74, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = true, sni = trj.rollingnext.co.uk, ws = false
-🇫🇷_FR_法国_16 = ss, 54.36.174.181, 8882, encrypt-method = aes-256-gcm, password = kDWvXYZoTBcGkC4
-🇫🇷_FR_法国_17 = ss, 51.158.195.96, 443, encrypt-method = aes-256-cfb, password = asdKkaskJKfnsa
-🇺🇸_US_美国_4 = vmess, ns1.v2-vip.fun, 80, username = 2a683a54-f098-4d98-92fc-762b85d907b9, ws = true, tls = false, vmess-aead = true, ws-path = /api/v3/download.getFile, ws-headers = Host:"ssrsub.v03.ssrsub.com", skip-cert-verify = true, tfo = false
-🇫🇷_FR_法国_18 = ss, 54.36.174.181, 7306, encrypt-method = aes-256-gcm, password = FoOiGlkAA9yPEGP
-🇫🇷_FR_法国_19 = ss, 54.36.174.181, 5600, encrypt-method = aes-256-gcm, password = Y6R9pAtvxxzmGC
-🇫🇷_FR_法国_20 = ss, 54.36.174.181, 8000, encrypt-method = aes-256-gcm, password = KixLvKzwjekG00rm
-🇫🇷_FR_法国_21 = ss, 51.158.195.96, 110, encrypt-method = aes-256-cfb, password = asdKkaskJKfnsa
-🇫🇷_FR_法国_22 = ss, 54.36.174.181, 9101, encrypt-method = aes-256-gcm, password = e4FCWrgpkji3QY
-🇫🇷_FR_法国_23 = ss, 54.36.174.181, 8888, encrypt-method = aes-256-gcm, password = Y6R9pAtvxxzmGC
+[dns]
+server = 119.29.29.29
+server = 223.5.5.5
+server = 1.0.0.1
+server = 8.8.8.8
 
-[Proxy Group]
-🚀 节点选择 = select,♻️ 自动选择,DIRECT,🇫🇷_FR_法国_1,🇫🇷_FR_法国_2,🇫🇷_FR_法国_3,🇫🇷_FR_法国_4,🇨🇳_CN_中国->🇺🇸_US_美国,🇮🇹_IT_意大利,🇬🇧_GB_英国,🇫🇷_FR_法国_5,🇺🇸_US_美国_1,🇷🇺_RU_俄罗斯联邦,🇫🇷_FR_法国_6,🇹🇷_TR_土耳其,🇫🇷_FR_法国_7,🇫🇷_FR_法国_8,🇫🇷_FR_法国_9,🇫🇷_FR_法国_10,🇺🇸_US_美国_2,🇨🇦_CA_加拿大,🇫🇷_FR_法国_11,🇫🇷_FR_法国_12,🇫🇷_FR_法国_13,🇫🇷_FR_法国_14,🇺🇸_US_美国_3,🇩🇪_DE_德国,🇫🇷_FR_法国_15,🇫🇷_FR_法国_16,🇫🇷_FR_法国_17,🇺🇸_US_美国_4,🇫🇷_FR_法国_18,🇫🇷_FR_法国_19,🇫🇷_FR_法国_20,🇫🇷_FR_法国_21,🇫🇷_FR_法国_22,🇫🇷_FR_法国_23
-♻️ 自动选择 = url-test,🇫🇷_FR_法国_1,🇫🇷_FR_法国_2,🇫🇷_FR_法国_3,🇫🇷_FR_法国_4,🇨🇳_CN_中国->🇺🇸_US_美国,🇮🇹_IT_意大利,🇬🇧_GB_英国,🇫🇷_FR_法国_5,🇺🇸_US_美国_1,🇷🇺_RU_俄罗斯联邦,🇫🇷_FR_法国_6,🇹🇷_TR_土耳其,🇫🇷_FR_法国_7,🇫🇷_FR_法国_8,🇫🇷_FR_法国_9,🇫🇷_FR_法国_10,🇺🇸_US_美国_2,🇨🇦_CA_加拿大,🇫🇷_FR_法国_11,🇫🇷_FR_法国_12,🇫🇷_FR_法国_13,🇫🇷_FR_法国_14,🇺🇸_US_美国_3,🇩🇪_DE_德国,🇫🇷_FR_法国_15,🇫🇷_FR_法国_16,🇫🇷_FR_法国_17,🇺🇸_US_美国_4,🇫🇷_FR_法国_18,🇫🇷_FR_法国_19,🇫🇷_FR_法国_20,🇫🇷_FR_法国_21,🇫🇷_FR_法国_22,🇫🇷_FR_法国_23,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 50
-🌍 国外媒体 = select,🚀 节点选择,♻️ 自动选择,🎯 全球直连,🇫🇷_FR_法国_1,🇫🇷_FR_法国_2,🇫🇷_FR_法国_3,🇫🇷_FR_法国_4,🇨🇳_CN_中国->🇺🇸_US_美国,🇮🇹_IT_意大利,🇬🇧_GB_英国,🇫🇷_FR_法国_5,🇺🇸_US_美国_1,🇷🇺_RU_俄罗斯联邦,🇫🇷_FR_法国_6,🇹🇷_TR_土耳其,🇫🇷_FR_法国_7,🇫🇷_FR_法国_8,🇫🇷_FR_法国_9,🇫🇷_FR_法国_10,🇺🇸_US_美国_2,🇨🇦_CA_加拿大,🇫🇷_FR_法国_11,🇫🇷_FR_法国_12,🇫🇷_FR_法国_13,🇫🇷_FR_法国_14,🇺🇸_US_美国_3,🇩🇪_DE_德国,🇫🇷_FR_法国_15,🇫🇷_FR_法国_16,🇫🇷_FR_法国_17,🇺🇸_US_美国_4,🇫🇷_FR_法国_18,🇫🇷_FR_法国_19,🇫🇷_FR_法国_20,🇫🇷_FR_法国_21,🇫🇷_FR_法国_22,🇫🇷_FR_法国_23
-📲 电报信息 = select,🚀 节点选择,🎯 全球直连,🇫🇷_FR_法国_1,🇫🇷_FR_法国_2,🇫🇷_FR_法国_3,🇫🇷_FR_法国_4,🇨🇳_CN_中国->🇺🇸_US_美国,🇮🇹_IT_意大利,🇬🇧_GB_英国,🇫🇷_FR_法国_5,🇺🇸_US_美国_1,🇷🇺_RU_俄罗斯联邦,🇫🇷_FR_法国_6,🇹🇷_TR_土耳其,🇫🇷_FR_法国_7,🇫🇷_FR_法国_8,🇫🇷_FR_法国_9,🇫🇷_FR_法国_10,🇺🇸_US_美国_2,🇨🇦_CA_加拿大,🇫🇷_FR_法国_11,🇫🇷_FR_法国_12,🇫🇷_FR_法国_13,🇫🇷_FR_法国_14,🇺🇸_US_美国_3,🇩🇪_DE_德国,🇫🇷_FR_法国_15,🇫🇷_FR_法国_16,🇫🇷_FR_法国_17,🇺🇸_US_美国_4,🇫🇷_FR_法国_18,🇫🇷_FR_法国_19,🇫🇷_FR_法国_20,🇫🇷_FR_法国_21,🇫🇷_FR_法国_22,🇫🇷_FR_法国_23
-Ⓜ️ 微软服务 = select,🎯 全球直连,🚀 节点选择,🇫🇷_FR_法国_1,🇫🇷_FR_法国_2,🇫🇷_FR_法国_3,🇫🇷_FR_法国_4,🇨🇳_CN_中国->🇺🇸_US_美国,🇮🇹_IT_意大利,🇬🇧_GB_英国,🇫🇷_FR_法国_5,🇺🇸_US_美国_1,🇷🇺_RU_俄罗斯联邦,🇫🇷_FR_法国_6,🇹🇷_TR_土耳其,🇫🇷_FR_法国_7,🇫🇷_FR_法国_8,🇫🇷_FR_法国_9,🇫🇷_FR_法国_10,🇺🇸_US_美国_2,🇨🇦_CA_加拿大,🇫🇷_FR_法国_11,🇫🇷_FR_法国_12,🇫🇷_FR_法国_13,🇫🇷_FR_法国_14,🇺🇸_US_美国_3,🇩🇪_DE_德国,🇫🇷_FR_法国_15,🇫🇷_FR_法国_16,🇫🇷_FR_法国_17,🇺🇸_US_美国_4,🇫🇷_FR_法国_18,🇫🇷_FR_法国_19,🇫🇷_FR_法国_20,🇫🇷_FR_法国_21,🇫🇷_FR_法国_22,🇫🇷_FR_法国_23
-🍎 苹果服务 = select,🚀 节点选择,🎯 全球直连,🇫🇷_FR_法国_1,🇫🇷_FR_法国_2,🇫🇷_FR_法国_3,🇫🇷_FR_法国_4,🇨🇳_CN_中国->🇺🇸_US_美国,🇮🇹_IT_意大利,🇬🇧_GB_英国,🇫🇷_FR_法国_5,🇺🇸_US_美国_1,🇷🇺_RU_俄罗斯联邦,🇫🇷_FR_法国_6,🇹🇷_TR_土耳其,🇫🇷_FR_法国_7,🇫🇷_FR_法国_8,🇫🇷_FR_法国_9,🇫🇷_FR_法国_10,🇺🇸_US_美国_2,🇨🇦_CA_加拿大,🇫🇷_FR_法国_11,🇫🇷_FR_法国_12,🇫🇷_FR_法国_13,🇫🇷_FR_法国_14,🇺🇸_US_美国_3,🇩🇪_DE_德国,🇫🇷_FR_法国_15,🇫🇷_FR_法国_16,🇫🇷_FR_法国_17,🇺🇸_US_美国_4,🇫🇷_FR_法国_18,🇫🇷_FR_法国_19,🇫🇷_FR_法国_20,🇫🇷_FR_法国_21,🇫🇷_FR_法国_22,🇫🇷_FR_法国_23
-🎯 全球直连 = select,DIRECT,🚀 节点选择,♻️ 自动选择
-🛑 全球拦截 = select,REJECT,DIRECT
-🍃 应用净化 = select,REJECT,DIRECT
-🐟 漏网之鱼 = select,🚀 节点选择,🎯 全球直连,♻️ 自动选择,🇫🇷_FR_法国_1,🇫🇷_FR_法国_2,🇫🇷_FR_法国_3,🇫🇷_FR_法国_4,🇨🇳_CN_中国->🇺🇸_US_美国,🇮🇹_IT_意大利,🇬🇧_GB_英国,🇫🇷_FR_法国_5,🇺🇸_US_美国_1,🇷🇺_RU_俄罗斯联邦,🇫🇷_FR_法国_6,🇹🇷_TR_土耳其,🇫🇷_FR_法国_7,🇫🇷_FR_法国_8,🇫🇷_FR_法国_9,🇫🇷_FR_法国_10,🇺🇸_US_美国_2,🇨🇦_CA_加拿大,🇫🇷_FR_法国_11,🇫🇷_FR_法国_12,🇫🇷_FR_法国_13,🇫🇷_FR_法国_14,🇺🇸_US_美国_3,🇩🇪_DE_德国,🇫🇷_FR_法国_15,🇫🇷_FR_法国_16,🇫🇷_FR_法国_17,🇺🇸_US_美国_4,🇫🇷_FR_法国_18,🇫🇷_FR_法国_19,🇫🇷_FR_法国_20,🇫🇷_FR_法国_21,🇫🇷_FR_法国_22,🇫🇷_FR_法国_23
+[policy]
+static = 🚀 节点选择, ♻️ 自动选择, DIRECT, 🇺🇸_US_美国_2, 🇨🇦_CA_加拿大, 🇫🇷_FR_法国_1, 🇺🇸_US_美国_3, 🇺🇸_US_美国_4, 🇫🇷_FR_法国_2, 🇺🇸_US_美国->🇮🇳_IN_印度, 🇫🇷_FR_法国_3, 🇫🇷_FR_法国_4, 🇺🇸_US_美国_5, 🇺🇸_US_美国->🇫🇷_FR_法国, 🇺🇸_US_美国_6, 🇫🇷_FR_法国_5, 🇺🇸_US_美国_7
+url-latency-benchmark = ♻️ 自动选择, 🇺🇸_US_美国_2, 🇨🇦_CA_加拿大, 🇫🇷_FR_法国_1, 🇺🇸_US_美国_3, 🇺🇸_US_美国_4, 🇫🇷_FR_法国_2, 🇺🇸_US_美国->🇮🇳_IN_印度, 🇫🇷_FR_法国_3, 🇫🇷_FR_法国_4, 🇺🇸_US_美国_5, 🇺🇸_US_美国->🇫🇷_FR_法国, 🇺🇸_US_美国_6, 🇫🇷_FR_法国_5, 🇺🇸_US_美国_7
+static = 🌍 国外媒体, 🚀 节点选择, ♻️ 自动选择, 🎯 全球直连, 🇺🇸_US_美国_2, 🇨🇦_CA_加拿大, 🇫🇷_FR_法国_1, 🇺🇸_US_美国_3, 🇺🇸_US_美国_4, 🇫🇷_FR_法国_2, 🇺🇸_US_美国->🇮🇳_IN_印度, 🇫🇷_FR_法国_3, 🇫🇷_FR_法国_4, 🇺🇸_US_美国_5, 🇺🇸_US_美国->🇫🇷_FR_法国, 🇺🇸_US_美国_6, 🇫🇷_FR_法国_5, 🇺🇸_US_美国_7
+static = 📲 电报信息, 🚀 节点选择, 🎯 全球直连, 🇺🇸_US_美国_2, 🇨🇦_CA_加拿大, 🇫🇷_FR_法国_1, 🇺🇸_US_美国_3, 🇺🇸_US_美国_4, 🇫🇷_FR_法国_2, 🇺🇸_US_美国->🇮🇳_IN_印度, 🇫🇷_FR_法国_3, 🇫🇷_FR_法国_4, 🇺🇸_US_美国_5, 🇺🇸_US_美国->🇫🇷_FR_法国, 🇺🇸_US_美国_6, 🇫🇷_FR_法国_5, 🇺🇸_US_美国_7
+static = Ⓜ️ 微软服务, 🎯 全球直连, 🚀 节点选择, 🇺🇸_US_美国_2, 🇨🇦_CA_加拿大, 🇫🇷_FR_法国_1, 🇺🇸_US_美国_3, 🇺🇸_US_美国_4, 🇫🇷_FR_法国_2, 🇺🇸_US_美国->🇮🇳_IN_印度, 🇫🇷_FR_法国_3, 🇫🇷_FR_法国_4, 🇺🇸_US_美国_5, 🇺🇸_US_美国->🇫🇷_FR_法国, 🇺🇸_US_美国_6, 🇫🇷_FR_法国_5, 🇺🇸_US_美国_7
+static = 🍎 苹果服务, 🚀 节点选择, 🎯 全球直连, 🇺🇸_US_美国_2, 🇨🇦_CA_加拿大, 🇫🇷_FR_法国_1, 🇺🇸_US_美国_3, 🇺🇸_US_美国_4, 🇫🇷_FR_法国_2, 🇺🇸_US_美国->🇮🇳_IN_印度, 🇫🇷_FR_法国_3, 🇫🇷_FR_法国_4, 🇺🇸_US_美国_5, 🇺🇸_US_美国->🇫🇷_FR_法国, 🇺🇸_US_美国_6, 🇫🇷_FR_法国_5, 🇺🇸_US_美国_7
+static = 🎯 全球直连, DIRECT, 🚀 节点选择, ♻️ 自动选择
+static = 🛑 全球拦截, REJECT, DIRECT
+static = 🍃 应用净化, REJECT, DIRECT
+static = 🐟 漏网之鱼, 🚀 节点选择, 🎯 全球直连, ♻️ 自动选择, 🇺🇸_US_美国_2, 🇨🇦_CA_加拿大, 🇫🇷_FR_法国_1, 🇺🇸_US_美国_3, 🇺🇸_US_美国_4, 🇫🇷_FR_法国_2, 🇺🇸_US_美国->🇮🇳_IN_印度, 🇫🇷_FR_法国_3, 🇫🇷_FR_法国_4, 🇺🇸_US_美国_5, 🇺🇸_US_美国->🇫🇷_FR_法国, 🇺🇸_US_美国_6, 🇫🇷_FR_法国_5, 🇺🇸_US_美国_7
 
-[Rule]
+[server_remote]
+
+[filter_remote]
+
+[rewrite_remote]
+
+[server_local]
+vmess = 162.159.133.68:80, method = chacha20-ietf-poly1305, password = 2a683a54-f098-4d98-92fc-762b85d907b9, aead = true, tls13 = false, obfs = ws, obfs-host = ssrsub.v004.ssrsub.com, obfs-uri = /api/v3/download.getFile, fast-open = false, tag = 🇺🇸_US_美国_2
+vmess = 193.203.203.88:2082, method = chacha20-ietf-poly1305, password = 5f2d026e-1dbd-4bb0-aa61-b1bcc544ab2c, aead = true, tls13 = false, fast-open = false, tag = 🇨🇦_CA_加拿大
+shadowsocks = 51.158.195.96:443, method = aes-256-cfb, password = asdKkaskJKfnsa, fast-open = false, tag = 🇫🇷_FR_法国_1
+vmess = facet.x31416.top:443, method = chacha20-ietf-poly1305, password = c090fe2c-442b-4643-ef5e-98d53a5d72ac, aead = true, tls13 = true, obfs = over-tls, fast-open = false, tag = 🇺🇸_US_美国_3
+shadowsocks = 34.209.235.189:443, method = aes-256-cfb, password = amazonskr05, fast-open = false, tag = 🇺🇸_US_美国_4
+shadowsocks = 54.36.174.181:8882, method = aes-256-gcm, password = kDWvXYZoTBcGkC4, fast-open = false, tag = 🇫🇷_FR_法国_2
+vmess = mm3.shabijichang.com:80, method = chacha20-ietf-poly1305, password = c458695d-6908-45c3-9512-e0c46418454c, aead = true, tls13 = false, obfs = ws, obfs-host = mm3.shabijichang.com, obfs-uri = /, fast-open = false, tag = 🇺🇸_US_美国->🇮🇳_IN_印度
+shadowsocks = 54.36.174.181:8091, method = aes-256-gcm, password = PCnnH6SQSnfoS27, fast-open = false, tag = 🇫🇷_FR_法国_3
+shadowsocks = 51.158.195.96:80, method = aes-256-cfb, password = asdKkaskJKfnsa, fast-open = false, tag = 🇫🇷_FR_法国_4
+vmess = tttt.ssfree.ru:443, method = chacha20-ietf-poly1305, password = 1a38eb16-8ffe-11ee-9db7-00163e49219e, aead = true, tls13 = true, obfs = wss, obfs-uri = /search, obfs-host = tttt.ssfree.ru, fast-open = false, tag = 🇺🇸_US_美国_5
+vmess = cp2.colacloud.site:2086, method = chacha20-ietf-poly1305, password = 6474b779-e57a-4d50-b61e-1d8d00b696de, aead = true, tls13 = false, obfs = ws, obfs-host = cf-nls.colacloud.site, obfs-uri = /sssddd, fast-open = false, tag = 🇺🇸_US_美国->🇫🇷_FR_法国
+vmess = 23.26.226.45:2086, method = chacha20-ietf-poly1305, password = 70408f5d-78f2-44d0-9747-ae68da8651a4, aead = true, tls13 = false, obfs = ws, obfs-uri = 70408f5d-78f2-44d0-9747-ae68da8651a4-vm, obfs-host = 23.26.226.45, fast-open = false, tag = 🇺🇸_US_美国_6
+shadowsocks = 51.158.195.96:110, method = aes-256-cfb, password = asdKkaskJKfnsa, fast-open = false, tag = 🇫🇷_FR_法国_5
+vmess = cfcdn1.sanfencdn9.com:2052, method = chacha20-ietf-poly1305, password = d1f7a92a-6927-467b-902c-c5b7b6213bf6, aead = true, tls13 = false, obfs = ws, obfs-host = us12c2ebe9b.vjfvyzfhhf.xyz, obfs-uri = /video/QKEYMfEw/, fast-open = false, tag = 🇺🇸_US_美国_7
+
+[filter_local]
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
 # ACL4SSR标志 如没有，代表不是用ACL4SSR规则
@@ -83,10 +71,10 @@ IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
 IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
 IP-CIDR,198.18.0.0/16,🎯 全球直连,no-resolve
 IP-CIDR,224.0.0.0/4,🎯 全球直连,no-resolve
-IP-CIDR6,::1/128,🎯 全球直连,no-resolve
-IP-CIDR6,fc00::/7,🎯 全球直连,no-resolve
-IP-CIDR6,fe80::/10,🎯 全球直连,no-resolve
-IP-CIDR6,fd00::/8,🎯 全球直连,no-resolve
+IP6-CIDR,::1/128,🎯 全球直连,no-resolve
+IP6-CIDR,fc00::/7,🎯 全球直连,no-resolve
+IP6-CIDR,fe80::/10,🎯 全球直连,no-resolve
+IP6-CIDR,fd00::/8,🎯 全球直连,no-resolve
 DOMAIN,instant.arubanetworks.com,🎯 全球直连
 DOMAIN,setmeup.arubanetworks.com,🎯 全球直连
 DOMAIN,router.asus.com,🎯 全球直连
@@ -2032,7 +2020,7 @@ DOMAIN-SUFFIX,amazonuniversity.jobs,🌍 国外媒体
 DOMAIN-SUFFIX,amazonvideo.com,🌍 国外媒体
 DOMAIN-SUFFIX,media-amazon.com,🌍 国外媒体
 DOMAIN-SUFFIX,pv-cdn.net,🌍 国外媒体
-URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/,🌍 国外媒体
+#,URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/,🌍 国外媒体
 USER-AGENT,AppleNews*,🌍 国外媒体
 USER-AGENT,com.apple.news*,🌍 国外媒体
 DOMAIN,gspe1-ssl.ls.apple.com,🌍 国外媒体
@@ -2292,9 +2280,9 @@ DOMAIN-SUFFIX,twitch-ext.rootonline.de,🌍 国外媒体
 DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
 DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
 USER-AGENT,Viu*,🌍 国外媒体
-PROCESS-NAME,com.viu.pad,🌍 国外媒体
-PROCESS-NAME,com.viu.phone,🌍 国外媒体
-PROCESS-NAME,com.vuclip.viu,🌍 国外媒体
+#,PROCESS-NAME,com.viu.pad,🌍 国外媒体
+#,PROCESS-NAME,com.viu.phone,🌍 国外媒体
+#,PROCESS-NAME,com.vuclip.viu,🌍 国外媒体
 DOMAIN,api.viu.now.com,🌍 国外媒体
 DOMAIN,d1k2us671qcoau.cloudfront.net,🌍 国外媒体
 DOMAIN,d2anahhhmp1ffz.cloudfront.net,🌍 国外媒体
@@ -2341,9 +2329,9 @@ DOMAIN-SUFFIX,telesco.pe,📲 电报信息
 IP-CIDR,91.108.0.0/16,📲 电报信息,no-resolve
 IP-CIDR,109.239.140.0/24,📲 电报信息,no-resolve
 IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
-IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
-IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
-IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
+IP6-CIDR,2001:67c:4e8::/48,📲 电报信息,no-resolve
+IP6-CIDR,2001:b28:f23d::/48,📲 电报信息,no-resolve
+IP6-CIDR,2001:b28:f23f::/48,📲 电报信息,no-resolve
 # 长风网站，自动注入
 DOMAIN-SUFFIX,v2rayse.com,🚀 节点选择
 DOMAIN-SUFFIX,cff.pw,🚀 节点选择
@@ -2757,9 +2745,9 @@ DOMAIN-SUFFIX,telesco.pe,🚀 节点选择
 IP-CIDR,91.108.0.0/16,🚀 节点选择,no-resolve
 IP-CIDR,109.239.140.0/24,🚀 节点选择,no-resolve
 IP-CIDR,149.154.160.0/20,🚀 节点选择,no-resolve
-IP-CIDR6,2001:67c:4e8::/48,🚀 节点选择,no-resolve
-IP-CIDR6,2001:b28:f23d::/48,🚀 节点选择,no-resolve
-IP-CIDR6,2001:b28:f23f::/48,🚀 节点选择,no-resolve
+IP6-CIDR,2001:67c:4e8::/48,🚀 节点选择,no-resolve
+IP6-CIDR,2001:b28:f23d::/48,🚀 节点选择,no-resolve
+IP6-CIDR,2001:b28:f23f::/48,🚀 节点选择,no-resolve
 DOMAIN-SUFFIX,terabox.com,🚀 节点选择
 DOMAIN-SUFFIX,teraboxcdn.com,🚀 节点选择
 IP-CIDR,18.194.0.0/15,🚀 节点选择,no-resolve
@@ -3219,10 +3207,10 @@ IP-CIDR,139.220.243.27/32,🎯 全球直连,no-resolve
 IP-CIDR,172.16.102.56/32,🎯 全球直连,no-resolve
 IP-CIDR,185.188.32.1/28,🎯 全球直连,no-resolve
 IP-CIDR,221.226.128.146/32,🎯 全球直连,no-resolve
-IP-CIDR6,2a0b:b580::/48,🎯 全球直连,no-resolve
-IP-CIDR6,2a0b:b581::/48,🎯 全球直连,no-resolve
-IP-CIDR6,2a0b:b582::/48,🎯 全球直连,no-resolve
-IP-CIDR6,2a0b:b583::/48,🎯 全球直连,no-resolve
+IP6-CIDR,2a0b:b580::/48,🎯 全球直连,no-resolve
+IP6-CIDR,2a0b:b581::/48,🎯 全球直连,no-resolve
+IP6-CIDR,2a0b:b582::/48,🎯 全球直连,no-resolve
+IP6-CIDR,2a0b:b583::/48,🎯 全球直连,no-resolve
 DOMAIN-SUFFIX,baomitu.com,🎯 全球直连
 DOMAIN-SUFFIX,bootcss.com,🎯 全球直连
 DOMAIN-SUFFIX,jiasule.com,🎯 全球直连
@@ -3693,3 +3681,7 @@ IP-CIDR,101.198.192.0/19,🎯 全球直连,no-resolve
 IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
 GEOIP,CN,🎯 全球直连
 FINAL,🐟 漏网之鱼
+
+[rewrite_local]
+
+[mitm]
