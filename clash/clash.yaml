@@ -1,130 +1,130 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：2023-12-12 00:12:27
+# 客户端：Clash
+# 创建时间：2023-12-12 18:04:14
 # 使用模版：V2RaySE 默认模版
-# 节点数量：10
+# 节点数量：1
 ####################################
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
 external-controller: 0.0.0.0:9090
 dns:
   enabled: true
-  nameserver:
-    - 119.29.29.29
+  listen: 0.0.0.0:1053
+  ipv6: true
+  default-nameserver:
     - 223.5.5.5
-  fallback:
-    - 8.8.8.8
-    - 8.8.4.4
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
+    - 114.114.114.114
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - swscan.apple.com
+    - mesu.apple.com
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - +.music.163.com
+    - '*.126.net'
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - '*.kuwo.cn'
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - +.y.qq.com
+    - +.music.tc.qq.com
+    - aqqmusic.tc.qq.com
+    - +.stream.qqmusic.qq.com
+    - '*.xiami.com'
+    - +.music.migu.cn
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - +.xboxlive.com
+    - localhost.ptlogin2.qq.com
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - '*.mcdn.bilivideo.cn'
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇨🇦_CA_加拿大_1","type":"vless","server":"23.227.39.86","port":443,"uuid":"0773256c-d020-436d-afea-6eee7cb6c872","tls":true,"servername":"xray1.freegradely.xyz","network":"ws","ws-opts":{"path":"/bodhws"}}
-  - {"name":"🇺🇸_US_美国->🇳🇱_NL_荷兰_1","type":"vless","server":"104.16.219.230","port":443,"uuid":"376b9861-2fc6-4647-959c-18185cd9c95a","tls":true,"servername":"lmn59.sbs","network":"ws","ws-opts":{"path":"/fflsws"}}
-  - {"name":"🇺🇸_US_美国_1","type":"ss","server":"35.87.39.181","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇺🇸_US_美国->🇫🇮_FI_芬兰","type":"vless","server":"172.67.193.40","port":8443,"uuid":"9fbaa2ab-fe89-444f-aa05-21dd1b3cabb5","tls":true,"servername":"freews.kinghooman.sbs","network":"ws","ws-opts":{"path":"/free"}}
-  - {"name":"🇷🇺_RU_俄罗斯联邦->🇳🇱_NL_荷兰","type":"vless","server":"185.109.21.24","port":443,"uuid":"376b9861-2fc6-4647-959c-18185cd9c95a","tls":true,"servername":"lmn37.sbs","network":"ws","ws-opts":{"path":"/fflsws"}}
-  - {"name":"🇺🇸_US_美国_2","type":"trojan","server":"89.116.180.179","port":443,"udp":true,"password":"d2698cf9-c47e-455c-8384-12e642cbba15","sni":"p6us4.pqjc.buzz","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/pq/us4"}}
-  - {"name":"🇺🇸_US_美国->🇬🇧_GB_英国","type":"vless","server":"104.21.85.118","port":443,"uuid":"376b9861-2fc6-4647-959c-18185cd9c95a","tls":true,"servername":"lmn90.sbs","network":"ws","ws-opts":{"path":"/fflsws"}}
-  - {"name":"🇺🇸_US_美国->🇩🇪_DE_德国","type":"vless","server":"172.66.47.98","port":2053,"uuid":"0b111ced-0f47-461f-ae09-589f393d45b6","tls":true,"servername":"mtnfinldefhdisjwidjsmperep0.amoozeshgah-com.com","network":"ws","ws-opts":{"path":"/backup"}}
-  - {"name":"🇨🇦_CA_加拿大_2","type":"vless","server":"23.227.38.86","port":443,"uuid":"0773256c-d020-436d-afea-6eee7cb6c872","tls":true,"servername":"xray1.freegradely.xyz","network":"ws","ws-opts":{"path":"/bodhws"}}
-  - {"name":"🇺🇸_US_美国->🇳🇱_NL_荷兰_2","type":"vless","server":"216.116.134.79","port":443,"uuid":"376b9861-2fc6-4647-959c-18185cd9c95a","tls":true,"servername":"lmn59.sbs","network":"ws","ws-opts":{"path":"/fflsws"}}
+  - {"name":"233boy-tcp-34.92.50.99","type":"vmess","server":"34.92.50.99","port":7890,"cipher":"auto","uuid":"1d62f647-48de-469a-aef3-4b458394177d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇫🇮_FI_芬兰
-      - 🇷🇺_RU_俄罗斯联邦->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰_2
+      - 233boy-tcp-34.92.50.99
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇫🇮_FI_芬兰
-      - 🇷🇺_RU_俄罗斯联邦->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰_2
+      - 233boy-tcp-34.92.50.99
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇫🇮_FI_芬兰
-      - 🇷🇺_RU_俄罗斯联邦->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰_2
+      - 233boy-tcp-34.92.50.99
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇫🇮_FI_芬兰
-      - 🇷🇺_RU_俄罗斯联邦->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰_2
+      - 233boy-tcp-34.92.50.99
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇫🇮_FI_芬兰
-      - 🇷🇺_RU_俄罗斯联邦->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰_2
+      - 233boy-tcp-34.92.50.99
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇫🇮_FI_芬兰
-      - 🇷🇺_RU_俄罗斯联邦->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰_2
+      - 233boy-tcp-34.92.50.99
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -147,16 +147,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇫🇮_FI_芬兰
-      - 🇷🇺_RU_俄罗斯联邦->🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰_2
+      - 233boy-tcp-34.92.50.99
 
 rules:
 # 本地/局域网地址
