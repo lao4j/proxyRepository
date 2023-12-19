@@ -1,70 +1,43 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Surge
-# 创建时间：2023-12-19 14:32:56
+# 客户端：Surfboard
+# 创建时间：2023-12-19 15:31:42
 # 使用模版：V2RaySE 默认模版
-# 节点数量：24
+# 节点数量：9
 ####################################
 
 [General]
 loglevel = notify
-bypass-system = true
-skip-proxy = 127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,100.64.0.0/10,localhost,*.local,e.crashlytics.com,captive.apple.com,::ffff:0:0:0:0/1,::ffff:128:0:0:0/1
-#DNS设置或根据自己网络情况进行相应设置
-bypass-tun = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12
-dns-server = 119.29.29.29,223.5.5.5,218.30.19.40,61.134.1.4
-external-controller-access = password@0.0.0.0:6170
-http-api = password@0.0.0.0:6171
-test-timeout = 5
-http-api-web-dashboard = true
+interface = 127.0.0.1
+skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
+ipv6 = false
+dns-server = system, 223.5.5.5
 exclude-simple-hostnames = true
-allow-wifi-access = true
-http-listen = 0.0.0.0:6152
-socks5-listen = 0.0.0.0:6153
-wifi-access-http-port = 6152
-wifi-access-socks5-port = 6153
-
-[Script]
-http-request https?:\/\/.*\.iqiyi\.com\/.*authcookie= script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇺🇸_US_美国_1 = vmess,1208.ssfree.ru,443,username=800c9064-9dbe-11ee-b41b-00163e49219e,tls=true,vmess-aead=true,tls13=false,ws=true,ws-path=/search,sni=1208.ssfree.ru,skip-cert-verify=true,tfo=false,udp-relay=false
-🇬🇧_GB_英国 = vmess,172.99.190.109,443,username=03fcc618-b93d-6796-6aed-8a38c975d581,tls=true,vmess-aead=true,tls13=false,ws=true,ws-path=linkvws,sni=172.99.190.109,skip-cert-verify=true,tfo=false,udp-relay=false
-🇺🇸_US_美国_2 = vmess,104.21.75.246,80,username=c458695d-6908-45c3-9512-e0c46418454c,tls=false,vmess-aead=true,tls13=false,ws=true,ws-path=/,ws-headers=host:"sbl2.shabijichang.com",sni=104.21.75.246,skip-cert-verify=true,tfo=false,udp-relay=false
-🇨🇳_CN_中国->🇺🇸_US_美国_1 = vmess,us2.awslcn.info,25257,username=93ec7261-1c92-4149-848a-26b6fb9fc4ce,tls=false,vmess-aead=true,tls13=false,ws=true,ws-path=/,ws-headers=host:"us2.awslcn.info",sni=us2.awslcn.info,skip-cert-verify=true,tfo=false,udp-relay=false
-🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦 = vmess,cm1.awslcn.info,25230,username=93ec7261-1c92-4149-848a-26b6fb9fc4ce,tls=false,vmess-aead=true,tls13=false,ws=true,ws-path=/,ws-headers=host:"cm1.awslcn.info",sni=cm1.awslcn.info,skip-cert-verify=true,tfo=false,udp-relay=false
-🇺🇸_US_美国_3 = vmess,cf-lt.sharecentre.online,80,username=b1e30339-a603-47d1-b31c-1d0ceb59952e,tls=false,vmess-aead=true,tls13=false,ws=true,ws-path=/api/v3/download.getFile,ws-headers=host:"ssrsub.v03.ssrsub.com",sni=cf-lt.sharecentre.online,skip-cert-verify=true,tfo=false,udp-relay=false
-🇨🇳_CN_中国->🇺🇸_US_美国_2 = vmess,us1.awslcn.info,25239,username=93ec7261-1c92-4149-848a-26b6fb9fc4ce,tls=false,vmess-aead=true,tls13=false,ws=true,ws-path=/,ws-headers=host:"us1.awslcn.info",sni=us1.awslcn.info,skip-cert-verify=true,tfo=false,udp-relay=false
-🇺🇸_US_美国_4 = ss,35.90.10.174,443,encrypt-method=aes-256-cfb,password=amazonskr05,tfo=false,udp-relay=false
-🇺🇸_US_美国_5 = ss,35.87.39.181,443,encrypt-method=aes-256-cfb,password=amazonskr05,tfo=false,udp-relay=false
-🇺🇸_US_美国_6 = ss,94.131.115.129,38108,encrypt-method=chacha20-ietf-poly1305,password=bNUe0jR9rzsvLEzfPmI4Of,tfo=false,udp-relay=false
-🇩🇪_DE_德国 = trojan,5.104.107.143,443,password=6befeeb3-702b-4948-9028-f9e072f2da98,skip-cert-verify=true,tfo=false,udp-relay=false
-🇮🇷_IR_伊朗->🇸🇪_SE_瑞典 = vmess,81.12.27.7,47575,username=b3c49b53-2d5d-4d13-d195-76d48aeccd11,tls=false,vmess-aead=true,tls13=false,sni=81.12.27.7,skip-cert-verify=true,tfo=false,udp-relay=false
-🇮🇷_IR_伊朗->🇮🇹_IT_意大利 = vmess,81.12.27.6,56295,username=dfcc1500-70c4-410b-b5fe-2052a011014e,tls=false,vmess-aead=true,tls13=false,sni=81.12.27.6,skip-cert-verify=true,tfo=false,udp-relay=false
-🇺🇸_US_美国_7 = trojan,8Ka1hu4r3g@cf.network383.online:8443?type=grpc&sni=ams-trojan-grpc.carfin.tech&allowInsecure=1&serviceName=@apt_mahdi,8443,password=8Ka1hu4r3g@cf.network383.online:8443?type=grpc&sni=ams-trojan-grpc.carfin.tech&allowInsecure=1&serviceName=,skip-cert-verify=true,sni=ams-trojan-grpc.carfin.tech,tfo=false,udp-relay=false
-🇨🇳_CN_中国->🇺🇸_US_美国_3 = vmess,us1.awslcn.info,25256,username=93ec7261-1c92-4149-848a-26b6fb9fc4ce,tls=false,vmess-aead=true,tls13=false,ws=true,ws-path=/,sni=us1.awslcn.info,skip-cert-verify=true,tfo=false,udp-relay=false
-🇨🇳_CN_中国->🇬🇧_GB_英国 = trojan,gbs.pptv-tv.store,17728,password=299a6171-b4ce-403a-8157-c3dad55ef3a2,skip-cert-verify=true,tfo=false,udp-relay=false
-🇺🇦_UA_乌克兰 = vmess,193.238.153.14,8443,username=159693e0-5146-482d-9e46-8c4f2fc865b1,tls=true,vmess-aead=true,tls13=false,sni=193.238.153.14,skip-cert-verify=true,tfo=false,udp-relay=false
-🇺🇸_US_美国_8 = ss,52.33.95.19,443,encrypt-method=aes-256-cfb,password=amazonskr05,tfo=false,udp-relay=false
-🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦 = trojan,ru01.trojanyyds.xyz,443,password=93ec7261-1c92-4149-848a-26b6fb9fc4ce,skip-cert-verify=true,sni=ru01.trojanyyds.xyz,tfo=false,udp-relay=false
-🇨🇳_CN_中国->🇺🇸_US_美国_4 = external,exec=/usr/bin/ssr-local,args=-1,args=1080,args=-s,args=cm01.newcome.xyz,args=-p,args=7703,args=-m,args=chacha20-ietf,args=-k,args=jFa4F1,args=-o,args=plain,args=-O,args=auth_aes128_sha1,local-port=1080,addresses=cm01.newcome.xyz,tfo=false,udp-relay=false
-🇺🇸_US_美国_9 = vmess,sbl2.shabijichang.com,80,username=c458695d-6908-45c3-9512-e0c46418454c,tls=false,vmess-aead=true,tls13=false,ws=true,ws-path=/,ws-headers=host:"sbl2.shabijichang.com",sni=sbl2.shabijichang.com,skip-cert-verify=true,tfo=false,udp-relay=false
-🇺🇸_US_美国_10 = trojan,us01.trojanyyds.xyz,443,password=93ec7261-1c92-4149-848a-26b6fb9fc4ce,skip-cert-verify=true,sni=us01.trojanyyds.xyz,tfo=false,udp-relay=false
-🇨🇳_CN_中国->🇺🇸_US_美国_5 = external,exec=/usr/bin/ssr-local,args=-1,args=1081,args=-s,args=cm01.newcome.xyz,args=-p,args=7706,args=-m,args=chacha20-ietf,args=-k,args=jFa4F1,args=-o,args=plain,args=-O,args=auth_aes128_sha1,local-port=1081,addresses=cm01.newcome.xyz,tfo=false,udp-relay=false
-🇨🇳_CN_中国->🇲🇽_MX_墨西哥 = vmess,cu.awslcn.info,25284,username=93ec7261-1c92-4149-848a-26b6fb9fc4ce,tls=false,vmess-aead=true,tls13=false,ws=true,ws-path=/,ws-headers=host:"cu.awslcn.info",sni=cu.awslcn.info,skip-cert-verify=true,tfo=false,udp-relay=false
+🇺🇸_US_美国_1 = trojan, 8Ka1hu4r3g@cf.network383.online:8443?type=grpc&sni=ams-trojan-grpc.carfin.tech&allowInsecure=1&serviceName=@apt_mahdi, 8443, password = 8Ka1hu4r3g@cf.network383.online:8443?type=grpc&sni=ams-trojan-grpc.carfin.tech&allowInsecure=1&serviceName=, udp-delay = true, skip-cert-verify = true, sni = ams-trojan-grpc.carfin.tech, ws = false
+🇨🇳_CN_中国->🇺🇸_US_美国_1 = vmess, us2.awslcn.info, 25257, username = 93ec7261-1c92-4149-848a-26b6fb9fc4ce, ws = true, tls = false, vmess-aead = true, ws-path = /, ws-headers = Host:"us2.awslcn.info", skip-cert-verify = true, tfo = false
+🇨🇳_CN_中国->🇺🇸_US_美国_3 = vmess, us1.awslcn.info, 25256, username = 93ec7261-1c92-4149-848a-26b6fb9fc4ce, ws = true, tls = false, vmess-aead = true, ws-path = /, skip-cert-verify = true, tfo = false
+🇨🇳_CN_中国->🇺🇸_US_美国_4 = vmess, us1.awslcn.info, 25239, username = 93ec7261-1c92-4149-848a-26b6fb9fc4ce, ws = true, tls = false, vmess-aead = true, ws-path = /, ws-headers = Host:"us1.awslcn.info", skip-cert-verify = true, tfo = false
+🇫🇷_FR_法国 = ss, 185.231.205.80, 1443, encrypt-method = chacha20-ietf-poly1305, password = MGQwNTgw
+🇺🇸_US_美国_2 = vmess, 104.18.212.188, 8080, username = 4e1fb101-e96a-4a7e-d936-13aeee7bd132, ws = true, tls = false, vmess-aead = true, ws-path = /ray, ws-headers = Host:"rn2.hostmjj.com", skip-cert-verify = true, tfo = false
+🇺🇸_US_美国_3 = ss, 52.33.95.19, 443, encrypt-method = aes-256-cfb, password = amazonskr05
+🇬🇧_GB_英国 = vmess, 172.99.190.109, 443, username = 03fcc618-b93d-6796-6aed-8a38c975d581, ws = true, tls = true, vmess-aead = true, ws-path = linkvws, skip-cert-verify = true, tfo = false
+🇩🇪_DE_德国 = trojan, 5.104.107.143, 443, password = 6befeeb3-702b-4948-9028-f9e072f2da98, udp-delay = true, skip-cert-verify = true, ws = false
 
 [Proxy Group]
-🚀 节点选择 = select,♻️ 自动选择,DIRECT,🇺🇸_US_美国_1,🇬🇧_GB_英国,🇺🇸_US_美国_2,🇨🇳_CN_中国->🇺🇸_US_美国_1,🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦,🇺🇸_US_美国_3,🇨🇳_CN_中国->🇺🇸_US_美国_2,🇺🇸_US_美国_4,🇺🇸_US_美国_5,🇺🇸_US_美国_6,🇩🇪_DE_德国,🇮🇷_IR_伊朗->🇸🇪_SE_瑞典,🇮🇷_IR_伊朗->🇮🇹_IT_意大利,🇺🇸_US_美国_7,🇨🇳_CN_中国->🇺🇸_US_美国_3,🇨🇳_CN_中国->🇬🇧_GB_英国,🇺🇦_UA_乌克兰,🇺🇸_US_美国_8,🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦,🇨🇳_CN_中国->🇺🇸_US_美国_4,🇺🇸_US_美国_9,🇺🇸_US_美国_10,🇨🇳_CN_中国->🇺🇸_US_美国_5,🇨🇳_CN_中国->🇲🇽_MX_墨西哥
-♻️ 自动选择 = url-test,🇺🇸_US_美国_1,🇬🇧_GB_英国,🇺🇸_US_美国_2,🇨🇳_CN_中国->🇺🇸_US_美国_1,🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦,🇺🇸_US_美国_3,🇨🇳_CN_中国->🇺🇸_US_美国_2,🇺🇸_US_美国_4,🇺🇸_US_美国_5,🇺🇸_US_美国_6,🇩🇪_DE_德国,🇮🇷_IR_伊朗->🇸🇪_SE_瑞典,🇮🇷_IR_伊朗->🇮🇹_IT_意大利,🇺🇸_US_美国_7,🇨🇳_CN_中国->🇺🇸_US_美国_3,🇨🇳_CN_中国->🇬🇧_GB_英国,🇺🇦_UA_乌克兰,🇺🇸_US_美国_8,🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦,🇨🇳_CN_中国->🇺🇸_US_美国_4,🇺🇸_US_美国_9,🇺🇸_US_美国_10,🇨🇳_CN_中国->🇺🇸_US_美国_5,🇨🇳_CN_中国->🇲🇽_MX_墨西哥,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 50
-🌍 国外媒体 = select,🚀 节点选择,♻️ 自动选择,🎯 全球直连,🇺🇸_US_美国_1,🇬🇧_GB_英国,🇺🇸_US_美国_2,🇨🇳_CN_中国->🇺🇸_US_美国_1,🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦,🇺🇸_US_美国_3,🇨🇳_CN_中国->🇺🇸_US_美国_2,🇺🇸_US_美国_4,🇺🇸_US_美国_5,🇺🇸_US_美国_6,🇩🇪_DE_德国,🇮🇷_IR_伊朗->🇸🇪_SE_瑞典,🇮🇷_IR_伊朗->🇮🇹_IT_意大利,🇺🇸_US_美国_7,🇨🇳_CN_中国->🇺🇸_US_美国_3,🇨🇳_CN_中国->🇬🇧_GB_英国,🇺🇦_UA_乌克兰,🇺🇸_US_美国_8,🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦,🇨🇳_CN_中国->🇺🇸_US_美国_4,🇺🇸_US_美国_9,🇺🇸_US_美国_10,🇨🇳_CN_中国->🇺🇸_US_美国_5,🇨🇳_CN_中国->🇲🇽_MX_墨西哥
-📲 电报信息 = select,🚀 节点选择,🎯 全球直连,🇺🇸_US_美国_1,🇬🇧_GB_英国,🇺🇸_US_美国_2,🇨🇳_CN_中国->🇺🇸_US_美国_1,🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦,🇺🇸_US_美国_3,🇨🇳_CN_中国->🇺🇸_US_美国_2,🇺🇸_US_美国_4,🇺🇸_US_美国_5,🇺🇸_US_美国_6,🇩🇪_DE_德国,🇮🇷_IR_伊朗->🇸🇪_SE_瑞典,🇮🇷_IR_伊朗->🇮🇹_IT_意大利,🇺🇸_US_美国_7,🇨🇳_CN_中国->🇺🇸_US_美国_3,🇨🇳_CN_中国->🇬🇧_GB_英国,🇺🇦_UA_乌克兰,🇺🇸_US_美国_8,🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦,🇨🇳_CN_中国->🇺🇸_US_美国_4,🇺🇸_US_美国_9,🇺🇸_US_美国_10,🇨🇳_CN_中国->🇺🇸_US_美国_5,🇨🇳_CN_中国->🇲🇽_MX_墨西哥
-Ⓜ️ 微软服务 = select,🎯 全球直连,🚀 节点选择,🇺🇸_US_美国_1,🇬🇧_GB_英国,🇺🇸_US_美国_2,🇨🇳_CN_中国->🇺🇸_US_美国_1,🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦,🇺🇸_US_美国_3,🇨🇳_CN_中国->🇺🇸_US_美国_2,🇺🇸_US_美国_4,🇺🇸_US_美国_5,🇺🇸_US_美国_6,🇩🇪_DE_德国,🇮🇷_IR_伊朗->🇸🇪_SE_瑞典,🇮🇷_IR_伊朗->🇮🇹_IT_意大利,🇺🇸_US_美国_7,🇨🇳_CN_中国->🇺🇸_US_美国_3,🇨🇳_CN_中国->🇬🇧_GB_英国,🇺🇦_UA_乌克兰,🇺🇸_US_美国_8,🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦,🇨🇳_CN_中国->🇺🇸_US_美国_4,🇺🇸_US_美国_9,🇺🇸_US_美国_10,🇨🇳_CN_中国->🇺🇸_US_美国_5,🇨🇳_CN_中国->🇲🇽_MX_墨西哥
-🍎 苹果服务 = select,🚀 节点选择,🎯 全球直连,🇺🇸_US_美国_1,🇬🇧_GB_英国,🇺🇸_US_美国_2,🇨🇳_CN_中国->🇺🇸_US_美国_1,🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦,🇺🇸_US_美国_3,🇨🇳_CN_中国->🇺🇸_US_美国_2,🇺🇸_US_美国_4,🇺🇸_US_美国_5,🇺🇸_US_美国_6,🇩🇪_DE_德国,🇮🇷_IR_伊朗->🇸🇪_SE_瑞典,🇮🇷_IR_伊朗->🇮🇹_IT_意大利,🇺🇸_US_美国_7,🇨🇳_CN_中国->🇺🇸_US_美国_3,🇨🇳_CN_中国->🇬🇧_GB_英国,🇺🇦_UA_乌克兰,🇺🇸_US_美国_8,🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦,🇨🇳_CN_中国->🇺🇸_US_美国_4,🇺🇸_US_美国_9,🇺🇸_US_美国_10,🇨🇳_CN_中国->🇺🇸_US_美国_5,🇨🇳_CN_中国->🇲🇽_MX_墨西哥
+🚀 节点选择 = select,♻️ 自动选择,DIRECT,🇺🇸_US_美国_1,🇨🇳_CN_中国->🇺🇸_US_美国_1,🇨🇳_CN_中国->🇺🇸_US_美国_3,🇨🇳_CN_中国->🇺🇸_US_美国_4,🇫🇷_FR_法国,🇺🇸_US_美国_2,🇺🇸_US_美国_3,🇬🇧_GB_英国,🇩🇪_DE_德国
+♻️ 自动选择 = url-test,🇺🇸_US_美国_1,🇨🇳_CN_中国->🇺🇸_US_美国_1,🇨🇳_CN_中国->🇺🇸_US_美国_3,🇨🇳_CN_中国->🇺🇸_US_美国_4,🇫🇷_FR_法国,🇺🇸_US_美国_2,🇺🇸_US_美国_3,🇬🇧_GB_英国,🇩🇪_DE_德国,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 50
+🌍 国外媒体 = select,🚀 节点选择,♻️ 自动选择,🎯 全球直连,🇺🇸_US_美国_1,🇨🇳_CN_中国->🇺🇸_US_美国_1,🇨🇳_CN_中国->🇺🇸_US_美国_3,🇨🇳_CN_中国->🇺🇸_US_美国_4,🇫🇷_FR_法国,🇺🇸_US_美国_2,🇺🇸_US_美国_3,🇬🇧_GB_英国,🇩🇪_DE_德国
+📲 电报信息 = select,🚀 节点选择,🎯 全球直连,🇺🇸_US_美国_1,🇨🇳_CN_中国->🇺🇸_US_美国_1,🇨🇳_CN_中国->🇺🇸_US_美国_3,🇨🇳_CN_中国->🇺🇸_US_美国_4,🇫🇷_FR_法国,🇺🇸_US_美国_2,🇺🇸_US_美国_3,🇬🇧_GB_英国,🇩🇪_DE_德国
+Ⓜ️ 微软服务 = select,🎯 全球直连,🚀 节点选择,🇺🇸_US_美国_1,🇨🇳_CN_中国->🇺🇸_US_美国_1,🇨🇳_CN_中国->🇺🇸_US_美国_3,🇨🇳_CN_中国->🇺🇸_US_美国_4,🇫🇷_FR_法国,🇺🇸_US_美国_2,🇺🇸_US_美国_3,🇬🇧_GB_英国,🇩🇪_DE_德国
+🍎 苹果服务 = select,🚀 节点选择,🎯 全球直连,🇺🇸_US_美国_1,🇨🇳_CN_中国->🇺🇸_US_美国_1,🇨🇳_CN_中国->🇺🇸_US_美国_3,🇨🇳_CN_中国->🇺🇸_US_美国_4,🇫🇷_FR_法国,🇺🇸_US_美国_2,🇺🇸_US_美国_3,🇬🇧_GB_英国,🇩🇪_DE_德国
 🎯 全球直连 = select,DIRECT,🚀 节点选择,♻️ 自动选择
 🛑 全球拦截 = select,REJECT,DIRECT
 🍃 应用净化 = select,REJECT,DIRECT
-🐟 漏网之鱼 = select,🚀 节点选择,🎯 全球直连,♻️ 自动选择,🇺🇸_US_美国_1,🇬🇧_GB_英国,🇺🇸_US_美国_2,🇨🇳_CN_中国->🇺🇸_US_美国_1,🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦,🇺🇸_US_美国_3,🇨🇳_CN_中国->🇺🇸_US_美国_2,🇺🇸_US_美国_4,🇺🇸_US_美国_5,🇺🇸_US_美国_6,🇩🇪_DE_德国,🇮🇷_IR_伊朗->🇸🇪_SE_瑞典,🇮🇷_IR_伊朗->🇮🇹_IT_意大利,🇺🇸_US_美国_7,🇨🇳_CN_中国->🇺🇸_US_美国_3,🇨🇳_CN_中国->🇬🇧_GB_英国,🇺🇦_UA_乌克兰,🇺🇸_US_美国_8,🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦,🇨🇳_CN_中国->🇺🇸_US_美国_4,🇺🇸_US_美国_9,🇺🇸_US_美国_10,🇨🇳_CN_中国->🇺🇸_US_美国_5,🇨🇳_CN_中国->🇲🇽_MX_墨西哥
+🐟 漏网之鱼 = select,🚀 节点选择,🎯 全球直连,♻️ 自动选择,🇺🇸_US_美国_1,🇨🇳_CN_中国->🇺🇸_US_美国_1,🇨🇳_CN_中国->🇺🇸_US_美国_3,🇨🇳_CN_中国->🇺🇸_US_美国_4,🇫🇷_FR_法国,🇺🇸_US_美国_2,🇺🇸_US_美国_3,🇬🇧_GB_英国,🇩🇪_DE_德国
 
 [Rule]
 # 本地/局域网地址
