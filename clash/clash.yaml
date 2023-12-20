@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-12-20 15:53:12
+# 创建时间：20-12-2023 14:59:29
 # 使用模版：V2RaySE 默认模版
-# 节点数量：4
+# 节点数量：1
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -85,67 +85,46 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国","type":"vmess","server":"us2.awslcn.info","port":25257,"cipher":"auto","uuid":"93ec7261-1c92-4149-848a-26b6fb9fc4ce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"us2.awslcn.info"}}}
-  - {"name":"🇺🇸_US_美国->🇬🇧_GB_英国","type":"vmess","server":"glweidf.cfd","port":443,"cipher":"auto","uuid":"1052f24e-7b09-45eb-b0c5-d858eb124192","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"glweidf.cfd"}}}
-  - {"name":"🇬🇧_GB_英国","type":"trojan","server":"18.130.96.112","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trj.rollingnext.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国","type":"vmess","server":"146.235.227.242","port":56052,"cipher":"auto","uuid":"5da8114c-0bc6-4416-aa3e-106bcc452161","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"microsoft.com"}}}
+  - {"name":"defaultName","type":"http","server":"raw.githubusercontent.com/changfengoss/pub/main/data/2023_12_20/VAfLRm.yaml","port":null,"tls":true,"skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇬🇧_GB_英国
-      - 🇺🇸_US_美国
+      - defaultName
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇬🇧_GB_英国
-      - 🇺🇸_US_美国
+      - defaultName
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇬🇧_GB_英国
-      - 🇺🇸_US_美国
+      - defaultName
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇬🇧_GB_英国
-      - 🇺🇸_US_美国
+      - defaultName
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇬🇧_GB_英国
-      - 🇺🇸_US_美国
+      - defaultName
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇬🇧_GB_英国
-      - 🇺🇸_US_美国
+      - defaultName
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -168,10 +147,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇬🇧_GB_英国
-      - 🇺🇸_US_美国
+      - defaultName
 
 rules:
 # 本地/局域网地址
