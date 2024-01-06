@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-01-06 14:34:20
+# 创建时间：2024-01-06 21:00:17
 # 使用模版：V2RaySE 默认模版
-# 节点数量：11
+# 节点数量：5
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -12,126 +12,148 @@ log-level: info
 external-controller: 0.0.0.0:9090
 dns:
   enabled: true
-  nameserver:
-    - 119.29.29.29
+  listen: 0.0.0.0:1053
+  ipv6: true
+  default-nameserver:
     - 223.5.5.5
-  fallback:
-    - 8.8.8.8
-    - 8.8.4.4
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
+    - 114.114.114.114
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - swscan.apple.com
+    - mesu.apple.com
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - +.music.163.com
+    - '*.126.net'
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - '*.kuwo.cn'
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - +.y.qq.com
+    - +.music.tc.qq.com
+    - aqqmusic.tc.qq.com
+    - +.stream.qqmusic.qq.com
+    - '*.xiami.com'
+    - +.music.migu.cn
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - +.xboxlive.com
+    - localhost.ptlogin2.qq.com
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - '*.mcdn.bilivideo.cn'
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 
 proxies:
-  - {"name":"v2rayse_test_1","type":"ss","server":"198.57.27.218","port":5004,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
-  - {"name":"v2rayse_test_2","type":"vmess","server":"154.23.190.162","port":443,"cipher":"auto","uuid":"b9984674-f771-4e67-a198-c7e60720ba2c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"v2rayse_test_3","type":"vmess","server":"154.23.190.162","port":443,"cipher":"auto","uuid":"b9984674-f771-4e67-a198-c7e60720ba2c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"defaultName_1","type":"ssr","server":"20.239.49.44","port":59814,"password":"3df57276-03ef-45cf-bdd4-4edb6dfaa0ef","cipher":"dummy","obfs":"plain","protocol":"origin","group":"https://v2rayse.com"}
-  - {"name":"v2rayse_test_4","type":"trojan","server":"ca-trojan.bonds.id","port":443,"udp":true,"password":"bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272","skip-cert-verify":true}
-  - {"name":"defaultName_2","type":"http","server":"124.15.12.24","port":251,"username":"username","password":"password"}
-  - {"name":"defaultName_3","type":"socks5","server":"124.15.12.24","port":2312}
-  - {"name":"Hys-1.2.3.4","type":"hysteria","server":"1.2.3.4","port":12854,"sni":"wechat.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"pekopeko","up":50,"down":250}
-  - {"name":"test","type":"vless","server":"1.2.3.4","port":7777,"uuid":"abc-def-ghi-fge-zsx","tls":true,"network":"tcp"}
-  - {"name":"defaultName_4","type":"socks5","server":"1.2.3.4","port":123,"username":"username","password":"password"}
-  - {"name":"defaultName_5","type":"http","server":"raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg","port":null,"tls":true,"skip-cert-verify":true}
+  - {"name":"洛杉矶_1","type":"vless","server":"142.171.233.127","port":36808,"udp":true,"uuid":"1512650b-800e-4db2-afee-0e3826ba6182","tls":true,"servername":"www.yahoo.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"mOSpxwAsYgyv1V2vScnEqmuFIZOousugVyPRljh6nAM","short-id":"e37d3b86"},"client-fingerprint":"chrome"}
+  - {"name":"德国","type":"vless","server":"[2a02","port":180,"udp":true,"uuid":"ddb8b9f2-41d1-4456-82b7-3d04433907b5","tls":true,"servername":"www.yahoo.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"QxVyR4bJey0As5G2mtz6685c_3Y10T4YBOc4vP0dMkg","short-id":"a7918644"},"client-fingerprint":"chrome"}
+  - {"name":"日本","type":"vless","server":"yy.yangjin56.free.hr","port":8880,"uuid":"f81e9337-8a12-490d-8409-d8e4b70bf526","tls":false,"servername":"yyj.yangjin.co","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"yyj.yangjin.co"}}}
+  - {"name":"香港","type":"vless","server":"yy.yangjinplus.free.hr","port":8443,"uuid":"f81e9337-8a12-490d-8409-d8e4b70bf526","tls":true,"servername":"yyj.yangjin.co","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"yyj.yangjin.co"}},"client-fingerprint":"random"}
+  - {"name":"洛杉矶_2","type":"vmess","server":"yy.yangjinplus.cn","port":8443,"cipher":"auto","uuid":"1512650b-800e-4db2-afee-0e3826ba6182","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"yy.yangjinplus.cn","network":"ws","ws-opts":{"path":"1512650b-800e-4db2-afee-0e3826ba6182-vm","headers":{"host":"yy.yangjinplus.cn"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - v2rayse_test_1
-      - v2rayse_test_2
-      - v2rayse_test_3
-      - defaultName_1
-      - v2rayse_test_4
-      - defaultName_2
-      - defaultName_3
-      - Hys-1.2.3.4
-      - test
-      - defaultName_4
-      - defaultName_5
+      - 洛杉矶_1
+      - 德国
+      - 日本
+      - 香港
+      - 洛杉矶_2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - v2rayse_test_1
-      - v2rayse_test_2
-      - v2rayse_test_3
-      - defaultName_1
-      - v2rayse_test_4
-      - defaultName_2
-      - defaultName_3
-      - Hys-1.2.3.4
-      - test
-      - defaultName_4
-      - defaultName_5
+      - 洛杉矶_1
+      - 德国
+      - 日本
+      - 香港
+      - 洛杉矶_2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - v2rayse_test_1
-      - v2rayse_test_2
-      - v2rayse_test_3
-      - defaultName_1
-      - v2rayse_test_4
-      - defaultName_2
-      - defaultName_3
-      - Hys-1.2.3.4
-      - test
-      - defaultName_4
-      - defaultName_5
+      - 洛杉矶_1
+      - 德国
+      - 日本
+      - 香港
+      - 洛杉矶_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - v2rayse_test_1
-      - v2rayse_test_2
-      - v2rayse_test_3
-      - defaultName_1
-      - v2rayse_test_4
-      - defaultName_2
-      - defaultName_3
-      - Hys-1.2.3.4
-      - test
-      - defaultName_4
-      - defaultName_5
+      - 洛杉矶_1
+      - 德国
+      - 日本
+      - 香港
+      - 洛杉矶_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - v2rayse_test_1
-      - v2rayse_test_2
-      - v2rayse_test_3
-      - defaultName_1
-      - v2rayse_test_4
-      - defaultName_2
-      - defaultName_3
-      - Hys-1.2.3.4
-      - test
-      - defaultName_4
-      - defaultName_5
+      - 洛杉矶_1
+      - 德国
+      - 日本
+      - 香港
+      - 洛杉矶_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - v2rayse_test_1
-      - v2rayse_test_2
-      - v2rayse_test_3
-      - defaultName_1
-      - v2rayse_test_4
-      - defaultName_2
-      - defaultName_3
-      - Hys-1.2.3.4
-      - test
-      - defaultName_4
-      - defaultName_5
+      - 洛杉矶_1
+      - 德国
+      - 日本
+      - 香港
+      - 洛杉矶_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -154,17 +176,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - v2rayse_test_1
-      - v2rayse_test_2
-      - v2rayse_test_3
-      - defaultName_1
-      - v2rayse_test_4
-      - defaultName_2
-      - defaultName_3
-      - Hys-1.2.3.4
-      - test
-      - defaultName_4
-      - defaultName_5
+      - 洛杉矶_1
+      - 德国
+      - 日本
+      - 香港
+      - 洛杉矶_2
 
 rules:
 # 本地/局域网地址
