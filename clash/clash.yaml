@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：20-02-2024 15:26:26
+# 客户端：Clash.Meta
+# 创建时间：2024-02-20 20:58:06
 # 使用模版：V2RaySE 默认模版
-# 节点数量：1
+# 节点数量：137
 ####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -85,46 +86,998 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"defaultName","type":"http","server":"2","port":2,"username":"2","password":"2"}
+  - {"name":"example1","type":"ss","server":"example1.com","port":443,"password":"example.com","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"example2","type":"ss","server":"example2.com","port":443,"password":"example.com","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"hysteria_meta_0_1","type":"hysteria","server":"167.160.90.251","port":48089,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"dongtaiwang.com","up":50,"down":80}
+  - {"name":"hysteria_meta_0_2","type":"hysteria","server":"108.181.22.239","port":41146,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"dongtaiwang.com","up":50,"down":80}
+  - {"name":"hysteria_meta_1","type":"hysteria","server":"108.181.22.213","port":52284,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"dongtaiwang.com","up":50,"down":80}
+  - {"name":"hysteria_meta_2","type":"hysteria","server":"108.181.22.155","port":19721,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"dongtaiwang.com","up":50,"down":80}
+  - {"name":"hysteria_meta_3","type":"hysteria","server":"104.234.70.41","port":57153,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"dongtaiwang.com","up":50,"down":80}
+  - {"name":"hysteria_meta_4","type":"hysteria","server":"www.dtku46.xyz","port":11223,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"mqoE9qSoyMFa","up":50,"down":80}
+  - {"name":"hysteria_meta_5","type":"hysteria","server":"104.234.70.6","port":16117,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"dongtaiwang.com","up":50,"down":80}
+  - {"name":"hysteria_meta_6","type":"hysteria","server":"www.dtku46.xyz","port":11223,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"mqoE9qSoyMFa","up":50,"down":80}
+  - {"name":"defaultName","server":"64.110.25.10","port":11227,"password":"dongtaiwang.com","uuid":"764b539f-2d3c-4772-9731-5ebf6984af98","sni":"bing.com","alpn":["h3"],"udp-relay-mode":"native","congestion_control":"bbr"}
+  - {"name":"hysteria_meta_8","type":"hysteria","server":"62.204.54.81","port":46333,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"","up":50,"down":80}
+  - {"name":"hysteria_meta_9","type":"hysteria","server":"www.dtku50.xyz","port":23577,"sni":"www.amazon.cn","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"","up":50,"down":80}
+  - {"name":"hysteria_0","type":"hysteria","server":"167.160.91.115","port":41189,"sni":"www.amazon.cn","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF","up":11,"down":55}
+  - {"name":"hysteria_1","type":"hysteria","server":"173.234.25.52","port":20164,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"Ljg6NNEATDqP97hdAdHe1lJv7ggtKc0h7zmCCZKCX3qY0LR64F","up":11,"down":55}
+  - {"name":"hysteria_2","type":"hysteria","server":"108.181.22.239","port":39967,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"dongtaiwang.com","up":11,"down":55}
+  - {"name":"hysteria_3","type":"hysteria","server":"51.158.54.46","port":11926,"sni":"youku.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"Trz2alKwzCImRAXI3nXfpo1ylpHfqOL8s1vageWKoyjjvWeMVs","up":11,"down":55}
+  - {"name":"hysteria2_0","type":"hysteria2","server":"www.dtku46.xyz","port":18417,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"hysteria2_1","type":"hysteria2","server":"108.181.22.155","port":40246,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"hysteria2_2","type":"hysteria2","server":"167.160.90.252","port":63530,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"hysteria2_3","type":"hysteria2","server":"108.181.22.155","port":40246,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"🇨🇳 Large 台灣02 - IEPL | 倍率:1.8","type":"ssr","server":"mysql.accessconnect.cc","port":6502,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇨🇳 Large 台灣03 - IEPL | 倍率:1.6","type":"ssr","server":"mysql.accessconnect.cc","port":6503,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇨🇳 Large 台灣04 - IEPL | 倍率:1.5","type":"ssr","server":"mysql.accessconnect.cc","port":699,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇨🇳 Large 台灣05 - IEPL | 倍率:1.5","type":"ssr","server":"mysql.accessconnect.cc","port":700,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇸🇬 Large 新加坡01 - all | IEPL | 倍率:1.5","type":"ssr","server":"mysql.accessconnect.cc","port":3201,"password":"di15PV","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇸🇬 Large 新加坡02 - all | IEPL | 倍率:1.5","type":"ssr","server":"mysql.accessconnect.cc","port":3202,"password":"di15PV","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇸🇬 Large 新加坡03 - all | MIEPL | 倍率:1.6","type":"ssr","server":"mysql.accessconnect.cc","port":3203,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇸🇬 Large 新加坡04 - all | MIEPL | 倍率:1.6","type":"ssr","server":"mysql.accessconnect.cc","port":3204,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇸🇬 Large 新加坡05 - all | IEPL | 倍率:1.5","type":"ssr","server":"mysql.accessconnect.cc","port":1001,"password":"di15PV","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇸🇬 Large 新加坡06 - all | IEPL | 倍率:1.5","type":"ssr","server":"mysql.accessconnect.cc","port":1002,"password":"di15PV","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇸🇬 Large 新加坡07 - all | IEPL | 倍率:1.5","type":"ssr","server":"mysql.accessconnect.cc","port":1003,"password":"di15PV","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇸🇬 Large 新加坡08 - all | IEPL | 倍率:1.5","type":"ssr","server":"mysql.accessconnect.cc","port":1004,"password":"di15PV","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇸🇬 Large 新加坡09 - all | IEPL | 倍率:1.5","type":"ssr","server":"mysql.accessconnect.cc","port":3209,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇸🇬 Large 新加坡10 - all | IEPL | 倍率:1.5","type":"ssr","server":"mysql.accessconnect.cc","port":3210,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇸🇬 Large 新加坡11 - all | IEPL | 倍率:1.5","type":"ssr","server":"mysql.accessconnect.cc","port":3211,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇸🇬 Large 新加坡12 - all | IEPL | 倍率:1.5","type":"ssr","server":"mysql.accessconnect.cc","port":3212,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇯🇵 Large 日本01 - all | IEPL | 倍率:1.5","type":"ssr","server":"mysql.accessconnect.cc","port":6301,"password":"di15PV","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇯🇵 Large 日本02 - allmedia | IEPL | 倍率:1.5","type":"ssr","server":"mysql.accessconnect.cc","port":6302,"password":"di15PV","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇯🇵 Large 日本03 - allmedia | IEPL | 倍率:1.5","type":"ssr","server":"mysql.accessconnect.cc","port":6303,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇯🇵 Large 日本04 - allmedia | IEPL | 倍率:1.3","type":"ssr","server":"mysql.accessconnect.cc","port":6304,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇯🇵 Large 日本05 - allmedia | IEPL | 倍率:1.3","type":"ssr","server":"mysql.accessconnect.cc","port":6305,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇺🇸 Large 美国01 - allmedia | IEPL | 倍率:1.8","type":"ssr","server":"mysql.accessconnect.cc","port":1098,"password":"di15PV","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇺🇸 Large 美国02 - nf&hbo&hulu | IEPL | 倍率:1.6","type":"ssr","server":"mysql.accessconnect.cc","port":6202,"password":"di15PV","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇺🇸 Large 美国03 - nf&hbo&hulu | IEPL | 倍率:1.6","type":"ssr","server":"mysql.accessconnect.cc","port":6203,"password":"di15PV","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇺🇸 Large 美国04 - allmedia | IEPL | 倍率:1.5","type":"ssr","server":"mysql.accessconnect.cc","port":1800,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇺🇸 Large 美国05 - allmedia | IEPL | 倍率:1.5","type":"ssr","server":"mysql.accessconnect.cc","port":1801,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇰🇷 Large 韩国01 - nf | MIEPL | 倍率:1.6","type":"ssr","server":"mysql.accessconnect.cc","port":6101,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇰🇷 Large 韩国02 - nf | MIEPL | 倍率:1.6","type":"ssr","server":"mysql.accessconnect.cc","port":6102,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8","type":"ssr","server":"mysql.accessconnect.cc","port":6001,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8","type":"ssr","server":"mysql.accessconnect.cc","port":6002,"password":"di15PV","cipher":"chacha20-ietf","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8","type":"ssr","server":"mysql.accessconnect.cc","port":6003,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8","type":"ssr","server":"mysql.accessconnect.cc","port":6004,"password":"di15PV","cipher":"chacha20-ietf","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Large 香港05 - allmedia | MIEPL | 倍率:1.8","type":"ssr","server":"mysql.accessconnect.cc","port":6005,"password":"di15PV","cipher":"chacha20-ietf","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Large 香港06 - nf | MIEPL | 倍率:1.8","type":"ssr","server":"mysql.accessconnect.cc","port":6006,"password":"di15PV","cipher":"chacha20-ietf","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8","type":"ssr","server":"mysql.accessconnect.cc","port":6007,"password":"di15PV","cipher":"chacha20-ietf","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Large 香港08 - all | IEPL | 倍率:1.6","type":"ssr","server":"mysql.accessconnect.cc","port":6008,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Large 香港09 - nf | IEPL | 倍率:1.6","type":"ssr","server":"mysql.accessconnect.cc","port":6009,"password":"di15PV","cipher":"chacha20-ietf","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Large 香港10 - nf | IEPL | 倍率:1.6","type":"ssr","server":"mysql.accessconnect.cc","port":6010,"password":"di15PV","cipher":"chacha20-ietf","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Large 香港11 - nf | IEPL | 倍率:1.6","type":"ssr","server":"mysql.accessconnect.cc","port":6011,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Large 香港12 - nf | IEPL | 倍率:1.6","type":"ssr","server":"mysql.accessconnect.cc","port":6012,"password":"di15PV","cipher":"chacha20-ietf","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Large 香港13 - all | IEPL | 倍率:1.6","type":"ssr","server":"mysql.accessconnect.cc","port":6013,"password":"di15PV","cipher":"chacha20-ietf","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6","type":"ssr","server":"mysql.accessconnect.cc","port":6014,"password":"di15PV","cipher":"chacha20-ietf","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6","type":"ssr","server":"mysql.accessconnect.cc","port":6015,"password":"di15PV","cipher":"chacha20-ietf","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6","type":"ssr","server":"mysql.accessconnect.cc","port":6016,"password":"di15PV","cipher":"chacha20-ietf","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Large 香港17 - all | IEPL | 倍率:1.8","type":"ssr","server":"mysql.accessconnect.cc","port":6017,"password":"di15PV","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Large 香港18 - nf | IEPL | 倍率:1.8","type":"ssr","server":"mysql.accessconnect.cc","port":6018,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Large 香港19 - allmedia | MIEPL | 倍率:1.6","type":"ssr","server":"mysql.accessconnect.cc","port":6019,"password":"di15PV","cipher":"chacha20-ietf","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Large 香港20 - nf | IEPL | 倍率:1.6","type":"ssr","server":"mysql.accessconnect.cc","port":6020,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6","type":"ssr","server":"mysql.accessconnect.cc","port":6021,"password":"di15PV","cipher":"chacha20-ietf","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Large 香港22 - nf | IEPL | 倍率:1.8","type":"ssr","server":"mysql.accessconnect.cc","port":6022,"password":"di15PV","cipher":"chacha20-ietf","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Large 香港23 - nfo | IEPL | 倍率:1.6","type":"ssr","server":"mysql.accessconnect.cc","port":3725,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Large 香港24 - nfo | IEPL | 倍率:1.6","type":"ssr","server":"mysql.accessconnect.cc","port":3726,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇷🇺 Lil 俄罗斯01 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":1104,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇨🇦 Lil 加拿大1 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":1103,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇮🇳 Lil 印度01 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":2701,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇮🇳 Lil 印度02 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":2702,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇨🇳 Lil 台湾01 | IEPL | 倍率:1.5","type":"ssr","server":"sql.accessconnect.cc","port":1111,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇨🇳 Lil 台湾02 | IEPL| 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":1112,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇨🇳 Lil 台湾03 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":1113,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇨🇳 Lil 台湾04 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":1114,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇨🇳 Lil 台湾05 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":1115,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇨🇳 Lil 台湾06 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":1116,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇧🇷 Lil 巴西1 | IEPL | 倍率:1.5","type":"ssr","server":"sql.accessconnect.cc","port":1107,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇩🇪 Lil 德国1 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":2401,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇩🇪 Lil 德国2 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":2402,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇩🇪 Lil 德国3 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":2403,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇸🇬 Lil 新加坡01 | IEPL | 倍率:1.5","type":"ssr","server":"sql.accessconnect.cc","port":2201,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇸🇬 Lil 新加坡02 | IEPL | 倍率:1.5","type":"ssr","server":"sql.accessconnect.cc","port":2202,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇸🇬 Lil 新加坡03 | IEPL | 倍率:1.5","type":"ssr","server":"sql.accessconnect.cc","port":2203,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇸🇬 Lil 新加坡04 | IEPL | 倍率:2","type":"ssr","server":"sql.accessconnect.cc","port":2002,"password":"di15PV","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇸🇬 Lil 新加坡05 | IEPL | 倍率:2","type":"ssr","server":"sql.accessconnect.cc","port":2003,"password":"di15PV","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇯🇵 Lil 日本01 | IEPL | 倍率:1.5","type":"ssr","server":"sql.accessconnect.cc","port":2601,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇯🇵 Lil 日本02 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":2602,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇯🇵 Lil 日本03 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":2603,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇯🇵 Lil 日本04 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":2604,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇯🇵 Lil 日本05 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":2605,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇯🇵 Lil 日本06 | IEPL | 倍率:2","type":"ssr","server":"sql.accessconnect.cc","port":1097,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇺🇸 Lil 美国01 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":1150,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇺🇸 Lil 美国02 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":1151,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇺🇸 Lil 美国03 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":1152,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇺🇸 Lil 美国04 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":1153,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇺🇸 Lil 美国05 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":1154,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇺🇸 Lil 美国06 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":1155,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇺🇸 Lil 美国07 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":1156,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇺🇸 Lil 美国08 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":1157,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇺🇸 Lil 美国09 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":1158,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇺🇸 Lil 美国10 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":1159,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇺🇸 Lil 美国11 | IEPL | 倍率:2","type":"ssr","server":"sql.accessconnect.cc","port":874,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇬🇧 Lil 英国1 | IEPL | 倍率:1.6","type":"ssr","server":"sql.accessconnect.cc","port":1601,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇬🇧 Lil 英国2 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":1602,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇬🇧 Lil 英国3 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":1603,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇬🇧 Lil 英国4 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":1604,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇬🇧 Lil 英国5 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":1605,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇬🇧 Lil 英国6 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":1606,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇳🇱 Lil 荷兰1 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":1700,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇵🇭 Lil 菲律宾01 | IEPL | 倍率:1.3","type":"ssr","server":"sql.accessconnect.cc","port":1105,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇰🇷 Lil 韩国01 | IEPL | 倍率:1.5","type":"ssr","server":"sql.accessconnect.cc","port":2301,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇰🇷 Lil 韩国02 | IEPL | 倍率:1.5","type":"ssr","server":"sql.accessconnect.cc","port":2302,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇰🇷 Lil 韩国03 | IEPL | 倍率:1.5","type":"ssr","server":"sql.accessconnect.cc","port":2303,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇰🇷 Lil 韩国04 | IEPL | 倍率:2","type":"ssr","server":"sql.accessconnect.cc","port":2506,"password":"di15PV","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇰🇷 Lil 韩国05 | IEPL | 倍率:2","type":"ssr","server":"sql.accessconnect.cc","port":2507,"password":"di15PV","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Lil 香港01 | IEPL | 倍率:1.8","type":"ssr","server":"sql.accessconnect.cc","port":2101,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Lil 香港02 | IEPL | 倍率:1.8","type":"ssr","server":"sql.accessconnect.cc","port":2102,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Lil 香港03 | IEPL | 倍率:1.6","type":"ssr","server":"sql.accessconnect.cc","port":2103,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Lil 香港04 | IEPL | 倍率:1.6","type":"ssr","server":"sql.accessconnect.cc","port":2104,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Lil 香港05 | IEPL | 倍率:1.5","type":"ssr","server":"sql.accessconnect.cc","port":2105,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Lil 香港06 | IEPL | 倍率:1.5","type":"ssr","server":"sql.accessconnect.cc","port":2106,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Lil 香港07 | IEPL | 倍率:1.5","type":"ssr","server":"sql.accessconnect.cc","port":2107,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Lil 香港08 | IEPL | 倍率:1.5","type":"ssr","server":"sql.accessconnect.cc","port":2108,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Lil 香港09 | IEPL | 倍率:1.6","type":"ssr","server":"sql.accessconnect.cc","port":2109,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Lil 香港10 | IEPL | 倍率:1.6","type":"ssr","server":"sql.accessconnect.cc","port":2110,"password":"di15PV","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Lil 香港11 | IEPL | 倍率:3","type":"ssr","server":"sql.accessconnect.cc","port":2111,"password":"di15PV","cipher":"rc4-md5","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Lil 香港12 | IEPL | 倍率:3","type":"ssr","server":"sql.accessconnect.cc","port":2112,"password":"di15PV","cipher":"chacha20-ietf","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇯🇵 Play1 日本 - 遊戲專用|視頻限速 | 倍率:20","type":"ssr","server":"oobies9f.nodedata.net","port":555,"password":"di15PV","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇭🇰 Play2 香港 - 遊戲專用|視頻限速 | 倍率:20","type":"ssr","server":"oracle.accessconnect.cc","port":520,"password":"di15PV","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
+  - {"name":"🇨🇳 Play3 台湾 - 遊戲專用|視頻限速 | 倍率:20","type":"ssr","server":"oracle.accessconnect.cc","port":11130,"password":"di15PV","cipher":"chacha20-ietf","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"8443f83013.www.gov.hk","protocol-param":"83013:lrh5bO"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - example1
+      - example2
+      - hysteria_meta_0_1
+      - hysteria_meta_0_2
+      - hysteria_meta_1
+      - hysteria_meta_2
+      - hysteria_meta_3
+      - hysteria_meta_4
+      - hysteria_meta_5
+      - hysteria_meta_6
       - defaultName
+      - hysteria_meta_8
+      - hysteria_meta_9
+      - hysteria_0
+      - hysteria_1
+      - hysteria_2
+      - hysteria_3
+      - hysteria2_0
+      - hysteria2_1
+      - hysteria2_2
+      - hysteria2_3
+      - 🇨🇳 Large 台灣02 - IEPL | 倍率:1.8
+      - 🇨🇳 Large 台灣03 - IEPL | 倍率:1.6
+      - 🇨🇳 Large 台灣04 - IEPL | 倍率:1.5
+      - 🇨🇳 Large 台灣05 - IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡01 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡02 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡03 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡04 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡05 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡06 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡07 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡08 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡09 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡10 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡11 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡12 - all | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本01 - all | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本02 - allmedia | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本03 - allmedia | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本04 - allmedia | IEPL | 倍率:1.3
+      - 🇯🇵 Large 日本05 - allmedia | IEPL | 倍率:1.3
+      - 🇺🇸 Large 美国01 - allmedia | IEPL | 倍率:1.8
+      - 🇺🇸 Large 美国02 - nf&hbo&hulu | IEPL | 倍率:1.6
+      - 🇺🇸 Large 美国03 - nf&hbo&hulu | IEPL | 倍率:1.6
+      - 🇺🇸 Large 美国04 - allmedia | IEPL | 倍率:1.5
+      - 🇺🇸 Large 美国05 - allmedia | IEPL | 倍率:1.5
+      - 🇰🇷 Large 韩国01 - nf | MIEPL | 倍率:1.6
+      - 🇰🇷 Large 韩国02 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港05 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港06 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港08 - all | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港09 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港10 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港11 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港12 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港13 - all | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港17 - all | IEPL | 倍率:1.8
+      - 🇭🇰 Large 香港18 - nf | IEPL | 倍率:1.8
+      - 🇭🇰 Large 香港19 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港20 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港22 - nf | IEPL | 倍率:1.8
+      - 🇭🇰 Large 香港23 - nfo | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港24 - nfo | IEPL | 倍率:1.6
+      - 🇷🇺 Lil 俄罗斯01 | IEPL | 倍率:1.3
+      - 🇨🇦 Lil 加拿大1 | IEPL | 倍率:1.3
+      - 🇮🇳 Lil 印度01 | IEPL | 倍率:1.3
+      - 🇮🇳 Lil 印度02 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾01 | IEPL | 倍率:1.5
+      - 🇨🇳 Lil 台湾02 | IEPL| 倍率:1.3
+      - 🇨🇳 Lil 台湾03 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾04 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾05 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾06 | IEPL | 倍率:1.3
+      - 🇧🇷 Lil 巴西1 | IEPL | 倍率:1.5
+      - 🇩🇪 Lil 德国1 | IEPL | 倍率:1.3
+      - 🇩🇪 Lil 德国2 | IEPL | 倍率:1.3
+      - 🇩🇪 Lil 德国3 | IEPL | 倍率:1.3
+      - 🇸🇬 Lil 新加坡01 | IEPL | 倍率:1.5
+      - 🇸🇬 Lil 新加坡02 | IEPL | 倍率:1.5
+      - 🇸🇬 Lil 新加坡03 | IEPL | 倍率:1.5
+      - 🇸🇬 Lil 新加坡04 | IEPL | 倍率:2
+      - 🇸🇬 Lil 新加坡05 | IEPL | 倍率:2
+      - 🇯🇵 Lil 日本01 | IEPL | 倍率:1.5
+      - 🇯🇵 Lil 日本02 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本03 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本04 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本05 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本06 | IEPL | 倍率:2
+      - 🇺🇸 Lil 美国01 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国02 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国03 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国04 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国05 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国06 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国07 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国08 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国09 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国10 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国11 | IEPL | 倍率:2
+      - 🇬🇧 Lil 英国1 | IEPL | 倍率:1.6
+      - 🇬🇧 Lil 英国2 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国3 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国4 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国5 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国6 | IEPL | 倍率:1.3
+      - 🇳🇱 Lil 荷兰1 | IEPL | 倍率:1.3
+      - 🇵🇭 Lil 菲律宾01 | IEPL | 倍率:1.3
+      - 🇰🇷 Lil 韩国01 | IEPL | 倍率:1.5
+      - 🇰🇷 Lil 韩国02 | IEPL | 倍率:1.5
+      - 🇰🇷 Lil 韩国03 | IEPL | 倍率:1.5
+      - 🇰🇷 Lil 韩国04 | IEPL | 倍率:2
+      - 🇰🇷 Lil 韩国05 | IEPL | 倍率:2
+      - 🇭🇰 Lil 香港01 | IEPL | 倍率:1.8
+      - 🇭🇰 Lil 香港02 | IEPL | 倍率:1.8
+      - 🇭🇰 Lil 香港03 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港04 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港05 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港06 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港07 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港08 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港09 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港10 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港11 | IEPL | 倍率:3
+      - 🇭🇰 Lil 香港12 | IEPL | 倍率:3
+      - 🇯🇵 Play1 日本 - 遊戲專用|視頻限速 | 倍率:20
+      - 🇭🇰 Play2 香港 - 遊戲專用|視頻限速 | 倍率:20
+      - 🇨🇳 Play3 台湾 - 遊戲專用|視頻限速 | 倍率:20
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - example1
+      - example2
+      - hysteria_meta_0_1
+      - hysteria_meta_0_2
+      - hysteria_meta_1
+      - hysteria_meta_2
+      - hysteria_meta_3
+      - hysteria_meta_4
+      - hysteria_meta_5
+      - hysteria_meta_6
       - defaultName
+      - hysteria_meta_8
+      - hysteria_meta_9
+      - hysteria_0
+      - hysteria_1
+      - hysteria_2
+      - hysteria_3
+      - hysteria2_0
+      - hysteria2_1
+      - hysteria2_2
+      - hysteria2_3
+      - 🇨🇳 Large 台灣02 - IEPL | 倍率:1.8
+      - 🇨🇳 Large 台灣03 - IEPL | 倍率:1.6
+      - 🇨🇳 Large 台灣04 - IEPL | 倍率:1.5
+      - 🇨🇳 Large 台灣05 - IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡01 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡02 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡03 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡04 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡05 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡06 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡07 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡08 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡09 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡10 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡11 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡12 - all | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本01 - all | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本02 - allmedia | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本03 - allmedia | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本04 - allmedia | IEPL | 倍率:1.3
+      - 🇯🇵 Large 日本05 - allmedia | IEPL | 倍率:1.3
+      - 🇺🇸 Large 美国01 - allmedia | IEPL | 倍率:1.8
+      - 🇺🇸 Large 美国02 - nf&hbo&hulu | IEPL | 倍率:1.6
+      - 🇺🇸 Large 美国03 - nf&hbo&hulu | IEPL | 倍率:1.6
+      - 🇺🇸 Large 美国04 - allmedia | IEPL | 倍率:1.5
+      - 🇺🇸 Large 美国05 - allmedia | IEPL | 倍率:1.5
+      - 🇰🇷 Large 韩国01 - nf | MIEPL | 倍率:1.6
+      - 🇰🇷 Large 韩国02 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港05 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港06 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港08 - all | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港09 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港10 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港11 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港12 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港13 - all | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港17 - all | IEPL | 倍率:1.8
+      - 🇭🇰 Large 香港18 - nf | IEPL | 倍率:1.8
+      - 🇭🇰 Large 香港19 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港20 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港22 - nf | IEPL | 倍率:1.8
+      - 🇭🇰 Large 香港23 - nfo | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港24 - nfo | IEPL | 倍率:1.6
+      - 🇷🇺 Lil 俄罗斯01 | IEPL | 倍率:1.3
+      - 🇨🇦 Lil 加拿大1 | IEPL | 倍率:1.3
+      - 🇮🇳 Lil 印度01 | IEPL | 倍率:1.3
+      - 🇮🇳 Lil 印度02 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾01 | IEPL | 倍率:1.5
+      - 🇨🇳 Lil 台湾02 | IEPL| 倍率:1.3
+      - 🇨🇳 Lil 台湾03 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾04 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾05 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾06 | IEPL | 倍率:1.3
+      - 🇧🇷 Lil 巴西1 | IEPL | 倍率:1.5
+      - 🇩🇪 Lil 德国1 | IEPL | 倍率:1.3
+      - 🇩🇪 Lil 德国2 | IEPL | 倍率:1.3
+      - 🇩🇪 Lil 德国3 | IEPL | 倍率:1.3
+      - 🇸🇬 Lil 新加坡01 | IEPL | 倍率:1.5
+      - 🇸🇬 Lil 新加坡02 | IEPL | 倍率:1.5
+      - 🇸🇬 Lil 新加坡03 | IEPL | 倍率:1.5
+      - 🇸🇬 Lil 新加坡04 | IEPL | 倍率:2
+      - 🇸🇬 Lil 新加坡05 | IEPL | 倍率:2
+      - 🇯🇵 Lil 日本01 | IEPL | 倍率:1.5
+      - 🇯🇵 Lil 日本02 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本03 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本04 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本05 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本06 | IEPL | 倍率:2
+      - 🇺🇸 Lil 美国01 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国02 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国03 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国04 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国05 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国06 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国07 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国08 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国09 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国10 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国11 | IEPL | 倍率:2
+      - 🇬🇧 Lil 英国1 | IEPL | 倍率:1.6
+      - 🇬🇧 Lil 英国2 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国3 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国4 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国5 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国6 | IEPL | 倍率:1.3
+      - 🇳🇱 Lil 荷兰1 | IEPL | 倍率:1.3
+      - 🇵🇭 Lil 菲律宾01 | IEPL | 倍率:1.3
+      - 🇰🇷 Lil 韩国01 | IEPL | 倍率:1.5
+      - 🇰🇷 Lil 韩国02 | IEPL | 倍率:1.5
+      - 🇰🇷 Lil 韩国03 | IEPL | 倍率:1.5
+      - 🇰🇷 Lil 韩国04 | IEPL | 倍率:2
+      - 🇰🇷 Lil 韩国05 | IEPL | 倍率:2
+      - 🇭🇰 Lil 香港01 | IEPL | 倍率:1.8
+      - 🇭🇰 Lil 香港02 | IEPL | 倍率:1.8
+      - 🇭🇰 Lil 香港03 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港04 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港05 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港06 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港07 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港08 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港09 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港10 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港11 | IEPL | 倍率:3
+      - 🇭🇰 Lil 香港12 | IEPL | 倍率:3
+      - 🇯🇵 Play1 日本 - 遊戲專用|視頻限速 | 倍率:20
+      - 🇭🇰 Play2 香港 - 遊戲專用|視頻限速 | 倍率:20
+      - 🇨🇳 Play3 台湾 - 遊戲專用|視頻限速 | 倍率:20
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - example1
+      - example2
+      - hysteria_meta_0_1
+      - hysteria_meta_0_2
+      - hysteria_meta_1
+      - hysteria_meta_2
+      - hysteria_meta_3
+      - hysteria_meta_4
+      - hysteria_meta_5
+      - hysteria_meta_6
       - defaultName
+      - hysteria_meta_8
+      - hysteria_meta_9
+      - hysteria_0
+      - hysteria_1
+      - hysteria_2
+      - hysteria_3
+      - hysteria2_0
+      - hysteria2_1
+      - hysteria2_2
+      - hysteria2_3
+      - 🇨🇳 Large 台灣02 - IEPL | 倍率:1.8
+      - 🇨🇳 Large 台灣03 - IEPL | 倍率:1.6
+      - 🇨🇳 Large 台灣04 - IEPL | 倍率:1.5
+      - 🇨🇳 Large 台灣05 - IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡01 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡02 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡03 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡04 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡05 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡06 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡07 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡08 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡09 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡10 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡11 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡12 - all | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本01 - all | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本02 - allmedia | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本03 - allmedia | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本04 - allmedia | IEPL | 倍率:1.3
+      - 🇯🇵 Large 日本05 - allmedia | IEPL | 倍率:1.3
+      - 🇺🇸 Large 美国01 - allmedia | IEPL | 倍率:1.8
+      - 🇺🇸 Large 美国02 - nf&hbo&hulu | IEPL | 倍率:1.6
+      - 🇺🇸 Large 美国03 - nf&hbo&hulu | IEPL | 倍率:1.6
+      - 🇺🇸 Large 美国04 - allmedia | IEPL | 倍率:1.5
+      - 🇺🇸 Large 美国05 - allmedia | IEPL | 倍率:1.5
+      - 🇰🇷 Large 韩国01 - nf | MIEPL | 倍率:1.6
+      - 🇰🇷 Large 韩国02 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港05 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港06 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港08 - all | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港09 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港10 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港11 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港12 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港13 - all | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港17 - all | IEPL | 倍率:1.8
+      - 🇭🇰 Large 香港18 - nf | IEPL | 倍率:1.8
+      - 🇭🇰 Large 香港19 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港20 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港22 - nf | IEPL | 倍率:1.8
+      - 🇭🇰 Large 香港23 - nfo | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港24 - nfo | IEPL | 倍率:1.6
+      - 🇷🇺 Lil 俄罗斯01 | IEPL | 倍率:1.3
+      - 🇨🇦 Lil 加拿大1 | IEPL | 倍率:1.3
+      - 🇮🇳 Lil 印度01 | IEPL | 倍率:1.3
+      - 🇮🇳 Lil 印度02 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾01 | IEPL | 倍率:1.5
+      - 🇨🇳 Lil 台湾02 | IEPL| 倍率:1.3
+      - 🇨🇳 Lil 台湾03 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾04 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾05 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾06 | IEPL | 倍率:1.3
+      - 🇧🇷 Lil 巴西1 | IEPL | 倍率:1.5
+      - 🇩🇪 Lil 德国1 | IEPL | 倍率:1.3
+      - 🇩🇪 Lil 德国2 | IEPL | 倍率:1.3
+      - 🇩🇪 Lil 德国3 | IEPL | 倍率:1.3
+      - 🇸🇬 Lil 新加坡01 | IEPL | 倍率:1.5
+      - 🇸🇬 Lil 新加坡02 | IEPL | 倍率:1.5
+      - 🇸🇬 Lil 新加坡03 | IEPL | 倍率:1.5
+      - 🇸🇬 Lil 新加坡04 | IEPL | 倍率:2
+      - 🇸🇬 Lil 新加坡05 | IEPL | 倍率:2
+      - 🇯🇵 Lil 日本01 | IEPL | 倍率:1.5
+      - 🇯🇵 Lil 日本02 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本03 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本04 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本05 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本06 | IEPL | 倍率:2
+      - 🇺🇸 Lil 美国01 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国02 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国03 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国04 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国05 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国06 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国07 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国08 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国09 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国10 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国11 | IEPL | 倍率:2
+      - 🇬🇧 Lil 英国1 | IEPL | 倍率:1.6
+      - 🇬🇧 Lil 英国2 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国3 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国4 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国5 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国6 | IEPL | 倍率:1.3
+      - 🇳🇱 Lil 荷兰1 | IEPL | 倍率:1.3
+      - 🇵🇭 Lil 菲律宾01 | IEPL | 倍率:1.3
+      - 🇰🇷 Lil 韩国01 | IEPL | 倍率:1.5
+      - 🇰🇷 Lil 韩国02 | IEPL | 倍率:1.5
+      - 🇰🇷 Lil 韩国03 | IEPL | 倍率:1.5
+      - 🇰🇷 Lil 韩国04 | IEPL | 倍率:2
+      - 🇰🇷 Lil 韩国05 | IEPL | 倍率:2
+      - 🇭🇰 Lil 香港01 | IEPL | 倍率:1.8
+      - 🇭🇰 Lil 香港02 | IEPL | 倍率:1.8
+      - 🇭🇰 Lil 香港03 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港04 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港05 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港06 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港07 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港08 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港09 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港10 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港11 | IEPL | 倍率:3
+      - 🇭🇰 Lil 香港12 | IEPL | 倍率:3
+      - 🇯🇵 Play1 日本 - 遊戲專用|視頻限速 | 倍率:20
+      - 🇭🇰 Play2 香港 - 遊戲專用|視頻限速 | 倍率:20
+      - 🇨🇳 Play3 台湾 - 遊戲專用|視頻限速 | 倍率:20
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - example1
+      - example2
+      - hysteria_meta_0_1
+      - hysteria_meta_0_2
+      - hysteria_meta_1
+      - hysteria_meta_2
+      - hysteria_meta_3
+      - hysteria_meta_4
+      - hysteria_meta_5
+      - hysteria_meta_6
       - defaultName
+      - hysteria_meta_8
+      - hysteria_meta_9
+      - hysteria_0
+      - hysteria_1
+      - hysteria_2
+      - hysteria_3
+      - hysteria2_0
+      - hysteria2_1
+      - hysteria2_2
+      - hysteria2_3
+      - 🇨🇳 Large 台灣02 - IEPL | 倍率:1.8
+      - 🇨🇳 Large 台灣03 - IEPL | 倍率:1.6
+      - 🇨🇳 Large 台灣04 - IEPL | 倍率:1.5
+      - 🇨🇳 Large 台灣05 - IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡01 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡02 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡03 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡04 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡05 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡06 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡07 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡08 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡09 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡10 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡11 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡12 - all | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本01 - all | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本02 - allmedia | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本03 - allmedia | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本04 - allmedia | IEPL | 倍率:1.3
+      - 🇯🇵 Large 日本05 - allmedia | IEPL | 倍率:1.3
+      - 🇺🇸 Large 美国01 - allmedia | IEPL | 倍率:1.8
+      - 🇺🇸 Large 美国02 - nf&hbo&hulu | IEPL | 倍率:1.6
+      - 🇺🇸 Large 美国03 - nf&hbo&hulu | IEPL | 倍率:1.6
+      - 🇺🇸 Large 美国04 - allmedia | IEPL | 倍率:1.5
+      - 🇺🇸 Large 美国05 - allmedia | IEPL | 倍率:1.5
+      - 🇰🇷 Large 韩国01 - nf | MIEPL | 倍率:1.6
+      - 🇰🇷 Large 韩国02 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港05 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港06 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港08 - all | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港09 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港10 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港11 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港12 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港13 - all | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港17 - all | IEPL | 倍率:1.8
+      - 🇭🇰 Large 香港18 - nf | IEPL | 倍率:1.8
+      - 🇭🇰 Large 香港19 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港20 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港22 - nf | IEPL | 倍率:1.8
+      - 🇭🇰 Large 香港23 - nfo | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港24 - nfo | IEPL | 倍率:1.6
+      - 🇷🇺 Lil 俄罗斯01 | IEPL | 倍率:1.3
+      - 🇨🇦 Lil 加拿大1 | IEPL | 倍率:1.3
+      - 🇮🇳 Lil 印度01 | IEPL | 倍率:1.3
+      - 🇮🇳 Lil 印度02 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾01 | IEPL | 倍率:1.5
+      - 🇨🇳 Lil 台湾02 | IEPL| 倍率:1.3
+      - 🇨🇳 Lil 台湾03 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾04 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾05 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾06 | IEPL | 倍率:1.3
+      - 🇧🇷 Lil 巴西1 | IEPL | 倍率:1.5
+      - 🇩🇪 Lil 德国1 | IEPL | 倍率:1.3
+      - 🇩🇪 Lil 德国2 | IEPL | 倍率:1.3
+      - 🇩🇪 Lil 德国3 | IEPL | 倍率:1.3
+      - 🇸🇬 Lil 新加坡01 | IEPL | 倍率:1.5
+      - 🇸🇬 Lil 新加坡02 | IEPL | 倍率:1.5
+      - 🇸🇬 Lil 新加坡03 | IEPL | 倍率:1.5
+      - 🇸🇬 Lil 新加坡04 | IEPL | 倍率:2
+      - 🇸🇬 Lil 新加坡05 | IEPL | 倍率:2
+      - 🇯🇵 Lil 日本01 | IEPL | 倍率:1.5
+      - 🇯🇵 Lil 日本02 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本03 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本04 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本05 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本06 | IEPL | 倍率:2
+      - 🇺🇸 Lil 美国01 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国02 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国03 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国04 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国05 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国06 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国07 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国08 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国09 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国10 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国11 | IEPL | 倍率:2
+      - 🇬🇧 Lil 英国1 | IEPL | 倍率:1.6
+      - 🇬🇧 Lil 英国2 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国3 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国4 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国5 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国6 | IEPL | 倍率:1.3
+      - 🇳🇱 Lil 荷兰1 | IEPL | 倍率:1.3
+      - 🇵🇭 Lil 菲律宾01 | IEPL | 倍率:1.3
+      - 🇰🇷 Lil 韩国01 | IEPL | 倍率:1.5
+      - 🇰🇷 Lil 韩国02 | IEPL | 倍率:1.5
+      - 🇰🇷 Lil 韩国03 | IEPL | 倍率:1.5
+      - 🇰🇷 Lil 韩国04 | IEPL | 倍率:2
+      - 🇰🇷 Lil 韩国05 | IEPL | 倍率:2
+      - 🇭🇰 Lil 香港01 | IEPL | 倍率:1.8
+      - 🇭🇰 Lil 香港02 | IEPL | 倍率:1.8
+      - 🇭🇰 Lil 香港03 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港04 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港05 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港06 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港07 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港08 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港09 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港10 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港11 | IEPL | 倍率:3
+      - 🇭🇰 Lil 香港12 | IEPL | 倍率:3
+      - 🇯🇵 Play1 日本 - 遊戲專用|視頻限速 | 倍率:20
+      - 🇭🇰 Play2 香港 - 遊戲專用|視頻限速 | 倍率:20
+      - 🇨🇳 Play3 台湾 - 遊戲專用|視頻限速 | 倍率:20
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - example1
+      - example2
+      - hysteria_meta_0_1
+      - hysteria_meta_0_2
+      - hysteria_meta_1
+      - hysteria_meta_2
+      - hysteria_meta_3
+      - hysteria_meta_4
+      - hysteria_meta_5
+      - hysteria_meta_6
       - defaultName
+      - hysteria_meta_8
+      - hysteria_meta_9
+      - hysteria_0
+      - hysteria_1
+      - hysteria_2
+      - hysteria_3
+      - hysteria2_0
+      - hysteria2_1
+      - hysteria2_2
+      - hysteria2_3
+      - 🇨🇳 Large 台灣02 - IEPL | 倍率:1.8
+      - 🇨🇳 Large 台灣03 - IEPL | 倍率:1.6
+      - 🇨🇳 Large 台灣04 - IEPL | 倍率:1.5
+      - 🇨🇳 Large 台灣05 - IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡01 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡02 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡03 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡04 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡05 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡06 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡07 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡08 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡09 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡10 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡11 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡12 - all | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本01 - all | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本02 - allmedia | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本03 - allmedia | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本04 - allmedia | IEPL | 倍率:1.3
+      - 🇯🇵 Large 日本05 - allmedia | IEPL | 倍率:1.3
+      - 🇺🇸 Large 美国01 - allmedia | IEPL | 倍率:1.8
+      - 🇺🇸 Large 美国02 - nf&hbo&hulu | IEPL | 倍率:1.6
+      - 🇺🇸 Large 美国03 - nf&hbo&hulu | IEPL | 倍率:1.6
+      - 🇺🇸 Large 美国04 - allmedia | IEPL | 倍率:1.5
+      - 🇺🇸 Large 美国05 - allmedia | IEPL | 倍率:1.5
+      - 🇰🇷 Large 韩国01 - nf | MIEPL | 倍率:1.6
+      - 🇰🇷 Large 韩国02 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港05 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港06 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港08 - all | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港09 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港10 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港11 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港12 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港13 - all | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港17 - all | IEPL | 倍率:1.8
+      - 🇭🇰 Large 香港18 - nf | IEPL | 倍率:1.8
+      - 🇭🇰 Large 香港19 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港20 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港22 - nf | IEPL | 倍率:1.8
+      - 🇭🇰 Large 香港23 - nfo | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港24 - nfo | IEPL | 倍率:1.6
+      - 🇷🇺 Lil 俄罗斯01 | IEPL | 倍率:1.3
+      - 🇨🇦 Lil 加拿大1 | IEPL | 倍率:1.3
+      - 🇮🇳 Lil 印度01 | IEPL | 倍率:1.3
+      - 🇮🇳 Lil 印度02 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾01 | IEPL | 倍率:1.5
+      - 🇨🇳 Lil 台湾02 | IEPL| 倍率:1.3
+      - 🇨🇳 Lil 台湾03 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾04 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾05 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾06 | IEPL | 倍率:1.3
+      - 🇧🇷 Lil 巴西1 | IEPL | 倍率:1.5
+      - 🇩🇪 Lil 德国1 | IEPL | 倍率:1.3
+      - 🇩🇪 Lil 德国2 | IEPL | 倍率:1.3
+      - 🇩🇪 Lil 德国3 | IEPL | 倍率:1.3
+      - 🇸🇬 Lil 新加坡01 | IEPL | 倍率:1.5
+      - 🇸🇬 Lil 新加坡02 | IEPL | 倍率:1.5
+      - 🇸🇬 Lil 新加坡03 | IEPL | 倍率:1.5
+      - 🇸🇬 Lil 新加坡04 | IEPL | 倍率:2
+      - 🇸🇬 Lil 新加坡05 | IEPL | 倍率:2
+      - 🇯🇵 Lil 日本01 | IEPL | 倍率:1.5
+      - 🇯🇵 Lil 日本02 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本03 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本04 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本05 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本06 | IEPL | 倍率:2
+      - 🇺🇸 Lil 美国01 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国02 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国03 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国04 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国05 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国06 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国07 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国08 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国09 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国10 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国11 | IEPL | 倍率:2
+      - 🇬🇧 Lil 英国1 | IEPL | 倍率:1.6
+      - 🇬🇧 Lil 英国2 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国3 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国4 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国5 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国6 | IEPL | 倍率:1.3
+      - 🇳🇱 Lil 荷兰1 | IEPL | 倍率:1.3
+      - 🇵🇭 Lil 菲律宾01 | IEPL | 倍率:1.3
+      - 🇰🇷 Lil 韩国01 | IEPL | 倍率:1.5
+      - 🇰🇷 Lil 韩国02 | IEPL | 倍率:1.5
+      - 🇰🇷 Lil 韩国03 | IEPL | 倍率:1.5
+      - 🇰🇷 Lil 韩国04 | IEPL | 倍率:2
+      - 🇰🇷 Lil 韩国05 | IEPL | 倍率:2
+      - 🇭🇰 Lil 香港01 | IEPL | 倍率:1.8
+      - 🇭🇰 Lil 香港02 | IEPL | 倍率:1.8
+      - 🇭🇰 Lil 香港03 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港04 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港05 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港06 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港07 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港08 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港09 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港10 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港11 | IEPL | 倍率:3
+      - 🇭🇰 Lil 香港12 | IEPL | 倍率:3
+      - 🇯🇵 Play1 日本 - 遊戲專用|視頻限速 | 倍率:20
+      - 🇭🇰 Play2 香港 - 遊戲專用|視頻限速 | 倍率:20
+      - 🇨🇳 Play3 台湾 - 遊戲專用|視頻限速 | 倍率:20
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - example1
+      - example2
+      - hysteria_meta_0_1
+      - hysteria_meta_0_2
+      - hysteria_meta_1
+      - hysteria_meta_2
+      - hysteria_meta_3
+      - hysteria_meta_4
+      - hysteria_meta_5
+      - hysteria_meta_6
       - defaultName
+      - hysteria_meta_8
+      - hysteria_meta_9
+      - hysteria_0
+      - hysteria_1
+      - hysteria_2
+      - hysteria_3
+      - hysteria2_0
+      - hysteria2_1
+      - hysteria2_2
+      - hysteria2_3
+      - 🇨🇳 Large 台灣02 - IEPL | 倍率:1.8
+      - 🇨🇳 Large 台灣03 - IEPL | 倍率:1.6
+      - 🇨🇳 Large 台灣04 - IEPL | 倍率:1.5
+      - 🇨🇳 Large 台灣05 - IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡01 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡02 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡03 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡04 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡05 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡06 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡07 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡08 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡09 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡10 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡11 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡12 - all | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本01 - all | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本02 - allmedia | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本03 - allmedia | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本04 - allmedia | IEPL | 倍率:1.3
+      - 🇯🇵 Large 日本05 - allmedia | IEPL | 倍率:1.3
+      - 🇺🇸 Large 美国01 - allmedia | IEPL | 倍率:1.8
+      - 🇺🇸 Large 美国02 - nf&hbo&hulu | IEPL | 倍率:1.6
+      - 🇺🇸 Large 美国03 - nf&hbo&hulu | IEPL | 倍率:1.6
+      - 🇺🇸 Large 美国04 - allmedia | IEPL | 倍率:1.5
+      - 🇺🇸 Large 美国05 - allmedia | IEPL | 倍率:1.5
+      - 🇰🇷 Large 韩国01 - nf | MIEPL | 倍率:1.6
+      - 🇰🇷 Large 韩国02 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港05 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港06 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港08 - all | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港09 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港10 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港11 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港12 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港13 - all | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港17 - all | IEPL | 倍率:1.8
+      - 🇭🇰 Large 香港18 - nf | IEPL | 倍率:1.8
+      - 🇭🇰 Large 香港19 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港20 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港22 - nf | IEPL | 倍率:1.8
+      - 🇭🇰 Large 香港23 - nfo | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港24 - nfo | IEPL | 倍率:1.6
+      - 🇷🇺 Lil 俄罗斯01 | IEPL | 倍率:1.3
+      - 🇨🇦 Lil 加拿大1 | IEPL | 倍率:1.3
+      - 🇮🇳 Lil 印度01 | IEPL | 倍率:1.3
+      - 🇮🇳 Lil 印度02 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾01 | IEPL | 倍率:1.5
+      - 🇨🇳 Lil 台湾02 | IEPL| 倍率:1.3
+      - 🇨🇳 Lil 台湾03 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾04 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾05 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾06 | IEPL | 倍率:1.3
+      - 🇧🇷 Lil 巴西1 | IEPL | 倍率:1.5
+      - 🇩🇪 Lil 德国1 | IEPL | 倍率:1.3
+      - 🇩🇪 Lil 德国2 | IEPL | 倍率:1.3
+      - 🇩🇪 Lil 德国3 | IEPL | 倍率:1.3
+      - 🇸🇬 Lil 新加坡01 | IEPL | 倍率:1.5
+      - 🇸🇬 Lil 新加坡02 | IEPL | 倍率:1.5
+      - 🇸🇬 Lil 新加坡03 | IEPL | 倍率:1.5
+      - 🇸🇬 Lil 新加坡04 | IEPL | 倍率:2
+      - 🇸🇬 Lil 新加坡05 | IEPL | 倍率:2
+      - 🇯🇵 Lil 日本01 | IEPL | 倍率:1.5
+      - 🇯🇵 Lil 日本02 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本03 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本04 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本05 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本06 | IEPL | 倍率:2
+      - 🇺🇸 Lil 美国01 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国02 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国03 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国04 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国05 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国06 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国07 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国08 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国09 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国10 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国11 | IEPL | 倍率:2
+      - 🇬🇧 Lil 英国1 | IEPL | 倍率:1.6
+      - 🇬🇧 Lil 英国2 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国3 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国4 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国5 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国6 | IEPL | 倍率:1.3
+      - 🇳🇱 Lil 荷兰1 | IEPL | 倍率:1.3
+      - 🇵🇭 Lil 菲律宾01 | IEPL | 倍率:1.3
+      - 🇰🇷 Lil 韩国01 | IEPL | 倍率:1.5
+      - 🇰🇷 Lil 韩国02 | IEPL | 倍率:1.5
+      - 🇰🇷 Lil 韩国03 | IEPL | 倍率:1.5
+      - 🇰🇷 Lil 韩国04 | IEPL | 倍率:2
+      - 🇰🇷 Lil 韩国05 | IEPL | 倍率:2
+      - 🇭🇰 Lil 香港01 | IEPL | 倍率:1.8
+      - 🇭🇰 Lil 香港02 | IEPL | 倍率:1.8
+      - 🇭🇰 Lil 香港03 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港04 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港05 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港06 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港07 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港08 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港09 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港10 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港11 | IEPL | 倍率:3
+      - 🇭🇰 Lil 香港12 | IEPL | 倍率:3
+      - 🇯🇵 Play1 日本 - 遊戲專用|視頻限速 | 倍率:20
+      - 🇭🇰 Play2 香港 - 遊戲專用|視頻限速 | 倍率:20
+      - 🇨🇳 Play3 台湾 - 遊戲專用|視頻限速 | 倍率:20
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -147,7 +1100,143 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - example1
+      - example2
+      - hysteria_meta_0_1
+      - hysteria_meta_0_2
+      - hysteria_meta_1
+      - hysteria_meta_2
+      - hysteria_meta_3
+      - hysteria_meta_4
+      - hysteria_meta_5
+      - hysteria_meta_6
       - defaultName
+      - hysteria_meta_8
+      - hysteria_meta_9
+      - hysteria_0
+      - hysteria_1
+      - hysteria_2
+      - hysteria_3
+      - hysteria2_0
+      - hysteria2_1
+      - hysteria2_2
+      - hysteria2_3
+      - 🇨🇳 Large 台灣02 - IEPL | 倍率:1.8
+      - 🇨🇳 Large 台灣03 - IEPL | 倍率:1.6
+      - 🇨🇳 Large 台灣04 - IEPL | 倍率:1.5
+      - 🇨🇳 Large 台灣05 - IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡01 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡02 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡03 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡04 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡05 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡06 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡07 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡08 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡09 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡10 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡11 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡12 - all | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本01 - all | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本02 - allmedia | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本03 - allmedia | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本04 - allmedia | IEPL | 倍率:1.3
+      - 🇯🇵 Large 日本05 - allmedia | IEPL | 倍率:1.3
+      - 🇺🇸 Large 美国01 - allmedia | IEPL | 倍率:1.8
+      - 🇺🇸 Large 美国02 - nf&hbo&hulu | IEPL | 倍率:1.6
+      - 🇺🇸 Large 美国03 - nf&hbo&hulu | IEPL | 倍率:1.6
+      - 🇺🇸 Large 美国04 - allmedia | IEPL | 倍率:1.5
+      - 🇺🇸 Large 美国05 - allmedia | IEPL | 倍率:1.5
+      - 🇰🇷 Large 韩国01 - nf | MIEPL | 倍率:1.6
+      - 🇰🇷 Large 韩国02 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港05 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港06 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港08 - all | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港09 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港10 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港11 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港12 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港13 - all | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港17 - all | IEPL | 倍率:1.8
+      - 🇭🇰 Large 香港18 - nf | IEPL | 倍率:1.8
+      - 🇭🇰 Large 香港19 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港20 - nf | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港22 - nf | IEPL | 倍率:1.8
+      - 🇭🇰 Large 香港23 - nfo | IEPL | 倍率:1.6
+      - 🇭🇰 Large 香港24 - nfo | IEPL | 倍率:1.6
+      - 🇷🇺 Lil 俄罗斯01 | IEPL | 倍率:1.3
+      - 🇨🇦 Lil 加拿大1 | IEPL | 倍率:1.3
+      - 🇮🇳 Lil 印度01 | IEPL | 倍率:1.3
+      - 🇮🇳 Lil 印度02 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾01 | IEPL | 倍率:1.5
+      - 🇨🇳 Lil 台湾02 | IEPL| 倍率:1.3
+      - 🇨🇳 Lil 台湾03 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾04 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾05 | IEPL | 倍率:1.3
+      - 🇨🇳 Lil 台湾06 | IEPL | 倍率:1.3
+      - 🇧🇷 Lil 巴西1 | IEPL | 倍率:1.5
+      - 🇩🇪 Lil 德国1 | IEPL | 倍率:1.3
+      - 🇩🇪 Lil 德国2 | IEPL | 倍率:1.3
+      - 🇩🇪 Lil 德国3 | IEPL | 倍率:1.3
+      - 🇸🇬 Lil 新加坡01 | IEPL | 倍率:1.5
+      - 🇸🇬 Lil 新加坡02 | IEPL | 倍率:1.5
+      - 🇸🇬 Lil 新加坡03 | IEPL | 倍率:1.5
+      - 🇸🇬 Lil 新加坡04 | IEPL | 倍率:2
+      - 🇸🇬 Lil 新加坡05 | IEPL | 倍率:2
+      - 🇯🇵 Lil 日本01 | IEPL | 倍率:1.5
+      - 🇯🇵 Lil 日本02 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本03 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本04 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本05 | IEPL | 倍率:1.3
+      - 🇯🇵 Lil 日本06 | IEPL | 倍率:2
+      - 🇺🇸 Lil 美国01 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国02 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国03 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国04 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国05 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国06 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国07 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国08 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国09 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国10 | IEPL | 倍率:1.3
+      - 🇺🇸 Lil 美国11 | IEPL | 倍率:2
+      - 🇬🇧 Lil 英国1 | IEPL | 倍率:1.6
+      - 🇬🇧 Lil 英国2 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国3 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国4 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国5 | IEPL | 倍率:1.3
+      - 🇬🇧 Lil 英国6 | IEPL | 倍率:1.3
+      - 🇳🇱 Lil 荷兰1 | IEPL | 倍率:1.3
+      - 🇵🇭 Lil 菲律宾01 | IEPL | 倍率:1.3
+      - 🇰🇷 Lil 韩国01 | IEPL | 倍率:1.5
+      - 🇰🇷 Lil 韩国02 | IEPL | 倍率:1.5
+      - 🇰🇷 Lil 韩国03 | IEPL | 倍率:1.5
+      - 🇰🇷 Lil 韩国04 | IEPL | 倍率:2
+      - 🇰🇷 Lil 韩国05 | IEPL | 倍率:2
+      - 🇭🇰 Lil 香港01 | IEPL | 倍率:1.8
+      - 🇭🇰 Lil 香港02 | IEPL | 倍率:1.8
+      - 🇭🇰 Lil 香港03 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港04 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港05 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港06 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港07 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港08 | IEPL | 倍率:1.5
+      - 🇭🇰 Lil 香港09 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港10 | IEPL | 倍率:1.6
+      - 🇭🇰 Lil 香港11 | IEPL | 倍率:3
+      - 🇭🇰 Lil 香港12 | IEPL | 倍率:3
+      - 🇯🇵 Play1 日本 - 遊戲專用|視頻限速 | 倍率:20
+      - 🇭🇰 Play2 香港 - 遊戲專用|視頻限速 | 倍率:20
+      - 🇨🇳 Play3 台湾 - 遊戲專用|視頻限速 | 倍率:20
 
 rules:
 # 本地/局域网地址
