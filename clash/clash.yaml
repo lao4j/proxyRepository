@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-03-05 02:02:09
+# 创建时间：2024-03-05 20:23:23
 # 使用模版：V2RaySE 默认模版
-# 节点数量：1
+# 节点数量：9
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,46 +86,102 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇯🇵 JP 日本 1","type":"vless","server":"47.101.62.249","port":443,"uuid":"dfb18c6f-731a-4898-a1c4-cc36c6055a90","tls":true,"servername":"w2.sylarsun.eu.org","network":"ws","ws-opts":{"path":"/?ed=2048"}}
+  - {"name":"cf3.qaz24244.top_1","type":"vless","server":"104.16.132.167","port":443,"uuid":"0b360450-3d58-4072-b5cf-f7593368eeb3","tls":true,"servername":"cf3.qaz24244.top","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cf3.qaz24244.top"}},"client-fingerprint":"randomized"}
+  - {"name":"cf3.qaz24244.top_2","type":"vless","server":"hkaa.sectigo.pp.ua","port":443,"uuid":"0b360450-3d58-4072-b5cf-f7593368eeb3","tls":true,"servername":"cf3.qaz24244.top","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cf3.qaz24244.top"}},"client-fingerprint":"randomized"}
+  - {"name":"cf3.qaz24244.top_3","type":"vless","server":"www.gpt123.one","port":443,"uuid":"0b360450-3d58-4072-b5cf-f7593368eeb3","tls":true,"servername":"cf3.qaz24244.top","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cf3.qaz24244.top"}},"client-fingerprint":"randomized"}
+  - {"name":"cf3.qaz24244.top_4","type":"vless","server":"104.16.132.167","port":443,"uuid":"0b360450-3d58-4072-b5cf-f7593368eeb3","tls":true,"servername":"cf3.qaz24244.top","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cf3.qaz24244.top"}},"client-fingerprint":"randomized"}
+  - {"name":"cf3.qaz24244.top_5","type":"vless","server":"maczaa.sectigo.pp.ua","port":443,"uuid":"0b360450-3d58-4072-b5cf-f7593368eeb3","tls":true,"servername":"cf3.qaz24244.top","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cf3.qaz24244.top"}},"client-fingerprint":"randomized"}
+  - {"name":"cf2.qaz24244.top","type":"vless","server":"nlff.geotrust.pp.ua","port":443,"uuid":"0b360450-3d58-4072-b5cf-f7593368eeb3","tls":true,"servername":"cf2.qaz24244.top","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cf2.qaz24244.top"}},"client-fingerprint":"randomized"}
+  - {"name":"cf3.qaz24244.top_6","type":"vless","server":"ip.sb","port":443,"uuid":"0b360450-3d58-4072-b5cf-f7593368eeb3","tls":true,"servername":"cf3.qaz24244.top","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cf3.qaz24244.top"}},"client-fingerprint":"randomized"}
+  - {"name":"cf3.qaz24244.top_7","type":"vless","server":"achk.cloudflarest.link","port":443,"uuid":"0b360450-3d58-4072-b5cf-f7593368eeb3","tls":true,"servername":"cf3.qaz24244.top","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cf3.qaz24244.top"}},"client-fingerprint":"randomized"}
+  - {"name":"cf3.qaz24244.top荷兰","type":"vless","server":"172.67.150.11","port":443,"uuid":"0b360450-3d58-4072-b5cf-f7593368eeb3","tls":true,"servername":"cf3.qaz24244.top","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cf3.qaz24244.top"}},"client-fingerprint":"randomized"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇯🇵 JP 日本 1
+      - cf3.qaz24244.top_1
+      - cf3.qaz24244.top_2
+      - cf3.qaz24244.top_3
+      - cf3.qaz24244.top_4
+      - cf3.qaz24244.top_5
+      - cf2.qaz24244.top
+      - cf3.qaz24244.top_6
+      - cf3.qaz24244.top_7
+      - cf3.qaz24244.top荷兰
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 JP 日本 1
+      - cf3.qaz24244.top_1
+      - cf3.qaz24244.top_2
+      - cf3.qaz24244.top_3
+      - cf3.qaz24244.top_4
+      - cf3.qaz24244.top_5
+      - cf2.qaz24244.top
+      - cf3.qaz24244.top_6
+      - cf3.qaz24244.top_7
+      - cf3.qaz24244.top荷兰
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 JP 日本 1
+      - cf3.qaz24244.top_1
+      - cf3.qaz24244.top_2
+      - cf3.qaz24244.top_3
+      - cf3.qaz24244.top_4
+      - cf3.qaz24244.top_5
+      - cf2.qaz24244.top
+      - cf3.qaz24244.top_6
+      - cf3.qaz24244.top_7
+      - cf3.qaz24244.top荷兰
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵 JP 日本 1
+      - cf3.qaz24244.top_1
+      - cf3.qaz24244.top_2
+      - cf3.qaz24244.top_3
+      - cf3.qaz24244.top_4
+      - cf3.qaz24244.top_5
+      - cf2.qaz24244.top
+      - cf3.qaz24244.top_6
+      - cf3.qaz24244.top_7
+      - cf3.qaz24244.top荷兰
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇯🇵 JP 日本 1
+      - cf3.qaz24244.top_1
+      - cf3.qaz24244.top_2
+      - cf3.qaz24244.top_3
+      - cf3.qaz24244.top_4
+      - cf3.qaz24244.top_5
+      - cf2.qaz24244.top
+      - cf3.qaz24244.top_6
+      - cf3.qaz24244.top_7
+      - cf3.qaz24244.top荷兰
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵 JP 日本 1
+      - cf3.qaz24244.top_1
+      - cf3.qaz24244.top_2
+      - cf3.qaz24244.top_3
+      - cf3.qaz24244.top_4
+      - cf3.qaz24244.top_5
+      - cf2.qaz24244.top
+      - cf3.qaz24244.top_6
+      - cf3.qaz24244.top_7
+      - cf3.qaz24244.top荷兰
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -148,7 +204,15 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 JP 日本 1
+      - cf3.qaz24244.top_1
+      - cf3.qaz24244.top_2
+      - cf3.qaz24244.top_3
+      - cf3.qaz24244.top_4
+      - cf3.qaz24244.top_5
+      - cf2.qaz24244.top
+      - cf3.qaz24244.top_6
+      - cf3.qaz24244.top_7
+      - cf3.qaz24244.top荷兰
 
 rules:
 # 本地/局域网地址
