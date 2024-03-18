@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-03-17 23:31:17
+# 创建时间：2024-03-18 02:13:48
 # 使用模版：V2RaySE 默认模版
-# 节点数量：3
+# 节点数量：1
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,60 +86,46 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇭🇰HK_e28b+@WangCai_8_1","type":"vless","server":"8.217.239.116","port":80,"uuid":"e28bb3f8-e64a-4419-9496-33c46220354b","tls":false,"servername":"sdgf.bdfstt.sbs","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"sdgf.bdfstt.sbs"}}}
-  - {"name":"🇭🇰HK_e28b+@WangCai_8_2","type":"vless","server":"8.217.239.116","port":2052,"uuid":"e28bb3f8-e64a-4419-9496-33c46220354b","tls":false,"servername":"sdgf.bdfstt.sbs","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"sdgf.bdfstt.sbs"}}}
-  - {"name":"🇭🇰HK_e28b+@WangCai_8_3","type":"vless","server":"8.217.239.116","port":2082,"uuid":"e28bb3f8-e64a-4419-9496-33c46220354b","tls":false,"servername":"sdgf.bdfstt.sbs","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"sdgf.bdfstt.sbs"}}}
+  - {"name":"CF\r","type":"vless","server":"cdn-hk.bestup.eu.org","port":80,"uuid":"531a0a29-8221-414f-8861-9b336ec9481e","tls":false,"servername":"cdn-hk.bestup.eu.org","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cdn-hk.bestup.eu.org"}},"client-fingerprint":"randomized"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰HK_e28b+@WangCai_8_1
-      - 🇭🇰HK_e28b+@WangCai_8_2
-      - 🇭🇰HK_e28b+@WangCai_8_3
+      - "CF\r"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰HK_e28b+@WangCai_8_1
-      - 🇭🇰HK_e28b+@WangCai_8_2
-      - 🇭🇰HK_e28b+@WangCai_8_3
+      - "CF\r"
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰HK_e28b+@WangCai_8_1
-      - 🇭🇰HK_e28b+@WangCai_8_2
-      - 🇭🇰HK_e28b+@WangCai_8_3
+      - "CF\r"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰HK_e28b+@WangCai_8_1
-      - 🇭🇰HK_e28b+@WangCai_8_2
-      - 🇭🇰HK_e28b+@WangCai_8_3
+      - "CF\r"
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇭🇰HK_e28b+@WangCai_8_1
-      - 🇭🇰HK_e28b+@WangCai_8_2
-      - 🇭🇰HK_e28b+@WangCai_8_3
+      - "CF\r"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰HK_e28b+@WangCai_8_1
-      - 🇭🇰HK_e28b+@WangCai_8_2
-      - 🇭🇰HK_e28b+@WangCai_8_3
+      - "CF\r"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -162,9 +148,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰HK_e28b+@WangCai_8_1
-      - 🇭🇰HK_e28b+@WangCai_8_2
-      - 🇭🇰HK_e28b+@WangCai_8_3
+      - "CF\r"
 
 rules:
 # 本地/局域网地址
