@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-03-30 23:09:22
+# 创建时间：2024-03-31 12:32:39
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：28
-# 节点类型：ss
+# 节点数量：19
+# 节点类型：trojan, ss
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -86,102 +86,75 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"CN_粉爱_1","type":"ss","server":"bff6ce3.xvvrkb.lol","port":40676,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_2","type":"ss","server":"bff6ce3.xvvrkb.lol","port":47034,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_3","type":"ss","server":"bff6ce3.xvvrkb.lol","port":43296,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_4","type":"ss","server":"bff6ce3.xvvrkb.lol","port":44421,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_5","type":"ss","server":"bff6ce3.xvvrkb.lol","port":43088,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_6","type":"ss","server":"bff6ce3.xvvrkb.lol","port":47150,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_7","type":"ss","server":"bff6ce3.xvvrkb.lol","port":43664,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_8","type":"ss","server":"bff6ce3.xvvrkb.lol","port":40107,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_9","type":"ss","server":"bff6ce3.xvvrkb.lol","port":41832,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_10","type":"ss","server":"bff6ce3.xvvrkb.lol","port":43641,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_11","type":"ss","server":"5fa33d2.vrqfmm.xyz","port":46101,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_12","type":"ss","server":"5fa33d2.vrqfmm.xyz","port":43791,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_13","type":"ss","server":"5fa33d2.vrqfmm.xyz","port":42285,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_14","type":"ss","server":"5fa33d2.vrqfmm.xyz","port":46824,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_15","type":"ss","server":"bff6ce3.xvvrkb.lol","port":40676,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_16","type":"ss","server":"bff6ce3.xvvrkb.lol","port":47034,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_17","type":"ss","server":"bff6ce3.xvvrkb.lol","port":43296,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_18","type":"ss","server":"bff6ce3.xvvrkb.lol","port":44421,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_19","type":"ss","server":"bff6ce3.xvvrkb.lol","port":43088,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_20","type":"ss","server":"bff6ce3.xvvrkb.lol","port":47150,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_21","type":"ss","server":"bff6ce3.xvvrkb.lol","port":43664,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_22","type":"ss","server":"bff6ce3.xvvrkb.lol","port":40107,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_23","type":"ss","server":"bff6ce3.xvvrkb.lol","port":41832,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_24","type":"ss","server":"bff6ce3.xvvrkb.lol","port":43641,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_25","type":"ss","server":"5fa33d2.vrqfmm.xyz","port":46101,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_26","type":"ss","server":"5fa33d2.vrqfmm.xyz","port":43791,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_27","type":"ss","server":"5fa33d2.vrqfmm.xyz","port":42285,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
-  - {"name":"CN_粉爱_28","type":"ss","server":"5fa33d2.vrqfmm.xyz","port":46824,"password":"d9c577328fb349fe","cipher":"aes-128-gcm"}
+  - {"name":"SG_OpenWrt粉爱精选_1","type":"trojan","server":"110.239.96.111","port":10000,"udp":true,"password":"9d1bb718-f429-40eb-9373-3e6d588ff78c","sni":"www.baidu.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"SG_OpenWrt粉爱精选_2","type":"trojan","server":"110.239.96.111","port":9011,"udp":true,"password":"9d1bb718-f429-40eb-9373-3e6d588ff78c","sni":"www.baidu.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"KR_OpenWrt粉爱精选_3","type":"ss","server":"p078.panda001.net","port":5304,"password":"qwerREWQ@@","cipher":"aes-256-cfb"}
+  - {"name":"KR_OpenWrt粉爱精选_4","type":"ss","server":"p221.panda001.net","port":49032,"password":"qwerREWQ@@","cipher":"aes-256-cfb"}
+  - {"name":"KR_OpenWrt粉爱精选_5","type":"ss","server":"p222.panda001.net","port":51472,"password":"qwerREWQ@@","cipher":"aes-256-cfb"}
+  - {"name":"KR_OpenWrt粉爱精选_6","type":"ss","server":"p225.panda004.net","port":4005,"password":"qwerREWQ@@","cipher":"aes-256-cfb"}
+  - {"name":"KR_OpenWrt粉爱精选_7","type":"ss","server":"p226.panda004.net","port":58449,"password":"qwerREWQ@@","cipher":"aes-256-cfb"}
+  - {"name":"KR_OpenWrt粉爱精选_8","type":"ss","server":"p228.panda004.net","port":57729,"password":"qwerREWQ@@","cipher":"aes-256-cfb"}
+  - {"name":"KR_OpenWrt粉爱精选_9","type":"ss","server":"p229.panda004.net","port":10218,"password":"qwerREWQ@@","cipher":"aes-256-cfb"}
+  - {"name":"KR_OpenWrt粉爱精选_10","type":"ss","server":"p230.panda004.net","port":42978,"password":"qwerREWQ@@","cipher":"aes-256-cfb"}
+  - {"name":"KR_OpenWrt粉爱精选_11","type":"ss","server":"p231.panda004.net","port":43926,"password":"qwerREWQ@@","cipher":"aes-256-cfb"}
+  - {"name":"KR_OpenWrt粉爱精选_12","type":"ss","server":"p232.panda004.net","port":51472,"password":"qwerREWQ@@","cipher":"aes-256-cfb"}
+  - {"name":"KR_OpenWrt粉爱精选_13","type":"ss","server":"p233.panda004.net","port":50942,"password":"qwerREWQ@@","cipher":"aes-256-cfb"}
+  - {"name":"KR_OpenWrt粉爱精选_14","type":"ss","server":"p234.panda004.net","port":58449,"password":"qwerREWQ@@","cipher":"aes-256-cfb"}
+  - {"name":"KR_OpenWrt粉爱精选_15","type":"ss","server":"p236.panda004.net","port":42839,"password":"qwerREWQ@@","cipher":"aes-256-cfb"}
+  - {"name":"KR_OpenWrt粉爱精选_16","type":"ss","server":"p238.panda004.net","port":57743,"password":"qwerREWQ@@","cipher":"aes-256-cfb"}
+  - {"name":"KR_OpenWrt粉爱精选_17","type":"ss","server":"p220.panda001.net","port":42185,"password":"qwerREWQ@@","cipher":"aes-256-cfb"}
+  - {"name":"KR_OpenWrt粉爱精选_18","type":"ss","server":"p227.panda004.net","port":49032,"password":"qwerREWQ@@","cipher":"aes-256-cfb"}
+  - {"name":"CN_OpenWrt粉爱精选_19","type":"ss","server":"211.99.102.183","port":15006,"password":"f9nawu1Umf2xWKGVsDuTu","cipher":"aes-128-gcm"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - CN_粉爱_1
-      - CN_粉爱_2
-      - CN_粉爱_3
-      - CN_粉爱_4
-      - CN_粉爱_5
-      - CN_粉爱_6
-      - CN_粉爱_7
-      - CN_粉爱_8
-      - CN_粉爱_9
-      - CN_粉爱_10
-      - CN_粉爱_11
-      - CN_粉爱_12
-      - CN_粉爱_13
-      - CN_粉爱_14
-      - CN_粉爱_15
-      - CN_粉爱_16
-      - CN_粉爱_17
-      - CN_粉爱_18
-      - CN_粉爱_19
-      - CN_粉爱_20
-      - CN_粉爱_21
-      - CN_粉爱_22
-      - CN_粉爱_23
-      - CN_粉爱_24
-      - CN_粉爱_25
-      - CN_粉爱_26
-      - CN_粉爱_27
-      - CN_粉爱_28
+      - SG_OpenWrt粉爱精选_1
+      - SG_OpenWrt粉爱精选_2
+      - KR_OpenWrt粉爱精选_3
+      - KR_OpenWrt粉爱精选_4
+      - KR_OpenWrt粉爱精选_5
+      - KR_OpenWrt粉爱精选_6
+      - KR_OpenWrt粉爱精选_7
+      - KR_OpenWrt粉爱精选_8
+      - KR_OpenWrt粉爱精选_9
+      - KR_OpenWrt粉爱精选_10
+      - KR_OpenWrt粉爱精选_11
+      - KR_OpenWrt粉爱精选_12
+      - KR_OpenWrt粉爱精选_13
+      - KR_OpenWrt粉爱精选_14
+      - KR_OpenWrt粉爱精选_15
+      - KR_OpenWrt粉爱精选_16
+      - KR_OpenWrt粉爱精选_17
+      - KR_OpenWrt粉爱精选_18
+      - CN_OpenWrt粉爱精选_19
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - CN_粉爱_1
-      - CN_粉爱_2
-      - CN_粉爱_3
-      - CN_粉爱_4
-      - CN_粉爱_5
-      - CN_粉爱_6
-      - CN_粉爱_7
-      - CN_粉爱_8
-      - CN_粉爱_9
-      - CN_粉爱_10
-      - CN_粉爱_11
-      - CN_粉爱_12
-      - CN_粉爱_13
-      - CN_粉爱_14
-      - CN_粉爱_15
-      - CN_粉爱_16
-      - CN_粉爱_17
-      - CN_粉爱_18
-      - CN_粉爱_19
-      - CN_粉爱_20
-      - CN_粉爱_21
-      - CN_粉爱_22
-      - CN_粉爱_23
-      - CN_粉爱_24
-      - CN_粉爱_25
-      - CN_粉爱_26
-      - CN_粉爱_27
-      - CN_粉爱_28
+      - SG_OpenWrt粉爱精选_1
+      - SG_OpenWrt粉爱精选_2
+      - KR_OpenWrt粉爱精选_3
+      - KR_OpenWrt粉爱精选_4
+      - KR_OpenWrt粉爱精选_5
+      - KR_OpenWrt粉爱精选_6
+      - KR_OpenWrt粉爱精选_7
+      - KR_OpenWrt粉爱精选_8
+      - KR_OpenWrt粉爱精选_9
+      - KR_OpenWrt粉爱精选_10
+      - KR_OpenWrt粉爱精选_11
+      - KR_OpenWrt粉爱精选_12
+      - KR_OpenWrt粉爱精选_13
+      - KR_OpenWrt粉爱精选_14
+      - KR_OpenWrt粉爱精选_15
+      - KR_OpenWrt粉爱精选_16
+      - KR_OpenWrt粉爱精选_17
+      - KR_OpenWrt粉爱精选_18
+      - CN_OpenWrt粉爱精选_19
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -199,34 +172,25 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_粉爱_1
-      - CN_粉爱_2
-      - CN_粉爱_3
-      - CN_粉爱_4
-      - CN_粉爱_5
-      - CN_粉爱_6
-      - CN_粉爱_7
-      - CN_粉爱_8
-      - CN_粉爱_9
-      - CN_粉爱_10
-      - CN_粉爱_11
-      - CN_粉爱_12
-      - CN_粉爱_13
-      - CN_粉爱_14
-      - CN_粉爱_15
-      - CN_粉爱_16
-      - CN_粉爱_17
-      - CN_粉爱_18
-      - CN_粉爱_19
-      - CN_粉爱_20
-      - CN_粉爱_21
-      - CN_粉爱_22
-      - CN_粉爱_23
-      - CN_粉爱_24
-      - CN_粉爱_25
-      - CN_粉爱_26
-      - CN_粉爱_27
-      - CN_粉爱_28
+      - SG_OpenWrt粉爱精选_1
+      - SG_OpenWrt粉爱精选_2
+      - KR_OpenWrt粉爱精选_3
+      - KR_OpenWrt粉爱精选_4
+      - KR_OpenWrt粉爱精选_5
+      - KR_OpenWrt粉爱精选_6
+      - KR_OpenWrt粉爱精选_7
+      - KR_OpenWrt粉爱精选_8
+      - KR_OpenWrt粉爱精选_9
+      - KR_OpenWrt粉爱精选_10
+      - KR_OpenWrt粉爱精选_11
+      - KR_OpenWrt粉爱精选_12
+      - KR_OpenWrt粉爱精选_13
+      - KR_OpenWrt粉爱精选_14
+      - KR_OpenWrt粉爱精选_15
+      - KR_OpenWrt粉爱精选_16
+      - KR_OpenWrt粉爱精选_17
+      - KR_OpenWrt粉爱精选_18
+      - CN_OpenWrt粉爱精选_19
 
 rules:
 # 本地/局域网地址
