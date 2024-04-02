@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-04-02 03:26:46
+# 创建时间：2024-04-02 11:43:31
 # 使用模版：V2RaySE 默认模版
-# 节点数量：10
+# 节点数量：43
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,109 +86,340 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇱🇺_LU_卢森堡","type":"vmess","server":"91.199.82.78","port":8080,"cipher":"auto","uuid":"bdd22841-c4d2-4aa8-acf2-95aa9125f159","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🇺🇸_US_美国_1","type":"ss","server":"34.216.106.166","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"38.147.160.101","port":41384,"cipher":"auto","uuid":"ab6643ec-5172-4a7b-b0e0-f2767bae83aa","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国_3","type":"vmess","server":"38.147.160.101","port":28241,"cipher":"auto","uuid":"adf0d7fc-6c13-4cff-e02a-e130cf562c6f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国->🇩🇪_DE_德国_1","type":"vmess","server":"hms04.xmivideo.cfd","port":443,"cipher":"auto","uuid":"93ea486a-bada-42a4-ac38-d088b320fa1e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"xmivideo.cfd"}}}
-  - {"name":"🇺🇸_US_美国->🇩🇪_DE_德国_2","type":"vless","server":"172.67.204.84","port":2053,"uuid":"4045c6b7-1d53-4574-98cd-df21db40b0dc","tls":true,"servername":"itcenteriran.blog","network":"ws","ws-opts":{"path":"/p=19"}}
-  - {"name":"🇺🇸_US_美国->🇫🇷_FR_法国","type":"vmess","server":"s1c.v2.v001sss.xyz","port":2082,"cipher":"auto","uuid":"112ac36f-3f53-4e26-8371-d25c028e1b9a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"s1c.v2.v001sss.xyz"}}}
-  - {"name":"🇨🇦_CA_加拿大->🇺🇸_US_美国","type":"trojan","server":"23.227.38.11","port":443,"udp":true,"password":"b17fa17d-13a0-4e8a-a398-8e549ea8b208","sni":"syndication-statutes-wanted-logo.trycloudflare.com","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/argox-tr"}}
-  - {"name":"🇺🇸_US_美国_4","type":"vmess","server":"russia.com","port":80,"cipher":"auto","uuid":"bd8c41a8-7598-4c28-9965-522545e14892","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/api/v3/download.getFile","headers":{"host":"ssrsub.v03.ssrsub.com"}}}
-  - {"name":"🇺🇸_US_美国_5","type":"trojan","server":"95.164.33.62","port":443,"udp":true,"password":"0b1371aa-649d-41dc-9126-338c87936500","sni":"sourceforge.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/websocket","headers":{"host":"se1.trojanvpn.de"}}}
+  - {"name":"hk1.netflix","type":"vless","server":"ali.055500.xyz","port":8080,"uuid":"542061b2-f57b-47f9-b1f2-371e0c5e0550","tls":false,"servername":"netflix.quakeruk.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"hk2.netflix","type":"vless","server":"sp.rweek.top","port":8080,"uuid":"542061b2-f57b-47f9-b1f2-371e0c5e0550","tls":false,"servername":"netflix.quakeruk.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"hk3.netflix","type":"vless","server":"ali.055500.xyz","port":2082,"uuid":"542061b2-f57b-47f9-b1f2-371e0c5e0550","tls":false,"servername":"netflix.quakeruk.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"us1.netflix","type":"vless","server":"cip.951535.xyz","port":8080,"uuid":"542061b2-f57b-47f9-b1f2-371e0c5e0550","tls":false,"servername":"netflix.quakeruk.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"us2.netflix","type":"vless","server":"cip.951535.xyz","port":2082,"uuid":"542061b2-f57b-47f9-b1f2-371e0c5e0550","tls":false,"servername":"netflix.quakeruk.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"us3.netflix","type":"vless","server":"172.67.60.78","port":2082,"uuid":"542061b2-f57b-47f9-b1f2-371e0c5e0550","tls":false,"servername":"netflix.quakeruk.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"us4.netflix","type":"vless","server":"104.27.200.69","port":2082,"uuid":"542061b2-f57b-47f9-b1f2-371e0c5e0550","tls":false,"servername":"netflix.quakeruk.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"us5.netflix","type":"vless","server":"172.67.105.170","port":2082,"uuid":"542061b2-f57b-47f9-b1f2-371e0c5e0550","tls":false,"servername":"netflix.quakeruk.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"us6.netflix","type":"vless","server":"172.64.32.81","port":2082,"uuid":"542061b2-f57b-47f9-b1f2-371e0c5e0550","tls":false,"servername":"netflix.quakeruk.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"us7.netflix","type":"vless","server":"172.64.47.251","port":2082,"uuid":"542061b2-f57b-47f9-b1f2-371e0c5e0550","tls":false,"servername":"netflix.quakeruk.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"us8.netflix","type":"vless","server":"104.18.48.22","port":2082,"uuid":"542061b2-f57b-47f9-b1f2-371e0c5e0550","tls":false,"servername":"netflix.quakeruk.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"us9.netflix","type":"vless","server":"104.16.160.160","port":2082,"uuid":"542061b2-f57b-47f9-b1f2-371e0c5e0550","tls":false,"servername":"netflix.quakeruk.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"uk1.netflix","type":"vless","server":"188.114.96.70","port":2082,"uuid":"542061b2-f57b-47f9-b1f2-371e0c5e0550","tls":false,"servername":"netflix.quakeruk.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"uk2.netflix","type":"vless","server":"188.114.99.81","port":2082,"uuid":"542061b2-f57b-47f9-b1f2-371e0c5e0550","tls":false,"servername":"netflix.quakeruk.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"uk3.netflix","type":"vless","server":"188.114.99.99","port":2082,"uuid":"542061b2-f57b-47f9-b1f2-371e0c5e0550","tls":false,"servername":"netflix.quakeruk.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"us10.netflix","type":"vless","server":"104.16.160.5","port":8080,"uuid":"542061b2-f57b-47f9-b1f2-371e0c5e0550","tls":false,"servername":"netflix.quakeruk.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"us11.netflix","type":"vless","server":"172.64.32.6","port":2082,"uuid":"542061b2-f57b-47f9-b1f2-371e0c5e0550","tls":false,"servername":"netflix.quakeruk.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"us12.netflix","type":"vless","server":"104.16.160.11","port":2082,"uuid":"542061b2-f57b-47f9-b1f2-371e0c5e0550","tls":false,"servername":"netflix.quakeruk.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"us13.netflix","type":"vless","server":"172.64.32.33","port":8080,"uuid":"542061b2-f57b-47f9-b1f2-371e0c5e0550","tls":false,"servername":"netflix.quakeruk.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"us14.netflix","type":"vless","server":"198.41.214.22","port":2082,"uuid":"542061b2-f57b-47f9-b1f2-371e0c5e0550","tls":false,"servername":"netflix.quakeruk.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"us15.netflix","type":"vless","server":"104.16.192.0","port":8080,"uuid":"542061b2-f57b-47f9-b1f2-371e0c5e0550","tls":false,"servername":"netflix.quakeruk.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"hk4.netflix","type":"vless","server":"43.154.209.116","port":443,"uuid":"9a575c6e-6c5b-48f1-9bbb-acabea4c2c17","tls":true,"servername":"japan.56487821.xyz","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"🇸🇬 Singapore1.netflix","type":"vless","server":"47.241.209.61","port":443,"uuid":"9a575c6e-6c5b-48f1-9bbb-acabea4c2c17","tls":true,"servername":"japan.56487821.xyz","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"🇯🇵 Japan1.netflix","type":"vless","server":"168.138.194.74","port":443,"uuid":"9a575c6e-6c5b-48f1-9bbb-acabea4c2c17","tls":true,"servername":"japan.56487821.xyz","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"🇮🇹 Italy1.netflix","type":"vless","server":"443.xiangmq1969.xyz","port":443,"uuid":"9a575c6e-6c5b-48f1-9bbb-acabea4c2c17","tls":true,"servername":"japan.56487821.xyz","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"uk4.netflix","type":"vless","server":"sp.rweek.top","port":443,"uuid":"9a575c6e-6c5b-48f1-9bbb-acabea4c2c17","tls":true,"servername":"japan.56487821.xyz","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"us16.netflix","type":"vless","server":"cip.951535.xyz","port":443,"uuid":"9a575c6e-6c5b-48f1-9bbb-acabea4c2c17","tls":true,"servername":"japan.56487821.xyz","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"defaultName_1","type":"wireguard","server":"188.114.99.131","port":1843,"udp":true,"ip":"172.16.0.2","private-key":"kOeymlq+1gqKeUmpJrL0co8XPxORf4ijquknNjU2pV4=","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","remote-dns-resolve":true}
+  - {"name":"defaultName_2","type":"wireguard","server":"188.114.97.148","port":1843,"udp":true,"ip":"172.16.0.2","private-key":"kOeymlq+1gqKeUmpJrL0co8XPxORf4ijquknNjU2pV4=","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","remote-dns-resolve":true}
+  - {"name":"defaultName_3","type":"wireguard","server":"188.114.97.214","port":939,"udp":true,"ip":"172.16.0.2","private-key":"kOeymlq+1gqKeUmpJrL0co8XPxORf4ijquknNjU2pV4=","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","remote-dns-resolve":true}
+  - {"name":"defaultName_4","type":"wireguard","server":"188.114.96.56","port":939,"udp":true,"ip":"172.16.0.2","private-key":"kOeymlq+1gqKeUmpJrL0co8XPxORf4ijquknNjU2pV4=","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","remote-dns-resolve":true}
+  - {"name":"defaultName_5","type":"wireguard","server":"188.114.97.252","port":1843,"udp":true,"ip":"172.16.0.2","private-key":"kOeymlq+1gqKeUmpJrL0co8XPxORf4ijquknNjU2pV4=","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","remote-dns-resolve":true}
+  - {"name":"defaultName_6","type":"wireguard","server":"188.114.97.148","port":939,"udp":true,"ip":"172.16.0.2","private-key":"kOeymlq+1gqKeUmpJrL0co8XPxORf4ijquknNjU2pV4=","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","remote-dns-resolve":true}
+  - {"name":"defaultName_7","type":"wireguard","server":"162.159.195.42","port":939,"udp":true,"ip":"172.16.0.2","private-key":"kOeymlq+1gqKeUmpJrL0co8XPxORf4ijquknNjU2pV4=","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","remote-dns-resolve":true}
+  - {"name":"defaultName_8","type":"wireguard","server":"162.159.192.220","port":1843,"udp":true,"ip":"172.16.0.2","private-key":"kOeymlq+1gqKeUmpJrL0co8XPxORf4ijquknNjU2pV4=","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","remote-dns-resolve":true}
+  - {"name":"defaultName_9","type":"wireguard","server":"162.159.195.36","port":1843,"udp":true,"ip":"172.16.0.2","private-key":"kOeymlq+1gqKeUmpJrL0co8XPxORf4ijquknNjU2pV4=","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","remote-dns-resolve":true}
+  - {"name":"defaultName_10","type":"wireguard","server":"162.159.195.28","port":939,"udp":true,"ip":"172.16.0.2","private-key":"kOeymlq+1gqKeUmpJrL0co8XPxORf4ijquknNjU2pV4=","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","remote-dns-resolve":true}
+  - {"name":"defaultName_11","type":"wireguard","server":"162.159.195.215","port":3581,"udp":true,"ip":"172.16.0.2","private-key":"ONs6voo/UOpf4QRIlcwVcDYcPSgky+Ktb5Vtr0WHlm4=","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","remote-dns-resolve":true}
+  - {"name":"defaultName_12","type":"wireguard","server":"162.159.195.176","port":3581,"udp":true,"ip":"172.16.0.2","private-key":"ONs6voo/UOpf4QRIlcwVcDYcPSgky+Ktb5Vtr0WHlm4=","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","remote-dns-resolve":true}
+  - {"name":"defaultName_13","type":"wireguard","server":"162.159.193.7","port":1701,"udp":true,"ip":"172.16.0.2","private-key":"ONs6voo/UOpf4QRIlcwVcDYcPSgky+Ktb5Vtr0WHlm4=","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","remote-dns-resolve":true}
+  - {"name":"defaultName_14","type":"wireguard","server":"162.159.195.244","port":3581,"udp":true,"ip":"172.16.0.2","private-key":"ONs6voo/UOpf4QRIlcwVcDYcPSgky+Ktb5Vtr0WHlm4=","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","remote-dns-resolve":true}
+  - {"name":"defaultName_15","type":"wireguard","server":"162.159.195.229","port":7156,"udp":true,"ip":"172.16.0.2","private-key":"ONs6voo/UOpf4QRIlcwVcDYcPSgky+Ktb5Vtr0WHlm4=","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","remote-dns-resolve":true}
+  - {"name":"United%25252520States_Los%25252520Angeles_hy_1","type":"hysteria","server":"173.234.25.52","port":48919,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"dongtaiwang.com","up":1000,"down":1000}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇱🇺_LU_卢森堡
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_1
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_2
-      - 🇺🇸_US_美国->🇫🇷_FR_法国
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
+      - hk1.netflix
+      - hk2.netflix
+      - hk3.netflix
+      - us1.netflix
+      - us2.netflix
+      - us3.netflix
+      - us4.netflix
+      - us5.netflix
+      - us6.netflix
+      - us7.netflix
+      - us8.netflix
+      - us9.netflix
+      - uk1.netflix
+      - uk2.netflix
+      - uk3.netflix
+      - us10.netflix
+      - us11.netflix
+      - us12.netflix
+      - us13.netflix
+      - us14.netflix
+      - us15.netflix
+      - hk4.netflix
+      - 🇸🇬 Singapore1.netflix
+      - 🇯🇵 Japan1.netflix
+      - 🇮🇹 Italy1.netflix
+      - uk4.netflix
+      - us16.netflix
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - defaultName_4
+      - defaultName_5
+      - defaultName_6
+      - defaultName_7
+      - defaultName_8
+      - defaultName_9
+      - defaultName_10
+      - defaultName_11
+      - defaultName_12
+      - defaultName_13
+      - defaultName_14
+      - defaultName_15
+      - United%25252520States_Los%25252520Angeles_hy_1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇱🇺_LU_卢森堡
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_1
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_2
-      - 🇺🇸_US_美国->🇫🇷_FR_法国
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
+      - hk1.netflix
+      - hk2.netflix
+      - hk3.netflix
+      - us1.netflix
+      - us2.netflix
+      - us3.netflix
+      - us4.netflix
+      - us5.netflix
+      - us6.netflix
+      - us7.netflix
+      - us8.netflix
+      - us9.netflix
+      - uk1.netflix
+      - uk2.netflix
+      - uk3.netflix
+      - us10.netflix
+      - us11.netflix
+      - us12.netflix
+      - us13.netflix
+      - us14.netflix
+      - us15.netflix
+      - hk4.netflix
+      - 🇸🇬 Singapore1.netflix
+      - 🇯🇵 Japan1.netflix
+      - 🇮🇹 Italy1.netflix
+      - uk4.netflix
+      - us16.netflix
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - defaultName_4
+      - defaultName_5
+      - defaultName_6
+      - defaultName_7
+      - defaultName_8
+      - defaultName_9
+      - defaultName_10
+      - defaultName_11
+      - defaultName_12
+      - defaultName_13
+      - defaultName_14
+      - defaultName_15
+      - United%25252520States_Los%25252520Angeles_hy_1
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇱🇺_LU_卢森堡
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_1
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_2
-      - 🇺🇸_US_美国->🇫🇷_FR_法国
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
+      - hk1.netflix
+      - hk2.netflix
+      - hk3.netflix
+      - us1.netflix
+      - us2.netflix
+      - us3.netflix
+      - us4.netflix
+      - us5.netflix
+      - us6.netflix
+      - us7.netflix
+      - us8.netflix
+      - us9.netflix
+      - uk1.netflix
+      - uk2.netflix
+      - uk3.netflix
+      - us10.netflix
+      - us11.netflix
+      - us12.netflix
+      - us13.netflix
+      - us14.netflix
+      - us15.netflix
+      - hk4.netflix
+      - 🇸🇬 Singapore1.netflix
+      - 🇯🇵 Japan1.netflix
+      - 🇮🇹 Italy1.netflix
+      - uk4.netflix
+      - us16.netflix
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - defaultName_4
+      - defaultName_5
+      - defaultName_6
+      - defaultName_7
+      - defaultName_8
+      - defaultName_9
+      - defaultName_10
+      - defaultName_11
+      - defaultName_12
+      - defaultName_13
+      - defaultName_14
+      - defaultName_15
+      - United%25252520States_Los%25252520Angeles_hy_1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇱🇺_LU_卢森堡
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_1
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_2
-      - 🇺🇸_US_美国->🇫🇷_FR_法国
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
+      - hk1.netflix
+      - hk2.netflix
+      - hk3.netflix
+      - us1.netflix
+      - us2.netflix
+      - us3.netflix
+      - us4.netflix
+      - us5.netflix
+      - us6.netflix
+      - us7.netflix
+      - us8.netflix
+      - us9.netflix
+      - uk1.netflix
+      - uk2.netflix
+      - uk3.netflix
+      - us10.netflix
+      - us11.netflix
+      - us12.netflix
+      - us13.netflix
+      - us14.netflix
+      - us15.netflix
+      - hk4.netflix
+      - 🇸🇬 Singapore1.netflix
+      - 🇯🇵 Japan1.netflix
+      - 🇮🇹 Italy1.netflix
+      - uk4.netflix
+      - us16.netflix
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - defaultName_4
+      - defaultName_5
+      - defaultName_6
+      - defaultName_7
+      - defaultName_8
+      - defaultName_9
+      - defaultName_10
+      - defaultName_11
+      - defaultName_12
+      - defaultName_13
+      - defaultName_14
+      - defaultName_15
+      - United%25252520States_Los%25252520Angeles_hy_1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇱🇺_LU_卢森堡
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_1
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_2
-      - 🇺🇸_US_美国->🇫🇷_FR_法国
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
+      - hk1.netflix
+      - hk2.netflix
+      - hk3.netflix
+      - us1.netflix
+      - us2.netflix
+      - us3.netflix
+      - us4.netflix
+      - us5.netflix
+      - us6.netflix
+      - us7.netflix
+      - us8.netflix
+      - us9.netflix
+      - uk1.netflix
+      - uk2.netflix
+      - uk3.netflix
+      - us10.netflix
+      - us11.netflix
+      - us12.netflix
+      - us13.netflix
+      - us14.netflix
+      - us15.netflix
+      - hk4.netflix
+      - 🇸🇬 Singapore1.netflix
+      - 🇯🇵 Japan1.netflix
+      - 🇮🇹 Italy1.netflix
+      - uk4.netflix
+      - us16.netflix
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - defaultName_4
+      - defaultName_5
+      - defaultName_6
+      - defaultName_7
+      - defaultName_8
+      - defaultName_9
+      - defaultName_10
+      - defaultName_11
+      - defaultName_12
+      - defaultName_13
+      - defaultName_14
+      - defaultName_15
+      - United%25252520States_Los%25252520Angeles_hy_1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇱🇺_LU_卢森堡
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_1
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_2
-      - 🇺🇸_US_美国->🇫🇷_FR_法国
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
+      - hk1.netflix
+      - hk2.netflix
+      - hk3.netflix
+      - us1.netflix
+      - us2.netflix
+      - us3.netflix
+      - us4.netflix
+      - us5.netflix
+      - us6.netflix
+      - us7.netflix
+      - us8.netflix
+      - us9.netflix
+      - uk1.netflix
+      - uk2.netflix
+      - uk3.netflix
+      - us10.netflix
+      - us11.netflix
+      - us12.netflix
+      - us13.netflix
+      - us14.netflix
+      - us15.netflix
+      - hk4.netflix
+      - 🇸🇬 Singapore1.netflix
+      - 🇯🇵 Japan1.netflix
+      - 🇮🇹 Italy1.netflix
+      - uk4.netflix
+      - us16.netflix
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - defaultName_4
+      - defaultName_5
+      - defaultName_6
+      - defaultName_7
+      - defaultName_8
+      - defaultName_9
+      - defaultName_10
+      - defaultName_11
+      - defaultName_12
+      - defaultName_13
+      - defaultName_14
+      - defaultName_15
+      - United%25252520States_Los%25252520Angeles_hy_1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -211,16 +442,49 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇱🇺_LU_卢森堡
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_1
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_2
-      - 🇺🇸_US_美国->🇫🇷_FR_法国
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
+      - hk1.netflix
+      - hk2.netflix
+      - hk3.netflix
+      - us1.netflix
+      - us2.netflix
+      - us3.netflix
+      - us4.netflix
+      - us5.netflix
+      - us6.netflix
+      - us7.netflix
+      - us8.netflix
+      - us9.netflix
+      - uk1.netflix
+      - uk2.netflix
+      - uk3.netflix
+      - us10.netflix
+      - us11.netflix
+      - us12.netflix
+      - us13.netflix
+      - us14.netflix
+      - us15.netflix
+      - hk4.netflix
+      - 🇸🇬 Singapore1.netflix
+      - 🇯🇵 Japan1.netflix
+      - 🇮🇹 Italy1.netflix
+      - uk4.netflix
+      - us16.netflix
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - defaultName_4
+      - defaultName_5
+      - defaultName_6
+      - defaultName_7
+      - defaultName_8
+      - defaultName_9
+      - defaultName_10
+      - defaultName_11
+      - defaultName_12
+      - defaultName_13
+      - defaultName_14
+      - defaultName_15
+      - United%25252520States_Los%25252520Angeles_hy_1
 
 rules:
 # 本地/局域网地址
