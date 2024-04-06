@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-04-06 20:28:40
+# 创建时间：06-04-2024 19:42:09
 # 使用模版：V2RaySE 默认模版
-# 节点数量：1
+# 节点数量：4
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,46 +86,67 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"CF新加坡\r","type":"vless","server":"cdn-sg.bestup.eu.org","port":80,"uuid":"531a0a29-8221-414f-8861-9b336ec9481e","tls":false,"servername":"cdn-sg.bestup.eu.org","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cdn-sg.bestup.eu.org"}},"client-fingerprint":"randomized"}
+  - {"name":"@Hot_V2Ry_1","type":"vless","server":"tamit.ir","port":8443,"uuid":"9d272efb-7bc6-4124-b15b-b088e374cb0b","tls":true,"servername":"Hot_V2Ry.tahrim-shekan.space","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
+  - {"name":"@Hot_V2Ry_2","type":"vless","server":"104.19.137.91","port":8443,"uuid":"9d272efb-7bc6-4124-b15b-b088e374cb0b","tls":true,"servername":"Hot_V2Ry.tahrim-shekan.space","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
+  - {"name":"@Hot_V2Ry_3","type":"vless","server":"serverpars.com","port":8443,"uuid":"9d272efb-7bc6-4124-b15b-b088e374cb0b","tls":true,"servername":"Hot_V2Ry.tahrim-shekan.space","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
+  - {"name":"@Hot_V2Ry_4","type":"vless","server":"103.31.4","port":8443,"uuid":"9d272efb-7bc6-4124-b15b-b088e374cb0b","tls":true,"servername":"Hot_V2Ry.tahrim-shekan.space","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "CF新加坡\r"
+      - '@Hot_V2Ry_1'
+      - '@Hot_V2Ry_2'
+      - '@Hot_V2Ry_3'
+      - '@Hot_V2Ry_4'
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "CF新加坡\r"
+      - '@Hot_V2Ry_1'
+      - '@Hot_V2Ry_2'
+      - '@Hot_V2Ry_3'
+      - '@Hot_V2Ry_4'
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "CF新加坡\r"
+      - '@Hot_V2Ry_1'
+      - '@Hot_V2Ry_2'
+      - '@Hot_V2Ry_3'
+      - '@Hot_V2Ry_4'
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "CF新加坡\r"
+      - '@Hot_V2Ry_1'
+      - '@Hot_V2Ry_2'
+      - '@Hot_V2Ry_3'
+      - '@Hot_V2Ry_4'
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - "CF新加坡\r"
+      - '@Hot_V2Ry_1'
+      - '@Hot_V2Ry_2'
+      - '@Hot_V2Ry_3'
+      - '@Hot_V2Ry_4'
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "CF新加坡\r"
+      - '@Hot_V2Ry_1'
+      - '@Hot_V2Ry_2'
+      - '@Hot_V2Ry_3'
+      - '@Hot_V2Ry_4'
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -148,7 +169,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "CF新加坡\r"
+      - '@Hot_V2Ry_1'
+      - '@Hot_V2Ry_2'
+      - '@Hot_V2Ry_3'
+      - '@Hot_V2Ry_4'
 
 rules:
 # 本地/局域网地址
