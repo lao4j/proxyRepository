@@ -1,11 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：2024-06-06 21:19:31
+# 客户端：Clash
+# 创建时间：2024-06-07 09:16:17
 # 使用模版：V2RaySE 默认模版
-# 节点数量：10
+# 节点数量：60
 ####################################
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -86,109 +85,459 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"defaultName_1","type":"hysteria","server":"108.181.5.133","port":26022,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3\r"],"auth_str":"dongtaiwang.com","up":11,"down":55}
-  - {"name":"defaultName_2","type":"hysteria","server":"109.104.152.194","port":58510,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3\r"],"auth_str":"dongtaiwang.com","up":11,"down":55}
-  - {"name":"defaultName_3","type":"hysteria","server":"173.234.25.52","port":30072,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3\r"],"auth_str":"dongtaiwang.com","up":11,"down":55}
-  - {"name":"defaultName_4","type":"hysteria","server":"62.210.243.131","port":18702,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3\r"],"auth_str":"dongtaiwang.com","up":11,"down":55}
-  - {"name":"defaultName_5","type":"hysteria2","server":"104.192.224.141","port":62894,"password":"dongtaiwang.com","sni":"www.bing.com\r","skip-cert-verify":true}
-  - {"name":"defaultName_6","type":"hysteria2","server":"104.192.224.140","port":62894,"password":"dongtaiwang.com","sni":"www.bing.com\r","skip-cert-verify":true}
-  - {"name":"defaultName_7","type":"vless","server":"yh7.dtku41.xyz","port":443,"uuid":"ebfdccb6-7416-4b6e-860d-98587344d500","tls":true,"servername":"lg1.freessr2.xyz\r","network":"ws","ws-opts":{"path":"/xyakws","headers":{"host":"lg1.freessr2.xyz\r"}},"client-fingerprint":"chrome"}
-  - {"name":"defaultName_8","type":"vless","server":"yh6.dtku41.xyz","port":443,"uuid":"ebfdccb6-7416-4b6e-860d-98587344d500","tls":true,"servername":"lg1.freessr2.xyz\r","network":"ws","ws-opts":{"path":"/xyakws","headers":{"host":"lg1.freessr2.xyz\r"}},"client-fingerprint":"chrome"}
-  - {"name":"defaultName_9","type":"vless","server":"yh9.dtku41.xyz","port":443,"uuid":"ebfdccb6-7416-4b6e-860d-98587344d500","tls":true,"servername":"lg1.freessr2.xyz\r","network":"ws","ws-opts":{"path":"/xyakws","headers":{"host":"lg1.freessr2.xyz\r"}},"client-fingerprint":"chrome"}
-  - {"name":"defaultName_10","type":"hysteria","server":"64.31.55.72","port":55661,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":5,"down":20}
+  - {"name":"[直连] 亚太普速 1","type":"vmess","server":"tls.01.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 亚太普速 2","type":"vmess","server":"tls.02.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 亚太普速 3","type":"vmess","server":"tls.03.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 亚太普速 4","type":"vmess","server":"tls.04.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 亚太普速 5","type":"vmess","server":"tls.05.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 亚太普速 6","type":"vmess","server":"tls.06.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 亚太普速 7","type":"vmess","server":"tls.07.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 亚太普速 8","type":"vmess","server":"tls.08.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 亚太普速 9","type":"vmess","server":"tls.09.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 亚太普速 10","type":"vmess","server":"tls.10.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 亚太普速 11","type":"vmess","server":"tls.11.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 亚太普速 12","type":"vmess","server":"tls.12.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 亚太普速 13","type":"vmess","server":"tls.13.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 亚太普速 14","type":"vmess","server":"tls.14.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 亚太普速 15","type":"vmess","server":"tls.15.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 亚太普速 16","type":"vmess","server":"tls.16.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 亚太普速 17","type":"vmess","server":"tls.17.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 亚太普速 18","type":"vmess","server":"tls.18.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 亚太普速 19","type":"vmess","server":"tls.19.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 亚太普速 20","type":"vmess","server":"tls.20.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 香港高速 1 C","type":"vmess","server":"0000000000000000000000000061.cgroup-node-for-bigairport.sbs","port":22351,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 日本高速 2 C","type":"vmess","server":"0000000000000000000000000062.cgroup-node-for-bigairport.sbs","port":42351,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 新加坡高速 3 C","type":"vmess","server":"0000000000000000000000000063.cgroup-node-for-bigairport.sbs","port":22352,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 韩国高速 4 C","type":"vmess","server":"0000000000000000000000000064.cgroup-node-for-bigairport.sbs","port":42352,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 美国高速 5 C","type":"vmess","server":"0000000000000000000000000065.cgroup-node-for-bigairport.sbs","port":22353,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 香港高速 6 C","type":"vmess","server":"0000000000000000000000000066.cgroup-node-for-bigairport.sbs","port":42353,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 日本高速 7 C","type":"vmess","server":"0000000000000000000000000067.cgroup-node-for-bigairport.sbs","port":22354,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 新加坡高速 8 C","type":"vmess","server":"0000000000000000000000000068.cgroup-node-for-bigairport.sbs","port":42354,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 韩国高速 9 C","type":"vmess","server":"0000000000000000000000000069.cgroup-node-for-bigairport.sbs","port":22355,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 美国高速 10 C","type":"vmess","server":"0000000000000000000000000070.cgroup-node-for-bigairport.sbs","port":42355,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 下载专用 1","type":"vmess","server":"tls.81.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 下载专用 2","type":"vmess","server":"tls.82.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 下载专用 3","type":"vmess","server":"tls.83.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 下载专用 4","type":"vmess","server":"tls.84.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 下载专用 5","type":"vmess","server":"tls.85.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 下载专用 6","type":"vmess","server":"tls.86.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 下载专用 7","type":"vmess","server":"tls.87.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 下载专用 8","type":"vmess","server":"tls.88.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 下载专用 9","type":"vmess","server":"tls.89.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 下载专用 10","type":"vmess","server":"tls.90.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 下载专用 11","type":"vmess","server":"tls.91.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 下载专用 12","type":"vmess","server":"tls.92.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 下载专用 13","type":"vmess","server":"tls.93.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 下载专用 14","type":"vmess","server":"tls.94.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 下载专用 15","type":"vmess","server":"tls.95.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 下载专用 16","type":"vmess","server":"tls.96.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 下载专用 17","type":"vmess","server":"tls.97.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 下载专用 18","type":"vmess","server":"tls.98.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 下载专用 19","type":"vmess","server":"tls.99.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 下载专用 20","type":"vmess","server":"tls.100.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 备用节点 1","type":"vmess","server":"tls.111.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 备用节点 2","type":"vmess","server":"tls.112.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 备用节点 3","type":"vmess","server":"tls.113.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 备用节点 4","type":"vmess","server":"tls.114.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 备用节点 5","type":"vmess","server":"tls.115.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 备用节点 6","type":"vmess","server":"tls.116.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 备用节点 7","type":"vmess","server":"tls.117.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 备用节点 8","type":"vmess","server":"tls.118.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 备用节点 9","type":"vmess","server":"tls.119.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"[直连] 备用节点 10","type":"vmess","server":"tls.120.node-for-bigairport.win","port":443,"cipher":"auto","uuid":"ef5fca10-41bc-4623-87a3-1170a7b51827","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - defaultName_1
-      - defaultName_2
-      - defaultName_3
-      - defaultName_4
-      - defaultName_5
-      - defaultName_6
-      - defaultName_7
-      - defaultName_8
-      - defaultName_9
-      - defaultName_10
+      - '[直连] 亚太普速 1'
+      - '[直连] 亚太普速 2'
+      - '[直连] 亚太普速 3'
+      - '[直连] 亚太普速 4'
+      - '[直连] 亚太普速 5'
+      - '[直连] 亚太普速 6'
+      - '[直连] 亚太普速 7'
+      - '[直连] 亚太普速 8'
+      - '[直连] 亚太普速 9'
+      - '[直连] 亚太普速 10'
+      - '[直连] 亚太普速 11'
+      - '[直连] 亚太普速 12'
+      - '[直连] 亚太普速 13'
+      - '[直连] 亚太普速 14'
+      - '[直连] 亚太普速 15'
+      - '[直连] 亚太普速 16'
+      - '[直连] 亚太普速 17'
+      - '[直连] 亚太普速 18'
+      - '[直连] 亚太普速 19'
+      - '[直连] 亚太普速 20'
+      - '[直连] 香港高速 1 C'
+      - '[直连] 日本高速 2 C'
+      - '[直连] 新加坡高速 3 C'
+      - '[直连] 韩国高速 4 C'
+      - '[直连] 美国高速 5 C'
+      - '[直连] 香港高速 6 C'
+      - '[直连] 日本高速 7 C'
+      - '[直连] 新加坡高速 8 C'
+      - '[直连] 韩国高速 9 C'
+      - '[直连] 美国高速 10 C'
+      - '[直连] 下载专用 1'
+      - '[直连] 下载专用 2'
+      - '[直连] 下载专用 3'
+      - '[直连] 下载专用 4'
+      - '[直连] 下载专用 5'
+      - '[直连] 下载专用 6'
+      - '[直连] 下载专用 7'
+      - '[直连] 下载专用 8'
+      - '[直连] 下载专用 9'
+      - '[直连] 下载专用 10'
+      - '[直连] 下载专用 11'
+      - '[直连] 下载专用 12'
+      - '[直连] 下载专用 13'
+      - '[直连] 下载专用 14'
+      - '[直连] 下载专用 15'
+      - '[直连] 下载专用 16'
+      - '[直连] 下载专用 17'
+      - '[直连] 下载专用 18'
+      - '[直连] 下载专用 19'
+      - '[直连] 下载专用 20'
+      - '[直连] 备用节点 1'
+      - '[直连] 备用节点 2'
+      - '[直连] 备用节点 3'
+      - '[直连] 备用节点 4'
+      - '[直连] 备用节点 5'
+      - '[直连] 备用节点 6'
+      - '[直连] 备用节点 7'
+      - '[直连] 备用节点 8'
+      - '[直连] 备用节点 9'
+      - '[直连] 备用节点 10'
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - defaultName_1
-      - defaultName_2
-      - defaultName_3
-      - defaultName_4
-      - defaultName_5
-      - defaultName_6
-      - defaultName_7
-      - defaultName_8
-      - defaultName_9
-      - defaultName_10
+      - '[直连] 亚太普速 1'
+      - '[直连] 亚太普速 2'
+      - '[直连] 亚太普速 3'
+      - '[直连] 亚太普速 4'
+      - '[直连] 亚太普速 5'
+      - '[直连] 亚太普速 6'
+      - '[直连] 亚太普速 7'
+      - '[直连] 亚太普速 8'
+      - '[直连] 亚太普速 9'
+      - '[直连] 亚太普速 10'
+      - '[直连] 亚太普速 11'
+      - '[直连] 亚太普速 12'
+      - '[直连] 亚太普速 13'
+      - '[直连] 亚太普速 14'
+      - '[直连] 亚太普速 15'
+      - '[直连] 亚太普速 16'
+      - '[直连] 亚太普速 17'
+      - '[直连] 亚太普速 18'
+      - '[直连] 亚太普速 19'
+      - '[直连] 亚太普速 20'
+      - '[直连] 香港高速 1 C'
+      - '[直连] 日本高速 2 C'
+      - '[直连] 新加坡高速 3 C'
+      - '[直连] 韩国高速 4 C'
+      - '[直连] 美国高速 5 C'
+      - '[直连] 香港高速 6 C'
+      - '[直连] 日本高速 7 C'
+      - '[直连] 新加坡高速 8 C'
+      - '[直连] 韩国高速 9 C'
+      - '[直连] 美国高速 10 C'
+      - '[直连] 下载专用 1'
+      - '[直连] 下载专用 2'
+      - '[直连] 下载专用 3'
+      - '[直连] 下载专用 4'
+      - '[直连] 下载专用 5'
+      - '[直连] 下载专用 6'
+      - '[直连] 下载专用 7'
+      - '[直连] 下载专用 8'
+      - '[直连] 下载专用 9'
+      - '[直连] 下载专用 10'
+      - '[直连] 下载专用 11'
+      - '[直连] 下载专用 12'
+      - '[直连] 下载专用 13'
+      - '[直连] 下载专用 14'
+      - '[直连] 下载专用 15'
+      - '[直连] 下载专用 16'
+      - '[直连] 下载专用 17'
+      - '[直连] 下载专用 18'
+      - '[直连] 下载专用 19'
+      - '[直连] 下载专用 20'
+      - '[直连] 备用节点 1'
+      - '[直连] 备用节点 2'
+      - '[直连] 备用节点 3'
+      - '[直连] 备用节点 4'
+      - '[直连] 备用节点 5'
+      - '[直连] 备用节点 6'
+      - '[直连] 备用节点 7'
+      - '[直连] 备用节点 8'
+      - '[直连] 备用节点 9'
+      - '[直连] 备用节点 10'
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - defaultName_1
-      - defaultName_2
-      - defaultName_3
-      - defaultName_4
-      - defaultName_5
-      - defaultName_6
-      - defaultName_7
-      - defaultName_8
-      - defaultName_9
-      - defaultName_10
+      - '[直连] 亚太普速 1'
+      - '[直连] 亚太普速 2'
+      - '[直连] 亚太普速 3'
+      - '[直连] 亚太普速 4'
+      - '[直连] 亚太普速 5'
+      - '[直连] 亚太普速 6'
+      - '[直连] 亚太普速 7'
+      - '[直连] 亚太普速 8'
+      - '[直连] 亚太普速 9'
+      - '[直连] 亚太普速 10'
+      - '[直连] 亚太普速 11'
+      - '[直连] 亚太普速 12'
+      - '[直连] 亚太普速 13'
+      - '[直连] 亚太普速 14'
+      - '[直连] 亚太普速 15'
+      - '[直连] 亚太普速 16'
+      - '[直连] 亚太普速 17'
+      - '[直连] 亚太普速 18'
+      - '[直连] 亚太普速 19'
+      - '[直连] 亚太普速 20'
+      - '[直连] 香港高速 1 C'
+      - '[直连] 日本高速 2 C'
+      - '[直连] 新加坡高速 3 C'
+      - '[直连] 韩国高速 4 C'
+      - '[直连] 美国高速 5 C'
+      - '[直连] 香港高速 6 C'
+      - '[直连] 日本高速 7 C'
+      - '[直连] 新加坡高速 8 C'
+      - '[直连] 韩国高速 9 C'
+      - '[直连] 美国高速 10 C'
+      - '[直连] 下载专用 1'
+      - '[直连] 下载专用 2'
+      - '[直连] 下载专用 3'
+      - '[直连] 下载专用 4'
+      - '[直连] 下载专用 5'
+      - '[直连] 下载专用 6'
+      - '[直连] 下载专用 7'
+      - '[直连] 下载专用 8'
+      - '[直连] 下载专用 9'
+      - '[直连] 下载专用 10'
+      - '[直连] 下载专用 11'
+      - '[直连] 下载专用 12'
+      - '[直连] 下载专用 13'
+      - '[直连] 下载专用 14'
+      - '[直连] 下载专用 15'
+      - '[直连] 下载专用 16'
+      - '[直连] 下载专用 17'
+      - '[直连] 下载专用 18'
+      - '[直连] 下载专用 19'
+      - '[直连] 下载专用 20'
+      - '[直连] 备用节点 1'
+      - '[直连] 备用节点 2'
+      - '[直连] 备用节点 3'
+      - '[直连] 备用节点 4'
+      - '[直连] 备用节点 5'
+      - '[直连] 备用节点 6'
+      - '[直连] 备用节点 7'
+      - '[直连] 备用节点 8'
+      - '[直连] 备用节点 9'
+      - '[直连] 备用节点 10'
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - defaultName_1
-      - defaultName_2
-      - defaultName_3
-      - defaultName_4
-      - defaultName_5
-      - defaultName_6
-      - defaultName_7
-      - defaultName_8
-      - defaultName_9
-      - defaultName_10
+      - '[直连] 亚太普速 1'
+      - '[直连] 亚太普速 2'
+      - '[直连] 亚太普速 3'
+      - '[直连] 亚太普速 4'
+      - '[直连] 亚太普速 5'
+      - '[直连] 亚太普速 6'
+      - '[直连] 亚太普速 7'
+      - '[直连] 亚太普速 8'
+      - '[直连] 亚太普速 9'
+      - '[直连] 亚太普速 10'
+      - '[直连] 亚太普速 11'
+      - '[直连] 亚太普速 12'
+      - '[直连] 亚太普速 13'
+      - '[直连] 亚太普速 14'
+      - '[直连] 亚太普速 15'
+      - '[直连] 亚太普速 16'
+      - '[直连] 亚太普速 17'
+      - '[直连] 亚太普速 18'
+      - '[直连] 亚太普速 19'
+      - '[直连] 亚太普速 20'
+      - '[直连] 香港高速 1 C'
+      - '[直连] 日本高速 2 C'
+      - '[直连] 新加坡高速 3 C'
+      - '[直连] 韩国高速 4 C'
+      - '[直连] 美国高速 5 C'
+      - '[直连] 香港高速 6 C'
+      - '[直连] 日本高速 7 C'
+      - '[直连] 新加坡高速 8 C'
+      - '[直连] 韩国高速 9 C'
+      - '[直连] 美国高速 10 C'
+      - '[直连] 下载专用 1'
+      - '[直连] 下载专用 2'
+      - '[直连] 下载专用 3'
+      - '[直连] 下载专用 4'
+      - '[直连] 下载专用 5'
+      - '[直连] 下载专用 6'
+      - '[直连] 下载专用 7'
+      - '[直连] 下载专用 8'
+      - '[直连] 下载专用 9'
+      - '[直连] 下载专用 10'
+      - '[直连] 下载专用 11'
+      - '[直连] 下载专用 12'
+      - '[直连] 下载专用 13'
+      - '[直连] 下载专用 14'
+      - '[直连] 下载专用 15'
+      - '[直连] 下载专用 16'
+      - '[直连] 下载专用 17'
+      - '[直连] 下载专用 18'
+      - '[直连] 下载专用 19'
+      - '[直连] 下载专用 20'
+      - '[直连] 备用节点 1'
+      - '[直连] 备用节点 2'
+      - '[直连] 备用节点 3'
+      - '[直连] 备用节点 4'
+      - '[直连] 备用节点 5'
+      - '[直连] 备用节点 6'
+      - '[直连] 备用节点 7'
+      - '[直连] 备用节点 8'
+      - '[直连] 备用节点 9'
+      - '[直连] 备用节点 10'
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - defaultName_1
-      - defaultName_2
-      - defaultName_3
-      - defaultName_4
-      - defaultName_5
-      - defaultName_6
-      - defaultName_7
-      - defaultName_8
-      - defaultName_9
-      - defaultName_10
+      - '[直连] 亚太普速 1'
+      - '[直连] 亚太普速 2'
+      - '[直连] 亚太普速 3'
+      - '[直连] 亚太普速 4'
+      - '[直连] 亚太普速 5'
+      - '[直连] 亚太普速 6'
+      - '[直连] 亚太普速 7'
+      - '[直连] 亚太普速 8'
+      - '[直连] 亚太普速 9'
+      - '[直连] 亚太普速 10'
+      - '[直连] 亚太普速 11'
+      - '[直连] 亚太普速 12'
+      - '[直连] 亚太普速 13'
+      - '[直连] 亚太普速 14'
+      - '[直连] 亚太普速 15'
+      - '[直连] 亚太普速 16'
+      - '[直连] 亚太普速 17'
+      - '[直连] 亚太普速 18'
+      - '[直连] 亚太普速 19'
+      - '[直连] 亚太普速 20'
+      - '[直连] 香港高速 1 C'
+      - '[直连] 日本高速 2 C'
+      - '[直连] 新加坡高速 3 C'
+      - '[直连] 韩国高速 4 C'
+      - '[直连] 美国高速 5 C'
+      - '[直连] 香港高速 6 C'
+      - '[直连] 日本高速 7 C'
+      - '[直连] 新加坡高速 8 C'
+      - '[直连] 韩国高速 9 C'
+      - '[直连] 美国高速 10 C'
+      - '[直连] 下载专用 1'
+      - '[直连] 下载专用 2'
+      - '[直连] 下载专用 3'
+      - '[直连] 下载专用 4'
+      - '[直连] 下载专用 5'
+      - '[直连] 下载专用 6'
+      - '[直连] 下载专用 7'
+      - '[直连] 下载专用 8'
+      - '[直连] 下载专用 9'
+      - '[直连] 下载专用 10'
+      - '[直连] 下载专用 11'
+      - '[直连] 下载专用 12'
+      - '[直连] 下载专用 13'
+      - '[直连] 下载专用 14'
+      - '[直连] 下载专用 15'
+      - '[直连] 下载专用 16'
+      - '[直连] 下载专用 17'
+      - '[直连] 下载专用 18'
+      - '[直连] 下载专用 19'
+      - '[直连] 下载专用 20'
+      - '[直连] 备用节点 1'
+      - '[直连] 备用节点 2'
+      - '[直连] 备用节点 3'
+      - '[直连] 备用节点 4'
+      - '[直连] 备用节点 5'
+      - '[直连] 备用节点 6'
+      - '[直连] 备用节点 7'
+      - '[直连] 备用节点 8'
+      - '[直连] 备用节点 9'
+      - '[直连] 备用节点 10'
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - defaultName_1
-      - defaultName_2
-      - defaultName_3
-      - defaultName_4
-      - defaultName_5
-      - defaultName_6
-      - defaultName_7
-      - defaultName_8
-      - defaultName_9
-      - defaultName_10
+      - '[直连] 亚太普速 1'
+      - '[直连] 亚太普速 2'
+      - '[直连] 亚太普速 3'
+      - '[直连] 亚太普速 4'
+      - '[直连] 亚太普速 5'
+      - '[直连] 亚太普速 6'
+      - '[直连] 亚太普速 7'
+      - '[直连] 亚太普速 8'
+      - '[直连] 亚太普速 9'
+      - '[直连] 亚太普速 10'
+      - '[直连] 亚太普速 11'
+      - '[直连] 亚太普速 12'
+      - '[直连] 亚太普速 13'
+      - '[直连] 亚太普速 14'
+      - '[直连] 亚太普速 15'
+      - '[直连] 亚太普速 16'
+      - '[直连] 亚太普速 17'
+      - '[直连] 亚太普速 18'
+      - '[直连] 亚太普速 19'
+      - '[直连] 亚太普速 20'
+      - '[直连] 香港高速 1 C'
+      - '[直连] 日本高速 2 C'
+      - '[直连] 新加坡高速 3 C'
+      - '[直连] 韩国高速 4 C'
+      - '[直连] 美国高速 5 C'
+      - '[直连] 香港高速 6 C'
+      - '[直连] 日本高速 7 C'
+      - '[直连] 新加坡高速 8 C'
+      - '[直连] 韩国高速 9 C'
+      - '[直连] 美国高速 10 C'
+      - '[直连] 下载专用 1'
+      - '[直连] 下载专用 2'
+      - '[直连] 下载专用 3'
+      - '[直连] 下载专用 4'
+      - '[直连] 下载专用 5'
+      - '[直连] 下载专用 6'
+      - '[直连] 下载专用 7'
+      - '[直连] 下载专用 8'
+      - '[直连] 下载专用 9'
+      - '[直连] 下载专用 10'
+      - '[直连] 下载专用 11'
+      - '[直连] 下载专用 12'
+      - '[直连] 下载专用 13'
+      - '[直连] 下载专用 14'
+      - '[直连] 下载专用 15'
+      - '[直连] 下载专用 16'
+      - '[直连] 下载专用 17'
+      - '[直连] 下载专用 18'
+      - '[直连] 下载专用 19'
+      - '[直连] 下载专用 20'
+      - '[直连] 备用节点 1'
+      - '[直连] 备用节点 2'
+      - '[直连] 备用节点 3'
+      - '[直连] 备用节点 4'
+      - '[直连] 备用节点 5'
+      - '[直连] 备用节点 6'
+      - '[直连] 备用节点 7'
+      - '[直连] 备用节点 8'
+      - '[直连] 备用节点 9'
+      - '[直连] 备用节点 10'
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -211,16 +560,66 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - defaultName_1
-      - defaultName_2
-      - defaultName_3
-      - defaultName_4
-      - defaultName_5
-      - defaultName_6
-      - defaultName_7
-      - defaultName_8
-      - defaultName_9
-      - defaultName_10
+      - '[直连] 亚太普速 1'
+      - '[直连] 亚太普速 2'
+      - '[直连] 亚太普速 3'
+      - '[直连] 亚太普速 4'
+      - '[直连] 亚太普速 5'
+      - '[直连] 亚太普速 6'
+      - '[直连] 亚太普速 7'
+      - '[直连] 亚太普速 8'
+      - '[直连] 亚太普速 9'
+      - '[直连] 亚太普速 10'
+      - '[直连] 亚太普速 11'
+      - '[直连] 亚太普速 12'
+      - '[直连] 亚太普速 13'
+      - '[直连] 亚太普速 14'
+      - '[直连] 亚太普速 15'
+      - '[直连] 亚太普速 16'
+      - '[直连] 亚太普速 17'
+      - '[直连] 亚太普速 18'
+      - '[直连] 亚太普速 19'
+      - '[直连] 亚太普速 20'
+      - '[直连] 香港高速 1 C'
+      - '[直连] 日本高速 2 C'
+      - '[直连] 新加坡高速 3 C'
+      - '[直连] 韩国高速 4 C'
+      - '[直连] 美国高速 5 C'
+      - '[直连] 香港高速 6 C'
+      - '[直连] 日本高速 7 C'
+      - '[直连] 新加坡高速 8 C'
+      - '[直连] 韩国高速 9 C'
+      - '[直连] 美国高速 10 C'
+      - '[直连] 下载专用 1'
+      - '[直连] 下载专用 2'
+      - '[直连] 下载专用 3'
+      - '[直连] 下载专用 4'
+      - '[直连] 下载专用 5'
+      - '[直连] 下载专用 6'
+      - '[直连] 下载专用 7'
+      - '[直连] 下载专用 8'
+      - '[直连] 下载专用 9'
+      - '[直连] 下载专用 10'
+      - '[直连] 下载专用 11'
+      - '[直连] 下载专用 12'
+      - '[直连] 下载专用 13'
+      - '[直连] 下载专用 14'
+      - '[直连] 下载专用 15'
+      - '[直连] 下载专用 16'
+      - '[直连] 下载专用 17'
+      - '[直连] 下载专用 18'
+      - '[直连] 下载专用 19'
+      - '[直连] 下载专用 20'
+      - '[直连] 备用节点 1'
+      - '[直连] 备用节点 2'
+      - '[直连] 备用节点 3'
+      - '[直连] 备用节点 4'
+      - '[直连] 备用节点 5'
+      - '[直连] 备用节点 6'
+      - '[直连] 备用节点 7'
+      - '[直连] 备用节点 8'
+      - '[直连] 备用节点 9'
+      - '[直连] 备用节点 10'
 
 rules:
 # 本地/局域网地址
