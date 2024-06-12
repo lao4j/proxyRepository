@@ -1,11 +1,7 @@
-####################################
-# 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：2024-06-11 23:58:57
-# 使用模版：不良林最精简模板
-# 节点数量：1
-# 节点类型：http
-####################################
+# 把Clash配置文件粘贴在这里点「提取模版」可以把配置文件变成模版文件
+# 后面所有的Clash配置文件可以基于当前你生成的模版来生成
+# 要使用自己的配置文件，一定要在右上角「设置」中切换成你自己的模版文件
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -14,21 +10,27 @@ log-level: info
 external-controller: ':9090'
 
 proxies:
-  - {"name":"defaultName","type":"http","server":"1158.aespa.dynv6.net/6e4cd0cb-7500-4fc7-9deb-cfad5c625d79","port":null,"tls":true,"skip-cert-verify":true}
+  - {"name":"3555.aespa.dynv6.net","type":"vless","server":"3555.aespa.dynv6.net","port":443,"uuid":"a27dedf5-5e63-48ec-8239-e256b1b3d310","tls":true,"servername":"3555.aespa.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"3555.aespa.dynv6.net"}},"client-fingerprint":"randomized"}
+  - {"name":"1158.aespa.dynv6.net","type":"vless","server":"1158.aespa.dynv6.net","port":443,"uuid":"6e4cd0cb-7500-4fc7-9deb-cfad5c625d79","tls":true,"servername":"1158.aespa.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"1158.aespa.dynv6.net"}},"client-fingerprint":"randomized"}
+  - {"name":"6177.aespa.dynv6.net","type":"vless","server":"6177.aespa.dynv6.net","port":443,"uuid":"11cf1fa6-a471-4025-8b60-ada97098eea8","tls":true,"servername":"6177.aespa.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"6177.aespa.dynv6.net"}},"client-fingerprint":"randomized"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - defaultName
+      - 3555.aespa.dynv6.net
+      - 1158.aespa.dynv6.net
+      - 6177.aespa.dynv6.net
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - defaultName
+      - 3555.aespa.dynv6.net
+      - 1158.aespa.dynv6.net
+      - 6177.aespa.dynv6.net
 
 rules:
 # 长风网站，自动注入
@@ -36,6 +38,8 @@ rules:
   - DOMAIN-SUFFIX,cff.pw,🚀 节点选择
   - DOMAIN-SUFFIX,vpnse.org,🚀 节点选择
   - DOMAIN-SUFFIX,cfmem.com,🚀 节点选择
+  - DOMAIN-SUFFIX,services.googleapis.cn,🚀 节点选择,no-resolve
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🚀 节点选择,no-resolve
   - IP-CIDR,120.232.181.162/32,🚀 节点选择,no-resolve
   - IP-CIDR,120.241.147.226/32,🚀 节点选择,no-resolve
   - IP-CIDR,120.253.253.226/32,🚀 节点选择,no-resolve
@@ -54,8 +58,6 @@ rules:
   - IP-CIDR,220.181.174.162/32,🚀 节点选择,no-resolve
   - IP-CIDR,220.181.174.226/32,🚀 节点选择,no-resolve
   - IP-CIDR,220.181.174.34/32,🚀 节点选择,no-resolve
-  - DOMAIN-SUFFIX,services.googleapis.cn,DIRECT
-  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,DIRECT
   - DOMAIN-SUFFIX,acl4.ssr,DIRECT
   - DOMAIN-SUFFIX,ip6-localhost,DIRECT
   - DOMAIN-SUFFIX,ip6-loopback,DIRECT
