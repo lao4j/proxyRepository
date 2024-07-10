@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：2024-07-09 17:19:12
+# 客户端：Clash.Meta
+# 创建时间：2024-07-10 17:48:13
 # 使用模版：V2RaySE 默认模版
-# 节点数量：5
+# 节点数量：10
 ####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -85,74 +86,109 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"未知国家-3.25MB/s","type":"vmess","server":"max.mankadmu.com","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkvws","headers":{"host":"max.mankadmu.com"}}}
-  - {"name":"美国-4.29MB/s","type":"vmess","server":"mankadmu.com","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkvws","headers":{"host":"mankadmu.com"}}}
-  - {"name":"加拿大-142.5KB/s","type":"ss","server":"162.221.207.62","port":443,"password":"XfEIbmLk4oOzhOntezoVCs","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"韩国-680.9KB/s","type":"ss","server":"13.124.244.90","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"美国-3.32MB/s","type":"ss","server":"45.158.171.148","port":8080,"password":"a8bt9fY0QsLS6eLnXUe0Ym","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸_US_美国_1","type":"vless","server":"172.67.204.84","port":8080,"uuid":"ae52d7a4-57bd-48f1-9343-f4557444071e","network":"ws"}
+  - {"name":"🇺🇸_US_美国->🇯🇵_JP_日本","type":"vmess","server":"104.19.47.45","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"network":"ws"}
+  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国","type":"vless","server":"47.242.155.183","port":8080,"uuid":"f32a99e8-05dd-478a-82c0-7688848121bd","network":"ws"}
+  - {"name":"🇺🇸_US_美国->🇨🇦_CA_加拿大","type":"vless","server":"66.81.247.161","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","servername":"a.ssll.gay","network":"ws"}
+  - {"name":"🇺🇸_US_美国->🇨🇳_CN_中国","type":"vmess","server":"104.19.59.89","port":2052,"cipher":"auto","uuid":"d6b6d982-d52f-465a-b988-85670b23f64a","alterId":0,"sni":"","network":"ws"}
+  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"104.26.0.56","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"sni":"ip2.1457230.xyz","network":"ws"}
+  - {"name":"🇺🇸_US_美国_3","type":"vless","server":"104.21.33.85","port":8880,"uuid":"5faa94c6-ea27-4ea0-9e39-2de3d6ea9be1","network":"ws"}
+  - {"name":"🇺🇸_US_美国_4","type":"vless","server":"104.21.70.29","port":80,"uuid":"ebbeeb9f-0842-5048-89b9-64643d3424e6","network":"ws"}
+  - {"name":"🇨🇳_CN_中国","type":"vmess","server":"183.240.235.162","port":36002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_5","type":"vmess","server":"172.64.175.88","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"sni":"","network":"ws"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 未知国家-3.25MB/s
-      - 美国-4.29MB/s
-      - 加拿大-142.5KB/s
-      - 韩国-680.9KB/s
-      - 美国-3.32MB/s
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸_US_美国->🇨🇦_CA_加拿大
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 未知国家-3.25MB/s
-      - 美国-4.29MB/s
-      - 加拿大-142.5KB/s
-      - 韩国-680.9KB/s
-      - 美国-3.32MB/s
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸_US_美国->🇨🇦_CA_加拿大
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_5
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 未知国家-3.25MB/s
-      - 美国-4.29MB/s
-      - 加拿大-142.5KB/s
-      - 韩国-680.9KB/s
-      - 美国-3.32MB/s
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸_US_美国->🇨🇦_CA_加拿大
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_5
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 未知国家-3.25MB/s
-      - 美国-4.29MB/s
-      - 加拿大-142.5KB/s
-      - 韩国-680.9KB/s
-      - 美国-3.32MB/s
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸_US_美国->🇨🇦_CA_加拿大
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_5
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 未知国家-3.25MB/s
-      - 美国-4.29MB/s
-      - 加拿大-142.5KB/s
-      - 韩国-680.9KB/s
-      - 美国-3.32MB/s
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸_US_美国->🇨🇦_CA_加拿大
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_5
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 未知国家-3.25MB/s
-      - 美国-4.29MB/s
-      - 加拿大-142.5KB/s
-      - 韩国-680.9KB/s
-      - 美国-3.32MB/s
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸_US_美国->🇨🇦_CA_加拿大
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -175,11 +211,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 未知国家-3.25MB/s
-      - 美国-4.29MB/s
-      - 加拿大-142.5KB/s
-      - 韩国-680.9KB/s
-      - 美国-3.32MB/s
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸_US_美国->🇨🇦_CA_加拿大
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
+      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_5
 
 rules:
 # 本地/局域网地址
