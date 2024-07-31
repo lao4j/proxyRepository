@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Surfboard
-# 创建时间：2024-07-29 19:51:50
+# 创建时间：2024-07-31 21:25:40
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：10
-# 节点类型：ss, trojan, vmess
+# 节点类型：ss, vmess, trojan
 ####################################
 
 [General]
@@ -18,23 +18,23 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-新加坡-3.25MB/s = ss, 68.183.176.112, 55064, encrypt-method = chacha20-ietf-poly1305, password = eHdKAXQecCPCvmXi4pU7Yj
-加拿大-799.5KB/s = ss, 38.114.114.207, 8009, encrypt-method = aes-256-gcm, password = XKFKl2rULjIp74
-中转节点-16.62MB/s = trojan, 36.134.38.49, 51000, password = MfqALmAJ, udp-delay = true, skip-cert-verify = true, ws = false
-瑞士-210.2KB/s = ss, 51.103.232.91, 8929, encrypt-method = chacha20-ietf-poly1305, password = 76ZehNxtyrhe4tLmDYfHsq
-中转节点-5.94MB/s = trojan, f10002.flyflylflyflysbs.sbs, 29496, password = 4bd14bdb-db19-4de4-a452-58b897046d2c, udp-delay = true, skip-cert-verify = true, sni = jp01.ckcloud.info, ws = false
-韩国-2.15MB/s = ss, 52.78.200.155, 443, encrypt-method = aes-256-cfb, password = amazonskr05
-德国-203.5KB/s = ss, 80.92.204.106, 9006, encrypt-method = aes-256-cfb, password = FAdUvMJUq5vDgKEq
-中转节点-219.5KB/s = vmess, mmsg16.micloud.buzz, 46016, username = f9b02d8c-b69b-435f-aa25-68393e5fb121, ws = true, tls = false, vmess-aead = true, ws-path = /zh-cn, ws-headers = Host:"mmsg16.micloud.buzz", skip-cert-verify = true, tfo = false
-未知国家-5.22MB/s = vmess, 104.19.51.232, 2086, username = 29eebb60-b27b-4a9d-bba5-947763d9205e, ws = true, tls = false, vmess-aead = true, ws-path = github.com/Alvin9999, ws-headers = Host:"ip005.dtku47.xyz", skip-cert-verify = true, tfo = false
-加拿大-243.6KB/s = ss, 142.4.216.225, 80, encrypt-method = chacha20-ietf-poly1305, password = JIhN6rBKkaEboLNXVSv5rq
+哈萨克斯坦-2.50MB/s = ss, 213.156.137.67, 989, encrypt-method = aes-256-cfb, password = f8f7aCzcPKbsF8p3
+未知国家-1.46MB/s = vmess, cfcdn2.sanfencdn9.com, 2052, username = e093ca94-9890-4b06-8384-08572c5d3215, ws = true, tls = false, vmess-aead = true, ws-path = /video/3YKfzGw4, ws-headers = Host:"rpmlybgzsg2.yofnhkfc.xyz", skip-cert-verify = true, tfo = false
+未知国家-260.7KB/s = vmess, 104.26.0.56, 2086, username = e9e3cc13-db48-4cc1-8c24-7626439a5339, ws = true, tls = false, vmess-aead = true, ws-path = github.com/Alvin9999, ws-headers = Host:"ip14.freegradely.xyz", skip-cert-verify = true, tfo = false
+荷兰-285.0KB/s = ss, 109.201.152.181, 443, encrypt-method = aes-128-cfb, password = shadowsocks
+美国-149.4KB/s = ss, 169.197.142.216, 6697, encrypt-method = aes-256-gcm, password = TEzjfAYq2IjtuoS
+未知国家-4.32MB/s = vmess, 104.19.51.232, 2086, username = 29eebb60-b27b-4a9d-bba5-947763d9205e, ws = true, tls = false, vmess-aead = true, ws-path = github.com/Alvin9999, ws-headers = Host:"ip005.dtku47.xyz", skip-cert-verify = true, tfo = false
+加拿大-3.58MB/s = vmess, 23.162.200.94, 443, username = 03fcc618-b93d-6796-6aed-8a38c975d581, ws = true, tls = true, vmess-aead = true, ws-path = /linkvws, ws-headers = Host:"nina.bond", skip-cert-verify = true, tfo = false
+中转节点-134.8KB/s = vmess, mmhk01.micloud.buzz, 46001, username = f9b02d8c-b69b-435f-aa25-68393e5fb121, ws = true, tls = false, vmess-aead = true, ws-path = /zh-cn, ws-headers = Host:"mmhk01.micloud.buzz", skip-cert-verify = true, tfo = false
+中转节点-1.07MB/s = trojan, 36.151.195.77, 31666, password = MfqALmAJ, udp-delay = true, skip-cert-verify = true, ws = false
+日本-618.5KB/s = ss, 52.194.188.15, 443, encrypt-method = aes-256-cfb, password = amazonskr05
 
 [Proxy Group]
-🚀 节点选择 = select,♻️ 自动选择,DIRECT,新加坡-3.25MB/s,加拿大-799.5KB/s,中转节点-16.62MB/s,瑞士-210.2KB/s,中转节点-5.94MB/s,韩国-2.15MB/s,德国-203.5KB/s,中转节点-219.5KB/s,未知国家-5.22MB/s,加拿大-243.6KB/s
-♻️ 自动选择 = url-test,新加坡-3.25MB/s,加拿大-799.5KB/s,中转节点-16.62MB/s,瑞士-210.2KB/s,中转节点-5.94MB/s,韩国-2.15MB/s,德国-203.5KB/s,中转节点-219.5KB/s,未知国家-5.22MB/s,加拿大-243.6KB/s,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 50
+🚀 节点选择 = select,♻️ 自动选择,DIRECT,哈萨克斯坦-2.50MB/s,未知国家-1.46MB/s,未知国家-260.7KB/s,荷兰-285.0KB/s,美国-149.4KB/s,未知国家-4.32MB/s,加拿大-3.58MB/s,中转节点-134.8KB/s,中转节点-1.07MB/s,日本-618.5KB/s
+♻️ 自动选择 = url-test,哈萨克斯坦-2.50MB/s,未知国家-1.46MB/s,未知国家-260.7KB/s,荷兰-285.0KB/s,美国-149.4KB/s,未知国家-4.32MB/s,加拿大-3.58MB/s,中转节点-134.8KB/s,中转节点-1.07MB/s,日本-618.5KB/s,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 50
 🎯 全球直连 = select,DIRECT,🚀 节点选择,♻️ 自动选择
 🛑 全球拦截 = select,REJECT,DIRECT
-🐟 漏网之鱼 = select,🚀 节点选择,🎯 全球直连,♻️ 自动选择,新加坡-3.25MB/s,加拿大-799.5KB/s,中转节点-16.62MB/s,瑞士-210.2KB/s,中转节点-5.94MB/s,韩国-2.15MB/s,德国-203.5KB/s,中转节点-219.5KB/s,未知国家-5.22MB/s,加拿大-243.6KB/s
+🐟 漏网之鱼 = select,🚀 节点选择,🎯 全球直连,♻️ 自动选择,哈萨克斯坦-2.50MB/s,未知国家-1.46MB/s,未知国家-260.7KB/s,荷兰-285.0KB/s,美国-149.4KB/s,未知国家-4.32MB/s,加拿大-3.58MB/s,中转节点-134.8KB/s,中转节点-1.07MB/s,日本-618.5KB/s
 
 [Rule]
 # 本地/局域网地址
