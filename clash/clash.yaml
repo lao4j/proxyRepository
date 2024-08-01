@@ -1,13 +1,13 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-08-01 11:49:25
+# 创建时间：2024-08-01 12:00:56
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：990
 # 节点类型：vmess, trojan, ss
 ####################################
 mixed-port: 7890
-allow-lan: false
+allow-lan: free
 log-level: silent
 external-controller: 0.0.0.0:9090
 dns:
@@ -2075,8 +2075,7 @@ proxy-groups:
   - name: 🔯 故障转移
     type: fallback
     url: https://www.gstatic.com/generate_204
-    interval: 180
-    tolerance: 0
+    interval: 300
     proxies:
       - 未知国家-2.25MB/s_1
       - 未知国家-5.09MB/s_1
