@@ -1,143 +1,474 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：2024-08-12 09:25:34
+# 客户端：Clash.Meta
+# 创建时间：2024-08-12 16:12:06
 # 使用模版：V2RaySE 默认模版
-# 节点数量：12
+# 节点数量：50
 ####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
 external-controller: 0.0.0.0:9090
 dns:
   enabled: true
-  nameserver:
-    - 119.29.29.29
+  listen: 0.0.0.0:1053
+  ipv6: true
+  default-nameserver:
     - 223.5.5.5
-  fallback:
-    - 8.8.8.8
-    - 8.8.4.4
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
+    - 114.114.114.114
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - swscan.apple.com
+    - mesu.apple.com
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - +.music.163.com
+    - '*.126.net'
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - '*.kuwo.cn'
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - +.y.qq.com
+    - +.music.tc.qq.com
+    - aqqmusic.tc.qq.com
+    - +.stream.qqmusic.qq.com
+    - '*.xiami.com'
+    - +.music.migu.cn
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - +.xboxlive.com
+    - localhost.ptlogin2.qq.com
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - '*.mcdn.bilivideo.cn'
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇺🇸_US_美国->🇨🇦_CA_加拿大_1","type":"vmess","server":"104.19.45.11","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"sni":"","network":"ws"}
-  - {"name":"🇺🇸_US_美国->🇨🇦_CA_加拿大_2","type":"vmess","server":"104.19.38.62","port":2086,"cipher":"auto","uuid":"29eebb60-b27b-4a9d-bba5-947763d9205e","alterId":0,"sni":"","network":"ws"}
-  - {"name":"🇺🇸_US_美国->🇨🇦_CA_加拿大_3","type":"vmess","server":"104.19.32.216","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"sni":"","network":"ws"}
-  - {"name":"🇺🇸_US_美国->🇨🇦_CA_加拿大_4","type":"vmess","server":"172.64.233.43","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"sni":"","network":"ws"}
-  - {"name":"🇺🇸_US_美国->🇨🇦_CA_加拿大_5","type":"vmess","server":"104.19.21.230","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"sni":"","network":"ws"}
-  - {"name":"🇺🇸_US_美国->🇨🇦_CA_加拿大_6","type":"vmess","server":"104.19.38.8","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"sni":"","network":"ws"}
-  - {"name":"🇺🇸_US_美国->🇨🇦_CA_加拿大_7","type":"vmess","server":"104.19.46.233","port":2086,"cipher":"auto","uuid":"29eebb60-b27b-4a9d-bba5-947763d9205e","alterId":0,"sni":"","network":"ws"}
-  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"104.19.21.63","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"sni":"","network":"ws"}
-  - {"name":"🇺🇸_US_美国->🇨🇦_CA_加拿大_8","type":"vmess","server":"172.64.166.16","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"sni":"","network":"ws"}
-  - {"name":"🇺🇸_US_美国->🇨🇦_CA_加拿大_9","type":"vmess","server":"172.64.233.27","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"sni":"","network":"ws"}
-  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"104.19.46.42","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"sni":"","network":"ws"}
-  - {"name":"🇷🇺_RU_俄罗斯","type":"ss","server":"217.30.10.18","port":9033,"password":"UTJA57ypk2XKQpnm","cipher":"aes-256-cfb"}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.226.169:80","type":"vless","server":"104.17.226.169","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🏁RELAY-172.67.75.172-1972","type":"vmess","server":"ip.sb","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip1.1789034.xyz"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.55.238:80","type":"vless","server":"104.20.55.238","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🇩🇪DE_561","type":"ss","server":"80.92.204.106","port":9031,"password":"BwcAUZk8hUFAkDGN","cipher":"aes-256-cfb"}
+  - {"name":"🇺🇸 US_775","type":"vmess","server":"104.16.60.8","port":2086,"cipher":"auto","uuid":"441da342-ce90-441e-bff9-d2ceb55e68ca","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ivideos.sbs/linkws","headers":{"host":"82uple-bird-b087.pemed58443.workers.dev"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.28.171:80","type":"vless","server":"104.17.28.171","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🔒 VL-WS-NONE 🇺🇸 US-151.101.130.219:80","type":"vless","server":"151.101.130.219","port":80,"uuid":"c18b4011-99de-430c-8da1-3650fd37d987","tls":false,"servername":"alfredo.ir","network":"ws","ws-opts":{"path":"/@AlfredConfig/@AlfredConfig/@AlfredConfig/@AlfredConfig/@AlfredConfig/@AlfredConfig/@AlfredConfigFreeV2ray?ed=2048","headers":{"host":"alfredo.ir"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.114.137:80","type":"vless","server":"104.17.114.137","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.79.102:80","type":"vless","server":"172.67.79.102","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"美国【付费推荐：https://a0a.xyz】38","type":"vmess","server":"104.26.5.88","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip1.1789034.xyz"}}}
+  - {"name":"🏁RELAY-104.19.46.33-1192","type":"vmess","server":"104.19.46.33","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip13.freegradely.xyz"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.174.35:80","type":"vless","server":"104.19.174.35","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.118.168:80","type":"vless","server":"104.18.118.168","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🇺🇸US | 🔴 | vless | @DigiV2ray | 0","type":"vless","server":"www.parspack.com","port":2095,"uuid":"94f51d56-204b-466b-b1d7-d397df9273d7","tls":false,"servername":"www.speedtest.net.ftp.debian.org.www.digikala.com.radiotehran.org.","network":"ws","ws-opts":{"path":"/Digi-Tel-Digiv-Digicnc-saaaalaaaam-?ed=1024","headers":{"host":"www.speedtest.net.ftp.debian.org.www.digikala.com.radiotehran.org."}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.189.60:80","type":"vless","server":"104.17.189.60","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-172.64.147.184:80","type":"vless","server":"172.64.147.184","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🏁RELAY-172.64.167.19-0313","type":"vmess","server":"172.64.167.19","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.1457230.xyz"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.192.33:80","type":"vless","server":"104.16.192.33","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🇲🇰MK-46.183.185.15-5329","type":"ss","server":"46.183.185.15","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-172.64.229.60:80","type":"vless","server":"172.64.229.60","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🔒 VL-TCP-NONE 🇫🇷 FR-37.59.246.184:57381","type":"vless","server":"37.59.246.184","port":57381,"uuid":"863cf4f4-4fe8-4432-9485-3bef04baa3bd","tls":false,"network":"tcp"}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.97.114:80","type":"vless","server":"104.17.97.114","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.156.194:80","type":"vless","server":"172.67.156.194","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🆔v2ray1_ng 🔓 VL-WS-N/A 🇺🇸 US 5ms","type":"vless","server":"104.24.185.137","port":8080,"uuid":"Parsashonam-35","tls":false,"servername":"myket.xn--ir-6g5cr0ao9vf3s229b.arvancloud.ir.DigehKhastehShodamAzBasDamanehKharidam.BlOG.","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"myket.xn--ir-6g5cr0ao9vf3s229b.arvancloud.ir.DigehKhastehShodamAzBasDamanehKharidam.BlOG."}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.134.50:80","type":"vless","server":"172.67.134.50","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.176.148:80","type":"vless","server":"104.18.176.148","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.234.102:80","type":"vless","server":"104.17.234.102","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.15.100:80","type":"vless","server":"104.18.15.100","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.37.84:80","type":"vless","server":"104.19.37.84","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.62.84:80","type":"vless","server":"104.19.62.84","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.52.46:80","type":"vless","server":"104.17.52.46","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.51.237:80","type":"vless","server":"104.20.51.237","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🇺🇸 US_787","type":"vmess","server":"104.18.202.250","port":2052,"cipher":"auto","uuid":"6c168fcc-2231-4f3b-8c1e-f6391692df4a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/hms02.fxiaomi.sbs/link","headers":{"host":"erfannewfreenodes.vdmmswyzmzigonvnjk443.workers.dev"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.235.199:80","type":"vless","server":"104.21.235.199","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🇨🇦CA-23.162.200.130-1332","type":"ss","server":"23.162.200.130","port":2376,"password":"faBAoD54k87UJG7","cipher":"aes-256-gcm"}
+  - {"name":"🏁RELAY-104.20.25.146-0442","type":"vmess","server":"104.20.25.146","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.1457230.xyz"}}}
+  - {"name":"🇩🇪DE-80.92.204.106-3072","type":"ss","server":"80.92.204.106","port":9011,"password":"M3t2ZEQcMGRWBjRa","cipher":"aes-256-cfb"}
+  - {"name":"🏁RELAY-172.64.166.22-0424","type":"vmess","server":"172.64.166.22","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.1457230.xyz"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.28.82:80","type":"vless","server":"104.21.28.82","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.27.88:80","type":"vless","server":"104.18.27.88","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🏁RELAY-104.19.45.47-0331","type":"vmess","server":"104.19.45.47","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip13.freegradely.xyz"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.18.47:80","type":"vless","server":"104.17.18.47","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🇩🇪DE_560","type":"ss","server":"80.92.204.106","port":9046,"password":"NvS8N4Vf8qAGPSCL","cipher":"aes-256-cfb"}
+  - {"name":"🏁RELAY-104.19.46.27-0258","type":"vmess","server":"104.19.46.27","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip14.freegradely.xyz"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.67.38:2052","type":"vless","server":"104.16.67.38","port":2052,"uuid":"d6f79630-aa94-4536-b2ef-899b5acb3b49","tls":false,"servername":"vless-sub.n7p8ri7j.workers.dev","network":"ws","ws-opts":{"path":"/unmanliest.appreviewcenter.com/nimws","headers":{"host":"vless-sub.n7p8ri7j.workers.dev"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.188.144:80","type":"vless","server":"172.67.188.144","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.228.195:80","type":"vless","server":"104.21.228.195","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.180.82:80","type":"vless","server":"172.67.180.82","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
+  - {"name":"🏁RELAY-104.19.46.39-0378","type":"vmess","server":"104.19.46.39","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip14.freegradely.xyz"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.222.88:80","type":"vless","server":"104.17.222.88","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","tls":false,"servername":"us3.rtacg.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us3.rtacg.com"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_3
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_4
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_5
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_6
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_7
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_8
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_9
-      - 🇺🇸_US_美国_2
-      - 🇷🇺_RU_俄罗斯
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.226.169:80
+      - 🏁RELAY-172.67.75.172-1972
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.55.238:80
+      - 🇩🇪DE_561
+      - 🇺🇸 US_775
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.28.171:80
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.130.219:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.114.137:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.79.102:80
+      - 美国【付费推荐：https://a0a.xyz】38
+      - 🏁RELAY-104.19.46.33-1192
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.174.35:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.118.168:80
+      - 🇺🇸US | 🔴 | vless | @DigiV2ray | 0
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.189.60:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.64.147.184:80
+      - 🏁RELAY-172.64.167.19-0313
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.192.33:80
+      - 🇲🇰MK-46.183.185.15-5329
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.64.229.60:80
+      - 🔒 VL-TCP-NONE 🇫🇷 FR-37.59.246.184:57381
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.97.114:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.156.194:80
+      - 🆔v2ray1_ng 🔓 VL-WS-N/A 🇺🇸 US 5ms
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.134.50:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.176.148:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.234.102:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.15.100:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.37.84:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.62.84:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.52.46:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.51.237:80
+      - 🇺🇸 US_787
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.235.199:80
+      - 🇨🇦CA-23.162.200.130-1332
+      - 🏁RELAY-104.20.25.146-0442
+      - 🇩🇪DE-80.92.204.106-3072
+      - 🏁RELAY-172.64.166.22-0424
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.28.82:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.27.88:80
+      - 🏁RELAY-104.19.45.47-0331
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.18.47:80
+      - 🇩🇪DE_560
+      - 🏁RELAY-104.19.46.27-0258
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.67.38:2052
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.188.144:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.228.195:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.180.82:80
+      - 🏁RELAY-104.19.46.39-0378
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.222.88:80
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_3
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_4
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_5
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_6
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_7
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_8
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_9
-      - 🇺🇸_US_美国_2
-      - 🇷🇺_RU_俄罗斯
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.226.169:80
+      - 🏁RELAY-172.67.75.172-1972
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.55.238:80
+      - 🇩🇪DE_561
+      - 🇺🇸 US_775
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.28.171:80
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.130.219:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.114.137:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.79.102:80
+      - 美国【付费推荐：https://a0a.xyz】38
+      - 🏁RELAY-104.19.46.33-1192
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.174.35:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.118.168:80
+      - 🇺🇸US | 🔴 | vless | @DigiV2ray | 0
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.189.60:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.64.147.184:80
+      - 🏁RELAY-172.64.167.19-0313
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.192.33:80
+      - 🇲🇰MK-46.183.185.15-5329
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.64.229.60:80
+      - 🔒 VL-TCP-NONE 🇫🇷 FR-37.59.246.184:57381
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.97.114:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.156.194:80
+      - 🆔v2ray1_ng 🔓 VL-WS-N/A 🇺🇸 US 5ms
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.134.50:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.176.148:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.234.102:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.15.100:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.37.84:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.62.84:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.52.46:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.51.237:80
+      - 🇺🇸 US_787
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.235.199:80
+      - 🇨🇦CA-23.162.200.130-1332
+      - 🏁RELAY-104.20.25.146-0442
+      - 🇩🇪DE-80.92.204.106-3072
+      - 🏁RELAY-172.64.166.22-0424
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.28.82:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.27.88:80
+      - 🏁RELAY-104.19.45.47-0331
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.18.47:80
+      - 🇩🇪DE_560
+      - 🏁RELAY-104.19.46.27-0258
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.67.38:2052
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.188.144:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.228.195:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.180.82:80
+      - 🏁RELAY-104.19.46.39-0378
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.222.88:80
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_3
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_4
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_5
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_6
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_7
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_8
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_9
-      - 🇺🇸_US_美国_2
-      - 🇷🇺_RU_俄罗斯
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.226.169:80
+      - 🏁RELAY-172.67.75.172-1972
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.55.238:80
+      - 🇩🇪DE_561
+      - 🇺🇸 US_775
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.28.171:80
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.130.219:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.114.137:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.79.102:80
+      - 美国【付费推荐：https://a0a.xyz】38
+      - 🏁RELAY-104.19.46.33-1192
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.174.35:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.118.168:80
+      - 🇺🇸US | 🔴 | vless | @DigiV2ray | 0
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.189.60:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.64.147.184:80
+      - 🏁RELAY-172.64.167.19-0313
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.192.33:80
+      - 🇲🇰MK-46.183.185.15-5329
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.64.229.60:80
+      - 🔒 VL-TCP-NONE 🇫🇷 FR-37.59.246.184:57381
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.97.114:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.156.194:80
+      - 🆔v2ray1_ng 🔓 VL-WS-N/A 🇺🇸 US 5ms
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.134.50:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.176.148:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.234.102:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.15.100:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.37.84:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.62.84:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.52.46:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.51.237:80
+      - 🇺🇸 US_787
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.235.199:80
+      - 🇨🇦CA-23.162.200.130-1332
+      - 🏁RELAY-104.20.25.146-0442
+      - 🇩🇪DE-80.92.204.106-3072
+      - 🏁RELAY-172.64.166.22-0424
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.28.82:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.27.88:80
+      - 🏁RELAY-104.19.45.47-0331
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.18.47:80
+      - 🇩🇪DE_560
+      - 🏁RELAY-104.19.46.27-0258
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.67.38:2052
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.188.144:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.228.195:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.180.82:80
+      - 🏁RELAY-104.19.46.39-0378
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.222.88:80
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_3
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_4
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_5
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_6
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_7
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_8
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_9
-      - 🇺🇸_US_美国_2
-      - 🇷🇺_RU_俄罗斯
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.226.169:80
+      - 🏁RELAY-172.67.75.172-1972
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.55.238:80
+      - 🇩🇪DE_561
+      - 🇺🇸 US_775
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.28.171:80
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.130.219:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.114.137:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.79.102:80
+      - 美国【付费推荐：https://a0a.xyz】38
+      - 🏁RELAY-104.19.46.33-1192
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.174.35:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.118.168:80
+      - 🇺🇸US | 🔴 | vless | @DigiV2ray | 0
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.189.60:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.64.147.184:80
+      - 🏁RELAY-172.64.167.19-0313
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.192.33:80
+      - 🇲🇰MK-46.183.185.15-5329
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.64.229.60:80
+      - 🔒 VL-TCP-NONE 🇫🇷 FR-37.59.246.184:57381
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.97.114:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.156.194:80
+      - 🆔v2ray1_ng 🔓 VL-WS-N/A 🇺🇸 US 5ms
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.134.50:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.176.148:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.234.102:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.15.100:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.37.84:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.62.84:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.52.46:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.51.237:80
+      - 🇺🇸 US_787
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.235.199:80
+      - 🇨🇦CA-23.162.200.130-1332
+      - 🏁RELAY-104.20.25.146-0442
+      - 🇩🇪DE-80.92.204.106-3072
+      - 🏁RELAY-172.64.166.22-0424
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.28.82:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.27.88:80
+      - 🏁RELAY-104.19.45.47-0331
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.18.47:80
+      - 🇩🇪DE_560
+      - 🏁RELAY-104.19.46.27-0258
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.67.38:2052
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.188.144:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.228.195:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.180.82:80
+      - 🏁RELAY-104.19.46.39-0378
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.222.88:80
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_3
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_4
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_5
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_6
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_7
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_8
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_9
-      - 🇺🇸_US_美国_2
-      - 🇷🇺_RU_俄罗斯
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.226.169:80
+      - 🏁RELAY-172.67.75.172-1972
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.55.238:80
+      - 🇩🇪DE_561
+      - 🇺🇸 US_775
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.28.171:80
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.130.219:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.114.137:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.79.102:80
+      - 美国【付费推荐：https://a0a.xyz】38
+      - 🏁RELAY-104.19.46.33-1192
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.174.35:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.118.168:80
+      - 🇺🇸US | 🔴 | vless | @DigiV2ray | 0
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.189.60:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.64.147.184:80
+      - 🏁RELAY-172.64.167.19-0313
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.192.33:80
+      - 🇲🇰MK-46.183.185.15-5329
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.64.229.60:80
+      - 🔒 VL-TCP-NONE 🇫🇷 FR-37.59.246.184:57381
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.97.114:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.156.194:80
+      - 🆔v2ray1_ng 🔓 VL-WS-N/A 🇺🇸 US 5ms
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.134.50:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.176.148:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.234.102:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.15.100:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.37.84:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.62.84:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.52.46:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.51.237:80
+      - 🇺🇸 US_787
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.235.199:80
+      - 🇨🇦CA-23.162.200.130-1332
+      - 🏁RELAY-104.20.25.146-0442
+      - 🇩🇪DE-80.92.204.106-3072
+      - 🏁RELAY-172.64.166.22-0424
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.28.82:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.27.88:80
+      - 🏁RELAY-104.19.45.47-0331
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.18.47:80
+      - 🇩🇪DE_560
+      - 🏁RELAY-104.19.46.27-0258
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.67.38:2052
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.188.144:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.228.195:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.180.82:80
+      - 🏁RELAY-104.19.46.39-0378
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.222.88:80
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_3
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_4
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_5
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_6
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_7
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_8
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_9
-      - 🇺🇸_US_美国_2
-      - 🇷🇺_RU_俄罗斯
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.226.169:80
+      - 🏁RELAY-172.67.75.172-1972
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.55.238:80
+      - 🇩🇪DE_561
+      - 🇺🇸 US_775
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.28.171:80
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.130.219:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.114.137:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.79.102:80
+      - 美国【付费推荐：https://a0a.xyz】38
+      - 🏁RELAY-104.19.46.33-1192
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.174.35:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.118.168:80
+      - 🇺🇸US | 🔴 | vless | @DigiV2ray | 0
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.189.60:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.64.147.184:80
+      - 🏁RELAY-172.64.167.19-0313
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.192.33:80
+      - 🇲🇰MK-46.183.185.15-5329
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.64.229.60:80
+      - 🔒 VL-TCP-NONE 🇫🇷 FR-37.59.246.184:57381
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.97.114:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.156.194:80
+      - 🆔v2ray1_ng 🔓 VL-WS-N/A 🇺🇸 US 5ms
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.134.50:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.176.148:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.234.102:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.15.100:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.37.84:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.62.84:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.52.46:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.51.237:80
+      - 🇺🇸 US_787
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.235.199:80
+      - 🇨🇦CA-23.162.200.130-1332
+      - 🏁RELAY-104.20.25.146-0442
+      - 🇩🇪DE-80.92.204.106-3072
+      - 🏁RELAY-172.64.166.22-0424
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.28.82:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.27.88:80
+      - 🏁RELAY-104.19.45.47-0331
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.18.47:80
+      - 🇩🇪DE_560
+      - 🏁RELAY-104.19.46.27-0258
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.67.38:2052
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.188.144:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.228.195:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.180.82:80
+      - 🏁RELAY-104.19.46.39-0378
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.222.88:80
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -160,18 +491,56 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_3
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_4
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_5
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_6
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_7
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_8
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_9
-      - 🇺🇸_US_美国_2
-      - 🇷🇺_RU_俄罗斯
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.226.169:80
+      - 🏁RELAY-172.67.75.172-1972
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.55.238:80
+      - 🇩🇪DE_561
+      - 🇺🇸 US_775
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.28.171:80
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.130.219:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.114.137:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.79.102:80
+      - 美国【付费推荐：https://a0a.xyz】38
+      - 🏁RELAY-104.19.46.33-1192
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.174.35:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.118.168:80
+      - 🇺🇸US | 🔴 | vless | @DigiV2ray | 0
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.189.60:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.64.147.184:80
+      - 🏁RELAY-172.64.167.19-0313
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.192.33:80
+      - 🇲🇰MK-46.183.185.15-5329
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.64.229.60:80
+      - 🔒 VL-TCP-NONE 🇫🇷 FR-37.59.246.184:57381
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.97.114:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.156.194:80
+      - 🆔v2ray1_ng 🔓 VL-WS-N/A 🇺🇸 US 5ms
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.134.50:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.176.148:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.234.102:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.15.100:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.37.84:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.62.84:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.52.46:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.51.237:80
+      - 🇺🇸 US_787
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.235.199:80
+      - 🇨🇦CA-23.162.200.130-1332
+      - 🏁RELAY-104.20.25.146-0442
+      - 🇩🇪DE-80.92.204.106-3072
+      - 🏁RELAY-172.64.166.22-0424
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.28.82:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.27.88:80
+      - 🏁RELAY-104.19.45.47-0331
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.18.47:80
+      - 🇩🇪DE_560
+      - 🏁RELAY-104.19.46.27-0258
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.67.38:2052
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.188.144:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.228.195:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.180.82:80
+      - 🏁RELAY-104.19.46.39-0378
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.222.88:80
 
 rules:
 # 本地/局域网地址
