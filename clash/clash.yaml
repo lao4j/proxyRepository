@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-08-12 22:48:23
+# 创建时间：2024-08-13 07:47:25
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：28
 # 节点类型：vmess
@@ -149,12 +149,9 @@ proxy-groups:
       - 🇺🇸_US_美国->🇨🇦_CA_加拿大_21
   - name: 🔯 故障转移
     type: fallback
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
-    fallback-filter:
-    geoip: false
-    latency: 150
+    tolerance: 0
     proxies:
       - 🇺🇸_US_美国->🇨🇦_CA_加拿大
       - 🇺🇸_US_美国->🇮🇳_IN_印度
