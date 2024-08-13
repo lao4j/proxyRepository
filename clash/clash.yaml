@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-08-13 13:38:13
+# 创建时间：2024-08-13 14:45:00
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：203
 # 节点类型：ss, vmess, trojan
@@ -500,9 +500,8 @@ proxy-groups:
   - name: 🔯 故障转移
     type: fallback
     url: https://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 1
-    expected-status: 200/302/204
+    interval: 180
+    tolerance: 3
     proxies:
       - AL-31.171.153.178-0764 | 17.209MB
       - AL-31.171.153.181-0758 | 22.063MB
