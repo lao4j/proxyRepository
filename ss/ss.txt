@@ -498,12 +498,14 @@ proxy-groups:
       - 🇺🇸US-38.75.136.21-6942 | 1.079MB
       - 🇺🇸US-38.75.136.21-6993 | 1.089MB
       - 🇺🇸US-38.75.136.21-7301 | 1.086MB
-  - name: ♻️ 自动选择
+  - name: 🔯 故障转移
     type: url-test
-    type: fallback
+        : fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+  - name: 🔯 故障转移
+    type: fallback
     proxies:
       - AL-31.171.153.178-0724 | 13.053MB
       - AL-31.171.153.181-0726 | 13.674MB
