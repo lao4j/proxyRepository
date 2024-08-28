@@ -1,7 +1,7 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2024-08-27 16:38:10
+#  创建时间：2024-08-29 00:13:43
 #  模版：v2rayse默认模版
 #  节点数量：1
 #-------------------------------------------------------------#
@@ -13,46 +13,46 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"ss","name":"default_name","server":"ss.tansongyun.org","port":443,"cipher":"aes-256-gcm","password":"Yiwenyue1.","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","tls":true,"host":"ss.tansongyun.org"}}
+  - {"type":"vless","name":"02","ws-opts":{"path":"/","headers":{"host":"mojianxiao.mojianxiaowork.workers.dev"}},"server":"bestcf.onecf.eu.org","port":2082,"uuid":"e08f9343-0ce1-4274-b889-17f301744e4e","alterId":32,"cipher":"none","network":"ws"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - default_name
+      - '02'
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - default_name
+      - '02'
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - default_name
+      - '02'
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - default_name
+      - '02'
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - default_name
+      - '02'
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - default_name
+      - '02'
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -75,7 +75,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - default_name
+      - '02'
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
