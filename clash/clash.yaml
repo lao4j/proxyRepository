@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：06-09-2024 15:01:44
+# 创建时间：2024-09-06 20:46:40
 # 使用模版：V2RaySE 默认模版
-# 节点数量：3
+# 节点数量：10
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,60 +86,109 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🔒 VL-TCP-NONE 🇮🇷 IR-79.175.129.65:57423","type":"vless","server":"79.175.129.65","port":57423,"uuid":"01e39f92-ccfc-478e-8f52-d0b8dfa3db60","tls":false,"network":"tcp"}
-  - {"name":"🔒 VL-WS-TLS 🇺🇸 US-151.101.66.219:443","type":"vless","server":"151.101.66.219","port":443,"uuid":"d7a55270-00f9-4054-865d-0e2fbad22ca9","tls":true,"servername":"finlandvipstatus.com","network":"ws","ws-opts":{"path":"/?ed=443","headers":{"host":"finlandvipstatus.com"}},"alpn":["http/1.1"]}
-  - {"name":"🔒 VL-TCP-NONE 🇮🇷 IR-185.155.72.119:17132","type":"vless","server":"185.155.72.119","port":17132,"uuid":"08eca8a9-4135-4d36-848b-10e3e088ac9a","tls":false,"servername":"telewebion.com","network":"tcp"}
+  - {"name":"v2rayse_test_1","type":"ss","server":"198.57.27.218","port":5004,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
+  - {"name":"v2rayse_test_2","type":"vmess","server":"154.23.190.162","port":443,"cipher":"auto","uuid":"b9984674-f771-4e67-a198-c7e60720ba2c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"v2rayse_test_3","type":"vmess","server":"154.23.190.162","port":443,"cipher":"auto","uuid":"b9984674-f771-4e67-a198-c7e60720ba2c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"defaultName_1","type":"ssr","server":"20.239.49.44","port":59814,"password":"3df57276-03ef-45cf-bdd4-4edb6dfaa0ef","cipher":"dummy","obfs":"plain","protocol":"origin","group":"https://v2rayse.com"}
+  - {"name":"v2rayse_test_4","type":"trojan","server":"ca-trojan.bonds.id","port":443,"udp":true,"password":"bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272","skip-cert-verify":true}
+  - {"name":"defaultName_2","type":"http","server":"124.15.12.24","port":251,"username":"username","password":"password"}
+  - {"name":"defaultName_3","type":"socks5","server":"124.15.12.24","port":2312}
+  - {"name":"Hys-1.2.3.4","type":"hysteria","server":"1.2.3.4","port":12854,"sni":"wechat.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"pekopeko","up":50,"down":250}
+  - {"name":"defaultName_4","type":"socks5","server":"1.2.3.4","port":123,"username":"username","password":"password"}
+  - {"name":"🏁RELAY-172.67.30.171-1162","type":"vmess","server":"icook.tw","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip1.1789034.xyz"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🔒 VL-TCP-NONE 🇮🇷 IR-79.175.129.65:57423
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.66.219:443
-      - 🔒 VL-TCP-NONE 🇮🇷 IR-185.155.72.119:17132
+      - v2rayse_test_1
+      - v2rayse_test_2
+      - v2rayse_test_3
+      - defaultName_1
+      - v2rayse_test_4
+      - defaultName_2
+      - defaultName_3
+      - Hys-1.2.3.4
+      - defaultName_4
+      - 🏁RELAY-172.67.30.171-1162
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🔒 VL-TCP-NONE 🇮🇷 IR-79.175.129.65:57423
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.66.219:443
-      - 🔒 VL-TCP-NONE 🇮🇷 IR-185.155.72.119:17132
+      - v2rayse_test_1
+      - v2rayse_test_2
+      - v2rayse_test_3
+      - defaultName_1
+      - v2rayse_test_4
+      - defaultName_2
+      - defaultName_3
+      - Hys-1.2.3.4
+      - defaultName_4
+      - 🏁RELAY-172.67.30.171-1162
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🔒 VL-TCP-NONE 🇮🇷 IR-79.175.129.65:57423
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.66.219:443
-      - 🔒 VL-TCP-NONE 🇮🇷 IR-185.155.72.119:17132
+      - v2rayse_test_1
+      - v2rayse_test_2
+      - v2rayse_test_3
+      - defaultName_1
+      - v2rayse_test_4
+      - defaultName_2
+      - defaultName_3
+      - Hys-1.2.3.4
+      - defaultName_4
+      - 🏁RELAY-172.67.30.171-1162
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 VL-TCP-NONE 🇮🇷 IR-79.175.129.65:57423
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.66.219:443
-      - 🔒 VL-TCP-NONE 🇮🇷 IR-185.155.72.119:17132
+      - v2rayse_test_1
+      - v2rayse_test_2
+      - v2rayse_test_3
+      - defaultName_1
+      - v2rayse_test_4
+      - defaultName_2
+      - defaultName_3
+      - Hys-1.2.3.4
+      - defaultName_4
+      - 🏁RELAY-172.67.30.171-1162
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🔒 VL-TCP-NONE 🇮🇷 IR-79.175.129.65:57423
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.66.219:443
-      - 🔒 VL-TCP-NONE 🇮🇷 IR-185.155.72.119:17132
+      - v2rayse_test_1
+      - v2rayse_test_2
+      - v2rayse_test_3
+      - defaultName_1
+      - v2rayse_test_4
+      - defaultName_2
+      - defaultName_3
+      - Hys-1.2.3.4
+      - defaultName_4
+      - 🏁RELAY-172.67.30.171-1162
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 VL-TCP-NONE 🇮🇷 IR-79.175.129.65:57423
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.66.219:443
-      - 🔒 VL-TCP-NONE 🇮🇷 IR-185.155.72.119:17132
+      - v2rayse_test_1
+      - v2rayse_test_2
+      - v2rayse_test_3
+      - defaultName_1
+      - v2rayse_test_4
+      - defaultName_2
+      - defaultName_3
+      - Hys-1.2.3.4
+      - defaultName_4
+      - 🏁RELAY-172.67.30.171-1162
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -162,9 +211,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🔒 VL-TCP-NONE 🇮🇷 IR-79.175.129.65:57423
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.66.219:443
-      - 🔒 VL-TCP-NONE 🇮🇷 IR-185.155.72.119:17132
+      - v2rayse_test_1
+      - v2rayse_test_2
+      - v2rayse_test_3
+      - defaultName_1
+      - v2rayse_test_4
+      - defaultName_2
+      - defaultName_3
+      - Hys-1.2.3.4
+      - defaultName_4
+      - 🏁RELAY-172.67.30.171-1162
 
 rules:
 # 本地/局域网地址
