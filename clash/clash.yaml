@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-09-20 14:47:58
+# 创建时间：2024-09-20 15:10:41
 # 使用模版：V2RaySE 默认模版
-# 节点数量：2
+# 节点数量：1
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -87,7 +87,6 @@ dns:
 
 proxies:
   - {"name":"233boy-reality-123.254.106.66","type":"vless","server":"123.254.106.66","port":38629,"udp":true,"uuid":"0e085eeb-83a9-42e3-9a1f-4537096a0d4f","tls":true,"servername":"aws.amazon.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"id0FUbaVnJ5vz50RZWAHG4RTmuejx3ui15kwBxvzgyY"},"client-fingerprint":"chrome"}
-  - {"name":"defaultName","type":"http","server":"fm-sub-mainpanel-vygijfogpm.cn-shanghai.fcapp.run/api/v1/client/subscribe?token=18be5d149c8e90fb9ba2485f9773a06b","port":null,"tls":true,"skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -95,7 +94,6 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 233boy-reality-123.254.106.66
-      - defaultName
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -103,7 +101,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 233boy-reality-123.254.106.66
-      - defaultName
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -111,28 +108,24 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 233boy-reality-123.254.106.66
-      - defaultName
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 233boy-reality-123.254.106.66
-      - defaultName
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - 233boy-reality-123.254.106.66
-      - defaultName
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 233boy-reality-123.254.106.66
-      - defaultName
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -156,7 +149,6 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 233boy-reality-123.254.106.66
-      - defaultName
 
 rules:
 # 本地/局域网地址
