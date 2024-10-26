@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-10-26 21:55:26
+# 创建时间：2024-10-26 22:48:13
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：219
 # 节点类型：trojan, vmess
@@ -534,9 +534,10 @@ proxy-groups:
     type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 300
-    timeout: 5
     select_strategy:
-        type: lowest_latency
+      type:  weighted
+      latency_threshold: 100
+      connection_limit: 100
     proxies:
       - 👉www.85la.com👉中国CN_3
       - 👉www.85la.com👉美国US_1
