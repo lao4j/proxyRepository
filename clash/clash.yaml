@@ -7,12 +7,12 @@
 # 节点类型：vmess, trojan
 ####################################
 mixed-port: 7890
-allow-lan: true
-log-level: info
-external-controller: 0.0.0.0:9090
+allow-lan: false
+log-level: silent
+external-controller: 127.0.0.1:9090
 dns:
   enabled: true
-  listen: 0.0.0.0:1053
+  listen: 127.0.0.1:1053
   ipv6: true
   default-nameserver:
     - 223.5.5.5
@@ -80,7 +80,7 @@ dns:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
   fallback-filter:
-    geoip: false
+    geoip: true
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
@@ -1220,7 +1220,7 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
       - 🇸🇬 狮城节点
@@ -2362,11 +2362,15 @@ proxy-groups:
       - "Relay_🇻🇳VN-🇻🇳VN_443 | 9.09Mb\r"
       - "Relay_🏁ZZ-🏁ZZ_459 | 3.71Mb\r"
       - "🏁ZZ_460\r"
-  - name: ♻️ 自动选择
-    type: url-test
-    url: http://www.gstatic.com/generate_204
+  - name: 🔯 故障转移
+    type: fallback
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    timeout: 3
+    packet_loss_detection:
+    enabled: true
+    threshold: 5
+    check_interval: 60
     proxies:
       - _02 |33.49Mb
       - _03 |32.90Mb
@@ -3502,7 +3506,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇸🇬 狮城节点
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
@@ -3515,7 +3519,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇸🇬 狮城节点
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
@@ -3528,7 +3532,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇸🇬 狮城节点
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
@@ -3540,9 +3544,8 @@ proxy-groups:
   - name: 🎥 奈飞视频
     type: select
     proxies:
-      - 🎥 奈飞节点
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇸🇬 狮城节点
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
@@ -3568,7 +3571,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
       - 🇸🇬 狮城节点
@@ -3663,13 +3666,13 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
   - name: 🎯 全球直连
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
   - name: 🛑 广告拦截
     type: select
     proxies:
@@ -3684,7 +3687,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - DIRECT
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
@@ -3694,10 +3697,14 @@ proxy-groups:
       - 🇰🇷 韩国节点
       - 🚀 手动切换
   - name: 🇭🇰 香港节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
+    type: fallback
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    timeout: 3
+    packet_loss_detection:
+    enabled: true
+    threshold: 5
+    check_interval: 60
     proxies:
       - Relay_🇭🇰HK-🇮🇳IN_298 | 5.93Mb
       - Relay_🇭🇰HK-🇮🇳IN_94 | 5.93Mb
@@ -3742,10 +3749,14 @@ proxy-groups:
       - "🇭🇰HK_204 |11.69Mb\r"
       - "🇭🇰HK_205\r"
   - name: 🇯🇵 日本节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
+    type: fallback
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    timeout: 3
+    packet_loss_detection:
+    enabled: true
+    threshold: 5
+    check_interval: 60
     proxies:
       - "🇯🇵JP_109\r"
       - "Relay_🇯🇵JP-🇯🇵JP_110 | 3.46Mb\r"
@@ -3814,10 +3825,14 @@ proxy-groups:
       - "🇯🇵JP_220\r"
       - "🇯🇵JP_221\r"
   - name: 🇺🇲 美国节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
+    type: fallback
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 150
+    timeout: 3
+    packet_loss_detection:
+    enabled: true
+    threshold: 5
+    check_interval: 60
     proxies:
       - 🇺🇸US_555 |27.10Mb
       - 🇺🇸US_557 | 2.97Mb
@@ -4044,10 +4059,14 @@ proxy-groups:
       - "🇺🇸US_441\r"
       - "🇺🇸US_442\r"
   - name: 🇨🇳 台湾节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
+    type: fallback
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    timeout: 3
+    packet_loss_detection:
+    enabled: true
+    threshold: 5
+    check_interval: 60
     proxies:
       - 🇹🇼TW_443 | 8.85Mb
       - 🇹🇼TW_445 | 9.37Mb
@@ -4078,10 +4097,14 @@ proxy-groups:
       - "🇹🇼TW_293\r"
       - "🇹🇼TW_294\r"
   - name: 🇸🇬 狮城节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
+    type: fallback
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    timeout: 3
+    packet_loss_detection:
+    enabled: true
+    threshold: 5
+    check_interval: 60
     proxies:
       - Relay_🇺🇸US-🇸🇬SG_562 | 0.72Mb
       - Relay_🇺🇸US-🇸🇬SG_346 | 0.72Mb
@@ -4111,18 +4134,19 @@ proxy-groups:
       - "Relay_🇸🇬SG-🇸🇬SG_287 | 8.03Mb\r"
       - "🇸🇬SG_288\r"
   - name: 🇰🇷 韩国节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
+    type: fallback
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    timeout: 3
+    packet_loss_detection:
+    enabled: true
+    threshold: 5
+    check_interval: 60
     proxies:
       - "🇰🇷KR_120\r"
       - "🇰🇷KR_121\r"
       - "🇰🇷KR_222\r"
       - "🇰🇷KR_223\r"
-  - name: 🎥 奈飞节点
-    type: select
-    proxies: []
 
 rules:
 # 本地/局域网地址
