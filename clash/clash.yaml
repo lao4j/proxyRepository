@@ -1,18 +1,18 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-11-09 09:53:19
+# 创建时间：2024-11-09 09:58:34
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
-# 节点数量：716
-# 节点类型：vmess, trojan
+# 节点数量：806
+# 节点类型：ss, vmess, trojan
 ####################################
 mixed-port: 7890
-allow-lan: true
-log-level: info
-external-controller: 0.0.0.0:9090
+allow-lan: false
+log-level: silent
+external-controller: 127.0.0.1:9090
 dns:
   enabled: true
-  listen: 0.0.0.0:1053
+  listen: 127.0.0.1:1053
   ipv6: true
   default-nameserver:
     - 223.5.5.5
@@ -80,12 +80,102 @@ dns:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
   fallback-filter:
-    geoip: false
+    geoip: true
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
 
 proxies:
+  - {"name":"欧盟+V2CROSS.COM_1","type":"ss","server":"45.87.175.166","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"欧盟+V2CROSS.COM_2","type":"ss","server":"45.87.175.188","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"欧盟+V2CROSS.COM_3","type":"ss","server":"45.87.175.154","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国+加利福尼亚州圣克拉拉Microsoft公司","type":"ss","server":"52.169.217.145","port":13832,"password":"SaKH2gJcsbr6UzHEzPBz41","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国+华盛顿Cogent通信公司_1","type":"ss","server":"38.121.43.204","port":8090,"password":"PCnnH6SQSnfoS27","cipher":"aes-256-gcm"}
+  - {"name":"美国+华盛顿Cogent通信公司_2","type":"ss","server":"38.121.43.204","port":8000,"password":"KixLvKzwjekG00rm","cipher":"aes-256-gcm"}
+  - {"name":"美国+华盛顿Cogent通信公司_3","type":"ss","server":"38.121.43.204","port":8118,"password":"cdBIDV42DCwnfIN","cipher":"aes-256-gcm"}
+  - {"name":"意大利+V2CROSS.COM_1","type":"ss","server":"212.102.47.131","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
+  - {"name":"波兰+V2CROSS.COM_1","type":"ss","server":"141.98.101.179","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
+  - {"name":"加拿大+V2CROSS.COM_1","type":"ss","server":"142.202.49.68","port":8882,"password":"kDWvXYZoTBcGkC4","cipher":"aes-256-gcm"}
+  - {"name":"俄罗斯+V2CROSS.COM_1","type":"ss","server":"89.185.84.185","port":12575,"password":"CaNG1aNlH0QJRkdsWVzW63","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国+V2CROSS.COM_1","type":"ss","server":"69.50.92.85","port":5500,"password":"KixLvKzwjekG00rm","cipher":"aes-256-gcm"}
+  - {"name":"加拿大+V2CROSS.COM_2","type":"ss","server":"142.202.49.68","port":9101,"password":"e4FCWrgpkji3QY","cipher":"aes-256-gcm"}
+  - {"name":"新加坡+DigitalOcean数据中心","type":"ss","server":"sg.premium404.web.id","port":25056,"password":"1TB1N/FO5QA4NoIrAT8IFmf0x3gynq3ZzCIhctObHoY=","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"加拿大+V2CROSS.COM_3","type":"ss","server":"142.202.49.68","port":5000,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"英国+V2CROSS.COM_1","type":"ss","server":"145.239.6.202","port":8888,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"加拿大+V2CROSS.COM_4","type":"ss","server":"142.202.49.68","port":8008,"password":"XKFKl2rULjIp74","cipher":"aes-256-gcm"}
+  - {"name":"加拿大+V2CROSS.COM_5","type":"ss","server":"142.202.49.68","port":9090,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"香港+LeaseWeb+HKG10数据中心","type":"ss","server":"203.23.128.33","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"英国+V2CROSS.COM_2","type":"ss","server":"145.239.6.202","port":6679,"password":"TEzjfAYq2IjtuoS","cipher":"aes-256-gcm"}
+  - {"name":"欧盟+V2CROSS.COM_4","type":"ss","server":"45.87.175.199","port":8080,"password":"1RWwXhwfAB5gAEozU4G2Pg","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"加拿大+V2CROSS.COM_6","type":"ss","server":"142.202.49.68","port":8118,"password":"cdBIDV42DCwnfIN","cipher":"aes-256-gcm"}
+  - {"name":"欧盟+V2CROSS.COM_5","type":"ss","server":"45.87.175.157","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"欧盟+V2CROSS.COM_6","type":"ss","server":"45.87.175.181","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"荷兰+V2CROSS.COM","type":"ss","server":"193.29.139.202","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国+华盛顿Cogent通信公司_4","type":"ss","server":"38.110.1.197","port":5003,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
+  - {"name":"加拿大+V2CROSS.COM_7","type":"ss","server":"142.202.49.68","port":5001,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"美国+华盛顿Cogent通信公司_5","type":"ss","server":"38.114.114.143","port":443,"password":"pKEW8JPByTVTLtM","cipher":"aes-256-gcm"}
+  - {"name":"英国+V2CROSS.COM_3","type":"ss","server":"145.239.6.202","port":3389,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"英国+V2CROSS.COM_4","type":"ss","server":"145.239.6.202","port":8090,"password":"PCnnH6SQSnfoS27","cipher":"aes-256-gcm"}
+  - {"name":"英国+V2CROSS.COM_5","type":"ss","server":"145.239.6.202","port":9101,"password":"e4FCWrgpkji3QY","cipher":"aes-256-gcm"}
+  - {"name":"美国+Krypt机房","type":"ss","server":"107.181.155.244","port":55330,"password":"rtR4YX74vwqRJu9MGH3e1N3CQdGMWCUFkyLisijiFuvhkU9McV5TpygfkernJ4UQe63JtcDQkrQ9HfchzqQz1kLCnTRor8jg","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"意大利+V2CROSS.COM_2","type":"ss","server":"212.102.53.79","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
+  - {"name":"欧盟+V2CROSS.COM_7","type":"ss","server":"beesyar.org","port":8080,"password":"QCXDxuDlTTMD7jtgHUjIoj","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"加拿大+V2CROSS.COM_8","type":"ss","server":"142.202.49.68","port":8080,"password":"KixLvKzwjekG00rm","cipher":"aes-256-gcm"}
+  - {"name":"美国+V2CROSS.COM_2","type":"ss","server":"23.166.88.132","port":7001,"password":"RexnBgU7EV5ADxG","cipher":"aes-256-gcm"}
+  - {"name":"欧盟+V2CROSS.COM_8","type":"ss","server":"45.87.175.192","port":8080,"password":"1RWwXhwfAB5gAEozU4G2Pg","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国+华盛顿Cogent通信公司_6","type":"ss","server":"38.121.43.204","port":8009,"password":"XKFKl2rULjIp74","cipher":"aes-256-gcm"}
+  - {"name":"加拿大+V2CROSS.COM_9","type":"ss","server":"142.202.49.68","port":8881,"password":"kDWvXYZoTBcGkC4","cipher":"aes-256-gcm"}
+  - {"name":"加拿大+V2CROSS.COM_10","type":"ss","server":"142.202.49.68","port":8009,"password":"XKFKl2rULjIp74","cipher":"aes-256-gcm"}
+  - {"name":"美国+V2CROSS.COM_3","type":"ss","server":"149.22.95.183","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
+  - {"name":"加拿大+V2CROSS.COM_11","type":"ss","server":"142.202.49.68","port":5600,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"英国+V2CROSS.COM_6","type":"ss","server":"145.239.6.202","port":3306,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"英国+V2CROSS.COM_7","type":"ss","server":"145.239.6.202","port":2376,"password":"faBAoD54k87UJG7","cipher":"aes-256-gcm"}
+  - {"name":"西班牙+V2CROSS.COM","type":"ss","server":"150.241.102.95","port":21771,"password":"5mgZJzPv7hrLX4KMdPIeAW","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"乌克兰+V2CROSS.COM","type":"ss","server":"37.19.198.160","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
+  - {"name":"欧盟+V2CROSS.COM_9","type":"ss","server":"45.87.175.171","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国+V2CROSS.COM_4","type":"ss","server":"69.50.95.218","port":8008,"password":"XKFKl2rULjIp74","cipher":"aes-256-gcm"}
+  - {"name":"美国+华盛顿Cogent通信公司_7","type":"ss","server":"38.114.114.143","port":2376,"password":"faBAoD54k87UJG7","cipher":"aes-256-gcm"}
+  - {"name":"加拿大+V2CROSS.COM_12","type":"ss","server":"142.202.49.68","port":8119,"password":"cdBIDV42DCwnfIN","cipher":"aes-256-gcm"}
+  - {"name":"美国+V2CROSS.COM_5","type":"ss","server":"209.38.188.162","port":1080,"password":"h8Og8v6zkX9ldVFYYajb0g","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"加拿大+V2CROSS.COM_13","type":"ss","server":"142.202.49.68","port":5500,"password":"KixLvKzwjekG00rm","cipher":"aes-256-gcm"}
+  - {"name":"美国+华盛顿Cogent通信公司_8","type":"ss","server":"38.114.114.143","port":7002,"password":"RexnBgU7EV5ADxG","cipher":"aes-256-gcm"}
+  - {"name":"印度+V2CROSS.COM","type":"ss","server":"159.65.149.72","port":51348,"password":"p7EhC8MR7o7GuRn27YF8SQNAKJ2lUbBNIjcyqSmBHsy8wLbJ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国+华盛顿Cogent通信公司_9","type":"ss","server":"38.86.135.141","port":8882,"password":"kDWvXYZoTBcGkC4","cipher":"aes-256-gcm"}
+  - {"name":"英国+V2CROSS.COM_8","type":"ss","server":"145.239.6.202","port":8119,"password":"cdBIDV42DCwnfIN","cipher":"aes-256-gcm"}
+  - {"name":"美国+华盛顿Cogent通信公司_10","type":"ss","server":"38.114.114.143","port":4444,"password":"pKEW8JPByTVTLtM","cipher":"aes-256-gcm"}
+  - {"name":"上海市青浦区+电信","type":"ss","server":"61.172.235.22","port":11001,"password":"a58a5239-3b34-4c35-8724-953ef363015c","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"英国+V2CROSS.COM_9","type":"ss","server":"145.239.6.202","port":8118,"password":"cdBIDV42DCwnfIN","cipher":"aes-256-gcm"}
+  - {"name":"北美地区+V2CROSS.COM","type":"ss","server":"23.157.40.113","port":7306,"password":"FoOiGlkAA9yPEGP","cipher":"aes-256-gcm"}
+  - {"name":"加拿大+V2CROSS.COM_14","type":"ss","server":"142.202.49.68","port":8091,"password":"PCnnH6SQSnfoS27","cipher":"aes-256-gcm"}
+  - {"name":"英国+V2CROSS.COM_10","type":"ss","server":"145.239.6.202","port":8008,"password":"XKFKl2rULjIp74","cipher":"aes-256-gcm"}
+  - {"name":"美国+华盛顿Cogent通信公司_11","type":"ss","server":"38.75.137.71","port":2376,"password":"faBAoD54k87UJG7","cipher":"aes-256-gcm"}
+  - {"name":"拉脱维亚+V2CROSS.COM","type":"ss","server":"185.77.217.121","port":443,"password":"X7eoEBrARWsBUiVfchVEdH","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"加拿大+V2CROSS.COM_15","type":"ss","server":"142.202.49.68","port":5498,"password":"lGqs95QkFHo2NV","cipher":"aes-256-gcm"}
+  - {"name":"加拿大+V2CROSS.COM_16","type":"ss","server":"142.202.49.68","port":2375,"password":"faBAoD54k87UJG7","cipher":"aes-256-gcm"}
+  - {"name":"英国+V2CROSS.COM_11","type":"ss","server":"145.239.6.202","port":7001,"password":"RexnBgU7EV5ADxG","cipher":"aes-256-gcm"}
+  - {"name":"加拿大+V2CROSS.COM_17","type":"ss","server":"142.202.49.68","port":7307,"password":"FoOiGlkAA9yPEGP","cipher":"aes-256-gcm"}
+  - {"name":"美国+Amazon数据中心_1","type":"ss","server":"series-a2.varzesh360.co","port":443,"password":"mps3FwmDjLrWaOVg","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"加拿大+V2CROSS.COM_18","type":"ss","server":"142.202.49.68","port":5003,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
+  - {"name":"英国+V2CROSS.COM_12","type":"ss","server":"145.239.6.202","port":8009,"password":"XKFKl2rULjIp74","cipher":"aes-256-gcm"}
+  - {"name":"美国+华盛顿州","type":"ss","server":"205.134.180.150","port":443,"password":"5cp9Z3iWnJZ2","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"广东省+移动","type":"ss","server":"183.240.255.75","port":11001,"password":"e182d6b4-403c-40d6-bd66-6d281a67d282","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"英国+V2CROSS.COM_13","type":"ss","server":"145.239.6.202","port":5000,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"美国+华盛顿Cogent通信公司_12","type":"ss","server":"38.121.43.204","port":8119,"password":"cdBIDV42DCwnfIN","cipher":"aes-256-gcm"}
+  - {"name":"美国+华盛顿Cogent通信公司_13","type":"ss","server":"38.75.137.105","port":9101,"password":"e4FCWrgpkji3QY","cipher":"aes-256-gcm"}
+  - {"name":"美国+加州","type":"ss","server":"64.74.163.130","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"英国+V2CROSS.COM_14","type":"ss","server":"145.239.6.202","port":4444,"password":"pKEW8JPByTVTLtM","cipher":"aes-256-gcm"}
+  - {"name":"英国+V2CROSS.COM_15","type":"ss","server":"145.239.6.202","port":8080,"password":"KixLvKzwjekG00rm","cipher":"aes-256-gcm"}
+  - {"name":"美国+华盛顿Cogent通信公司_14","type":"ss","server":"38.121.43.65","port":443,"password":"pKEW8JPByTVTLtM","cipher":"aes-256-gcm"}
+  - {"name":"美国+","type":"ss","server":"40.172.81.171","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国+华盛顿Cogent通信公司_15","type":"ss","server":"38.75.137.105","port":7002,"password":"RexnBgU7EV5ADxG","cipher":"aes-256-gcm"}
+  - {"name":"加拿大+V2CROSS.COM_19","type":"ss","server":"142.202.49.68","port":8000,"password":"KixLvKzwjekG00rm","cipher":"aes-256-gcm"}
+  - {"name":"加拿大+V2CROSS.COM_20","type":"ss","server":"142.202.49.68","port":3306,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"加拿大+V2CROSS.COM_21_1","type":"ss","server":"142.202.49.68","port":2376,"password":"faBAoD54k87UJG7","cipher":"aes-256-gcm"}
+  - {"name":"俄罗斯+V2CROSS.COM_2","type":"ss","server":"185.242.86.156","port":54170,"password":"36ZCHeabUSfKjfQEvJ4HDV","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"波兰+V2CROSS.COM_2","type":"ss","server":"193.243.147.128","port":40368,"password":"7BcLdsO1WweoGD0X","cipher":"aes-256-gcm"}
+  - {"name":"意大利+V2CROSS.COM_3","type":"ss","server":"service.ouluyun9803.com","port":20003,"password":"d6105bbd-be0d-45b2-82ad-31fd1071c1d2","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"韩国+KT电信","type":"ss","server":"service.ouluyun9803.com","port":26667,"password":"d6105bbd-be0d-45b2-82ad-31fd1071c1d2","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"意大利+V2CROSS.COM_4","type":"ss","server":"service.ouluyun9803.com","port":20005,"password":"d6105bbd-be0d-45b2-82ad-31fd1071c1d2","cipher":"chacha20-ietf-poly1305"}
   - {"name":"美国 CloudFlare节点_1_1","type":"vmess","server":"172.64.167.15","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
   - {"name":"美国 CloudFlare节点_2_1","type":"vmess","server":"104.19.38.12","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
   - {"name":"广东省广州市 移动_1_1","type":"vmess","server":"183.236.51.23","port":56601,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
@@ -430,7 +520,7 @@ proxies:
   - {"name":"美国+CloudFlare节点_5_1","type":"trojan","server":"104.20.22.182","port":443,"udp":true,"password":"auto","sni":"b96ef9ae.trojanfree-76s.pages.dev","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/b96ef9ae.trojanfree-76s.pages.dev/","headers":{"host":"b96ef9ae.trojanfree-76s.pages.dev"}}}
   - {"name":"英国+社会保险安全部_1","type":"trojan","server":"51.44.91.245","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"瑞典+斯德哥尔摩Amazon数据中心_1_1","type":"trojan","server":"13.48.60.35","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"加拿大+V2CROSS.COM_21","type":"trojan","server":"23.227.60.8","port":443,"udp":true,"password":"bpb-trojan","sni":"403b3611-99bc-43b7-88D7-26Ed5D0825A9-3.paGeS.dev","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/trZkJgi4MLAtl7SrU9","headers":{"host":"403b3611-99bc-43b7-88d7-26ed5d0825a9-3.pages.devh2,http/1.1"}}}
+  - {"name":"加拿大+V2CROSS.COM_21_2","type":"trojan","server":"23.227.60.8","port":443,"udp":true,"password":"bpb-trojan","sni":"403b3611-99bc-43b7-88D7-26Ed5D0825A9-3.paGeS.dev","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/trZkJgi4MLAtl7SrU9","headers":{"host":"403b3611-99bc-43b7-88d7-26ed5d0825a9-3.pages.devh2,http/1.1"}}}
   - {"name":"美国加利福尼亚州洛杉矶+蜂鸟云_2","type":"trojan","server":"103.170.72.120","port":27061,"udp":true,"password":"auto","sni":"trojanfree-76s.pages.dev","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"//","headers":{"host":"trojanfree-76s.pages.dev"}}}
   - {"name":"美国+CloudFlare节点_6_1","type":"trojan","server":"104.19.159.12","port":443,"udp":true,"password":"242a3d8eee5e4ed1a6bfa4141d549a25","sni":"jobscareertoday.com","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6b777a91","headers":{"host":"jobscareertoday.com"}}}
   - {"name":"广东省广州市+移动_2","type":"trojan","server":"naiu-jp.05vr9nyqg5.download","port":13018,"udp":true,"password":"b264982e-e333-4085-ac04-406afef23455","sni":"cloudflare.node-ssl.cdn-alibaba.com","skip-cert-verify":true,"network":"tcp"}
@@ -806,7 +896,9 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🇭🇰 香港节点
+      - 🇸🇬 狮城节点
       - 🇺🇲 美国节点
       - 🇯🇵 日本节点
       - 🚀 手动切换
@@ -814,6 +906,96 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
+      - 欧盟+V2CROSS.COM_1
+      - 欧盟+V2CROSS.COM_2
+      - 欧盟+V2CROSS.COM_3
+      - 美国+加利福尼亚州圣克拉拉Microsoft公司
+      - 美国+华盛顿Cogent通信公司_1
+      - 美国+华盛顿Cogent通信公司_2
+      - 美国+华盛顿Cogent通信公司_3
+      - 意大利+V2CROSS.COM_1
+      - 波兰+V2CROSS.COM_1
+      - 加拿大+V2CROSS.COM_1
+      - 俄罗斯+V2CROSS.COM_1
+      - 美国+V2CROSS.COM_1
+      - 加拿大+V2CROSS.COM_2
+      - 新加坡+DigitalOcean数据中心
+      - 加拿大+V2CROSS.COM_3
+      - 英国+V2CROSS.COM_1
+      - 加拿大+V2CROSS.COM_4
+      - 加拿大+V2CROSS.COM_5
+      - 香港+LeaseWeb+HKG10数据中心
+      - 英国+V2CROSS.COM_2
+      - 欧盟+V2CROSS.COM_4
+      - 加拿大+V2CROSS.COM_6
+      - 欧盟+V2CROSS.COM_5
+      - 欧盟+V2CROSS.COM_6
+      - 荷兰+V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司_4
+      - 加拿大+V2CROSS.COM_7
+      - 美国+华盛顿Cogent通信公司_5
+      - 英国+V2CROSS.COM_3
+      - 英国+V2CROSS.COM_4
+      - 英国+V2CROSS.COM_5
+      - 美国+Krypt机房
+      - 意大利+V2CROSS.COM_2
+      - 欧盟+V2CROSS.COM_7
+      - 加拿大+V2CROSS.COM_8
+      - 美国+V2CROSS.COM_2
+      - 欧盟+V2CROSS.COM_8
+      - 美国+华盛顿Cogent通信公司_6
+      - 加拿大+V2CROSS.COM_9
+      - 加拿大+V2CROSS.COM_10
+      - 美国+V2CROSS.COM_3
+      - 加拿大+V2CROSS.COM_11
+      - 英国+V2CROSS.COM_6
+      - 英国+V2CROSS.COM_7
+      - 西班牙+V2CROSS.COM
+      - 乌克兰+V2CROSS.COM
+      - 欧盟+V2CROSS.COM_9
+      - 美国+V2CROSS.COM_4
+      - 美国+华盛顿Cogent通信公司_7
+      - 加拿大+V2CROSS.COM_12
+      - 美国+V2CROSS.COM_5
+      - 加拿大+V2CROSS.COM_13
+      - 美国+华盛顿Cogent通信公司_8
+      - 印度+V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司_9
+      - 英国+V2CROSS.COM_8
+      - 美国+华盛顿Cogent通信公司_10
+      - 上海市青浦区+电信
+      - 英国+V2CROSS.COM_9
+      - 北美地区+V2CROSS.COM
+      - 加拿大+V2CROSS.COM_14
+      - 英国+V2CROSS.COM_10
+      - 美国+华盛顿Cogent通信公司_11
+      - 拉脱维亚+V2CROSS.COM
+      - 加拿大+V2CROSS.COM_15
+      - 加拿大+V2CROSS.COM_16
+      - 英国+V2CROSS.COM_11
+      - 加拿大+V2CROSS.COM_17
+      - 美国+Amazon数据中心_1
+      - 加拿大+V2CROSS.COM_18
+      - 英国+V2CROSS.COM_12
+      - 美国+华盛顿州
+      - 广东省+移动
+      - 英国+V2CROSS.COM_13
+      - 美国+华盛顿Cogent通信公司_12
+      - 美国+华盛顿Cogent通信公司_13
+      - 美国+加州
+      - 英国+V2CROSS.COM_14
+      - 英国+V2CROSS.COM_15
+      - 美国+华盛顿Cogent通信公司_14
+      - 美国+
+      - 美国+华盛顿Cogent通信公司_15
+      - 加拿大+V2CROSS.COM_19
+      - 加拿大+V2CROSS.COM_20
+      - 加拿大+V2CROSS.COM_21_1
+      - 俄罗斯+V2CROSS.COM_2
+      - 波兰+V2CROSS.COM_2
+      - 意大利+V2CROSS.COM_3
+      - 韩国+KT电信
+      - 意大利+V2CROSS.COM_4
       - 美国 CloudFlare节点_1_1
       - 美国 CloudFlare节点_2_1
       - 广东省广州市 移动_1_1
@@ -1158,7 +1340,7 @@ proxy-groups:
       - 美国+CloudFlare节点_5_1
       - 英国+社会保险安全部_1
       - 瑞典+斯德哥尔摩Amazon数据中心_1_1
-      - 加拿大+V2CROSS.COM_21
+      - 加拿大+V2CROSS.COM_21_2
       - 美国加利福尼亚州洛杉矶+蜂鸟云_2
       - 美国+CloudFlare节点_6_1
       - 广东省广州市+移动_2
@@ -1530,12 +1712,101 @@ proxy-groups:
       - 美国 CloudFlare节点_108_2
       - 美国 CloudFlare节点_109_2
       - 美国 CloudFlare节点_121_2
-  - name: ♻️ 自动选择
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+  - name: 🔯 故障转移
+    type: fallback
+    url: https://www.gstatic.com/generate_204
+    interval: 180
     proxies:
+      - 欧盟+V2CROSS.COM_1
+      - 欧盟+V2CROSS.COM_2
+      - 欧盟+V2CROSS.COM_3
+      - 美国+加利福尼亚州圣克拉拉Microsoft公司
+      - 美国+华盛顿Cogent通信公司_1
+      - 美国+华盛顿Cogent通信公司_2
+      - 美国+华盛顿Cogent通信公司_3
+      - 意大利+V2CROSS.COM_1
+      - 波兰+V2CROSS.COM_1
+      - 加拿大+V2CROSS.COM_1
+      - 俄罗斯+V2CROSS.COM_1
+      - 美国+V2CROSS.COM_1
+      - 加拿大+V2CROSS.COM_2
+      - 新加坡+DigitalOcean数据中心
+      - 加拿大+V2CROSS.COM_3
+      - 英国+V2CROSS.COM_1
+      - 加拿大+V2CROSS.COM_4
+      - 加拿大+V2CROSS.COM_5
+      - 香港+LeaseWeb+HKG10数据中心
+      - 英国+V2CROSS.COM_2
+      - 欧盟+V2CROSS.COM_4
+      - 加拿大+V2CROSS.COM_6
+      - 欧盟+V2CROSS.COM_5
+      - 欧盟+V2CROSS.COM_6
+      - 荷兰+V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司_4
+      - 加拿大+V2CROSS.COM_7
+      - 美国+华盛顿Cogent通信公司_5
+      - 英国+V2CROSS.COM_3
+      - 英国+V2CROSS.COM_4
+      - 英国+V2CROSS.COM_5
+      - 美国+Krypt机房
+      - 意大利+V2CROSS.COM_2
+      - 欧盟+V2CROSS.COM_7
+      - 加拿大+V2CROSS.COM_8
+      - 美国+V2CROSS.COM_2
+      - 欧盟+V2CROSS.COM_8
+      - 美国+华盛顿Cogent通信公司_6
+      - 加拿大+V2CROSS.COM_9
+      - 加拿大+V2CROSS.COM_10
+      - 美国+V2CROSS.COM_3
+      - 加拿大+V2CROSS.COM_11
+      - 英国+V2CROSS.COM_6
+      - 英国+V2CROSS.COM_7
+      - 西班牙+V2CROSS.COM
+      - 乌克兰+V2CROSS.COM
+      - 欧盟+V2CROSS.COM_9
+      - 美国+V2CROSS.COM_4
+      - 美国+华盛顿Cogent通信公司_7
+      - 加拿大+V2CROSS.COM_12
+      - 美国+V2CROSS.COM_5
+      - 加拿大+V2CROSS.COM_13
+      - 美国+华盛顿Cogent通信公司_8
+      - 印度+V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司_9
+      - 英国+V2CROSS.COM_8
+      - 美国+华盛顿Cogent通信公司_10
+      - 上海市青浦区+电信
+      - 英国+V2CROSS.COM_9
+      - 北美地区+V2CROSS.COM
+      - 加拿大+V2CROSS.COM_14
+      - 英国+V2CROSS.COM_10
+      - 美国+华盛顿Cogent通信公司_11
+      - 拉脱维亚+V2CROSS.COM
+      - 加拿大+V2CROSS.COM_15
+      - 加拿大+V2CROSS.COM_16
+      - 英国+V2CROSS.COM_11
+      - 加拿大+V2CROSS.COM_17
+      - 美国+Amazon数据中心_1
+      - 加拿大+V2CROSS.COM_18
+      - 英国+V2CROSS.COM_12
+      - 美国+华盛顿州
+      - 广东省+移动
+      - 英国+V2CROSS.COM_13
+      - 美国+华盛顿Cogent通信公司_12
+      - 美国+华盛顿Cogent通信公司_13
+      - 美国+加州
+      - 英国+V2CROSS.COM_14
+      - 英国+V2CROSS.COM_15
+      - 美国+华盛顿Cogent通信公司_14
+      - 美国+
+      - 美国+华盛顿Cogent通信公司_15
+      - 加拿大+V2CROSS.COM_19
+      - 加拿大+V2CROSS.COM_20
+      - 加拿大+V2CROSS.COM_21_1
+      - 俄罗斯+V2CROSS.COM_2
+      - 波兰+V2CROSS.COM_2
+      - 意大利+V2CROSS.COM_3
+      - 韩国+KT电信
+      - 意大利+V2CROSS.COM_4
       - 美国 CloudFlare节点_1_1
       - 美国 CloudFlare节点_2_1
       - 广东省广州市 移动_1_1
@@ -1880,7 +2151,7 @@ proxy-groups:
       - 美国+CloudFlare节点_5_1
       - 英国+社会保险安全部_1
       - 瑞典+斯德哥尔摩Amazon数据中心_1_1
-      - 加拿大+V2CROSS.COM_21
+      - 加拿大+V2CROSS.COM_21_2
       - 美国加利福尼亚州洛杉矶+蜂鸟云_2
       - 美国+CloudFlare节点_6_1
       - 广东省广州市+移动_2
@@ -2252,12 +2523,23 @@ proxy-groups:
       - 美国 CloudFlare节点_108_2
       - 美国 CloudFlare节点_109_2
       - 美国 CloudFlare节点_121_2
+  - name: 💬 OpenAi
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🔯 故障转移
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🚀 手动切换
+      - DIRECT
   - name: 🎯 全球直连
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
   - name: 🛑 全球拦截
     type: select
     proxies:
@@ -2268,7 +2550,97 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 欧盟+V2CROSS.COM_1
+      - 欧盟+V2CROSS.COM_2
+      - 欧盟+V2CROSS.COM_3
+      - 美国+加利福尼亚州圣克拉拉Microsoft公司
+      - 美国+华盛顿Cogent通信公司_1
+      - 美国+华盛顿Cogent通信公司_2
+      - 美国+华盛顿Cogent通信公司_3
+      - 意大利+V2CROSS.COM_1
+      - 波兰+V2CROSS.COM_1
+      - 加拿大+V2CROSS.COM_1
+      - 俄罗斯+V2CROSS.COM_1
+      - 美国+V2CROSS.COM_1
+      - 加拿大+V2CROSS.COM_2
+      - 新加坡+DigitalOcean数据中心
+      - 加拿大+V2CROSS.COM_3
+      - 英国+V2CROSS.COM_1
+      - 加拿大+V2CROSS.COM_4
+      - 加拿大+V2CROSS.COM_5
+      - 香港+LeaseWeb+HKG10数据中心
+      - 英国+V2CROSS.COM_2
+      - 欧盟+V2CROSS.COM_4
+      - 加拿大+V2CROSS.COM_6
+      - 欧盟+V2CROSS.COM_5
+      - 欧盟+V2CROSS.COM_6
+      - 荷兰+V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司_4
+      - 加拿大+V2CROSS.COM_7
+      - 美国+华盛顿Cogent通信公司_5
+      - 英国+V2CROSS.COM_3
+      - 英国+V2CROSS.COM_4
+      - 英国+V2CROSS.COM_5
+      - 美国+Krypt机房
+      - 意大利+V2CROSS.COM_2
+      - 欧盟+V2CROSS.COM_7
+      - 加拿大+V2CROSS.COM_8
+      - 美国+V2CROSS.COM_2
+      - 欧盟+V2CROSS.COM_8
+      - 美国+华盛顿Cogent通信公司_6
+      - 加拿大+V2CROSS.COM_9
+      - 加拿大+V2CROSS.COM_10
+      - 美国+V2CROSS.COM_3
+      - 加拿大+V2CROSS.COM_11
+      - 英国+V2CROSS.COM_6
+      - 英国+V2CROSS.COM_7
+      - 西班牙+V2CROSS.COM
+      - 乌克兰+V2CROSS.COM
+      - 欧盟+V2CROSS.COM_9
+      - 美国+V2CROSS.COM_4
+      - 美国+华盛顿Cogent通信公司_7
+      - 加拿大+V2CROSS.COM_12
+      - 美国+V2CROSS.COM_5
+      - 加拿大+V2CROSS.COM_13
+      - 美国+华盛顿Cogent通信公司_8
+      - 印度+V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司_9
+      - 英国+V2CROSS.COM_8
+      - 美国+华盛顿Cogent通信公司_10
+      - 上海市青浦区+电信
+      - 英国+V2CROSS.COM_9
+      - 北美地区+V2CROSS.COM
+      - 加拿大+V2CROSS.COM_14
+      - 英国+V2CROSS.COM_10
+      - 美国+华盛顿Cogent通信公司_11
+      - 拉脱维亚+V2CROSS.COM
+      - 加拿大+V2CROSS.COM_15
+      - 加拿大+V2CROSS.COM_16
+      - 英国+V2CROSS.COM_11
+      - 加拿大+V2CROSS.COM_17
+      - 美国+Amazon数据中心_1
+      - 加拿大+V2CROSS.COM_18
+      - 英国+V2CROSS.COM_12
+      - 美国+华盛顿州
+      - 广东省+移动
+      - 英国+V2CROSS.COM_13
+      - 美国+华盛顿Cogent通信公司_12
+      - 美国+华盛顿Cogent通信公司_13
+      - 美国+加州
+      - 英国+V2CROSS.COM_14
+      - 英国+V2CROSS.COM_15
+      - 美国+华盛顿Cogent通信公司_14
+      - 美国+
+      - 美国+华盛顿Cogent通信公司_15
+      - 加拿大+V2CROSS.COM_19
+      - 加拿大+V2CROSS.COM_20
+      - 加拿大+V2CROSS.COM_21_1
+      - 俄罗斯+V2CROSS.COM_2
+      - 波兰+V2CROSS.COM_2
+      - 意大利+V2CROSS.COM_3
+      - 韩国+KT电信
+      - 意大利+V2CROSS.COM_4
       - 美国 CloudFlare节点_1_1
       - 美国 CloudFlare节点_2_1
       - 广东省广州市 移动_1_1
@@ -2613,7 +2985,7 @@ proxy-groups:
       - 美国+CloudFlare节点_5_1
       - 英国+社会保险安全部_1
       - 瑞典+斯德哥尔摩Amazon数据中心_1_1
-      - 加拿大+V2CROSS.COM_21
+      - 加拿大+V2CROSS.COM_21_2
       - 美国加利福尼亚州洛杉矶+蜂鸟云_2
       - 美国+CloudFlare节点_6_1
       - 广东省广州市+移动_2
@@ -2985,11 +3357,16 @@ proxy-groups:
       - 美国 CloudFlare节点_108_2
       - 美国 CloudFlare节点_109_2
       - 美国 CloudFlare节点_121_2
+  - name: 🇭🇰 香港节点
+    type: fallback
+    url: https://www.gstatic.com/generate_204
+    interval: 180
+    proxies:
+      - 香港+LeaseWeb+HKG10数据中心
   - name: 🇯🇵 日本节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    url: https://www.gstatic.com/generate_204
+    interval: 180
     proxies:
       - 日本 V2CROSS.COM
       - 日本+V2CROSS.COM_1_1
@@ -3004,12 +3381,44 @@ proxy-groups:
       - 日本+东京Amazon数据中心_2
       - 日本+V2CROSS.COM_1_2
       - 日本+V2CROSS.COM_2_2
-  - name: 🇺🇲 美国节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+  - name: 🇸🇬 狮城节点
+    type: fallback
+    url: https://www.gstatic.com/generate_204
+    interval: 180
     proxies:
+      - 新加坡+DigitalOcean数据中心
+  - name: 🇺🇲 美国节点
+    type: fallback
+    url: https://www.gstatic.com/generate_204
+    interval: 180
+    proxies:
+      - 美国+加利福尼亚州圣克拉拉Microsoft公司
+      - 美国+华盛顿Cogent通信公司_1
+      - 美国+华盛顿Cogent通信公司_2
+      - 美国+华盛顿Cogent通信公司_3
+      - 美国+V2CROSS.COM_1
+      - 美国+华盛顿Cogent通信公司_4
+      - 美国+华盛顿Cogent通信公司_5
+      - 美国+Krypt机房
+      - 美国+V2CROSS.COM_2
+      - 美国+华盛顿Cogent通信公司_6
+      - 美国+V2CROSS.COM_3
+      - 美国+V2CROSS.COM_4
+      - 美国+华盛顿Cogent通信公司_7
+      - 美国+V2CROSS.COM_5
+      - 美国+华盛顿Cogent通信公司_8
+      - 美国+华盛顿Cogent通信公司_9
+      - 美国+华盛顿Cogent通信公司_10
+      - 北美地区+V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司_11
+      - 美国+Amazon数据中心_1
+      - 美国+华盛顿州
+      - 美国+华盛顿Cogent通信公司_12
+      - 美国+华盛顿Cogent通信公司_13
+      - 美国+加州
+      - 美国+华盛顿Cogent通信公司_14
+      - 美国+
+      - 美国+华盛顿Cogent通信公司_15
       - 美国 CloudFlare节点_1_1
       - 美国 CloudFlare节点_2_1
       - 美国 CloudFlare节点_3_1
