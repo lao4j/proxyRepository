@@ -7,12 +7,12 @@
 # 节点类型：vmess
 ####################################
 mixed-port: 7890
-allow-lan: true
-log-level: info
-external-controller: 0.0.0.0:9090
+allow-lan: false
+log-level: silent
+external-controller: 127.0.0.1:9090
 dns:
   enabled: true
-  listen: 0.0.0.0:1053
+  listen: 127.0.0.1:1053
   ipv6: true
   default-nameserver:
     - 223.5.5.5
@@ -80,7 +80,7 @@ dns:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
   fallback-filter:
-    geoip: false
+    geoip: true
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
@@ -1040,9 +1040,11 @@ proxy-groups:
       - Relay_🏁ZZ-🇺🇸US_635 |46.43Mb
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 150
+    retries: 2
+    failover: true
     proxies:
       - Relay_🇦🇹AT-🇺🇸US_01 |44.83Mb
       - 🇦🇺AU_02 |10.18Mb
@@ -1513,6 +1515,37 @@ proxy-groups:
       - Relay_🏁ZZ-🇺🇸US_633 |80.51Mb
       - Relay_🏁ZZ-🇺🇸US_634 |34.36Mb
       - Relay_🏁ZZ-🇺🇸US_635 |46.43Mb
+  - name: 💬 OpenAi
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择                                                   
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🌏 国内媒体
+    type: select
+    proxies:
+      - DIRECT
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点                             
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🚀 手动切换
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2001,17 +2034,21 @@ proxy-groups:
       - Relay_🏁ZZ-🇺🇸US_635 |46.43Mb
   - name: 🇭🇰 香港节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 150
+    retries: 2
+    failover: true
     proxies:
       - Relay_🇭🇰HK-🇭🇰HK_89 |18.04Mb
       - 🇭🇰HK_90 |14.22Mb
   - name: 🇯🇵 日本节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 150
+    retries: 2
+    failover: true
     proxies:
       - 🇯🇵JP_97 | 5.83Mb
       - Relay_🇯🇵JP-🇯🇵JP_98 |36.34Mb
@@ -2021,18 +2058,22 @@ proxy-groups:
       - 🇯🇵JP_102 |40.81Mb
   - name: 🇸🇬 狮城节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 150
+    retries: 2
+    failover: true
     proxies:
       - 🇸🇬SG_121 |10.63Mb
       - Pool_🇸🇬SG_122 | 9.38Mb
       - Relay_🏁ZZ-🇸🇬SG_544 |28.70Mb
   - name: 🇺🇲 美国节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 150
+    retries: 2
+    failover: true
     proxies:
       - Relay_🇦🇹AT-🇺🇸US_01 |44.83Mb
       - Relay_🇧🇬BG-🇺🇸US_08 |30.09Mb
