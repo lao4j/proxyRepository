@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-11-20 16:59:25
+# 创建时间：2024-11-20 18:16:11
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
-# 节点数量：22
+# 节点数量：24
 # 节点类型：trojan, vmess
 ####################################
 mixed-port: 7890
@@ -86,8 +86,10 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"未知","type":"trojan","server":"customer-94-131-115-71.stark-industries.solutions","port":443,"udp":true,"password":"c5691b8f-d833-41e4-9295-769f3edb4cd2","skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇷🇺_RU_俄罗斯->🇺🇸_US_美国","type":"trojan","server":"185.231.206.12","port":443,"udp":true,"password":"c5691b8f-d833-41e4-9295-769f3edb4cd2","sni":"customer-185-231-206-12.stark-industries.solutions","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国","type":"vmess","server":"183.236.51.23","port":52112,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"未知_1","type":"trojan","server":"customer-185-231-206-12.stark-industries.solutions","port":443,"udp":true,"password":"c5691b8f-d833-41e4-9295-769f3edb4cd2","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"未知_2","type":"trojan","server":"customer-94-131-115-71.stark-industries.solutions","port":443,"udp":true,"password":"c5691b8f-d833-41e4-9295-769f3edb4cd2","skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇺🇦_UA_乌克兰->🇬🇧_GB_英国","type":"trojan","server":"95.164.85.39","port":443,"udp":true,"password":"c5691b8f-d833-41e4-9295-769f3edb4cd2","sni":"customer-95-164-85-39.stark-industries.solutions","skip-cert-verify":true,"network":"tcp"}
   - {"name":"未知_1_1","type":"trojan","server":"customer-94-131-115-71.stark-industries.solutions","port":443,"udp":true,"password":"c5691b8f-d833-41e4-9295-769f3edb4cd2","skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇺🇸_US_美国->🇬🇧_GB_英国","type":"trojan","server":"94.131.115.71","port":443,"udp":true,"password":"c5691b8f-d833-41e4-9295-769f3edb4cd2","sni":"customer-94-131-115-71.stark-industries.solutions","skip-cert-verify":true,"network":"tcp"}
@@ -122,8 +124,10 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 未知
       - 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 未知_1
+      - 未知_2
       - 🇺🇦_UA_乌克兰->🇬🇧_GB_英国
       - 未知_1_1
       - 🇺🇸_US_美国->🇬🇧_GB_英国
@@ -152,8 +156,10 @@ proxy-groups:
     retries: 3
     failover: true
     proxies:
-      - 未知
       - 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 未知_1
+      - 未知_2
       - 🇺🇦_UA_乌克兰->🇬🇧_GB_英国
       - 未知_1_1
       - 🇺🇸_US_美国->🇬🇧_GB_英国
@@ -191,8 +197,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 未知
       - 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 未知_1
+      - 未知_2
       - 🇺🇦_UA_乌克兰->🇬🇧_GB_英国
       - 未知_1_1
       - 🇺🇸_US_美国->🇬🇧_GB_英国
@@ -213,15 +221,32 @@ proxy-groups:
       - 🇬🇧_GB_英国
       - 未知_2
       - 未知_3_2
+  - name: 🇭🇰 香港节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies: []
+  - name: 🇯🇵 日本节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies: []
+  - name: 🇸🇬 狮城节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies: []
   - name: 🇺🇲 美国节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 3000
-    retries: 3
-    failover: true
+    tolerance: 50
     proxies:
       - 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
       - 🇺🇸_US_美国->🇬🇧_GB_英国
       - 🇬🇧_GB_英国->🇺🇸_US_美国
       - 🇺🇸_US_美国->🇬🇧_GB_英国_1
