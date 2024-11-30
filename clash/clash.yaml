@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-11-30 17:00:36
+# 创建时间：2024-11-30 19:54:47
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：594
 # 节点类型：vmess, ss, trojan, ssr
@@ -684,7 +684,7 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
       - 🇺🇲 美国节点
@@ -1288,13 +1288,10 @@ proxy-groups:
       - 瑞典-51.6MB/s_990_990
       - 美国-2.02MB/s_992_992
       - 香港-81.4MB/s_996_996
-  - name: ♻️ 自动选择
-    type: url-test
+  - name: 🔯 故障转移
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 360
-    retries: 3
-    timeout: 1
-    failover: true
     proxies:
       - 加拿大-17.4MB/s_1021_1021
       - 美国-856.8KB/s
@@ -1895,7 +1892,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
   - name: 🛑 全球拦截
     type: select
     proxies:
@@ -1906,7 +1903,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 加拿大-17.4MB/s_1021_1021
       - 美国-856.8KB/s
       - 美国-1.94MB/s_1054_1054
@@ -2502,12 +2499,9 @@ proxy-groups:
       - 美国-2.02MB/s_992_992
       - 香港-81.4MB/s_996_996
   - name: 🇭🇰 香港节点
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 360
-    retries: 3
-    timeout: 1
-    failover: true
     proxies:
       - 香港-16.3MB/s
       - 香港-62.1MB/s_1016_1016
@@ -2520,12 +2514,9 @@ proxy-groups:
       - 香港-24.1MB/s_654_654
       - 香港-81.4MB/s_996_996
   - name: 🇯🇵 日本节点
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 360
-    retries: 3
-    timeout: 1
-    failover: true
     proxies:
       - 日本-360.9KB/s_1048_1048
       - 日本-169.0KB/s
@@ -2583,24 +2574,18 @@ proxy-groups:
       - 日本-31.7MB/s_885_885
       - 日本-32.1MB/s_884_884
   - name: 🇸🇬 狮城节点
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 360
-    retries: 3
-    timeout: 1
-    failover: true
     proxies:
       - 新加坡-98.5MB/s
       - 新加坡-4.10MB/s_84_84
       - 新加坡-63.6MB/s
       - 新加坡-333.9KB/s_2_630_630
   - name: 🇺🇲 美国节点
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 360
-    retries: 3
-    timeout: 1
-    failover: true
     proxies:
       - 美国-856.8KB/s
       - 美国-1.94MB/s_1054_1054
