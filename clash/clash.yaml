@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-11-30 10:11:54
+# 创建时间：2024-11-30 11:35:22
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：1162
 # 节点类型：vmess, trojan
@@ -1252,7 +1252,7 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
       - 🇺🇲 美国节点
@@ -2424,12 +2424,10 @@ proxy-groups:
       - 日本+V2CROSS.COM_4_884
       - 美国+V2CROSS.COM_6_885
       - 美国+俄勒冈州波特兰Amazon数据中心_886
-  - name: ♻️ 自动选择
-    type: url-test
+  - name: 🔯 故障转移
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 600
-    timeout: 3
-    failover: true
     proxies:
       - 亚太地区 V2CROSS.COM
       - 美国 CloudFlare节点_1
@@ -3598,7 +3596,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
   - name: 🛑 全球拦截
     type: select
     proxies:
@@ -3609,7 +3607,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 亚太地区 V2CROSS.COM
       - 美国 CloudFlare节点_1
       - 美国 CloudFlare节点_2
@@ -4773,22 +4771,18 @@ proxy-groups:
       - 美国+V2CROSS.COM_6_885
       - 美国+俄勒冈州波特兰Amazon数据中心_886
   - name: 🇭🇰 香港节点
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 600
-    timeout: 3
-    failover: true
     proxies:
       - 香港 阿里云_1_374
       - 香港 香港有线电视有限公司_460
       - 香港 阿里云_2_506
       - 香港 电讯盈科有限公司_578
   - name: 🇯🇵 日本节点
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 600
-    timeout: 3
-    failover: true
     proxies:
       - 日本+V2CROSS.COM
       - 日本 V2CROSS.COM_300
@@ -4797,19 +4791,15 @@ proxy-groups:
       - 日本+V2CROSS.COM_3_882
       - 日本+V2CROSS.COM_4_884
   - name: 🇸🇬 狮城节点
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 600
-    timeout: 3
-    failover: true
     proxies:
       - 新加坡+亚马逊(Amazon)公司数据中心_255
   - name: 🇺🇲 美国节点
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 600
-    timeout: 3
-    failover: true
     proxies:
       - 美国 CloudFlare节点_1
       - 美国 CloudFlare节点_2
