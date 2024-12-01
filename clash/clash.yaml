@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-12-01 15:23:15
+# 创建时间：2024-12-01 16:57:02
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：496
 # 节点类型：vmess, trojan
@@ -13,7 +13,7 @@ external-controller: 127.0.0.1:9090
 dns:
   enabled: true
   listen: 127.0.0.1:1053
-  ipv6: false
+  ipv6: true
   default-nameserver:
     - 223.5.5.5
     - 114.114.114.114
@@ -83,6 +83,7 @@ dns:
     geoip: true
     ipcidr:
       - 240.0.0.0/4
+      - 0.0.0.0/32
 
 proxies:
   - {"name":"美国 CloudFlare节点_1","type":"vmess","server":"104.18.114.57","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"c3.6016725.xyz"}}}
@@ -585,7 +586,7 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇺🇲 美国节点
       - 🚀 手动切换
       - DIRECT
@@ -1088,13 +1089,13 @@ proxy-groups:
       - 法国+V2CROSS.COM
       - 爱尔兰+都柏林Amazon数据中心
       - 斯洛文尼亚+V2CROSS.COM
-  - name: ♻️ 自动选择
-    type: url-test
+  - name: 🔯 故障转移
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 360
     retries: 2
     timeout: 0.5
-    failover: true
+    prefer: true
     proxies:
       - 美国 CloudFlare节点_1
       - 美国 CloudFlare节点_2
@@ -1597,7 +1598,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
   - name: 🛑 全球拦截
     type: select
     proxies:
@@ -1608,7 +1609,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 美国 CloudFlare节点_1
       - 美国 CloudFlare节点_2
       - 美国 CloudFlare节点_3
@@ -2106,12 +2107,12 @@ proxy-groups:
       - 爱尔兰+都柏林Amazon数据中心
       - 斯洛文尼亚+V2CROSS.COM
   - name: 🇺🇲 美国节点
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 360
     retries: 2
     timeout: 0.5
-    failover: true
+    prefer: true
     proxies:
       - 美国 CloudFlare节点_1
       - 美国 CloudFlare节点_2
