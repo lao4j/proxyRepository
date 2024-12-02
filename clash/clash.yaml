@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-12-02 20:37:22
+# 创建时间：2024-12-02 22:45:20
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：156
 # 节点类型：vmess, trojan
@@ -77,8 +77,8 @@ dns:
     - stun.*.*.*
     - '*.mcdn.bilivideo.cn'
   nameserver:
-    https://8.8.8.8/dns-query
-    https://1.0.0.1/dns-query
+    - https://8.8.8.8/dns-query
+    - https://1.0.0.1/dns-query
   fallback-filter:
     geoip: true
     ipcidr:
@@ -245,7 +245,7 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇺🇲 美国节点
       - 🇯🇵 日本节点
       - 🚀 手动切换
@@ -409,12 +409,10 @@ proxy-groups:
       - 英国_由快嘴科技提供：kkzui.com95_2
       - 爱尔兰_由快嘴科技提供：kkzui.com96_2
       - 瑞典_由快嘴科技提供：kkzui.com97_2
-  - name: ♻️ 自动选择
+  - name: 🔯 故障转移
     type: url-test
     url: https://www.gstatic.com/generate_204
-    interval: 300
-    retries: 2
-    failover: true
+    interval: 180
     proxies:
       - 哥斯达黎加_由快嘴科技提供：kkzui.com2_1
       - 法国_由快嘴科技提供：kkzui.com3_1
@@ -577,7 +575,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
   - name: 🛑 全球拦截
     type: select
     proxies:
@@ -588,7 +586,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 哥斯达黎加_由快嘴科技提供：kkzui.com2_1
       - 法国_由快嘴科技提供：kkzui.com3_1
       - 丹麦_由快嘴科技提供：kkzui.com4_1
@@ -746,20 +744,16 @@ proxy-groups:
       - 爱尔兰_由快嘴科技提供：kkzui.com96_2
       - 瑞典_由快嘴科技提供：kkzui.com97_2
   - name: 🇯🇵 日本节点
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
-    interval: 300
-    retries: 2
-    failover: true
+    interval: 180
     proxies:
       - 日本_由快嘴科技提供：kkzui.com48_1
       - 日本_由快嘴科技提供：kkzui.com48_2
   - name: 🇺🇲 美国节点
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
-    interval: 300
-    retries: 2
-    failover: true
+    interval: 180
     proxies:
       - 美国_由快嘴科技提供：kkzui.com6_1
       - 美国_由快嘴科技提供：kkzui.com10_1
