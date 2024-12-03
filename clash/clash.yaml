@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-12-03 01:34:47
+# 创建时间：2024-12-03 07:32:58
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：156
 # 节点类型：vmess, trojan
@@ -15,8 +15,8 @@ dns:
   listen: 127.0.0.1:1053
   ipv6: false
   default-nameserver:
-    - 1.0.0.1
-    - 8.8.8.8
+    - 223.5.5.5
+    - 114.114.114.114
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -77,8 +77,8 @@ dns:
     - stun.*.*.*
     - '*.mcdn.bilivideo.cn'
   nameserver:
-    - https://8.8.8.8/dns-query
-    - https://1.0.0.1/dns-query
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
   fallback-filter:
     geoip: true
     ipcidr:
