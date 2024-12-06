@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-12-05 06:53:04
+# 创建时间：2024-12-06 15:36:52
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：702
 # 节点类型：trojan, vmess
@@ -791,7 +791,7 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
       - 🇺🇲 美国节点
@@ -1503,14 +1503,11 @@ proxy-groups:
       - 🇸🇬 www.85la.com 新加坡 39_2
       - 🇸🇬 www.85la.com 新加坡 38_2
       - 🇸🇬 www.85la.com 新加坡 37_2
-  - name: ♻️ 自动选择
-    type: url-test
+  - name: 🔯 故障转移
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 900
     tolerance: 1000
-    retries: 2
-    timeout: 0.5
-    failover: true
     proxies:
       - 🇺🇸 www.85la.com 美国 01
       - 🇺🇸 www.85la.com 美国 02_1
@@ -2219,7 +2216,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
   - name: 🛑 全球拦截
     type: select
     proxies:
@@ -2230,7 +2227,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇺🇸 www.85la.com 美国 01
       - 🇺🇸 www.85la.com 美国 02_1
       - 🇺🇸 www.85la.com 美国 03_1
@@ -2934,13 +2931,10 @@ proxy-groups:
       - 🇸🇬 www.85la.com 新加坡 38_2
       - 🇸🇬 www.85la.com 新加坡 37_2
   - name: 🇭🇰 香港节点
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 900
     tolerance: 1000
-    retries: 2
-    timeout: 0.5
-    failover: true
     proxies:
       - 🇭🇰 www.85la.com 香港 01_1
       - 🇭🇰 www.85la.com 香港 02
@@ -2956,13 +2950,10 @@ proxy-groups:
       - 🇭🇰 www.85la.com 香港 12
       - 🇭🇰 www.85la.com 香港 01_2
   - name: 🇯🇵 日本节点
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 900
     tolerance: 1000
-    retries: 2
-    timeout: 0.5
-    failover: true
     proxies:
       - 🇯🇵 www.85la.com 日本 02
       - 🇯🇵 www.85la.com 日本 03_1
@@ -2973,13 +2964,10 @@ proxy-groups:
       - 🇯🇵 www.85la.com 日本 05_2
       - 🇯🇵 www.85la.com 日本 07
   - name: 🇸🇬 狮城节点
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 900
     tolerance: 1000
-    retries: 2
-    timeout: 0.5
-    failover: true
     proxies:
       - 🇸🇬 www.85la.com 新加坡 01
       - 🇸🇬 www.85la.com 新加坡 02
@@ -3034,13 +3022,10 @@ proxy-groups:
       - 🇸🇬 www.85la.com 新加坡 38_2
       - 🇸🇬 www.85la.com 新加坡 37_2
   - name: 🇺🇲 美国节点
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 900
     tolerance: 1000
-    retries: 2
-    timeout: 0.5
-    failover: true
     proxies:
       - 🇺🇸 www.85la.com 美国 01
       - 🇺🇸 www.85la.com 美国 02_1
