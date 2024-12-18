@@ -1,36 +1,44 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-12-18 12:32:29
+# 创建时间：2024-12-18 19:21:10
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：1057
 # 节点类型：vmess, trojan
 ####################################
 mixed-port: 7890
-allow-lan: false
-log-level: silent
+allow-lan: true
+log-level: info
 external-controller: 0.0.0.0:9090
 dns:
   enable: true
-  ipv6: false
-  listen: '127.0.0.1:53'
+  ipv6: true
+  listen: 0.0.0.0:1053
+  use-hosts: true
+  use-system-hosts: true
+  respect-rules: true
   enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/24
+  fake-ip-range: '198.18.0.1/16'
+  fake-ip-filter:
+    - "*"
+    - "+.lan"
+    - "+.local"
+    - "+.market.xiaomi.com"
   nameserver:
-    - https://1.1.1.1/dns-query
-    - https://8.8.8.8/dns-query
-    - https://9.9.9.9/dns-query
-  fallback:
-    - https://dns.nextdns.io
-  bootstrap:
-    - https://1.1.1.1/dns-query
-    - https://8.8.8.8/dns-query
-  fallback-filter:
-    geoip: false
-    domain:
-      - +.google.com
-      - +.facebook.com
-      - +.youtube.com
+    - "https://1.1.1.1/dns-query"
+    - "https://8.8.8.8/dns-query"
+  proxy-server-nameserver:
+    - "https://120.53.53.53/dns-query"
+    - "https://223.5.5.5/dns-query"
+  nameserver-policy:
+    "rule-set:cn_domain,private_domain":
+      - "https://doh.pub/dns-query"
+      - "https://dns.alidns.com/dns-query"
+      - "https://120.53.53.53/dns-query"
+      - "https://223.5.5.5/dns-query"
+    "rule-set:geolocation-!cn":
+      - "https://dns.cloudflare.com/dns-query"
+      - "https://dns.google/dns-query"
 
 proxies:
   - {"name":"中转节点-38.1MB/s_1_1","type":"vmess","server":"183.240.253.26","port":30565,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
