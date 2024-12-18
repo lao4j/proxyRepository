@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-12-18 11:04:20
+# 创建时间：2024-12-18 12:32:29
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：1057
 # 节点类型：vmess, trojan
@@ -17,16 +17,20 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/24
   nameserver:
-    - 'https://1.1.1.1/dns-query'
-    - 'https://8.8.8.8/dns-query'
-    - 'https://9.9.9.9/dns-query'
-    - 'https://dns.nextdns.io'
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+    - https://9.9.9.9/dns-query
+  fallback:
+    - https://dns.nextdns.io
+  bootstrap:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
   fallback-filter:
     geoip: false
     domain:
-      - '+.google.com'
-      - '+.facebook.com'
-      - '+.youtube.com'
+      - +.google.com
+      - +.facebook.com
+      - +.youtube.com
 
 proxies:
   - {"name":"中转节点-38.1MB/s_1_1","type":"vmess","server":"183.240.253.26","port":30565,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
