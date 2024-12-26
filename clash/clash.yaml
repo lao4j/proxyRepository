@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-12-26 12:05:31
+# 创建时间：2024-12-26 13:01:01
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：439
 # 节点类型：trojan, vmess
@@ -9,36 +9,48 @@
 mixed-port: 7890
 allow-lan: false
 log-level: silent
-external-controller: 127.0.0.1:9090
+external-controller: 0.0.0.0:9090
 dns:
   enable: true
-  ipv6: true
-  listen: 127.0.0.1:1053
+  ipv6: false
+  listen: 0.0.0.0:1053
   use-hosts: true
-  use-system-hosts: true
+  use-system-hosts: false
   respect-rules: true
   enhanced-mode: fake-ip
   fake-ip-range: '198.18.0.1/16'
   fake-ip-filter:
-    - "*"
-    - "+.lan"
-    - "+.local"
-    - "+.market.xiaomi.com"
+    - '*.lan'
+    - '*.local'
+    - '*.market.xiaomi.com'
   nameserver:
-    - https://1.1.1.1/dns-query
-    - https://9.9.9.9/dns-query
-  proxy-server-nameserver:
-    - https://120.53.53.53/dns-query
-    - https://223.5.5.5/dns-query
-  nameserver-policy:
-    "rule-set:cn_domain,private_domain":
+    - tls://1.1.1.1
+    - tls://8.8.8.8
     - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
-    - https://120.53.53.53/dns-query
-    - https://223.5.5.5/dns-query
+    - tls://dns.riseup.net
+  proxy-server-nameserver:
+    - tls://1.1.1.1
+    - tls://8.8.8.8
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    geosite:
+      - gfw
+    ipcidr:
+      - 240.0.0.0/4
+    domain:
+      - '+.google.com'
+      - '+.youtube.com'
+      - '+.example.com'
+  nameserver-policy:
+    "rule-set:cn_domain":
+      - tls://119.29.29.29
     "rule-set:geolocation-!cn":
-    - "https://dns.cloudflare.com/dns-query"
-    - "https://dns.quad9.net/dns-query"
+      - tls://1.1.1.1
+      - tls://8.8.8.8
+    "rule-set:all":
+      - tls://1.1.1.1
+      - tls://8.8.8.8
 
 proxies:
   - {"name":"🇺🇸 www.85la.com 美国 01","type":"trojan","server":"89.187.181.172","port":43118,"udp":true,"password":"ypDt8RkT7J","sni":"89.187.181.172","skip-cert-verify":true,"network":"tcp"}
@@ -936,7 +948,7 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.gstatic.com/generate_204
-    interval: 300
+    interval: 360
     tolerance: 5
     proxies:
       - 🇺🇸 www.85la.com 美国 01
@@ -1837,7 +1849,7 @@ proxy-groups:
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.gstatic.com/generate_204
-    interval: 300
+    interval: 360
     tolerance: 5
     proxies:
       - 🇭🇰 www.85la.com 香港 79
@@ -1848,7 +1860,7 @@ proxy-groups:
   - name: 🇯🇵 日本节点
     type: url-test
     url: https://www.gstatic.com/generate_204
-    interval: 300
+    interval: 360
     tolerance: 5
     proxies:
       - 🇯🇵 www.85la.com 日本 01
@@ -1895,7 +1907,7 @@ proxy-groups:
   - name: 🇸🇬 狮城节点
     type: url-test
     url: https://www.gstatic.com/generate_204
-    interval: 300
+    interval: 360
     tolerance: 5
     proxies:
       - 🇸🇬 www.85la.com 新加坡 01
@@ -1958,7 +1970,7 @@ proxy-groups:
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.gstatic.com/generate_204
-    interval: 300
+    interval: 360
     tolerance: 5
     proxies:
       - 🇺🇸 www.85la.com 美国 01
