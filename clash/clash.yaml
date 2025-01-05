@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-01-05 10:56:53
+# 创建时间：2025-01-05 15:14:03
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：1017
 # 节点类型：trojan, vmess
@@ -20,15 +20,16 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: '198.19.0.1/24'
   fake-ip-filter:
-    - '*.lan'
-    - '*.local'
+    - '*.lan' 
+    - '*.local' 
     - '*.market.xiaomi.com'
+    - '*.example.com'
   nameserver:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
   proxy-server-nameserver:
     - https://1.1.1.1/dns-query
-  cache-size: 4096
+  cache-size: 8192
   dns-timeout: 5
   fallback-filter:
     geoip: true
@@ -41,6 +42,13 @@ dns:
     "rule-set:geolocation-!cn":
       - https://1.1.1.1/dns-query
       - https://8.8.8.8/dns-query
+    "rule-set:example.com":
+      - https://8.8.8.8/dns-query
+  geolocation:
+    - country: "CN"
+      nameserver: "https://119.29.29.29/dns-query"
+    - country: "US"
+      nameserver: "https://1.1.1.1/dns-query"
 
 proxies:
   - {"name":"🇺🇸+www.85la.com+美国+01","type":"trojan","server":"104.219.41.229","port":443,"udp":true,"password":"Julius","sni":"miami.juliusnet.com","skip-cert-verify":true,"network":"tcp"}
@@ -4152,7 +4160,7 @@ proxy-groups:
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.gstatic.com/generate_204
-    interval: 420
+    interval: 428
     tolerance: 50
     disable-udp: true
     proxies:
@@ -7305,10 +7313,6 @@ rules:
   - DOMAIN-SUFFIX,ocnttv.com,🚀 节点选择
   - DOMAIN-SUFFIX,vikacg.com,🚀 节点选择
   - DOMAIN-SUFFIX,picjs.xyz,🚀 节点选择
-  - IP-CIDR,8.8.8.8/32,Proxy
-  - IP-CIDR,1.1.1.1/32,Proxy
-  - DOMAIN-SUFFIX,.dns.google,Proxy
-  - DOMAIN-SUFFIX,.cloudflare-dns.com,Proxy
 # 直连列表
 # MyList
 # CN域名直连(中国|公司|网络)
