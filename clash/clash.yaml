@@ -1,89 +1,120 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-01-10 15:53:21
+# 创建时间：2025-01-10 15:59:23
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：1142
 # 节点类型：ss, trojan, vmess
 ####################################
 mixed-port: 7890
-allow-lan: true
-log-level: info
-external-controller: 0.0.0.0:9090
+allow-lan: false
+log-level: silent
+external-controller: 127.0.0.1:9090
 dns:
-  enabled: true
-  listen: 0.0.0.0:1053
-  ipv6: true
-  default-nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
+  enable: true
+  ipv6: false
+  listen: 127.0.0.1:1053
+  use-hosts: true
+  use-system-hosts: false
+  respect-rules: true
   enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
+  fake-ip-range: '198.19.0.1/24'
   fake-ip-filter:
     - '*.lan'
-    - '*.linksys.com'
-    - '*.linksyssmartwifi.com'
-    - swscan.apple.com
-    - mesu.apple.com
-    - '*.msftconnecttest.com'
-    - '*.msftncsi.com'
-    - time.*.com
-    - time.*.gov
-    - time.*.edu.cn
-    - time.*.apple.com
-    - time1.*.com
-    - time2.*.com
-    - time3.*.com
-    - time4.*.com
-    - time5.*.com
-    - time6.*.com
-    - time7.*.com
-    - ntp.*.com
-    - ntp.*.com
-    - ntp1.*.com
-    - ntp2.*.com
-    - ntp3.*.com
-    - ntp4.*.com
-    - ntp5.*.com
-    - ntp6.*.com
-    - ntp7.*.com
-    - '*.time.edu.cn'
-    - '*.ntp.org.cn'
-    - +.pool.ntp.org
-    - time1.cloud.tencent.com
-    - +.music.163.com
-    - '*.126.net'
-    - musicapi.taihe.com
-    - music.taihe.com
-    - songsearch.kugou.com
-    - trackercdn.kugou.com
-    - '*.kuwo.cn'
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com
-    - +.y.qq.com
-    - +.music.tc.qq.com
-    - aqqmusic.tc.qq.com
-    - +.stream.qqmusic.qq.com
-    - '*.xiami.com'
-    - +.music.migu.cn
-    - +.srv.nintendo.net
-    - +.stun.playstation.net
-    - xbox.*.microsoft.com
-    - +.xboxlive.com
-    - localhost.ptlogin2.qq.com
-    - proxy.golang.org
-    - stun.*.*
-    - stun.*.*.*
-    - '*.mcdn.bilivideo.cn'
+    - '*.local'
+    - '*.market.xiaomi.com'
+    - '*.example.com'
+    - 'localhost'
+    - '127.0.0.1'
+    - '::1'
+    - '192.168.*.*'
+    - '10.*.*.*'
+    - '172.16.*.*'
+    - '169.254.*.*'
+    - '*.invalid'
+    - '*.test'
+    - '*.localhost'
+    - '*.example'
+    - '::/0'
+    - '*.router'
+    - '*.home'
+    - '*.gateway'
+    - '*.iqiyi.com'
+    - '*.youku.com'
+    - '*.tencentvideo.com'
+    - '*.bilibili.com'
+    - '*.mgtv.com'
+    - '*.douyin.com'
+    - '*.taobao.com'
+    - '*.jd.com'
+    - '*.tmall.com'
+    - '*.pinduoduo.com'
+    - '*.kaola.com'
+    - '*.xiaomi.com'
+    - '*.wechat.com'
+    - '*.qq.com'
+    - '*.weibo.com'
+    - '*.alipay.com'
+    - '*.zhihu.com'
+    - '*.cmbchina.com'
+    - '*.icbc.com.cn'
+    - '*.bankcomm.com'
+    - '*.pingan.com'
+    - '*.alipay.com'
+    - '*.unionpay.com'
+    - '*.alicdn.com'
+    - '*.huawei.com'
+    - '*.qiniu.com'
+    - '*.360buyimg.com'
+
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+
+  proxy-server-nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+
+  cache-size: 4096
+  dns-timeout: 5
+
   fallback-filter:
-    geoip: false
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
+    geoip: true
+    geoip-code: CN
+    geosite:
+      - gfw
+    domain:
+      - '+gfw'
+      - '!*.cn'
+      - '!*.local'
+
+  nameserver-policy:
+    "rule-set:cn_domain":
+      - tls://119.29.29.29
+      - tls://223.5.5.5
+    "rule-set:geolocation-!cn":
+      - https://1.1.1.1/dns-query
+      - https://8.8.8.8/dns-query
+
+  rule-providers:
+    gfwlist:
+      type: http
+      behavior: domain
+      url: "https://example.com/gfwlist.txt"
+      path: "./ruleset/gfwlist.yaml"
+      interval: 86400
+    adblock:
+      type: http
+      behavior: domain
+      url: "https://example.com/adblock.txt"
+      path: "./ruleset/adblock.yaml"
+      interval: 86400
+    cn_domain:
+      type: http
+      behavior: domain
+      url: "https://example.com/cn_domains.txt"
+      path: "./ruleset/cn_domain.yaml"
+      interval: 86400
 
 proxies:
   - {"name":"🇩🇪+www.85la.com+德国+01","type":"ss","server":"45.87.175.199","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
@@ -2385,9 +2416,10 @@ proxy-groups:
       - www.85la.com+CN_638+01
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
+    url: https://www.gstatic.com/generate_204
+    interval: 420
     tolerance: 50
+    disable-udp: true
     proxies:
       - 🇩🇪+www.85la.com+德国+01
       - 🇩🇪+www.85la.com+德国+02
@@ -4691,10 +4723,10 @@ proxy-groups:
       - "🇮🇪+www.85la.com+爱尔兰+02\r"
       - www.85la.com+CN_638+01
   - name: 🇯🇵 日本节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: fallback
+    url: https://www.gstatic.com/generate_204
+    interval: 420
+    disable-udp: true
     proxies:
       - 🇯🇵+www.85la.com+日本+01
       - 🇯🇵 www.85la.com 日本 02
@@ -4729,10 +4761,10 @@ proxy-groups:
       - "🇯🇵+www.85la.com+日本+11\r"
       - "🇯🇵+www.85la.com+日本+13\r"
   - name: 🇸🇬 狮城节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: fallback
+    url: https://www.gstatic.com/generate_204
+    interval: 420
+    disable-udp: true
     proxies:
       - 🇸🇬+www.85la.com+新加坡+02
       - 🇸🇬+www.85la.com+新加坡+03
@@ -4744,10 +4776,10 @@ proxy-groups:
       - www.85la.com+🇸🇬+新加坡_5
       - "🇸🇬+www.85la.com+新加坡+05\r"
   - name: 🇺🇲 美国节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: fallback
+    url: https://www.gstatic.com/generate_204
+    interval: 420
+    disable-udp: true
     proxies:
       - 🇺🇸 www.85la.com 美国 01
       - 🇺🇸 www.85la.com 美国 02
