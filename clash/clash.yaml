@@ -1,14 +1,14 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-01-27 00:47:26
+# 创建时间：2025-01-27 11:16:19
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
-# 节点数量：48
-# 节点类型：vmess, trojan, ss
+# 节点数量：196
+# 节点类型：ss, trojan, vmess
 ####################################
 mixed-port: 7890
-allow-lan: false
-log-level: silent
+allow-lan: true
+log-level: info
 external-controller: 0.0.0.0:9090
 dns:
   enabled: true
@@ -86,60 +86,207 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"英国(yudou66.com 玉豆免费节点)","type":"vmess","server":"5.39.254.196","port":25385,"cipher":"auto","uuid":"5.39.254.196:25385?type=ws&encryption=auto&host=5.39.254.196&path=%2F#%E8%8B%B1%E5%9B%BD%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"5.39.254.196"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)","type":"vmess","server":"shsus.256709394.xyz","port":443,"cipher":"auto","uuid":"shsus.256709394.xyz:443?type=ws&encryption=auto&host=shsus.256709394.xyz&path=%2FRVr8ALFBsgTfBC&security=tls#%E7%BE%8E%E5%9B%BD%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RVr8ALFBsgTfBC","headers":{"host":"shsus.256709394.xyz"}}}
-  - {"name":"俄罗斯(yudou66.com 玉豆免费节点)","type":"trojan","server":"relaxed-jaybird.treefrog761.one","port":443,"udp":true,"password":"3763495982449565696","sni":"relaxed-jaybird.treefrog761.one","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 2","type":"vmess","server":"s4.db-link02.top","port":2095,"cipher":"auto","uuid":"s4.db-link02.top:2095?type=ws&encryption=auto&host=100-179-100-30.s4.db-link02.top&path=%2Fdabai.in104.21.142.235#%E7%BE%8E%E5%9B%BD%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%202","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in104.21.142.235","headers":{"host":"100-179-100-30.s4.db-link02.top"}}}
-  - {"name":"俄罗斯(yudou66.com 玉豆免费节点) 2","type":"trojan","server":"faithful-goshawk.goat627.mom","port":443,"udp":true,"password":"3763495982449565696","sni":"faithful-goshawk.goat627.mom","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"俄罗斯(yudou66.com 玉豆免费节点) 3","type":"vmess","server":"195.58.49.50","port":23532,"cipher":"auto","uuid":"195.58.49.50:23532?type=ws&encryption=auto&host=195.58.49.50&path=%2F#%E4%BF%84%E7%BD%97%E6%96%AF%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%203","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"195.58.49.50"}}}
-  - {"name":"俄罗斯(yudou66.com 玉豆免费节点) 4","type":"vmess","server":"195.58.49.50","port":23532,"cipher":"auto","uuid":"195.58.49.50:23532?type=ws&encryption=auto&host=195.58.49.50&path=%2F#%E4%BF%84%E7%BD%97%E6%96%AF%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%204","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"195.58.49.50"}}}
-  - {"name":"俄罗斯(yudou66.com 玉豆免费节点) 5","type":"vmess","server":"195.58.49.50","port":23532,"cipher":"auto","uuid":"195.58.49.50:23532?type=ws&encryption=auto&host=195.58.49.50&path=%2F#%E4%BF%84%E7%BD%97%E6%96%AF%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%205","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"195.58.49.50"}}}
-  - {"name":"英国(yudou66.com 玉豆免费节点) 2","type":"vmess","server":"5.39.254.196","port":25385,"cipher":"auto","uuid":"5.39.254.196:25385?type=ws&encryption=auto&host=5.39.254.196&path=%2F#%E8%8B%B1%E5%9B%BD%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%202","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"5.39.254.196"}}}
-  - {"name":"俄罗斯(yudou66.com 玉豆免费节点) 6","type":"vmess","server":"195.58.49.50","port":23532,"cipher":"auto","uuid":"195.58.49.50:23532?type=ws&encryption=auto&host=195.58.49.50&path=%2F#%E4%BF%84%E7%BD%97%E6%96%AF%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%206","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"195.58.49.50"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 3","type":"vmess","server":"s2.db-link02.top","port":2052,"cipher":"auto","uuid":"s2.db-link02.top:2052?type=ws&encryption=auto&host=100-196-88-104.s2.db-link02.top&path=%2Fdabai.in172.67.14.233#%E7%BE%8E%E5%9B%BD%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%203","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in172.67.14.233","headers":{"host":"100-196-88-104.s2.db-link02.top"}}}
-  - {"name":"英国(yudou66.com 玉豆免费节点) 3","type":"vmess","server":"5.39.252.204","port":23532,"cipher":"auto","uuid":"5.39.252.204:23532?type=ws&encryption=auto&host=5.39.252.204&path=%2F#%E8%8B%B1%E5%9B%BD%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%203","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"5.39.252.204"}}}
-  - {"name":"俄罗斯(yudou66.com 玉豆免费节点) 7","type":"vmess","server":"195.58.49.42","port":23532,"cipher":"auto","uuid":"195.58.49.42:23532?type=ws&encryption=auto&host=195.58.49.42&path=%2F#%E4%BF%84%E7%BD%97%E6%96%AF%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%207","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"195.58.49.42"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 4","type":"vmess","server":"default.hk.akile-5.ddns.ad.989567.xyz","port":56214,"cipher":"auto","uuid":"default.hk.akile-5.ddns.ad.989567.xyz:56214?type=ws&encryption=auto&host=default.hk.akile-5.ddns.ad.989567.xyz&path=%2Flogin&security=tls#%E7%BE%8E%E5%9B%BD%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%204","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/login","headers":{"host":"default.hk.akile-5.ddns.ad.989567.xyz"}}}
-  - {"name":"俄罗斯(yudou66.com 玉豆免费节点) 8","type":"vmess","server":"195.58.49.42","port":23532,"cipher":"auto","uuid":"195.58.49.42:23532?type=ws&encryption=auto&host=195.58.49.42&path=%2F#%E4%BF%84%E7%BD%97%E6%96%AF%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%208","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"195.58.49.42"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 5","type":"vmess","server":"190.93.245.230","port":2086,"cipher":"auto","uuid":"190.93.245.230:2086?type=ws&encryption=auto&host=shs.xiaoqi666.xyz&path=%2F#%E7%BE%8E%E5%9B%BD%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%205","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"shs.xiaoqi666.xyz"}}}
-  - {"name":"俄罗斯(yudou66.com 玉豆免费节点) 9","type":"vmess","server":"195.58.49.50","port":23532,"cipher":"auto","uuid":"195.58.49.50:23532?type=ws&encryption=auto&host=195.58.49.50&path=%2F#%E4%BF%84%E7%BD%97%E6%96%AF%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%209","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"195.58.49.50"}}}
-  - {"name":"俄罗斯(yudou66.com 玉豆免费节点) 10","type":"vmess","server":"195.58.49.50","port":23532,"cipher":"auto","uuid":"195.58.49.50:23532?type=ws&encryption=auto&host=195.58.49.50&path=%2F#%E4%BF%84%E7%BD%97%E6%96%AF%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%2010","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"195.58.49.50"}}}
-  - {"name":"俄罗斯(yudou66.com 玉豆免费节点) 11","type":"vmess","server":"195.58.49.42","port":23532,"cipher":"auto","uuid":"195.58.49.42:23532?type=ws&encryption=auto&host=195.58.49.42&path=%2F#%E4%BF%84%E7%BD%97%E6%96%AF%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%2011","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"195.58.49.42"}}}
-  - {"name":"俄罗斯(yudou66.com 玉豆免费节点) 12","type":"vmess","server":"195.58.49.42","port":23532,"cipher":"auto","uuid":"195.58.49.42:23532?type=ws&encryption=auto&host=195.58.49.42&path=%2F#%E4%BF%84%E7%BD%97%E6%96%AF%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%2012","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"195.58.49.42"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 6","type":"vmess","server":"118.193.39.104","port":15366,"cipher":"auto","uuid":"118.193.39.104:15366?type=tcp&encryption=auto#%E7%BE%8E%E5%9B%BD%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%206","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"俄罗斯(yudou66.com 玉豆免费节点) 13","type":"vmess","server":"195.58.49.50","port":23532,"cipher":"auto","uuid":"195.58.49.50:23532?type=ws&encryption=auto&host=195.58.49.50&path=%2F#%E4%BF%84%E7%BD%97%E6%96%AF%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%2013","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"195.58.49.50"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 7","type":"trojan","server":"sensible-crow.goat627.mom","port":443,"udp":true,"password":"3763495982449565696","sni":"sensible-crow.goat627.mom","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"德国(yudou66.com 玉豆免费节点)","type":"vmess","server":"159.69.120.98","port":41391,"cipher":"auto","uuid":"159.69.120.98:41391?type=tcp&encryption=auto#%E5%BE%B7%E5%9B%BD%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 8","type":"vmess","server":"118.193.34.158","port":52825,"cipher":"auto","uuid":"118.193.34.158:52825?type=tcp&encryption=auto#%E7%BE%8E%E5%9B%BD%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%208","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"俄罗斯(yudou66.com 玉豆免费节点) 14","type":"vmess","server":"195.58.49.50","port":23532,"cipher":"auto","uuid":"195.58.49.50:23532?type=ws&encryption=auto&host=195.58.49.50&path=%2F#%E4%BF%84%E7%BD%97%E6%96%AF%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%2014","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"195.58.49.50"}}}
-  - {"name":"新加坡(yudou66.com 玉豆免费节点)","type":"ss","server":"ctmm.gscloud.bond","port":31620,"password":"f16d3752-7bae-474e-87dc-f892df2caeaf","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"英国(yudou66.com 玉豆免费节点) 4","type":"ss","server":"78.129.140.11","port":443,"password":"CDRR5RckFavHXOhoFtFsDQ","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"俄罗斯(yudou66.com 玉豆免费节点) 15","type":"vmess","server":"185.22.153.73","port":49663,"cipher":"auto","uuid":"185.22.153.73:49663?type=ws&encryption=auto&host=185.22.153.73&path=github.com%2FAlvin9999#%E4%BF%84%E7%BD%97%E6%96%AF%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%2015","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"185.22.153.73"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 9","type":"trojan","server":"usiio.motrix.xyz","port":2651,"udp":true,"password":"oKvQbooo8d77of0x7","sni":"usiio.motrix.xyz","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 10","type":"vmess","server":"hsj.lbxjc.online","port":80,"cipher":"auto","uuid":"hsj.lbxjc.online:80?type=ws&encryption=auto&host=chunchuan.kejixiaoqi666.store&path=%2F#%E7%BE%8E%E5%9B%BD%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%2010","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"chunchuan.kejixiaoqi666.store"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 11","type":"trojan","server":"topical-gibbon.goat627.mom","port":443,"udp":true,"password":"3763495982449565696","sni":"topical-gibbon.goat627.mom","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"俄罗斯(yudou66.com 玉豆免费节点) 16","type":"vmess","server":"195.58.49.42","port":23532,"cipher":"auto","uuid":"195.58.49.42:23532?type=ws&encryption=auto&host=195.58.49.42&path=%2F#%E4%BF%84%E7%BD%97%E6%96%AF%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%2016","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"195.58.49.42"}}}
-  - {"name":"俄罗斯(yudou66.com 玉豆免费节点) 17","type":"vmess","server":"195.58.49.42","port":23532,"cipher":"auto","uuid":"195.58.49.42:23532?type=ws&encryption=auto&host=195.58.49.42&path=%2F#%E4%BF%84%E7%BD%97%E6%96%AF%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%2017","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"195.58.49.42"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 12","type":"vmess","server":"118.193.38.173","port":21066,"cipher":"auto","uuid":"118.193.38.173:21066?type=tcp&encryption=auto#%E7%BE%8E%E5%9B%BD%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%2012","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"俄罗斯(yudou66.com 玉豆免费节点) 18","type":"vmess","server":"195.58.49.42","port":23532,"cipher":"auto","uuid":"195.58.49.42:23532?type=ws&encryption=auto&host=195.58.49.42&path=%2F#%E4%BF%84%E7%BD%97%E6%96%AF%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%2018","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"195.58.49.42"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 13","type":"vmess","server":"118.193.34.236","port":13688,"cipher":"auto","uuid":"118.193.34.236:13688?type=tcp&encryption=auto#%E7%BE%8E%E5%9B%BD%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%2013","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"俄罗斯(yudou66.com 玉豆免费节点) 19","type":"vmess","server":"195.58.49.42","port":23532,"cipher":"auto","uuid":"195.58.49.42:23532?type=ws&encryption=auto&host=195.58.49.42&path=%2F#%E4%BF%84%E7%BD%97%E6%96%AF%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%2019","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"195.58.49.42"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 14","type":"vmess","server":"cf.118318.xyz","port":443,"cipher":"auto","uuid":"cf.118318.xyz:443?type=ws&encryption=auto&host=cf.118318.xyz&path=%2F123&security=tls#%E7%BE%8E%E5%9B%BD%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%2014","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/123","headers":{"host":"cf.118318.xyz"}}}
-  - {"name":"俄罗斯(yudou66.com 玉豆免费节点) 20","type":"vmess","server":"195.58.49.50","port":23532,"cipher":"auto","uuid":"195.58.49.50:23532?type=ws&encryption=auto&host=195.58.49.50&path=%2F#%E4%BF%84%E7%BD%97%E6%96%AF%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%2020","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"195.58.49.50"}}}
-  - {"name":"俄罗斯(yudou66.com 玉豆免费节点) 21","type":"vmess","server":"195.58.49.50","port":23532,"cipher":"auto","uuid":"195.58.49.50:23532?type=ws&encryption=auto&host=195.58.49.50&path=%2F#%E4%BF%84%E7%BD%97%E6%96%AF%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%2021","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"195.58.49.50"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 15","type":"vmess","server":"s2.cn-db.top","port":2082,"cipher":"auto","uuid":"s2.cn-db.top:2082?type=ws&encryption=auto&host=100-119-106-139.s2.cn-db.top&path=%2Fdabai.in172.64.53.101#%E7%BE%8E%E5%9B%BD%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%2015","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in172.64.53.101","headers":{"host":"100-119-106-139.s2.cn-db.top"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 16","type":"trojan","server":"sje.5216818.xyz","port":443,"udp":true,"password":"696cfe79","sni":"sje.5216818.xyz","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 17","type":"vmess","server":"s1.cn-db.top","port":2052,"cipher":"auto","uuid":"s1.cn-db.top:2052?type=ws&encryption=auto&host=100-50-244-43.s1.cn-db.top&path=%2Fdabai.in172.67.88.211#%E7%BE%8E%E5%9B%BD%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%2017","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in172.67.88.211","headers":{"host":"100-50-244-43.s1.cn-db.top"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 18","type":"vmess","server":"hsj.lbxjc.online","port":80,"cipher":"auto","uuid":"hsj.lbxjc.online:80?type=ws&encryption=auto&host=chunchuan.kejixiaoqi666.store&path=%2F#%E7%BE%8E%E5%9B%BD%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%2018","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"chunchuan.kejixiaoqi666.store"}}}
-  - {"name":"日本(yudou66.com 玉豆免费节点)","type":"ss","server":"arxfw2b78fi2q9hzylhn.freesocks.work","port":443,"password":"Nk9asglDzHzjktVzTkvhaA","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 19","type":"trojan","server":"closing-phoenix.goat627.mom","port":443,"udp":true,"password":"3763495982449565696","sni":"closing-phoenix.goat627.mom","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"俄罗斯(yudou66.com 玉豆免费节点) 22","type":"vmess","server":"195.58.49.42","port":23532,"cipher":"auto","uuid":"195.58.49.42:23532?type=ws&encryption=auto&host=195.58.49.42&path=%2F#%E4%BF%84%E7%BD%97%E6%96%AF%28yudou66.com%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29%2022","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"195.58.49.42"}}}
+  - {"name":"美国-26.1MB/s","type":"ss","server":"38.110.1.122","port":8090,"password":"PCnnH6SQSnfoS27","cipher":"aes-256-gcm"}
+  - {"name":"挪威-23.9MB/s","type":"ss","server":"51.13.182.231","port":3089,"password":"J0lgxy4mb52CIJ8UUcEgts","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"荷兰-4.2MB/s","type":"ss","server":"208.67.105.87","port":42501,"password":"nq96KftrZAj3LuFQESqmn44Mo5oCuo2cipoEsae25mrmHG2oJ4VT37scBfVBpN5DWtUELZutVhhXs8Le5B8fZ9hLn9ytwvbf","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"日本-211.4KB/s","type":"trojan","server":"usa.lydurlclub.top","port":443,"udp":true,"password":"c4843eba-b070-403f-b43f-ef1ef7db571e","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"伊朗-6.1MB/s","type":"vmess","server":"92.242.220.22","port":37885,"cipher":"auto","uuid":"92.242.220.22:37885?type=tcp&encryption=auto#%E4%BC%8A%E6%9C%97-6.1MB%2Fs","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"加拿大-352.4KB/s","type":"ss","server":"38.114.114.77","port":5500,"password":"KixLvKzwjekG00rm","cipher":"aes-256-gcm"}
+  - {"name":"巴林-1.26MB/s","type":"ss","server":"series-a2-me.varzesh360.co","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-1.87MB/s","type":"trojan","server":"36.150.215.196","port":18681,"udp":true,"password":"vzhXXZVw","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"荷兰-3.0MB/s","type":"ss","server":"198.105.123.190","port":46902,"password":"2UrSffeNABXGXXfNhoL6xBUnh1RzqMizrQ2s9QfC38P2YPuYPRTqW5zZg6jGisiNhkzM4SRjF6nzvFb18GPtESWoXWjhqyC8","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"法国-29.6MB/s","type":"ss","server":"62.210.88.22","port":443,"password":"1I971VYPDHoMlYLRSNenDq","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"挪威-13.6MB/s","type":"ss","server":"51.13.182.236","port":6870,"password":"M7x1mGNOwhPiRB9jSxZJNy","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"挪威-170.9KB/s","type":"ss","server":"51.13.182.231","port":3089,"password":"J0lgxy4mb52CIJ8UUcEgts","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"以色列-70.4MB/s","type":"ss","server":"188.191.147.127","port":31348,"password":"6IVOuzMfH5ROpgwtRTcNJKYJvYe9FDVaU7wAYYh8PRLxxZs6","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"英国-4.20MB/s","type":"trojan","server":"3.10.62.249","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"巴林-2.24MB/s","type":"ss","server":"series-a2-me.varzesh360.co","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-36.9MB/s","type":"ss","server":"w72tapyb.slashdevslashnetslashtun.net","port":16008,"password":"LBNV7AS85Y44SFN6","cipher":"aes-256-gcm"}
+  - {"name":"挪威-176.6KB/s","type":"ss","server":"51.13.182.236","port":6870,"password":"M7x1mGNOwhPiRB9jSxZJNy","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国-562.8KB/s","type":"trojan","server":"3.147.172.37","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中转节点-32.1MB/s","type":"ss","server":"8tv68qhq.slashdevslashnetslashtun.net","port":18001,"password":"V86WNPYR4ORBV2LH","cipher":"aes-256-gcm"}
+  - {"name":"巴林-1.25MB/s","type":"ss","server":"series-a2-me.varzesh360.co","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-14.4MB/s","type":"ss","server":"8tv68qhq.slashdevslashnetslashtun.net","port":15013,"password":"QDMKYVHZQVM77KA8","cipher":"aes-256-gcm"}
+  - {"name":"法国-1.18MB/s","type":"vmess","server":"irvideo.cfd","port":443,"cipher":"auto","uuid":"irvideo.cfd:443?type=ws&encryption=auto&host=irvideo.cfd&path=%2Flinkws&security=tls&sni=irvideo.cfd#%E6%B3%95%E5%9B%BD-1.18MB%2Fs","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"irvideo.cfd"}}}
+  - {"name":"荷兰-3.6MB/s","type":"ss","server":"208.67.105.87","port":42501,"password":"nq96KftrZAj3LuFQESqmn44Mo5oCuo2cipoEsae25mrmHG2oJ4VT37scBfVBpN5DWtUELZutVhhXs8Le5B8fZ9hLn9ytwvbf","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"荷兰-3.8MB/s","type":"ss","server":"198.105.123.190","port":46902,"password":"2UrSffeNABXGXXfNhoL6xBUnh1RzqMizrQ2s9QfC38P2YPuYPRTqW5zZg6jGisiNhkzM4SRjF6nzvFb18GPtESWoXWjhqyC8","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-26.1MB/s","type":"ss","server":"w72tapyb.slashdevslashnetslashtun.net","port":16008,"password":"LBNV7AS85Y44SFN6","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-26.6MB/s","type":"ss","server":"w72tapyb.slashdevslashnetslashtun.net","port":17004,"password":"YRCK2D16NISDAPEV","cipher":"aes-256-gcm"}
+  - {"name":"挪威-28.7MB/s","type":"ss","server":"51.13.182.231","port":3089,"password":"J0lgxy4mb52CIJ8UUcEgts","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"加拿大-17.0MB/s","type":"ss","server":"3.99.82.131","port":443,"password":"nqpInr8GMVSFxpPxovu79j","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-21.3MB/s_1","type":"ss","server":"qh62onjn.slashdevslashnetslashtun.net","port":15007,"password":"5TKI8YZMUS7LMA9E","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-20.1MB/s_1","type":"ss","server":"8tv68qhq.slashdevslashnetslashtun.net","port":18001,"password":"V86WNPYR4ORBV2LH","cipher":"aes-256-gcm"}
+  - {"name":"荷兰-3.2MB/s","type":"ss","server":"208.67.105.87","port":42501,"password":"nq96KftrZAj3LuFQESqmn44Mo5oCuo2cipoEsae25mrmHG2oJ4VT37scBfVBpN5DWtUELZutVhhXs8Le5B8fZ9hLn9ytwvbf","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-11.8MB/s","type":"ss","server":"8tv68qhq.slashdevslashnetslashtun.net","port":18001,"password":"V86WNPYR4ORBV2LH","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-12.8MB/s","type":"ss","server":"8tv68qhq.slashdevslashnetslashtun.net","port":15013,"password":"QDMKYVHZQVM77KA8","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-9.3MB/s","type":"ss","server":"w72tapyb.slashdevslashnetslashtun.net","port":16008,"password":"LBNV7AS85Y44SFN6","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-14.5MB/s","type":"ss","server":"w72tapyb.slashdevslashnetslashtun.net","port":17004,"password":"YRCK2D16NISDAPEV","cipher":"aes-256-gcm"}
+  - {"name":"德国-24.1MB/s","type":"trojan","server":"3.126.112.187","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"英国-18.7MB/s","type":"ss","server":"83.147.216.173","port":9848,"password":"zUQvFioae7KzAZ2GCMgNum","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"英国-21.5MB/s","type":"ss","server":"series-a1.samanehha.co","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-15.5MB/s","type":"ss","server":"qh62onjn.slashdevslashnetslashtun.net","port":15007,"password":"5TKI8YZMUS7LMA9E","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-18.0MB/s_1","type":"ss","server":"8tv68qhq.slashdevslashnetslashtun.net","port":15013,"password":"QDMKYVHZQVM77KA8","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-14.2MB/s","type":"ss","server":"8tv68qhq.slashdevslashnetslashtun.net","port":18001,"password":"V86WNPYR4ORBV2LH","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-13.5MB/s","type":"ss","server":"qh62onjn.slashdevslashnetslashtun.net","port":18003,"password":"PUYELFF4VNSZ7OYX","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-21.1MB/s","type":"ss","server":"ctmm.gscloud.bond","port":31620,"password":"f16d3752-7bae-474e-87dc-f892df2caeaf","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"立陶宛-4.59MB/s","type":"ss","server":"45.87.175.166","port":8080,"password":"1RWwXhwfAB5gAEozU4G2Pg","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-40.1MB/s","type":"ss","server":"ctmm.gscloud.bond","port":31620,"password":"f16d3752-7bae-474e-87dc-f892df2caeaf","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"荷兰-4.7MB/s","type":"ss","server":"208.67.105.87","port":42501,"password":"nq96KftrZAj3LuFQESqmn44Mo5oCuo2cipoEsae25mrmHG2oJ4VT37scBfVBpN5DWtUELZutVhhXs8Le5B8fZ9hLn9ytwvbf","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-24.7MB/s","type":"ss","server":"w72tapyb.slashdevslashnetslashtun.net","port":16008,"password":"LBNV7AS85Y44SFN6","cipher":"aes-256-gcm"}
+  - {"name":"未知国家-18.0MB/s","type":"ss","server":"160.19.78.75","port":443,"password":"Nk9asglDzHzjktVzTkvhaA","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"加拿大-260.5KB/s","type":"ss","server":"38.114.114.69","port":7001,"password":"RexnBgU7EV5ADxG","cipher":"aes-256-gcm"}
+  - {"name":"加拿大-55.7MB/s","type":"ss","server":"38.114.114.69","port":8118,"password":"cdBIDV42DCwnfIN","cipher":"aes-256-gcm"}
+  - {"name":"德国-2.86MB/s","type":"vmess","server":"57.129.24.141","port":443,"cipher":"auto","uuid":"57.129.24.141:443?type=ws&encryption=auto&path=%2Flinkvws&security=tls#%E5%BE%B7%E5%9B%BD-2.86MB%2Fs","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkvws"}}
+  - {"name":"中转节点-3.32MB/s","type":"trojan","server":"223.113.54.149","port":14505,"udp":true,"password":"vzhXXZVw","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"挪威-28.1MB/s","type":"ss","server":"51.13.182.231","port":3089,"password":"J0lgxy4mb52CIJ8UUcEgts","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-15.4MB/s","type":"ss","server":"8tv68qhq.slashdevslashnetslashtun.net","port":18001,"password":"V86WNPYR4ORBV2LH","cipher":"aes-256-gcm"}
+  - {"name":"以色列-85.7MB/s","type":"ss","server":"188.191.147.127","port":31348,"password":"6IVOuzMfH5ROpgwtRTcNJKYJvYe9FDVaU7wAYYh8PRLxxZs6","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"挪威-39.0MB/s","type":"ss","server":"51.13.182.236","port":6870,"password":"M7x1mGNOwhPiRB9jSxZJNy","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-20.8MB/s","type":"ss","server":"qh62onjn.slashdevslashnetslashtun.net","port":18003,"password":"PUYELFF4VNSZ7OYX","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-27.3MB/s","type":"ss","server":"w72tapyb.slashdevslashnetslashtun.net","port":16008,"password":"LBNV7AS85Y44SFN6","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-663.0KB/s","type":"trojan","server":"223.113.54.149","port":14505,"udp":true,"password":"vzhXXZVw","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"荷兰-4.8MB/s","type":"ss","server":"208.67.105.87","port":42501,"password":"nq96KftrZAj3LuFQESqmn44Mo5oCuo2cipoEsae25mrmHG2oJ4VT37scBfVBpN5DWtUELZutVhhXs8Le5B8fZ9hLn9ytwvbf","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"立陶宛-90.1MB/s","type":"ss","server":"45.87.175.199","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-10.4MB/s","type":"ss","server":"ctmm.gscloud.bond","port":31620,"password":"f16d3752-7bae-474e-87dc-f892df2caeaf","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"以色列-15.4MB/s","type":"ss","server":"188.191.147.127","port":31348,"password":"6IVOuzMfH5ROpgwtRTcNJKYJvYe9FDVaU7wAYYh8PRLxxZs6","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"立陶宛-209.6KB/s","type":"ss","server":"45.87.175.199","port":8080,"password":"1RWwXhwfAB5gAEozU4G2Pg","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"立陶宛-67.0MB/s","type":"ss","server":"45.87.175.199","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"以色列-35.4MB/s","type":"ss","server":"188.191.147.127","port":31348,"password":"6IVOuzMfH5ROpgwtRTcNJKYJvYe9FDVaU7wAYYh8PRLxxZs6","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国-86.7MB/s","type":"ss","server":"45.158.171.66","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-50.7MB/s","type":"ss","server":"qh62onjn.slashdevslashnetslashtun.net","port":15003,"password":"WEL8AJ5ROLX2DH05","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-10.0MB/s","type":"ss","server":"ctmm.gscloud.bond","port":31620,"password":"f16d3752-7bae-474e-87dc-f892df2caeaf","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"挪威-153.5KB/s","type":"ss","server":"51.13.182.231","port":3089,"password":"J0lgxy4mb52CIJ8UUcEgts","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-21.3MB/s_2","type":"ss","server":"w72tapyb.slashdevslashnetslashtun.net","port":16008,"password":"LBNV7AS85Y44SFN6","cipher":"aes-256-gcm"}
+  - {"name":"美国-1.58MB/s","type":"ss","server":"series-a2-mec.varzesh360.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国-171.6KB/s","type":"trojan","server":"216.128.147.13","port":443,"udp":true,"password":"wkmY1R4EcP","sni":"z-v2-003274.kailib.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国-107.1KB/s","type":"ss","server":"45.158.171.66","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"荷兰-4.6MB/s","type":"ss","server":"208.67.105.87","port":42501,"password":"nq96KftrZAj3LuFQESqmn44Mo5oCuo2cipoEsae25mrmHG2oJ4VT37scBfVBpN5DWtUELZutVhhXs8Le5B8fZ9hLn9ytwvbf","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"挪威-22.4MB/s","type":"ss","server":"51.13.182.231","port":3089,"password":"J0lgxy4mb52CIJ8UUcEgts","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"未知国家-13.7MB/s","type":"ss","server":"arxfw2b78fi2q9hzylhn.freesocks.work","port":443,"password":"Nk9asglDzHzjktVzTkvhaA","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"日本-196.7KB/s","type":"trojan","server":"74.226.136.204","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"tw02.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本-2.91MB/s","type":"trojan","server":"sg02.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"sg02.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本-143.0KB/s","type":"trojan","server":"hk03.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"hk03.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中转节点-11.9MB/s","type":"ss","server":"ctmm.gscloud.bond","port":31620,"password":"f16d3752-7bae-474e-87dc-f892df2caeaf","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"日本-207.2KB/s","type":"trojan","server":"hk03.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"hk03.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本-1.88MB/s","type":"trojan","server":"sg02.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"sg02.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中转节点-6.1MB/s","type":"ss","server":"ctmm.gscloud.bond","port":31620,"password":"f16d3752-7bae-474e-87dc-f892df2caeaf","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国-3.07MB/s","type":"vmess","server":"172.67.159.247","port":443,"cipher":"auto","uuid":"172.67.159.247:443?type=grpc&encryption=auto&security=tls&sni=sth.happyground.ir#%E7%BE%8E%E5%9B%BD-3.07MB%2Fs","alterId":0,"tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"/","grpc-mode":"gun"}}
+  - {"name":"美国-1.32MB/s","type":"ss","server":"series-a2-mec.varzesh360.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"日本-1.94MB/s","type":"trojan","server":"my01.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"my01.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本-2.09MB/s","type":"trojan","server":"in01.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"in01.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"越南-20.5MB/s","type":"trojan","server":"cmc6.5gsieuvip.vn","port":443,"udp":true,"password":"34ec6bdf-602c-4bbe-933a-5c0823524201","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"巴林-167.0KB/s","type":"ss","server":"series-a2-me.varzesh360.co","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-1.56MB/s","type":"trojan","server":"120.232.217.96","port":21332,"udp":true,"password":"7daf833c-37b9-4afc-8495-96590f03f781","sni":"120.232.217.96","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中转节点-20.1MB/s_2","type":"ss","server":"ctmm.gscloud.bond","port":31620,"password":"f16d3752-7bae-474e-87dc-f892df2caeaf","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"拉脱维亚-2.08MB/s","type":"ss","server":"46.183.217.232","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"英国-3.67MB/s","type":"ss","server":"213.109.147.242","port":62685,"password":"VpKABcOpNNA0l5G2AVOmw8","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-58.5MB/s","type":"ss","server":"183.232.229.164","port":11001,"password":"54f4e2f4-f0e1-4a15-a0cf-3a3234ab58fb","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"英国-3.90MB/s","type":"ss","server":"212.102.53.197","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
+  - {"name":"捷克-90.2MB/s","type":"trojan","server":"195.133.93.135","port":443,"udp":true,"password":"3723507166611775488","sni":"pleased-airedale.boa152.lol","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"未知国家-73.3MB/s","type":"vmess","server":"104.21.48.1","port":8443,"cipher":"auto","uuid":"104.21.48.1:8443?type=ws&encryption=auto&host=ff.kncc2.top&path=%2F89c344f2&security=tls&sni=ff.kncc2.top#%E6%9C%AA%E7%9F%A5%E5%9B%BD%E5%AE%B6-73.3MB%2Fs","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/89c344f2","headers":{"host":"ff.kncc2.top"}}}
+  - {"name":"美国-12.0MB/s","type":"trojan","server":"108.165.152.29","port":2096,"udp":true,"password":"SSorg","sni":"sstjj.esslh.filegear-sg.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中转节点-153.4KB/s","type":"trojan","server":"naiu-jp.05vr9nyqg5.download","port":13012,"udp":true,"password":"e279c494-c426-443a-a034-a04516409242","sni":"cloudflare.node-ssl.cdn-alibaba.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"英国-567.9KB/s","type":"ss","server":"212.102.53.197","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
+  - {"name":"捷克-191.6KB/s","type":"trojan","server":"195.133.93.135","port":443,"udp":true,"password":"3723507166611775488","sni":"pleased-airedale.boa152.lol","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"英国-3.32MB/s","type":"ss","server":"uk-dc1.yangon.club","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
+  - {"name":"中转节点-7.7MB/s","type":"ss","server":"ctmm.gscloud.bond","port":31620,"password":"f16d3752-7bae-474e-87dc-f892df2caeaf","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-2.90MB/s","type":"trojan","server":"36.150.215.222","port":12524,"udp":true,"password":"vzhXXZVw","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中转节点-3.05MB/s","type":"trojan","server":"223.113.54.149","port":51377,"udp":true,"password":"vzhXXZVw","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"荷兰-6.2MB/s","type":"ss","server":"208.67.105.87","port":42501,"password":"nq96KftrZAj3LuFQESqmn44Mo5oCuo2cipoEsae25mrmHG2oJ4VT37scBfVBpN5DWtUELZutVhhXs8Le5B8fZ9hLn9ytwvbf","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"英国-271.9KB/s","type":"ss","server":"212.102.53.197","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
+  - {"name":"中转节点-369.2KB/s","type":"trojan","server":"120.232.217.96","port":21332,"udp":true,"password":"7daf833c-37b9-4afc-8495-96590f03f781","sni":"120.232.217.96","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"德国-17.8MB/s","type":"trojan","server":"80.240.112.167","port":443,"udp":true,"password":"3723507166611775488","sni":"ample-cockatoo.boa152.lol","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中转节点-121.3KB/s","type":"ss","server":"183.232.229.164","port":11001,"password":"54f4e2f4-f0e1-4a15-a0cf-3a3234ab58fb","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-26.3MB/s","type":"ss","server":"ctmm.gscloud.bond","port":31620,"password":"f16d3752-7bae-474e-87dc-f892df2caeaf","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"德国-19.6MB/s","type":"trojan","server":"ample-cockatoo.boa152.lol","port":443,"udp":true,"password":"3723507166611775488","sni":"ample-cockatoo.boa152.lol","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"瑞士-37.1MB/s","type":"ss","server":"195.15.254.25","port":54748,"password":"ghBuJ9pZOF9MohhGyPjo3rvilQhlw9NzBDlOVDonQN0=","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-120.1KB/s","type":"trojan","server":"naiu-jp.05vr9nyqg5.download","port":13012,"udp":true,"password":"e279c494-c426-443a-a034-a04516409242","sni":"cloudflare.node-ssl.cdn-alibaba.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中转节点-5.9MB/s","type":"ss","server":"ctmm.gscloud.bond","port":31620,"password":"f16d3752-7bae-474e-87dc-f892df2caeaf","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"法国-3.97MB/s","type":"trojan","server":"35.181.242.100","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"英国-985.9KB/s","type":"ss","server":"212.102.53.197","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
+  - {"name":"中转节点-2.11MB/s","type":"trojan","server":"36.150.215.222","port":12524,"udp":true,"password":"vzhXXZVw","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国-844.2KB/s_1","type":"ss","server":"23.154.136.247","port":2376,"password":"faBAoD54k87UJG7","cipher":"aes-256-gcm"}
+  - {"name":"美国-869.0KB/s_1","type":"ss","server":"23.157.40.87","port":8119,"password":"cdBIDV42DCwnfIN","cipher":"aes-256-gcm"}
+  - {"name":"瑞士-264.5KB/s_1","type":"ss","server":"195.15.254.25","port":54748,"password":"ghBuJ9pZOF9MohhGyPjo3rvilQhlw9NzBDlOVDonQN0=","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国-870.1KB/s_1","type":"ss","server":"23.157.40.87","port":5601,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"美国-842.9KB/s_1","type":"ss","server":"23.157.40.87","port":8090,"password":"PCnnH6SQSnfoS27","cipher":"aes-256-gcm"}
+  - {"name":"美国-828.9KB/s_1","type":"ss","server":"23.157.40.87","port":9102,"password":"e4FCWrgpkji3QY","cipher":"aes-256-gcm"}
+  - {"name":"美国-866.2KB/s_1","type":"ss","server":"23.157.40.87","port":7307,"password":"FoOiGlkAA9yPEGP","cipher":"aes-256-gcm"}
+  - {"name":"美国-871.1KB/s_1","type":"ss","server":"23.157.40.87","port":8080,"password":"KixLvKzwjekG00rm","cipher":"aes-256-gcm"}
+  - {"name":"美国-844.2KB/s_2","type":"ss","server":"23.154.136.247","port":2376,"password":"faBAoD54k87UJG7","cipher":"aes-256-gcm"}
+  - {"name":"美国-869.0KB/s_2","type":"ss","server":"23.157.40.87","port":8119,"password":"cdBIDV42DCwnfIN","cipher":"aes-256-gcm"}
+  - {"name":"瑞士-264.5KB/s_2","type":"ss","server":"195.15.254.25","port":54748,"password":"ghBuJ9pZOF9MohhGyPjo3rvilQhlw9NzBDlOVDonQN0=","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国-870.1KB/s_2","type":"ss","server":"23.157.40.87","port":5601,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"美国-842.9KB/s_2","type":"ss","server":"23.157.40.87","port":8090,"password":"PCnnH6SQSnfoS27","cipher":"aes-256-gcm"}
+  - {"name":"美国-828.9KB/s_2","type":"ss","server":"23.157.40.87","port":9102,"password":"e4FCWrgpkji3QY","cipher":"aes-256-gcm"}
+  - {"name":"美国-866.2KB/s_2","type":"ss","server":"23.157.40.87","port":7307,"password":"FoOiGlkAA9yPEGP","cipher":"aes-256-gcm"}
+  - {"name":"美国-871.1KB/s_2","type":"ss","server":"23.157.40.87","port":8080,"password":"KixLvKzwjekG00rm","cipher":"aes-256-gcm"}
+  - {"name":"美国-844.2KB/s_3","type":"ss","server":"23.154.136.247","port":2376,"password":"faBAoD54k87UJG7","cipher":"aes-256-gcm"}
+  - {"name":"美国-869.0KB/s_3","type":"ss","server":"23.157.40.87","port":8119,"password":"cdBIDV42DCwnfIN","cipher":"aes-256-gcm"}
+  - {"name":"瑞士-264.5KB/s_3","type":"ss","server":"195.15.254.25","port":54748,"password":"ghBuJ9pZOF9MohhGyPjo3rvilQhlw9NzBDlOVDonQN0=","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国-870.1KB/s_3","type":"ss","server":"23.157.40.87","port":5601,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"美国-842.9KB/s_3","type":"ss","server":"23.157.40.87","port":8090,"password":"PCnnH6SQSnfoS27","cipher":"aes-256-gcm"}
+  - {"name":"美国-828.9KB/s_3","type":"ss","server":"23.157.40.87","port":9102,"password":"e4FCWrgpkji3QY","cipher":"aes-256-gcm"}
+  - {"name":"美国-866.2KB/s_3","type":"ss","server":"23.157.40.87","port":7307,"password":"FoOiGlkAA9yPEGP","cipher":"aes-256-gcm"}
+  - {"name":"美国-871.1KB/s_3","type":"ss","server":"23.157.40.87","port":8080,"password":"KixLvKzwjekG00rm","cipher":"aes-256-gcm"}
+  - {"name":"美国-185.1KB/s","type":"ss","server":"23.157.40.87","port":8080,"password":"KixLvKzwjekG00rm","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-87.5MB/s","type":"ss","server":"8tv68qhq.slashdevslashnetslashtun.net","port":17001,"password":"QBNVUDH1J62ZEVWK","cipher":"aes-256-gcm"}
+  - {"name":"美国-240.1KB/s","type":"ss","server":"23.157.40.87","port":5004,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
+  - {"name":"德国-225.3KB/s","type":"vmess","server":"57.129.24.142","port":443,"cipher":"auto","uuid":"57.129.24.142:443?type=ws&encryption=auto&path=%2Flinkvws&security=tls#%E5%BE%B7%E5%9B%BD-225.3KB%2Fs","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkvws"}}
+  - {"name":"法国-299.3KB/s","type":"vmess","server":"57.129.25.20","port":443,"cipher":"auto","uuid":"57.129.25.20:443?type=ws&encryption=auto&path=linkvws&security=tls#%E6%B3%95%E5%9B%BD-299.3KB%2Fs","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"linkvws"}}
+  - {"name":"荷兰-45.7MB/s","type":"ss","server":"198.105.123.190","port":46902,"password":"2UrSffeNABXGXXfNhoL6xBUnh1RzqMizrQ2s9QfC38P2YPuYPRTqW5zZg6jGisiNhkzM4SRjF6nzvFb18GPtESWoXWjhqyC8","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"捷克-20.5MB/s","type":"trojan","server":"195.133.93.81","port":443,"udp":true,"password":"3723507166611775488","sni":"sensible-ocelot.boa152.lol","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本-2.00MB/s","type":"trojan","server":"in01.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"in01.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"俄罗斯联邦-20.2MB/s","type":"ss","server":"185.22.152.13","port":16112,"password":"4194ce5b1f36f660","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-1.9MB/s","type":"ss","server":"ctmm.gscloud.bond","port":31620,"password":"f16d3752-7bae-474e-87dc-f892df2caeaf","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-34.4MB/s","type":"ss","server":"w72tapyb.slashdevslashnetslashtun.net","port":18016,"password":"D56RP4I5E1CWLAE3","cipher":"aes-256-gcm"}
+  - {"name":"日本-145.2KB/s","type":"trojan","server":"sg02.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"sg02.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"英国-20.2MB/s","type":"ss","server":"83.147.216.173","port":9848,"password":"zUQvFioae7KzAZ2GCMgNum","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国-601.2KB/s","type":"ss","server":"series-a2-mec.varzesh360.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"瑞士-189.1KB/s","type":"ss","server":"195.15.254.25","port":54748,"password":"ghBuJ9pZOF9MohhGyPjo3rvilQhlw9NzBDlOVDonQN0=","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-23.9MB/s","type":"ss","server":"ti3hyra4.slashdevslashnetslashtun.net","port":15010,"password":"YPNNBXGRNCAXB9N7","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-9.4MB/s","type":"ss","server":"8tv68qhq.slashdevslashnetslashtun.net","port":17001,"password":"QBNVUDH1J62ZEVWK","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-17.6MB/s","type":"ss","server":"w72tapyb.slashdevslashnetslashtun.net","port":18016,"password":"D56RP4I5E1CWLAE3","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-15.0MB/s","type":"ss","server":"ctmm.gscloud.bond","port":31620,"password":"f16d3752-7bae-474e-87dc-f892df2caeaf","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-18.0MB/s_2","type":"ss","server":"w72tapyb.slashdevslashnetslashtun.net","port":16016,"password":"6KYL3YM7UAOAE94Q","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-27.5MB/s","type":"ss","server":"qh62onjn.slashdevslashnetslashtun.net","port":16003,"password":"FAJT26PIM7CB71OZ","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-17.9MB/s","type":"ss","server":"8tv68qhq.slashdevslashnetslashtun.net","port":15005,"password":"NFYDVXE3DMWI2M3W","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-13.1MB/s","type":"ss","server":"ctmm.gscloud.bond","port":31620,"password":"f16d3752-7bae-474e-87dc-f892df2caeaf","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"以色列-552.6KB/s","type":"ss","server":"188.191.147.127","port":31348,"password":"6IVOuzMfH5ROpgwtRTcNJKYJvYe9FDVaU7wAYYh8PRLxxZs6","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"法国-3.09MB/s","type":"ss","server":"213.156.138.138","port":31348,"password":"oVfvPkqJFCjOEbBsbmOtIiAuqgmEFOEf332F26C8lwEwQng9","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"立陶宛-55.6MB/s_1","type":"ss","server":"45.87.175.157","port":8080,"password":"QCXDxuDlTTMD7jtgHUjIoj","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-33.9MB/s_1","type":"ss","server":"8tv68qhq.slashdevslashnetslashtun.net","port":17001,"password":"QBNVUDH1J62ZEVWK","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-6.3MB/s_1","type":"ss","server":"ctmm.gscloud.bond","port":31620,"password":"f16d3752-7bae-474e-87dc-f892df2caeaf","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-26.4MB/s_1","type":"ss","server":"45.250.184.183","port":6181,"password":"11a805f2-41a7-4cd8-8406-0470c3cde0d3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"日本-2.57MB/s_1","type":"trojan","server":"tw01.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"tw01.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本-6.68MB/s_1","type":"trojan","server":"74.226.136.204","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"tw02.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国-276.9KB/s_1","type":"vmess","server":"jp.cowvpn.org","port":443,"cipher":"auto","uuid":"jp.cowvpn.org:443?type=ws&encryption=auto&host=jpcf.cowvpn.org&path=%2Fcctv13%2Fvmess_jpcf&security=tls&sni=jpcf.cowvpn.org#%E7%BE%8E%E5%9B%BD-276.9KB%2Fs","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/cctv13/vmess_jpcf","headers":{"host":"jpcf.cowvpn.org"}}}
+  - {"name":"立陶宛-55.6MB/s_2","type":"ss","server":"45.87.175.157","port":8080,"password":"QCXDxuDlTTMD7jtgHUjIoj","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-33.9MB/s_2","type":"ss","server":"8tv68qhq.slashdevslashnetslashtun.net","port":17001,"password":"QBNVUDH1J62ZEVWK","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-6.3MB/s_2","type":"ss","server":"ctmm.gscloud.bond","port":31620,"password":"f16d3752-7bae-474e-87dc-f892df2caeaf","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-26.4MB/s_2","type":"ss","server":"45.250.184.183","port":6181,"password":"11a805f2-41a7-4cd8-8406-0470c3cde0d3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"日本-2.57MB/s_2","type":"trojan","server":"tw01.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"tw01.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本-6.68MB/s_2","type":"trojan","server":"74.226.136.204","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"tw02.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国-276.9KB/s_2","type":"vmess","server":"jp.cowvpn.org","port":443,"cipher":"auto","uuid":"jp.cowvpn.org:443?type=ws&encryption=auto&host=jpcf.cowvpn.org&path=%2Fcctv13%2Fvmess_jpcf&security=tls&sni=jpcf.cowvpn.org#%E7%BE%8E%E5%9B%BD-276.9KB%2Fs","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/cctv13/vmess_jpcf","headers":{"host":"jpcf.cowvpn.org"}}}
+  - {"name":"立陶宛-55.6MB/s_3","type":"ss","server":"45.87.175.157","port":8080,"password":"QCXDxuDlTTMD7jtgHUjIoj","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-33.9MB/s_3","type":"ss","server":"8tv68qhq.slashdevslashnetslashtun.net","port":17001,"password":"QBNVUDH1J62ZEVWK","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-6.3MB/s_3","type":"ss","server":"ctmm.gscloud.bond","port":31620,"password":"f16d3752-7bae-474e-87dc-f892df2caeaf","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-26.4MB/s_3","type":"ss","server":"45.250.184.183","port":6181,"password":"11a805f2-41a7-4cd8-8406-0470c3cde0d3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"日本-2.57MB/s_3","type":"trojan","server":"tw01.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"tw01.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本-6.68MB/s_3","type":"trojan","server":"74.226.136.204","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"tw02.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国-276.9KB/s_3","type":"vmess","server":"jp.cowvpn.org","port":443,"cipher":"auto","uuid":"jp.cowvpn.org:443?type=ws&encryption=auto&host=jpcf.cowvpn.org&path=%2Fcctv13%2Fvmess_jpcf&security=tls&sni=jpcf.cowvpn.org#%E7%BE%8E%E5%9B%BD-276.9KB%2Fs","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/cctv13/vmess_jpcf","headers":{"host":"jpcf.cowvpn.org"}}}
+  - {"name":"立陶宛-55.6MB/s_4","type":"ss","server":"45.87.175.157","port":8080,"password":"QCXDxuDlTTMD7jtgHUjIoj","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-33.9MB/s_4","type":"ss","server":"8tv68qhq.slashdevslashnetslashtun.net","port":17001,"password":"QBNVUDH1J62ZEVWK","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-6.3MB/s_4","type":"ss","server":"ctmm.gscloud.bond","port":31620,"password":"f16d3752-7bae-474e-87dc-f892df2caeaf","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-26.4MB/s_4","type":"ss","server":"45.250.184.183","port":6181,"password":"11a805f2-41a7-4cd8-8406-0470c3cde0d3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"日本-2.57MB/s_4","type":"trojan","server":"tw01.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"tw01.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本-6.68MB/s_4","type":"trojan","server":"74.226.136.204","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"tw02.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国-276.9KB/s_4","type":"vmess","server":"jp.cowvpn.org","port":443,"cipher":"auto","uuid":"jp.cowvpn.org:443?type=ws&encryption=auto&host=jpcf.cowvpn.org&path=%2Fcctv13%2Fvmess_jpcf&security=tls&sni=jpcf.cowvpn.org#%E7%BE%8E%E5%9B%BD-276.9KB%2Fs","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/cctv13/vmess_jpcf","headers":{"host":"jpcf.cowvpn.org"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
-      - 🇸🇬 狮城节点
       - 🇺🇲 美国节点
       - 🇯🇵 日本节点
       - 🚀 手动切换
@@ -147,108 +294,404 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 英国(yudou66.com 玉豆免费节点)
-      - 美国(yudou66.com 玉豆免费节点)
-      - 俄罗斯(yudou66.com 玉豆免费节点)
-      - 美国(yudou66.com 玉豆免费节点) 2
-      - 俄罗斯(yudou66.com 玉豆免费节点) 2
-      - 俄罗斯(yudou66.com 玉豆免费节点) 3
-      - 俄罗斯(yudou66.com 玉豆免费节点) 4
-      - 俄罗斯(yudou66.com 玉豆免费节点) 5
-      - 英国(yudou66.com 玉豆免费节点) 2
-      - 俄罗斯(yudou66.com 玉豆免费节点) 6
-      - 美国(yudou66.com 玉豆免费节点) 3
-      - 英国(yudou66.com 玉豆免费节点) 3
-      - 俄罗斯(yudou66.com 玉豆免费节点) 7
-      - 美国(yudou66.com 玉豆免费节点) 4
-      - 俄罗斯(yudou66.com 玉豆免费节点) 8
-      - 美国(yudou66.com 玉豆免费节点) 5
-      - 俄罗斯(yudou66.com 玉豆免费节点) 9
-      - 俄罗斯(yudou66.com 玉豆免费节点) 10
-      - 俄罗斯(yudou66.com 玉豆免费节点) 11
-      - 俄罗斯(yudou66.com 玉豆免费节点) 12
-      - 美国(yudou66.com 玉豆免费节点) 6
-      - 俄罗斯(yudou66.com 玉豆免费节点) 13
-      - 美国(yudou66.com 玉豆免费节点) 7
-      - 德国(yudou66.com 玉豆免费节点)
-      - 美国(yudou66.com 玉豆免费节点) 8
-      - 俄罗斯(yudou66.com 玉豆免费节点) 14
-      - 新加坡(yudou66.com 玉豆免费节点)
-      - 英国(yudou66.com 玉豆免费节点) 4
-      - 俄罗斯(yudou66.com 玉豆免费节点) 15
-      - 美国(yudou66.com 玉豆免费节点) 9
-      - 美国(yudou66.com 玉豆免费节点) 10
-      - 美国(yudou66.com 玉豆免费节点) 11
-      - 俄罗斯(yudou66.com 玉豆免费节点) 16
-      - 俄罗斯(yudou66.com 玉豆免费节点) 17
-      - 美国(yudou66.com 玉豆免费节点) 12
-      - 俄罗斯(yudou66.com 玉豆免费节点) 18
-      - 美国(yudou66.com 玉豆免费节点) 13
-      - 俄罗斯(yudou66.com 玉豆免费节点) 19
-      - 美国(yudou66.com 玉豆免费节点) 14
-      - 俄罗斯(yudou66.com 玉豆免费节点) 20
-      - 俄罗斯(yudou66.com 玉豆免费节点) 21
-      - 美国(yudou66.com 玉豆免费节点) 15
-      - 美国(yudou66.com 玉豆免费节点) 16
-      - 美国(yudou66.com 玉豆免费节点) 17
-      - 美国(yudou66.com 玉豆免费节点) 18
-      - 日本(yudou66.com 玉豆免费节点)
-      - 美国(yudou66.com 玉豆免费节点) 19
-      - 俄罗斯(yudou66.com 玉豆免费节点) 22
+      - 美国-26.1MB/s
+      - 挪威-23.9MB/s
+      - 荷兰-4.2MB/s
+      - 日本-211.4KB/s
+      - 伊朗-6.1MB/s
+      - 加拿大-352.4KB/s
+      - 巴林-1.26MB/s
+      - 中转节点-1.87MB/s
+      - 荷兰-3.0MB/s
+      - 法国-29.6MB/s
+      - 挪威-13.6MB/s
+      - 挪威-170.9KB/s
+      - 以色列-70.4MB/s
+      - 英国-4.20MB/s
+      - 巴林-2.24MB/s
+      - 中转节点-36.9MB/s
+      - 挪威-176.6KB/s
+      - 美国-562.8KB/s
+      - 中转节点-32.1MB/s
+      - 巴林-1.25MB/s
+      - 中转节点-14.4MB/s
+      - 法国-1.18MB/s
+      - 荷兰-3.6MB/s
+      - 荷兰-3.8MB/s
+      - 中转节点-26.1MB/s
+      - 中转节点-26.6MB/s
+      - 挪威-28.7MB/s
+      - 加拿大-17.0MB/s
+      - 中转节点-21.3MB/s_1
+      - 中转节点-20.1MB/s_1
+      - 荷兰-3.2MB/s
+      - 中转节点-11.8MB/s
+      - 中转节点-12.8MB/s
+      - 中转节点-9.3MB/s
+      - 中转节点-14.5MB/s
+      - 德国-24.1MB/s
+      - 英国-18.7MB/s
+      - 英国-21.5MB/s
+      - 中转节点-15.5MB/s
+      - 中转节点-18.0MB/s_1
+      - 中转节点-14.2MB/s
+      - 中转节点-13.5MB/s
+      - 中转节点-21.1MB/s
+      - 立陶宛-4.59MB/s
+      - 中转节点-40.1MB/s
+      - 荷兰-4.7MB/s
+      - 中转节点-24.7MB/s
+      - 未知国家-18.0MB/s
+      - 加拿大-260.5KB/s
+      - 加拿大-55.7MB/s
+      - 德国-2.86MB/s
+      - 中转节点-3.32MB/s
+      - 挪威-28.1MB/s
+      - 中转节点-15.4MB/s
+      - 以色列-85.7MB/s
+      - 挪威-39.0MB/s
+      - 中转节点-20.8MB/s
+      - 中转节点-27.3MB/s
+      - 中转节点-663.0KB/s
+      - 荷兰-4.8MB/s
+      - 立陶宛-90.1MB/s
+      - 中转节点-10.4MB/s
+      - 以色列-15.4MB/s
+      - 立陶宛-209.6KB/s
+      - 立陶宛-67.0MB/s
+      - 以色列-35.4MB/s
+      - 美国-86.7MB/s
+      - 中转节点-50.7MB/s
+      - 中转节点-10.0MB/s
+      - 挪威-153.5KB/s
+      - 中转节点-21.3MB/s_2
+      - 美国-1.58MB/s
+      - 美国-171.6KB/s
+      - 美国-107.1KB/s
+      - 荷兰-4.6MB/s
+      - 挪威-22.4MB/s
+      - 未知国家-13.7MB/s
+      - 日本-196.7KB/s
+      - 日本-2.91MB/s
+      - 日本-143.0KB/s
+      - 中转节点-11.9MB/s
+      - 日本-207.2KB/s
+      - 日本-1.88MB/s
+      - 中转节点-6.1MB/s
+      - 美国-3.07MB/s
+      - 美国-1.32MB/s
+      - 日本-1.94MB/s
+      - 日本-2.09MB/s
+      - 越南-20.5MB/s
+      - 巴林-167.0KB/s
+      - 中转节点-1.56MB/s
+      - 中转节点-20.1MB/s_2
+      - 拉脱维亚-2.08MB/s
+      - 英国-3.67MB/s
+      - 中转节点-58.5MB/s
+      - 英国-3.90MB/s
+      - 捷克-90.2MB/s
+      - 未知国家-73.3MB/s
+      - 美国-12.0MB/s
+      - 中转节点-153.4KB/s
+      - 英国-567.9KB/s
+      - 捷克-191.6KB/s
+      - 英国-3.32MB/s
+      - 中转节点-7.7MB/s
+      - 中转节点-2.90MB/s
+      - 中转节点-3.05MB/s
+      - 荷兰-6.2MB/s
+      - 英国-271.9KB/s
+      - 中转节点-369.2KB/s
+      - 德国-17.8MB/s
+      - 中转节点-121.3KB/s
+      - 中转节点-26.3MB/s
+      - 德国-19.6MB/s
+      - 瑞士-37.1MB/s
+      - 中转节点-120.1KB/s
+      - 中转节点-5.9MB/s
+      - 法国-3.97MB/s
+      - 英国-985.9KB/s
+      - 中转节点-2.11MB/s
+      - 美国-844.2KB/s_1
+      - 美国-869.0KB/s_1
+      - 瑞士-264.5KB/s_1
+      - 美国-870.1KB/s_1
+      - 美国-842.9KB/s_1
+      - 美国-828.9KB/s_1
+      - 美国-866.2KB/s_1
+      - 美国-871.1KB/s_1
+      - 美国-844.2KB/s_2
+      - 美国-869.0KB/s_2
+      - 瑞士-264.5KB/s_2
+      - 美国-870.1KB/s_2
+      - 美国-842.9KB/s_2
+      - 美国-828.9KB/s_2
+      - 美国-866.2KB/s_2
+      - 美国-871.1KB/s_2
+      - 美国-844.2KB/s_3
+      - 美国-869.0KB/s_3
+      - 瑞士-264.5KB/s_3
+      - 美国-870.1KB/s_3
+      - 美国-842.9KB/s_3
+      - 美国-828.9KB/s_3
+      - 美国-866.2KB/s_3
+      - 美国-871.1KB/s_3
+      - 美国-185.1KB/s
+      - 中转节点-87.5MB/s
+      - 美国-240.1KB/s
+      - 德国-225.3KB/s
+      - 法国-299.3KB/s
+      - 荷兰-45.7MB/s
+      - 捷克-20.5MB/s
+      - 日本-2.00MB/s
+      - 俄罗斯联邦-20.2MB/s
+      - 中转节点-1.9MB/s
+      - 中转节点-34.4MB/s
+      - 日本-145.2KB/s
+      - 英国-20.2MB/s
+      - 美国-601.2KB/s
+      - 瑞士-189.1KB/s
+      - 中转节点-23.9MB/s
+      - 中转节点-9.4MB/s
+      - 中转节点-17.6MB/s
+      - 中转节点-15.0MB/s
+      - 中转节点-18.0MB/s_2
+      - 中转节点-27.5MB/s
+      - 中转节点-17.9MB/s
+      - 中转节点-13.1MB/s
+      - 以色列-552.6KB/s
+      - 法国-3.09MB/s
+      - 立陶宛-55.6MB/s_1
+      - 中转节点-33.9MB/s_1
+      - 中转节点-6.3MB/s_1
+      - 中转节点-26.4MB/s_1
+      - 日本-2.57MB/s_1
+      - 日本-6.68MB/s_1
+      - 美国-276.9KB/s_1
+      - 立陶宛-55.6MB/s_2
+      - 中转节点-33.9MB/s_2
+      - 中转节点-6.3MB/s_2
+      - 中转节点-26.4MB/s_2
+      - 日本-2.57MB/s_2
+      - 日本-6.68MB/s_2
+      - 美国-276.9KB/s_2
+      - 立陶宛-55.6MB/s_3
+      - 中转节点-33.9MB/s_3
+      - 中转节点-6.3MB/s_3
+      - 中转节点-26.4MB/s_3
+      - 日本-2.57MB/s_3
+      - 日本-6.68MB/s_3
+      - 美国-276.9KB/s_3
+      - 立陶宛-55.6MB/s_4
+      - 中转节点-33.9MB/s_4
+      - 中转节点-6.3MB/s_4
+      - 中转节点-26.4MB/s_4
+      - 日本-2.57MB/s_4
+      - 日本-6.68MB/s_4
+      - 美国-276.9KB/s_4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 英国(yudou66.com 玉豆免费节点)
-      - 美国(yudou66.com 玉豆免费节点)
-      - 俄罗斯(yudou66.com 玉豆免费节点)
-      - 美国(yudou66.com 玉豆免费节点) 2
-      - 俄罗斯(yudou66.com 玉豆免费节点) 2
-      - 俄罗斯(yudou66.com 玉豆免费节点) 3
-      - 俄罗斯(yudou66.com 玉豆免费节点) 4
-      - 俄罗斯(yudou66.com 玉豆免费节点) 5
-      - 英国(yudou66.com 玉豆免费节点) 2
-      - 俄罗斯(yudou66.com 玉豆免费节点) 6
-      - 美国(yudou66.com 玉豆免费节点) 3
-      - 英国(yudou66.com 玉豆免费节点) 3
-      - 俄罗斯(yudou66.com 玉豆免费节点) 7
-      - 美国(yudou66.com 玉豆免费节点) 4
-      - 俄罗斯(yudou66.com 玉豆免费节点) 8
-      - 美国(yudou66.com 玉豆免费节点) 5
-      - 俄罗斯(yudou66.com 玉豆免费节点) 9
-      - 俄罗斯(yudou66.com 玉豆免费节点) 10
-      - 俄罗斯(yudou66.com 玉豆免费节点) 11
-      - 俄罗斯(yudou66.com 玉豆免费节点) 12
-      - 美国(yudou66.com 玉豆免费节点) 6
-      - 俄罗斯(yudou66.com 玉豆免费节点) 13
-      - 美国(yudou66.com 玉豆免费节点) 7
-      - 德国(yudou66.com 玉豆免费节点)
-      - 美国(yudou66.com 玉豆免费节点) 8
-      - 俄罗斯(yudou66.com 玉豆免费节点) 14
-      - 新加坡(yudou66.com 玉豆免费节点)
-      - 英国(yudou66.com 玉豆免费节点) 4
-      - 俄罗斯(yudou66.com 玉豆免费节点) 15
-      - 美国(yudou66.com 玉豆免费节点) 9
-      - 美国(yudou66.com 玉豆免费节点) 10
-      - 美国(yudou66.com 玉豆免费节点) 11
-      - 俄罗斯(yudou66.com 玉豆免费节点) 16
-      - 俄罗斯(yudou66.com 玉豆免费节点) 17
-      - 美国(yudou66.com 玉豆免费节点) 12
-      - 俄罗斯(yudou66.com 玉豆免费节点) 18
-      - 美国(yudou66.com 玉豆免费节点) 13
-      - 俄罗斯(yudou66.com 玉豆免费节点) 19
-      - 美国(yudou66.com 玉豆免费节点) 14
-      - 俄罗斯(yudou66.com 玉豆免费节点) 20
-      - 俄罗斯(yudou66.com 玉豆免费节点) 21
-      - 美国(yudou66.com 玉豆免费节点) 15
-      - 美国(yudou66.com 玉豆免费节点) 16
-      - 美国(yudou66.com 玉豆免费节点) 17
-      - 美国(yudou66.com 玉豆免费节点) 18
-      - 日本(yudou66.com 玉豆免费节点)
-      - 美国(yudou66.com 玉豆免费节点) 19
-      - 俄罗斯(yudou66.com 玉豆免费节点) 22
+      - 美国-26.1MB/s
+      - 挪威-23.9MB/s
+      - 荷兰-4.2MB/s
+      - 日本-211.4KB/s
+      - 伊朗-6.1MB/s
+      - 加拿大-352.4KB/s
+      - 巴林-1.26MB/s
+      - 中转节点-1.87MB/s
+      - 荷兰-3.0MB/s
+      - 法国-29.6MB/s
+      - 挪威-13.6MB/s
+      - 挪威-170.9KB/s
+      - 以色列-70.4MB/s
+      - 英国-4.20MB/s
+      - 巴林-2.24MB/s
+      - 中转节点-36.9MB/s
+      - 挪威-176.6KB/s
+      - 美国-562.8KB/s
+      - 中转节点-32.1MB/s
+      - 巴林-1.25MB/s
+      - 中转节点-14.4MB/s
+      - 法国-1.18MB/s
+      - 荷兰-3.6MB/s
+      - 荷兰-3.8MB/s
+      - 中转节点-26.1MB/s
+      - 中转节点-26.6MB/s
+      - 挪威-28.7MB/s
+      - 加拿大-17.0MB/s
+      - 中转节点-21.3MB/s_1
+      - 中转节点-20.1MB/s_1
+      - 荷兰-3.2MB/s
+      - 中转节点-11.8MB/s
+      - 中转节点-12.8MB/s
+      - 中转节点-9.3MB/s
+      - 中转节点-14.5MB/s
+      - 德国-24.1MB/s
+      - 英国-18.7MB/s
+      - 英国-21.5MB/s
+      - 中转节点-15.5MB/s
+      - 中转节点-18.0MB/s_1
+      - 中转节点-14.2MB/s
+      - 中转节点-13.5MB/s
+      - 中转节点-21.1MB/s
+      - 立陶宛-4.59MB/s
+      - 中转节点-40.1MB/s
+      - 荷兰-4.7MB/s
+      - 中转节点-24.7MB/s
+      - 未知国家-18.0MB/s
+      - 加拿大-260.5KB/s
+      - 加拿大-55.7MB/s
+      - 德国-2.86MB/s
+      - 中转节点-3.32MB/s
+      - 挪威-28.1MB/s
+      - 中转节点-15.4MB/s
+      - 以色列-85.7MB/s
+      - 挪威-39.0MB/s
+      - 中转节点-20.8MB/s
+      - 中转节点-27.3MB/s
+      - 中转节点-663.0KB/s
+      - 荷兰-4.8MB/s
+      - 立陶宛-90.1MB/s
+      - 中转节点-10.4MB/s
+      - 以色列-15.4MB/s
+      - 立陶宛-209.6KB/s
+      - 立陶宛-67.0MB/s
+      - 以色列-35.4MB/s
+      - 美国-86.7MB/s
+      - 中转节点-50.7MB/s
+      - 中转节点-10.0MB/s
+      - 挪威-153.5KB/s
+      - 中转节点-21.3MB/s_2
+      - 美国-1.58MB/s
+      - 美国-171.6KB/s
+      - 美国-107.1KB/s
+      - 荷兰-4.6MB/s
+      - 挪威-22.4MB/s
+      - 未知国家-13.7MB/s
+      - 日本-196.7KB/s
+      - 日本-2.91MB/s
+      - 日本-143.0KB/s
+      - 中转节点-11.9MB/s
+      - 日本-207.2KB/s
+      - 日本-1.88MB/s
+      - 中转节点-6.1MB/s
+      - 美国-3.07MB/s
+      - 美国-1.32MB/s
+      - 日本-1.94MB/s
+      - 日本-2.09MB/s
+      - 越南-20.5MB/s
+      - 巴林-167.0KB/s
+      - 中转节点-1.56MB/s
+      - 中转节点-20.1MB/s_2
+      - 拉脱维亚-2.08MB/s
+      - 英国-3.67MB/s
+      - 中转节点-58.5MB/s
+      - 英国-3.90MB/s
+      - 捷克-90.2MB/s
+      - 未知国家-73.3MB/s
+      - 美国-12.0MB/s
+      - 中转节点-153.4KB/s
+      - 英国-567.9KB/s
+      - 捷克-191.6KB/s
+      - 英国-3.32MB/s
+      - 中转节点-7.7MB/s
+      - 中转节点-2.90MB/s
+      - 中转节点-3.05MB/s
+      - 荷兰-6.2MB/s
+      - 英国-271.9KB/s
+      - 中转节点-369.2KB/s
+      - 德国-17.8MB/s
+      - 中转节点-121.3KB/s
+      - 中转节点-26.3MB/s
+      - 德国-19.6MB/s
+      - 瑞士-37.1MB/s
+      - 中转节点-120.1KB/s
+      - 中转节点-5.9MB/s
+      - 法国-3.97MB/s
+      - 英国-985.9KB/s
+      - 中转节点-2.11MB/s
+      - 美国-844.2KB/s_1
+      - 美国-869.0KB/s_1
+      - 瑞士-264.5KB/s_1
+      - 美国-870.1KB/s_1
+      - 美国-842.9KB/s_1
+      - 美国-828.9KB/s_1
+      - 美国-866.2KB/s_1
+      - 美国-871.1KB/s_1
+      - 美国-844.2KB/s_2
+      - 美国-869.0KB/s_2
+      - 瑞士-264.5KB/s_2
+      - 美国-870.1KB/s_2
+      - 美国-842.9KB/s_2
+      - 美国-828.9KB/s_2
+      - 美国-866.2KB/s_2
+      - 美国-871.1KB/s_2
+      - 美国-844.2KB/s_3
+      - 美国-869.0KB/s_3
+      - 瑞士-264.5KB/s_3
+      - 美国-870.1KB/s_3
+      - 美国-842.9KB/s_3
+      - 美国-828.9KB/s_3
+      - 美国-866.2KB/s_3
+      - 美国-871.1KB/s_3
+      - 美国-185.1KB/s
+      - 中转节点-87.5MB/s
+      - 美国-240.1KB/s
+      - 德国-225.3KB/s
+      - 法国-299.3KB/s
+      - 荷兰-45.7MB/s
+      - 捷克-20.5MB/s
+      - 日本-2.00MB/s
+      - 俄罗斯联邦-20.2MB/s
+      - 中转节点-1.9MB/s
+      - 中转节点-34.4MB/s
+      - 日本-145.2KB/s
+      - 英国-20.2MB/s
+      - 美国-601.2KB/s
+      - 瑞士-189.1KB/s
+      - 中转节点-23.9MB/s
+      - 中转节点-9.4MB/s
+      - 中转节点-17.6MB/s
+      - 中转节点-15.0MB/s
+      - 中转节点-18.0MB/s_2
+      - 中转节点-27.5MB/s
+      - 中转节点-17.9MB/s
+      - 中转节点-13.1MB/s
+      - 以色列-552.6KB/s
+      - 法国-3.09MB/s
+      - 立陶宛-55.6MB/s_1
+      - 中转节点-33.9MB/s_1
+      - 中转节点-6.3MB/s_1
+      - 中转节点-26.4MB/s_1
+      - 日本-2.57MB/s_1
+      - 日本-6.68MB/s_1
+      - 美国-276.9KB/s_1
+      - 立陶宛-55.6MB/s_2
+      - 中转节点-33.9MB/s_2
+      - 中转节点-6.3MB/s_2
+      - 中转节点-26.4MB/s_2
+      - 日本-2.57MB/s_2
+      - 日本-6.68MB/s_2
+      - 美国-276.9KB/s_2
+      - 立陶宛-55.6MB/s_3
+      - 中转节点-33.9MB/s_3
+      - 中转节点-6.3MB/s_3
+      - 中转节点-26.4MB/s_3
+      - 日本-2.57MB/s_3
+      - 日本-6.68MB/s_3
+      - 美国-276.9KB/s_3
+      - 立陶宛-55.6MB/s_4
+      - 中转节点-33.9MB/s_4
+      - 中转节点-6.3MB/s_4
+      - 中转节点-26.4MB/s_4
+      - 日本-2.57MB/s_4
+      - 日本-6.68MB/s_4
+      - 美国-276.9KB/s_4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -266,93 +709,269 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 英国(yudou66.com 玉豆免费节点)
-      - 美国(yudou66.com 玉豆免费节点)
-      - 俄罗斯(yudou66.com 玉豆免费节点)
-      - 美国(yudou66.com 玉豆免费节点) 2
-      - 俄罗斯(yudou66.com 玉豆免费节点) 2
-      - 俄罗斯(yudou66.com 玉豆免费节点) 3
-      - 俄罗斯(yudou66.com 玉豆免费节点) 4
-      - 俄罗斯(yudou66.com 玉豆免费节点) 5
-      - 英国(yudou66.com 玉豆免费节点) 2
-      - 俄罗斯(yudou66.com 玉豆免费节点) 6
-      - 美国(yudou66.com 玉豆免费节点) 3
-      - 英国(yudou66.com 玉豆免费节点) 3
-      - 俄罗斯(yudou66.com 玉豆免费节点) 7
-      - 美国(yudou66.com 玉豆免费节点) 4
-      - 俄罗斯(yudou66.com 玉豆免费节点) 8
-      - 美国(yudou66.com 玉豆免费节点) 5
-      - 俄罗斯(yudou66.com 玉豆免费节点) 9
-      - 俄罗斯(yudou66.com 玉豆免费节点) 10
-      - 俄罗斯(yudou66.com 玉豆免费节点) 11
-      - 俄罗斯(yudou66.com 玉豆免费节点) 12
-      - 美国(yudou66.com 玉豆免费节点) 6
-      - 俄罗斯(yudou66.com 玉豆免费节点) 13
-      - 美国(yudou66.com 玉豆免费节点) 7
-      - 德国(yudou66.com 玉豆免费节点)
-      - 美国(yudou66.com 玉豆免费节点) 8
-      - 俄罗斯(yudou66.com 玉豆免费节点) 14
-      - 新加坡(yudou66.com 玉豆免费节点)
-      - 英国(yudou66.com 玉豆免费节点) 4
-      - 俄罗斯(yudou66.com 玉豆免费节点) 15
-      - 美国(yudou66.com 玉豆免费节点) 9
-      - 美国(yudou66.com 玉豆免费节点) 10
-      - 美国(yudou66.com 玉豆免费节点) 11
-      - 俄罗斯(yudou66.com 玉豆免费节点) 16
-      - 俄罗斯(yudou66.com 玉豆免费节点) 17
-      - 美国(yudou66.com 玉豆免费节点) 12
-      - 俄罗斯(yudou66.com 玉豆免费节点) 18
-      - 美国(yudou66.com 玉豆免费节点) 13
-      - 俄罗斯(yudou66.com 玉豆免费节点) 19
-      - 美国(yudou66.com 玉豆免费节点) 14
-      - 俄罗斯(yudou66.com 玉豆免费节点) 20
-      - 俄罗斯(yudou66.com 玉豆免费节点) 21
-      - 美国(yudou66.com 玉豆免费节点) 15
-      - 美国(yudou66.com 玉豆免费节点) 16
-      - 美国(yudou66.com 玉豆免费节点) 17
-      - 美国(yudou66.com 玉豆免费节点) 18
-      - 日本(yudou66.com 玉豆免费节点)
-      - 美国(yudou66.com 玉豆免费节点) 19
-      - 俄罗斯(yudou66.com 玉豆免费节点) 22
+      - 美国-26.1MB/s
+      - 挪威-23.9MB/s
+      - 荷兰-4.2MB/s
+      - 日本-211.4KB/s
+      - 伊朗-6.1MB/s
+      - 加拿大-352.4KB/s
+      - 巴林-1.26MB/s
+      - 中转节点-1.87MB/s
+      - 荷兰-3.0MB/s
+      - 法国-29.6MB/s
+      - 挪威-13.6MB/s
+      - 挪威-170.9KB/s
+      - 以色列-70.4MB/s
+      - 英国-4.20MB/s
+      - 巴林-2.24MB/s
+      - 中转节点-36.9MB/s
+      - 挪威-176.6KB/s
+      - 美国-562.8KB/s
+      - 中转节点-32.1MB/s
+      - 巴林-1.25MB/s
+      - 中转节点-14.4MB/s
+      - 法国-1.18MB/s
+      - 荷兰-3.6MB/s
+      - 荷兰-3.8MB/s
+      - 中转节点-26.1MB/s
+      - 中转节点-26.6MB/s
+      - 挪威-28.7MB/s
+      - 加拿大-17.0MB/s
+      - 中转节点-21.3MB/s_1
+      - 中转节点-20.1MB/s_1
+      - 荷兰-3.2MB/s
+      - 中转节点-11.8MB/s
+      - 中转节点-12.8MB/s
+      - 中转节点-9.3MB/s
+      - 中转节点-14.5MB/s
+      - 德国-24.1MB/s
+      - 英国-18.7MB/s
+      - 英国-21.5MB/s
+      - 中转节点-15.5MB/s
+      - 中转节点-18.0MB/s_1
+      - 中转节点-14.2MB/s
+      - 中转节点-13.5MB/s
+      - 中转节点-21.1MB/s
+      - 立陶宛-4.59MB/s
+      - 中转节点-40.1MB/s
+      - 荷兰-4.7MB/s
+      - 中转节点-24.7MB/s
+      - 未知国家-18.0MB/s
+      - 加拿大-260.5KB/s
+      - 加拿大-55.7MB/s
+      - 德国-2.86MB/s
+      - 中转节点-3.32MB/s
+      - 挪威-28.1MB/s
+      - 中转节点-15.4MB/s
+      - 以色列-85.7MB/s
+      - 挪威-39.0MB/s
+      - 中转节点-20.8MB/s
+      - 中转节点-27.3MB/s
+      - 中转节点-663.0KB/s
+      - 荷兰-4.8MB/s
+      - 立陶宛-90.1MB/s
+      - 中转节点-10.4MB/s
+      - 以色列-15.4MB/s
+      - 立陶宛-209.6KB/s
+      - 立陶宛-67.0MB/s
+      - 以色列-35.4MB/s
+      - 美国-86.7MB/s
+      - 中转节点-50.7MB/s
+      - 中转节点-10.0MB/s
+      - 挪威-153.5KB/s
+      - 中转节点-21.3MB/s_2
+      - 美国-1.58MB/s
+      - 美国-171.6KB/s
+      - 美国-107.1KB/s
+      - 荷兰-4.6MB/s
+      - 挪威-22.4MB/s
+      - 未知国家-13.7MB/s
+      - 日本-196.7KB/s
+      - 日本-2.91MB/s
+      - 日本-143.0KB/s
+      - 中转节点-11.9MB/s
+      - 日本-207.2KB/s
+      - 日本-1.88MB/s
+      - 中转节点-6.1MB/s
+      - 美国-3.07MB/s
+      - 美国-1.32MB/s
+      - 日本-1.94MB/s
+      - 日本-2.09MB/s
+      - 越南-20.5MB/s
+      - 巴林-167.0KB/s
+      - 中转节点-1.56MB/s
+      - 中转节点-20.1MB/s_2
+      - 拉脱维亚-2.08MB/s
+      - 英国-3.67MB/s
+      - 中转节点-58.5MB/s
+      - 英国-3.90MB/s
+      - 捷克-90.2MB/s
+      - 未知国家-73.3MB/s
+      - 美国-12.0MB/s
+      - 中转节点-153.4KB/s
+      - 英国-567.9KB/s
+      - 捷克-191.6KB/s
+      - 英国-3.32MB/s
+      - 中转节点-7.7MB/s
+      - 中转节点-2.90MB/s
+      - 中转节点-3.05MB/s
+      - 荷兰-6.2MB/s
+      - 英国-271.9KB/s
+      - 中转节点-369.2KB/s
+      - 德国-17.8MB/s
+      - 中转节点-121.3KB/s
+      - 中转节点-26.3MB/s
+      - 德国-19.6MB/s
+      - 瑞士-37.1MB/s
+      - 中转节点-120.1KB/s
+      - 中转节点-5.9MB/s
+      - 法国-3.97MB/s
+      - 英国-985.9KB/s
+      - 中转节点-2.11MB/s
+      - 美国-844.2KB/s_1
+      - 美国-869.0KB/s_1
+      - 瑞士-264.5KB/s_1
+      - 美国-870.1KB/s_1
+      - 美国-842.9KB/s_1
+      - 美国-828.9KB/s_1
+      - 美国-866.2KB/s_1
+      - 美国-871.1KB/s_1
+      - 美国-844.2KB/s_2
+      - 美国-869.0KB/s_2
+      - 瑞士-264.5KB/s_2
+      - 美国-870.1KB/s_2
+      - 美国-842.9KB/s_2
+      - 美国-828.9KB/s_2
+      - 美国-866.2KB/s_2
+      - 美国-871.1KB/s_2
+      - 美国-844.2KB/s_3
+      - 美国-869.0KB/s_3
+      - 瑞士-264.5KB/s_3
+      - 美国-870.1KB/s_3
+      - 美国-842.9KB/s_3
+      - 美国-828.9KB/s_3
+      - 美国-866.2KB/s_3
+      - 美国-871.1KB/s_3
+      - 美国-185.1KB/s
+      - 中转节点-87.5MB/s
+      - 美国-240.1KB/s
+      - 德国-225.3KB/s
+      - 法国-299.3KB/s
+      - 荷兰-45.7MB/s
+      - 捷克-20.5MB/s
+      - 日本-2.00MB/s
+      - 俄罗斯联邦-20.2MB/s
+      - 中转节点-1.9MB/s
+      - 中转节点-34.4MB/s
+      - 日本-145.2KB/s
+      - 英国-20.2MB/s
+      - 美国-601.2KB/s
+      - 瑞士-189.1KB/s
+      - 中转节点-23.9MB/s
+      - 中转节点-9.4MB/s
+      - 中转节点-17.6MB/s
+      - 中转节点-15.0MB/s
+      - 中转节点-18.0MB/s_2
+      - 中转节点-27.5MB/s
+      - 中转节点-17.9MB/s
+      - 中转节点-13.1MB/s
+      - 以色列-552.6KB/s
+      - 法国-3.09MB/s
+      - 立陶宛-55.6MB/s_1
+      - 中转节点-33.9MB/s_1
+      - 中转节点-6.3MB/s_1
+      - 中转节点-26.4MB/s_1
+      - 日本-2.57MB/s_1
+      - 日本-6.68MB/s_1
+      - 美国-276.9KB/s_1
+      - 立陶宛-55.6MB/s_2
+      - 中转节点-33.9MB/s_2
+      - 中转节点-6.3MB/s_2
+      - 中转节点-26.4MB/s_2
+      - 日本-2.57MB/s_2
+      - 日本-6.68MB/s_2
+      - 美国-276.9KB/s_2
+      - 立陶宛-55.6MB/s_3
+      - 中转节点-33.9MB/s_3
+      - 中转节点-6.3MB/s_3
+      - 中转节点-26.4MB/s_3
+      - 日本-2.57MB/s_3
+      - 日本-6.68MB/s_3
+      - 美国-276.9KB/s_3
+      - 立陶宛-55.6MB/s_4
+      - 中转节点-33.9MB/s_4
+      - 中转节点-6.3MB/s_4
+      - 中转节点-26.4MB/s_4
+      - 日本-2.57MB/s_4
+      - 日本-6.68MB/s_4
+      - 美国-276.9KB/s_4
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 日本(yudou66.com 玉豆免费节点)
-  - name: 🇸🇬 狮城节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    proxies:
-      - 新加坡(yudou66.com 玉豆免费节点)
+      - 日本-211.4KB/s
+      - 日本-196.7KB/s
+      - 日本-2.91MB/s
+      - 日本-143.0KB/s
+      - 日本-207.2KB/s
+      - 日本-1.88MB/s
+      - 日本-1.94MB/s
+      - 日本-2.09MB/s
+      - 日本-2.00MB/s
+      - 日本-145.2KB/s
+      - 日本-2.57MB/s_1
+      - 日本-6.68MB/s_1
+      - 日本-2.57MB/s_2
+      - 日本-6.68MB/s_2
+      - 日本-2.57MB/s_3
+      - 日本-6.68MB/s_3
+      - 日本-2.57MB/s_4
+      - 日本-6.68MB/s_4
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 美国(yudou66.com 玉豆免费节点)
-      - 美国(yudou66.com 玉豆免费节点) 2
-      - 美国(yudou66.com 玉豆免费节点) 3
-      - 美国(yudou66.com 玉豆免费节点) 4
-      - 美国(yudou66.com 玉豆免费节点) 5
-      - 美国(yudou66.com 玉豆免费节点) 6
-      - 美国(yudou66.com 玉豆免费节点) 7
-      - 美国(yudou66.com 玉豆免费节点) 8
-      - 美国(yudou66.com 玉豆免费节点) 9
-      - 美国(yudou66.com 玉豆免费节点) 10
-      - 美国(yudou66.com 玉豆免费节点) 11
-      - 美国(yudou66.com 玉豆免费节点) 12
-      - 美国(yudou66.com 玉豆免费节点) 13
-      - 美国(yudou66.com 玉豆免费节点) 14
-      - 美国(yudou66.com 玉豆免费节点) 15
-      - 美国(yudou66.com 玉豆免费节点) 16
-      - 美国(yudou66.com 玉豆免费节点) 17
-      - 美国(yudou66.com 玉豆免费节点) 18
-      - 美国(yudou66.com 玉豆免费节点) 19
+      - 美国-26.1MB/s
+      - 美国-562.8KB/s
+      - 美国-86.7MB/s
+      - 美国-1.58MB/s
+      - 美国-171.6KB/s
+      - 美国-107.1KB/s
+      - 美国-3.07MB/s
+      - 美国-1.32MB/s
+      - 美国-12.0MB/s
+      - 美国-844.2KB/s_1
+      - 美国-869.0KB/s_1
+      - 美国-870.1KB/s_1
+      - 美国-842.9KB/s_1
+      - 美国-828.9KB/s_1
+      - 美国-866.2KB/s_1
+      - 美国-871.1KB/s_1
+      - 美国-844.2KB/s_2
+      - 美国-869.0KB/s_2
+      - 美国-870.1KB/s_2
+      - 美国-842.9KB/s_2
+      - 美国-828.9KB/s_2
+      - 美国-866.2KB/s_2
+      - 美国-871.1KB/s_2
+      - 美国-844.2KB/s_3
+      - 美国-869.0KB/s_3
+      - 美国-870.1KB/s_3
+      - 美国-842.9KB/s_3
+      - 美国-828.9KB/s_3
+      - 美国-866.2KB/s_3
+      - 美国-871.1KB/s_3
+      - 美国-185.1KB/s
+      - 美国-240.1KB/s
+      - 美国-601.2KB/s
+      - 美国-276.9KB/s_1
+      - 美国-276.9KB/s_2
+      - 美国-276.9KB/s_3
+      - 美国-276.9KB/s_4
 
 rules:
 # 本地/局域网地址
