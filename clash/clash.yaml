@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-01-27 15:10:27
+# 创建时间：2025-01-27 16:58:48
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
-# 节点数量：23
-# 节点类型：trojan, ss, vmess
+# 节点数量：30
+# 节点类型：trojan, vmess, ss
 ####################################
 mixed-port: 7890
 allow-lan: false
@@ -47,6 +47,13 @@ dns:
       - https://8.8.8.8/dns-query
 
 proxies:
+  - {"name":"爱尔兰-3.80MB/s","type":"trojan","server":"3.250.247.186","port":443,"udp":true,"password":"3763495894587285504","sni":"daring-puma.goat627.mom","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"俄罗斯联邦-861.2KB/s","type":"vmess","server":"185.22.153.73","port":49663,"cipher":"auto","uuid":"185.22.153.73:49663?type=ws&encryption=auto&host=185.22.153.73&path=github.com%2FAlvin9999#%E4%BF%84%E7%BD%97%E6%96%AF%E8%81%94%E9%82%A6-861.2KB%2Fs","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"185.22.153.73"}}}
+  - {"name":"爱尔兰-3.87MB/s","type":"trojan","server":"daring-puma.goat627.mom","port":443,"udp":true,"password":"3763495894587285504","sni":"daring-puma.goat627.mom","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"比利时-147.5KB/s","type":"ss","server":"a-config.96hezar.ir","port":4017,"password":"o9v9NS2O0sxebNmxvZ06sg","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"法国-3.98MB/s","type":"trojan","server":"grown-urchin.treefrog761.one","port":443,"udp":true,"password":"3763495894587285504","sni":"grown-urchin.treefrog761.one","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国-218.9KB/s","type":"ss","server":"45.158.171.66","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"塞舌尔-44.2MB/s","type":"ss","server":"156.244.9.92","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
   - {"name":"日本-273.8KB/s","type":"trojan","server":"74.226.136.204","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"tw01.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
   - {"name":"日本-5.01MB/s","type":"trojan","server":"74.226.136.204","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"sg02.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
   - {"name":"中转节点-99.7MB/s","type":"trojan","server":"naiu-jp.05vr9nyqg5.download","port":13012,"udp":true,"password":"e279c494-c426-443a-a034-a04516409242","sni":"cloudflare.node-ssl.cdn-alibaba.com","skip-cert-verify":true,"network":"tcp"}
@@ -83,6 +90,13 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
+      - 爱尔兰-3.80MB/s
+      - 俄罗斯联邦-861.2KB/s
+      - 爱尔兰-3.87MB/s
+      - 比利时-147.5KB/s
+      - 法国-3.98MB/s
+      - 美国-218.9KB/s
+      - 塞舌尔-44.2MB/s
       - 日本-273.8KB/s
       - 日本-5.01MB/s
       - 中转节点-99.7MB/s
@@ -112,6 +126,13 @@ proxy-groups:
     interval: 300
     timeout: 5
     proxies:
+      - 爱尔兰-3.80MB/s
+      - 俄罗斯联邦-861.2KB/s
+      - 爱尔兰-3.87MB/s
+      - 比利时-147.5KB/s
+      - 法国-3.98MB/s
+      - 美国-218.9KB/s
+      - 塞舌尔-44.2MB/s
       - 日本-273.8KB/s
       - 日本-5.01MB/s
       - 中转节点-99.7MB/s
@@ -152,6 +173,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 爱尔兰-3.80MB/s
+      - 俄罗斯联邦-861.2KB/s
+      - 爱尔兰-3.87MB/s
+      - 比利时-147.5KB/s
+      - 法国-3.98MB/s
+      - 美国-218.9KB/s
+      - 塞舌尔-44.2MB/s
       - 日本-273.8KB/s
       - 日本-5.01MB/s
       - 中转节点-99.7MB/s
@@ -203,6 +231,7 @@ proxy-groups:
     interval: 300
     timeout: 5
     proxies:
+      - 美国-218.9KB/s
       - 美国-255.8KB/s
       - 美国-2.54MB/s
       - 美国-2.56MB/s
