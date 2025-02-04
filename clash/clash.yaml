@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-02-04 15:25:14
+# 创建时间：2025-02-04 16:44:56
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：326
 # 节点类型：ss, trojan, vmess
@@ -1400,11 +1400,10 @@ proxy-groups:
       - 美国_由快嘴科技提供：kkzui.com91_2
       - 美国_由快嘴科技提供：kkzui.com93_2
   - name: 🇯🇵 日本节点
-    type: load-balance
+    type: fallback
     url: https://www.gstatic.com/generate_204
-    interval: 300
+    interval: 180
     timeout: 1500
-    strategy: round-robin
     proxies:
       - 日本_由快嘴科技提供：kkzui.com2_1
       - 日本_由快嘴科技提供：kkzui.com3_1
@@ -1416,11 +1415,10 @@ proxy-groups:
       - 日本_由快嘴科技提供：kkzui.com101
       - 日本_由快嘴科技提供：kkzui.com121
   - name: 🇸🇬 狮城节点
-    type: load-balance
+    type: fallback
     url: https://www.gstatic.com/generate_204
-    interval: 300
+    interval: 180
     timeout: 1500
-    strategy: round-robin
     proxies:
       - 新加坡
       - 新加坡_由快嘴科技提供：kkzui.com1_1
@@ -1433,11 +1431,10 @@ proxy-groups:
       - 新加坡_由快嘴科技提供：kkzui.com7
       - 新加坡_由快嘴科技提供：kkzui.com9_2
   - name: 🇺🇲 美国节点
-    type: load-balance
+    type: fallback
     url: https://www.gstatic.com/generate_204
-    interval: 300
+    interval: 180
     timeout: 1500
-    strategy: round-robin
     proxies:
       - 美国_由快嘴科技提供：kkzui.com2
       - 美国_由快嘴科技提供：kkzui.com4
