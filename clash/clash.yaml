@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-02-07 14:31:25
+# 创建时间：2025-02-07 19:09:54
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：233
 # 节点类型：ss, trojan
@@ -307,7 +307,8 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - ♻️ 自动选择
+      - ♻ 自动选择
+      - 🔰 延迟最低
       - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
       - 🇺🇲 美国节点
@@ -550,14 +551,9 @@ proxy-groups:
       - 中转节点-74.5MB/s
       - 中转节点-92.7MB/s
       - 中转节点-202.2KB/s
-  - name: ♻️ 自动选择
-    type: url-test
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: true
-    timeout: 1500
-    max-failed-times: 2
-    proxies:
+  - interval: 300
+    name: ♻ 自动选择
+    proxies: &id001
       - 以色列-87.4MB/s
       - 中转节点-14.6MB/s
       - 中转节点-15.5MB/s
@@ -791,6 +787,14 @@ proxy-groups:
       - 中转节点-74.5MB/s
       - 中转节点-92.7MB/s
       - 中转节点-202.2KB/s
+    type: fallback
+    url: https://www.gstatic.com/generate_204
+  - interval: 300
+    name: 🔰 延迟最低
+    proxies: *id001
+    tolerance: 20
+    type: url-test
+    url: https://www.gstatic.com/generate_204
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1045,9 +1049,7 @@ proxy-groups:
     type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 300
-    lazy: true
-    timeout: 1500
-    max-failed-times: 2
+    tolerance: 20
     proxies:
       - 香港-2.94MB/s
       - 香港-2.07MB/s
@@ -1060,9 +1062,7 @@ proxy-groups:
     type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 300
-    lazy: true
-    timeout: 1500
-    max-failed-times: 2
+    tolerance: 20
     proxies:
       - 日本-83.0MB/s
       - 日本-13.6MB/s
@@ -1078,9 +1078,7 @@ proxy-groups:
     type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 300
-    lazy: true
-    timeout: 1500
-    max-failed-times: 2
+    tolerance: 20
     proxies:
       - 新加坡-165.7KB/s
       - 新加坡-337.4KB/s
@@ -1104,9 +1102,7 @@ proxy-groups:
     type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 300
-    lazy: true
-    timeout: 1500
-    max-failed-times: 2
+    tolerance: 20
     proxies:
       - 美国-3.41MB/s
       - 美国-1.14MB/s
