@@ -1,89 +1,73 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-02-17 10:44:24
+# 创建时间：2025-02-17 11:03:13
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：222
 # 节点类型：ss, trojan
 ####################################
 mixed-port: 7890
-allow-lan: true
-log-level: info
-external-controller: 0.0.0.0:9090
+allow-lan: false
+log-level: silent
+external-controller: 127.0.0.1:9090
+tun:
+  enable: true
+  stack: system
+  dns-hijack:
+    - 198.18.0.2:53
+    - 8.8.8.8:53
+    - 8.8.4.4:53
+    - 1.1.1.1:53
+    - 1.0.0.1:53
 dns:
-  enabled: true
-  listen: 0.0.0.0:1053
-  ipv6: true
-  default-nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
+  enable: true
+  ipv6: false
+  listen: 127.0.0.1:1053
+  use-hosts: true
   enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
+  cache-size: 4096
+  fake-ip-range: '198.19.0.1/24'
   fake-ip-filter:
     - '*.lan'
-    - '*.linksys.com'
-    - '*.linksyssmartwifi.com'
-    - swscan.apple.com
-    - mesu.apple.com
-    - '*.msftconnecttest.com'
-    - '*.msftncsi.com'
-    - time.*.com
-    - time.*.gov
-    - time.*.edu.cn
-    - time.*.apple.com
-    - time1.*.com
-    - time2.*.com
-    - time3.*.com
-    - time4.*.com
-    - time5.*.com
-    - time6.*.com
-    - time7.*.com
-    - ntp.*.com
-    - ntp.*.com
-    - ntp1.*.com
-    - ntp2.*.com
-    - ntp3.*.com
-    - ntp4.*.com
-    - ntp5.*.com
-    - ntp6.*.com
-    - ntp7.*.com
-    - '*.time.edu.cn'
-    - '*.ntp.org.cn'
-    - +.pool.ntp.org
-    - time1.cloud.tencent.com
-    - +.music.163.com
-    - '*.126.net'
-    - musicapi.taihe.com
-    - music.taihe.com
-    - songsearch.kugou.com
-    - trackercdn.kugou.com
-    - '*.kuwo.cn'
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com
-    - +.y.qq.com
-    - +.music.tc.qq.com
-    - aqqmusic.tc.qq.com
-    - +.stream.qqmusic.qq.com
-    - '*.xiami.com'
-    - +.music.migu.cn
-    - +.srv.nintendo.net
-    - +.stun.playstation.net
-    - xbox.*.microsoft.com
-    - +.xboxlive.com
-    - localhost.ptlogin2.qq.com
-    - proxy.golang.org
-    - stun.*.*
-    - stun.*.*.*
-    - '*.mcdn.bilivideo.cn'
+    - '*.local'
+    - '*.example.com'
+    - 'localhost'
+    - '127.0.0.1'
+    - 'stun.*'
+    - '*.stun.*'
+    - 'stun.l.google.com'
+    - 'stun1.l.google.com'
+    - 'stun2.l.google.com'
+    - 'stun3.l.google.com'
+    - 'stun4.l.google.com'
+    - '*.webrtc.org'
+    - 'webrtc.org'
+    - 'turn.*'
+    - '*.turn.*'
+    - 'turn.anyfirewall.com'
+    - 'turn.bistri.com'
+    - 'turn.openh264.org'
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+  proxy-server-nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+  fallback:
+    - https://8.8.4.4/dns-query
+    - https://1.0.0.1/dns-query
   fallback-filter:
-    geoip: false
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
+    geoip: true
+    geoip-code: CN
+    geosite:
+      - gfw
+  nameserver-policy:
+    'rule-set:cn_domain':
+      - https://119.29.29.29/dns-query
+      - https://223.5.5.5/dns-query
+    'rule-set:geolocation-!cn':
+      - https://1.1.1.1/dns-query
+      - https://8.8.8.8/dns-query
 
 proxies:
   - {"name":"英国-307.6KB/s","type":"ss","server":"77.239.100.183","port":65078,"password":"bKb325QJ4fX3d3O9Wk9d7B","cipher":"chacha20-ietf-poly1305"}
@@ -313,6 +297,7 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
+      - 🔰 延迟最低
       - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
       - 🇺🇲 美国节点
@@ -544,12 +529,9 @@ proxy-groups:
       - 立陶宛-76.8MB/s_1
       - 中转节点-40.70MB/s_1
       - 香港-16.1MB/s_1
-  - name: ♻️ 自动选择
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    proxies:
+  - interval: 300
+    name: ♻️ 自动选择
+    proxies: &id001
       - 英国-307.6KB/s
       - 英国-2.91MB/s
       - 新加坡-5.9MB/s_1
@@ -772,6 +754,16 @@ proxy-groups:
       - 立陶宛-76.8MB/s_1
       - 中转节点-40.70MB/s_1
       - 香港-16.1MB/s_1
+    type: fallback
+    url: https://www.gstatic.com/generate_204
+    timeout: 5000
+  - interval: 300
+    name: 🔰 延迟最低
+    proxies: *id001
+    tolerance: 50
+    timeout: 4000
+    type: url-test
+    url: https://www.gstatic.com/generate_204
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -789,6 +781,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🔰 延迟最低
       - 英国-307.6KB/s
       - 英国-2.91MB/s
       - 新加坡-5.9MB/s_1
@@ -1013,9 +1006,10 @@ proxy-groups:
       - 香港-16.1MB/s_1
   - name: 🇭🇰 香港节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    timeout: 4000
     proxies:
       - 香港-2.07MB/s
       - 香港-3.61MB/s
@@ -1034,16 +1028,18 @@ proxy-groups:
       - 香港-16.1MB/s_1
   - name: 🇯🇵 日本节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    timeout: 4000
     proxies:
       - 日本-2.13MB/s
   - name: 🇸🇬 狮城节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    timeout: 4000
     proxies:
       - 新加坡-5.9MB/s_1
       - 新加坡-25.1MB/s
@@ -1062,9 +1058,10 @@ proxy-groups:
       - 新加坡-14.6MB/s
   - name: 🇺🇲 美国节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    timeout: 4000
     proxies:
       - 美国-22.5MB/s
       - 美国-13.8MB/s
