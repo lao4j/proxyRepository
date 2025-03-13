@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-03-13 11:37:39
+# 创建时间：2025-03-13 12:28:04
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：274
 # 节点类型：ss, vmess, trojan
@@ -365,8 +365,8 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
-      ~ 🔰 延迟最低
-      - 🇭🇰 香港节点
+      - 🔰 延迟最低
+      - 🇺🇸 美国节点
       - DIRECT
       - 浙江省台州市+台州世通网络_1
       - 广东省东莞市+电信IDC业务段_1
@@ -920,14 +920,6 @@ proxy-groups:
       - 法国-15.0MB/s
       - 美国-2.65MB/s
     timeout: 1000
-    type: fallback
-    url: https://www.gstatic.com/generate_204
-  - interval: 300
-    name: 🔰 延迟最低
-    proxies: *id001
-    tolerance: 50
-    timeout: 1000
-    max-failed-times: 1
     type: url-test
     url: https://www.gstatic.com/generate_204
   - name: 🎯 全球直连
@@ -1223,12 +1215,11 @@ proxy-groups:
       - 法国-15.0MB/s
       - 美国-2.65MB/s
   - interval: 300
-    name: 🇭🇰 香港节点
-    proxies: &hk_nodes
+    name: 🇺🇸 美国节点
+    proxies: *id001美国
     tolerance: 50
     timeout: 1000
-    max-failed-times: 1
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
 
 rules:
