@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-03-13 15:29:05
+# 创建时间：2025-03-13 15:58:48
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：274
 # 节点类型：ss, vmess, trojan
@@ -366,10 +366,7 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🔰 延迟最低
-      - 🇭🇰 香港节点
-      - 🇸🇬 狮城节点
-      - 🇺🇲 美国节点
-      - 🇯🇵 日本节点
+      - 🗺️ 选择地区
       - 🚀 手动切换
       - DIRECT
   - name: 🚀 手动切换
@@ -926,6 +923,15 @@ proxy-groups:
       - 美国-5.79MB/s
       - 法国-15.0MB/s
       - 美国-2.65MB/s
+    timeout: 1000
+    type: fallback
+    url: https://www.gstatic.com/generate_204
+  - interval: 300
+    name: 🔰 延迟最低
+    proxies: *id001
+    tolerance: 50
+    timeout: 1000
+    max-failed-times: 1
     type: url-test
     url: https://www.gstatic.com/generate_204
   - name: 🎯 全球直连
@@ -1220,25 +1226,53 @@ proxy-groups:
       - 美国-5.79MB/s
       - 法国-15.0MB/s
       - 美国-2.65MB/s
-  - interval: 300
-    name: 🇭🇰 香港节点
-    roxies: *id001[香港]
-    timeout: 1000
-    type: fallback
-    url: https://www.gstatic.com/generate_204
-  - name: 🇯🇵 日本节点
+proxy-groups:
+  - name: 🗺️ 选择地区
+    type: select
+    proxies:
+      - 🇭🇰 香港节点
+      - 🇸🇬 狮城节点
+      - 🇺🇲 美国节点
+      - 🇯🇵 日本节点
+  - name: 🇭🇰 香港节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    timeout: 1000
+    max-failed-times: 1
+    proxies:
+      - 香港 阿里云
+      - 香港-6.86MB/s
+      - 香港-4.09MB/s
+      - 香港-9.82MB/s
+      - 香港-26.0MB/s
+      - 香港-2.19MB/s
+      - 香港-16.9MB/s
+      - 香港-1.41MB/s
+      - 香港-49.35MB/s
+      - 香港-16.3MB/s
+      - 香港-16.1MB/s
+      - 香港-266.9KB/s
+      - 香港-55.8MB/s
+      - 香港-18.8MB/s
+  - name: 🇯🇵 日本节点
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    timeout: 1000
+    max-failed-times: 1
     proxies:
       - 日本-8.43MB/s
       - 日本-3.47MB/s
   - name: 🇸🇬 狮城节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    timeout: 1000
+    max-failed-times: 1
     proxies:
       - 新加坡-1.30MB/s
       - 新加坡-128.6KB/s
@@ -1249,9 +1283,11 @@ proxy-groups:
       - 新加坡-5.5MB/s
   - name: 🇺🇲 美国节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    timeout: 1000
+    max-failed-times: 1
     proxies:
       - 美国 CloudFlare节点_1
       - 美国 CloudFlare节点_2
