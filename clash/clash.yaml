@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-03-17 20:20:58
+# 创建时间：2025-03-18 01:28:05
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：156
 # 节点类型：trojan, ss, vmess
@@ -531,12 +531,7 @@ proxy-groups:
       - 中转节点-1.17MB/s
       - 美国-2.77MB/s
     type: fallback
-    url: https://www.gstatic.com/generate_204
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 60
-      timeout: 5000
+    url: tcp://www.google.com:443
   - interval: 300
     name: 🔰 延迟最低
     proxies: *id001
@@ -545,8 +540,8 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     health-check:
       enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 60
+      url: tcp://www.google.com:443
+      interval: 120
       timeout: 5000
   - name: 🎯 全球直连
     type: select
@@ -736,8 +731,8 @@ proxy-groups:
     tolerance: 50
     health-check:
       enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 60
+      url: tcp://www.google.com:443
+      interval: 120
       timeout: 5000
     proxies:
       - 香港-6.80MB/s
@@ -750,8 +745,8 @@ proxy-groups:
     tolerance: 50
     health-check:
       enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 60
+      url: tcp://www.google.com:443
+      interval: 120
       timeout: 5000
     proxies:
       - 日本-16.5MB/s
@@ -764,8 +759,8 @@ proxy-groups:
     tolerance: 50
     health-check:
       enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 60
+      url: tcp://www.google.com:443
+      interval: 120
       timeout: 5000
     proxies:
       - 新加坡-10.9MB/s
@@ -778,8 +773,8 @@ proxy-groups:
     tolerance: 50
     health-check:
       enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 60
+      url: tcp://www.google.com:443
+      interval: 120
       timeout: 5000
     proxies:
       - 美国-13.6MB/s
