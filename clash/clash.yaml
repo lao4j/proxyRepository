@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-03-18 01:59:58
+# 创建时间：2025-03-18 04:29:44
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：1109
 # 节点类型：ss, vmess, trojan
@@ -3389,19 +3389,16 @@ proxy-groups:
       - 美国+惠普HP_7_2
       - 美国+Xerox_10
       - 英国+伦敦Amazon数据中心_6
+    timeout: 3000
     type: fallback
-    url: tcp://www.google.com:443
+    url: tcp://1.1.1.1:443
   - interval: 420
     name: 🔰 延迟最低
     proxies: *id001
     tolerance: 50
+    timeout: 3000
     type: url-test
-    url: https://www.gstatic.com/generate_204
-    health-check:
-      enable: true
-      url: tcp://www.google.com:443
-      interval: 120
-      timeout: 5000
+    url: tcp://1.1.1.1:443
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -4538,14 +4535,10 @@ proxy-groups:
       - 🇯🇵 日本节点
   - name: 🇭🇰 香港节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: tcp://1.1.1.1:443
     interval: 420
     tolerance: 50
-    health-check:
-      enable: true
-      url: tcp://www.google.com:443
-      interval: 120
-      timeout: 5000
+    timeout: 3000
     proxies:
       - 香港+LeaseWeb+HKG10数据中心_2
       - 香港+特别行政区+(2)
@@ -4562,14 +4555,10 @@ proxy-groups:
       - 香港 Amazon数据中心_2
   - name: 🇯🇵 日本节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: tcp://1.1.1.1:443
     interval: 420
     tolerance: 50
-    health-check:
-      enable: true
-      url: tcp://www.google.com:443
-      interval: 120
-      timeout: 5000
+    timeout: 3000
     proxies:
       - 日本+东京Amazon数据中心_4_1
       - 日本+V2CROSS.COM_2_1
@@ -4594,14 +4583,10 @@ proxy-groups:
       - 日本 东京Amazon数据中心_3
   - name: 🇸🇬 狮城节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: tcp://1.1.1.1:443
     interval: 420
     tolerance: 50
-    health-check:
-      enable: true
-      url: tcp://www.google.com:443
-      interval: 120
-      timeout: 5000
+    timeout: 3000
     proxies:
       - 新加坡+Amazon数据中心_1
       - 新加坡+DigitalOcean数据中心_2_1
@@ -4617,14 +4602,10 @@ proxy-groups:
       - 新加坡+DigitalOcean数据中心+(1)
   - name: 🇺🇲 美国节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: tcp://1.1.1.1:443
     interval: 420
     tolerance: 50
-    health-check:
-      enable: true
-      url: tcp://www.google.com:443
-      interval: 120
-      timeout: 5000
+    timeout: 3000
     proxies:
       - 美国+V2CROSS.COM_1_2
       - 美国+CDNetworks_4
