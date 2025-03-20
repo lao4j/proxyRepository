@@ -1,59 +1,89 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-03-20 12:54:49
+# 创建时间：2025-03-20 14:36:41
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
-# 节点数量：187
+# 节点数量：381
 # 节点类型：ss, vmess, trojan
 ####################################
 mixed-port: 7890
-allow-lan: false
-log-level: silent
-external-controller: 127.0.0.1:9090
+allow-lan: true
+log-level: info
+external-controller: 0.0.0.0:9090
 dns:
-  enable: true
-  ipv6: false
-  listen: 127.0.0.1:1053
-  use-hosts: true
-  use-system-hosts: false
-  respect-rules: true
+  enabled: true
+  listen: 0.0.0.0:1053
+  ipv6: true
+  default-nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
   enhanced-mode: fake-ip
-  fake-ip-range: '198.19.0.1/24'
+  fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - '*.lan'
-    - '*.local'
-    - '*.home.arpa'
-    - '*.market.xiaomi.com'
-    - '*.icloud.com'
-    - '*.apple.com'
-    - '*.windowsupdate.com'
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - swscan.apple.com
+    - mesu.apple.com
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - +.music.163.com
+    - '*.126.net'
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - '*.kuwo.cn'
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - +.y.qq.com
+    - +.music.tc.qq.com
+    - aqqmusic.tc.qq.com
+    - +.stream.qqmusic.qq.com
+    - '*.xiami.com'
+    - +.music.migu.cn
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - +.xboxlive.com
+    - localhost.ptlogin2.qq.com
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - '*.mcdn.bilivideo.cn'
   nameserver:
-    - tls://8.8.8.8
-    - tls://1.1.1.1
-    - https://8.8.8.8/dns-query
-    - https://1.1.1.1/dns-query
-  proxy-server-nameserver:
-    - https://8.8.8.8/dns-query
-    - https://1.1.1.1/dns-query
-  cache-size: 8192
-  dns-timeout: 3s
-  fallback:
-    - tls://8.8.4.4
-    - tls://1.0.0.1
-    - https://8.8.4.4/dns-query
-    - https://1.0.0.1/dns-query
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
   fallback-filter:
     geoip: false
-    geoip-code: CN
-    geosite:
-      - gfw
-  nameserver-policy:
-    "*.cn":
-      - tls://119.29.29.29
-      - tls://223.5.5.5
-    "geoip-cn":
-      - tls://119.29.29.29
-      - tls://223.5.5.5
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 
 proxies:
   - {"name":"中转节点-24.6MB/s","type":"ss","server":"qh62onjn.slashdevslashnetslashtun.net","port":15011,"password":"TCEL1H0XD7TWAKI0","cipher":"aes-256-gcm"}
@@ -242,14 +272,215 @@ proxies:
   - {"name":"美国-2.71MB/s_2","type":"trojan","server":"us004.421421.xyz","port":20230,"udp":true,"password":"f08d6a6b-a0b3-410e-a0ba-eae71b521904","skip-cert-verify":true,"network":"tcp"}
   - {"name":"加拿大-178.2KB/s","type":"vmess","server":"51.79.103.76","port":80,"cipher":"auto","uuid":"58fe1542-5290-40ad-815a-77707a81afe5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/IOebhLMhl1CTbFHbL95myfRX2","headers":{"host":"wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"}}}
   - {"name":"美国-6.4MB/s","type":"ss","server":"100.42.177.164","port":26905,"password":"0b381b31811f4d98","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"未知国家-20.7MB/s","type":"trojan","server":"beseech.homeofbrave.net","port":443,"udp":true,"password":"SaujZeOR2F6eDD09KnxFcl3CY8laTXAyYOyCEI5qgwRSDp4ZCp33ASxN738zBa","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"未知国家-66.7MB/s","type":"trojan","server":"beseech.homeofbrave.net","port":443,"udp":true,"password":"SaujZeOR2F6eDD09KnxFcl3CY8laTXAyYOyCEI5qgwRSDp4ZCp33ASxN738zBa","sni":"beseech.homeofbrave.net","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"未知国家-465.0KB/s","type":"vmess","server":"la03.890603.xyz","port":443,"cipher":"auto","uuid":"60cdd89e-a9cf-4850-8577-e3c6abf5515d","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/gyCVORfjoXYyHHcJBuLd","headers":{"host":"la03.890603.xyz"}}}
+  - {"name":"未知国家-3.44MB/s","type":"vmess","server":"support.sabapardaziran.ir","port":8443,"cipher":"auto","uuid":"53415815-7037-49af-a5f9-2809a4e7ddbc","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/🆔@M3HDIO1","headers":{"host":"support.sabapardaziran.ir"}}}
+  - {"name":"未知国家-1.49MB/s","type":"vmess","server":"la03.890614.filegear-sg.me","port":443,"cipher":"auto","uuid":"60cdd89e-a9cf-4850-8577-e3c6abf5515d","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/gyCVORfjoXYyHHcJBuLd","headers":{"host":"la03.890614.filegear-sg.me"}}}
+  - {"name":"未知国家-4.69MB/s","type":"vmess","server":"iran.farsonline24.ir","port":8443,"cipher":"auto","uuid":"b3b23f49-b3d7-4bd9-efd3-8bdbe54fba61","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/🆔@M3HDIO1","headers":{"host":"iran.farsonline24.ir"}}}
+  - {"name":"法国-3.98MB/s","type":"trojan","server":"13.38.175.48","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国-4.27MB/s","type":"vmess","server":"172.67.154.84","port":443,"cipher":"auto","uuid":"e537f2f5-2a0c-4f59-92c9-832ca6433bf3","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"irvideo.cfd"}}}
+  - {"name":"美国-31.2MB/s","type":"ss","server":"156.231.104.16","port":18006,"password":"JIPI3OO5VF7JN9VH","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-5.50MB/s","type":"ss","server":"ss.miloli.cc","port":19240,"password":"96edc7d4-7490-48ff-99cc-496b0f4a27e9","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"未知国家-487.9KB/s","type":"trojan","server":"socepy.homeofbrave.net","port":443,"udp":true,"password":"3wXO97Y83a9ynFAgyajxxpz6qeSSCu6z3C3RDwTNYcDZyCAFglBE3ANDFA0e7SFaIlDOq","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中转节点-11.4MB/s_8","type":"ss","server":"xm.miloli.cc","port":42151,"password":"96edc7d4-7490-48ff-99cc-496b0f4a27e9","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国-257.3KB/s","type":"trojan","server":"gharial.superpokemon.com","port":443,"udp":true,"password":"85aDyYZY30RxnpAD38lSCKaue9CDDTDOAASycaExR9OEZxOD8c25CXeSCF33lN3q43BeI","sni":"gharial.superpokemon.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"英国-11.7MB/s","type":"ss","server":"91.84.109.28","port":49209,"password":"IZeqIUCMcao7ReNj5B83Yr","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"vmess ws_729","type":"vmess","server":"103.21.244.41","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_730","type":"vmess","server":"103.21.244.223","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_731","type":"vmess","server":"190.93.245.88","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_732","type":"vmess","server":"104.21.64.223","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_733","type":"vmess","server":"104.16.184.172","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_734","type":"vmess","server":"173.245.49.173","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_735","type":"vmess","server":"190.93.245.69","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_736","type":"vmess","server":"104.27.47.52","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_737","type":"vmess","server":"190.93.246.105","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_738","type":"vmess","server":"198.41.214.227","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_739","type":"vmess","server":"104.21.196.168","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_740","type":"vmess","server":"104.24.71.214","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_741","type":"vmess","server":"104.24.3.237","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_742","type":"vmess","server":"104.24.41.22","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_743","type":"vmess","server":"198.41.201.141","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_744","type":"vmess","server":"104.25.94.83","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_745","type":"vmess","server":"104.18.79.60","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_746","type":"vmess","server":"104.24.226.53","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_747","type":"vmess","server":"190.93.246.229","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_748","type":"vmess","server":"104.25.201.179","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_749","type":"vmess","server":"172.67.19.45","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_750","type":"vmess","server":"104.19.72.78","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_751","type":"vmess","server":"104.20.216.221","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_752","type":"vmess","server":"190.93.246.104","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_753","type":"vmess","server":"104.24.152.26","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_754","type":"vmess","server":"104.17.156.69","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_755","type":"vmess","server":"104.19.191.115","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_756","type":"vmess","server":"173.245.49.1","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_757","type":"vmess","server":"104.24.52.28","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_758","type":"vmess","server":"172.64.195.139","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_759","type":"vmess","server":"141.101.115.169","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_760","type":"vmess","server":"103.21.244.249","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_761","type":"vmess","server":"104.24.223.83","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_762","type":"vmess","server":"104.24.254.104","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_763","type":"vmess","server":"104.24.6.125","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_764","type":"vmess","server":"188.114.97.62","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_765","type":"vmess","server":"188.114.98.23","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_766","type":"vmess","server":"104.25.142.178","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_767","type":"vmess","server":"104.17.50.167","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_768","type":"vmess","server":"141.101.113.129","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_769","type":"vmess","server":"104.24.94.203","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_770","type":"vmess","server":"104.25.89.1","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_771","type":"vmess","server":"141.101.120.15","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_772","type":"vmess","server":"104.20.85.49","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_773","type":"vmess","server":"104.27.80.204","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_774","type":"vmess","server":"198.41.217.49","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_775","type":"vmess","server":"104.20.151.148","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_776","type":"vmess","server":"173.245.49.87","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_777","type":"vmess","server":"104.16.5.184","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_778","type":"vmess","server":"104.27.34.103","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_779","type":"vmess","server":"104.24.219.199","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_780","type":"vmess","server":"172.64.82.183","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_781","type":"vmess","server":"104.18.15.188","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_782","type":"vmess","server":"172.64.144.202","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_783","type":"vmess","server":"190.93.244.32","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_784","type":"vmess","server":"103.21.244.181","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_785","type":"vmess","server":"190.93.244.227","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_786","type":"vmess","server":"104.19.178.22","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_787","type":"vmess","server":"188.114.99.44","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_788","type":"vmess","server":"104.18.135.208","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_789","type":"vmess","server":"104.25.119.62","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_790","type":"vmess","server":"104.20.97.69","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_791","type":"vmess","server":"104.24.210.228","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_792","type":"vmess","server":"103.21.244.179","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_793","type":"vmess","server":"104.16.108.228","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_794","type":"vmess","server":"104.21.24.245","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_795","type":"vmess","server":"173.245.49.153","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_796","type":"vmess","server":"104.20.204.255","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_797","type":"vmess","server":"190.93.247.128","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_798","type":"vmess","server":"188.114.99.103","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_799","type":"vmess","server":"190.93.244.202","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_800","type":"vmess","server":"190.93.246.29","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_801","type":"vmess","server":"104.19.14.207","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_802","type":"vmess","server":"173.245.49.116","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_803","type":"vmess","server":"104.27.196.193","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_804","type":"vmess","server":"104.24.59.117","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_805","type":"vmess","server":"190.93.244.92","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_806","type":"vmess","server":"190.93.246.121","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_807","type":"vmess","server":"198.41.193.46","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_808","type":"vmess","server":"104.24.145.39","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_809","type":"vmess","server":"104.25.64.159","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_810","type":"vmess","server":"104.25.73.157","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_811","type":"vmess","server":"104.21.49.142","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_812","type":"vmess","server":"104.19.45.93","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_813","type":"vmess","server":"104.19.236.13","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_814","type":"vmess","server":"188.114.98.144","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_815","type":"vmess","server":"190.93.245.147","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_816","type":"vmess","server":"190.93.247.245","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_817","type":"vmess","server":"188.114.98.19","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_818","type":"vmess","server":"104.19.227.146","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_819","type":"vmess","server":"162.159.250.125","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_820","type":"vmess","server":"104.25.36.156","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_821","type":"vmess","server":"162.159.140.148","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_822","type":"vmess","server":"103.21.244.134","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_823","type":"vmess","server":"104.27.29.187","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_824","type":"vmess","server":"198.41.201.170","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_825","type":"vmess","server":"103.21.244.17","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_826","type":"vmess","server":"104.25.194.111","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_827","type":"vmess","server":"104.27.201.168","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_828","type":"vmess","server":"188.114.97.53","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_829","type":"vmess","server":"104.24.218.37","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_830","type":"vmess","server":"190.93.247.50","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_831","type":"vmess","server":"104.16.66.131","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_832","type":"vmess","server":"103.21.244.46","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_833","type":"vmess","server":"104.16.196.198","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_834","type":"vmess","server":"104.19.46.49","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_835","type":"vmess","server":"141.101.121.126","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_836","type":"vmess","server":"104.17.22.69","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_837","type":"vmess","server":"162.159.249.146","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_838","type":"vmess","server":"188.114.98.111","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_839","type":"vmess","server":"162.159.143.2","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_840","type":"vmess","server":"104.17.227.210","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_841","type":"vmess","server":"198.41.199.172","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_842","type":"vmess","server":"104.27.207.237","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_843","type":"vmess","server":"104.24.70.169","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_844","type":"vmess","server":"190.93.244.247","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_845","type":"vmess","server":"198.41.206.143","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_846","type":"vmess","server":"104.16.132.62","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_847","type":"vmess","server":"198.41.217.53","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_848","type":"vmess","server":"104.24.237.125","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_849","type":"vmess","server":"104.16.187.79","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_850","type":"vmess","server":"198.41.196.172","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_851","type":"vmess","server":"104.21.72.158","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_852","type":"vmess","server":"104.27.108.230","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_853","type":"vmess","server":"162.159.44.254","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_854","type":"vmess","server":"104.16.218.178","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_855","type":"vmess","server":"104.27.62.124","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_856","type":"vmess","server":"104.25.221.78","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_857","type":"vmess","server":"104.21.67.240","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_858","type":"vmess","server":"104.24.0.110","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_859","type":"vmess","server":"103.21.244.111","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_860","type":"vmess","server":"104.18.36.238","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_861","type":"vmess","server":"104.19.151.1","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_862","type":"vmess","server":"103.21.244.39","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_863","type":"vmess","server":"104.21.226.93","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_864","type":"vmess","server":"104.16.197.92","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_865","type":"vmess","server":"173.245.49.159","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_866","type":"vmess","server":"103.21.244.128","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_867","type":"vmess","server":"104.27.57.99","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_868","type":"vmess","server":"190.93.244.230","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_869","type":"vmess","server":"172.64.95.157","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_870","type":"vmess","server":"104.19.24.192","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_871","type":"vmess","server":"198.41.202.68","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_872","type":"vmess","server":"103.21.244.251","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_873","type":"vmess","server":"198.41.223.29","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_874","type":"vmess","server":"104.17.127.19","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_875","type":"vmess","server":"198.41.216.14","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_876","type":"vmess","server":"188.114.98.167","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_877","type":"vmess","server":"104.17.78.244","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_878","type":"vmess","server":"198.41.212.251","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_879","type":"vmess","server":"188.114.97.117","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_880","type":"vmess","server":"104.27.203.90","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_881","type":"vmess","server":"104.17.114.101","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_882","type":"vmess","server":"190.93.246.8","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_883","type":"vmess","server":"104.25.61.236","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_884","type":"vmess","server":"198.41.214.61","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_885","type":"vmess","server":"198.41.217.204","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_886","type":"vmess","server":"104.18.179.7","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_887","type":"vmess","server":"198.41.221.173","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_888","type":"vmess","server":"104.18.232.60","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_889","type":"vmess","server":"104.25.5.15","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_890","type":"vmess","server":"190.93.247.173","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_891","type":"vmess","server":"141.101.115.181","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_892","type":"vmess","server":"172.67.139.115","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_893","type":"vmess","server":"172.67.238.142","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_894","type":"vmess","server":"188.114.96.23","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_895","type":"vmess","server":"104.27.200.170","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_896","type":"vmess","server":"104.24.94.165","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_897","type":"vmess","server":"198.41.218.152","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_898","type":"vmess","server":"103.21.244.248","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_899","type":"vmess","server":"103.21.244.171","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_900","type":"vmess","server":"104.24.0.101","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_901","type":"vmess","server":"104.18.117.250","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_902","type":"vmess","server":"104.27.56.157","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_903","type":"vmess","server":"141.101.115.200","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_904","type":"vmess","server":"104.20.82.192","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_905","type":"vmess","server":"104.21.60.210","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_906","type":"vmess","server":"103.21.244.178","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_907","type":"vmess","server":"103.21.244.99","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_908","type":"vmess","server":"104.25.159.243","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_909","type":"vmess","server":"104.21.28.136","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
+  - {"name":"vmess ws_910","type":"vmess","server":"104.24.57.210","port":80,"cipher":"auto","uuid":"d46e30aa-db2f-4e58-af01-758874b1b341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cf.aifuqiang.tk"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
-      - 🗺️ 选择地区
+      - 🇭🇰 香港节点
+      - 🇸🇬 狮城节点
+      - 🇺🇲 美国节点
+      - 🇯🇵 日本节点
+      - 🚀 手动切换
       - DIRECT
+  - name: 🚀 手动切换
+    type: select
+    proxies:
       - 中转节点-24.6MB/s
       - 中转节点-11.1MB/s_6
       - 中转节点-55.5MB/s
@@ -436,7 +667,201 @@ proxy-groups:
       - 美国-2.71MB/s_2
       - 加拿大-178.2KB/s
       - 美国-6.4MB/s
-      - 未知国家-20.7MB/s
+      - 未知国家-66.7MB/s
+      - 未知国家-465.0KB/s
+      - 未知国家-3.44MB/s
+      - 未知国家-1.49MB/s
+      - 未知国家-4.69MB/s
+      - 法国-3.98MB/s
+      - 美国-4.27MB/s
+      - 美国-31.2MB/s
+      - 中转节点-5.50MB/s
+      - 未知国家-487.9KB/s
+      - 中转节点-11.4MB/s_8
+      - 美国-257.3KB/s
+      - 英国-11.7MB/s
+      - vmess ws_729
+      - vmess ws_730
+      - vmess ws_731
+      - vmess ws_732
+      - vmess ws_733
+      - vmess ws_734
+      - vmess ws_735
+      - vmess ws_736
+      - vmess ws_737
+      - vmess ws_738
+      - vmess ws_739
+      - vmess ws_740
+      - vmess ws_741
+      - vmess ws_742
+      - vmess ws_743
+      - vmess ws_744
+      - vmess ws_745
+      - vmess ws_746
+      - vmess ws_747
+      - vmess ws_748
+      - vmess ws_749
+      - vmess ws_750
+      - vmess ws_751
+      - vmess ws_752
+      - vmess ws_753
+      - vmess ws_754
+      - vmess ws_755
+      - vmess ws_756
+      - vmess ws_757
+      - vmess ws_758
+      - vmess ws_759
+      - vmess ws_760
+      - vmess ws_761
+      - vmess ws_762
+      - vmess ws_763
+      - vmess ws_764
+      - vmess ws_765
+      - vmess ws_766
+      - vmess ws_767
+      - vmess ws_768
+      - vmess ws_769
+      - vmess ws_770
+      - vmess ws_771
+      - vmess ws_772
+      - vmess ws_773
+      - vmess ws_774
+      - vmess ws_775
+      - vmess ws_776
+      - vmess ws_777
+      - vmess ws_778
+      - vmess ws_779
+      - vmess ws_780
+      - vmess ws_781
+      - vmess ws_782
+      - vmess ws_783
+      - vmess ws_784
+      - vmess ws_785
+      - vmess ws_786
+      - vmess ws_787
+      - vmess ws_788
+      - vmess ws_789
+      - vmess ws_790
+      - vmess ws_791
+      - vmess ws_792
+      - vmess ws_793
+      - vmess ws_794
+      - vmess ws_795
+      - vmess ws_796
+      - vmess ws_797
+      - vmess ws_798
+      - vmess ws_799
+      - vmess ws_800
+      - vmess ws_801
+      - vmess ws_802
+      - vmess ws_803
+      - vmess ws_804
+      - vmess ws_805
+      - vmess ws_806
+      - vmess ws_807
+      - vmess ws_808
+      - vmess ws_809
+      - vmess ws_810
+      - vmess ws_811
+      - vmess ws_812
+      - vmess ws_813
+      - vmess ws_814
+      - vmess ws_815
+      - vmess ws_816
+      - vmess ws_817
+      - vmess ws_818
+      - vmess ws_819
+      - vmess ws_820
+      - vmess ws_821
+      - vmess ws_822
+      - vmess ws_823
+      - vmess ws_824
+      - vmess ws_825
+      - vmess ws_826
+      - vmess ws_827
+      - vmess ws_828
+      - vmess ws_829
+      - vmess ws_830
+      - vmess ws_831
+      - vmess ws_832
+      - vmess ws_833
+      - vmess ws_834
+      - vmess ws_835
+      - vmess ws_836
+      - vmess ws_837
+      - vmess ws_838
+      - vmess ws_839
+      - vmess ws_840
+      - vmess ws_841
+      - vmess ws_842
+      - vmess ws_843
+      - vmess ws_844
+      - vmess ws_845
+      - vmess ws_846
+      - vmess ws_847
+      - vmess ws_848
+      - vmess ws_849
+      - vmess ws_850
+      - vmess ws_851
+      - vmess ws_852
+      - vmess ws_853
+      - vmess ws_854
+      - vmess ws_855
+      - vmess ws_856
+      - vmess ws_857
+      - vmess ws_858
+      - vmess ws_859
+      - vmess ws_860
+      - vmess ws_861
+      - vmess ws_862
+      - vmess ws_863
+      - vmess ws_864
+      - vmess ws_865
+      - vmess ws_866
+      - vmess ws_867
+      - vmess ws_868
+      - vmess ws_869
+      - vmess ws_870
+      - vmess ws_871
+      - vmess ws_872
+      - vmess ws_873
+      - vmess ws_874
+      - vmess ws_875
+      - vmess ws_876
+      - vmess ws_877
+      - vmess ws_878
+      - vmess ws_879
+      - vmess ws_880
+      - vmess ws_881
+      - vmess ws_882
+      - vmess ws_883
+      - vmess ws_884
+      - vmess ws_885
+      - vmess ws_886
+      - vmess ws_887
+      - vmess ws_888
+      - vmess ws_889
+      - vmess ws_890
+      - vmess ws_891
+      - vmess ws_892
+      - vmess ws_893
+      - vmess ws_894
+      - vmess ws_895
+      - vmess ws_896
+      - vmess ws_897
+      - vmess ws_898
+      - vmess ws_899
+      - vmess ws_900
+      - vmess ws_901
+      - vmess ws_902
+      - vmess ws_903
+      - vmess ws_904
+      - vmess ws_905
+      - vmess ws_906
+      - vmess ws_907
+      - vmess ws_908
+      - vmess ws_909
+      - vmess ws_910
   - interval: 300
     name: ♻️ 自动选择
     tolerance: 50
@@ -629,7 +1054,201 @@ proxy-groups:
       - 美国-2.71MB/s_2
       - 加拿大-178.2KB/s
       - 美国-6.4MB/s
-      - 未知国家-20.7MB/s
+      - 未知国家-66.7MB/s
+      - 未知国家-465.0KB/s
+      - 未知国家-3.44MB/s
+      - 未知国家-1.49MB/s
+      - 未知国家-4.69MB/s
+      - 法国-3.98MB/s
+      - 美国-4.27MB/s
+      - 美国-31.2MB/s
+      - 中转节点-5.50MB/s
+      - 未知国家-487.9KB/s
+      - 中转节点-11.4MB/s_8
+      - 美国-257.3KB/s
+      - 英国-11.7MB/s
+      - vmess ws_729
+      - vmess ws_730
+      - vmess ws_731
+      - vmess ws_732
+      - vmess ws_733
+      - vmess ws_734
+      - vmess ws_735
+      - vmess ws_736
+      - vmess ws_737
+      - vmess ws_738
+      - vmess ws_739
+      - vmess ws_740
+      - vmess ws_741
+      - vmess ws_742
+      - vmess ws_743
+      - vmess ws_744
+      - vmess ws_745
+      - vmess ws_746
+      - vmess ws_747
+      - vmess ws_748
+      - vmess ws_749
+      - vmess ws_750
+      - vmess ws_751
+      - vmess ws_752
+      - vmess ws_753
+      - vmess ws_754
+      - vmess ws_755
+      - vmess ws_756
+      - vmess ws_757
+      - vmess ws_758
+      - vmess ws_759
+      - vmess ws_760
+      - vmess ws_761
+      - vmess ws_762
+      - vmess ws_763
+      - vmess ws_764
+      - vmess ws_765
+      - vmess ws_766
+      - vmess ws_767
+      - vmess ws_768
+      - vmess ws_769
+      - vmess ws_770
+      - vmess ws_771
+      - vmess ws_772
+      - vmess ws_773
+      - vmess ws_774
+      - vmess ws_775
+      - vmess ws_776
+      - vmess ws_777
+      - vmess ws_778
+      - vmess ws_779
+      - vmess ws_780
+      - vmess ws_781
+      - vmess ws_782
+      - vmess ws_783
+      - vmess ws_784
+      - vmess ws_785
+      - vmess ws_786
+      - vmess ws_787
+      - vmess ws_788
+      - vmess ws_789
+      - vmess ws_790
+      - vmess ws_791
+      - vmess ws_792
+      - vmess ws_793
+      - vmess ws_794
+      - vmess ws_795
+      - vmess ws_796
+      - vmess ws_797
+      - vmess ws_798
+      - vmess ws_799
+      - vmess ws_800
+      - vmess ws_801
+      - vmess ws_802
+      - vmess ws_803
+      - vmess ws_804
+      - vmess ws_805
+      - vmess ws_806
+      - vmess ws_807
+      - vmess ws_808
+      - vmess ws_809
+      - vmess ws_810
+      - vmess ws_811
+      - vmess ws_812
+      - vmess ws_813
+      - vmess ws_814
+      - vmess ws_815
+      - vmess ws_816
+      - vmess ws_817
+      - vmess ws_818
+      - vmess ws_819
+      - vmess ws_820
+      - vmess ws_821
+      - vmess ws_822
+      - vmess ws_823
+      - vmess ws_824
+      - vmess ws_825
+      - vmess ws_826
+      - vmess ws_827
+      - vmess ws_828
+      - vmess ws_829
+      - vmess ws_830
+      - vmess ws_831
+      - vmess ws_832
+      - vmess ws_833
+      - vmess ws_834
+      - vmess ws_835
+      - vmess ws_836
+      - vmess ws_837
+      - vmess ws_838
+      - vmess ws_839
+      - vmess ws_840
+      - vmess ws_841
+      - vmess ws_842
+      - vmess ws_843
+      - vmess ws_844
+      - vmess ws_845
+      - vmess ws_846
+      - vmess ws_847
+      - vmess ws_848
+      - vmess ws_849
+      - vmess ws_850
+      - vmess ws_851
+      - vmess ws_852
+      - vmess ws_853
+      - vmess ws_854
+      - vmess ws_855
+      - vmess ws_856
+      - vmess ws_857
+      - vmess ws_858
+      - vmess ws_859
+      - vmess ws_860
+      - vmess ws_861
+      - vmess ws_862
+      - vmess ws_863
+      - vmess ws_864
+      - vmess ws_865
+      - vmess ws_866
+      - vmess ws_867
+      - vmess ws_868
+      - vmess ws_869
+      - vmess ws_870
+      - vmess ws_871
+      - vmess ws_872
+      - vmess ws_873
+      - vmess ws_874
+      - vmess ws_875
+      - vmess ws_876
+      - vmess ws_877
+      - vmess ws_878
+      - vmess ws_879
+      - vmess ws_880
+      - vmess ws_881
+      - vmess ws_882
+      - vmess ws_883
+      - vmess ws_884
+      - vmess ws_885
+      - vmess ws_886
+      - vmess ws_887
+      - vmess ws_888
+      - vmess ws_889
+      - vmess ws_890
+      - vmess ws_891
+      - vmess ws_892
+      - vmess ws_893
+      - vmess ws_894
+      - vmess ws_895
+      - vmess ws_896
+      - vmess ws_897
+      - vmess ws_898
+      - vmess ws_899
+      - vmess ws_900
+      - vmess ws_901
+      - vmess ws_902
+      - vmess ws_903
+      - vmess ws_904
+      - vmess ws_905
+      - vmess ws_906
+      - vmess ws_907
+      - vmess ws_908
+      - vmess ws_909
+      - vmess ws_910
     type: url-test
     url: https://www.gstatic.com/generate_204
   - name: 🎯 全球直连
@@ -835,42 +1454,225 @@ proxy-groups:
       - 美国-2.71MB/s_2
       - 加拿大-178.2KB/s
       - 美国-6.4MB/s
-      - 未知国家-20.7MB/s
-  - name: 🗺️ 选择地区
-    type: select
-    proxies:
-      - 🇭🇰 香港节点
-      - 🇸🇬 狮城节点
-      - 🇺🇲 美国节点
-      - 🇯🇵 日本节点
-  - interval: 300
-    name: 🇭🇰 香港节点
+      - 未知国家-66.7MB/s
+      - 未知国家-465.0KB/s
+      - 未知国家-3.44MB/s
+      - 未知国家-1.49MB/s
+      - 未知国家-4.69MB/s
+      - 法国-3.98MB/s
+      - 美国-4.27MB/s
+      - 美国-31.2MB/s
+      - 中转节点-5.50MB/s
+      - 未知国家-487.9KB/s
+      - 中转节点-11.4MB/s_8
+      - 美国-257.3KB/s
+      - 英国-11.7MB/s
+      - vmess ws_729
+      - vmess ws_730
+      - vmess ws_731
+      - vmess ws_732
+      - vmess ws_733
+      - vmess ws_734
+      - vmess ws_735
+      - vmess ws_736
+      - vmess ws_737
+      - vmess ws_738
+      - vmess ws_739
+      - vmess ws_740
+      - vmess ws_741
+      - vmess ws_742
+      - vmess ws_743
+      - vmess ws_744
+      - vmess ws_745
+      - vmess ws_746
+      - vmess ws_747
+      - vmess ws_748
+      - vmess ws_749
+      - vmess ws_750
+      - vmess ws_751
+      - vmess ws_752
+      - vmess ws_753
+      - vmess ws_754
+      - vmess ws_755
+      - vmess ws_756
+      - vmess ws_757
+      - vmess ws_758
+      - vmess ws_759
+      - vmess ws_760
+      - vmess ws_761
+      - vmess ws_762
+      - vmess ws_763
+      - vmess ws_764
+      - vmess ws_765
+      - vmess ws_766
+      - vmess ws_767
+      - vmess ws_768
+      - vmess ws_769
+      - vmess ws_770
+      - vmess ws_771
+      - vmess ws_772
+      - vmess ws_773
+      - vmess ws_774
+      - vmess ws_775
+      - vmess ws_776
+      - vmess ws_777
+      - vmess ws_778
+      - vmess ws_779
+      - vmess ws_780
+      - vmess ws_781
+      - vmess ws_782
+      - vmess ws_783
+      - vmess ws_784
+      - vmess ws_785
+      - vmess ws_786
+      - vmess ws_787
+      - vmess ws_788
+      - vmess ws_789
+      - vmess ws_790
+      - vmess ws_791
+      - vmess ws_792
+      - vmess ws_793
+      - vmess ws_794
+      - vmess ws_795
+      - vmess ws_796
+      - vmess ws_797
+      - vmess ws_798
+      - vmess ws_799
+      - vmess ws_800
+      - vmess ws_801
+      - vmess ws_802
+      - vmess ws_803
+      - vmess ws_804
+      - vmess ws_805
+      - vmess ws_806
+      - vmess ws_807
+      - vmess ws_808
+      - vmess ws_809
+      - vmess ws_810
+      - vmess ws_811
+      - vmess ws_812
+      - vmess ws_813
+      - vmess ws_814
+      - vmess ws_815
+      - vmess ws_816
+      - vmess ws_817
+      - vmess ws_818
+      - vmess ws_819
+      - vmess ws_820
+      - vmess ws_821
+      - vmess ws_822
+      - vmess ws_823
+      - vmess ws_824
+      - vmess ws_825
+      - vmess ws_826
+      - vmess ws_827
+      - vmess ws_828
+      - vmess ws_829
+      - vmess ws_830
+      - vmess ws_831
+      - vmess ws_832
+      - vmess ws_833
+      - vmess ws_834
+      - vmess ws_835
+      - vmess ws_836
+      - vmess ws_837
+      - vmess ws_838
+      - vmess ws_839
+      - vmess ws_840
+      - vmess ws_841
+      - vmess ws_842
+      - vmess ws_843
+      - vmess ws_844
+      - vmess ws_845
+      - vmess ws_846
+      - vmess ws_847
+      - vmess ws_848
+      - vmess ws_849
+      - vmess ws_850
+      - vmess ws_851
+      - vmess ws_852
+      - vmess ws_853
+      - vmess ws_854
+      - vmess ws_855
+      - vmess ws_856
+      - vmess ws_857
+      - vmess ws_858
+      - vmess ws_859
+      - vmess ws_860
+      - vmess ws_861
+      - vmess ws_862
+      - vmess ws_863
+      - vmess ws_864
+      - vmess ws_865
+      - vmess ws_866
+      - vmess ws_867
+      - vmess ws_868
+      - vmess ws_869
+      - vmess ws_870
+      - vmess ws_871
+      - vmess ws_872
+      - vmess ws_873
+      - vmess ws_874
+      - vmess ws_875
+      - vmess ws_876
+      - vmess ws_877
+      - vmess ws_878
+      - vmess ws_879
+      - vmess ws_880
+      - vmess ws_881
+      - vmess ws_882
+      - vmess ws_883
+      - vmess ws_884
+      - vmess ws_885
+      - vmess ws_886
+      - vmess ws_887
+      - vmess ws_888
+      - vmess ws_889
+      - vmess ws_890
+      - vmess ws_891
+      - vmess ws_892
+      - vmess ws_893
+      - vmess ws_894
+      - vmess ws_895
+      - vmess ws_896
+      - vmess ws_897
+      - vmess ws_898
+      - vmess ws_899
+      - vmess ws_900
+      - vmess ws_901
+      - vmess ws_902
+      - vmess ws_903
+      - vmess ws_904
+      - vmess ws_905
+      - vmess ws_906
+      - vmess ws_907
+      - vmess ws_908
+      - vmess ws_909
+      - vmess ws_910
+  - name: 🇭🇰 香港节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
     tolerance: 50
-    timeout: 1500
-    max-failed-times: 1
     proxies:
       - 香港-6.80MB/s
       - 香港-37.2MB/s
       - 香港-16.4MB/s
+  - name: 🇯🇵 日本节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
-  - interval: 300
-    name: 🇯🇵 日本节点
+    url: http://www.gstatic.com/generate_204
+    interval: 300
     tolerance: 50
-    timeout: 1500
-    max-failed-times: 1
     proxies:
       - 日本-16.5MB/s
       - 日本-13.73MB/s
       - 日本-356.7KB/s
       - 日本-13.54MB/s
+  - name: 🇸🇬 狮城节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
-  - interval: 300
-    name: 🇸🇬 狮城节点
+    url: http://www.gstatic.com/generate_204
+    interval: 300
     tolerance: 50
-    timeout: 2000
-    max-failed-times: 1
     proxies:
       - 新加坡-58.9MB/s
       - 新加坡-305.3KB/s
@@ -878,13 +1680,11 @@ proxy-groups:
       - 新加坡-15.88MB/s
       - 新加坡-262.2KB/s
       - 新加坡-925.5KB/s
+  - name: 🇺🇲 美国节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
-  - interval: 300
-    name: 🇺🇲 美国节点
+    url: http://www.gstatic.com/generate_204
+    interval: 300
     tolerance: 50
-    timeout: 1500
-    max-failed-times: 1
     proxies:
       - 美国-2.45MB/s
       - 美国-86.2MB/s
@@ -924,8 +1724,9 @@ proxy-groups:
       - 美国-8.1MB/s_4
       - 美国-2.71MB/s_2
       - 美国-6.4MB/s
-    type: url-test
-    url: https://www.gstatic.com/generate_204
+      - 美国-4.27MB/s
+      - 美国-31.2MB/s
+      - 美国-257.3KB/s
 
 rules:
 # 本地/局域网地址
