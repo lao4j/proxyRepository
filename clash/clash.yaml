@@ -1,89 +1,68 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-03-28 18:08:51
+# 创建时间：2025-03-28 19:15:43
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：745
 # 节点类型：ss, trojan, vmess
 ####################################
 mixed-port: 7890
-allow-lan: true
-log-level: info
-external-controller: 0.0.0.0:9090
+allow-lan: false
+log-level: silent
+external-controller: 127.0.0.1:9090
 dns:
-  enabled: true
-  listen: 0.0.0.0:1053
-  ipv6: true
-  default-nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
+  enable: true
+  ipv6: false 
+  listen: 127.0.0.1:1053
+  use-hosts: true
+  use-system-hosts: false
+  respect-rules: true
   enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
+  fake-ip-range: '198.19.0.1/24'
   fake-ip-filter:
     - '*.lan'
-    - '*.linksys.com'
-    - '*.linksyssmartwifi.com'
+    - '*.local'
+    - '*.home.arpa'
+    - '*.icloud.com'
+    - '*.apple.com'
+    - '*.windowsupdate.com'
     - swscan.apple.com
     - mesu.apple.com
     - '*.msftconnecttest.com'
     - '*.msftncsi.com'
-    - time.*.com
-    - time.*.gov
-    - time.*.edu.cn
-    - time.*.apple.com
-    - time1.*.com
-    - time2.*.com
-    - time3.*.com
-    - time4.*.com
-    - time5.*.com
-    - time6.*.com
-    - time7.*.com
-    - ntp.*.com
-    - ntp.*.com
-    - ntp1.*.com
-    - ntp2.*.com
-    - ntp3.*.com
-    - ntp4.*.com
-    - ntp5.*.com
-    - ntp6.*.com
-    - ntp7.*.com
-    - '*.time.edu.cn'
-    - '*.ntp.org.cn'
-    - +.pool.ntp.org
-    - time1.cloud.tencent.com
-    - +.music.163.com
-    - '*.126.net'
-    - musicapi.taihe.com
-    - music.taihe.com
-    - songsearch.kugou.com
-    - trackercdn.kugou.com
-    - '*.kuwo.cn'
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com
-    - +.y.qq.com
-    - +.music.tc.qq.com
-    - aqqmusic.tc.qq.com
-    - +.stream.qqmusic.qq.com
-    - '*.xiami.com'
-    - +.music.migu.cn
+    - stun.*.*
+    - stun.*.*.*
     - +.srv.nintendo.net
     - +.stun.playstation.net
     - xbox.*.microsoft.com
     - +.xboxlive.com
-    - localhost.ptlogin2.qq.com
-    - proxy.golang.org
-    - stun.*.*
-    - stun.*.*.*
-    - '*.mcdn.bilivideo.cn'
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
+    - tls://8.8.8.8
+    - tls://1.1.1.1
+    - https://8.8.8.8/dns-query
+    - https://1.1.1.1/dns-query
+  proxy-server-nameserver:
+    - https://8.8.8.8/dns-query
+    - https://1.1.1.1/dns-query
+  cache-size: 8192
+  dns-timeout: 3s
+  fallback:
+    - tls://8.8.4.4
+    - tls://1.0.0.1
+    - https://8.8.4.4/dns-query
+    - https://1.0.0.1/dns-query
   fallback-filter:
-    geoip: false
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
+    geoip: true
+    geoip-code: CN
+    geosite:
+      - gfw
+  nameserver-policy:
+    "*.cn":
+      - tls://119.29.29.29
+      - tls://223.5.5.5
+    "geoip-cn":
+      - tls://119.29.29.29
+      - tls://223.5.5.5
 
 proxies:
   - {"name":"保加利亚_1","type":"ss","server":"149.34.244.80","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
@@ -836,10 +815,7 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
-      - 🇭🇰 香港节点
-      - 🇸🇬 狮城节点
-      - 🇺🇲 美国节点
-      - 🇯🇵 日本节点
+      - 🗺️ 选择地区
       - 🚀 手动切换
       - DIRECT
   - name: 🚀 手动切换
@@ -1592,9 +1568,11 @@ proxy-groups:
       - 英国_由快嘴科技提供：kkzui.com2_3
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 0
+    timeout: 2000
+    max-failed-times: 1
     proxies:
       - 保加利亚_1
       - 中国_1
@@ -3103,31 +3081,28 @@ proxy-groups:
       - 美国_由快嘴科技提供：kkzui.com119
       - 美国_由快嘴科技提供：kkzui.com121
       - 英国_由快嘴科技提供：kkzui.com2_3
-  - name: 🇭🇰 香港节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    proxies: []
-  - name: 🇯🇵 日本节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    proxies: []
+  - name: 🗺️ 选择地区
+    type: select
+    proxies:
+      - 🇸🇬 狮城节点
+      - 🇺🇲 美国节点
   - name: 🇸🇬 狮城节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 0
+    timeout: 2000
+    max-failed-times: 1
     proxies:
       - 新加坡_1
       - 新加坡_2
   - name: 🇺🇲 美国节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 0
+    timeout: 2000
+    max-failed-times: 1
     proxies:
       - 美国_由快嘴科技提供：kkzui.com1_1
       - 美国_由快嘴科技提供：kkzui.com2_1
