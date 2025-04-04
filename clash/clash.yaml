@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-04-04 20:24:18
+# 创建时间：2025-04-04 21:34:54
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：125
 # 节点类型：ss, vmess, trojan
@@ -35,23 +35,25 @@ dns:
     - 'detectportal.firefox.com'
     - 'generate_204'
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
+    - tls://dns.google
+    - tls://dns.cloudflare.com
   nameserver-policy:
     '+.arpa': '10.0.0.1'
     'rule-set:cn':
       - https://doh.pub/dns-query
       - https://dns.alidns.com/dns-query
   fallback:
-    - tls://dns.google
-    - tls://dns.quad9.net
     - tls://1.1.1.1
+    - tls://dns.quad9.net
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
   proxy-server-nameserver:
     - https://dns.google/dns-query
     - https://cloudflare-dns.com/dns-query
   direct-nameserver:
-    - system
-  direct-nameserver-follow-policy: false
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  direct-nameserver-follow-policy: true
   fallback-filter:
     geoip: true
     geoip-code: CN
@@ -335,7 +337,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     timeout: 1500
-    max-failed-times: 2
+    max-failed-times: 1
     proxies:
       - 欧盟+V2CROSS.COM_1
       - 欧盟+V2CROSS.COM_2
@@ -610,7 +612,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     timeout: 1500
-    max-failed-times: 2
+    max-failed-times: 1
     proxies:
       - 日本+东京都Amazon数据中心_1
       - 日本+东京Amazon数据中心
@@ -621,7 +623,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     timeout: 1500
-    max-failed-times: 2
+    max-failed-times: 1
     proxies:
       - 美国 CloudFlare节点_1
       - 美国 CloudFlare节点_2
