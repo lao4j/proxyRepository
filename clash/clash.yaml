@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-04-04 00:34:34
+# 创建时间：2025-04-04 13:31:26
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：125
 # 节点类型：ss, vmess, trojan
@@ -12,7 +12,7 @@ log-level: silent
 external-controller: 127.0.0.1:9090
 dns:
   enable: true
-  ipv6: false 
+  ipv6: false
   listen: 127.0.0.1:1053
   use-hosts: true
   use-system-hosts: false
@@ -38,19 +38,19 @@ dns:
     - +.xboxlive.com
   nameserver:
     - tls://dns.google
-    - tls://1.1.1.1
+    - tls://dns.cloudflare.com
     - https://dns.google/dns-query
-    - https://1.1.1.1/dns-query
+    - https://cloudflare-dns.com/dns-query
   proxy-server-nameserver:
     - https://dns.google/dns-query
-    - https://1.1.1.1/dns-query
+    - https://cloudflare-dns.com/dns-query
   cache-size: 8192
   dns-timeout: 3s
   fallback:
-    - tls://dns.google
-    - tls://1.0.0.1
-    - https://dns.google/dns-query
-    - https://1.0.0.1/dns-query
+    - tls://1.1.1.1
+    - tls://dns.quad9.net
+    - https://1.1.1.1/dns-query
+    - https://dns.quad9.net/dns-query
   fallback-filter:
     geoip: true
     geoip-code: CN
