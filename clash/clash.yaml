@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-04-04 19:49:06
+# 创建时间：2025-04-04 20:24:18
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：125
 # 节点类型：ss, vmess, trojan
@@ -12,57 +12,59 @@ log-level: silent
 external-controller: 127.0.0.1:9090
 dns:
   enable: true
-  ipv6: false
-  listen: 127.0.0.1:1053
+  cache-algorithm: arc
+  prefer-h3: false
   use-hosts: true
-  use-system-hosts: false
-  respect-rules: true
+  use-system-hosts: true
+  respect-rules: false
+  listen: 127.0.0.1:1053
+  ipv6: false
+  default-nameserver:
+    - 223.5.5.5
   enhanced-mode: fake-ip
-  fake-ip-range: '198.19.0.1/24'
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter-mode: blacklist
   fake-ip-filter:
     - '*.lan'
     - '*.local'
-    - '*.home.arpa'
-    - '*.icloud.com'
-    - '*.apple.com'
-    - '*.windowsupdate.com'
-    - swscan.apple.com
-    - mesu.apple.com
-    - '*.msftconnecttest.com'
-    - '*.msftncsi.com'
-    - stun.*.*
-    - stun.*.*.*
-    - +.srv.nintendo.net
-    - +.stun.playstation.net
-    - xbox.*.microsoft.com
-    - +.xboxlive.com
+    - 'localhost'
+    - 'www.google.com'
+    - 'www.gstatic.com'
+    - 'cp.cloudflare.com'
+    - 'connectivitycheck.gstatic.com'
+    - 'detectportal.firefox.com'
+    - 'generate_204'
   nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  nameserver-policy:
+    '+.arpa': '10.0.0.1'
+    'rule-set:cn':
+      - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-query
+  fallback:
     - tls://dns.google
-    - tls://dns.cloudflare.com
-    - https://dns.google/dns-query
-    - https://cloudflare-dns.com/dns-query
+    - tls://dns.quad9.net
+    - tls://1.1.1.1
   proxy-server-nameserver:
     - https://dns.google/dns-query
     - https://cloudflare-dns.com/dns-query
-  cache-size: 8192
-  dns-timeout: 5s
-  fallback:
-    - tls://1.1.1.1
-    - tls://dns.quad9.net
-    - https://1.1.1.1/dns-query
-    - https://dns.quad9.net/dns-query
+  direct-nameserver:
+    - system
+  direct-nameserver-follow-policy: false
   fallback-filter:
     geoip: true
     geoip-code: CN
     geosite:
       - gfw
-  nameserver-policy:
-    "*.cn":
-      - tls://119.29.29.29
-      - tls://223.5.5.5
-    "geoip-cn":
-      - tls://119.29.29.29
-      - tls://223.5.5.5
+    ipcidr:
+      - 240.0.0.0/4
+    domain:
+      - '+.google.com'
+      - '+.facebook.com'
+      - '+.youtube.com'
+      - '+.gstatic.com'
+      - '+.githubusercontent.com'
 
 proxies:
   - {"name":"欧盟+V2CROSS.COM_1","type":"ss","server":"45.87.175.188","port":8080,"password":"1RWwXhwfAB5gAEozU4G2Pg","cipher":"chacha20-ietf-poly1305"}
@@ -332,8 +334,8 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    timeout: 5000
-    max-failed-times: 0
+    timeout: 1500
+    max-failed-times: 2
     proxies:
       - 欧盟+V2CROSS.COM_1
       - 欧盟+V2CROSS.COM_2
@@ -607,8 +609,8 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    timeout: 5000
-    max-failed-times: 0
+    timeout: 1500
+    max-failed-times: 2
     proxies:
       - 日本+东京都Amazon数据中心_1
       - 日本+东京Amazon数据中心
@@ -618,8 +620,8 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    timeout: 5000
-    max-failed-times: 0
+    timeout: 1500
+    max-failed-times: 2
     proxies:
       - 美国 CloudFlare节点_1
       - 美国 CloudFlare节点_2
