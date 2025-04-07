@@ -1,19 +1,19 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-04-07 21:11:07
+# 创建时间：2025-04-08 00:06:37
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：69
 # 节点类型：ss, vmess, trojan
 ####################################
 mixed-port: 7890
-allow-lan: true
+allow-lan: false
 bind-address: '*'
 log-level: silent
 external-controller: 127.0.0.1:9090
 secret: "your_password"
 mode: rule
-ipv6: true
+ipv6: false
 tun:
   enable: true
   stack: system
@@ -106,17 +106,17 @@ proxies:
   - {"name":"印度 V2CROSS.COM_3","type":"vmess","server":"202.78.162.5","port":443,"cipher":"auto","uuid":"716eded6-2201-4dbd-9d63-1638c9e8e677","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/@forwardv2ray","headers":{"host":"pendar.onthewifi.com"}}}
   - {"name":"美国 Fastly全球Anycast节点","type":"vmess","server":"gov.uk","port":443,"cipher":"auto","uuid":"77848824-93b7-4b89-ffd0-e91afff406ce","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/77848824","headers":{"host":"zheshiscp.com"}}}
   - {"name":"哥斯达黎加+V2CROSS.COM","type":"trojan","server":"144.22.250.122","port":443,"udp":true,"password":"02926f9e-153a-42c8-8ecd-8fade7009ad1","sni":"golinkwuxian.top","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点_1","type":"trojan","server":"104.21.6.179","port":443,"udp":true,"password":"0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01","sni":"uS6-16.890601.xyz","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"美国+CloudFlare节点_1","type":"trojan","server":"104.21.6.179","port":443,"udp":true,"password":"0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01","sni":"uS6-16.890601.xyz","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国+V2CROSS.COM","type":"trojan","server":"www.ak-hk.top","port":10200,"udp":true,"password":"b19c4375-d847-4c40-9824-4767c88b5f38","sni":"www.ak-hk.top","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+麻省理工学院","type":"trojan","server":"18.135.141.8","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"美国+麻省理工学院","type":"trojan","server":"18.135.141.8","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"德国+黑森州法兰克福Amazon数据中心","type":"trojan","server":"18.194.158.84","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+Xerox","type":"trojan","server":"13.50.48.83","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点_2","type":"trojan","server":"172.67.204.22","port":443,"udp":true,"password":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","sni":"US7-08.890602.xyZ","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"美国+Xerox","type":"trojan","server":"13.50.48.83","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+CloudFlare节点_2","type":"trojan","server":"172.67.204.22","port":443,"udp":true,"password":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","sni":"US7-08.890602.xyZ","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国+Amazon数据中心","type":"trojan","server":"13.37.164.239","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国+教育网","type":"trojan","server":"www.hk-jd.top","port":10021,"udp":true,"password":"b19c4375-d847-4c40-9824-4767c88b5f38","sni":"www.hk-jd.top","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+弗吉尼亚州阿什本Amazon数据中心","type":"trojan","server":"34.231.223.236","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"美国+弗吉尼亚州阿什本Amazon数据中心","type":"trojan","server":"34.231.223.236","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国加利福尼亚州洛杉矶+Cloudinnovation数据中心","type":"trojan","server":"156.238.19.69","port":2096,"udp":true,"password":"amclubs","sni":"tran.amclubstest.nyc.mn","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+惠普HP","type":"trojan","server":"16.171.219.121","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"美国+惠普HP","type":"trojan","server":"16.171.219.121","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -201,8 +201,8 @@ proxy-groups:
     type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
-    timeout: 5000
+    tolerance: 100
+    timeout: 8000
     max-failed-times: 5
     proxies:
       - 美国+华盛顿Cogent通信公司
@@ -364,8 +364,8 @@ proxy-groups:
     type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
-    timeout: 5000
+    tolerance: 100
+    timeout: 8000
     max-failed-times: 5
     proxies:
       - 美国+华盛顿Cogent通信公司
