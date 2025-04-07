@@ -1,13 +1,13 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-04-08 00:06:37
+# 创建时间：2025-04-08 00:59:35
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：69
 # 节点类型：ss, vmess, trojan
 ####################################
 mixed-port: 7890
-allow-lan: false
+allow-lan: true
 bind-address: '*'
 log-level: silent
 external-controller: 127.0.0.1:9090
@@ -24,7 +24,7 @@ tun:
 dns:
   enabled: true
   listen: 127.0.0.1:1053
-  ipv6: true
+  ipv6: false
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -45,7 +45,6 @@ dns:
     geoip-code: CN
     ipcidr:
       - 240.0.0.0/4
-      - 0.0.0.0/32
 
 proxies:
   - {"name":"美国+华盛顿Cogent通信公司","type":"ss","server":"38.114.114.245","port":8008,"password":"XKFKl2rULjIp74","cipher":"aes-256-gcm"}
@@ -202,8 +201,9 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 100
+    lazy: true
     timeout: 8000
-    max-failed-times: 5
+    max-failed-times: 8
     proxies:
       - 美国+华盛顿Cogent通信公司
       - 南非+V2CROSS.COM_1
@@ -365,8 +365,9 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 100
+    lazy: true
     timeout: 8000
-    max-failed-times: 5
+    max-failed-times: 8
     proxies:
       - 美国+华盛顿Cogent通信公司
       - 美国 CloudFlare节点_1
