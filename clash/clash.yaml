@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-04-08 15:31:41
+# 创建时间：2025-04-08 16:02:38
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：116
 # 节点类型：ss, vmess, trojan
@@ -14,6 +14,7 @@ external-controller: 127.0.0.1:9090
 secret: "AgeOfCourse12cT"
 mode: rule
 ipv6: false
+
 tun:
   enable: true
   stack: system
@@ -21,6 +22,7 @@ tun:
   auto-detect-interface: true
   dns-hijack:
     - 198.18.0.2:53
+
 dns:
   enabled: true
   listen: 127.0.0.1:1053
@@ -299,9 +301,9 @@ proxy-groups:
       - 美国+CloudFlare节点+(19)
   - name: ♻️ 自动选择
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: https://cp.cloudflare.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 180
     expected-status: 204
     proxies:
       - 南非+V2CROSS.COM
@@ -555,25 +557,25 @@ proxy-groups:
       - 美国+CloudFlare节点+(19)
   - name: 🇭🇰 香港节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: https://cp.cloudflare.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 180
     expected-status: 204
     proxies:
       - 香港 Google云计算数据中心
   - name: 🇯🇵 日本节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: https://cp.cloudflare.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 180
     expected-status: 204
     proxies:
       - 日本 大阪Google云计算数据中心
   - name: 🇺🇲 美国节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: https://cp.cloudflare.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 180
     expected-status: 204
     proxies:
       - 美国 CloudFlare节点
