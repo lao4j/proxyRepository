@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-04-08 16:02:38
+# 创建时间：2025-04-08 16:57:53
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：116
 # 节点类型：ss, vmess, trojan
@@ -301,10 +301,10 @@ proxy-groups:
       - 美国+CloudFlare节点+(19)
   - name: ♻️ 自动选择
     type: url-test
-    url: https://cp.cloudflare.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 180
-    expected-status: 204
+    tolerance: 100
+    expected-content: "success"
     proxies:
       - 南非+V2CROSS.COM
       - 海南省+移动(全省通用)
@@ -557,26 +557,26 @@ proxy-groups:
       - 美国+CloudFlare节点+(19)
   - name: 🇭🇰 香港节点
     type: url-test
-    url: https://cp.cloudflare.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 180
-    expected-status: 204
+    tolerance: 100
+    expected-content: "success"
     proxies:
       - 香港 Google云计算数据中心
   - name: 🇯🇵 日本节点
     type: url-test
-    url: https://cp.cloudflare.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 180
-    expected-status: 204
+    tolerance: 100
+    expected-content: "success"
     proxies:
       - 日本 大阪Google云计算数据中心
   - name: 🇺🇲 美国节点
     type: url-test
-    url: https://cp.cloudflare.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 180
-    expected-status: 204
+    tolerance: 100
+    expected-content: "success"
     proxies:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 (1)
