@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-04-09 01:17:42
+# 创建时间：2025-04-09 01:57:12
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：91
 # 节点类型：ss, vmess, trojan
@@ -27,14 +27,15 @@ dns:
   fake-ip-filter:
     - '*.lan'
   nameserver-policy:
-    '+.arpa': '10.0.0.1'
+    '+.arpa':
+      - https://cloudflare-dns.com/dns-query 
     'rule-set:cn':
-    - https://doh.alidns.com/dns-query
-    - https://1.12.222.222/dns-query
+      - https://doh.alidns.com/dns-query
+      - https://1.12.222.222/dns-query
   nameserver:
     - https://dns.google/dns-query
   fallback:
-     - https://cloudflare-dns.com/dns-query
+    - https://cloudflare-dns.com/dns-query
   proxy-server-nameserver:
     - https://mozilla.cloudflare-dns.com/dns-query
     - https://dns.adguard.com/dns-query
@@ -46,12 +47,11 @@ dns:
     geoip-code: CN
     geosite:
       - gfw
-    ipcidr:
-      - 240.0.0.0/4
     domain:
-      - '+.google.com'
-      - '+.facebook.com'
-      - '+.youtube.com'
+      - '.google.com'
+      - '.facebook.com'
+      - 'googleusercontent.com'
+      - 'youtube.com'
 
 proxies:
   - {"name":"海南省+移动(全省通用)","type":"ss","server":"hk02.x.quickcht3.club","port":52612,"password":"2be0c954-4291-45ea-b47d-ca713180550b","cipher":"chacha20-ietf-poly1305"}
