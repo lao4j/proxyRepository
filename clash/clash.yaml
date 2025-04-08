@@ -1,13 +1,13 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-04-08 12:23:59
+# 创建时间：2025-04-08 14:01:25
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：116
 # 节点类型：ss, vmess, trojan
 ####################################
 mixed-port: 7890
-allow-lan: true
+allow-lan: false
 bind-address: '*'
 log-level: silent
 external-controller: 127.0.0.1:9090
@@ -294,6 +294,7 @@ proxy-groups:
       - 南非+V2CROSS.COM
   - interval: 300
     name: ♻️ 自动选择
+    type: fallback
     proxies:
       - 海南省+移动(全省通用)
       - 海南省+移动(全省通用)+(1)
@@ -411,16 +412,10 @@ proxy-groups:
       - 美国+Xerox+(1)
       - 美国+CloudFlare节点+(19)
       - 南非+V2CROSS.COM
-    type: fallback
     url: https://www.gstatic.com/generate_204
     sort:
       - latency
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 60
     timeout: 5000
-    lazy: true
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -556,34 +551,25 @@ proxy-groups:
       - 南非+V2CROSS.COM
   - interval: 300
     name: 🇭🇰 香港节点
+    type: fallback
     proxies:
       - 香港 Google云计算数据中心
-    type: fallback
-    url: https://www.gstatic.com/generate_204'
-    sort:
-      - latency
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 60
-    timeout: 5000
-    lazy: true
-  - interval: 300
-    name: 🇯🇵 日本节点
-    proxies:
-      - 日本 大阪Google云计算数据中心
-    type: fallback
     url: https://www.gstatic.com/generate_204
     sort:
       - latency
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204'
-      interval: 60
     timeout: 5000
-    lazy: true
+  - interval: 300
+    name: 🇯🇵 日本节点
+    type: fallback
+    proxies:
+      - 日本 大阪Google云计算数据中心
+    url: https://www.gstatic.com/generate_204
+    sort:
+      - latency
+    timeout: 5000
   - interval: 300
     name: 🇺🇲 美国节点
+    type: fallback
     proxies:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 (1)
@@ -654,16 +640,10 @@ proxy-groups:
       - 美国+Amazon数据中心+(1)
       - 美国+Xerox+(1)
       - 美国+CloudFlare节点+(19)
-    type: fallback
     url: https://www.gstatic.com/generate_204
     sort:
       - latency
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 60
     timeout: 5000
-    lazy: true
 
 rules:
 # 本地/局域网地址
