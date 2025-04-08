@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-04-08 03:38:54
+# 创建时间：2025-04-08 10:11:03
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：245
 # 节点类型：trojan, ss, vmess
@@ -552,10 +552,12 @@ proxy-groups:
       - 中转节点-1.40MB/s
       - 美国-1.91MB/s
   - name: ♻️ 自动选择
-    type: fallback
+    type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 300
-    timeout: 8000
+    tolerance: 50
+    timeout: 3000
+    max-failed-times: 5
     proxies:
       - 未知国家-235.8KB/s
       - 美国-230.5KB/s
@@ -1065,10 +1067,12 @@ proxy-groups:
       - 中转节点-1.40MB/s
       - 美国-1.91MB/s
   - name: 🇭🇰 香港节点
-    type: fallback
+    type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 300
-    timeout: 8000
+    tolerance: 50
+    timeout: 3000
+    max-failed-times: 5
     proxies:
       - 香港-79.3MB/s
       - 香港-548.3KB/s
@@ -1086,24 +1090,30 @@ proxy-groups:
       - 香港-12.8MB/s
       - 香港-6.7MB/s
   - name: 🇯🇵 日本节点
-    type: fallback
+    type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 300
-    timeout: 8000
+    tolerance: 50
+    timeout: 3000
+    max-failed-times: 5
     proxies:
       - 日本-455.4KB/s
   - name: 🇸🇬 狮城节点
-    type: fallback
+    type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 300
-    timeout: 8000
+    tolerance: 50
+    timeout: 3000
+    max-failed-times: 5
     proxies:
       - 新加坡-211.8KB/s
   - name: 🇺🇲 美国节点
-    type: fallback
+    type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 300
-    timeout: 8000
+    tolerance: 50
+    timeout: 3000
+    max-failed-times: 5
     proxies:
       - 美国-230.5KB/s
       - 美国-60.0MB/s
