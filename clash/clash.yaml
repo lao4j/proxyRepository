@@ -1,89 +1,57 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-04-16 02:38:17
+# 创建时间：2025-04-16 12:55:33
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：102
 # 节点类型：vmess, trojan
 ####################################
 mixed-port: 7890
-allow-lan: true
-log-level: info
-external-controller: 0.0.0.0:9090
+allow-lan: false
+log-level: silent
+external-controller: 127.0.0.1:9090
 dns:
-  enabled: true
-  listen: 0.0.0.0:1053
-  ipv6: true
+  enable: true
+  cache-algorithm: arc
+  prefer-h3: false
+  use-hosts: false
+  use-system-hosts: false
+  respect-rules: true
+  listen: 127.0.0.1:1053
+  ipv6: false
   default-nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
+    - https://cloudflare-dns.com/dns-query
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
+  fake-ip-filter-mode: blacklist
   fake-ip-filter:
     - '*.lan'
-    - '*.linksys.com'
-    - '*.linksyssmartwifi.com'
-    - swscan.apple.com
-    - mesu.apple.com
-    - '*.msftconnecttest.com'
-    - '*.msftncsi.com'
-    - time.*.com
-    - time.*.gov
-    - time.*.edu.cn
-    - time.*.apple.com
-    - time1.*.com
-    - time2.*.com
-    - time3.*.com
-    - time4.*.com
-    - time5.*.com
-    - time6.*.com
-    - time7.*.com
-    - ntp.*.com
-    - ntp.*.com
-    - ntp1.*.com
-    - ntp2.*.com
-    - ntp3.*.com
-    - ntp4.*.com
-    - ntp5.*.com
-    - ntp6.*.com
-    - ntp7.*.com
-    - '*.time.edu.cn'
-    - '*.ntp.org.cn'
-    - +.pool.ntp.org
-    - time1.cloud.tencent.com
-    - +.music.163.com
-    - '*.126.net'
-    - musicapi.taihe.com
-    - music.taihe.com
-    - songsearch.kugou.com
-    - trackercdn.kugou.com
-    - '*.kuwo.cn'
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com
-    - +.y.qq.com
-    - +.music.tc.qq.com
-    - aqqmusic.tc.qq.com
-    - +.stream.qqmusic.qq.com
-    - '*.xiami.com'
-    - +.music.migu.cn
-    - +.srv.nintendo.net
-    - +.stun.playstation.net
-    - xbox.*.microsoft.com
-    - +.xboxlive.com
-    - localhost.ptlogin2.qq.com
-    - proxy.golang.org
-    - stun.*.*
-    - stun.*.*.*
-    - '*.mcdn.bilivideo.cn'
+  nameserver-policy:
+    '+.arpa':
+      - https://cloudflare-dns.com/dns-query 
+    'rule-set:cn':
+      - https://doh.alidns.com/dns-query
+      - https://1.12.222.222/dns-query
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
+    - https://dns.google/dns-query
+  fallback:
+    - https://cloudflare-dns.com/dns-query
+  proxy-server-nameserver:
+    - https://mozilla.cloudflare-dns.com/dns-query
+    - https://dns.adguard.com/dns-query
+  direct-nameserver:
+    - https://doh.alidns.com/dns-query
+  direct-nameserver-follow-policy: true
   fallback-filter:
-    geoip: false
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
+    geoip: true
+    geoip-code: CN
+    geosite:
+      - gfw
+    domain:
+      - '.google.com'
+      - '.facebook.com'
+      - 'googleusercontent.com'
+      - 'youtube.com'
 
 proxies:
   - {"name":"俄罗斯 莫斯科JustHost","type":"vmess","server":"45.147.201.231","port":20011,"cipher":"auto","uuid":"e4319e6e-ef82-45cf-a1f3-e4db006306fc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
@@ -144,18 +112,18 @@ proxies:
   - {"name":"美国 CloudFlare节点_17","type":"vmess","server":"s4.db-link02.top","port":8880,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in104.25.239.131","headers":{"host":"100-128-12-180.s4.db-link02.top"}}}
   - {"name":"上海市徐汇区 联通漕河泾数据中心","type":"vmess","server":"lt.fxlcn.com","port":45231,"cipher":"auto","uuid":"469e0b31-30c3-4dab-800d-711232634ce1","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国 Digital Ocean","type":"trojan","server":"157.245.202.237","port":443,"udp":true,"password":"guKUnUpJam","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_18","type":"trojan","server":"172.67.204.75","port":443,"udp":true,"password":"89c1aea7-4d0d-4013-b663-0f94a3e6bdbd","sni":"sanjose01.818185.xyz","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_19","type":"trojan","server":"172.67.208.155","port":443,"udp":true,"password":"2fec7227-9abe-46f2-af18-78302b836c45","sni":"3r.2030.pp.ua","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"爱尔兰 都柏林Amazon数据中心_1","type":"trojan","server":"52.30.247.51","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点_18","type":"trojan","server":"172.67.204.75","port":443,"udp":true,"password":"89c1aea7-4d0d-4013-b663-0f94a3e6bdbd","sni":"sanjose01.818185.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点_19","type":"trojan","server":"172.67.208.155","port":443,"udp":true,"password":"2fec7227-9abe-46f2-af18-78302b836c45","sni":"3r.2030.pp.ua","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"爱尔兰 都柏林Amazon数据中心_1","type":"trojan","server":"52.30.247.51","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国 Amazon数据中心","type":"trojan","server":"13.38.240.15","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"山东省青岛市 联通","type":"trojan","server":"gysz0000.dynu.net","port":38340,"udp":true,"password":"VMhGp5wEIyCDf90T","sni":"hk39.work.gd","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国 CloudFlare节点_20","type":"trojan","server":"172.67.135.23","port":443,"udp":true,"password":"0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01","sni":"uS6-16.890601.xyz","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"英国 社会保险安全部","type":"trojan","server":"51.20.236.134","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"爱尔兰 都柏林Amazon数据中心_2","type":"trojan","server":"54.194.139.111","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"英国 社会保险安全部","type":"trojan","server":"51.20.236.134","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"爱尔兰 都柏林Amazon数据中心_2","type":"trojan","server":"54.194.139.111","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国 纽约市DigitalOcean云公司_1","type":"trojan","server":"138.197.5.103","port":443,"udp":true,"password":"xxoo","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 Sprint网络","type":"trojan","server":"63.177.161.154","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_21","type":"trojan","server":"104.21.69.41","port":443,"udp":true,"password":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","sni":"uS7-06.890602.xyz","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_22","type":"trojan","server":"104.21.6.179","port":443,"udp":true,"password":"0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01","sni":"uS6-16.890601.xyz","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"美国 Sprint网络","type":"trojan","server":"63.177.161.154","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点_21","type":"trojan","server":"104.21.69.41","port":443,"udp":true,"password":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","sni":"uS7-06.890602.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点_22","type":"trojan","server":"104.21.6.179","port":443,"udp":true,"password":"0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01","sni":"uS6-16.890601.xyz","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国 纽约市DigitalOcean云公司_2","type":"trojan","server":"us.blazeppn.info","port":443,"udp":true,"password":"xxoo","sni":"us.blazeppn.info","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国 CloudFlare节点_23","type":"trojan","server":"172.67.200.238","port":443,"udp":true,"password":"2fec7227-9abe-46f2-af18-78302b836c45","sni":"3s.890689.xyz","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国 CloudFlare节点 (1)","type":"vmess","server":"hk2.lrzdx.uk","port":443,"cipher":"auto","uuid":"db69d5bc-d36c-4903-f471-74b98c5cefe5","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":""}}
@@ -304,9 +272,12 @@ proxy-groups:
       - 美国 Fastly全球Anycast节点
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    lazy: true
+    timeout: 10000
+    max-failed-times: 10
     proxies:
       - 俄罗斯 莫斯科JustHost
       - 广东省深圳市 移动_2
@@ -531,17 +502,23 @@ proxy-groups:
       - 美国 Fastly全球Anycast节点
   - name: 🇭🇰 香港节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    lazy: true
+    timeout: 10000
+    max-failed-times: 10
     proxies:
       - 香港 腾讯云
       - 香港 Google云计算数据中心
   - name: 🇺🇲 美国节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    lazy: true
+    timeout: 10000
+    max-failed-times: 10
     proxies:
       - 美国 CloudFlare节点_1
       - 美国 CloudFlare节点 (10)
