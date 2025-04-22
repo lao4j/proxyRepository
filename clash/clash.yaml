@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-04-23 01:43:36
+# 创建时间：2025-04-23 02:00:40
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：148
 # 节点类型：vmess, trojan
@@ -364,11 +364,10 @@ proxy-groups:
       - 广东省肇庆市 中移铁通
       - 美国 CloudFlare节点_46
   - name: ♻️ 自动选择
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 300
-    timeout: 5000
-    max-failed-times: 5
+    tolerance: 50
     proxies:
       - 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
       - 俄罗斯 V2CROSS.COM_1
@@ -684,30 +683,27 @@ proxy-groups:
       - 广东省肇庆市 中移铁通
       - 美国 CloudFlare节点_46
   - name: 🇭🇰 香港节点
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 300
-    timeout: 5000
-    max-failed-times: 5
+    tolerance: 50
     proxies:
       - 香港 V2CROSS.COM
       - 香港 Clayer Limited数据中心
       - 香港 Amazon数据中心
       - 香港 LeaseWeb HKG10数据中心
   - name: 🇸🇬 狮城节点
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 300
-    timeout: 5000
-    max-failed-times: 5
+    tolerance: 50
     proxies:
       - 新加坡 V2CROSS.COM
   - name: 🇺🇲 美国节点
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 300
-    timeout: 5000
-    max-failed-times: 5
+    tolerance: 50
     proxies:
       - 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
       - 美国 CloudFlare节点_1
