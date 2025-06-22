@@ -1,65 +1,82 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Surfboard
-# 创建时间：2025-06-21 11:10:37
+# 客户端：Surge
+# 创建时间：2025-06-22 12:27:20
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
-# 节点数量：30
+# 节点数量：35
 # 节点类型：vmess, trojan
 ####################################
 
 [General]
 loglevel = notify
-interface = 127.0.0.1
-skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
-ipv6 = false
-dns-server = system, 223.5.5.5
+bypass-system = true
+skip-proxy = 127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,100.64.0.0/10,localhost,*.local,e.crashlytics.com,captive.apple.com,::ffff:0:0:0:0/1,::ffff:128:0:0:0/1
+#DNS设置或根据自己网络情况进行相应设置
+bypass-tun = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12
+dns-server = 119.29.29.29,223.5.5.5,218.30.19.40,61.134.1.4
+external-controller-access = password@0.0.0.0:6170
+http-api = password@0.0.0.0:6171
+test-timeout = 5
+http-api-web-dashboard = true
 exclude-simple-hostnames = true
-enhanced-mode-by-rule = true
+allow-wifi-access = true
+http-listen = 0.0.0.0:6152
+socks5-listen = 0.0.0.0:6153
+wifi-access-http-port = 6152
+wifi-access-socks5-port = 6153
+
+[Script]
+http-request https?:\/\/.*\.iqiyi\.com\/.*authcookie= script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 
 [Proxy]
 DIRECT = direct
-🇨🇳_CN_中国->🇨🇦_CA_加拿大_5 = vmess, v25.heduian.link, 30825, username = v25.heduian.link:30825?type=ws&encryption=auto#%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD-%3E%F0%9F%87%A8%F0%9F%87%A6_CA_%E5%8A%A0%E6%8B%BF%E5%A4%A7, ws = true, tls = false, vmess-aead = true, skip-cert-verify = true, tfo = false
-🇦🇺_AU_澳大利亚->🇮🇳_IN_印度 = trojan, ni.mjt000.com, 443, password = 172b2279-f7f5-4542-ab6c-9e96ad7dd5be, udp-delay = true, skip-cert-verify = true, sni = ni.mjt000.com, ws = false
-🇨🇳_CN_中国->🇺🇸_US_美国_1 = vmess, v24.heduian.link, 30824, username = v24.heduian.link:30824?type=ws&encryption=auto#%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD-%3E%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD, ws = true, tls = false, vmess-aead = true, skip-cert-verify = true, tfo = false
-🇨🇳_CN_中国->🇺🇸_US_美国_3_5 = trojan, 42.240.152.238, 8842, password = 1b4c16925f934c57b954a9f0f23dea33, udp-delay = true, skip-cert-verify = true, sni = brwx.spvpv.com, ws = false
-🇨🇳_CN_中国->🇺🇸_US_美国_1_3 = vmess, v29.heduian.link, 30829, username = v29.heduian.link:30829?type=ws&encryption=auto#%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD-%3E%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_1, ws = true, tls = false, vmess-aead = true, skip-cert-verify = true, tfo = false
-🇨🇳_CN_中国->🇩🇪_DE_德国_2 = trojan, 120.233.44.201, 21102, password = 2b1ed981-6547-4094-998b-06a3323d6f6c, udp-delay = true, skip-cert-verify = true, sni = k28.tudou211.com, ws = false
-🇨🇳_CN_中国->🇨🇦_CA_加拿大_2_2 = trojan, 120.233.128.68, 39001, password = 85f133142f04dbf6547da33895cfabb3, udp-delay = true, skip-cert-verify = true, sni = 120.233.128.68, ws = false
-🇨🇳_CN_中国->🏳️_unKnow_未知 = vmess, v7.heduian.link, 30807, username = v7.heduian.link:30807?type=ws&encryption=auto#%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD-%3E%F0%9F%8F%B3%EF%B8%8F_unKnow_%E6%9C%AA%E7%9F%A5, ws = true, tls = false, vmess-aead = true, skip-cert-verify = true, tfo = false
-🇨🇳_CN_中国->🇨🇦_CA_加拿大_1_2 = vmess, v35.heduian.link, 30835, username = v35.heduian.link:30835?type=ws&encryption=auto#%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD-%3E%F0%9F%87%A8%F0%9F%87%A6_CA_%E5%8A%A0%E6%8B%BF%E5%A4%A7_1, ws = true, tls = false, vmess-aead = true, skip-cert-verify = true, tfo = false
-🇺🇸_US_美国->🇩🇪_DE_德国 = trojan, 3.72.117.224, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = true, sni = trojan.burgerip.co.uk, ws = false
-🇨🇳_CN_中国_1_2 = trojan, 183.232.235.2, 8313, password = 2c605663-b89a-5734-a9d6-97d4743d72cf, udp-delay = true, skip-cert-verify = true, sni = hk-13-568.flztjc.net, ws = false
-🇨🇳_CN_中国->🇺🇸_US_美国_1_4 = trojan, 120.233.44.201, 21179, password = 2b1ed981-6547-4094-998b-06a3323d6f6c, udp-delay = true, skip-cert-verify = true, sni = k30.tudou211.com, ws = false
-中转节点-16.0MB/s = vmess, v28.heduian.link, 30828, username = v28.heduian.link:30828?type=ws&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-16.0MB%2Fs, ws = true, tls = false, vmess-aead = true, skip-cert-verify = true, tfo = false
-中转节点-74.8MB/s = trojan, 120.233.44.201, 21056, password = 2b1ed981-6547-4094-998b-06a3323d6f6c, udp-delay = true, skip-cert-verify = true, sni = k14.tudou211.com, ws = false
-中转节点-2.56MB/s = trojan, 116.31.75.150, 39001, password = 85f133142f04dbf6547da33895cfabb3, udp-delay = true, skip-cert-verify = true, ws = false
-中转节点-737.0KB/s = vmess, 183.236.51.38, 36519, username = 183.236.51.38:36519?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-737.0KB%2Fs, tls = false, vmess-aead = true, skip-cert-verify = true, tfo = false
-🇩🇪_DE_德国 = trojan, 3.123.63.21, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = true, sni = trojan.burgerip.co.uk, ws = false
-🇩🇪_DE_德国_1 = trojan, 35.157.112.83, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = true, sni = trojan.burgerip.co.uk, ws = false
-未知 = vmess, onecat-us.03ezhg0qsa.download, 25024, username = onecat-us.03ezhg0qsa.download:25024?type=tcp&encryption=auto#%E6%9C%AA%E7%9F%A5, tls = false, vmess-aead = true, skip-cert-verify = true, tfo = false
-🇺🇸_US_美国->🇨🇦_CA_加拿大 = trojan, 104.21.84.242, 443, password = 03e92910-34b1-4245-ac63-04a865f43cd5, udp-delay = true, skip-cert-verify = true, sni = 3ERt.4444916.XyZ, ws = false
-🇳🇱_NL_荷兰->🇺🇸_US_美国 = vmess, 45.147.201.231, 23103, username = 45.147.201.231:23103?type=ws&encryption=auto#%F0%9F%87%B3%F0%9F%87%B1_NL_%E8%8D%B7%E5%85%B0-%3E%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD, ws = true, tls = false, vmess-aead = true, skip-cert-verify = true, tfo = false
-中转节点-323.2KB/s = trojan, 203.156.253.12, 39001, password = 85f133142f04dbf6547da33895cfabb3, udp-delay = true, skip-cert-verify = true, sni = www.yrtok.com, ws = false
-中转节点-182.7KB/s = vmess, 183.236.51.38, 41302, username = 183.236.51.38:41302?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-182.7KB%2Fs, tls = false, vmess-aead = true, skip-cert-verify = true, tfo = false
-中转节点-2.70MB/s = trojan, 113.99.140.184, 39001, password = 85f133142f04dbf6547da33895cfabb3, udp-delay = true, skip-cert-verify = true, sni = www.yrtok.com, ws = false
-🇨🇳_CN_中国->🇺🇸_US_美国_2_3 = trojan, 36.151.251.62, 23770, password = VdWBGFmg, udp-delay = true, skip-cert-verify = true, sni = TG.WangCai2, ws = false
-🇺🇸_US_美国->🇨🇳_CN_中国_2 = vmess, 170.114.45.52, 2086, username = 170.114.45.52:2086?type=ws&encryption=auto#%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD-%3E%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD, ws = true, tls = false, vmess-aead = true, skip-cert-verify = true, tfo = false
-🇨🇳_CN_中国_4 = vmess, 15002.kuaiyin02.top, 15002, username = 15002.kuaiyin02.top:15002?type=tcp&encryption=auto#%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD, tls = false, vmess-aead = true, skip-cert-verify = true, tfo = false
-🇨🇳_CN_中国->🇺🇸_US_美国_4_3 = vmess, 120.26.55.225, 50002, username = 120.26.55.225:50002?type=tcp&encryption=auto#%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD-%3E%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_4, tls = false, vmess-aead = true, skip-cert-verify = true, tfo = false
-德国-195.6KB/s = trojan, 212.224.107.171, 41135, password = n5u8K43axK, udp-delay = true, skip-cert-verify = true, ws = false
-美国-3.45MB/s = vmess, sssssssw.222560.xyz, 80, username = sssssssw.222560.xyz:80?type=ws&encryption=auto&host=sssssssw.222560.xyz&path=%2FiXfi0mMmPYp9UA6Y34zWUk6JUQ#%E7%BE%8E%E5%9B%BD-3.45MB%2Fs, ws = true, tls = false, vmess-aead = true, ws-path = /iXfi0mMmPYp9UA6Y34zWUk6JUQ, ws-headers = Host:"sssssssw.222560.xyz", skip-cert-verify = true, tfo = false
+🇨🇳_CN_中国->🇨🇦_CA_加拿大_5 = vmess,v25.heduian.link,30825,username=v25.heduian.link:30825?type=ws&encryption=auto#%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD-%3E%F0%9F%87%A8%F0%9F%87%A6_CA_%E5%8A%A0%E6%8B%BF%E5%A4%A7,tls=false,vmess-aead=true,tls13=false,ws=true,sni=v25.heduian.link,skip-cert-verify=true,tfo=false,udp-relay=false
+🇦🇺_AU_澳大利亚->🇮🇳_IN_印度 = trojan,ni.mjt000.com,443,password=172b2279-f7f5-4542-ab6c-9e96ad7dd5be,skip-cert-verify=true,sni=ni.mjt000.com,tfo=false,udp-relay=false
+🇨🇳_CN_中国->🇺🇸_US_美国_1 = vmess,v24.heduian.link,30824,username=v24.heduian.link:30824?type=ws&encryption=auto#%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD-%3E%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD,tls=false,vmess-aead=true,tls13=false,ws=true,sni=v24.heduian.link,skip-cert-verify=true,tfo=false,udp-relay=false
+🇨🇳_CN_中国->🇺🇸_US_美国_5 = trojan,42.240.152.238,8842,password=1b4c16925f934c57b954a9f0f23dea33,skip-cert-verify=true,sni=brwx.spvpv.com,tfo=false,udp-relay=false
+🇨🇳_CN_中国->🇺🇸_US_美国_1_3 = vmess,v29.heduian.link,30829,username=v29.heduian.link:30829?type=ws&encryption=auto#%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD-%3E%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_1,tls=false,vmess-aead=true,tls13=false,ws=true,sni=v29.heduian.link,skip-cert-verify=true,tfo=false,udp-relay=false
+🇨🇳_CN_中国->🇩🇪_DE_德国_2 = trojan,120.233.44.201,21102,password=2b1ed981-6547-4094-998b-06a3323d6f6c,skip-cert-verify=true,sni=k28.tudou211.com,tfo=false,udp-relay=false
+中转节点-10.96MB/s = trojan,120.233.128.68,39001,password=85f133142f04dbf6547da33895cfabb3,skip-cert-verify=true,sni=120.233.128.68,tfo=false,udp-relay=false
+🇨🇳_CN_中国->🏳️_unKnow_未知 = vmess,v7.heduian.link,30807,username=v7.heduian.link:30807?type=ws&encryption=auto#%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD-%3E%F0%9F%8F%B3%EF%B8%8F_unKnow_%E6%9C%AA%E7%9F%A5,tls=false,vmess-aead=true,tls13=false,ws=true,sni=v7.heduian.link,skip-cert-verify=true,tfo=false,udp-relay=false
+🇨🇳_CN_中国_5 = vmess,v35.heduian.link,30835,username=v35.heduian.link:30835?type=ws&encryption=auto#%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD,tls=false,vmess-aead=true,tls13=false,ws=true,sni=v35.heduian.link,skip-cert-verify=true,tfo=false,udp-relay=false
+🇺🇸_US_美国->🇩🇪_DE_德国 = trojan,3.72.117.224,22222,password=telegram-id-privatevpns,skip-cert-verify=true,sni=trojan.burgerip.co.uk,tfo=false,udp-relay=false
+🇨🇳_CN_中国_1_2 = trojan,183.232.235.2,8313,password=2c605663-b89a-5734-a9d6-97d4743d72cf,skip-cert-verify=true,sni=hk-13-568.flztjc.net,tfo=false,udp-relay=false
+🇨🇳_CN_中国->🇺🇸_US_美国_3_6 = trojan,120.233.44.201,21179,password=2b1ed981-6547-4094-998b-06a3323d6f6c,skip-cert-verify=true,sni=k30.tudou211.com,tfo=false,udp-relay=false
+中转节点-16.0MB/s = vmess,v28.heduian.link,30828,username=v28.heduian.link:30828?type=ws&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-16.0MB%2Fs,tls=false,vmess-aead=true,tls13=false,ws=true,sni=v28.heduian.link,skip-cert-verify=true,tfo=false,udp-relay=false
+中转节点-74.8MB/s = trojan,120.233.44.201,21056,password=2b1ed981-6547-4094-998b-06a3323d6f6c,skip-cert-verify=true,sni=k14.tudou211.com,tfo=false,udp-relay=false
+中转节点-2.56MB/s = trojan,116.31.75.150,39001,password=85f133142f04dbf6547da33895cfabb3,skip-cert-verify=true,tfo=false,udp-relay=false
+中转节点-737.0KB/s = vmess,183.236.51.38,36519,username=183.236.51.38:36519?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-737.0KB%2Fs,tls=false,vmess-aead=true,tls13=false,sni=183.236.51.38,skip-cert-verify=true,tfo=false,udp-relay=false
+🇩🇪_DE_德国 = trojan,3.123.63.21,22223,password=telegram-id-directvpn,skip-cert-verify=true,sni=trojan.burgerip.co.uk,tfo=false,udp-relay=false
+🇩🇪_DE_德国_1 = trojan,35.157.112.83,22223,password=telegram-id-directvpn,skip-cert-verify=true,sni=trojan.burgerip.co.uk,tfo=false,udp-relay=false
+未知 = vmess,onecat-us.03ezhg0qsa.download,25024,username=onecat-us.03ezhg0qsa.download:25024?type=tcp&encryption=auto#%E6%9C%AA%E7%9F%A5,tls=false,vmess-aead=true,tls13=false,sni=onecat-us.03ezhg0qsa.download,skip-cert-verify=true,tfo=false,udp-relay=false
+🇺🇸_US_美国_2 = trojan,104.21.84.242,443,password=03e92910-34b1-4245-ac63-04a865f43cd5,skip-cert-verify=true,sni=3ERt.4444916.XyZ,tfo=false,udp-relay=false
+🇳🇱_NL_荷兰->🇺🇸_US_美国 = vmess,45.147.201.231,23103,username=45.147.201.231:23103?type=ws&encryption=auto#%F0%9F%87%B3%F0%9F%87%B1_NL_%E8%8D%B7%E5%85%B0-%3E%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD,tls=false,vmess-aead=true,tls13=false,ws=true,sni=45.147.201.231,skip-cert-verify=true,tfo=false,udp-relay=false
+中转节点-323.2KB/s = trojan,203.156.253.12,39001,password=85f133142f04dbf6547da33895cfabb3,skip-cert-verify=true,sni=www.yrtok.com,tfo=false,udp-relay=false
+中转节点-182.7KB/s = vmess,183.236.51.38,41302,username=183.236.51.38:41302?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-182.7KB%2Fs,tls=false,vmess-aead=true,tls13=false,sni=183.236.51.38,skip-cert-verify=true,tfo=false,udp-relay=false
+中转节点-1.78MB/s = trojan,113.99.140.184,39001,password=85f133142f04dbf6547da33895cfabb3,skip-cert-verify=true,sni=www.yrtok.com,tfo=false,udp-relay=false
+🇨🇳_CN_中国->🇺🇸_US_美国_1_5 = trojan,36.151.251.62,23770,password=VdWBGFmg,skip-cert-verify=true,sni=TG.WangCai2,tfo=false,udp-relay=false
+🇺🇸_US_美国->🇨🇳_CN_中国_2 = vmess,170.114.45.52,2086,username=170.114.45.52:2086?type=ws&encryption=auto#%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD-%3E%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD,tls=false,vmess-aead=true,tls13=false,ws=true,sni=170.114.45.52,skip-cert-verify=true,tfo=false,udp-relay=false
+🇨🇳_CN_中国_4 = vmess,15002.kuaiyin02.top,15002,username=15002.kuaiyin02.top:15002?type=tcp&encryption=auto#%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD,tls=false,vmess-aead=true,tls13=false,sni=15002.kuaiyin02.top,skip-cert-verify=true,tfo=false,udp-relay=false
+🇨🇳_CN_中国->🇺🇸_US_美国_4_3 = vmess,120.26.55.225,50002,username=120.26.55.225:50002?type=tcp&encryption=auto#%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD-%3E%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_4,tls=false,vmess-aead=true,tls13=false,sni=120.26.55.225,skip-cert-verify=true,tfo=false,udp-relay=false
+德国-195.6KB/s = trojan,212.224.107.171,41135,password=n5u8K43axK,skip-cert-verify=true,tfo=false,udp-relay=false
+美国-3.45MB/s = vmess,sssssssw.222560.xyz,80,username=sssssssw.222560.xyz:80?type=ws&encryption=auto&host=sssssssw.222560.xyz&path=%2FiXfi0mMmPYp9UA6Y34zWUk6JUQ#%E7%BE%8E%E5%9B%BD-3.45MB%2Fs,tls=false,vmess-aead=true,tls13=false,ws=true,ws-path=/iXfi0mMmPYp9UA6Y34zWUk6JUQ,ws-headers=host:"sssssssw.222560.xyz",sni=sssssssw.222560.xyz,skip-cert-verify=true,tfo=false,udp-relay=false
+中转节点-12.5MB/s = vmess,111.26.109.79,30828,username=cbb3f877-d1fb-344c-87a9-d153bffd5484,tls=false,vmess-aead=false,tls13=false,ws=true,ws-path=/oooo,ws-headers=host:"ocbc.com",sni=111.26.109.79,skip-cert-verify=true,tfo=false,udp-relay=false
+未知国家-3.87MB/s = vmess,dddddddddd4.222560.xyz,80,username=dddddddddd4.222560.xyz:80?type=ws&encryption=auto&host=dddddddddd4.222560.xyz&path=%2FiXfi0mMmPYp9UA6Y34zWUk6JUQ#%E6%9C%AA%E7%9F%A5%E5%9B%BD%E5%AE%B6-3.87MB%2Fs,tls=false,vmess-aead=true,tls13=false,ws=true,ws-path=/iXfi0mMmPYp9UA6Y34zWUk6JUQ,ws-headers=host:"dddddddddd4.222560.xyz",sni=dddddddddd4.222560.xyz,skip-cert-verify=true,tfo=false,udp-relay=false
+中转节点-4.2MB/s = vmess,v9.heduian.link,30809,username=cbb3f877-d1fb-344c-87a9-d153bffd5484,tls=false,vmess-aead=false,tls13=false,ws=true,ws-path=/oooo,ws-headers=host:"baidu.com",sni=v9.heduian.link,skip-cert-verify=true,tfo=false,udp-relay=false
+中转节点-496.4KB/s = trojan,36.151.251.62,38632,password=HrTsLJvh,skip-cert-verify=true,tfo=false,udp-relay=false
+🇨🇳_CN_中国->🇺🇸_US_美国_2_4 = vmess,111.26.109.79,30825,username=111.26.109.79:30825?type=ws&encryption=auto#%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD-%3E%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_2,tls=false,vmess-aead=true,tls13=false,ws=true,sni=111.26.109.79,skip-cert-verify=true,tfo=false,udp-relay=false
 🇭🇰 香港节点 = direct
 🇯🇵 日本节点 = direct
 🇸🇬 狮城节点 = direct
 
 [Proxy Group]
 🚀 节点选择 = select,♻️ 自动选择,🇭🇰 香港节点,🇸🇬 狮城节点,🇺🇲 美国节点,🇯🇵 日本节点,🚀 手动切换,DIRECT
-🚀 手动切换 = select,🇨🇳_CN_中国->🇨🇦_CA_加拿大_5,🇦🇺_AU_澳大利亚->🇮🇳_IN_印度,🇨🇳_CN_中国->🇺🇸_US_美国_1,🇨🇳_CN_中国->🇺🇸_US_美国_3_5,🇨🇳_CN_中国->🇺🇸_US_美国_1_3,🇨🇳_CN_中国->🇩🇪_DE_德国_2,🇨🇳_CN_中国->🇨🇦_CA_加拿大_2_2,🇨🇳_CN_中国->🏳️_unKnow_未知,🇨🇳_CN_中国->🇨🇦_CA_加拿大_1_2,🇺🇸_US_美国->🇩🇪_DE_德国,🇨🇳_CN_中国_1_2,🇨🇳_CN_中国->🇺🇸_US_美国_1_4,中转节点-16.0MB/s,中转节点-74.8MB/s,中转节点-2.56MB/s,中转节点-737.0KB/s,🇩🇪_DE_德国,🇩🇪_DE_德国_1,未知,🇺🇸_US_美国->🇨🇦_CA_加拿大,🇳🇱_NL_荷兰->🇺🇸_US_美国,中转节点-323.2KB/s,中转节点-182.7KB/s,中转节点-2.70MB/s,🇨🇳_CN_中国->🇺🇸_US_美国_2_3,🇺🇸_US_美国->🇨🇳_CN_中国_2,🇨🇳_CN_中国_4,🇨🇳_CN_中国->🇺🇸_US_美国_4_3,德国-195.6KB/s,美国-3.45MB/s
-♻️ 自动选择 = url-test,🇨🇳_CN_中国->🇨🇦_CA_加拿大_5,🇦🇺_AU_澳大利亚->🇮🇳_IN_印度,🇨🇳_CN_中国->🇺🇸_US_美国_1,🇨🇳_CN_中国->🇺🇸_US_美国_3_5,🇨🇳_CN_中国->🇺🇸_US_美国_1_3,🇨🇳_CN_中国->🇩🇪_DE_德国_2,🇨🇳_CN_中国->🇨🇦_CA_加拿大_2_2,🇨🇳_CN_中国->🏳️_unKnow_未知,🇨🇳_CN_中国->🇨🇦_CA_加拿大_1_2,🇺🇸_US_美国->🇩🇪_DE_德国,🇨🇳_CN_中国_1_2,🇨🇳_CN_中国->🇺🇸_US_美国_1_4,中转节点-16.0MB/s,中转节点-74.8MB/s,中转节点-2.56MB/s,中转节点-737.0KB/s,🇩🇪_DE_德国,🇩🇪_DE_德国_1,未知,🇺🇸_US_美国->🇨🇦_CA_加拿大,🇳🇱_NL_荷兰->🇺🇸_US_美国,中转节点-323.2KB/s,中转节点-182.7KB/s,中转节点-2.70MB/s,🇨🇳_CN_中国->🇺🇸_US_美国_2_3,🇺🇸_US_美国->🇨🇳_CN_中国_2,🇨🇳_CN_中国_4,🇨🇳_CN_中国->🇺🇸_US_美国_4_3,德国-195.6KB/s,美国-3.45MB/s,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 50
+🚀 手动切换 = select,🇨🇳_CN_中国->🇨🇦_CA_加拿大_5,🇦🇺_AU_澳大利亚->🇮🇳_IN_印度,🇨🇳_CN_中国->🇺🇸_US_美国_1,🇨🇳_CN_中国->🇺🇸_US_美国_5,🇨🇳_CN_中国->🇺🇸_US_美国_1_3,🇨🇳_CN_中国->🇩🇪_DE_德国_2,中转节点-10.96MB/s,🇨🇳_CN_中国->🏳️_unKnow_未知,🇨🇳_CN_中国_5,🇺🇸_US_美国->🇩🇪_DE_德国,🇨🇳_CN_中国_1_2,🇨🇳_CN_中国->🇺🇸_US_美国_3_6,中转节点-16.0MB/s,中转节点-74.8MB/s,中转节点-2.56MB/s,中转节点-737.0KB/s,🇩🇪_DE_德国,🇩🇪_DE_德国_1,未知,🇺🇸_US_美国_2,🇳🇱_NL_荷兰->🇺🇸_US_美国,中转节点-323.2KB/s,中转节点-182.7KB/s,中转节点-1.78MB/s,🇨🇳_CN_中国->🇺🇸_US_美国_1_5,🇺🇸_US_美国->🇨🇳_CN_中国_2,🇨🇳_CN_中国_4,🇨🇳_CN_中国->🇺🇸_US_美国_4_3,德国-195.6KB/s,美国-3.45MB/s,中转节点-12.5MB/s,未知国家-3.87MB/s,中转节点-4.2MB/s,中转节点-496.4KB/s,🇨🇳_CN_中国->🇺🇸_US_美国_2_4
+♻️ 自动选择 = url-test,🇨🇳_CN_中国->🇨🇦_CA_加拿大_5,🇦🇺_AU_澳大利亚->🇮🇳_IN_印度,🇨🇳_CN_中国->🇺🇸_US_美国_1,🇨🇳_CN_中国->🇺🇸_US_美国_5,🇨🇳_CN_中国->🇺🇸_US_美国_1_3,🇨🇳_CN_中国->🇩🇪_DE_德国_2,中转节点-10.96MB/s,🇨🇳_CN_中国->🏳️_unKnow_未知,🇨🇳_CN_中国_5,🇺🇸_US_美国->🇩🇪_DE_德国,🇨🇳_CN_中国_1_2,🇨🇳_CN_中国->🇺🇸_US_美国_3_6,中转节点-16.0MB/s,中转节点-74.8MB/s,中转节点-2.56MB/s,中转节点-737.0KB/s,🇩🇪_DE_德国,🇩🇪_DE_德国_1,未知,🇺🇸_US_美国_2,🇳🇱_NL_荷兰->🇺🇸_US_美国,中转节点-323.2KB/s,中转节点-182.7KB/s,中转节点-1.78MB/s,🇨🇳_CN_中国->🇺🇸_US_美国_1_5,🇺🇸_US_美国->🇨🇳_CN_中国_2,🇨🇳_CN_中国_4,🇨🇳_CN_中国->🇺🇸_US_美国_4_3,德国-195.6KB/s,美国-3.45MB/s,中转节点-12.5MB/s,未知国家-3.87MB/s,中转节点-4.2MB/s,中转节点-496.4KB/s,🇨🇳_CN_中国->🇺🇸_US_美国_2_4,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 50
 🎯 全球直连 = select,DIRECT,🚀 节点选择,♻️ 自动选择
 🛑 全球拦截 = select,REJECT,DIRECT
-🐟 漏网之鱼 = select,🚀 节点选择,🎯 全球直连,♻️ 自动选择,🇨🇳_CN_中国->🇨🇦_CA_加拿大_5,🇦🇺_AU_澳大利亚->🇮🇳_IN_印度,🇨🇳_CN_中国->🇺🇸_US_美国_1,🇨🇳_CN_中国->🇺🇸_US_美国_3_5,🇨🇳_CN_中国->🇺🇸_US_美国_1_3,🇨🇳_CN_中国->🇩🇪_DE_德国_2,🇨🇳_CN_中国->🇨🇦_CA_加拿大_2_2,🇨🇳_CN_中国->🏳️_unKnow_未知,🇨🇳_CN_中国->🇨🇦_CA_加拿大_1_2,🇺🇸_US_美国->🇩🇪_DE_德国,🇨🇳_CN_中国_1_2,🇨🇳_CN_中国->🇺🇸_US_美国_1_4,中转节点-16.0MB/s,中转节点-74.8MB/s,中转节点-2.56MB/s,中转节点-737.0KB/s,🇩🇪_DE_德国,🇩🇪_DE_德国_1,未知,🇺🇸_US_美国->🇨🇦_CA_加拿大,🇳🇱_NL_荷兰->🇺🇸_US_美国,中转节点-323.2KB/s,中转节点-182.7KB/s,中转节点-2.70MB/s,🇨🇳_CN_中国->🇺🇸_US_美国_2_3,🇺🇸_US_美国->🇨🇳_CN_中国_2,🇨🇳_CN_中国_4,🇨🇳_CN_中国->🇺🇸_US_美国_4_3,德国-195.6KB/s,美国-3.45MB/s
-🇺🇲 美国节点 = url-test,🇨🇳_CN_中国->🇺🇸_US_美国_1,🇨🇳_CN_中国->🇺🇸_US_美国_3_5,🇨🇳_CN_中国->🇺🇸_US_美国_1_3,🇺🇸_US_美国->🇩🇪_DE_德国,🇨🇳_CN_中国->🇺🇸_US_美国_1_4,🇺🇸_US_美国->🇨🇦_CA_加拿大,🇳🇱_NL_荷兰->🇺🇸_US_美国,🇨🇳_CN_中国->🇺🇸_US_美国_2_3,🇺🇸_US_美国->🇨🇳_CN_中国_2,🇨🇳_CN_中国->🇺🇸_US_美国_4_3,美国-3.45MB/s,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 50
+🐟 漏网之鱼 = select,🚀 节点选择,🎯 全球直连,♻️ 自动选择,🇨🇳_CN_中国->🇨🇦_CA_加拿大_5,🇦🇺_AU_澳大利亚->🇮🇳_IN_印度,🇨🇳_CN_中国->🇺🇸_US_美国_1,🇨🇳_CN_中国->🇺🇸_US_美国_5,🇨🇳_CN_中国->🇺🇸_US_美国_1_3,🇨🇳_CN_中国->🇩🇪_DE_德国_2,中转节点-10.96MB/s,🇨🇳_CN_中国->🏳️_unKnow_未知,🇨🇳_CN_中国_5,🇺🇸_US_美国->🇩🇪_DE_德国,🇨🇳_CN_中国_1_2,🇨🇳_CN_中国->🇺🇸_US_美国_3_6,中转节点-16.0MB/s,中转节点-74.8MB/s,中转节点-2.56MB/s,中转节点-737.0KB/s,🇩🇪_DE_德国,🇩🇪_DE_德国_1,未知,🇺🇸_US_美国_2,🇳🇱_NL_荷兰->🇺🇸_US_美国,中转节点-323.2KB/s,中转节点-182.7KB/s,中转节点-1.78MB/s,🇨🇳_CN_中国->🇺🇸_US_美国_1_5,🇺🇸_US_美国->🇨🇳_CN_中国_2,🇨🇳_CN_中国_4,🇨🇳_CN_中国->🇺🇸_US_美国_4_3,德国-195.6KB/s,美国-3.45MB/s,中转节点-12.5MB/s,未知国家-3.87MB/s,中转节点-4.2MB/s,中转节点-496.4KB/s,🇨🇳_CN_中国->🇺🇸_US_美国_2_4
+🇺🇲 美国节点 = url-test,🇨🇳_CN_中国->🇺🇸_US_美国_1,🇨🇳_CN_中国->🇺🇸_US_美国_5,🇨🇳_CN_中国->🇺🇸_US_美国_1_3,🇺🇸_US_美国->🇩🇪_DE_德国,🇨🇳_CN_中国->🇺🇸_US_美国_3_6,🇺🇸_US_美国_2,🇳🇱_NL_荷兰->🇺🇸_US_美国,🇨🇳_CN_中国->🇺🇸_US_美国_1_5,🇺🇸_US_美国->🇨🇳_CN_中国_2,🇨🇳_CN_中国->🇺🇸_US_美国_4_3,美国-3.45MB/s,🇨🇳_CN_中国->🇺🇸_US_美国_2_4,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 50
 
 [Rule]
 # 本地/局域网地址
