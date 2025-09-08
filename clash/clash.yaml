@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：14-08-2025 00:33:07
+# 创建时间：09-09-2025 00:40:28
 # 使用模版：V2RaySE 默认模版
-# 节点数量：8
+# 节点数量：2
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -85,14 +85,8 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"defaultName_1","type":"http","server":"ukr.secureconnect.me","port":23,"username":"hasanghaderi01@gmail.com","password":"786786HASAN","tls":true,"skip-cert-verify":true}
-  - {"name":"defaultName_2","type":"http","server":"ukr.secureconnect.me","port":489,"username":"hasanghaderi01@gmail.com","password":"786786HASAN","tls":true,"skip-cert-verify":true}
-  - {"name":"defaultName_3","type":"http","server":"ukr.secureconnect.me","port":465,"username":"hasanghaderi01@gmail.com","password":"786786HASAN","tls":true,"skip-cert-verify":true}
-  - {"name":"defaultName_4","type":"http","server":"ukr.secureconnect.me","port":993,"username":"hasanghaderi01@gmail.com","password":"786786HASAN","tls":true,"skip-cert-verify":true}
-  - {"name":"defaultName_5","type":"http","server":"ukr.secureconnect.me","port":282,"username":"hasanghaderi01@gmail.com","password":"786786HASAN","tls":true,"skip-cert-verify":true}
-  - {"name":"defaultName_6","type":"http","server":"ukr.secureconnect.me","port":778,"username":"hasanghaderi01@gmail.com","password":"786786HASAN","tls":true,"skip-cert-verify":true}
-  - {"name":"defaultName_7","type":"http","server":"ukr.secureconnect.me","port":592,"username":"hasanghaderi01@gmail.com","password":"786786HASAN","tls":true,"skip-cert-verify":true}
-  - {"name":"defaultName_8","type":"http","server":"ukr.secureconnect.me","port":7070,"username":"hasanghaderi01@gmail.com","password":"786786HASAN","tls":true,"skip-cert-verify":true}
+  - {"name":"defaultName_1","type":"http","server":"ukr.secureconnect.me","port":23,"username":"hasanghaderi01@gmail.com","password":"ha11013592","tls":true,"skip-cert-verify":true}
+  - {"name":"defaultName_2","type":"http","server":"ukr.secureconnect.me","port":489,"username":"hasanghaderi01@gmail.com","password":"ha11013592","tls":true,"skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -101,12 +95,6 @@ proxy-groups:
       - DIRECT
       - defaultName_1
       - defaultName_2
-      - defaultName_3
-      - defaultName_4
-      - defaultName_5
-      - defaultName_6
-      - defaultName_7
-      - defaultName_8
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -115,12 +103,6 @@ proxy-groups:
     proxies:
       - defaultName_1
       - defaultName_2
-      - defaultName_3
-      - defaultName_4
-      - defaultName_5
-      - defaultName_6
-      - defaultName_7
-      - defaultName_8
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -129,12 +111,6 @@ proxy-groups:
       - 🎯 全球直连
       - defaultName_1
       - defaultName_2
-      - defaultName_3
-      - defaultName_4
-      - defaultName_5
-      - defaultName_6
-      - defaultName_7
-      - defaultName_8
   - name: 📲 电报信息
     type: select
     proxies:
@@ -142,12 +118,6 @@ proxy-groups:
       - 🎯 全球直连
       - defaultName_1
       - defaultName_2
-      - defaultName_3
-      - defaultName_4
-      - defaultName_5
-      - defaultName_6
-      - defaultName_7
-      - defaultName_8
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -155,12 +125,6 @@ proxy-groups:
       - 🚀 节点选择
       - defaultName_1
       - defaultName_2
-      - defaultName_3
-      - defaultName_4
-      - defaultName_5
-      - defaultName_6
-      - defaultName_7
-      - defaultName_8
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -168,12 +132,6 @@ proxy-groups:
       - 🎯 全球直连
       - defaultName_1
       - defaultName_2
-      - defaultName_3
-      - defaultName_4
-      - defaultName_5
-      - defaultName_6
-      - defaultName_7
-      - defaultName_8
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -198,13 +156,8 @@ proxy-groups:
       - ♻️ 自动选择
       - defaultName_1
       - defaultName_2
-      - defaultName_3
-      - defaultName_4
-      - defaultName_5
-      - defaultName_6
-      - defaultName_7
-      - defaultName_8
+
 
 rules:
-  - GEOIP,IR,🎯 全球直连
+  - GEOIP,ir,🎯 全球直连
   - MATCH,🐟 漏网之鱼
